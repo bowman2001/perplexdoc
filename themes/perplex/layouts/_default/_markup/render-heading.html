@@ -1,0 +1,9 @@
+<h{{ .Level }} id="{{ .Anchor | safeURL }}"
+        {{- range $k, $v := .Attributes -}}
+            {{- (printf " %s=%q" $k $v) | safeHTMLAttr -}}
+        {{- end -}}>
+	<span>
+		<a href="#{{ .Anchor | safeURL }}">#</a>
+			{{ .Text | safeHTML }}
+	</span>
+</h{{ .Level }}>

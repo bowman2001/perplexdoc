@@ -1,0 +1,15 @@
+{{- define "main" -}}
+<main class="l-box" id="box">
+	<header>
+		<div class="title title-left title-big">
+			{{ partial "title/title.html" . }}
+			{{ partial "title/subtitle.html" . }}
+		</div>
+
+	</header>
+    {{- partial "img/featured.html" . -}}
+	<section class="md md-serif">
+		{{- partial "content.html" . -}}
+	</section>
+</main>
+{{- end -}}

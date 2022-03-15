@@ -1,0 +1,51 @@
+<nav class="nav_pages">
+	<div class="breadcrumbs">
+		{{ with .Site.GetPage "/doc" }}
+		<a href='{{ .RelPermalink }}' class="start">Start</a>&ensp;&rarr;&ensp;
+		{{ end }}
+		{{ if ne .CurrentSection.Parent .FirstSection }}
+		{{ with .CurrentSection.Parent }}
+		<a href="{{ .RelPermalink }}" class="chapter">
+			{{- partial "nav/section/preview" . -}}
+		</a>&ensp;&rarr;&ensp;
+		{{ end }}
+		{{ with .CurrentSection }}
+		<a href="{{ .RelPermalink }}" class="section">
+			{{- partial "nav/section/preview" . -}}
+		</a>
+		{{ end }}
+		{{ else }}
+		{{ with .CurrentSection }}
+		<a href="{{ .RelPermalink }}" class="chapter">
+			{{- partial "nav/section/preview" . -}}
+		</a>
+		{{ end }}
+		{{ end }}
+	</div>
+	{{ with .NextInSection }}
+	<a href="{{ .RelPermalink }}" class="prev">
+		<div class="icon">chevron_left</div>
+		{{- partial "nav/page/preview" . -}}
+	</a>
+	{{- end -}}
+	{{ with .PrevInSection }}
+	<a href="{{ .RelPermalink }}" class="next">
+		{{- partial "nav/page/preview" . -}}
+		<div class="icon">chevron_right</div>
+	</a>
+	{{- end -}}
+</nav>
+
+{{- define "partials/nav/page/preview" -}}
+<div class="page">
+	<h4>
+		{{ with .Param "menu.doc.pre" }}<span class="icon">{{ . }}</span>{{ end }}
+		{{ .Title | $.Page.RenderString }}
+	</h4>
+	{{ with .Description }}<p>{{ . | $.Page.RenderString }}</p>{{ end }}
+</div>
+{{- end -}}
+
+{{- define "partials/nav/section/preview" -}}
+{{ .Title | $.Page.RenderString }}
+{{- end -}}

@@ -1,0 +1,28 @@
+#
+# Privacy settings for the internal templates provided by Hugo
+#
+
+# They are all turned on initially.
+# Please apply the appropriate settings for your site.
+
+disqus:
+  disable: true
+googleAnalytics:
+  disable: true
+  anonymizeIP: true
+  respectDoNotTrack: true
+  useSessionStorage: true
+instagram:
+  disable: true
+  simple: true
+twitter:
+  disable: true
+  enableDNT: true
+  simple: true
+vimeo:
+  disable: true
+  enableDNT: true
+  simple: true
+youtube:
+  disable: true
+  privacyEnhanced: true

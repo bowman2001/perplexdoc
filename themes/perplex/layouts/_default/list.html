@@ -1,0 +1,27 @@
+{{- define "main" -}}
+    <main class="l-box" id="box">
+        <header>
+            <div class="title title-list">
+                <h1>{{- .Title | $.Page.RenderString -}}</h1>
+                {{ if (not (eq .Params.subtitle false) ) }}
+                    {{- with .Description -}}
+                        <p class="description">{{- . | $.Page.RenderString -}}</p>
+                    {{ end }}
+                {{- end -}}
+            </div>
+        </header>
+        {{- partial "img/featured.html" . -}}
+        <section class="md md-serif md-list">
+            {{- partial "content.html" . -}}
+        </section>
+        <section class="l-section">
+            <nav class="nav_pagelist">
+                <ul>
+                    {{- range .Pages -}}
+                        {{- .Render "li" -}}
+                    {{- end -}}
+                </ul>
+            </nav>
+        </section>
+    </main>
+{{- end -}}

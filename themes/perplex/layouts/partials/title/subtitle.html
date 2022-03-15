@@ -1,0 +1,3 @@
+{{ if $.Params.subtitle }}
+    {{- with .Description -}}<p class="subtitle">{{- . | $.Page.RenderString -}}</p>{{ end }}
+{{ end }}

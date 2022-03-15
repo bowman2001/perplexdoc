@@ -1,0 +1,25 @@
+{{- $js := resources.Get "js/hyphenopoly/Hyphenopoly_Loader.js" | minify | fingerprint -}}
+<script type="text/javascript" src="{{- $js.Permalink -}}" integrity="{{ $js.Data.Integrity }}"></script>
+<script>
+    Hyphenopoly.config({
+        require: {
+            // "la": "honorificabilitudinitas",
+            "de": "Silbentrennungsalgorithmus",
+            "en": "FORCEHYPHENOPOLY" // "Supercalifragilisticexpialidocious"
+            //
+        },
+        setup: {
+            selectors: {
+                "p, dd, .md li": {
+                    minWordLength: 5,
+                    orphanControl: 2,
+                }
+            }
+        },
+        paths: {
+            maindir: "/js/hyphenopoly/",
+            patterndir: "/js/hyphenopoly/patterns/",
+
+        },
+    });
+</script>

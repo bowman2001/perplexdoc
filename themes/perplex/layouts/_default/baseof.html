@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html {{ with .Site.Language.Lang }}lang="{{ . }}"{{ end }}>
+{{- partial "head.html" . -}}
+<body>
+<div class="l-page">
+    {{- partial "nav/masthead.html" . -}}
+    <div class="l-main" id="main">
+        {{- block "main" . -}}{{- end -}}
+        {{- partial "footer/main.html" . -}}
+    </div>
+    <aside class="l-sidebar" id="sidebar">
+        {{- block "sidebar" . -}}{{- end -}}
+    </aside>
+    {{- block "toc" . -}}{{- end -}}
+</div>
+{{- partial "foot.html" . -}}
+</body>
+</html>

@@ -1,0 +1,7 @@
+#
+# Menu entries
+#
+
+# The place of every internal page in the menu structure should be set in its
+# front-matter.
+# Here we can add external pages to our menus

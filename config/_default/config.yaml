@@ -1,0 +1,22 @@
+##
+## Main configuration file for the Perplex documentation
+##
+
+# The domain of the site
+baseURL: 'https://desider.at'
+title: Perplex
+theme:
+  - perplex
+DefaultLanguageCode: en-us
+DefaultContentLanguage: en
+metaDataFormat: yaml
+pluralizeListTitles: false
+enableEmoji: true
+enableGitInfo: true
+
+timeout: 30000
+ignoreFiles:
+  - doc/draft/.*
+  - dev
+ignoreErrors:
+  - error-missing-instagram-accesstoken

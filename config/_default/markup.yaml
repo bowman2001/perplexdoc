@@ -1,0 +1,41 @@
+#
+# Configuration section for Markdown rendering
+#
+
+# Goldmark is Commonmark-compliant
+defaultMarkdownHandler: goldmark
+goldmark:
+  extensions:
+    definitionList: true
+    footnote: true
+    linkify: true
+    strikethrough: true
+    table: true
+    taskList: true
+    typographer: true
+  parser:
+    autoHeadingID: true
+    autoHeadingIDType: github
+    attribute:
+      block: true
+      title: true
+  renderer:
+    hardWraps: true
+    unsafe: false
+    xhtml: false
+tableOfContents:
+  startLevel: 2
+  endLevel: 4
+  ordered: false
+highlight:
+  anchorLineNos: true
+  codeFences: true
+  guessSyntax: false
+  hl_Lines: ""
+  lineAnchors: ""
+  lineNoStart: 1
+  lineNos: false
+  lineNumbersInTable: true
+  noClasses: true
+  style: monokailight
+  tabWidth: 4

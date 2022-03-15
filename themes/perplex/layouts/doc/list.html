@@ -1,0 +1,28 @@
+{{- define "main" -}}
+<main class="l-box l-box-doc" id="box">
+	<header>
+		<aside class="right">
+        {{- partial "img/featuredmargin.html" . -}}
+		</aside>
+		<div class="title title-list">
+			<hr>
+			{{ partial "title/title.html" . }}
+			{{ partial "title/subtitle.html" . }}
+		</div>
+	</header>
+	<section class="md md-serif md-list">
+		{{- partial "content.html" . -}}
+	</section>
+	<section class="l-section">
+		<nav class="nav_pagelist">
+		<ul>
+			{{- range .Pages -}}
+			{{- .Render "li" -}}
+			{{- end -}}
+		</ul>
+		</nav>
+	</section>
+</main>
+{{- end -}}
+
+{{- define "sidebar" -}}{{- partial "doc/nav/sidebar.html" . -}}{{- end -}}

@@ -1,0 +1,64 @@
+<ul>
+    {{ $currentPage := .context }}
+    {{ $menuName := .menuname }}
+    {{ $menu := .menu }}
+    {{ range $menu.ByWeight }}
+        {{ if .HasChildren }}
+					<li class='{{ if $currentPage.HasMenuCurrent $menuName . }}active{{ end }}'>
+              {{ partial "nav/sidebar/itemTop.html" . }}
+              {{ partial "nav/sidebar/expand.html" . }}
+						<ul class='{{ if (partial "nav/sidebar/itemsHaveNoChildren.html" . ) }}itemsHaveNoChildren{{ end }}'>
+                {{ range .Children }}
+									<li class='{{ if or ($currentPage.HasMenuCurrent $menuName . ) ($currentPage.IsMenuCurrent $menuName . )}}active{{ end }}'>
+                      {{ partial "nav/sidebar/item.html" . }}
+                      {{ if .HasChildren }}
+                          {{ partial "nav/sidebar/expand.html" . }}
+													<ul class='{{ if (partial "nav/sidebar/itemsHaveNoChildren.html" . ) }}itemsHaveNoChildren{{ end }}'>
+                              {{ range .Children }}
+																<li class='{{ if $currentPage.IsMenuCurrent $menuName . }}active{{ end }}'>
+                                    {{ partial "nav/sidebar/item.html" . }}
+																</li>
+                              {{ end }}
+													</ul>
+                      {{ end }}
+									</li>
+                {{ end }}
+						</ul>
+					</li>
+        {{ else }}
+					<li class='{{ if $currentPage.IsMenuCurrent $menuName . }}active{{ end }}'>
+              {{ partial "nav/sidebar/itemTop.html" . }}
+					</li>
+        {{ end }}
+    {{ end }}
+</ul>
+
+{{- define "partials/nav/sidebar/itemTop.html" -}}
+	<a href="{{ .URL }}">
+      {{- with .Pre -}}<span
+							class="icon icon-bullet icon-bullet-large">{{ . }}</span>{{- end -}}{{ .Name | markdownify }}{{ with .Post }}
+			<span class="icon icon-case">{{ . }}</span>{{ end }}
+	</a>
+{{- end -}}
+
+{{- define "partials/nav/sidebar/item.html" -}}
+	<a href="{{ .URL }}">
+      {{- with .Pre -}}<span class="icon icon-bullet">{{ . }}</span>{{ end }}{{ .Name | markdownify }}{{ with .Post }}
+			<span class="icon">{{ . }}</span>{{ end }}
+	</a>
+{{- end -}}
+
+{{- define "partials/nav/sidebar/expand.html" -}}
+	<input id="menu-{{ .Identifier }}" class="checkbox-menu" type="checkbox">
+	<label class="open-menu" for="menu-{{ .Identifier }}"><span class="icon"></span></label>
+{{- end -}}
+
+{{- define "partials/nav/sidebar/itemsHaveNoChildren.html" -}}
+    {{ $value := true }}
+    {{ range .Children }}
+        {{ if .HasChildren }}
+            {{ $value = false }}
+        {{ end }}
+    {{ end }}
+    {{ return $value }}
+{{ end }}

@@ -1,0 +1,12 @@
+#
+# Theme-specific parameters
+#
+
+# Special images
+image:
+  # Site-wide default image. Overridden by a page- or section-specific front-matter parameter.
+  featured: img/logo_Perplex_theme_for_Hugo_colored.svg
+  # Site wide favicon for browser and OS display
+  favicon:
+    svg: icon/favicon.svg
+    png: icon/favicon.png

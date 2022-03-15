@@ -1,0 +1,13 @@
+#
+# Configuration section for the listing of related pages
+#
+
+includeNewer: true
+threshold: 80
+toLower: false
+
+indices:
+  - name: categories
+    weight: 70
+  - name: tags
+    weight: 30
