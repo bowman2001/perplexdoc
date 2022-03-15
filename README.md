@@ -1,2 +1,1 @@
-# perplexdoc
-Documentation for the Hugo theme Perplex
+# Documentation for the _Hugo_ theme _Perplex_
