@@ -3,7 +3,7 @@
 ##
 
 # The domain of the site
-baseURL: 'https://zen-bhaskara-590b05.netlify.app/'
+baseURL: 'https://perplex.desider.at'
 title: Perplex
 theme:
   - perplex
