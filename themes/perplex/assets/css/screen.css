@@ -208,10 +208,13 @@ html {
   font-family: 'IBM Plex Serif', Georgia, Times, serif;
   font-weight: 450;
   font-style: normal;
+  height: -webkit-fill-available;
 }
 
 body {
   background: #fefcfa;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
