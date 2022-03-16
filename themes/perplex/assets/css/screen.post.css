@@ -585,8 +585,8 @@ img.img-png {
   align-items: stretch;
   flex-direction: column;
   height: 100%;
-  -webkit-animation: fadeinsite 150ms;
-          animation: fadeinsite 150ms;
+  -webkit-animation: fadeinsite 500ms;
+          animation: fadeinsite 500ms;
   grid-area: main;
   scroll-behavior: smooth;
   margin-left: 0rem;

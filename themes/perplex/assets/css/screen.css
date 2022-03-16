@@ -432,7 +432,7 @@ img.img-svg, img.img-png {
   align-items: stretch;
   flex-direction: column;
   height: 100%;
-  animation: fadeinsite 150ms;
+  animation: fadeinsite 500ms;
   grid-area: main;
   scroll-behavior: smooth;
   margin-left: var(--pmv);
