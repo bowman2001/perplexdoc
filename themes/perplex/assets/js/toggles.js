@@ -18,12 +18,15 @@ let closeBtn = document.querySelector('#close-sidebar');
 let sidebar = document.querySelector('#sidebar');
 let menu = document.querySelector('#menu');
 
-sidebarBtn.addEventListener('click', function() {
-    menu.classList.toggle('is-visible');
-    sidebarBtn.classList.toggle('is-visible');
-    sidebar.classList.toggle('is-visible');
-
-})
+if( sidebarBtn ) {
+    sidebarBtn.addEventListener('click', function () {
+        if( menu ) {
+            menu.classList.toggle('is-visible');
+        }
+        sidebarBtn.classList.toggle('is-visible');
+        sidebar.classList.toggle('is-visible');
+    })
+}
 
 closeBtn.addEventListener('click', function() {
     menu.classList.toggle('is-visible');

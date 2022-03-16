@@ -1502,8 +1502,10 @@ figure > figcaption .attr {
   margin-bottom: 0;
   scroll-margin-top: 3rem;
 }
-.md > p + ul, .md > p + ol {
-  margin-top: -1rem;
+@media screen and (min-width: 34em) {
+  .md > p + ul, .md > p + ol {
+    margin-top: -1rem;
+  }
 }
 .md dd > p + ol, .md dd p + ul {
   padding-top: 1rem;
@@ -2109,12 +2111,17 @@ figure > figcaption .attr {
 }
 
 .md .asciicast {
-  margin: 0 2rem 1rem 2rem !important;
+  margin-top: 1rem !important;
   padding: 1rem 0 0.5rem 0 !important;
   max-width: 70rem;
   text-align: center;
   border-radius: 0.25rem;
   background-color: #f9efe6;
+}
+@media screen and (min-width: 34em) {
+  .md .asciicast {
+    margin: 0 2rem 1rem 2rem !important;
+  }
 }
 @media screen and (min-width: 48em) {
   .md > .vimeo {
