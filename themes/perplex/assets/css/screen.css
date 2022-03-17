@@ -1143,19 +1143,19 @@ figure > figcaption .attr {
 .md a {
   transition: text-decoration 150ms;
   text-decoration: underline;
-  color: #0072a7;
+  color: #00608d;
   text-decoration-thickness: 0.125em;
-  text-decoration-color: rgba(0, 114, 167, 0.1);
+  text-decoration-color: rgba(0, 96, 141, 0.1);
 }
 .md a:hover, .md a:focus {
-  text-decoration-color: rgba(0, 114, 167, 0.67);
+  text-decoration-color: rgba(0, 96, 141, 0.67);
 }
 .md a[href^=http] {
-  color: #008f75;
-  text-decoration-color: rgba(0, 143, 117, 0.1);
+  color: #007560;
+  text-decoration-color: rgba(0, 117, 96, 0.1);
 }
 .md a[href^=http]:hover, .md a[href^=http]:focus {
-  text-decoration-color: rgba(0, 143, 117, 0.67);
+  text-decoration-color: rgba(0, 117, 96, 0.67);
 }
 .md pre :target {
   text-decoration: none;
