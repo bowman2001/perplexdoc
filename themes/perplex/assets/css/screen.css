@@ -620,12 +620,6 @@ img.img-svg, img.img-png {
 }
 
 #masthead {
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  width: 100%;
-  height: var(--tnh);
-  background: black;
   grid-row: 1;
   grid-column: 1 / 5;
 }
@@ -649,11 +643,13 @@ img.img-svg, img.img-png {
 }
 
 #logo {
+  position: fixed;
   grid-area: logo;
 }
 
 #menu {
   grid-area: menu;
+  position: fixed;
   left: -100%;
   transition: left 300ms ease-in-out;
   padding: 1rem calc(2rem + var(--pmv));
@@ -671,10 +667,11 @@ img.img-svg, img.img-png {
 
 #control {
   grid-area: control;
+  position: fixed;
 }
 
 #toggle-sidebar {
-  position: relative;
+  position: fixed;
   left: -0.25rem;
   margin-right: 0.75rem;
 }
@@ -685,6 +682,10 @@ img.img-svg, img.img-png {
   }
 }
 
+#toggle-toc {
+  position: fixed;
+}
+
 @media screen and (min-width: 120em) {
   #toggle-toc {
     display: none;
@@ -692,12 +693,13 @@ img.img-svg, img.img-png {
 }
 
 .l-masthead {
-  position: relative;
-  z-index: 101;
+  position: fixed;
+  z-index: 100;
   display: flex;
+  width: 100%;
+  height: var(--tnh);
   align-items: center;
   flex-direction: row;
-  height: var(--tnh);
   background: black;
   color: #fff;
   padding: 1rem 2rem;

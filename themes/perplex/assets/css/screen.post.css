@@ -708,13 +708,6 @@ img.img-png {
 }
 
 #masthead {
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  width: 100%;
-  height: 5rem;
-  height: var(--tnh);
-  background: #000;
   grid-row: 1;
   grid-column: 1 / 5;
 }
@@ -738,11 +731,13 @@ img.img-png {
 }
 
 #logo {
+  position: fixed;
   grid-area: logo;
 }
 
 #menu {
   grid-area: menu;
+  position: fixed;
   left: -100%;
   transition: left 300ms ease-in-out;
   padding: 1rem calc(2rem + 0rem);
@@ -761,10 +756,11 @@ img.img-png {
 
 #control {
   grid-area: control;
+  position: fixed;
 }
 
 #toggle-sidebar {
-  position: relative;
+  position: fixed;
   left: -0.25rem;
   margin-right: .75rem;
 }
@@ -775,6 +771,10 @@ img.img-png {
   }
 }
 
+#toggle-toc {
+  position: fixed;
+}
+
 @media screen and (min-width: 120em) {
   #toggle-toc {
     display: none;
@@ -782,13 +782,14 @@ img.img-png {
 }
 
 .l-masthead {
-  position: relative;
-  z-index: 101;
+  position: fixed;
+  z-index: 100;
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  width: 100%;
   height: 5rem;
   height: var(--tnh);
+  align-items: center;
+  flex-direction: row;
   background: #000;
   color: #fff;
   padding: 1rem 2rem;
