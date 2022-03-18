@@ -1,5 +1,3 @@
-@charset "utf-8";
-
 html,
 body,
 div,
@@ -116,15 +114,10 @@ hr {
   margin: 0;
 }
 
-/*
- * IBM Plex font family
- *
- * This family is very homogeneous and therefore easy to calibrate
- */
 .icon {
   display: inline-block;
   position: relative;
-  bottom: 0.0625em;
+  bottom: .0625em;
   left: 0;
   font-family: "Material Icons";
   font-size: 1em;
@@ -140,7 +133,7 @@ hr {
 }
 
 .icon-case {
-  bottom: 0.1em;
+  bottom: .1em;
   font-size: 1.334em;
 }
 
@@ -155,46 +148,16 @@ hr {
   width: 5rem;
 }
 
-/*
- * Google Material Icons
- */
-/**
- * Calculate the luminance for a color.
- * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
- */
-/**
- * Calculate the contrast ratio between two colors.
- * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
- */
-/**
- * Determine whether to use dark or light text on top of given color.
- * Returns black for dark text and white for light text.
- */
-/*
- * Align fonts to a vertical x-grid
- */
 .footnotes {
-  /* These are technically the same, but use both */
   word-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
 }
 
-/**
- * Clearfix for modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
 .cf:before,
 .cf:after {
   content: " ";
-  /* 1 */
   display: table;
-  /* 2 */
 }
 
 .cf:after {
@@ -271,9 +234,6 @@ hr {
   }
 }
 
-/*
- * Global HTML
- */
 *,
 *:before,
 *:after {
@@ -328,7 +288,7 @@ em > em {
 
 b,
 strong {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 99%;
 }
 
@@ -483,7 +443,7 @@ ol li:empty:before {
 img {
   width: 100%;
   height: auto;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
 }
 
 img.img-svg,
@@ -626,7 +586,7 @@ img.img-png {
 @media screen and (min-width: 48em) {
   #sidebar {
     width: 35rem;
-    border-right: 1px solid #eeeeee;
+    border-right: 1px solid #eee;
   }
 }
 
@@ -642,6 +602,7 @@ img.img-png {
   overflow-y: auto;
   padding: 0 0rem;
   padding: 0 var(--pmv);
+  background-color: #fefcfa;
   scrollbar-color: #ebb923 #f8e9da;
 }
 
@@ -696,14 +657,6 @@ img.img-png {
   }
 }
 
-/* #sidebar-left {
-	position: fixed;
-	left: calc(0.5rem + 2rem * var(--se));
-	z-index: 2;
-	@media screen and (min-width: $bp-3col) {
-		position: relative;
-	}
-} */
 .l-wrap-content {
   display: flex;
   align-items: stretch;
@@ -755,12 +708,13 @@ img.img-png {
 }
 
 #masthead {
-  position: relative;
+  position: fixed;
+  top: 0;
   z-index: 100;
   width: 100%;
   height: 5rem;
   height: var(--tnh);
-  background: black;
+  background: #000;
   grid-row: 1;
   grid-column: 1 / 5;
 }
@@ -812,7 +766,7 @@ img.img-png {
 #toggle-sidebar {
   position: relative;
   left: -0.25rem;
-  margin-right: 0.75rem;
+  margin-right: .75rem;
 }
 
 @media screen and (min-width: 63em) {
@@ -835,7 +789,7 @@ img.img-png {
   flex-direction: row;
   height: 5rem;
   height: var(--tnh);
-  background: black;
+  background: #000;
   color: #fff;
   padding: 1rem 2rem;
 }
@@ -876,11 +830,11 @@ img.img-png {
   font-style: normal;
   font-size: 2.86rem;
   line-height: 3rem;
-  padding-top: 0.92893rem;
+  padding-top: .92893rem;
   padding-bottom: 1.07107rem;
   margin-bottom: 0;
   scroll-margin-top: 2.5rem;
-  letter-spacing: 0.05em;
+  letter-spacing: .05em;
   text-transform: uppercase;
   color: inherit;
 }
@@ -938,12 +892,6 @@ img.img-png {
   }
 }
 
-/* .l-textbox-nav {
-	border-radius: $s-hf-radius $s-hf-radius 0 0;
-	@media screen and (min-width: $bp-4col) {
-		border-radius: 0 0 $s-hf-radius $s-hf-radius;
-	}
-} */
 @media screen and (min-width: 34em) {
   .left,
   .right {
@@ -996,7 +944,7 @@ img.img-png {
 figure > figcaption {
   font-size: 1.43rem;
   line-height: 2rem;
-  padding-top: 0.464465rem;
+  padding-top: .464465rem;
   margin-bottom: -0.464465rem;
   padding-bottom: 0;
   scroll-margin-top: 4rem;
@@ -1045,7 +993,7 @@ figure > figcaption .attr {
 }
 
 .icon-bullet {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, .4);
 }
 
 .active > a > .icon-bullet {
@@ -1059,15 +1007,15 @@ figure > figcaption .attr {
   font-style: normal;
   font-size: 2.86rem;
   line-height: 3rem;
-  padding-top: 0.42893rem;
+  padding-top: .42893rem;
   padding-bottom: calc(0.57107rem + 1 * 0rem);
   padding-bottom: calc(0.57107rem + 1 * var(--es));
   margin-bottom: 0;
   scroll-margin-top: 3rem;
   text-transform: uppercase;
   color: #222;
-  letter-spacing: 0.02em;
-  word-spacing: 0.06em;
+  letter-spacing: .02em;
+  word-spacing: .06em;
 }
 
 .title {
@@ -1085,13 +1033,13 @@ figure > figcaption .attr {
   font-style: italic;
   font-size: 1.9375rem;
   line-height: 3rem;
-  margin-top: -0.22559375rem;
+  margin-top: -.22559375rem;
   padding-top: 0;
   padding-bottom: calc(0.22559375rem + 1 * 0rem);
   padding-bottom: calc(0.22559375rem + 1 * var(--es));
   margin-bottom: 0;
   scroll-margin-top: 4rem;
-  color: #444444;
+  color: #444;
 }
 
 .title > .description > em,
@@ -1108,8 +1056,8 @@ figure > figcaption .attr {
   color: #7e6767;
   font-size: 1.6145833333rem;
   line-height: 2rem;
-  padding-top: 0.3953385417rem;
-  padding-bottom: 0.6046614583rem;
+  padding-top: .3953385417rem;
+  padding-bottom: .6046614583rem;
   margin-bottom: 0;
   scroll-margin-top: 4rem;
 }
@@ -1136,7 +1084,7 @@ figure > figcaption .attr {
 }
 
 .title.title-list > hr {
-  border-top: 0.35rem solid #222;
+  border-top: .35rem solid #222;
   height: 1rem;
 }
 
@@ -1144,14 +1092,14 @@ figure > figcaption .attr {
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
   font-style: italic;
-  letter-spacing: 0.015em;
+  letter-spacing: .015em;
   margin-top: -0.5rem;
 }
 
 .title.title-big > h1 {
   font-size: 4.29rem;
   line-height: 5rem;
-  margin-top: -0.106605rem;
+  margin-top: -.106605rem;
   padding-top: 0;
   padding-bottom: calc(0.106605rem + 1 * 0rem);
   padding-bottom: calc(0.106605rem + 1 * var(--es));
@@ -1160,14 +1108,14 @@ figure > figcaption .attr {
 }
 
 .title.title-big > hr {
-  border-top: 0.525rem solid #222;
+  border-top: .525rem solid #222;
   height: 1rem;
 }
 
 .title.title-article > h1 {
   font-size: 3.575rem;
   line-height: 4rem;
-  padding-top: 0.6611625rem;
+  padding-top: .6611625rem;
   padding-bottom: calc(0.3388375rem + 1 * 0rem);
   padding-bottom: calc(0.3388375rem + 1 * var(--es));
   margin-bottom: 0;
@@ -1191,22 +1139,12 @@ figure > figcaption .attr {
     font-weight: 600;
     font-size: 4.29rem;
     line-height: 5rem;
-    padding-top: 0.893395rem;
+    padding-top: .893395rem;
     padding-bottom: calc(0.106605rem + 1 * 0rem);
     padding-bottom: calc(0.106605rem + 1 * var(--es));
     margin-bottom: 0;
     scroll-margin-top: 1rem;
   }
-}
-
-.md {
-  /* .hbr:before {
-      content: " ";
-      @media screen and (min-width: $bp-m-opt-small) {
-          content: "\A";
-          white-space: pre;
-      }
-  } */
 }
 
 .md h1,
@@ -1228,9 +1166,9 @@ figure > figcaption .attr {
   position: relative;
   z-index: 10;
   left: -0.5rem;
-  padding: 0 0.5rem;
+  padding: 0 .5rem;
   transition: background-color 500ms, color 500ms, border-radius 500ms;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   background-color: transparent;
 }
 
@@ -1262,7 +1200,7 @@ figure > figcaption .attr {
 .md h5 > span > a:focus,
 .md h6 > span > a:hover,
 .md h6 > span > a:focus {
-  color: black;
+  color: #000;
 }
 
 .md h1 > span:hover a,
@@ -1277,7 +1215,7 @@ figure > figcaption .attr {
 .md h5 > span:focus a,
 .md h6 > span:hover a,
 .md h6 > span:focus a {
-  color: black;
+  color: #000;
 }
 
 .md h1:target > span,
@@ -1303,22 +1241,22 @@ figure > figcaption .attr {
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  letter-spacing: 0.015em;
-  word-spacing: 0.045em;
-  color: #222222;
+  letter-spacing: .015em;
+  word-spacing: .045em;
+  color: #222;
 }
 
 .md h3 {
   font-size: 2.145rem;
   line-height: 3rem;
   padding-top: 1.6966975rem;
-  padding-bottom: 0.3033025rem;
+  padding-bottom: .3033025rem;
   margin-bottom: 0;
   scroll-margin-top: 2rem;
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 0.005em;
+  letter-spacing: .005em;
   color: #222;
 }
 
@@ -1326,14 +1264,14 @@ figure > figcaption .attr {
   font-size: 2.002rem;
   line-height: 2rem;
   padding-top: 1.750251rem;
-  padding-bottom: 0.249749rem;
+  padding-bottom: .249749rem;
   margin-bottom: 0;
   scroll-margin-top: 2.5rem;
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
   font-style: normal;
-  letter-spacing: 0.005em;
-  word-spacing: 0.015em;
+  letter-spacing: .005em;
+  word-spacing: .015em;
   color: #222;
 }
 
@@ -1356,22 +1294,22 @@ figure > figcaption .attr {
 .md h5 {
   font-size: 1.93rem;
   line-height: 3rem;
-  padding-top: 0.777215rem;
+  padding-top: .777215rem;
   margin-bottom: -0.777215rem;
   padding-bottom: 0;
   scroll-margin-top: 3rem;
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
   font-style: normal;
-  letter-spacing: 0.005em;
-  word-spacing: 0.015em;
+  letter-spacing: .005em;
+  word-spacing: .015em;
   color: #111;
 }
 
 .md h6 {
   font-size: 1.93rem;
   line-height: 3rem;
-  padding-top: 0.777215rem;
+  padding-top: .777215rem;
   margin-bottom: -0.777215rem;
   padding-bottom: 0;
   scroll-margin-top: 3rem;
@@ -1388,14 +1326,14 @@ figure > figcaption .attr {
 
 .md .note h5,
 .md .note h6 {
-  color: #555555;
+  color: #555;
 }
 
 .md .h-warn,
 .md .h-info,
 .md .h-tip {
   position: relative;
-  margin-right: 0.5rem;
+  margin-right: .5rem;
 }
 
 .md .h-warn > span,
@@ -1403,12 +1341,12 @@ figure > figcaption .attr {
 .md .h-tip > span {
   position: relative;
   left: -0.5rem;
-  padding: 0 0.5rem;
-  border-radius: 0.5rem;
+  padding: 0 .5rem;
+  border-radius: .5rem;
 }
 
 .md .h-warn {
-  color: #ffffff;
+  color: #fff;
 }
 
 .md .h-warn > span,
@@ -1438,26 +1376,26 @@ figure > figcaption .attr {
   scroll-margin-top: calc(2rem - 1 * var(--es));
   font-weight: 600;
   text-transform: none;
-  letter-spacing: 0.005em;
-  word-spacing: 0.015em;
-  color: #222222;
+  letter-spacing: .005em;
+  word-spacing: .015em;
+  color: #222;
 }
 
 .md.md-article h3 {
   font-size: 2.3833333333rem;
   line-height: 3rem;
   padding-top: 1.6074416667rem;
-  padding-bottom: 0.3925583333rem;
+  padding-bottom: .3925583333rem;
   margin-bottom: 0;
   scroll-margin-top: 2rem;
   font-weight: 600;
-  letter-spacing: 0.005em;
+  letter-spacing: .005em;
   color: #222;
 }
 
 @-webkit-keyframes anchorflash {
   from {
-    background-color: #000088;
+    background-color: #008;
   }
 
   to {
@@ -1467,7 +1405,7 @@ figure > figcaption .attr {
 
 @keyframes anchorflash {
   from {
-    background-color: #000088;
+    background-color: #008;
   }
 
   to {
@@ -1489,40 +1427,40 @@ figure > figcaption .attr {
   transition: text-decoration 150ms, -webkit-text-decoration 150ms;
   text-decoration: underline;
   color: #00608d;
-  text-decoration-thickness: 0.125em;
-  -webkit-text-decoration-color: rgba(0, 96, 141, 0.1);
-          text-decoration-color: rgba(0, 96, 141, 0.1);
+  text-decoration-thickness: .125em;
+  -webkit-text-decoration-color: rgba(0, 96, 141, .1);
+          text-decoration-color: rgba(0, 96, 141, .1);
 }
 
 .md a:hover,
 .md a:focus {
-  -webkit-text-decoration-color: rgba(0, 96, 141, 0.67);
-          text-decoration-color: rgba(0, 96, 141, 0.67);
+  -webkit-text-decoration-color: rgba(0, 96, 141, .67);
+          text-decoration-color: rgba(0, 96, 141, .67);
 }
 
 .md a[href^=http] {
   color: #007560;
-  -webkit-text-decoration-color: rgba(0, 117, 96, 0.1);
-          text-decoration-color: rgba(0, 117, 96, 0.1);
+  -webkit-text-decoration-color: rgba(0, 117, 96, .1);
+          text-decoration-color: rgba(0, 117, 96, .1);
 }
 
 .md a[href^=http]:hover,
 .md a[href^=http]:focus {
-  -webkit-text-decoration-color: rgba(0, 117, 96, 0.67);
-          text-decoration-color: rgba(0, 117, 96, 0.67);
+  -webkit-text-decoration-color: rgba(0, 117, 96, .67);
+          text-decoration-color: rgba(0, 117, 96, .67);
 }
 
 .md pre :target {
   text-decoration: none;
-  outline: ridge #000088;
+  outline: ridge #008;
   scroll-margin-top: 6rem;
 }
 
 .md del,
 .md ins {
-  -webkit-text-decoration-color: #aa0000;
-          text-decoration-color: #aa0000;
-  text-decoration-thickness: 0.125em;
+  -webkit-text-decoration-color: #a00;
+          text-decoration-color: #a00;
+  text-decoration-thickness: .125em;
   -webkit-text-decoration-skip: auto;
           text-decoration-skip: auto;
 }
@@ -1540,7 +1478,7 @@ figure > figcaption .attr {
 .md sup,
 .md sub {
   position: relative;
-  font-size: 0.6666667em;
+  font-size: .6666667em;
   font-weight: 500;
   line-height: 1;
   font-feature-settings: "lnum" on;
@@ -1565,14 +1503,14 @@ figure > figcaption .attr {
   font-style: normal;
   line-height: 2.2rem;
   min-width: 2.4rem;
-  margin: 0 0.2rem;
-  padding: 0 0.5rem 0.2rem 0.5rem;
+  margin: 0 .2rem;
+  padding: 0 .5rem .2rem .5rem;
   text-align: center;
-  letter-spacing: 0.05em;
-  border: 0.1em solid #a2a2a2;
-  border-radius: 0.5rem;
+  letter-spacing: .05em;
+  border: .1em solid #a2a2a2;
+  border-radius: .5rem;
   background-color: #eee;
-  box-shadow: 0 0.1em 0.2em #a2a2a2;
+  box-shadow: 0 .1em .2em #a2a2a2;
 }
 
 .md cite {
@@ -1603,10 +1541,10 @@ figure > figcaption .attr {
   font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
   font-weight: 450;
   line-height: 1;
-  margin: 0 0.1em;
-  padding: 0 0.25em;
+  margin: 0 .1em;
+  padding: 0 .25em;
   text-transform: none;
-  border: 0.1rem solid rgba(0,0,0,0.06667);
+  border: .1rem solid rgba(0,0,0,0.06667);
   background-color: #fcf6ef;
 }
 
@@ -1623,15 +1561,15 @@ figure > figcaption .attr {
   font-style: normal;
   font-size: 1.43rem;
   line-height: 2rem;
-  padding-top: 0.464465rem;
-  padding-bottom: 0.535535rem;
+  padding-top: .464465rem;
+  padding-bottom: .535535rem;
   margin-bottom: 0;
   scroll-margin-top: 4rem;
   width: 100%;
   word-break: normal;
   -webkit-hyphens: none;
           hyphens: none;
-  border: 0.1rem solid rgba(0,0,0,0.06667);
+  border: .1rem solid rgba(0,0,0,0.06667);
 }
 
 .md pre code {
@@ -1654,21 +1592,13 @@ figure > figcaption .attr {
 .md .highlight {
   overflow: auto;
   max-height: 200rem;
-  padding: 0.9rem 0;
-  /* td:last-child code:before {
-      display: block;
-      content: "Code";
-      @include font-shapes(sans-cond, medium);
-      height: 2rem;
-      padding-bottom: 1rem;
-      width: 100%;
-  } */
+  padding: .9rem 0;
 }
 
 .md .highlight > div,
 .md .highlight > pre {
   background-color: #fcf6ef !important;
-  border: 0.1rem solid rgba(0,0,0,0.06667);
+  border: .1rem solid rgba(0,0,0,0.06667);
 }
 
 .md .highlight > div pre,
@@ -1711,13 +1641,13 @@ figure > figcaption .attr {
   font-size: 1.43rem;
   line-height: 1.5rem;
   padding-top: 1.214465rem;
-  padding-bottom: 0.785535rem;
+  padding-bottom: .785535rem;
   margin-bottom: 0;
   scroll-margin-top: 3.5rem;
 }
 
 .md .note p > code {
-  color: #555566;
+  color: #556;
 }
 
 .md .note .highlight {
@@ -1755,17 +1685,6 @@ figure > figcaption .attr {
   padding-bottom: 0;
 }
 
-/* @supports (-moz-appearance:none) {
-    .md {
-        ul, ol {
-            padding-left: 2rem;
-
-            > li {
-                padding-left: 1rem;
-            }
-        }
-    }
-} */
 .md dl dt {
   text-align: left;
 }
@@ -1842,9 +1761,9 @@ figure > figcaption .attr {
 
 .md li input[type=checkbox]:disabled {
   margin: 0 1em 0 0;
-  color: #555555;
-  border-color: #555555;
-  background-color: #555555;
+  color: #555;
+  border-color: #555;
+  background-color: #555;
 }
 
 .md {
@@ -1895,7 +1814,7 @@ figure > figcaption .attr {
 .md > ol,
 .md > blockquote,
 .md > dl {
-  transition: background-color 0.5s;
+  transition: background-color .5s;
   text-align: left;
   text-align: var(--ta);
   background-color: transparent;
@@ -1906,7 +1825,7 @@ figure > figcaption .attr {
 .md > ol:target,
 .md > blockquote:target,
 .md > dl:target {
-  border-radius: 0.25em;
+  border-radius: .25em;
   background-color: #c0ebff;
 }
 
@@ -1940,10 +1859,10 @@ figure > figcaption .attr {
 .md blockquote.blockquote-hero > p:first-child:before {
   position: absolute;
   font-size: 400%;
-  top: 0.3em;
+  top: .3em;
   left: -4.5rem;
   content: "“";
-  color: rgba(34, 34, 34, 0.15);
+  color: rgba(34, 34, 34, .15);
 }
 
 .md blockquote.blockquote-hero > p:last-child {
@@ -1953,10 +1872,10 @@ figure > figcaption .attr {
 .md blockquote.blockquote-hero > p:last-child:after {
   position: absolute;
   font-size: 400%;
-  top: 0.3em;
+  top: .3em;
   right: -3.5rem;
   content: "”";
-  color: rgba(34, 34, 34, 0.15);
+  color: rgba(34, 34, 34, .15);
 }
 
 .md > hr {
@@ -1964,7 +1883,7 @@ figure > figcaption .attr {
   margin-top: calc(1.4rem + 0.5 * var(--es));
   padding-bottom: calc(0.5rem + 1.5 * 0rem);
   padding-bottom: calc(0.5rem + 1.5 * var(--es));
-  border-top: 0.1rem solid #a2a2a2;
+  border-top: .1rem solid #a2a2a2;
   margin-left: 2rem;
   margin-right: 2rem;
   max-width: 70rem;
@@ -1981,7 +1900,7 @@ figure > figcaption .attr {
 .md > div {
   font-size: 1.93rem;
   line-height: 3rem;
-  padding-top: 0.777215rem;
+  padding-top: .777215rem;
   padding-bottom: calc(0.222785rem + 1 * 0rem);
   padding-bottom: calc(0.222785rem + 1 * var(--es));
   margin-bottom: 0;
@@ -2008,7 +1927,7 @@ figure > figcaption .attr {
 .md .p-big {
   font-size: 2.5733333333rem;
   line-height: 4rem;
-  padding-top: 0.7029533333rem;
+  padding-top: .7029533333rem;
   padding-bottom: 1.2970466667rem;
   margin-bottom: 0;
   scroll-margin-top: 1.3333333333rem;
@@ -2017,7 +1936,7 @@ figure > figcaption .attr {
 .md .p-small {
   font-size: 1.43rem;
   line-height: 2rem;
-  padding-top: 0.464465rem;
+  padding-top: .464465rem;
   padding-bottom: calc(0.535535rem + 1 * 0rem);
   padding-bottom: calc(0.535535rem + 1 * var(--es));
   margin-bottom: 0;
@@ -2037,13 +1956,13 @@ figure > figcaption .attr {
   font-weight: 700;
   font-style: normal;
   position: absolute;
-  top: calc(50% - 0.5em);
+  top: calc(50% - .5em);
   left: calc(50% - 5ch);
   z-index: -1;
   font-size: 200%;
   content: "BLIND TEXT";
   transform: rotate(-10deg);
-  color: rgba(0, 131, 192, 0.15);
+  color: rgba(0, 131, 192, .15);
 }
 
 .md .blind.blind-short:after {
@@ -2330,8 +2249,8 @@ figure > figcaption .attr {
 .md.md-serif > blockquote > dl {
   font-size: 1.809375rem;
   line-height: 3rem;
-  padding-top: 0.8223890625rem;
-  padding-bottom: 0.1776109375rem;
+  padding-top: .8223890625rem;
+  padding-bottom: .1776109375rem;
   margin-bottom: 0;
   scroll-margin-top: 3rem;
 }
@@ -2345,8 +2264,8 @@ figure > figcaption .attr {
   font-style: italic;
   font-size: 1.93rem;
   line-height: 3rem;
-  padding-top: 0.777215rem;
-  padding-bottom: 0.222785rem;
+  padding-top: .777215rem;
+  padding-bottom: .222785rem;
   margin-bottom: 0;
   scroll-margin-top: 3rem;
 }
@@ -2375,7 +2294,7 @@ figure > figcaption .attr {
   font-style: normal;
   font-size: 1.809375rem;
   line-height: 3rem;
-  padding-top: 0.8223890625rem;
+  padding-top: .8223890625rem;
   padding-bottom: calc(0.1776109375rem + 1 * 0rem);
   padding-bottom: calc(0.1776109375rem + 1 * var(--es));
   margin-bottom: 0;
@@ -2391,8 +2310,8 @@ figure > figcaption .attr {
   font-style: italic;
   font-size: 1.9375rem;
   line-height: 3rem;
-  padding-top: 0.77440625rem;
-  padding-bottom: 0.22559375rem;
+  padding-top: .77440625rem;
+  padding-bottom: .22559375rem;
   margin-bottom: 0;
   scroll-margin-top: 3rem;
 }
@@ -2419,14 +2338,14 @@ figure > figcaption .attr {
   float: left;
   font-size: 6.3rem;
   line-height: 1;
-  margin: -0.2rem 0.35rem -1rem -0.2rem;
+  margin: -0.2rem .35rem -1rem -0.2rem;
 }
 
 .md.md-dropcap3 > p:first-child:first-letter {
   float: left;
   font-size: 10.5rem;
   line-height: 1;
-  margin: -0.9rem 0.5rem -1rem -0.2rem;
+  margin: -0.9rem .5rem -1rem -0.2rem;
 }
 
 .md.md-list {
@@ -2461,84 +2380,6 @@ figure > figcaption .attr {
   }
 }
 
-.md {
-  /* &.md-margin {
-  	figure {
-  		&.full {
-  			max-width: 100%;
-  		}
-  		&.xlarge {
-  			max-width: 3 * $s-colg - $s-gutter;
-  			margin-left: $s-colhalfg;
-  			&.left {
-  				float: none;
-  				width: auto;
-  				margin-left: 0;
-  			}
-  		}
-  		&.large {
-  			margin-left: $s-colg;
-  			&.right, {
-  				margin-left: $s-gutter;
-  			}
-  			&.left {
-  				margin-left: 0;
-  				margin-right: $s-gutter;
-  			}
-  		}
-
-
-  	    &.left, &.right {
-  			@media screen and (min-width: $bp-2col) {
-  				margin-bottom: 1rem;
-  			}
-  		}
-
-  		&.left {
-  			&.tiny {
-  				margin-right: $s-gutter-half;
-  				@media screen and (min-width: $bp-3col) {
-  				margin-left: $s-colghalf;
-  				}
-  			}
-  		}
-  		&.right {
-  			&.tiny {
-  				margin-left: $s-gutter-half;
-  				@media screen and (min-width: $bp-3col) {
-  				margin-right: $s-colghalf;
-  				}
-  			}
-  		}
-  		&.normal.caption-right {
-  			@media screen and (min-width: $bp-3col) {
-  				display: flex;
-  				justify-content: space-between;
-  				padding-bottom: 0;
-  				background-color: transparent;
-  				figcaption {
-  					position: absolute;
-  					top: 0;
-  					left: $s-m-opt + $s-gutter;
-  					flex-direction: column;
-  					width: $s-col;
-  					height: 100%;
-  					padding-right: 0;
-  					padding-left: 0;
-
-  					.caption, .attr {
-  						width: 100%;
-  						padding-right: 0;
-  						padding-bottom: 1rem;
-  						text-align: left;
-  					}
-  				}
-  			}
-  		}
-  	}
-  } */
-}
-
 .md figure {
   position: relative;
   margin-top: 1.75rem;
@@ -2550,7 +2391,7 @@ figure > figcaption .attr {
 .md figure > figcaption {
   font-size: 1.43rem;
   line-height: 2rem;
-  padding-top: 0.714465rem;
+  padding-top: .714465rem;
   margin-bottom: -0.464465rem;
   padding-bottom: 0;
   scroll-margin-top: 3.75rem;
@@ -2581,8 +2422,8 @@ figure > figcaption .attr {
 .md figure > figcaption .caption h6 {
   font-size: 1.2766666667rem;
   line-height: 2rem;
-  padding-top: 0.5218883333rem;
-  margin-bottom: -0.5218883333rem;
+  padding-top: .5218883333rem;
+  margin-bottom: -.5218883333rem;
   padding-bottom: 0;
   scroll-margin-top: 4rem;
 }
@@ -2655,8 +2496,8 @@ figure > figcaption .attr {
 .md .embed {
   font-size: 1.43rem;
   line-height: 2rem;
-  padding-top: 0.964465rem;
-  padding-bottom: 0.535535rem;
+  padding-top: .964465rem;
+  padding-bottom: .535535rem;
   margin-bottom: 0;
   scroll-margin-top: 3.5rem;
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
@@ -2719,7 +2560,7 @@ figure > figcaption .attr {
 
 .md .i-border > .embed > img {
   box-shadow: none;
-  border: 1px solid rgba(34, 34, 34, 0.25);
+  border: 1px solid rgba(34, 34, 34, .25);
 }
 
 .md .i-right .embed {
@@ -2745,9 +2586,9 @@ figure > figcaption .attr {
     font-size: 1.43rem;
     line-height: 2rem;
     padding-top: 4.114465rem;
-    padding-bottom: 0.885535rem;
+    padding-bottom: .885535rem;
     margin-bottom: 0;
-    scroll-margin-top: 0.35rem;
+    scroll-margin-top: .35rem;
   }
 
   .md .i-midst.i-small .embed,
@@ -2767,10 +2608,10 @@ figure > figcaption .attr {
 
 .md .asciicast {
   margin-top: 1rem !important;
-  padding: 1rem 0 0.5rem 0 !important;
+  padding: 1rem 0 .5rem 0 !important;
   max-width: 70rem;
   text-align: center;
-  border-radius: 0.25rem;
+  border-radius: .25rem;
   background-color: #f9efe6;
 }
 
@@ -2790,7 +2631,7 @@ figure > figcaption .attr {
 .md table {
   font-size: 1.93rem;
   line-height: 4.9rem;
-  padding-top: 0.727215rem;
+  padding-top: .727215rem;
   padding-bottom: calc(1.272785rem + 1 * 0rem);
   padding-bottom: calc(1.272785rem + 1 * var(--es));
   margin-bottom: 0;
@@ -2802,7 +2643,7 @@ figure > figcaption .attr {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
   font-style: normal;
-  letter-spacing: 0.01em;
+  letter-spacing: .01em;
   border-bottom: 0.1rem solid #cacaca;
 }
 
@@ -2823,12 +2664,12 @@ figure > figcaption .attr {
 }
 
 .md table tbody > tr:last-child {
-  border-bottom: 0.1rem solid transparent;
+  border-bottom: .1rem solid transparent;
 }
 
 .md table th,
 .md table td {
-  padding: 0 0.5em;
+  padding: 0 .5em;
   border-right: 0.1rem solid #cacaca;
 }
 
@@ -2850,29 +2691,23 @@ figure > figcaption .attr {
   content: "";
 }
 
-/* .table-half-left {
-    @media screen and (min-width: $bp-3col) {
-         float: left;
-         width: calc(50% - $s-gutter);
-     }
-} */
-.md sup[id^=fnref] > a.footnote-ref {
+.md sup[id^=fnref]>a.footnote-ref {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   text-decoration: none;
 }
 
-.md sup[id^=fnref] > a.footnote-ref:before {
+.md sup[id^=fnref]>a.footnote-ref:before {
   content: " [";
 }
 
-.md sup[id^=fnref] > a.footnote-ref:after {
+.md sup[id^=fnref]>a.footnote-ref:after {
   content: "]";
 }
 
 .md sup[id^=fnref]:target {
-  border-radius: 0.25em;
+  border-radius: .25em;
   background-color: #c0ebff;
   scroll-margin-top: 4rem;
 }
@@ -2886,7 +2721,7 @@ figure > figcaption .attr {
   margin: calc(1rem + 1 * 0rem) 0rem;
   margin: calc(1rem + 1 * var(--es)) 0rem;
   padding: 0;
-  border-top: 0.33em solid #444444;
+  border-top: .33em solid #444;
 }
 
 .footnotes > ol {
@@ -2897,7 +2732,7 @@ figure > figcaption .attr {
 .footnotes > ol > li {
   margin-bottom: 1.5rem;
   counter-increment: nr;
-  transition: background-color 0.5s;
+  transition: background-color .5s;
   background-color: transparent;
   page-break-inside: avoid;
   -moz-column-break-inside: avoid;
@@ -2905,7 +2740,7 @@ figure > figcaption .attr {
 }
 
 .footnotes > ol > li:target {
-  border-radius: 0.25em;
+  border-radius: .25em;
   background-color: #c0ebff;
 }
 
@@ -2915,7 +2750,7 @@ figure > figcaption .attr {
   font-style: normal;
   font-size: 1.68875rem;
   line-height: 2.625rem;
-  padding-top: 0.680063125rem;
+  padding-top: .680063125rem;
   margin-bottom: -0.680063125rem;
   padding-bottom: 0;
   scroll-margin-top: 3.375rem;
@@ -2930,8 +2765,8 @@ figure > figcaption .attr {
   font-style: normal;
   font-size: 1.6953125rem;
   line-height: 2.625rem;
-  padding-top: 0.6776054687rem;
-  margin-bottom: -0.6776054687rem;
+  padding-top: .6776054687rem;
+  margin-bottom: -.6776054687rem;
   padding-bottom: 0;
   scroll-margin-top: 3.375rem;
 }
@@ -3035,13 +2870,13 @@ figure > figcaption .attr {
   margin-top: 1.4rem;
   margin-bottom: calc(0.9rem + 1 * 0rem);
   margin-bottom: calc(0.9rem + 1 * var(--es));
-  border-top: 0.1rem solid #b0b0bd;
-  border-bottom: 0.1rem solid #b0b0bd;
+  border-top: .1rem solid #b0b0bd;
+  border-bottom: .1rem solid #b0b0bd;
   background: radial-gradient(#fefcfa, #faefe5);
 }
 
 .note > .content {
-  padding: 0.625rem 2.5rem;
+  padding: .625rem 2.5rem;
   overflow: hidden;
 }
 
@@ -3049,8 +2884,8 @@ figure > figcaption .attr {
 .note > .content h6 {
   font-size: 1.6083333333rem;
   line-height: 2.5rem;
-  padding-top: 0.6476791667rem;
-  margin-bottom: -0.6476791667rem;
+  padding-top: .6476791667rem;
+  margin-bottom: -.6476791667rem;
   padding-bottom: 0;
   scroll-margin-top: 3.5rem;
 }
@@ -3059,14 +2894,14 @@ figure > figcaption .attr {
   text-align: left;
   font-size: 1.6083333333rem;
   line-height: 2.5rem;
-  padding-top: 0.6476791667rem;
-  padding-bottom: 0.3523208333rem;
+  padding-top: .6476791667rem;
+  padding-bottom: .3523208333rem;
   margin-bottom: 0;
   scroll-margin-top: 3.5rem;
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 450;
   font-style: normal;
-  color: #555566;
+  color: #556;
 }
 
 .note > .content > p + p {
@@ -3098,8 +2933,8 @@ figure > figcaption .attr {
   .note > .content h6 {
     font-size: 1.68875rem;
     line-height: 2rem;
-    padding-top: 0.367563125rem;
-    margin-bottom: -0.367563125rem;
+    padding-top: .367563125rem;
+    margin-bottom: -.367563125rem;
     padding-bottom: 0;
     scroll-margin-top: 4rem;
   }
@@ -3110,8 +2945,8 @@ figure > figcaption .attr {
     font-style: normal;
     font-size: 1.68875rem;
     line-height: 2rem;
-    padding-top: 0.367563125rem;
-    padding-bottom: 0.632436875rem;
+    padding-top: .367563125rem;
+    padding-bottom: .632436875rem;
     margin-bottom: 0;
     scroll-margin-top: 4rem;
     color: #86869b;
@@ -3133,9 +2968,9 @@ figure > figcaption .attr {
   font-family: 'IBM Plex Serif', Georgia, Times, serif;
   font-weight: 500;
   font-style: normal;
-  top: 0.1em;
+  top: .1em;
   left: -1rem;
-  font-size: 0.8em;
+  font-size: .8em;
   line-height: 1;
   color: #222;
 }
@@ -3226,7 +3061,7 @@ figure > figcaption .attr {
 }
 
 .note-long > .checkbox-note:not(checked) ~ .open-note > .arrow {
-  border-top: 1rem solid #555566;
+  border-top: 1rem solid #556;
   border-bottom: unset;
 }
 
@@ -3251,7 +3086,7 @@ figure > figcaption .attr {
 
 .note-long > .checkbox-note:checked ~ .open-note > .arrow {
   border-top: unset;
-  border-bottom: 1rem solid #555566;
+  border-bottom: 1rem solid #556;
 }
 
 @media screen and (min-width: 48em) {
@@ -3278,7 +3113,7 @@ nav li a .icon-bullet {
 
 nav li a:hover,
 nav li a:focus {
-  color: black;
+  color: #000;
 }
 
 nav li a:hover .icon-bullet,
@@ -3290,7 +3125,7 @@ nav > ul {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
   font-style: normal;
-  letter-spacing: 0.02em;
+  letter-spacing: .02em;
   color: #777;
 }
 
@@ -3298,7 +3133,7 @@ nav > ul > li > ul {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
-  letter-spacing: 0.01em;
+  letter-spacing: .01em;
   color: #777;
 }
 
@@ -3335,14 +3170,14 @@ nav > ul > li > ul > li > ul {
   font-weight: 700;
   font-style: normal;
   transition: color 300ms ease-in-out, border-bottom 300ms ease-in-out;
-  letter-spacing: 0.05em;
+  letter-spacing: .05em;
   text-transform: uppercase;
-  border-bottom: 0.5rem solid transparent;
+  border-bottom: .5rem solid transparent;
 }
 
 .nav-main > ul > li > a:hover,
 .nav-main > ul > li > a:focus {
-  border-bottom: 0.5rem solid #e00083;
+  border-bottom: .5rem solid #e00083;
 }
 
 @media screen and (min-width: 48em) {
@@ -3407,21 +3242,21 @@ nav > ul > li > ul > li > ul {
 .nav_pagelist > ul h4 {
   font-size: 1.9375rem;
   line-height: 3rem;
-  padding-top: 0.77440625rem;
+  padding-top: .77440625rem;
   margin-bottom: -0.77440625rem;
   padding-bottom: 0;
   scroll-margin-top: 3rem;
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
-  letter-spacing: 0.01em;
+  letter-spacing: .01em;
 }
 
 .nav_pagelist > ul p {
   font-size: 1.6145833333rem;
   line-height: 3rem;
-  padding-top: 0.8953385417rem;
-  padding-bottom: 0.1046614583rem;
+  padding-top: .8953385417rem;
+  padding-bottom: .1046614583rem;
   margin-bottom: 0;
   scroll-margin-top: 3rem;
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
@@ -3436,7 +3271,7 @@ nav > ul > li > ul > li > ul {
   overflow: hidden;
   max-width: 74rem;
   border: 1px solid rgba(0,0,0,0.4);
-  border-radius: 0.5em;
+  border-radius: .5em;
   background-color: #f5f6f7;
 }
 
@@ -3467,7 +3302,7 @@ nav > ul > li > ul > li > ul {
   font-size: 1.544rem;
   line-height: 2rem;
   padding-top: 2.421772rem;
-  padding-bottom: 0.578228rem;
+  padding-bottom: .578228rem;
   margin-bottom: 0;
   scroll-margin-top: 2rem;
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -3480,8 +3315,8 @@ nav > ul > li > ul > li > ul {
 .nav_pages .prev .page > p {
   font-size: 1.43rem;
   line-height: 2rem;
-  padding-top: 0.464465rem;
-  padding-bottom: 0.535535rem;
+  padding-top: .464465rem;
+  padding-bottom: .535535rem;
   margin-bottom: 0;
   scroll-margin-top: 4rem;
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -3495,14 +3330,14 @@ nav > ul > li > ul > li > ul {
   text-transform: uppercase;
   font-size: 1.43rem;
   line-height: 2rem;
-  padding-top: 0.464465rem;
+  padding-top: .464465rem;
   margin-bottom: -0.464465rem;
   padding-bottom: 0;
   scroll-margin-top: 4rem;
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #ffffff;
+  color: #fff;
   background-color: rgba(0,0,0,0.73333);
   grid-row: 1/span 1;
   grid-column: 1/span 2;
@@ -3570,7 +3405,7 @@ nav > ul > li > ul > li > ul {
   line-height: 2rem;
   margin-top: -0.535535rem;
   padding-top: 0;
-  padding-bottom: 0.535535rem;
+  padding-bottom: .535535rem;
   margin-bottom: 0;
   scroll-margin-top: 5rem;
   margin-bottom: 1rem;
@@ -3578,8 +3413,8 @@ nav > ul > li > ul > li > ul {
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #333333;
+  letter-spacing: .04em;
+  color: #333;
 }
 
 .nav-sidebar li {
@@ -3590,8 +3425,8 @@ nav > ul > li > ul > li > ul {
   display: inline-block;
   font-size: 1.43rem;
   line-height: 2rem;
-  padding-top: 0.464465rem;
-  padding-bottom: 0.535535rem;
+  padding-top: .464465rem;
+  padding-bottom: .535535rem;
   margin-bottom: 0;
   scroll-margin-top: 4rem;
   margin-bottom: 1rem;
@@ -3601,11 +3436,11 @@ nav > ul > li > ul > li > ul {
 .nav-sidebar li a .icon-bullet {
   position: absolute;
   left: 0;
-  top: 0.45rem;
+  top: .45rem;
 }
 
 .nav-sidebar li a .icon-bullet-large {
-  top: 0.15rem;
+  top: .15rem;
 }
 
 .nav-sidebar > ul {
@@ -3651,13 +3486,13 @@ nav > ul > li > ul > li > ul {
 
 .nav-sidebar .open-menu > span:after {
   font-family: "Material Icons";
-  content: "\e145";
+  content: "";
 }
 
 .nav-sidebar .checkbox-menu {
   position: absolute;
-  right: 0.25em;
-  top: 0.5em;
+  right: .25em;
+  top: .5em;
   font-size: 1em;
   line-height: 1;
   height: 1em;
@@ -3680,12 +3515,12 @@ nav > ul > li > ul > li > ul {
 }
 
 .nav-sidebar .checkbox-menu:checked ~ .open-menu > span:after {
-  content: "\e15b";
+  content: "";
 }
 
 .nav-sidebar .active > a,
 .nav-sidebar li:focus > a {
-  color: black;
+  color: #000;
 }
 
 .nav-sidebar .active > .checkbox-menu ~ ul,
@@ -3703,12 +3538,12 @@ nav > ul > li > ul > li > ul {
 
 .nav-sidebar .active > .checkbox-menu ~ .open-menu > span:after,
 .nav-sidebar li:focus > .checkbox-menu ~ .open-menu > span:after {
-  content: "\e15b";
+  content: "";
 }
 
 .nav-sidebar .active > .checkbox-menu:checked ~ .open-menu > span:after,
 .nav-sidebar li:focus > .checkbox-menu:checked ~ .open-menu > span:after {
-  content: "\e145";
+  content: "";
 }
 
 nav li:empty {
@@ -3732,26 +3567,26 @@ nav li:empty {
 #toc .nav-toc {
   font-size: 1.43rem;
   line-height: 2rem;
-  padding-top: 0.464465rem;
+  padding-top: .464465rem;
   margin-bottom: -0.464465rem;
   padding-bottom: 0;
   scroll-margin-top: 4rem;
   padding: 1.5rem 1.5rem;
   position: relative;
-  border: 0.1rem solid rgba(0,0,0,0.13333);
+  border: .1rem solid rgba(0,0,0,0.13333);
   background: #1e0313;
   color: #bbb;
-  box-shadow: 0.1rem 0.5rem 0.5rem rgba(0,0,0,0.26667);
-  opacity: 0.9;
+  box-shadow: .1rem .5rem .5rem rgba(0,0,0,0.26667);
+  opacity: .9;
 }
 
 #toc .nav-toc h4 {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 0.05em;
+  letter-spacing: .05em;
   text-transform: uppercase;
-  color: white;
+  color: #fff;
   margin-bottom: 1rem;
 }
 
@@ -3790,7 +3625,7 @@ nav li:empty {
 
 #toc .nav-toc #TableOfContents > ul li > a:hover,
 #toc .nav-toc #TableOfContents > ol li > a:hover {
-  color: white;
+  color: #fff;
 }
 
 #toc .nav-toc #TableOfContents > ul li:before,
