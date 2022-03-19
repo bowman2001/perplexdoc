@@ -234,43 +234,6 @@ hr {
   }
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  overflow: hidden;
-  width: 100vw;
-  height: 100%;
-}
-
-html {
-  font-size: 50%;
-  font-size: var(--fs);
-  font-family: 'IBM Plex Serif', Georgia, Times, serif;
-  font-weight: 450;
-  font-style: normal;
-}
-
-body {
-  background: #fefcfa;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: "liga" on, "clig" on, "dlig" off;
-}
-
-::-moz-selection {
-  background: #c0ebff;
-}
-
-::selection {
-  background: #c0ebff;
-}
-
 i,
 em {
   font-style: italic;
@@ -344,8 +307,8 @@ ol li:empty:before {
 }
 
 .md ol li,
-#toc .nav-toc #TableOfContents ul li,
-#toc .nav-toc #TableOfContents ol li,
+#TableOfContents ul li,
+#TableOfContents ol li,
 .md ul li {
   position: relative;
   padding-left: calc(3rem + 1 * 0rem);
@@ -353,8 +316,8 @@ ol li:empty:before {
 }
 
 .md ol li > p,
-#toc .nav-toc #TableOfContents ul li > p,
-#toc .nav-toc #TableOfContents ol li > p,
+#TableOfContents ul li > p,
+#TableOfContents ol li > p,
 .md ul li > p {
   padding-bottom: 1rem;
   text-align: left;
@@ -362,27 +325,27 @@ ol li:empty:before {
 }
 
 .md ol li:before,
-#toc .nav-toc #TableOfContents ul li:before,
-#toc .nav-toc #TableOfContents ol li:before,
+#TableOfContents ul li:before,
+#TableOfContents ol li:before,
 .md ul li:before {
   position: absolute;
   left: 0;
 }
 
-#toc .nav-toc #TableOfContents ul li:before,
-#toc .nav-toc #TableOfContents ol li:before,
+#TableOfContents ul li:before,
+#TableOfContents ol li:before,
 .md ul li:before {
   font-weight: 700;
 }
 
-#toc .nav-toc #TableOfContents ul li li:before,
-#toc .nav-toc #TableOfContents ol li li:before,
+#TableOfContents ul li li:before,
+#TableOfContents ol li li:before,
 .md ul li li:before {
   font-weight: 500;
 }
 
-#toc .nav-toc #TableOfContents ul li li li:before,
-#toc .nav-toc #TableOfContents ol li li li:before,
+#TableOfContents ul li li li:before,
+#TableOfContents ol li li li:before,
 .md ul li li li:before {
   font-weight: 300;
 }
@@ -391,34 +354,34 @@ ol li:empty:before {
   content: "•";
 }
 
-#toc .nav-toc #TableOfContents ol,
+#TableOfContents ol,
 .md ol {
   counter-reset: ol1;
 }
 
-#toc .nav-toc #TableOfContents ol > li > ol,
+#TableOfContents ol > li > ol,
 .md ol > li > ol {
   counter-reset: ol2;
 }
 
-#toc .nav-toc #TableOfContents ol > li > ol > li > ol,
+#TableOfContents ol > li > ol > li > ol,
 .md ol > li > ol > li > ol {
   counter-reset: ol3;
 }
 
-#toc .nav-toc #TableOfContents ol > li:before,
+#TableOfContents ol > li:before,
 .md ol > li:before {
   content: counter(ol1) ".";
   counter-increment: ol1;
 }
 
-#toc .nav-toc #TableOfContents ol > li > ol > li:before,
+#TableOfContents ol > li > ol > li:before,
 .md ol > li > ol > li:before {
   content: counter(ol2, lower-alpha) ")";
   counter-increment: ol2;
 }
 
-#toc .nav-toc #TableOfContents ol > li > ol > li > ol > li:before,
+#TableOfContents ol > li > ol > li > ol > li:before,
 .md ol > li > ol > li > ol > li:before {
   content: counter(ol3, lower-roman) ".";
   counter-increment: ol3;
@@ -455,54 +418,103 @@ img.img-png {
     padding-right: 2rem;
     padding-left: 2rem;
   }
+}/*!
+ * Copyright (c) [2022.] [Jörg Makowski]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-.l-wrap {
-  overflow-x: hidden;
-  padding: 0rem calc(2 * 0rem);
-  padding: 0rem calc(2 * var(--es));
-  background-color: #fefcfa;
+html,
+body,
+.l-page {
+  height: 100%;
 }
 
-@media screen and (min-width: 63em) {
-  .l-wrap {
-    margin: 0 auto;
-  }
+body {
+  overflow: hidden;
+  width: 100vw;
+}
+
+html {
+  font-size: 50%;
+  font-size: var(--fs);
+  font-family: 'IBM Plex Serif', Georgia, Times, serif;
+  font-weight: 450;
+  font-style: normal;
+}
+
+body {
+  background: #fefcfa;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga" on, "clig" on, "dlig" off;
 }
 
 .l-page {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+::-moz-selection {
+  background: #c0ebff;
+}
+
+::selection {
+  background: #c0ebff;
+}
+
+.l-content {
+  flex: 1 1 auto;
   display: grid;
   position: relative;
   z-index: 1;
-  height: 100%;
+  overflow-y: auto;
   grid-template-columns: 50% 50% 50% 50%;
   grid-template-rows: 1fr;
   grid-template-areas: "left left main main";
 }
 
 @media screen and (min-width: 34em) {
-  .l-page {
+  .l-content {
     grid-template-columns: 2rem repeat(4, 18.5rem) repeat(2, 2rem) repeat(4, 18.5rem) 2rem;
     grid-template-areas: "left left left left left left main main main main main main";
   }
 }
 
 @media screen and (min-width: 48em) {
-  .l-page {
+  .l-content {
     grid-template-columns: 2rem repeat(8, 18.5rem) 2rem;
     grid-template-areas: ". left left main main main main main main main";
   }
 }
 
 @media screen and (min-width: 63em) {
-  .l-page {
+  .l-content {
     grid-template-columns: minmax(2rem, auto) repeat(8, 18.5rem) minmax(2rem, auto);
     grid-template-areas: ". left left main main main main main main main";
   }
 }
 
 @media screen and (min-width: 120em) {
-  .l-page {
+  .l-content {
     grid-template-columns: minmax(2rem, auto) repeat(12, 18.5rem) minmax(2rem, auto);
     grid-template-areas: ". . . left left main main main main main main main main main";
   }
@@ -542,8 +554,6 @@ img.img-png {
   scroll-behavior: smooth;
   margin-left: 0rem;
   margin-left: var(--pmv);
-  padding-top: 5rem;
-  padding-top: var(--tnh);
   scrollbar-color: #ebb923 #f8e9da;
 }
 
@@ -568,7 +578,6 @@ img.img-png {
   z-index: 80;
   transition: left 300ms ease-in-out;
   grid-area: left;
-  height: 100%;
   width: 100%;
 }
 
@@ -596,6 +605,8 @@ img.img-png {
   padding: 0 0rem;
   padding: 0 var(--pmv);
   background-color: #fefcfa;
+  -webkit-animation: fadeinsite 500ms;
+          animation: fadeinsite 500ms;
   scrollbar-color: #ebb923 #f8e9da;
 }
 
@@ -640,13 +651,6 @@ img.img-png {
   }
 }
 
-.l-footer {
-  flex-shrink: 0;
-  z-index: 3;
-  padding: calc(3rem + 2 * 0rem) 0rem;
-  padding: calc(3rem + 2 * var(--es)) 0rem;
-}
-
 .l-box-footer {
   padding-bottom: 6rem;
 }
@@ -678,10 +682,7 @@ img.img-png {
 }
 
 #masthead {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  flex: 0 0 auto;
   height: 5rem;
   height: var(--tnh);
   z-index: 10;
@@ -808,7 +809,7 @@ img.img-png {
   flex-direction: row;
   height: 5rem;
   height: var(--tnh);
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   color: #fff;
 }
 
@@ -822,12 +823,11 @@ img.img-png {
   font-style: normal;
   font-size: 2.86rem;
   line-height: 3rem;
-  margin-top: -.07107rem;
-  padding-top: 0;
-  padding-bottom: .07107rem;
+  padding-top: .92893rem;
+  padding-bottom: 1.07107rem;
   margin-bottom: 0;
-  scroll-margin-top: calc(3.5rem + 5rem - 0 * 0rem);
-  scroll-margin-top: calc(3.5rem + var(--tnh) - 0 * var(--es));
+  scroll-margin-top: calc(2.5rem + 5rem - 0 * 0rem);
+  scroll-margin-top: calc(2.5rem + var(--tnh) - 0 * var(--es));
   letter-spacing: .05em;
   text-transform: uppercase;
   color: inherit;
@@ -933,6 +933,12 @@ img.img-png {
     float: right;
     clear: right;
   }
+}
+
+.l-footer {
+  flex: 0 0 auto;
+  height: 10rem;
+  background-color: #000;
 }
 
 figure > figcaption {
@@ -3634,63 +3640,63 @@ nav li:empty {
   display: inline-block;
 }
 
-#toc .nav-toc #TableOfContents ul li,
-#toc .nav-toc #TableOfContents ol li {
+#TableOfContents ul li,
+#TableOfContents ol li {
   padding-left: 1.5rem;
 }
 
-#toc .nav-toc #TableOfContents ul li > a,
-#toc .nav-toc #TableOfContents ol li > a {
+#TableOfContents ul li > a,
+#TableOfContents ol li > a {
   padding-bottom: 1rem;
 }
 
-#toc .nav-toc #TableOfContents ul li:before {
+#TableOfContents ul li:before {
   content: "•";
 }
 
-#toc .nav-toc #TableOfContents > ul,
-#toc .nav-toc #TableOfContents > ol {
+#TableOfContents > ul,
+#TableOfContents > ol {
   color: inherit;
 }
 
-#toc .nav-toc #TableOfContents > ul li > a,
-#toc .nav-toc #TableOfContents > ol li > a {
+#TableOfContents > ul li > a,
+#TableOfContents > ol li > a {
   color: inherit;
   transition: color 250ms ease-in-out;
 }
 
-#toc .nav-toc #TableOfContents > ul li > a:hover,
-#toc .nav-toc #TableOfContents > ol li > a:hover {
+#TableOfContents > ul li > a:hover,
+#TableOfContents > ol li > a:hover {
   color: #fff;
 }
 
-#toc .nav-toc #TableOfContents > ul li:before,
-#toc .nav-toc #TableOfContents > ol li:before {
+#TableOfContents > ul li:before,
+#TableOfContents > ol li:before {
   color: inherit;
   transition: color 250ms ease-in-out;
 }
 
-#toc .nav-toc #TableOfContents > ul li:hover:before,
-#toc .nav-toc #TableOfContents > ol li:hover:before {
+#TableOfContents > ul li:hover:before,
+#TableOfContents > ol li:hover:before {
   color: #ca167f;
 }
 
-#toc .nav-toc #TableOfContents > ul li,
-#toc .nav-toc #TableOfContents > ol li {
+#TableOfContents > ul li,
+#TableOfContents > ol li {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
-#toc .nav-toc #TableOfContents > ul li li,
-#toc .nav-toc #TableOfContents > ol li li {
+#TableOfContents > ul li li,
+#TableOfContents > ol li li {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
-#toc .nav-toc #TableOfContents > ul li li li,
-#toc .nav-toc #TableOfContents > ol li li li {
+#TableOfContents > ul li li li,
+#TableOfContents > ol li li li {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
   font-style: normal;

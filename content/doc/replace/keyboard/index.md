@@ -34,7 +34,6 @@ The operating system Linux offers these simple keyboard shortcuts to introduce p
 
 {#Alt Gr} + {#Shift} + {#X} 
 : produces '‹'
-{.dl-tight}
 
 ### Copy & Paste in Windows
 
