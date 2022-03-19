@@ -1,5 +1,5 @@
 {{- $js := resources.Get "js/hyphenopoly/Hyphenopoly_Loader.js" | minify | fingerprint -}}
-<script type="text/javascript" src="{{- $js.Permalink -}}" integrity="{{ $js.Data.Integrity }}"></script>
+<script type="text/javascript" src="{{- $js.RelPermalink -}}" integrity="{{ $js.Data.Integrity }}"></script>
 <script>
     Hyphenopoly.config({
         require: {
