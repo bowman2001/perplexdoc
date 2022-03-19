@@ -8,7 +8,7 @@ title: Documentation
 menu:
   main:
     identifier: docs
-    name: Documentation
+    name: Docs
     weight: 10
 ---
 

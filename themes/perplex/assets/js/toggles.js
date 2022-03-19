@@ -16,7 +16,7 @@ toggleInterface.addEventListener('keydown', handleToggle); */
 let sidebarBtn = document.querySelector('#toggle-sidebar');
 let closeBtn = document.querySelector('#close-sidebar');
 let sidebar = document.querySelector('#sidebar');
-let menu = document.querySelector('#menu');
+let menu = document.querySelector('#menutop');
 
 if( sidebarBtn ) {
     sidebarBtn.addEventListener('click', function () {
