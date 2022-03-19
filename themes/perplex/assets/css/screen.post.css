@@ -443,9 +443,11 @@ img.img-png {
 html,
 body,
 .l-page {
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
+html,
 body {
   overflow: hidden;
   width: 100vw;
@@ -470,7 +472,6 @@ body {
 .l-page {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 ::-moz-selection {
@@ -635,7 +636,6 @@ body {
   top: 10rem;
   right: 0;
   width: 33rem;
-  margin-right: 4rem;
 }
 
 .l-wrap-content {

@@ -372,10 +372,11 @@ img.img-svg, img.img-png {
 }
 
 html, body, .l-page {
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-body {
+html, body {
   overflow: hidden;
   width: 100vw;
 }
@@ -398,7 +399,6 @@ body {
 .l-page {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 ::selection {
@@ -552,7 +552,6 @@ body {
   top: 10rem;
   right: 0;
   width: 33rem;
-  margin-right: 4rem;
 }
 
 /* #sidebar-left {
