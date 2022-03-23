@@ -40,6 +40,9 @@ closeBtn.addEventListener('click', function() {
 let tocBtn = document.querySelector('#toggle-toc');
 let toc = document.querySelector('#toc');
 
-tocBtn.addEventListener('click', function() {
-    toc.classList.toggle('is-closed');
-})
+if ( tocBtn ) {
+    tocBtn.addEventListener('click', function () {
+        tocBtn.classList.toggle( 'is-visible' );
+        toc.classList.toggle('is-closed');
+    })
+}

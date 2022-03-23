@@ -4,7 +4,7 @@
 	{{with .Get "dagger"}}note-dagger{{.}}{{end}} {{ if gt ( len .Inner ) $cutoff  }}note-long{{end}}'>
 		{{ $html:= .Inner | $.Page.RenderString }}
 		{{ if gt ( len .Inner ) $cutoff }}
-		<input id="check-note-{{.Ordinal}}" class="checkbox-note hidden" type="checkbox">
+		<input id="check-note-{{.Ordinal}}" class="checkbox-note" type="checkbox">
 		<label class="open-note" for="check-note-{{.Ordinal}}">
 			<span class="arrow"></span>
 		</label>
