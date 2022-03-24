@@ -3,7 +3,7 @@
 {{- partial "head.html" . -}}
 <body>
 <header class="l-masthead l-nav" id="masthead" >
-    {{- partial "masthead.html" . -}}
+    {{- partial "nav/masthead.html" . -}}
 </header>
 <div class="l-page" id="page">
 <div class="l-content" id="content">
@@ -12,6 +12,9 @@
       {{/* - partial "footer/main.html" . - */}}
   </div>
   <aside class="l-sidebar l-nav" id="sidebar">
+      <header class="l-masthead hide3">
+        {{- partial "nav/sidebar-masthead.html" . -}}
+      </header>
       {{- block "sidebar" . -}}{{- end -}}
   </aside>
     {{- block "toc" . -}}{{- end -}}

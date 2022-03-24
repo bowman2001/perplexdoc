@@ -1,12 +1,4 @@
 <nav class="nav-main">
-	<ul>
-			{{ $currentPage := . }}
-		{{ range .Site.Menus.main }}
-		<li class='{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}'>
-			<a href='{{ .URL }}'>
-				{{ .Name }}
-			</a>
-		</li>
-		{{ end }}
-	</ul>
+	{{- partial "nav/sidebar/menu-list.html"
+	(dict "context" . "menu" .Site.Menus.main "menuname" "main" ) -}}
 </nav>
