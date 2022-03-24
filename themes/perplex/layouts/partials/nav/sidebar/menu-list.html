@@ -2,7 +2,7 @@
     {{ $currentPage := .context }}
     {{ $menuName := .menuname }}
     {{ $menu := .menu }}
-    {{ range $menu.ByWeight }}
+    {{ range $menu }}
         {{ if .HasChildren }}
 					<li class='{{ if $currentPage.HasMenuCurrent $menuName . }}active{{ end }}'>
               {{ partial "nav/sidebar/item.html" . }}
