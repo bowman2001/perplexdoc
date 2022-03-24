@@ -1,25 +1,27 @@
 <!-- Mobile (no columns) -->
-<div class="l-mhflexed hide3">
+<div class="ctrl ctrl-left hide3">
     {{- partial "nav/button/sidebar.html" . -}}
+    {{- partial "nav/button/search.html" . -}}
 </div>
-<div class="l-mhflexed hide3">
+<div class="ctrl hide3">
     {{- partial "nav/masthead/title-site.html" . -}}
 </div>
-<div class="l-mhflexed l-mhflexed-right hide3">
-    {{- partial "nav/button/search.html" . -}}
+<div class="ctrl ctrl-right hide3">
+    {{- partial "nav/button/source.html" . -}}
     {{- partial "nav/button/toc.html" . -}}
 </div>
 
 
 <!-- Phablet and up (2 columns) -->
-<div class="l-mhgrided show3" id="logo">
+<div class="ctrl ctrl-left show3" id="logo">
     {{- partial "nav/button/sidebar.html" . -}}
     {{- partial "nav/masthead/title-site.html" . -}}
 </div>
-<div class="l-mhgrided show3" id="men1">
+<div class="ctrl ctrl-left show3" id="men1">
     {{- partial "nav/masthead/menu.html" . -}}
 </div>
-<div class="l-mhgrided l-mhgrided-right show3" id="ctrl">
+<div class="ctrl ctrl-right show3" id="ctrl">
     {{- partial "nav/button/search.html" . -}}
+    {{- partial "nav/button/source.html" . -}}
     {{- partial "nav/button/toc.html" . -}}
 </div>

@@ -2,16 +2,16 @@
 <html {{ with .Site.Language.Lang }}lang="{{ . }}"{{ end }}>
 {{- partial "head.html" . -}}
 <body>
-<header id="masthead" class="l-masthead">
+<header class="l-masthead l-nav" id="masthead" >
     {{- partial "masthead.html" . -}}
 </header>
-<div class="l-page">
+<div class="l-page" id="page">
 <div class="l-content" id="content">
   <div class="l-main" id="main">
       {{- block "main" . -}}{{- end -}}
       {{/* - partial "footer/main.html" . - */}}
   </div>
-  <aside class="l-sidebar" id="sidebar">
+  <aside class="l-sidebar l-nav" id="sidebar">
       {{- block "sidebar" . -}}{{- end -}}
   </aside>
     {{- block "toc" . -}}{{- end -}}
