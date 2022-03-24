@@ -1,4 +1,4 @@
-{{- $js := resources.Get "js/hyphenopoly/Hyphenopoly_Loader.js" | minify | fingerprint -}}
+{{- $js := resources.Get "hyphenopoly/Hyphenopoly_Loader.js" | minify | fingerprint -}}
 <script type="text/javascript" src="{{- $js.RelPermalink -}}" integrity="{{ $js.Data.Integrity }}"></script>
 <script>
     Hyphenopoly.config({
@@ -17,8 +17,8 @@
             }
         },
         paths: {
-            maindir: "/js/hyphenopoly/",
-            patterndir: "/js/hyphenopoly/patterns/",
+            maindir: "/hyphenopoly/",
+            patterndir: "/hyphenopoly/patterns/",
 
         },
     });
