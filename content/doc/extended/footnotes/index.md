@@ -16,8 +16,11 @@ weight: 40
 Footnotes are placed at the bottom of the page. They are best suited for technical information, which is not important for the intended meaning of the text. 
 {.p-lead} <!--more-->
 
-Footnotes are indispensable for scientific documents or more rigorous essays etc. They reference sources or elaborate some details. But they distract the reader, because he has to jump to the end of the page to read them and jump back to continue. As a less distracting alternative, _Perplex_ additionally offers a [side-note][sidenote]. It’s placed in the marginal column besides the main text on larger screens or is inserted as expandable box on smaller screens.  
+Footnotes are indispensable for scientific documents or more rigorous essays. They reference sources or elaborate on details. Because they are placed at the end of the content, the footnote marker contains a link allowing to jump to the note. And the note contains a link back to the marker. 
 
+{{< sidenote up=4 >}}
+To jump back and forth between the text and footnotes is distracting. _Perplex_ additionally offers a [side-note]({{< relref "side-note" >}}) like this one as an alternative placed nearby for more important content. On larger screens, it’s placed in the marginal column besides the main text. On mobile screens it’s inserted as an (expandable) box.  
+{{< /sidenote >}}
 ## Syntax
 
 A Footnote consists of a *marker* and a separate *reference* below.
@@ -26,7 +29,7 @@ A Footnote consists of a *marker* and a separate *reference* below.
 
 A marker looks like `[^1]` or `[^footnotephrase]`. The brackets and the `^` character are mandatory, the name of the marker can be chosen arbitrarily — no need to count or follow some pattern. 
 
-{{< sidenote up=12 >}}
+{{< sidenote up=11 >}}
 A marker should be placed **directly behind** a word or a sentence without any space in between. It’s allowed to have a space before, but then an ugly line break between the text and the marker may occur.
 {{< /sidenote >}}
 
@@ -66,5 +69,3 @@ This sentence includes a footnote after a word[^10]  and one at the end.[^footno
 [^10]: This is the first footnote on this page.
 
 The markers are enclosed in square brackets as it is custom in the field of natural sciences. The notes are moved as usual to the bottom of the page below a short rule.
-
-[sidenote]: {{< relref "side-note" >}}
