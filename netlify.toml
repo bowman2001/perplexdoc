@@ -6,4 +6,5 @@ command = "hugo --gc --minify"
 HUGO_VERSION = "0.94.2"
 HUGO_ENABLEGITINFO = "true"
 
-[context]
+[context.feature]
+command = "hugo --gc --minify --environment development"
