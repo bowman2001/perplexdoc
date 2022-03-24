@@ -464,25 +464,6 @@ body {
 #masthead {
   position: fixed;
   z-index: 10;
-  width: 100%;
-  height: 7rem;
-  background: #000;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0rem calc(2rem + 2 * 0rem);
-  padding: 0rem calc(2rem + 2 * var(--es));
-}
-
-#masthead button:not([disabled]):hover,
-#masthead button:not([disabled]):focus {
-  color: #ffc30f;
-}
-
-#masthead a:hover,
-#masthead a:focus {
-  color: #e00083;
 }
 
 @media screen and (min-width: 48em) {
@@ -510,6 +491,28 @@ body {
     display: block;
     opacity: 1;
   }
+}
+
+.l-masthead {
+  width: 100%;
+  height: 7rem;
+  background: #000;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0rem calc(2rem + 2 * 0rem);
+  padding: 0rem calc(2rem + 2 * var(--es));
+}
+
+.l-masthead button:not([disabled]):hover,
+.l-masthead button:not([disabled]):focus {
+  color: #ffc30f;
+}
+
+.l-masthead a:hover,
+.l-masthead a:focus {
+  color: #e00083;
 }
 
 #logo {
@@ -658,7 +661,6 @@ body {
 }
 
 .l-sidebar {
-  display: flex;
   overflow-x: hidden;
   overflow-y: auto;
   padding: 0 0rem;
