@@ -1,7 +1,5 @@
-#
-# Menu entries
-#
-
-# The place of every internal page in the menu structure should be set in its
-# front-matter.
-# Here we can add external pages to our menus
+social:
+  - identifier: source
+    name: Source
+    pre: source
+    url: https://github.com/bowman2001/perplexdoc
