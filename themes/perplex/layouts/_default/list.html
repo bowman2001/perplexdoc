@@ -1,6 +1,7 @@
 {{- define "main" -}}
     <main class="l-box" id="box">
-        <header>
+        <header class="titlebox">
+            {{- partial "img/featuredmargin.html" . -}}
             <div class="title title-list">
                 <h1>{{- .Title | $.Page.RenderString -}}</h1>
                 {{ if (not (eq .Params.subtitle false) ) }}
@@ -10,7 +11,6 @@
                 {{- end -}}
             </div>
         </header>
-        {{- partial "img/featured.html" . -}}
         <section class="md md-serif md-list">
             {{- partial "content.html" . -}}
         </section>
@@ -28,5 +28,4 @@
 
 
 {{- define "sidebar" -}}
-    {{- partial "nav/sidebar-masthead.html" . -}}
 {{- end -}}

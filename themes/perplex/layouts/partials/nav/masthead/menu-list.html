@@ -6,7 +6,7 @@
       <li class='{{ if $currentPage.IsMenuCurrent $menuName . }}active{{ end }}'>
         <a href="{{ .URL }}">
             {{- with .Pre -}}<span class="icon icon-bullet">{{ . }}</span>{{ end }}
-            {{ .Name | markdownify }}
+          {{ with .Name }}{{ . | markdownify }}{{ end }}
         </a>
       </li>
     {{ end }}

@@ -1,1 +1,3 @@
-<button title="Get the source on GitHub" disabled><span class="icon">source</span></button>
+{{ with $.Param "repo" }}
+<a title="Get the source" href="{{ . }}"><span class="icon">source</span></a>
+{{ end }}

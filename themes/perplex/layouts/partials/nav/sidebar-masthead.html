@@ -1,3 +1,14 @@
-<div class="ctrl ctrl-left hide3" id="men1">
-    {{- partial "nav/masthead/men1.html" . -}}
+<!-- Mobile (no columns) -->
+<div class="ctrl ctrl-sh hide2" id="men1">
+    {{- partial "nav/masthead/menu.html" . -}}
+</div>
+<div class="ctrl ctrl-sh ctrl-sw hide2" id="men2">
+    {{- partial "nav/masthead/social.html" . -}}
+</div>
+<!-- Phablet or small tablet (2 columns < 768px) -->
+<div class="ctrl ctrl-sh ctrl-left show2 hide3" id="men1">
+    {{- partial "nav/masthead/menu.html" . -}}
+</div>
+<div class="ctrl ctrl-sh ctrl-sw ctrl-sw-right show2 hide4" id="men2">
+    {{- partial "nav/masthead/social.html" . -}}
 </div>
