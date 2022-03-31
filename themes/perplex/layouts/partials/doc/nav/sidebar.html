@@ -1,7 +1,9 @@
-<nav class="nav-sidebar">
-    {{ with .Site.GetPage "/doc" }}
-          <h4><a href='{{ .RelPermalink }}'>{{ .Title | $.Page.RenderString }}</a></h4>
-    {{ end }}
-    {{- partial "nav/sidebar/menu-list.html"
-    (dict "context" . "menu" .Site.Menus.doc "menuname" "doc" ) -}}
-</nav>
+<div class="l-sidebox">
+  <nav class="nav-sidebar">
+      {{ with .Site.GetPage "/doc" }}
+        <h4><a href='{{ .RelPermalink }}'>{{ .Title | $.Page.RenderString }}</a></h4>
+      {{ end }}
+      {{- partial "nav/sidebar/menu-list.html"
+      (dict "context" . "menu" .Site.Menus.doc "menuname" "doc" ) -}}
+  </nav>
+</div>

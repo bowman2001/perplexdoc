@@ -370,7 +370,7 @@ html {
 }
 @media screen and (min-width: 79em) {
   html {
-    overflow-y: hidden;
+    overflow: hidden;
   }
 }
 
@@ -380,16 +380,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "liga" on, "clig" on, "dlig" off;
+  scroll-behaviour: smooth;
 }
 
 .l-page {
   width: 100vw;
+  height: 100%;
   padding: 7rem 0 0 var(--pmv);
-}
-@media screen and (min-width: 79em) {
-  .l-page {
-    overflow: hidden;
-  }
 }
 
 ::selection {
@@ -437,6 +434,7 @@ body {
 @media screen and (min-width: 48em) {
   .l-masthead {
     display: grid;
+    justify-content: center;
   }
 }
 
@@ -498,6 +496,7 @@ body {
   display: block;
   position: relative;
   z-index: 1;
+  height: 100%;
   overflow: hidden;
 }
 @media screen and (min-width: 79em) {
@@ -518,24 +517,30 @@ body {
   display: flex;
   position: relative;
   z-index: 5;
-  overflow-y: auto;
   align-items: stretch;
   flex-direction: column;
   height: 100%;
+  width: 100%;
   animation: fadeinsite 500ms;
   grid-area: main;
-  scroll-behavior: smooth;
-  scrollbar-color: #EBB923 #f8e9da;
 }
-.l-main::-webkit-scrollbar {
-  width: 1rem;
-  height: 1rem;
-}
-.l-main::-webkit-scrollbar-thumb {
-  background: #EBB923;
-}
-.l-main::-webkit-scrollbar-track {
-  background: #f8e9da;
+@media screen and (min-width: 79em) {
+  .l-main {
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: #EBB923 #f8e9da;
+  }
+  .l-main::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+  }
+  .l-main::-webkit-scrollbar-thumb {
+    background: #EBB923;
+  }
+  .l-main::-webkit-scrollbar-track {
+    background: #f8e9da;
+  }
 }
 
 #sidebar {
@@ -559,7 +564,6 @@ body {
     width: 37rem;
     border-right: 1px solid #eeeeee;
     margin-right: 2rem;
-    padding-right: 1rem;
   }
 }
 @media screen and (min-width: 79em) {
@@ -567,17 +571,7 @@ body {
     position: static;
     grid-area: left;
     border-right: none;
-    scrollbar-color: #EBB923 #f8e9da;
-  }
-  #sidebar::-webkit-scrollbar {
-    width: 1rem;
-    height: 1rem;
-  }
-  #sidebar::-webkit-scrollbar-thumb {
-    background: #EBB923;
-  }
-  #sidebar::-webkit-scrollbar-track {
-    background: #f8e9da;
+    overflow: hidden;
   }
 }
 
@@ -638,6 +632,7 @@ body {
 
 @media screen and (min-width: 48em) {
   .l-box {
+    height: 100%;
     width: 111rem;
   }
 }
@@ -2756,13 +2751,35 @@ nav li li li {
   display: inline-block;
 }
 
+@media screen and (min-width: 79em) {
+  .l-sidebox {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: calc(100% - 1rem);
+    height: 100%;
+    scrollbar-color: #EBB923 #f8e9da;
+  }
+  .l-sidebox::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+  }
+  .l-sidebox::-webkit-scrollbar-thumb {
+    background: #EBB923;
+  }
+  .l-sidebox::-webkit-scrollbar-track {
+    background: #f8e9da;
+  }
+}
+
 .nav-sidebar {
   height: 100%;
   width: 100%;
   padding: 3rem 2rem;
-  /* @media screen and (min-width: $bp-3col) {
-  	width: $s-col; // leave space for the scrollbar
-  }*/
+}
+@media screen and (min-width: 79em) {
+  .nav-sidebar {
+    width: 35rem;
+  }
 }
 .nav-sidebar h4 {
   font-size: 1.905rem;
