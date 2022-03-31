@@ -20,4 +20,3 @@ weight: 50
 | :---- | :------------: | :------: | :----------: | -------: |
 | left  |    centered    | centered |   centered   |    right |
 | Uaaah | What the fuck! | Can't be | Unbelievable | Come on! |
-
