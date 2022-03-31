@@ -492,15 +492,11 @@ body {
 #masthead {
   position: fixed;
   z-index: 10;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 @media screen and (min-width: 48em) {
   #masthead {
     display: grid;
-    justify-content: center;
     grid-template-columns: repeat(6, 18.5rem);
     grid-template-areas: "logo logo men1 men1 . ctrl";
   }
@@ -508,15 +504,15 @@ body {
 
 @media screen and (min-width: 79em) {
   #masthead {
-    grid-template-columns: repeat(8, 18.5rem);
-    grid-template-areas: "logo logo men1 men1 men2 men2 . ctrl";
+    grid-template-columns: auto repeat(8, 18.5rem) auto;
+    grid-template-areas: ". logo logo men1 men1 men2 men2 . ctrl .";
   }
 }
 
 @media screen and (min-width: 120em) {
   #masthead {
-    grid-template-columns: repeat(12, 18.5rem);
-    grid-template-areas: ". . logo logo men1 men1 men2 men2 . ctrl . . ";
+    grid-template-columns: auto repeat(12, 18.5rem) auto;
+    grid-template-areas: ". . . logo logo men1 men1 men2 men2 . ctrl . . .";
   }
 
   #masthead > #toc.is-closed {
@@ -530,15 +526,23 @@ body {
   height: 7rem;
   background: #000;
   color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 0rem calc(2 * 0rem);
   padding: 0rem calc(2 * var(--es));
 }
 
+@media screen and (min-width: 48em) {
+  .l-masthead {
+    display: grid;
+  }
+}
+
 .l-masthead-sidebar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   height: 10rem;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media screen and (min-width: 37em) {
@@ -931,7 +935,7 @@ figure > figcaption .attr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: #7e6767;
+  color: #777;
 }
 
 .title .meta p {
@@ -2757,11 +2761,11 @@ figure > figcaption .attr {
   margin-bottom: calc(0.9rem + 1 * var(--es));
   border-top: .1rem solid #b0b0bd;
   border-bottom: .1rem solid #b0b0bd;
-  background: radial-gradient(#fefcfa, #faefe5);
+  background: radial-gradient(#fefcfa, #f6e3d0);
 }
 
 .note > .content {
-  padding: .625rem 2.5rem;
+  padding: .625rem 2rem;
   overflow: hidden;
 }
 
@@ -3488,8 +3492,8 @@ nav li li li {
   display: block;
   -moz-column-count: 3;
        column-count: 3;
-  -moz-column-width: 16.5rem;
-       column-width: 16.5rem;
+  -moz-column-width: 18.5rem;
+       column-width: 18.5rem;
   margin-bottom: 1rem;
 }
 
