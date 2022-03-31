@@ -11,25 +11,47 @@ function handleToggle(e) {
 toggleInterface.addEventListener('keydown', handleToggle); */
 
 
-let sidebarBtn = document.querySelector('#toggle-sidebar');
-let closeBtn = document.querySelector('#close-sidebar');
-let sidebar = document.querySelector('#sidebar');
+let sbBtn1 = document.querySelector('#tgl-sb1');
+let sbBtn2 = document.querySelector('#tgl-sb2');
+let sb = document.querySelector('#sidebar');
 
 
 let tocBtn = document.querySelector('#toggle-toc');
 let toc = document.querySelector('#toc');
 
 
-if( sidebarBtn ) {
-    sidebarBtn.addEventListener('click', function () {
-        if ( sidebar ) {
-            sidebarBtn.classList.toggle('is-visible');
-            sidebar.classList.toggle('is-visible');
+if( sbBtn1 ) {
+    sbBtn1.addEventListener('click', function () {
+        if ( sb ) {
+            sbBtn1.classList.toggle('is-visible');
+            sbBtn2.classList.toggle('is-visible');
+            sb.classList.toggle('is-visible');
         }
-        if ( sidebar.classList.contains( 'is-visible' ) ) {
-            sidebarBtn.title = "Close the sidebar navigation.";
+        if ( sb.classList.contains( 'is-visible' ) ) {
+            sbBtn1.title = "Close the sidebar navigation.";
+            sbBtn2.title = "Close the sidebar navigation.";
         } else {
-            sidebarBtn.title = "Open the sidebar navigation.";
+            sbBtn2.title = "Open the sidebar navigation.";
+        }
+        if( tocBtn ) {
+            tocBtn.disabled = !tocBtn.disabled;
+        }
+    })
+}
+
+if( sbBtn2 ) {
+    sbBtn2.addEventListener('click', function () {
+        if ( sb ) {
+            sbBtn1.classList.toggle('is-visible');
+            sbBtn2.classList.toggle('is-visible');
+            sb.classList.toggle('is-visible');
+        }
+        if ( sb.classList.contains( 'is-visible' ) ) {
+            sbBtn1.title = "Close the sidebar navigation.";
+            sbBtn2.title = "Close the sidebar navigation.";
+        } else {
+            sbBtn1.title = "Open the sidebar navigation.";
+            sbBtn2.title = "Open the sidebar navigation.";
         }
         if( tocBtn ) {
             tocBtn.disabled = !tocBtn.disabled;

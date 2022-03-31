@@ -401,19 +401,19 @@ body {
   #masthead {
     display: grid;
     grid-template-columns: repeat(6, 18.5rem);
-    grid-template-areas: "logo logo men1 men1 . ctrl";
+    grid-template-areas: "logo logo men1 men1 ctrl ctrl";
   }
 }
 @media screen and (min-width: 79em) {
   #masthead {
     grid-template-columns: auto repeat(8, 18.5rem) auto;
-    grid-template-areas: ". logo logo men1 men1 men2 men2 . ctrl .";
+    grid-template-areas: ". logo logo men1 men1 men2 men2 ctrl ctrl .";
   }
 }
 @media screen and (min-width: 120em) {
   #masthead {
     grid-template-columns: auto repeat(12, 18.5rem) auto;
-    grid-template-areas: ". . . logo logo men1 men1 men2 men2 . ctrl . . .";
+    grid-template-areas: ". . . logo logo men1 men1 men2 men2 ctrl ctrl . . .";
   }
   #masthead > #toc.is-closed {
     display: block;
@@ -467,14 +467,15 @@ body {
   grid-area: ctrl;
 }
 
-#toggle-sidebar .icon:after {
+#tgl-sb1 .icon:after, #tgl-sb2 .icon:after {
   content: "\e5d2";
 }
-#toggle-sidebar.is-visible .icon:after {
+#tgl-sb1.is-visible .icon:after, #tgl-sb2.is-visible .icon:after {
   content: "\e9bd";
 }
+
 @media screen and (min-width: 79em) {
-  #toggle-sidebar {
+  #tgl-sb2 {
     display: none;
   }
 }
@@ -548,30 +549,33 @@ body {
   top: 7rem;
   left: -100vw;
   z-index: 9;
-  transition: left 300ms ease-in-out;
+  transition: left 300ms ease-out;
   width: 100vw;
   height: calc( 100vh - 7rem);
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #fefcfa;
-  animation: fadeinsite 500ms;
 }
 #sidebar.is-visible {
   left: 0;
+  transition: left 300ms ease-in;
 }
 @media screen and (min-width: 48em) {
   #sidebar {
-    width: 37rem;
+    left: -74rem;
+    width: 74rem;
     border-right: 1px solid #eeeeee;
     margin-right: 2rem;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 79em) {
   #sidebar {
     position: static;
     grid-area: left;
+    width: 37rem;
     border-right: none;
-    overflow: hidden;
+    animation: fadeinsite 500ms;
   }
 }
 
@@ -637,27 +641,6 @@ body {
   }
 }
 
-.l-navbox {
-  max-width: 74rem;
-}
-@media screen and (min-width: 48em) {
-  .l-navbox {
-    width: 111rem;
-    max-width: none;
-  }
-}
-@media screen and (min-width: 79em) {
-  .l-navbox {
-    width: 148rem;
-  }
-}
-
-/* .l-textbox-nav {
-	border-radius: $s-hf-radius $s-hf-radius 0 0;
-	@media screen and (min-width: $bp-4col) {
-		border-radius: 0 0 $s-hf-radius $s-hf-radius;
-	}
-} */
 @media screen and (min-width: 37em) {
   .left, .right {
     position: relative;
@@ -2590,48 +2573,44 @@ nav li li li {
 
 .ctrl-left {
   justify-content: flex-start;
-  margin-left: -1rem;
+  padding-left: 1rem;
 }
 
 .ctrl-sw-left {
   justify-content: flex-start;
-  margin-left: -0.5rem;
+  padding-left: 1.5rem;
 }
 
 .ctrl-right {
   justify-content: flex-end;
-  margin-right: -1rem;
+  padding-right: 1rem;
 }
 
 .ctrl-sw-right {
   justify-content: flex-end;
-  margin-right: -0.5rem;
+  padding-right: 1.5rem;
 }
 
-.nav_pagelist {
+.nav-list {
   margin: 0 2rem;
-  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  column-count: 1;
 }
 @media screen and (min-width: 37em) {
-  .nav_pagelist {
+  .nav-list {
     column-count: 2;
     column-gap: 4rem;
     max-width: 70rem;
   }
 }
-.nav_pagelist > ul {
+.nav-list > ul {
   color: #222;
 }
-.nav_pagelist > ul li {
+.nav-list > ul li {
   page-break-inside: avoid;
   break-inside: avoid-column;
   -webkit-column-break-inside: avoid;
   padding-bottom: 1rem;
 }
-.nav_pagelist > ul h4 {
+.nav-list > ul h4 {
   font-size: 1.9375rem;
   line-height: 3rem;
   padding-top: 0.77440625rem;
@@ -2643,7 +2622,7 @@ nav li li li {
   font-style: normal;
   letter-spacing: 0.01em;
 }
-.nav_pagelist > ul p {
+.nav-list > ul p {
   font-size: 1.6145833333rem;
   line-height: 3rem;
   padding-top: 0.8953385417rem;
@@ -2751,6 +2730,9 @@ nav li li li {
   display: inline-block;
 }
 
+.l-sidebox {
+  padding: 0 var(--pmv);
+}
 @media screen and (min-width: 79em) {
   .l-sidebox {
     overflow-x: hidden;
