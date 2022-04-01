@@ -523,6 +523,7 @@ body {
   width: 100%;
   animation: fadeinsite 500ms;
   grid-area: main;
+  transition: filter 300ms;
 }
 @media screen and (min-width: 79em) {
   .l-main {
@@ -541,6 +542,24 @@ body {
   .l-main::-webkit-scrollbar-track {
     background: #f8e9da;
   }
+}
+.l-main:after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.l-main.is-locked {
+  overflow: hidden;
+  filter: blur(0.25rem);
+}
+.l-main.is-locked:after {
+  z-index: 6;
+  opacity: 0.5;
 }
 
 #sidebar {
@@ -561,9 +580,9 @@ body {
 }
 @media screen and (min-width: 48em) {
   #sidebar {
-    left: -74rem;
-    width: 74rem;
-    border-right: 1px solid #eeeeee;
+    left: -55.5rem;
+    width: 55.5rem;
+    border-right: 1px solid #e1e1e1;
     margin-right: 2rem;
     overflow: hidden;
   }
@@ -801,7 +820,7 @@ figure > figcaption .attr {
   font-style: normal;
 }
 .title.title-list {
-  padding-bottom: calc(1.5rem + 1 * var(--es));
+  padding-bottom: calc(1rem + 1 * var(--es));
 }
 .title.title-list > hr {
   border-top: 0.35rem solid #222;

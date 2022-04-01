@@ -14,6 +14,7 @@ toggleInterface.addEventListener('keydown', handleToggle); */
 let sbBtn1 = document.querySelector('#tgl-sb1');
 let sbBtn2 = document.querySelector('#tgl-sb2');
 let sb = document.querySelector('#sidebar');
+let main = document.querySelector('#main');
 
 
 let tocBtn = document.querySelector('#toggle-toc');
@@ -26,6 +27,7 @@ if( sbBtn1 ) {
             sbBtn1.classList.toggle('is-visible');
             sbBtn2.classList.toggle('is-visible');
             sb.classList.toggle('is-visible');
+            main.classList.toggle('is-locked');
         }
         if ( sb.classList.contains( 'is-visible' ) ) {
             sbBtn1.title = "Close the sidebar navigation.";
@@ -45,6 +47,7 @@ if( sbBtn2 ) {
             sbBtn1.classList.toggle('is-visible');
             sbBtn2.classList.toggle('is-visible');
             sb.classList.toggle('is-visible');
+            main.classList.toggle('is-locked');
         }
         if ( sb.classList.contains( 'is-visible' ) ) {
             sbBtn1.title = "Close the sidebar navigation.";
