@@ -365,13 +365,6 @@ html {
   font-family: 'IBM Plex Serif', Georgia, Times, serif;
   font-weight: 450;
   font-style: normal;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-@media screen and (min-width: 79em) {
-  html {
-    overflow: hidden;
-  }
 }
 
 body {
@@ -381,11 +374,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "liga" on, "clig" on, "dlig" off;
   scroll-behaviour: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 79em) {
+  body {
+    overflow: hidden;
+  }
 }
 
 .l-page {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   padding: 7rem 0 0 var(--pmv);
 }
 
@@ -498,7 +498,6 @@ body {
   position: relative;
   z-index: 1;
   height: 100%;
-  overflow: hidden;
 }
 @media screen and (min-width: 79em) {
   .l-content {
@@ -634,9 +633,11 @@ body {
   }
 }
 
+.l-box {
+  width: 100%;
+}
 @media screen and (min-width: 48em) {
   .l-box {
-    height: 100%;
     width: 111rem;
   }
 }
