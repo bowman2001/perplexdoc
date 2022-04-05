@@ -1,13 +1,11 @@
-<ul>
+<ul class="topnav">
     {{ $currentPage := .context }}
     {{ $menuName := .menuname }}
     {{ $menu := .menu }}
     {{ range $menu }}
-      <li class='{{ if $currentPage.IsMenuCurrent $menuName . }}active{{ end }}'>
-        <a href="{{ .URL }}">
-            {{- with .Pre -}}<span class="icon icon-bullet">{{ . }}</span>{{ end }}
+      <li><a class="topnav__item {{ if or ($currentPage.IsMenuCurrent $menuName .) ($currentPage.HasMenuCurrent $menuName .) }}topnav__item--active{{ end }}" href="{{ .URL }}">
+            {{- with .Pre -}}<span class="icon">{{ . }}</span>{{ end }}
           {{ with .Name }}{{ . | markdownify }}{{ end }}
-        </a>
-      </li>
+        </a></li>
     {{ end }}
 </ul>

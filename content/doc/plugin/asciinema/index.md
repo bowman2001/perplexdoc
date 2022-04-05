@@ -4,8 +4,7 @@ description: Page description placeholder
 subtitle: false
 date: 2022-01-25T12:56:33+01:00 
 weight: 999
-image:
-  featured: 
+featImg:
 menu:
   doc:
     name: Asciinema

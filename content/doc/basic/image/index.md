@@ -1,8 +1,7 @@
 ---
 date: "2021-03-25T10:41:36+01:00"
 description: Photographs, Graphics etc.
-image:
-  featured: mulyadi-JJMoAiVl9jA-unsplash.jpg
+featImg: mulyadi-JJMoAiVl9jA-unsplash.jpg
 menu:
   doc:
     name: Image

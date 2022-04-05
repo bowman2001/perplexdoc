@@ -1,7 +1,7 @@
 {{ $img := ( partial "img/func/get-featuredResource.html" . ) }}
-{{ $imgLink := (partial "img/func/get-unsplashLink.html" $img )}}
-{{ $imgclass := "" }}
 {{ with $img }}
+	{{ $imgLink := (partial "img/func/get-unsplashLink.html" . )}}
+	{{ $imgclass := "" }}
 	<figure class="md right show3">
       {{ if eq .MediaType.SubType "svg" }}
 				<img class="img-svg" src="{{ .RelPermalink }}" alt="{{ .Name }}" title="{{ .Title }}">

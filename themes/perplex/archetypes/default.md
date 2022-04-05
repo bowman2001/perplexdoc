@@ -4,8 +4,7 @@ description: Page description placeholder
 subtitle: false
 date: {{ .Date }}
 weight: 10
-image:
-  featured:
+featImg:
 menu:
   main:
     name: {{ replace .Name "-" " " | title }}

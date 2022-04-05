@@ -1,8 +1,7 @@
 ---
 date: "2021-09-17T00:03:28+02:00"
 description: Perplex and Hugo are **Free Software**
-image:
-  featured: chris-brignola-X2CxUXFqKcM-unsplash.jpg
+featImg: chris-brignola-X2CxUXFqKcM-unsplash.jpg
 menu:
   doc:
     parent: intro

@@ -1,8 +1,7 @@
 ---
 date: "2021-08-26T21:15:24+02:00"
 description: GitHub Flavored Markdown
-image:
-  featured: img/Markdown-mark.svg
+featImg: img/Markdown-mark.svg
 menu:
   doc:
     identifier: extended

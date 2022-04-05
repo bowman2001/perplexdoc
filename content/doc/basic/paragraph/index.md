@@ -1,8 +1,7 @@
 ---
 date: "2021-03-23T21:38:25+01:00"
 description: Essential building blocks of text
-image:
-  featured: finn-mund-8q2r2XQpDO0-unsplash.jpg
+featImg: finn-mund-8q2r2XQpDO0-unsplash.jpg
 menu:
   doc:
     name: Paragraphs

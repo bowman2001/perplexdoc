@@ -4,8 +4,7 @@ description: Optional layout by external software
 subtitle: false
 date: 2022-01-22T18:06:12+01:00 
 weight: 95
-image:
-  featured: 
+featImg:
 menu:
   doc:
     name: Plugins

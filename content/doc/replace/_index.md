@@ -1,8 +1,7 @@
 ---
 date: "2021-08-19T12:39:30+02:00"
 description: Tiny codes for missing inline HTML elements
-image:
-  featured: brett-jordan-DDupbpu4MS4-unsplash.jpg
+featImg: brett-jordan-DDupbpu4MS4-unsplash.jpg
 menu:
   doc:
     identifier: replace

@@ -4,8 +4,7 @@ description: Page description placeholder
 subtitle: false
 date: {{ .Date }}
 weight: 1
-image:
-  featured:
+featImg:
 categories:
 tags:
 draft: true

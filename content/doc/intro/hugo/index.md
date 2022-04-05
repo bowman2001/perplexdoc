@@ -1,8 +1,7 @@
 ---
 date: "2021-09-07T21:43:30+02:00"
 description: The world's fastest static site generator
-image:
-  featured: img/Logo_of_Hugo_the_static_website_generator.svg
+featImg: img/Logo_of_Hugo_the_static_website_generator.svg
 menu:
   doc:
     identifier: hugo
@@ -91,7 +90,7 @@ There are three ways to retrieve this and other themes from [GitHub](https://git
 As long as you don't use modules also for other parts of your project, this powerful and flexible feature may be over-complicated.
 {{< /sidenote >}}
 
-Whatever option you have chosen, you need to tell Hugo to use the theme in the [config file]({{< relref "doc/appendix/config/config.md#6" >}}).
+Whatever option you have chosen, you need to tell Hugo to use the theme in the [config file]({{< relref "configyaml.md#6" >}}).
 
 ## Run Hugo locally {#server-mode}
 

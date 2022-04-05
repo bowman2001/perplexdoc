@@ -1,15 +1,15 @@
 {{ $cs := .CurrentSection }}
 {{ $csp := $cs.Parent }}
 {{ if ne $csp .FirstSection }}
-	<p class="section">
+	<p>
 			{{ with $csp }}{{- partial "nav/bclink.html" . -}}{{ end }}
 			{{- partial "nav/breadcrumb/separator.html" . -}}
 			{{ with $cs }}{{- partial "nav/bclink.html" . -}}{{ end }}
 	</p>
 {{ else }}
-    <p class="section">{{ with $cs }}{{ partial "nav/bclink.html" . }}{{ end }}</p>
+    <p>{{ with $cs }}{{ partial "nav/bclink.html" . }}{{ end }}</p>
 {{ end }}
 
 {{- define "partials/nav/bclink.html" -}}
-	<a href="{{ .RelPermalink }}">{{- .Title | $.Page.RenderString -}}</a>
+	<a class="meta__item meta__item--font font-italic" href="{{ .RelPermalink }}">{{- .Title | $.Page.RenderString -}}</a>
 {{- end -}}

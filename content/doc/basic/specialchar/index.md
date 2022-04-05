@@ -1,8 +1,7 @@
 ---
 date: "2021-03-25T10:53:07+01:00"
 description: How to write special characters
-image:
-  featured: raphael-schaller-GkinCd2enIY-unsplash.jpg
+featImg: raphael-schaller-GkinCd2enIY-unsplash.jpg
 menu:
   doc:
     name: Special Characters

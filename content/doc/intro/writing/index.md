@@ -1,8 +1,7 @@
 ---
 date: "2021-09-07T21:02:57+02:00"
 description: Structured Plain Text Files
-image:
-  featured: img/Markdown-mark.svg
+featImg: img/Markdown-mark.svg
 menu:
   doc:
     identifier: writing

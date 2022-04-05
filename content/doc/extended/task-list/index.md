@@ -1,8 +1,7 @@
 ---
 date: "2021-03-25T10:34:57+01:00"
 description: A feature designed from and for GitHub
-image:
-  featured: glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg
+featImg: glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg
 menu:
   doc:
     name: Task list

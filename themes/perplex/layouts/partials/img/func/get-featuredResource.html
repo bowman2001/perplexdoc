@@ -1,13 +1,13 @@
 {{ $imgResource := "" }}
 {{ $currentPage := .Page }}
 {{ $url := "" }}
-{{- with .Params.image.featured -}}
+{{- with .Params.featImg -}}
     {{ $url = . }}
 {{- else }}
-    {{ with .CurrentSection.Params.image.featured }}
+    {{ with .CurrentSection.Params.featImg }}
         {{ $url = . }}
     {{ else }}
-        {{ with .Site.Params.image.featured }}
+        {{ with .Site.Params.featImg }}
             {{ $url = . }}
         {{ end }}
     {{ end }}

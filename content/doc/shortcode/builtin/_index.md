@@ -1,8 +1,7 @@
 ---
 date: "2021-08-16T10:56:27+02:00"
 description: Hugo's own codes are always available
-image:
-  featured: img/Logo_of_Hugo_the_static_website_generator.svg
+featImg: img/Logo_of_Hugo_the_static_website_generator.svg
 menu:
   doc:
     identifier: builtin

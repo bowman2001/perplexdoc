@@ -1,8 +1,7 @@
 ---
 date: "2022-01-12T14:20:05+01:00"
 description: Description
-image:
-  featured: fly-d-mT7lXZPjk7U-unsplash.jpg
+featImg: fly-d-mT7lXZPjk7U-unsplash.jpg
 menu:
   doc:
     name: Security

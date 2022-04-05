@@ -1,8 +1,7 @@
 ---
 date: "2021-03-24T13:17:56+01:00"
 description: A break inside a paragraph
-image:
-  featured: annie-spratt-askpr0s66Rg-unsplash.jpg
+featImg: annie-spratt-askpr0s66Rg-unsplash.jpg
 menu:
   doc:
     name: Line Break

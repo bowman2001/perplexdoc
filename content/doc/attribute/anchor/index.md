@@ -1,8 +1,7 @@
 ---
 date: "2022-01-06T14:15:12+01:00"
 description: CSS-identifiers can act as anchors for HTML elements
-image:
-  featured: grant-durr-21ztbENjzeI-unsplash.jpg
+featImg: grant-durr-21ztbENjzeI-unsplash.jpg
 menu:
   doc:
     name: Anchors

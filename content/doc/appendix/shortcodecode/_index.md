@@ -2,8 +2,7 @@
 date: "2022-01-12T22:50:29+01:00"
 description: Shipping with _Perplex_
 draft: true
-image:
-  featured: ""
+featImg: ""
 menu:
   doc:
     identifier: shortcodecode

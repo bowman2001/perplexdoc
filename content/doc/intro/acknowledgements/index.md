@@ -1,8 +1,7 @@
 ---
 date: "2021-12-22T22:29:23+01:00"
 description: Gratitude is due to many people
-image:
-  featured: rachel-coyne-tImZgkTcCbQ-unsplash.jpg
+featImg: rachel-coyne-tImZgkTcCbQ-unsplash.jpg
 menu:
   doc:
     name: Acknowledgements

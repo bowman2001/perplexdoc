@@ -2,19 +2,15 @@
     <main class="l-box" id="box">
         <header class="titlebox">
             {{- partial "img/featuredmargin.html" . -}}
-            <div class="title title-list">
-                <h1>{{- .Title | $.Page.RenderString -}}</h1>
-                {{ if (not (eq .Params.subtitle false) ) }}
-                    {{- with .Description -}}
-                        <p class="description">{{- . | $.Page.RenderString -}}</p>
-                    {{ end }}
-                {{- end -}}
+            <div class="title title--list">
+                {{ partial "title/title.html" . }}
+                {{ partial "title/subtitle.html" . }}
             </div>
         </header>
         <section class="md md-serif md-list">
             {{- partial "content.html" . -}}
         </section>
-        <section class="l-section">
+        <section>
             <nav class="nav-list">
                 <ul>
                     {{- range .Pages -}}

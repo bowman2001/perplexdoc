@@ -1,8 +1,7 @@
 ---
 date: "2021-09-16T19:36:58+02:00"
 description: Menu, navigation, meta-data etc. 
-image:
-  featured: roman-skrypnyk-fFW_xTie9Ik-unsplash.jpg
+featImg: roman-skrypnyk-fFW_xTie9Ik-unsplash.jpg
 menu:
   doc:
     identifier: special

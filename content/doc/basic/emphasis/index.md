@@ -1,8 +1,7 @@
 ---
 date: "2021-03-23T21:46:33+01:00"
 description: Accentuate pieces of text
-image:
-  featured: brett-jordan-vyPVtz5p8D4-unsplash.jpg
+featImg: brett-jordan-vyPVtz5p8D4-unsplash.jpg
 menu:
   doc:
     name: Emphasis

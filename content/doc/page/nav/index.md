@@ -4,8 +4,7 @@ description: Main menu, sidebar, page navigation and Table of Contents
 subtitle: false
 date: 2022-01-18T23:25:10+01:00 
 weight: 40
-image:
-  featured: 
+featImg:
 menu:
   doc:
     name: Navigation

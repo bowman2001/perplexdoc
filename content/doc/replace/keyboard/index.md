@@ -1,8 +1,7 @@
 ---
 date: "2021-08-19T13:35:00+02:00"
 description: Display the keys from a computer keyboard
-image:
-  featured: florencia-viadana-1iyGImW84cQ-unsplash.jpg
+featImg: florencia-viadana-1iyGImW84cQ-unsplash.jpg
 menu:
   doc:
     name: Keyboard Legends

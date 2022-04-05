@@ -1,8 +1,7 @@
 ---
 date: "2021-03-25T10:39:36+01:00"
 description: Strong separation of page segments
-image:
-  featured: miti-WmmcTOe3vqA-unsplash.jpg
+featImg: miti-WmmcTOe3vqA-unsplash.jpg
 menu:
   doc:
     name: Horizontal Rule

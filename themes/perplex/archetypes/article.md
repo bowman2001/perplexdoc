@@ -3,11 +3,11 @@ title: {{ replace .Name "-" " " | title }}
 description: Page description placeholder
 subtitle: false
 date: {{ .Date }}
-weight: 1
-image:
-  featured:
+featImg:
 categories:
 tags:
+weight: 1
+draft: true
 resources:
 - src: 
   name:
@@ -15,8 +15,7 @@ resources:
   params: 
     class:
     attr:
-    attrlink:    
-draft: true
+    attrlink:
 ---
 
 Place your lead paragraph here. The _more-tag_ marks the paragraph as the _summary_ for this page. When you don't need special styling, just remove the attribute.

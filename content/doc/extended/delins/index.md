@@ -1,8 +1,7 @@
 ---
 date: "2021-09-13T22:45:36+02:00"
 description: Explicitly mark changes in the content
-image:
-  featured: engin-akyurt-GqJUczrwIG4-unsplash.jpg
+featImg: engin-akyurt-GqJUczrwIG4-unsplash.jpg
 menu:
   doc:
     name: Delete or Insert

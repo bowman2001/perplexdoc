@@ -1,8 +1,7 @@
 ---
 date: "2022-01-12T19:09:03+01:00"
 description: Wrapper for additional resources
-image:
-  featured: ""
+featImg: ""
 menu:
   doc:
     name: Call Plugins

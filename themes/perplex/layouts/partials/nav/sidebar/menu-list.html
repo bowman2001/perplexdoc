@@ -1,21 +1,21 @@
-<ul>
+<ul class="nav__list sidebarnav__list">
     {{ $currentPage := .context }}
     {{ $menuName := .menuname }}
     {{ $menu := .menu }}
     {{ range $menu }}
         {{ if .HasChildren }}
-					<li class='{{ if $currentPage.HasMenuCurrent $menuName . }}active{{ end }}'>
+					<li class='li--1 {{ if $currentPage.HasMenuCurrent $menuName . }}is-active{{ end }}'>
               {{ partial "nav/sidebar/item.html" . }}
               {{ partial "nav/sidebar/expand.html" . }}
 						<ul class='{{ if (partial "nav/sidebar/itemsHaveNoChildren.html" . ) }}itemsHaveNoChildren{{ end }}'>
                 {{ range .Children }}
-									<li class='{{ if or ($currentPage.HasMenuCurrent $menuName . ) ($currentPage.IsMenuCurrent $menuName . )}}active{{ end }}'>
+									<li class='li--2 {{ if or ($currentPage.HasMenuCurrent $menuName . ) ($currentPage.IsMenuCurrent $menuName . )}}is-active{{ end }}'>
                       {{ partial "nav/sidebar/item.html" . }}
                       {{ if .HasChildren }}
                           {{ partial "nav/sidebar/expand.html" . }}
 													<ul class='{{ if (partial "nav/sidebar/itemsHaveNoChildren.html" . ) }}itemsHaveNoChildren{{ end }}'>
                               {{ range .Children }}
-																<li class='{{ if $currentPage.IsMenuCurrent $menuName . }}active{{ end }}'>
+																<li class='li--3 {{ if $currentPage.IsMenuCurrent $menuName . }}is-active{{ end }}'>
                                     {{ partial "nav/sidebar/item.html" . }}
 																</li>
                               {{ end }}
@@ -26,7 +26,7 @@
 						</ul>
 					</li>
         {{ else }}
-					<li class='{{ if $currentPage.IsMenuCurrent $menuName . }}active{{ end }}'>
+					<li class='li--1 {{ if $currentPage.IsMenuCurrent $menuName . }}is-active{{ end }}'>
               {{ partial "nav/sidebar/item.html" . }}
 					</li>
         {{ end }}
@@ -35,13 +35,12 @@
 
 {{- define "partials/nav/sidebar/item.html" -}}
 	<a href="{{ .URL }}">
-      {{- with .Pre -}}<span class="icon icon-bullet">{{ . }}</span>{{ end }}
-			{{ .Name | markdownify }}
+      {{- with .Pre -}}<span class="icon">{{ . }}</span>{{ end }}<span class="li__text">{{ .Name | markdownify }}</span>
 	</a>
 {{- end -}}
 
 {{- define "partials/nav/sidebar/expand.html" -}}
-	<input id="menu-{{ .Identifier }}" class="checkbox-menu" type="checkbox">
+	<input id="menu-{{ .Identifier }}" class="chk-menu" type="checkbox">
 	<label class="open-menu" for="menu-{{ .Identifier }}"><span class="icon"></span></label>
 {{- end -}}
 

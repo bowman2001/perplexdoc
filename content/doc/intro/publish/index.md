@@ -1,8 +1,7 @@
 ---
 date: "2021-09-14T12:56:56+02:00"
 description: Build & Deploy a static website
-image:
-  featured: nasa-Q1p7bh3SHj8-unsplash.jpg
+featImg: nasa-Q1p7bh3SHj8-unsplash.jpg
 menu:
   doc:
     name: Publish
@@ -18,7 +17,7 @@ Two basic steps are involved in publishing our static website: **Build & Deploy*
 
 There are a lot of options for a static website. Many of them are described in the section [Hosting & Deployment](https://gohugo.io/hosting-and-deployment/) of the documentation.
 
-In all cases the parameter `baseURL` has to be set to the registered site URL in the main configuration file [`config.yaml`]({{< relref "doc/appendix/config/config#4" >}}).
+In all cases the parameter `baseURL` has to be set to the registered site URL in the main configuration file [`config.yaml`]({{< relref "configyaml#4" >}}).
 
 ## Build & Deploy with your own hardware
 

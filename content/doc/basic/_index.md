@@ -1,15 +1,14 @@
 ---
 date: "2021-08-26T11:34:47+02:00"
 description: The Elements of Commonmark
-image:
-  featured: img/Markdown-mark.svg
+featImg: img/Markdown-mark.svg
 menu:
   doc:
     identifier: basic
     name: Basic Markdown
     pre: article
 subtitle: false
-title: Basic Markdown Layout
+title: Basic Markdown
 weight: 5
 ---
 

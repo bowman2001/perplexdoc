@@ -3,8 +3,7 @@ title: LaTeX
 date: "2021-05-18T10:15:06+02:00"
 description: Render Math inside _Markdown_
 subtitle: false
-image:
-  featured: LaTeX_logo.svg
+featImg: LaTeX_logo.svg
 menu:
   doc:
     name: LaTeX

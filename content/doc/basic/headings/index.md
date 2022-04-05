@@ -1,8 +1,7 @@
 ---
 date: "2021-03-23T21:46:56+01:00"
 description: Main page structure
-image:
-  featured: ashni-Wh9ZC4727e4-unsplash.jpg
+featImg: ashni-Wh9ZC4727e4-unsplash.jpg
 menu:
   doc:
     name: Text Headings
