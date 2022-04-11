@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-07-09T11:18:29+02:00"
 description: ""
 menu:
@@ -27,4 +28,3 @@ weight: 100
 | Apostroph                   |  ’   |            {#Alt Gr} + {##} |
 | Ellipsis                    |  …   |            {#Alt Gr} + {#.} |
 | Long dash                   |  –   |            {#Alt Gr} + {#-} |
-

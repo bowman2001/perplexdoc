@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-09-16T19:36:58+02:00"
 description: Menu, navigation, meta-data etc. 
 featImg: roman-skrypnyk-fFW_xTie9Ik-unsplash.jpg

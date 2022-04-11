@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-09-11T00:07:48+02:00"
 description: Self-contained images
 subtitle: false

@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-03-23T22:42:54+01:00"
 description: Lay out tabular data in rows and columns
 featImg: mika-baumeister-Wpnoqo2plFA-unsplash.jpg

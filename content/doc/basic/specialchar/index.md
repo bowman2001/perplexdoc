@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-03-25T10:53:07+01:00"
 description: How to write special characters
 featImg: raphael-schaller-GkinCd2enIY-unsplash.jpg

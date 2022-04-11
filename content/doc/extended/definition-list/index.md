@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-03-24T21:44:53+01:00"
 description: A series of terms and associated details
 featImg: sandy-millar-Kl4LNdg6on4-unsplash.jpg

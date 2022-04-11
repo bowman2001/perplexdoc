@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-09-14T12:56:56+02:00"
 description: Build & Deploy a static website
 featImg: nasa-Q1p7bh3SHj8-unsplash.jpg

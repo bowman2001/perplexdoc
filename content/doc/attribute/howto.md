@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-12-19T13:27:29+01:00"
 description: Inject attributes into rendered HTML elements
 menu:

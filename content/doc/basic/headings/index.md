@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-03-23T21:46:56+01:00"
 description: Main page structure
 featImg: ashni-Wh9ZC4727e4-unsplash.jpg

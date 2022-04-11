@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-08-18T10:59:52+02:00"
 description: Description
 menu:
@@ -40,4 +41,3 @@ On her way she met a copy. The copy warned the Little Blind Text, that where it 
 But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her.
 {.blind}
 {{< /sidenote >}}
-

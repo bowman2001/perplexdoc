@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-09-16T19:39:31+02:00"
 description: Configuration files for this site
 menu:
@@ -7,7 +8,7 @@ menu:
     name: Project Configuration
     parent: appendix
     pre: toggle_on
-title: '`Config`'
+title: Project Configuration
 weight: 100
 ---
 

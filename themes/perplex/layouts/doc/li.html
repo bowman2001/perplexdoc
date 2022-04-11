@@ -1,11 +1,9 @@
 <li>
-	<a href="{{- .RelPermalink -}}">
-		<h4>
-				{{- with .Params.menu.doc.pre -}}<span class="icon icon-bullet">{{- . -}}</span>{{- end -}}
-        {{- with .Title -}}{{- . | $.Page.RenderString -}}{{- end -}}
-		</h4>
-      {{- with .Description -}}
-				<p class="description">{{- . | $.Page.RenderString -}}</p>
-      {{- end -}}
+	<a class="secnav__item" href="{{- .RelPermalink -}}">
+		{{- with .Params.menu.doc.pre -}}<span class="icon secnav__icon">{{- . -}}</span>{{- end -}}
+		<div>
+		{{- with .Title -}}<h2 class="secnav__title">{{- . | $.Page.RenderString -}}</h2>{{- end -}}
+		{{- with .Description -}}<p class="secnav__description">{{- . | $.Page.RenderString -}}</p>{{- end -}}
+		</div>
 	</a>
 </li>

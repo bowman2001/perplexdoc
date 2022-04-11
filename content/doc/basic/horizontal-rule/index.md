@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-03-25T10:39:36+01:00"
 description: Strong separation of page segments
 featImg: miti-WmmcTOe3vqA-unsplash.jpg

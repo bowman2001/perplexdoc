@@ -1,16 +1,21 @@
 {{- define "main" -}}
-<main class="l-box" id="box">
-	<header class="titlebox">
+<main id="box">
+	<header class="pageheader">
 			{{- partial "img/featuredmargin.html" . -}}
 		<div class="title">
 			{{ partial "title/title.html" . }}
 			{{ partial "title/subtitle.html" . }}
 		</div>
 	</header>
-
-	<section class="md md-serif">
+	<section class="md md--serif">
 		{{- partial "content.html" . -}}
 	</section>
+	<footer class="pagefooter">
+		<div class="meta">
+			{{ partial "nav/breadcrumbs/footer.html" . }}
+			{{ partial "date/page/updated.html" . }}
+		</div>
+	</footer>
 </main>
 {{- end -}}
 

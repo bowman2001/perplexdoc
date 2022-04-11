@@ -1,6 +1,6 @@
 {{- define "main" -}}
-<main class="l-box l-box-doc" id="box">
-	<header class="titlebox">
+<main class="l-box" id="box">
+	<header class="pageheader">
 		{{- partial "img/featuredmargin.html" . -}}
 		<div class="title title--list">
 			<hr>
@@ -8,18 +8,27 @@
 			{{ partial "title/subtitle.html" . }}
 		</div>
 	</header>
-	<section class="md md-serif md-list">
+	<section class="md md--serif md--list">
 		{{- partial "content.html" . -}}
 	</section>
-	<section class="l-section">
-		<nav class="nav-list">
-		<ul>
+	<section>
+		<nav class="secnav">
+		<ul class="secnav__list">
 			{{- range .Pages -}}
 			{{- .Render "li" -}}
 			{{- end -}}
 		</ul>
 		</nav>
 	</section>
+	<section class="md md--serif">
+		{{- partial "after.html" . -}}
+	</section>
+	<footer class="pagefooter">
+		<div class="meta">
+			{{ partial "nav/breadcrumbs/footer.html" . }}
+			{{ partial "date/page/updated.html" . }}
+		</div>
+	</footer>
 </main>
 {{- end -}}
 

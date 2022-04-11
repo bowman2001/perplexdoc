@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-03-24T13:21:59+01:00"
 description: Text segments from other sources
 featImg: cj-dayrit-xX2aYSBsyKo-unsplash.jpg

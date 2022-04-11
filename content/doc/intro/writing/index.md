@@ -1,15 +1,16 @@
 ---
+author: Georg Makowski
 date: "2021-09-07T21:02:57+02:00"
 description: Structured Plain Text Files
 featImg: img/Markdown-mark.svg
 menu:
   doc:
     identifier: writing
-    name: Writing Markdown
+    name: Markdown
     parent: intro
     pre: edit
 subtitle: false
-title: Writing Markdown
+title: Markdown
 weight: 10
 resources:
 - src: erda-estremera-eMX1aIAp9Nw-unsplash.jpg

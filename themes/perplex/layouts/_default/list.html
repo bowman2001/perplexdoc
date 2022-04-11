@@ -1,17 +1,17 @@
 {{- define "main" -}}
-    <main class="l-box" id="box">
-        <header class="titlebox">
+    <main id="box">
+        <header class="pageheader">
             {{- partial "img/featuredmargin.html" . -}}
             <div class="title title--list">
                 {{ partial "title/title.html" . }}
                 {{ partial "title/subtitle.html" . }}
             </div>
         </header>
-        <section class="md md-serif md-list">
+        <section class="md md--serif md--list">
             {{- partial "content.html" . -}}
         </section>
         <section>
-            <nav class="nav-list">
+            <nav class="secnav">
                 <ul>
                     {{- range .Pages -}}
                         {{- .Render "li" -}}

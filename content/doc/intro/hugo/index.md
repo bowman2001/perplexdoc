@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-09-07T21:43:30+02:00"
 description: The world's fastest static site generator
 featImg: img/Logo_of_Hugo_the_static_website_generator.svg
@@ -177,26 +178,26 @@ hugo new blog/my-second-post/index.md
 
 The file `index.md` is rendered again as a single page, but now we can move page-specific resources in the folder of the *leaf branch* and access them directly via their filename.
 
-{{< sidenote up=15 >}}
+{{< sidenote up=14 >}}
 
-###### Subdirectories
+##### Subdirectories
 
-are allowed. We can create as many of them as we need to sort a big bunch of resource files.
+are possible. We can build only one single page with a leaf bundle, but there is no limit to the folder structure for resources.
 {{< /sidenote >}}
 
 #### Blog posts
 
 When the number of blog entries rises, we need some structure. This is achieved with *taxonomies*, and Hugo's defaults are *categories* and *tags*. We can use them immediately, the front matter already includes the empty parameters:
-{{< sidenote up=15 >}}
+{{< sidenote up=14 >}}
 
-###### New Taxonomies
+##### New Taxonomies
 
 may be defined in the configuration. Please read the corresponding [docs](https://gohugo.io/content-management/taxonomies#configure-taxonomies).
 {{< /sidenote >}}
 
 ```yaml {class="col-left" linenos=true linenostart=5 }
-categories = []
-tags = []
+categories:
+tags:
 ```
 
 When we add our taxonomies as a comma separated list inside the empty `[]`, Hugo will generate additional list pages for every taxonomy we introduced.

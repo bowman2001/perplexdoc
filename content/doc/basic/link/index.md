@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-03-23T22:11:38+01:00"
 description: All types of references to a URL
 featImg: edge2edge-media-t1OalCBUYRc-unsplash.jpg

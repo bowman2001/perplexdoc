@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-09-13T10:05:04+02:00"
 description: Configuration section for the _Goldmark_ renderer
 menu:

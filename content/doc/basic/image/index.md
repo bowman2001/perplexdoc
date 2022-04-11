@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 date: "2021-03-25T10:41:36+01:00"
 description: Photographs, Graphics etc.
 featImg: mulyadi-JJMoAiVl9jA-unsplash.jpg

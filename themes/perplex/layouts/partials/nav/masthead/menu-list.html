@@ -3,7 +3,7 @@
     {{ $menuName := .menuname }}
     {{ $menu := .menu }}
     {{ range $menu }}
-      <li><a class="topnav__item {{ if or ($currentPage.IsMenuCurrent $menuName .) ($currentPage.HasMenuCurrent $menuName .) }}topnav__item--active{{ end }}" href="{{ .URL }}">
+      <li><a class="{{ if or ($currentPage.IsMenuCurrent $menuName .) ($currentPage.HasMenuCurrent $menuName .) -}} is-active {{- end }}" href="{{ .URL }}">
             {{- with .Pre -}}<span class="icon">{{ . }}</span>{{ end }}
           {{ with .Name }}{{ . | markdownify }}{{ end }}
         </a></li>

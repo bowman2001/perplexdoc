@@ -4,12 +4,12 @@
     {{ $menu := .menu }}
     {{ range $menu }}
         {{ if .HasChildren }}
-					<li class='li--1 {{ if $currentPage.HasMenuCurrent $menuName . }}is-active{{ end }}'>
+					<li class='li--1 {{ if $currentPage.IsMenuCurrent $menuName . -}}is-active{{- end }} {{ if $currentPage.HasMenuCurrent $menuName . -}}has-active{{- end -}}'>
               {{ partial "nav/sidebar/item.html" . }}
               {{ partial "nav/sidebar/expand.html" . }}
-						<ul class='{{ if (partial "nav/sidebar/itemsHaveNoChildren.html" . ) }}itemsHaveNoChildren{{ end }}'>
+						<ul class='{{ if (partial "nav/sidebar/itemsHaveNoChildren.html" . ) -}}itemsHaveNoChildren{{ end }}'>
                 {{ range .Children }}
-									<li class='li--2 {{ if or ($currentPage.HasMenuCurrent $menuName . ) ($currentPage.IsMenuCurrent $menuName . )}}is-active{{ end }}'>
+									<li class='li--2 {{ if $currentPage.IsMenuCurrent $menuName . -}}is-active{{- end }} {{ if $currentPage.HasMenuCurrent $menuName . -}}has-active{{- end -}}'>
                       {{ partial "nav/sidebar/item.html" . }}
                       {{ if .HasChildren }}
                           {{ partial "nav/sidebar/expand.html" . }}

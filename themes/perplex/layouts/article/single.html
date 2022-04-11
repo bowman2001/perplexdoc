@@ -1,6 +1,6 @@
 {{- define "main" -}}
-	<main class="l-box" id="box">
-		<header class="titlebox">
+	<main id="box">
+		<header class="pageheader">
 			<aside class="right">
 					{{- partial "img/featuredmargin.html" . -}}
 			</aside>
@@ -9,9 +9,15 @@
           {{ partial "title/subtitle.html" . }}
 			</div>
 		</header>
-		<section class="md md-serif md-article {{ with .Params.dropcap -}} md-dropcap {{- . }}{{ end }}">
+		<section class="md md--serif md-article {{ with .Params.dropcap -}} md-dropcap {{- . }}{{ end }}">
         {{- partial "content.html" . -}}
 		</section>
+		<footer class="pagefooter">
+			<div class="meta">
+				{{ partial "nav/breadcrumbs/footer.html" . }}
+				{{ partial "date/page/updated.html" . }}
+			</div>
+		</footer>
 	</main>
 {{- end -}}
 

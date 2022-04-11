@@ -1,6 +1,7 @@
 ---
+author: Georg Makowski
 date: "2021-08-26T21:15:24+02:00"
-description: GitHub Flavored Markdown
+description: Additional Markdown Elements
 featImg: img/Markdown-mark.svg
 menu:
   doc:
@@ -8,7 +9,7 @@ menu:
     name: Extended Markdown
     pre: description
 subtitle: false
-title: Extended Markdown Layout
+title: Extended Markdown
 weight: 10
 ---
 

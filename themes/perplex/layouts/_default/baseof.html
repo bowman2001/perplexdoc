@@ -5,12 +5,11 @@
 <header class="l-masthead l-nav" id="masthead" >
     {{- partial "nav/masthead.html" . -}}
 </header>
-<div class="l-page" id="page">
-<div class="l-content" id="content">
-  <div class="l-main" id="main">
+<div id="page">
+<div id="content">
+  <main id="main">
       {{- block "main" . -}}{{- end -}}
-      {{/* - partial "footer/main.html" . - */}}
-  </div>
+  </main>
   <aside class="l-sidebar l-nav" id="sidebar">
       <header class="l-masthead l-masthead-sidebar hide3">
         {{- partial "nav/sidebar-masthead.html" . -}}

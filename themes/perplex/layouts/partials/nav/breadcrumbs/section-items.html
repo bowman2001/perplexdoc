@@ -1,0 +1,11 @@
+{{ $cs := .CurrentSection }}
+{{ $csp := $cs.Parent }}
+{{ with $csp }}
+	{{ if ne . .FirstSection }}
+	<li>{{- partial "nav/breadcrumbs/link.html" . -}}</li>
+	{{- partial "nav/breadcrumbs/separator.html" . -}}
+	{{ end }}
+{{ end }}
+{{ with $cs }}
+	<li>{{- partial "nav/breadcrumbs/link.html" . -}}</li>
+{{ end }}
