@@ -14592,7 +14592,7 @@ defineFunction({
   },
   mathmlBuilder: function mathmlBuilder(group, options) {
     // There is no way to do this in MathML.
-    // Write a class as a breadcrumb in case some post-processor wants
+    // Write a class as a breadcrumbs in case some post-processor wants
     // to perform a vcenter adjustment.
     return new mathMLTree.MathNode("mpadded", [buildMathML_buildGroup(group.body, options)], ["vcenter"]);
   }
