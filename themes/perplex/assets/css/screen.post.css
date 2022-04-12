@@ -3294,12 +3294,13 @@ nav .icon {
 .sidebarbox {
   padding: 0 0rem;
   padding: 0 var(--pmv);
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 @media screen and (min-width: 79em) {
   .sidebarbox {
-    overflow-x: hidden;
-    overflow-y: auto;
     width: 35rem;
     height: 100%;
     scrollbar-color: #ebb923 #f8e9da;
