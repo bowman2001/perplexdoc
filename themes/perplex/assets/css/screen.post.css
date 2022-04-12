@@ -494,7 +494,7 @@ body {
 
 #masthead {
   position: fixed;
-  z-index: 10;
+  z-index: 100;
 }
 
 @media screen and (min-width: 48em) {
@@ -626,6 +626,14 @@ body {
   }
 }
 
+#content.is-locked {
+  background: #000;
+}
+
+#content.is-locked > #main {
+  z-index: -1;
+}
+
 #overlay {
   display: none;
   position: fixed;
@@ -634,16 +642,15 @@ body {
   z-index: 9;
   height: 100%;
   width: 100%;
-  background-color: #000;
-  opacity: 1;
+  background-color: transparent;
   cursor: unset;
-  overscroll-behavior-y: contain;
-  transition: opacity 50ms 250ms;
+  transition: background-color 50ms 250ms;
 }
 
 #overlay.is-visible {
   display: block;
-  opacity: .75;
+  transition: background-color 50ms 250ms;
+  background-color: rgba(0,0,0,0.73333);
   cursor: pointer;
 }
 
@@ -686,10 +693,10 @@ body {
 #sidebar {
   position: fixed;
   top: 7rem;
-  left: -100vw;
+  left: -37rem;
   z-index: 100;
   transition: left 250ms ease-out;
-  width: 100vw;
+  width: 37rem;
   height: calc(100vh - 7rem);
   overflow-x: hidden;
   overflow-y: auto;
@@ -703,8 +710,6 @@ body {
 
 @media screen and (min-width: 48em) {
   #sidebar {
-    left: -55.5rem;
-    width: 55.5rem;
     border-right: 1px solid #e1e1e1;
     margin-right: 2rem;
     overflow: hidden;
@@ -715,7 +720,6 @@ body {
   #sidebar {
     position: static;
     grid-area: left;
-    width: 37rem;
     border-right: none;
     -webkit-animation: fadeinsite 500ms;
             animation: fadeinsite 500ms;
