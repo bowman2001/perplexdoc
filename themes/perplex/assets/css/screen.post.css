@@ -626,6 +626,32 @@ body {
   }
 }
 
+#content.is-locked {
+  background: #000;
+}
+
+#content.is-locked > #main {
+  z-index: -1;
+}
+
+#overlay {
+  position: fixed;
+  top: 7rem;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  cursor: unset;
+  transition: background-color 250ms, z-index 0ms;
+}
+
+#overlay.is-visible {
+  z-index: 9;
+  background-color: rgba(0,0,0,0.26667);
+  cursor: pointer;
+}
+
 #main {
   display: flex;
   position: relative;
@@ -637,7 +663,7 @@ body {
   -webkit-animation: fadeinsite 500ms;
           animation: fadeinsite 500ms;
   grid-area: main;
-  transition: filter 250ms;
+  transition: background-color 250ms;
 }
 
 @media screen and (min-width: 79em) {
@@ -660,26 +686,6 @@ body {
   #main::-webkit-scrollbar-track {
     background: #f8e9da;
   }
-}
-
-#main:after {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-  opacity: 0;
-  transition: opacity 250ms;
-}
-
-#main.is-locked {
-  overflow: hidden;
-}
-
-#main.is-locked:after {
-  z-index: 6;
-  opacity: .5;
 }
 
 #sidebar {
@@ -856,7 +862,7 @@ figure > figcaption .attr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: #777;
+  color: #666;
   max-width: 74rem;
   padding: 0 2rem;
   margin-top: -2rem;
@@ -903,7 +909,7 @@ a.meta__item:hover {
   margin-bottom: 0;
   scroll-margin-top: 11rem;
   text-transform: uppercase;
-  color: #222;
+  color: #333;
   letter-spacing: .02em;
   word-spacing: .06em;
 }
@@ -941,7 +947,7 @@ a.meta__item:hover {
 }
 
 .title--list > hr {
-  border-top: .35rem solid #222;
+  border-top: .35rem solid #333;
   height: 1rem;
 }
 
@@ -988,13 +994,13 @@ a.meta__item:hover {
   }
 }
 
-.md h1,
-.md h2,
-.md h3,
-.md h4,
-.md h5,
-.md h6 {
-  color: #222;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
 }
 
 .md h1 > span,
@@ -1044,18 +1050,18 @@ a.meta__item:hover {
   color: #000;
 }
 
-.md h1 > span:hover a,
-.md h1 > span:focus a,
-.md h2 > span:hover a,
-.md h2 > span:focus a,
-.md h3 > span:hover a,
-.md h3 > span:focus a,
-.md h4 > span:hover a,
-.md h4 > span:focus a,
-.md h5 > span:hover a,
-.md h5 > span:focus a,
-.md h6 > span:hover a,
-.md h6 > span:focus a {
+.md h1 > span:hover > a,
+.md h1 > span:focus > a,
+.md h2 > span:hover > a,
+.md h2 > span:focus > a,
+.md h3 > span:hover > a,
+.md h3 > span:focus > a,
+.md h4 > span:hover > a,
+.md h4 > span:focus > a,
+.md h5 > span:hover > a,
+.md h5 > span:focus > a,
+.md h6 > span:hover > a,
+.md h6 > span:focus > a {
   color: #000;
 }
 
@@ -1168,7 +1174,7 @@ a.meta__item:hover {
 
 .md .note h5,
 .md .note h6 {
-  color: #555;
+  color: #666;
 }
 
 .md .h-warn,
@@ -2793,7 +2799,7 @@ a.meta__item:hover {
   left: -1rem;
   font-size: .8em;
   line-height: 1;
-  color: #222;
+  color: #333;
 }
 
 .note-star1 .content > p:first-of-type:before {
