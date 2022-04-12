@@ -693,13 +693,14 @@ body {
 #sidebar {
   position: fixed;
   top: 7rem;
-  left: -37rem;
-  z-index: 100;
+  left: -100vw;
+  z-index: 90;
   transition: left 250ms ease-out;
-  width: 37rem;
+  width: 100vw;
   height: calc(100vh - 7rem);
   overflow-x: hidden;
   overflow-y: auto;
+  overscroll-behaviour: contain;
   background-color: #fefcfa;
 }
 
@@ -710,6 +711,8 @@ body {
 
 @media screen and (min-width: 48em) {
   #sidebar {
+    left: -55.5rem;
+    width: 55.5rem;
     border-right: 1px solid #e1e1e1;
     margin-right: 2rem;
     overflow: hidden;
@@ -719,6 +722,7 @@ body {
 @media screen and (min-width: 79em) {
   #sidebar {
     position: static;
+    width: 37rem;
     grid-area: left;
     border-right: none;
     -webkit-animation: fadeinsite 500ms;
@@ -3294,9 +3298,6 @@ nav .icon {
 .sidebarbox {
   padding: 0 0rem;
   padding: 0 var(--pmv);
-  overflow-x: hidden;
-  overflow-y: auto;
-  overscroll-behavior: contain;
 }
 
 @media screen and (min-width: 79em) {
