@@ -519,27 +519,24 @@ body {
     grid-template-areas: ". . . left left main main main main main main main main main";
   }
 }
-#content.is-locked {
-  background: black;
-}
-#content.is-locked > #main {
-  z-index: -1;
-}
 
 #overlay {
+  display: none;
   position: fixed;
   top: 7rem;
   left: 0;
-  z-index: -1;
+  z-index: 9;
   height: 100%;
   width: 100%;
-  background-color: transparent;
+  background-color: black;
+  opacity: 1;
   cursor: unset;
-  transition: background-color 250ms, z-index 0ms;
+  overscroll-behavior-y: contain;
+  transition: opacity 50ms 250ms;
 }
 #overlay.is-visible {
-  z-index: 9;
-  background-color: #0004;
+  display: block;
+  opacity: 0.75;
   cursor: pointer;
 }
 
@@ -578,7 +575,7 @@ body {
   position: fixed;
   top: 7rem;
   left: -100vw;
-  z-index: 9;
+  z-index: 100;
   transition: left 250ms ease-out;
   width: 100vw;
   height: calc( 100vh - 7rem);

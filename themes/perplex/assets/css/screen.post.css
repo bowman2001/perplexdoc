@@ -626,29 +626,24 @@ body {
   }
 }
 
-#content.is-locked {
-  background: #000;
-}
-
-#content.is-locked > #main {
-  z-index: -1;
-}
-
 #overlay {
+  display: none;
   position: fixed;
   top: 7rem;
   left: 0;
-  z-index: -1;
+  z-index: 9;
   height: 100%;
   width: 100%;
-  background-color: transparent;
+  background-color: #000;
+  opacity: 1;
   cursor: unset;
-  transition: background-color 250ms, z-index 0ms;
+  overscroll-behavior-y: contain;
+  transition: opacity 50ms 250ms;
 }
 
 #overlay.is-visible {
-  z-index: 9;
-  background-color: rgba(0,0,0,0.26667);
+  display: block;
+  opacity: .75;
   cursor: pointer;
 }
 
@@ -692,7 +687,7 @@ body {
   position: fixed;
   top: 7rem;
   left: -100vw;
-  z-index: 9;
+  z-index: 100;
   transition: left 250ms ease-out;
   width: 100vw;
   height: calc(100vh - 7rem);
