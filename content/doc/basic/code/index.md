@@ -83,7 +83,7 @@ The html tag to mark the beginning of code is `<code>`. And to mark the end we u
 
 ### Code Blocks
 
-The first backticks marking a code block may be followed by an abbreviation for the kind of code. Then _Hugo_ is able to highlight and colorize the source code for better readability. The abbreviations are usually the same or are referring to the common suffix for a file containing that kind of code.
+The first backticks marking a code block may be followed by an abbreviation for the kind of code. Then _Hugo_ is able to highlight and colorize the source code for better legibility. The abbreviations are usually the same or are referring to the common suffix for a file containing that kind of code.
 
 ### Fenced
 

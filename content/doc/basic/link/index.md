@@ -34,7 +34,7 @@ To include links from a word or phrase there are two options:
 
 ## Automatic links {#linkify}
 
-We can surround URLs for better readability in the markdown file
+We can surround URLs for better legibility in the markdown file
 with angle brackets `<>`. The result is the same:
 
 `http://www.example.com`&ensp;or&ensp;`<http://www.example.com>`

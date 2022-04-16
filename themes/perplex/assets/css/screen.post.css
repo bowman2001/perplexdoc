@@ -887,7 +887,7 @@ figure > figcaption .attr {
 }
 
 a.meta__item:hover {
-  color: #0072a7;
+  color: #e00083;
 }
 
 .meta__item--text {
@@ -2996,8 +2996,8 @@ nav .icon {
 
 .menu a:hover,
 .menu a:focus {
-  color: #5acbff;
-  border-bottom-color: #5acbff;
+  color: #ff149d;
+  border-bottom-color: #ff149d;
 }
 
 .social a {
@@ -3049,6 +3049,12 @@ nav .icon {
   padding: 2rem 1rem 1.5rem 1rem;
 }
 
+@media screen and (min-width: 48em) {
+  .ctrl {
+    width: 37rem;
+  }
+}
+
 .ctrl .site_title {
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
@@ -3060,13 +3066,7 @@ nav .icon {
 }
 
 .ctrl .site_title:hover {
-  color: #e00083;
-}
-
-@media screen and (min-width: 48em) {
-  .ctrl {
-    width: 37rem;
-  }
+  color: #ff149d;
 }
 
 .ctrl-sh {
@@ -3443,6 +3443,7 @@ nav .icon {
   .sidebarnav__list .li--3 > a,
   .sidebarnav__list .li--3 > .open-menu,
   .sidebarnav__list .li--3 > .chk-menu {
+    display: inline-block;
     font-size: 1.43rem;
     line-height: 2rem;
     padding-top: 1.464465rem;
@@ -3479,7 +3480,7 @@ nav .icon {
 
 .sidenav__title:hover,
 .sidenav__title:focus {
-  color: #e00083;
+  color: #c70074;
 }
 
 @media screen and (min-width: 79em) {
@@ -3523,7 +3524,6 @@ nav .icon {
 .open-menu {
   position: absolute;
   right: 0;
-  padding-left: 3rem;
   text-align: right;
 }
 
@@ -3544,6 +3544,9 @@ nav .icon {
 }
 
 .chk-menu {
+  display: inline-block;
+  height: 4rem;
+  width: 2rem;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;

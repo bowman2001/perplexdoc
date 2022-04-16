@@ -1,4 +1,5 @@
 ---
+author:
 title: {{ replace .Name "-" " " | title }}
 description: Page description placeholder
 subtitle: false

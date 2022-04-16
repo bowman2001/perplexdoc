@@ -13,7 +13,7 @@ title: Paragraphs
 weight: 5
 ---
 
-Paragraphs are essential for a website focused on textual information. Comfortable proportions and surrounding whitespace contribute to their readability in _Perplex_. The layout of other elements is related to them.
+Paragraphs are essential for a website focused on textual information. Comfortable proportions and surrounding whitespace contribute to their legibility in _Perplex_. The layout of other elements is related to them.
 {.p-lead} <!--more-->
 
 ## Syntax

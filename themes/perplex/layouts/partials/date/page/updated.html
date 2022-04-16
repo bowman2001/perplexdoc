@@ -1,1 +1,1 @@
-<p title="Last updated {{ with .GitInfo.AuthorName }}by {{ . }}{{ end }}"><a class="meta__item icon">edit</a>&ensp;<span class="meta__item meta__item--text">{{ .Lastmod.Format "January 2, 2006" }}</span></p>
+<p title="Last updated {{ if .GitInfo }}{{ with .GitInfo.AuthorName }}by {{ . }}{{ end }}{{end}}"><a class="meta__item icon">edit</a>&ensp;<span class="meta__item meta__item--text">{{ .Lastmod.Format "January 2, 2006" }}</span></p>

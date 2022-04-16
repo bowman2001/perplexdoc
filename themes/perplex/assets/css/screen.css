@@ -757,7 +757,7 @@ figure > figcaption .attr {
 }
 
 a.meta__item:hover {
-  color: #0072a7;
+  color: #e00083;
 }
 
 .meta__item--text {
@@ -2458,8 +2458,8 @@ nav .icon {
   text-transform: uppercase;
 }
 .menu a:hover, .menu a:focus {
-  color: #5acbff;
-  border-bottom-color: #5acbff;
+  color: #ff149d;
+  border-bottom-color: #ff149d;
 }
 
 .social a {
@@ -2501,6 +2501,11 @@ nav .icon {
   font-size: 1.43rem;
   padding: 2rem 1rem 1.5rem 1rem;
 }
+@media screen and (min-width: 48em) {
+  .ctrl {
+    width: 37rem;
+  }
+}
 .ctrl .site_title {
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
@@ -2511,12 +2516,7 @@ nav .icon {
   text-transform: uppercase;
 }
 .ctrl .site_title:hover {
-  color: #e00083;
-}
-@media screen and (min-width: 48em) {
-  .ctrl {
-    width: 37rem;
-  }
+  color: #ff149d;
 }
 
 .ctrl-sh {
@@ -2807,6 +2807,7 @@ nav .icon {
     padding-bottom: 0;
   }
   .sidebarnav__list .li--1 > a, .sidebarnav__list .li--1 > .open-menu, .sidebarnav__list .li--1 > .chk-menu, .sidebarnav__list .li--2 > a, .sidebarnav__list .li--2 > .open-menu, .sidebarnav__list .li--2 > .chk-menu, .sidebarnav__list .li--3 > a, .sidebarnav__list .li--3 > .open-menu, .sidebarnav__list .li--3 > .chk-menu {
+    display: inline-block;
     font-size: 1.43rem;
     line-height: 2rem;
     padding-top: 1.464465rem;
@@ -2838,7 +2839,7 @@ nav .icon {
   letter-spacing: 0.04em;
 }
 .sidenav__title:hover, .sidenav__title:focus {
-  color: #e00083;
+  color: #c70074;
 }
 @media screen and (min-width: 79em) {
   .sidenav__title {
@@ -2874,7 +2875,6 @@ nav .icon {
 .chk-menu, .open-menu {
   position: absolute;
   right: 0;
-  padding-left: 3rem;
   text-align: right;
 }
 
@@ -2891,6 +2891,9 @@ nav .icon {
 }
 
 .chk-menu {
+  display: inline-block;
+  height: 4rem;
+  width: 2rem;
   appearance: none;
 }
 .chk-menu ~ ul {

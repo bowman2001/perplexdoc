@@ -12,10 +12,10 @@ title: How to use attributes?
 weight: 20
 ---
 
-Hugo’s attributes are HTML attributes, which get injected into the rendered code.
+Hugo’s attributes are HTML attributes, which get injected into _Markdown_ text.
 {.p-lead} <!--more-->
 
-The possibility to add attributes is available for all kinds of text _blocks_, for _headings_ and for _fenced code blocks_. We can allow them for blocks and headings in the configuration section for the goldmark parser, where the parameter `title` relates to all heading levels. Attributes are disabled for blocks and enabled for headings by default. They are [all enabled]({{< relref "markup#20" >}}) for this project.
+Attributes are available for all kinds of _blocks_, for _headings_ and for _fenced code blocks_. We can allow them for blocks and headings in the configuration section for the goldmark parser, where the parameter `title` relates to all heading levels. They are by default disabled for blocks and enabled for headings. For this project they are [all enabled]({{< relref "markup#19" >}}).
 
 ## Syntax
 
@@ -25,25 +25,25 @@ Attributes are enclosed in curly braces `{ }` and one pair of braces takes all a
 The place, where to attach an attribute, depends on the kind of element:
 
 Block element
-: The attributes need to be placed **on the next line** directly after the element. If the element is indented, we need to indent them by the same amount.
+: The attributes need to be placed **on the next line** directly after the element. If the element is indented, we need to indent them accordingly.
 
 Heading
-: Again, we can place them on the next line, but it's also possible to add them on the **the same line**.
+: Again, we can place them on the next line, but it's also possible to let them follow on **the same line**.
 
 Fenced code block
-: We need to place them after the **first fence** and the language indicator — like `` ```md {linenos=true .left}``
+: We need to place them after the **first fence** and the language indicator — like `` ```md {.left}``
 {.dl-loose} 
 
 ### Different kinds of attributes
 
 Class attributes
-: They usually style an element and refer to a CSS class. We can use the long form like `class="name"` or the short form `.name`.  
+: They usually style an element and refer to a CSS class. We can use the long form following the HTML syntax --- like `class="name"`. The short alternative is the CSS syntax: `.name`.  
 
 Identification attributes
 : They usually serve as anchors and need to be unique. Again we can use the long form `id="identifier"` or short `#identifier`.
 
 Other
-: all other HTML attributes can be used in the usual long form. The one I find particular useful is `lang`. We can place it after a block to mark a different content language and help the hyphenation engine.
+: all other HTML attributes may be injected with their usual long syntax. Personally I’ve found the `lang`-attribute to be very useful. We can place it after a block with a different content language to let the hyphenation engine do its work properly.
 {.dl-loose}
 
 ## Layout
