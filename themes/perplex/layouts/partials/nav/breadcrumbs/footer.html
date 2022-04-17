@@ -12,7 +12,13 @@
         {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
         {{ partial "nav/breadcrumbs/separator.html" . }}
     {{ end }}
-    <li>
-      <a class="meta__item meta__item--text font-italic" href="{{ .p1.Permalink }}">{{ .p1.Title | markdownify }}</a>
-    </li>
+    {{ if not .p1.IsPage }}
+      <li>
+        <a class="meta__item meta__item--text font-italic" href="{{ .p1.Permalink }}">{{ .p1.Title | markdownify }}</a>
+      </li>
+    {{ else }}
+      <li>
+        <span class="meta__item meta__item--text font-italic">{{ .p1.Title | markdownify }}</span>
+      </li>
+    {{ end }}
 {{ end }}

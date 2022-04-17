@@ -865,7 +865,7 @@ figure > figcaption .attr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: #666;
+  color: #555;
   max-width: 74rem;
   padding: 0 2rem;
   margin-top: -2rem;
@@ -874,25 +874,44 @@ figure > figcaption .attr {
 .meta__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.meta__date {
+  flex-shrink: 0;
+  width: 14rem;
+  text-align: right;
 }
 
 .meta__item {
   display: inline-block;
   font-size: 1.6145833333rem;
   line-height: 2rem;
-  padding-top: 1.3953385417rem;
-  padding-bottom: 1.6046614583rem;
+  padding-top: .3953385417rem;
+  padding-bottom: .6046614583rem;
   margin-bottom: 0;
-  scroll-margin-top: 10rem;
-}
-
-a.meta__item:hover {
-  color: #e00083;
+  scroll-margin-top: 11rem;
 }
 
 .meta__item--text {
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
+}
+
+a.meta__item--text {
+  transition: -webkit-text-decoration 150ms;
+  transition: text-decoration 150ms;
+  transition: text-decoration 150ms, -webkit-text-decoration 150ms;
+  text-decoration: underline;
+  text-decoration-thickness: .125em;
+  -webkit-text-decoration-color: rgba(0, 114, 167, .25);
+          text-decoration-color: rgba(0, 114, 167, .25);
+}
+
+a.meta__item--text:hover {
+  color: #e00083;
+  -webkit-text-decoration-color: #e00083;
+          text-decoration-color: #e00083;
 }
 
 .pageheader {
@@ -905,12 +924,11 @@ a.meta__item:hover {
   font-weight: 700;
   font-size: 2.86rem;
   line-height: 3rem;
-  margin-top: -0.57107rem;
-  padding-top: 0;
+  padding-top: .42893rem;
   padding-bottom: calc(0.57107rem + 1 * 0rem);
   padding-bottom: calc(0.57107rem + 1 * var(--es));
   margin-bottom: 0;
-  scroll-margin-top: 11rem;
+  scroll-margin-top: 10rem;
   text-transform: uppercase;
   color: #333;
   letter-spacing: .02em;
