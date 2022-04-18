@@ -10,7 +10,6 @@ menu:
     pre: text_fields
 subtitle: false
 title: Text Headings
-
 weight: 1
 ---
 
@@ -33,11 +32,17 @@ _Markdown_ headings are preceded by number signs `#` and a space. The six availa
 
 6. `###### Small Paragraph Heading`
 
-Usually we don’t apply the full hierarchy on moderate sized pages, because too much structure is confusing. And we may skip some levels and use paragraph headings inside of sections for example.
+Usually we don’t want to apply the full hierarchy on moderate sized pages, because too much structure is confusing. And for an appropriate layout, it’s often desirable to skip one or two levels and use paragraph headings inside of sections. But this is going against recommended HTML guidelines. Headings should be used strictly in their descending order, because screen readers and other automatic interpreters get confused otherwise.
+
+To follow this recommendation _and_ skip headings visually, we need heading [attributes][attr].
+
+### Paragraph Headings
+
+We can style any heading like a _paragraph heading_ with the [attribute][attr] `{.h-p}`. For the probably rare occasions we need to style a heading as a _small paragraph heading_ we need an additional attribute: `{.h-p .h-p-s}`.
 
 ### Special Headings
 
-When we want to highlight a heading, that contains some *warning* or an important *information* or *tip*, we can use these [attributes][attr]: `{.h-warn}`, `{.h-info}`, `{.h-tip}`
+When we want to highlight a heading, that contains some _warning_ or an important _information_ or _tip_, we can use these [attributes][attr]: `{.h-warn}`, `{.h-info}`, `{.h-tip}`
 
 A warning paragraph starts with a heading like this:
 
@@ -56,7 +61,7 @@ Headings are not only recognized by their font styling, but also by the white-sp
 
 If the page already has a title, the first heading **should not** occur in the _Markdown_ content. Like many themes _Perplex_ provides titles for all pages.
 
-{{< sidenote up=9 >}}
+{{< sidenote up=8 >}}
 The title is generated from parameters in the front-matter. (See [title]({{< relref "title" >}}))
 {{< /sidenote >}}
 
@@ -71,14 +76,13 @@ We still may need the first heading on special pages without a title section, wh
 #### Sub-Subsection Heading
 {{< farfar 1 >}}
 
-##### Paragraph Heading
+#### Styled Paragraph Heading {.h-p}
 {{< farfar 1 >}}
 
-##### Warning Paragraph {.h-warn}
+#### Warning Paragraph {.h-warn .h-p}
 {{< farfar 1 >}}
 
 ##### Info Paragraph {.h-info}
-
 {{< farfar 1 >}}
 
 ##### Tip Paragraph {.h-tip}

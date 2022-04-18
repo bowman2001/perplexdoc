@@ -38,10 +38,7 @@ _Markdown_ files are plain text files with the suffixes `.md`, `.mdown` or `.mar
 _Perplex_ styles HTML, which is generated from extended _Commonmark_ by _Hugo’s_ default renderer [_Goldmark_][gmark]. Three extensions — the [_definition list_]({{< relref "definition-list" >}}), the [_footnote_]({{< relref "footnotes" >}}) and the [_typographer_]({{< relref "typographer" >}}) — have been adopted from [_PHP Markdown Extra_][phpmex]. Based on _Commonmark_, [_GitHub_](https://github.com) introduced _**G**itHub **F**lavored **M**arkdown (GFM)_ with the extensions [_table_]({{< relref "table" >}}), the [_task-list_]({{< relref "task-list">}}), [_strikethrough_]({{< relref "delins">}}) and _linkify_. They are defined in a [new specification][gfmspec] and are all available in _Goldmark_.
 
 {{< sidenote up=20 >}}
-
-##### Blackfriday
-
-is not fully _Commonmark_-compliant and has been deprecated by _Hugo_. _Black&shy;fri&shy;day_ generated HTML may be styled correctly most of the time in _Perplex_. But if you want to rely on _Perplex_, I strongly suggest switching to _Goldmark_.
+**Blackfriday** is not fully _Commonmark_-compliant and has been deprecated by _Hugo_. _Black&shy;fri&shy;day_ generated HTML may be styled correctly most of the time in _Perplex_. But if you want to rely on _Perplex_, I strongly suggest switching to _Goldmark_.
 {{< /sidenote >}}
 
 Further extensions may join in the future, but probably only a few if any, because simplicity remains essential for _Markdown_.
@@ -59,7 +56,7 @@ This documentation includes short reviews of every syntax element in _Goldmark_ 
 Two basic _Markdown_ elements are continuously creating confusion, because they are treated in somewhat ambiguous ways:
 
 [Image][img]
-: The _Markdown_ image element is syntactically meant to be placed inside a block element. But it’s also allowed to be used self-contained and gets __automatically wrapped__ by an empty paragraph block, then.[^1]
+: The _Markdown_ image element is syntactically meant to be placed inside a block element. But it’s also allowed to be used self-contained and gets **automatically wrapped** by an empty paragraph block, then.[^1]
 
 [Line Break][lb]
 : _Commonmark_ and _GFM_ are not fully compatible in regard to this one element. That’s why there are two different ways to handle line breaks inside of text blocks:
@@ -79,7 +76,7 @@ There is one image element in _Markdown_ for embedding an image and no genuin el
 
 To surround every self-contained _Markdown_ image element with a paragraph — like _Commonmark_ proposes and _Hugo_ does — leads to a simple working solution, when the layout should treat all images alike.
 
-![](splash2) _Perplex_ styles the _Markdown_ image element always embedded in text blocks as a float. In contrast to them, the self-contained images should stand out. _Perplex_ also offers layout variations for both kinds of images. That's why _Perplex_ users need to use the  [figure]({{< relref "figure" >}})-shortcode for self-contained images and the _Markdown_ image element only for [embedded ones][img].
+![splash](splash2) _Perplex_ styles the _Markdown_ image element always embedded in text blocks as a float. In contrast to them, the self-contained images should stand out. _Perplex_ also offers layout variations for both kinds of images. That's why _Perplex_ users need to use the  [figure]({{< relref "figure" >}})-shortcode for self-contained images and the _Markdown_ image element only for [embedded ones][img].
 
 ### How to wrap lines? {#wrap .clear}
 
@@ -90,9 +87,7 @@ _My experience_ : No, these _hard line wraps_ cause us and collaborating authors
 When we rely on soft line wrapping everyone can read and edit the _Markdown_ using a suitable line width. When we place manual wraps instead, everyone — including ourselves — has to deal with them again and again. They have to be moved or removed every time, when text is added or deleted.
 
 {{< sidenote up=14 >}}
-
-###### GitHub
-decided to treat all hard wraps as such on their platform a short while ago.
+**GitHub** decided to treat all hard wraps as such on their platform a short while ago.
 {{< /sidenote >}}
 
 _Hugo_ can handle both ways perfectly. Which rule our _Markdown_ follows does only affect our editing experience and has no effect on the resulting pages.
@@ -130,6 +125,9 @@ Some special editors are designed exclusively for authoring _Markdown_. They usu
 
 Many of these editors offer a convenient separate _preview window_. With _Hugo_ you have an even better option: When you run _Hugo_ on your local computer in _server mode_, it will render your Markdown and deliver it to your browser instantly (see [Using Hugo]({{< relref "hugo#server-mode"  >}})). My personal solution is either an IDE or a programming editor in conjunction with Hugo's excellent server mode.
 
+## Markdown Linting
+_Commonmark_ is permissive to many variations in _Markdown_ formatting. To ensure a certain markup style for a team, we may use a linter. [_Markdownlint_][mlint] is the one the _Hugo documentation project_ is currently using. And you can also find a configuration file [`.markdownlint.yaml`][mlintconf] for this project at the content root.  
+
 [omd]: https://daringfireball.net/projects/markdown/ "Markdown project site by John Gruber"
 [cmark]: https://commonmark.org "Commonmark project site"
 [gmark]: https://github.com/yuin/goldmark "Goldmark repository"
@@ -137,3 +135,5 @@ Many of these editors offer a convenient separate _preview window_. With _Hugo_ 
 [gfmspec]: https://github.github.com/gfm/ "GitHub Flavored Markdown Specification"
 [lb]: {{< relref "linebreak" >}}
 [img]: {{< relref "image" >}}
+[mlint]: https://github.com/DavidAnson/markdownlint "Markdownlint"
+[mlintconf]: 

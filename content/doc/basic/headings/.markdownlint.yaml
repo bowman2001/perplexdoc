@@ -1,0 +1,5 @@
+MD013: false  # Line length
+MD022:
+  lines_above: 1
+  lines_below: 0
+MD025: false

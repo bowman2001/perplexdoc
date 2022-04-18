@@ -21,6 +21,7 @@ Sometimes the separation of page segments by space is not clear enough. Then we 
 ```md {.left}
 *** or ---
 ```
+
 The horizontal rule is depicted by three asterisks or three hyphens at the beginning of a line. Up to three spaces are allowed for indentation. No other characters are allowed to follow on the same line.
 
 ## Layout

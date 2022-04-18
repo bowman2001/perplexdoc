@@ -5,18 +5,18 @@
     {{ range $menu }}
         {{ if .HasChildren }}
 					<li class='li--1 {{ if $currentPage.IsMenuCurrent $menuName . -}}is-active{{- end }} {{ if $currentPage.HasMenuCurrent $menuName . -}}has-active{{- end -}}'>
-              {{ partial "nav/sidebar/item.html" . }}
-              {{ partial "nav/sidebar/expand.html" . }}
-						<ul class='{{ if (partial "nav/sidebar/itemsHaveNoChildren.html" . ) -}}itemsHaveNoChildren{{ end }}'>
+              {{ template "item" . }}
+              {{ template "expand" . }}
+						<ul class='{{ if ( partial "itemsHaveNoChildren" . ) -}}itemsHaveNoChildren{{ end }}'>
                 {{ range .Children }}
 									<li class='li--2 {{ if $currentPage.IsMenuCurrent $menuName . -}}is-active{{- end }} {{ if $currentPage.HasMenuCurrent $menuName . -}}has-active{{- end -}}'>
-                      {{ partial "nav/sidebar/item.html" . }}
+                      {{ template "item" . }}
                       {{ if .HasChildren }}
-                          {{ partial "nav/sidebar/expand.html" . }}
-													<ul class='{{ if (partial "nav/sidebar/itemsHaveNoChildren.html" . ) }}itemsHaveNoChildren{{ end }}'>
+                          {{ template "expand" . }}
+													<ul class='{{ if ( partial "itemsHaveNoChildren" . ) }}itemsHaveNoChildren{{ end }}'>
                               {{ range .Children }}
 																<li class='li--3 {{ if $currentPage.IsMenuCurrent $menuName . }}is-active{{ end }}'>
-                                    {{ partial "nav/sidebar/item.html" . }}
+                                    {{ template "item" . }}
 																</li>
                               {{ end }}
 													</ul>
@@ -27,24 +27,24 @@
 					</li>
         {{ else }}
 					<li class='li--1 {{ if $currentPage.IsMenuCurrent $menuName . }}is-active{{ end }}'>
-              {{ partial "nav/sidebar/item.html" . }}
+              {{ template "item" . }}
 					</li>
         {{ end }}
     {{ end }}
 </ul>
 
-{{- define "partials/nav/sidebar/item.html" -}}
+{{- define "item" -}}
 	<a href="{{ .URL }}">
       {{- with .Pre -}}<span class="icon">{{ . }}</span>{{ end }}<span class="li__text">{{ .Name | markdownify }}</span>
 	</a>
 {{- end -}}
 
-{{- define "partials/nav/sidebar/expand.html" -}}
+{{- define "expand" -}}
 	<input id="menu-{{ .Identifier }}" class="chk-menu" type="checkbox">
 	<label class="open-menu" for="menu-{{ .Identifier }}"><span class="icon"></span></label>
 {{- end -}}
 
-{{- define "partials/nav/sidebar/itemsHaveNoChildren.html" -}}
+{{- define "partials/itemsHaveNoChildren" -}}
     {{ $value := true }}
     {{ range .Children }}
         {{ if .HasChildren }}

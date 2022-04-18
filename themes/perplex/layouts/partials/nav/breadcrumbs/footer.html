@@ -1,3 +1,5 @@
+{{ $context := . }}
+
 <nav>
   <ul class="meta__list">
       {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
@@ -12,13 +14,13 @@
         {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
         {{ partial "nav/breadcrumbs/separator.html" . }}
     {{ end }}
-    {{ if not .p1.IsPage }}
+    {{ if ne .p1 .p2  }}
       <li>
         <a class="meta__item meta__item--text font-italic" href="{{ .p1.Permalink }}">{{ .p1.Title | markdownify }}</a>
       </li>
     {{ else }}
       <li>
-        <span class="meta__item meta__item--text font-italic">{{ .p1.Title | markdownify }}</span>
+        <span class="meta__item meta__item--text font-italic">{{ .p2.Title | markdownify }}</span>
       </li>
     {{ end }}
 {{ end }}
