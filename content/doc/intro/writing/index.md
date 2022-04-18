@@ -132,8 +132,8 @@ _Commonmark_ is permissive to many variations in _Markdown_ formatting. To ensur
 [cmark]: https://commonmark.org "Commonmark project site"
 [gmark]: https://github.com/yuin/goldmark "Goldmark repository"
 [phpmex]: https://michelf.ca/projects/php-markdown/extra/ "PHP Markdown Extra site"
-[gfmspec]: https://github.github.com/gfm/ "GitHub Flavored Markdown Specification"
+[gfmspec]: https://github.github.com/gfm "GitHub Flavored Markdown Specification"
+[mlint]: https://github.com/DavidAnson/markdownlint "Markdownlint"
 [lb]: {{< relref "linebreak" >}}
 [img]: {{< relref "image" >}}
-[mlint]: https://github.com/DavidAnson/markdownlint "Markdownlint"
-[mlintconf]: 
+[mlintconf]: {{< relref "markdownlint" >}}

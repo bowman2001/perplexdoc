@@ -24,7 +24,7 @@ In all cases the parameter `baseURL` has to be set to the registered site URL in
 
 The simplest way for smaller projects — with one person responsible for the publishing — is obviously to stick to the computer, where the content gets finalized.
 
-To generate a complete version of the site on our local file system, we run _Hugo_ in *build mode* in the project root like this:
+To generate a complete version of the site on our local file system, we run _Hugo_ in _build mode_ in the project root like this:
 
 ```md {class=col-left}
 hugo --minify
@@ -34,4 +34,4 @@ _Hugo_ renders the site and writes the files into the folder `public` if we have
 
 ## Automated Build and Continuous Deployment
 
-To automate the build process special providers allow to configure a virtual machine for every website. This is especially useful for teams, because they need a shared build environment. The provider gets access to the *Git* repository and automatically pulls new content. Then he starts the virtual machine, builds the current site and populates its CDN with the new version.
+To automate the build process special providers allow to configure a virtual machine for every website. This is especially useful for teams, because they need a shared build environment. The provider gets access to the _Git_ repository and automatically pulls new content. Then he starts the virtual machine, builds the current site and populates its CDN with the new version.

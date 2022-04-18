@@ -6,18 +6,18 @@ featImg: img/Logo_of_Hugo_the_static_website_generator.svg
 menu:
   doc:
     identifier: hugo
-    name: Using Hugo
+    name: Hugo
     parent: intro
     pre: engineering
 subtitle: false
-title: Using Hugo
+title: Hugo
 weight: 20
 ---
 
-The world's fastest static site engine is steadily gaining traction on its way to the first major release. **Hugo** provides a very reliable production environment and helps create blazing fast and secure websites.
+The world's fastest static site engine is steadily gaining traction on its way to the first major release. **Hugo** provides a very reliable production environment and helps to build fast and secure websites.
 {.p-lead} <!--more-->
 
-[_Hugo_](https://gohugo.io) is a versatile command line tool for _macOS_, _Windows_, _Linux_ and _BSD_ derivatives. Binaries for these operating systems and some containers are usually available within a day or a few after every release.
+[_Hugo_](https://gohugo.io) is a versatile monolithic command line tool for _macOS_, _Windows_, _Linux_ and _BSD_ derivatives. Binaries for these operating systems and some containers are usually available within a day or a few after every release.
 
 {{< sidenote up=11 >}}
 The [Hugo source](https://github.com/gohugoio/hugo) can be compiled easily on every machine with a recent [Go environment](https://go.dev).

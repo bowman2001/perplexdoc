@@ -3200,7 +3200,7 @@ nav .icon {
   font-style: italic;
 }
 
-.nav_pages {
+.navpages {
   display: grid;
   overflow: hidden;
   max-width: 74rem;
@@ -3210,29 +3210,29 @@ nav .icon {
 }
 
 @media screen and (min-width: 37em) {
-  .nav_pages {
+  .navpages {
     grid-template-rows: 3rem 13rem;
     grid-template-columns: 37rem 37rem;
   }
 }
 
-.nav_pages .breadcrumbs,
-.nav_pages .next,
-.nav_pages .prev {
+.navpages .breadcrumbs,
+.navpages .navpages__next,
+.navpages .navpages__prev {
   display: inline-block;
   align-self: stretch;
   justify-self: stretch;
 }
 
-.nav_pages .breadcrumbs .page,
-.nav_pages .next .page,
-.nav_pages .prev .page {
+.navpages .breadcrumbs .navpages__page,
+.navpages .navpages__next .navpages__page,
+.navpages .navpages__prev .navpages__page {
   padding: 0 3rem;
 }
 
-.nav_pages .breadcrumbs .page > h4,
-.nav_pages .next .page > h4,
-.nav_pages .prev .page > h4 {
+.navpages .breadcrumbs .navpages__page > h4,
+.navpages .navpages__next .navpages__page > h4,
+.navpages .navpages__prev .navpages__page > h4 {
   font-size: 1.544rem;
   line-height: 2rem;
   padding-top: 2.421772rem;
@@ -3243,9 +3243,9 @@ nav .icon {
   font-weight: 500;
 }
 
-.nav_pages .breadcrumbs .page > p,
-.nav_pages .next .page > p,
-.nav_pages .prev .page > p {
+.navpages .breadcrumbs .navpages__page > p,
+.navpages .navpages__next .navpages__page > p,
+.navpages .navpages__prev .navpages__page > p {
   font-size: 1.43rem;
   line-height: 2rem;
   padding-top: .464465rem;
@@ -3256,7 +3256,7 @@ nav .icon {
   font-weight: 450;
 }
 
-.nav_pages .breadcrumbs {
+.navpages .breadcrumbs {
   height: 3rem;
   text-align: center;
   text-transform: uppercase;
@@ -3274,47 +3274,47 @@ nav .icon {
   grid-column: 1/span 2;
 }
 
-.nav_pages .prev,
-.nav_pages .next {
+.navpages .navpages__prev,
+.navpages .navpages__next {
   display: flex;
   justify-content: stretch;
 }
 
-.nav_pages .prev > .icon,
-.nav_pages .next > .icon {
+.navpages .navpages__prev > .icon,
+.navpages .navpages__next > .icon {
   font-size: 3rem;
   align-self: center;
   width: 6rem;
 }
 
-.nav_pages .prev > .page,
-.nav_pages .next > .page {
+.navpages .navpages__prev > .navpages__page,
+.navpages .navpages__next > .navpages__page {
   width: 36rem;
 }
 
-.nav_pages .prev {
+.navpages .navpages__prev {
   text-align: right;
   grid-row: 2/span 1;
   grid-column: 1/span 1;
 }
 
-.nav_pages .prev > .icon {
+.navpages .navpages__prev > .icon {
   justify-self: right;
 }
 
-.nav_pages .next {
+.navpages .navpages__next {
   text-align: left;
   grid-row: 2/span 1;
   grid-column: 2/span 1;
 }
 
-.nav_pages .next > .icon {
+.navpages .navpages__next > .icon {
   justify-self: left;
 }
 
-.nav_pages .start,
-.nav_pages .chapter,
-.nav_pages .section {
+.navpages .start,
+.navpages .chapter,
+.navpages .section {
   display: inline-block;
 }
 
