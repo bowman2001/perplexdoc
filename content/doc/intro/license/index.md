@@ -10,43 +10,34 @@ menu:
     pre: receipt
 subtitle: false
 title: Licences
-
 weight: 100
 ---
 
-Perplex
+_Perplex_ is an open source theme for the open source software [_Hugo_][hugo] and needs to run with a recent version of it. No other installation requirements exist, but the theme and the documentation ship with included external software and content. Their licencers and the licences of their choosing are listed here.
+{.p-lead} <!--more-->
 
-## Own work
+## Perplex and its documentation
 
-Perplex Theme for _Hugo_
-: released by Jörg (George) Makowski under the [Apache 2.0 License][ap2].
+Perplex Theme
+: is released by Jörg (Georg) Makowski under the [Apache 2.0 License][ap2].
 
 Perplex Documentation
-: All _Markdown_ files are released by Jörg (George) Makowski under the [Creative Commons License (CC BY-SA)][cc4].
+: All _Markdown_ files of the documentation are released by Jörg (Georg) Makowski under the [Creative Commons License (CC BY-SA)][cc4].
 {.dl-loose}
 
-## Website Generator _Hugo_
+## The necessary website generator _Hugo_
 
 [Hugo][hugo]
-: has been released by its authors and contributors under the [Apache 2.0 License][ap2].
+: is released by its authors and contributors under the [Apache 2.0 License][ap2].
 {.dl-loose}
 
 ## Fonts and icon fonts included in _Perplex_
 
 [IBM Plex fonts](https://www.ibm.com/plex/)
-: have been released by *IBM* to the public under the [Open Font License (OFL)][ofl].
+: have been released by _IBM_ to the public under the [Open Font License (OFL)][ofl].
 
 [Material Icons](https://fonts.google.com/icons)
-: have released by *Google* to the public under the [Apache 2.0 License][ap2].
-{.dl-loose}
-
-## Logos and Pictures
-
-All logos
-: are under the copyright of their respective owners.
-
-All pictures
-: have been retrieved from [Unsplash](https://unsplash.com) and are under the copyright of their respective owners. Their names and the ID-codes are embedded in the filename, which is shown as pop-up title for every image.
+: have been released by _Google_ to the public under the [Apache 2.0 License][ap2].
 {.dl-loose}
 
 ## Optional software shipped with _Perplex_
@@ -56,6 +47,15 @@ All pictures
 
 [Mermaid][mermaid]
 : has been released by Knut Sveidqvist and contributors under the [MIT License][mit].
+{.dl-loose}
+
+## Logos and pictures included in the documentation
+
+All logos
+: remain under the copyright of their respective owners. _Perplex_ logos are also released under the [Apache 2.0 License][ap2] by Jörg (Georg) Makowski.
+
+All pictures
+: have been retrieved from [Unsplash](https://unsplash.com) and remain under the copyright of their respective owners. Their names and the ID-codes are embedded in the filename, which is shown as pop-up title for every image. Additionally a link to the original is usually provided in the image caption.
 {.dl-loose}
 
 [hugo]: https://gohugo.io

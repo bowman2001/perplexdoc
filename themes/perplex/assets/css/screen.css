@@ -2555,13 +2555,10 @@ nav .icon {
 .secnav {
   color: #222;
   margin: 0 2rem;
-}
-@media screen and (min-width: 37em) {
-  .secnav {
-    column-count: 2;
-    column-gap: 4rem;
-    max-width: 70rem;
-  }
+  column-count: 2;
+  column-width: 22.5rem;
+  column-gap: 4rem;
+  max-width: 70rem;
 }
 
 .secnav__list li {
@@ -2583,6 +2580,11 @@ nav .icon {
 .secnav__item .icon {
   font-size: 250%;
   flex-shrink: 0;
+}
+
+.secnav__item--reverse {
+  flex-flow: row-reverse;
+  text-align: right;
 }
 
 .secnav__title, .secnav__icon {

@@ -1,4 +1,5 @@
-<nav class="navpages">
+<nav class="secnav">
+	<ul>
 	{{ with .NextInSection }}
 	<a href="{{ .RelPermalink }}" class="navpages__prev">
 		<div class="icon">chevron_left</div>
@@ -11,6 +12,7 @@
 		<div class="icon">chevron_right</div>
 	</a>
 	{{- end -}}
+	</ul>
 </nav>
 
 {{- define "partials/nav/page/preview" -}}

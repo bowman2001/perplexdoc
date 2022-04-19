@@ -1,5 +1,4 @@
-<li>
-    <a href="{{- .RelPermalink -}}">
+<a href="{{- .RelPermalink -}}">
         <h4>
 	        {{ with .Params.menu.doc.pre }}<span class="icon icon-bullet">{{ . }}</span>{{ end }}
             {{ with .Title }}{{- . | $.Page.RenderString -}}{{ end }}
@@ -7,5 +6,4 @@
         {{- with .Description -}}
         <p class="description">{{- . | $.Page.RenderString -}}</p>
         {{- end -}}
-    </a>
-</li>
+</a>

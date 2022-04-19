@@ -3130,16 +3130,13 @@ nav .icon {
 .secnav {
   color: #222;
   margin: 0 2rem;
-}
-
-@media screen and (min-width: 37em) {
-  .secnav {
-    -moz-column-count: 2;
-         column-count: 2;
-    -moz-column-gap: 4rem;
-         column-gap: 4rem;
-    max-width: 70rem;
-  }
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-width: 22.5rem;
+       column-width: 22.5rem;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  max-width: 70rem;
 }
 
 .secnav__list li {
@@ -3167,6 +3164,11 @@ nav .icon {
 .secnav__item .icon {
   font-size: 250%;
   flex-shrink: 0;
+}
+
+.secnav__item--reverse {
+  flex-flow: row-reverse;
+  text-align: right;
 }
 
 .secnav__title,

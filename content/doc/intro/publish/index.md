@@ -13,25 +13,27 @@ title: Publish
 weight: 80
 ---
 
-Two basic steps are involved in publishing our static website: **Build & Deploy**.
+Only two basic steps are involved in publishing a static website: **Build & Deploy**. But there are many ways to do this.
 {.p-lead} <!--more-->
 
-There are a lot of options for a static website. Many of them are described in the section [Hosting & Deployment](https://gohugo.io/hosting-and-deployment/) of the documentation.
+Most currently available options and their implementation with _Hugo_ get described in the section [Hosting & Deployment][hd] of its documentation. In all cases the parameter `baseURL` needs to be set to the site URL in the main configuration file [`config.yaml`]({{< relref "configyaml#6" >}}).
 
-In all cases the parameter `baseURL` has to be set to the registered site URL in the main configuration file [`config.yaml`]({{< relref "configyaml#4" >}}).
+The following remarks should give you an impression of the two most common workflows.
 
 ## Build & Deploy with your own hardware
 
-The simplest way for smaller projects — with one person responsible for the publishing — is obviously to stick to the computer, where the content gets finalized.
+An easy way for smaller or beginning projects — with one person responsible for the publishing — is just to stick to the computer, where the content gets finalized.
 
-To generate a complete version of the site on our local file system, we run _Hugo_ in _build mode_ in the project root like this:
+To generate a complete version of the site on our local file system, we run _Hugo_ in its _build mode_ in the project root like this:
 
-```md {class=col-left}
+```md {.left}
 hugo --minify
 ```
 
-_Hugo_ renders the site and writes the files into the folder `public` if we haven't changed the default configuration. Now we can transfer the contents of this directory to our provider as usual. Because our static website is already fully functional, we can upload the files also directly to a _**C**ontent **D**elivery **N**etwork (CDN)_ — without caching. There it gets distributed to servers all over the world and is available to everyone with minimal latency.
+_Hugo_ then renders the site and writes the files by default into the folder `public`. We can transfer the contents of this directory directly to our provider. Because a static website is fully functional, we can also upload the files to a provider with a _**C**ontent **D**elivery **N**etwork (CDN)_ — without having to worry about caching. It gets immediately distributed to servers all over the world and is available to everyone with minimal latency.
 
 ## Automated Build and Continuous Deployment
 
-To automate the build process special providers allow to configure a virtual machine for every website. This is especially useful for teams, because they need a shared build environment. The provider gets access to the _Git_ repository and automatically pulls new content. Then he starts the virtual machine, builds the current site and populates its CDN with the new version.
+Special providers allow to automate the build process with the help of configurable virtual machines. This is especially useful for teams, which need a shared build environment. The provider gets access to their _Git_ repository and automatically pulls new content and (re)builds the site. Some of them have their own CDN, which they populate immediately afterwards.
+
+[hd]: https://gohugo.io/hosting-and-deployment/

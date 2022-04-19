@@ -28,10 +28,10 @@ resources:
     attrlink: https://unsplash.com/photos/JJMoAiVl9jA
 ---
 
-**Markdown** has become a favoured markup system for structuring text files. With good cause: The syntax is easy to learn and yet quite comprehensive.
+**Markdown** has become the favored markup language for structuring text files. With good cause: Its syntax is easy and yet quite comprehensive.
 {.p-lead} <!--more-->
 
-_Markdown_ files are plain text files with the suffixes `.md`, `.mdown` or `.markdown`. They contain a small set of characters for the markup keeping them easy to read and to work with. After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors of _Markdown_ emerged. To resolve their annoying incompatibilities and to create a dependable syntax, John Mc&hairsp;Farlane et al. proposed a strict  specification in 2011: [_Commonmark_][cmark]. This specification has been implemented in many _Markdown_ render engines since and important web-software providers thereby adhere to _Commonmark_. For a quick look at _Commonmark_ you can visit their crisp [one page overview](https://commonmark.org/help).
+_Markdown_ files are plain text files with the suffixes `.md`, `.mdown` or `.markdown`. They contain a small set of characters for the markup keeping them easy to read and to work on. After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors emerged. To resolve their annoying incompatibilities and to create a dependable syntax, John Mc&hairsp;Farlane et al. proposed a strict  specification in 2011: [_Commonmark_][cmark]. This specification has been implemented in many _Markdown_ render engines since and important web-software providers thereby adhere to _Commonmark_. For a quick look at _Commonmark_ you can visit their crisp [one page overview](https://commonmark.org/help).
 
 ## _Markdown_ for _Perplex_
 
@@ -59,28 +59,28 @@ Two basic _Markdown_ elements are continuously creating confusion, because they 
 : The _Markdown_ image element is syntactically meant to be placed inside a block element. But it’s also allowed to be used self-contained and gets **automatically wrapped** by an empty paragraph block, then.[^1]
 
 [Line Break][lb]
-: _Commonmark_ and _GFM_ are not fully compatible in regard to this one element. That’s why there are two different ways to handle line breaks inside of text blocks:
+: _Commonmark_ and _GFM_ are not fully compatible in regard to this one element. There are two different ways to handle line breaks inside of text blocks:
     1. Treat hard line wraps in _Markdown_ files as whitespace like _Commonmark_ does.
     2. Treat hard line wraps as hard line wraps like _GFM_.
 {.dl-loose}
 
-My following suggestions for the handling of these elements are short. These elements and their issues are discussed in more detail on their pages.
+My following suggestions for the handling of these elements are short. Their issues are discussed in more detail on their pages.
 
-[^1]: The corresponding  `<img/>` tag is an HTML inline element and needs an enclosing block element in valid HTML 5.
+[^1]: The corresponding  `<img/>` tag is an HTML inline element and needs an enclosing block element to become valid HTML 5.
 
 ### How to include images?
 
 {{< figure splash />}}
 
-There is one image element in _Markdown_ for embedding an image and no genuin element for a self-contained image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. _Perplex_ provides the shortcode [_figure_]({{< relref "doc/shortcode/builtin/internal" >}}) for this purpose.
+There is one image element in _Markdown_ for embedding an image into a block element and no genuin element for a self-contained image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. _Perplex_ provides the shortcode [_figure_]({{< relref "doc/shortcode/builtin/internal" >}}) for this purpose.
 
-To surround every self-contained _Markdown_ image element with a paragraph — like _Commonmark_ proposes and _Hugo_ does — leads to a simple working solution, when the layout should treat all images alike.
+To surround every self-contained _Markdown_ image element with a paragraph — like _Commonmark_ proposes and _Hugo_ does — leads to a simple working solution, when the layout treats all images alike.
 
 ![splash](splash2) _Perplex_ styles the _Markdown_ image element always embedded in text blocks as a float. In contrast to them, the self-contained images should stand out. _Perplex_ also offers layout variations for both kinds of images. That's why _Perplex_ users need to use the  [figure]({{< relref "figure" >}})-shortcode for self-contained images and the _Markdown_ image element only for [embedded ones][img].
 
 ### How to wrap lines? {#wrap .clear}
 
-When we start writing _Markdown_, this question may not come to mind, because we often decide habitually: But should we manually wrap the lines after a certain amount of characters — or better not?
+When we start writing _Markdown_, this question may not come to mind, because we often decide habitually: But should we still manually wrap the lines after a certain amount of characters — or better not?
 
 _My experience_ : No, these _hard line wraps_ cause us and collaborating authors a lot of unnecessary trouble in the long run. Almost all text editor programs are nowadays able to _softly wrap_ long lines. Maybe we have to turn on that option for _Markdown_, but it should definitely be there.
 
@@ -106,11 +106,9 @@ With Soft Wraps
 See the page [Line Break][lb] for the configuration setting and the question of _Commonmark_-compliance.
 
 ## Special characters
-
-All available characters—more general _glyphs_—can be used in _Markdown_, either directly as _Unicode characters_ or as _HTML entities_ (like `&para;` for &para;—see [Entities]({{< relref "specialchar#html-entities" >}})). You may nonetheless get into trouble with glyphs, which are missing in the fonts for your website. But this is a general issue independent of _Markdown_ rendering.
+All available characters—more general _glyphs_—can be used in _Markdown_, either directly as _Unicode_ or as _HTML entities_ (like `&para;` for &para;—see [Entities]({{< relref "specialchar#html-entities" >}})). You may nonetheless get into trouble with glyphs, which are missing in the fonts for your website. But this is a general web-font issue independent of _Markdown_ rendering.
 
 ## File Encoding
-
 The _Markdown_ syntax works with every encoding. But almost all modern websites stick to the de facto standard _UTF-8_ and _Perplex_ does, too. Your _Markdown_ files should have this encoding and if you never thought about it before, they probably already do. This also holds for other text resources you fetch data from.
 
 {{< sidenote up=17 >}}
@@ -118,15 +116,14 @@ When you import strings from a JSON-file with _UTF-16_ encoding for example, the
 {{< /sidenote >}}
 
 ## Markdown Editors
-
 Most programming editors and IDEs support _Markdown_ out of the box or provide plugins. There’s no need to search for a new editor, if you are already familiar with one.
 
 Some special editors are designed exclusively for authoring _Markdown_. They usually offer a graphical user interface and other convenient features. But none of them is a perfect match for writing _Markdown_ for _Hugo_ and _Perplex_, because they don't support all kinds of attributes and don’t know about _Hugo_ shortcodes — as far as I know. They are dealing gracefully with these elements most of the time, but occasionally they don't.
 
-Many of these editors offer a convenient separate _preview window_. With _Hugo_ you have an even better option: When you run _Hugo_ on your local computer in _server mode_, it will render your Markdown and deliver it to your browser instantly (see [Using Hugo]({{< relref "hugo#server-mode"  >}})). My personal solution is either an IDE or a programming editor in conjunction with Hugo's excellent server mode.
+Many of these editors offer a convenient separate _preview window_. With _Hugo_ you have an even better option: When you run it as a server on your local computer, it will render your Markdown and deliver it to your browser instantly (see [Using Hugo]({{< relref "hugo#server-mode"  >}})). My personal solution is either an IDE or a programming editor in conjunction with _Hugo’s_ server mode.
 
 ## Markdown Linting
-_Commonmark_ is permissive to many variations in _Markdown_ formatting. To ensure a certain markup style for a team, we may use a linter. [_Markdownlint_][mlint] is the one the _Hugo documentation project_ is currently using. And you can also find a configuration file [`.markdownlint.yaml`][mlintconf] for this project at the content root.  
+_Commonmark_ is still permissive to some variations in _Markdown_ text formatting. To ensure a certain markup style in a team or a bigger project, we may use a linter. The node package [_Markdownlint_][mlint] is doing fine and there are plugins for editors, which allow to use it while typing. For this project its default settings are changed only a tiny bit in the configuration file [`.markdownlint.yaml`][mlintconf] at the content root.  
 
 [omd]: https://daringfireball.net/projects/markdown/ "Markdown project site by John Gruber"
 [cmark]: https://commonmark.org "Commonmark project site"
