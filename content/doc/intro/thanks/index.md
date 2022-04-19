@@ -11,6 +11,7 @@ menu:
 subtitle: false
 title: Thanks
 weight: 90
+draft: true
 ---
 
 The idea for a layout based on classical typographic principles grew over a few years out of many already existing concepts. I’m sorry, I can’t mention every helpful author I consulted about typography and web layout techniques.

@@ -57,7 +57,7 @@ Headings are not only recognized by their font styling, but also by the white-sp
 
 ***
 
-# Page Title {.h-info #title}
+# Page Title {.h-info .mt2 #title}
 
 If the page already has a title, the first heading **should not** occur in the _Markdown_ content. Like many themes _Perplex_ provides titles for all pages.
 

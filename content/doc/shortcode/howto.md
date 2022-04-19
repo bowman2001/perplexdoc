@@ -21,11 +21,11 @@ _Hugo’s_ shortcodes can inject arbitrary HTML into _Markdown_. They are [“Ma
 
 A shortcode without variables looks like `{{</* simple */>}}`. The name of the shortcode is enclosed into two curly braces and angled brackets. This shortcode would call a file in the folder `layout/shortcodes/simple.html` of our project root or the theme directory and execute the templates therein.
 
-To deliver parameters there are two options: *positional* or *named* parameters. Both possibilities may exist for the same shortcode, but they can't be mixed in one call.
+To deliver parameters there are two options: _positional_ or _named_ parameters. Both possibilities may exist for the same shortcode, but they can't be mixed in one call.
 
 ### Positional
 
-The shortcode  `{{</* farfar */>}}` is sometimes used on these pages. It has only one *unnamed* parameter and returns up to five paragraphs of blind text.
+The shortcode  `{{</* farfar */>}}` is sometimes used on these pages. It has only one _unnamed_ parameter and returns up to five paragraphs of blind text.
 
 ```md {.left}
 {{</* farfar 3 */>}}  

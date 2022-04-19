@@ -16,9 +16,9 @@ weight: 35
 **Perplex** offers space for 80 characters of code in one content line, when the screen is big enough. If the marginal column gets included, more than 120 fit in.
 {.p-lead} <!--more-->
 
-Short snippets of code are often placed *in line* with the normal text. Long pieces of code or entire files are marked as *code blocks*.
+Short snippets of code are often placed _in line_ with the normal text. Long pieces of code or entire files are marked as _code blocks_.
 
-_Hugo_ can style and colorize code blocks according to their content with the built-in *Chroma highlighter* and offers some options to style these blocks.  
+_Hugo_ can style and colorize code blocks according to their content with the built-in _Chroma highlighter_ and offers some options to style these blocks.  
 
 ## Syntax
 
@@ -31,13 +31,13 @@ A code snippet is surrounded by single backticks like `` `code` ``.
 We have two ways to mark a block as code:
 
 Fenced
-: when a block is surrounded by three back-ticks `` ``` `` in the line above and beyond it's a *fenced code block*.
+: when a block is surrounded by three back-ticks `` ``` `` in the line above and beyond it's a _fenced code block_.
 
 Indented
-: a block of text indented by 4 spaces or a tab is also treated as a *code block*.
+: a block of text indented by 4 spaces or a tab is also treated as a _code block_.
 {.dl-loose}
 
-The *fenced* version of the _Commonmark_ syntax is perferable for two reasons:
+The _fenced_ version of the _Commonmark_ syntax is perferable for two reasons:
 
 1. The following options are available only for fenced blocks:
 
@@ -54,7 +54,7 @@ The *fenced* version of the _Commonmark_ syntax is perferable for two reasons:
 
 ### Highlighting
 
-Many programming or markup languages are highlighted by *Chroma*, when we add their usual file suffixes or another identification code. The _Hugo_ docs include the full list of available [Chroma highlighting languages][hugochroma].
+Many programming or markup languages are highlighted by _Chroma_, when we add their usual file suffixes or another identification code. The _Hugo_ docs include the full list of available [Chroma highlighting languages][hugochroma].
 
 ### Additional styling for fenced code blocks
 
@@ -94,7 +94,7 @@ And to mark the **end** we use the corresponding closing tag `</code>`.
 
 ### Indented
 
-     The *HTML* tag at the **beginning** of code is `<code>`.
+     The _HTML_ tag at the **beginning** of code is `<code>`.
      And to mark the **end** we use the corresponding closing tag `</code>`.
 
 ### Long lines
@@ -121,8 +121,8 @@ Every blank line indicates the beginning of a new paragraph.
 
 An unformatted text segment like this one is transformed by the markdown renderer to a paragraph block.
 
-Every *blank* line indicates the beginning of a *new* paragraph.
-> A blockquote is marked by a `>` at the beginning of every line of the quote. It may contain *text formatting* itself.
+Every _blank_ line indicates the beginning of a _new_ paragraph.
+> A blockquote is marked by a `>` at the beginning of every line of the quote. It may contain _text formatting_ itself.
 
 ***
 

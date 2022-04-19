@@ -1458,6 +1458,15 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   background-color: #fcf6ef;
 }
+.md .mt1 {
+  margin-top: 1rem;
+}
+.md .mt2 {
+  margin-top: 2rem;
+}
+.md .mt3 {
+  margin-top: 3rem;
+}
 @media screen and (min-width: 48em) {
   .md .up-1 {
     margin-top: -1rem;

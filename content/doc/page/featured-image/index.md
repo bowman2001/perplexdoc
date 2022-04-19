@@ -12,14 +12,14 @@ title: Featured Image
 weight: 30
 ---
 
-Perplex  include images at special places in the layout. 
+Perplex  include images at special places in the layout.
 {.p-lead} <!-- more -->
 
 ## Featured image
 
 Following pages
 
-Documentation 
+Documentation
 : On the right side of the title
 
 Blog

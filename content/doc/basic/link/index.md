@@ -15,17 +15,15 @@ weight: 50
 Internet references or short links are the binding fabric of the web. Markdown encourages their usage by providing simple markup options.
 {.p-lead} <!--more-->
 
-The easiest way to create a link is to write the reference directly into the text and let it be handled *automatically* by Hugo. If we want to *name* a link, we need to connect the name with the reference.
+The easiest way to create a link is to write the reference directly into the text and let it be handled _automatically_ by Hugo. If we want to _name_ a link, we need to connect the name with the reference.
 
-A reference on your own website is called an *internal link*, a reference to another an *external link*.
+A reference on your own website is called an _internal link_, a reference to another an _external link_.
 
 ## Syntax
 
 ### Automatic links
 
-A URL (**U**niform **R**esource **L**ocator) starting with `http://` or `https://` is automatically transformed into a link by the *linkify* extension. If you want to stop this default behaviour, you can set `linkify = false` in the [configuration]({{< relref "markup#9" >}}).  
-
-
+A URL (**U**niform **R**esource **L**ocator) starting with `http://` or `https://` is automatically transformed into a link by the _linkify_ extension. If you want to stop this default behaviour, you can set `linkify = false` in the [configuration]({{< relref "markup#9" >}}).  
 
 To include links from a word or phrase there are two options:
 
@@ -39,8 +37,7 @@ with angle brackets `<>`. The result is the same:
 
 `http://www.example.com`&ensp;or&ensp;`<http://www.example.com>`
 are linked automatically to
-http://www.example.com or <http://www.example.com>.
-
+<http://www.example.com> or <http://www.example.com>.
 
 ## Inline link
 
@@ -52,8 +49,8 @@ URL and the optional title follow directly afterwards in parens `()`.
 ```md
 - [This is an inline-style link](https://www.google.com)
 - [This is an inline-style link](https://www.google.com "Google's Homepage")
-	with a title.
-	Hover your mouse on top of it.
+ with a title.
+ Hover your mouse on top of it.
 ```
 
 - [This is an inline-style link](https://www.google.com)

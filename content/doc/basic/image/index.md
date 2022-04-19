@@ -29,7 +29,7 @@ title: Images
 weight: 55
 ---
 
-Markdown images should always be embedded in a text block for *_Perplex_* and are styled accordingly. self-contained images are the domain of the shortcode for a [figure]({{< relref "figure" >}}).
+Markdown images should always be embedded in a text block for **Perplex** and are styled accordingly. self-contained images are the domain of the shortcode for a [figure]({{< relref "figure" >}}).
 {.p-lead} <!--more-->
 
 ## Syntax
@@ -41,7 +41,8 @@ Embedding an image is similar to placing a [link]({{< relref "link" >}}). The ke
  ```md {.left}
  ![Name](path/to/image.jpg)
  ```
-The *name* of the image element inside the square brackets `[]` is used as alternative text[^1] in case the browser can't display the image.
+
+The _name_ of the image element inside the square brackets `[]` is used as alternative text[^1] in case the browser can't display the image.
 
 This syntax is preferable when the path is short — like the one for an image in a [_Hugo_ page bundle]({{< relref "hugo#bundle" >}}).
 
@@ -52,16 +53,17 @@ As for [links]({{< relref "link" >}}) we can use a marker in a second pair of sq
 ```md {.left}
 ![Name][imgref]
 ```
+
 We have to provide the image reference somewhere else in the same file by repeating the marker followed by a colon and a space before the path:
 
 ```md
 [imgref]: long/path/to/image.jpg "Optional Title"
 ```
+
 This syntax is especially convenient, when an image is used more than once or when a complicated path or a long title would clutter the other content.
 
 {{< sidenote up=14 >}}
-###### The optional title
-for an image gets displayed, when a mouse pointer hovers over the image. Consider that many touch-screen devices don't have one.
+**The optional title** for an image gets displayed, when a mouse pointer hovers over the image. Consider that many touch-screen devices don't have one.
 {{< /sidenote >}}
 
 ### Block Attributes
@@ -80,22 +82,20 @@ _Perplex_ relies on _Hugo’s_ image processing capabilities to generate differe
 
 For good results, the original images should have a width of at least {{< imagewidth 2 >}} to allow double density on screens with a high resolution.
 
-
-
 ## Layout
 
 First, copies with different sizes are generated for the given image. They are all placed with the `srcset`-attribute inside the `<img>`-tag and to be at the disposal of the browsers. Based on the actual size of the image and the device resolution, every browser can download the optimal version.{^\*}
 
-_Perplex_ embeds every image **as a float** into the containing paragraph. The most obvious place is *at the beginning* of paragraph. But we may want to place images also *in the middle* of a paragraph. In both cases following paragraphs may flow around the image, too, when the containing paragraph is not very long.
+_Perplex_ embeds every image **as a float** into the containing paragraph. The most obvious place is _at the beginning_ of paragraph. But we may want to place images also _in the middle_ of a paragraph. In both cases following paragraphs may flow around the image, too, when the containing paragraph is not very long.
 
-Because the image element is so easy to use, authors often include images self-contained {!*between paragraphs*}. This is a {!**problematic practice**}, because the image element will always be wrapped inside a paragraph in the resulting HTML.{^**} Therefore, the {!standard floating layout in _Perplex_ will be broken}.
+Because the image element is so easy to use, authors often include images self-contained {!_between paragraphs_}. This is a {!**problematic practice**}, because the image element will always be wrapped inside a paragraph in the resulting HTML.{^**} Therefore, the {!standard floating layout in _Perplex_ will be broken}.
 
 {{< sidenote star=2 up=15 >}}
 A self-contained image element is treated by _Markdown_ like a paragraph with the image as the sole content inside. The HTML `<img>`-tag is an inline element in need of a block element as container.
 {{< /sidenote >}}
 
-###### The best way {.h-tip}
-to deal with self-contained images in _Perplex_ is to use the [*figure*-shortcode]({{< relref "figure" >}}), that includes the image. But for a quick and dirty solution you can apply the attribute `{.p-img-full}` after the image element.
+### The best way {.h-p .h-tip}
+to deal with self-contained images in _Perplex_ is to use the [_figure_-shortcode]({{< relref "figure" >}}), that includes the image. But for a quick and dirty solution you can apply the attribute `{.p-img-full}` after the image element.
 
 ### At the beginning of a paragraph
 
@@ -119,7 +119,7 @@ This is the most common place for an embedded image. By default its placed embed
 
 #### Tiny size
 
-![Placeholder][tiny] Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. 
+![Placeholder][tiny] Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
 {.i-tiny .blind}
 
 ![Placeholder][tiny] Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
@@ -127,7 +127,7 @@ This is the most common place for an embedded image. By default its placed embed
 
 ### In the middle of a paragraph
 
-#### Default size
+#### Default
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. ![Placeholder][normal] A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life.
 {.i-midst .blind .blind-right}
@@ -138,7 +138,7 @@ One day however a small line of blind text by the name of Lorem Ipsum decided to
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. ![Placeholder][normal] A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life.
 {.i-midst .i-right .blind .blind-left}
 
-#### Small size
+#### Small
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. ![Placeholder][small] A small river named Duden flows by their place and supplies it with the necessary regelialia.
 {.i-small .i-midst}
@@ -146,7 +146,7 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. ![Placeholder][small] Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life.
 {.i-midst .i-small .i-right .blind}
 
-#### Tiny size
+#### Tiny
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. ![Placeholder](placeholder/img/tiny.svg)
 {.i-tiny .i-midst}
@@ -156,17 +156,17 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 
 ### With a caption
 
-#### Default size
+#### Default
 
 ![Placeholder](normal) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 {.blind .blind-right}
 
-#### Small size
+#### Small
 
 ![Placeholder](small) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 {.i-small .blind}
 
-#### Tiny size
+#### Tiny
 
 ![Placeholder](tiny) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 {.i-tiny .blind}

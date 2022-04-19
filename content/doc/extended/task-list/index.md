@@ -17,7 +17,7 @@ weight: 90
 A task list on a web page should be an interactive element with a connection between user input and the _Markdown_. _Perplex_ can't establish such a connection.
 {.p-lead} <!--more-->
 
-The task list element is a *GitHub* specialty. *GitHub* has established a bidirectional connection between the view in the browser and the hosted Markdown files.
+The task list element is a _GitHub_ specialty. _GitHub_ has established a bidirectional connection between the view in the browser and the hosted Markdown files.
 
 ## Syntax
 
@@ -35,5 +35,5 @@ The task list gets rendered into a static list with inactive input elements. By 
 - [ ]  Third entry
 
 {{< sidenote up=12 >}}
-With the coming CSS parent selector `:has` it should be easy to use the checkboxes as list markers and style the task list in a better way. 
+With the coming CSS parent selector `:has` it should be easy to use the checkboxes as list markers and style the task list in a better way.
 {{< /sidenote >}}

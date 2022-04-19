@@ -12,7 +12,9 @@ menu:
     weight: 10
 ---
 
-The source for this documentation is available on [GitHub][doc]. It contains the following chapters:
+The source files for all the following pages are licensed as **Creative Commons** and they are available on [GitHub][doc].
 {.p-lead} <!--more-->
+
+The documentation contains these chapters:
 
 [doc]: https://github.com/bowman2001/perplexdoc

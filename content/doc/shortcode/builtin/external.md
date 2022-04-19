@@ -12,11 +12,11 @@ weight: 100
 ---
 
 
-## Layout 
+## Layout
 
-The styles are provided by the hosts of the content and may not always fit very well into the _Perplex_ layout.   
+The styles are provided by the hosts of the content and may not always fit very well into the _Perplex_ layout.
 
-### Include a *gist* from *GitHub*
+### Include a _gist_ from _GitHub_
 
 A call of `{{</* gist spf13 7896402 "img.html" */>}}` gets rendered to:
 
@@ -30,7 +30,7 @@ See the [_Hugo_ documentation](https://gohugo.io/content-management/shortcodes#g
 
 See the [_Hugo_ documentation](https://gohugo.io/content-management/shortcodes#instagram).
 
-### Include messages from *Twitter* with `tweet` 
+### Include messages from _Twitter_ with `tweet`
 
 {{< tweet 877500564405444608 >}}
 

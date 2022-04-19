@@ -16,29 +16,27 @@ All available glyphs are valid Markdown. The following sections are about the sp
 
 ## Escaping formatting Characters
 
-The characters reserved for _Markdown_ formatting are not directly available anymore. Depending on the circumstances, the Markdown renderer may sometimes recognize, when they are used literally. But we can't count on that and have to *escape* them by adding a backslash `\` in front.
+The characters reserved for _Markdown_ formatting are not directly available anymore. Depending on the circumstances, the Markdown renderer may sometimes recognize, when they are used literally. But we can't count on that and have to _escape_ them by adding a backslash `\` in front.
 
 {{< sidenote up=9 >}}
-
-##### Unescaped
-formatting characters may suddenly produce strange layout errors, when we change the text in their vicinity. And they are driving _Markdown_ code editors and highlighters crazy.
+**Unescaped** formatting characters may suddenly produce strange layout errors, when we change the text in their vicinity. And they are driving _Markdown_ code editors and highlighters crazy.
 {{< /sidenote >}}
 
 When we escape a number sign `\#` for example its just the number sign ‘**\#**’ and not a formatting character anymore.
 
 ## HTML Entities
 
-*Entities* are ASCII codes for *Unicode glyphs*. These codes begin with an ampersand `&` and end with a semicolon `;`. For example:
+_Entities_ are ASCII codes for _Unicode glyphs_. These codes begin with an ampersand `&` and end with a semicolon `;`. For example:
 
-- `&para;` means the paragraph glyph&ensp;&para;&nbsp;.
+1. `&para;` means the paragraph glyph&ensp;&para;&nbsp;.
 
-- `&sect;` means the section glyph&ensp;&sect;&nbsp;.
+2. `&sect;` means the section glyph&ensp;&sect;&nbsp;.
 
-- `&#8477;` means the set of real numbers&ensp;&#8477;&nbsp;.
+3. `&#8477;` means the set of real numbers&ensp;&#8477;&nbsp;.
 
- For more exotic ones you should check, if they are available in the [**IBM Plex** fonts][plexspec] this theme is shipping with. If a glyph is missing there, the browsers will first try to use a local font and may display a glyph with a noticeable different shape. And if they can't find it anywhere, they will probably display an ugly placeholder.
+ For more exotic ones you should check, if they are available in the [**IBM Plex** fonts][plexspec] this theme is shipping with. If a glyph is missing there, the browsers will first try to use a local font and may display a glyph with a noticeable different shape. And if they can't find it anywhere, they will probably display an ugly placeholder. The _real set_ &#8477; in example 3 is not included in _Plex_.  
 
-Please remember the two often neglected sets of general entities, which are meant to facilitate nice typography — the ones for *spacing* and *(not) breaking*.
+Please remember the two often neglected sets of general entities, which are meant to facilitate nice typography — the ones for _spacing_ and _(not) breaking_.
 
 ### Spacing
 
@@ -62,7 +60,7 @@ The non-breaking entities are meant for situations where characters or words sho
 
 | Name                      |    Code    |  Example   |
 |:--------------------------|:----------:|:----------:|
-| Soft hyphen               |   `&shy`   |  x&shy;x   |
+| Soft hyphen               |   `&shy;`  |  x&shy;x   |
 | Non breaking space        |  `&nbsp;`  |  x&nbsp;x  |
 | Narrow non breaking space | `&#x202f;` | x&#x202f;x |
 

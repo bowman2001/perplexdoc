@@ -20,15 +20,16 @@ If the name of a page is not unique, we still need to fill in the full path.
 {{< /sidenote >}}
 
 To replace unique names with URLs, _Hugo_ provides `relref` or `ref`. Internal links with these shortcodes look like
+
 ```md
 [Link]({{</* relref "link" */>}})
 [Introcuction]({{</* ref "intro" */>}})
 ```
 
-`relref` 
+`relref`
 : returns the relative URL of the page, which is usually the better option. _Perplex_ then can distinguish between internal and external URLs and style the links with two different colors.
 
-`ref` 
+`ref`
 : returns always the absolute URL of the page, which may be necessary under special circumstances.
 {.dl-loose}
 
@@ -61,8 +62,6 @@ We can show a configuration parameter in the content with this shortcode. Their 
 
 - The parent of the menu entry with `{{</* param menu.doc.parent */>}}` as “{{< param menu.doc.parent >}}”.
 
-- The featured image with `{{</* param featImg */>}}` as “{{< param featImg >}}”. In this case `param` shows the **site parameter**, because there is no such entry in the front-matter of this page. 
-
-
+- The featured image with `{{</* param featImg */>}}` as “{{< param featImg >}}”. In this case `param` shows the **site parameter**, because there is no such entry in the front-matter of this page.
 
 [hugofigure]: https://gohugo.io/content-management/shortcodes/#figure

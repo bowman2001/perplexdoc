@@ -123,7 +123,7 @@ Some special editors are designed exclusively for authoring _Markdown_. They usu
 Many of these editors offer a convenient separate _preview window_. With _Hugo_ you have an even better option: When you run it as a server on your local computer, it will render your Markdown and deliver it to your browser instantly (see [Using Hugo]({{< relref "hugo#server-mode"  >}})). My personal solution is either an IDE or a programming editor in conjunction with _Hugo’s_ server mode.
 
 ## Markdown Linting
-_Commonmark_ is still permissive to some variations in _Markdown_ text formatting. To ensure a certain markup style in a team or a bigger project, we may use a linter. The node package [_Markdownlint_][mlint] is doing fine and there are plugins for editors, which allow to use it while typing. For this project its default settings are changed only a tiny bit in the configuration file [`.markdownlint.yaml`][mlintconf] at the content root.  
+_Commonmark_ is permissive to many small variations in the markup rules. To ensure a certain markup style in a team or a bigger project, we may use a linter. The node package [_Markdownlint_][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing. For this project the default settings are modified in the configuration file [`.markdownlint.yaml`][mlintconf] at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.  
 
 [omd]: https://daringfireball.net/projects/markdown/ "Markdown project site by John Gruber"
 [cmark]: https://commonmark.org "Commonmark project site"

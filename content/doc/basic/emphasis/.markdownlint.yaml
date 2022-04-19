@@ -1,22 +1,16 @@
+
+
 # Line length should not be limited, because we use soft wrapping
 MD013: false  
 # Empty lines above and below headings
 MD022:
   lines_above: 1
   lines_below: 0
-# Duplicate headings
-MD024: 
-  siblings_only: true
-# Ordered list
-MD029: 
-  style: "ordered"
 # No inline HTML. But because inline HTML is already skipped and removed
 # with our Hugo configuration, the rule is not necessary. 
 # And it would also be triggerd by angled brackets intended for the typographer.
 MD033: false 
 # Emphasis style
-MD049:
-  style: "underscore"
+MD049: false
 # Strong style
-MD050:
-  style: "asterisk"  
+MD050: false

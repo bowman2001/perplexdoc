@@ -16,9 +16,9 @@ weight: 60
 Simple ASCII punctuation characters are substituted with typographical glyphs.
 {.p-lead} <!--more-->
 
-The concept for *Typographer* follows the [Smartypants](https://daringfireball.net/projects/smartypants/) project from John Gruber, who also started Markdown. Convenient typing options should encourage the use of good typography.
+The concept for _Typographer_ follows the [Smartypants](https://daringfireball.net/projects/smartypants/) project from John Gruber, who also started Markdown. Convenient typing options should encourage the use of good typography.
 
-The same results could also be achieved by using the *Unicode characters* or *HTML entities*, but they are difficult to use. These are the substitutions the *Typographer* offers:
+The same results could also be achieved by using the _Unicode characters_ or _HTML entities_, but they are difficult to use. These are the substitutions the _Typographer_ offers:
 
 | Element       | With Typographer |  With HTML entities   |  Result   |
 | :------------ | :--------------: | :-------------------: | :-------: |

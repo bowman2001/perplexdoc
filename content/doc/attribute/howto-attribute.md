@@ -5,6 +5,7 @@ description: Inject attributes into rendered HTML elements
 menu:
   doc:
     name: Howto
+    identifier: howtoattribute
     parent: attribute
     pre: help_outline
 subtitle: false
@@ -19,7 +20,7 @@ Attributes are available for all kinds of _blocks_, for _headings_ and for _fenc
 
 ## Syntax
 
-Attributes are enclosed in curly braces `{ }` and one pair of braces takes all attributes separated by a space. 
+Attributes are enclosed in curly braces `{ }` and one pair of braces takes all attributes separated by a space.
 
 ### Placement
 The place, where to attach an attribute, depends on the kind of element:
@@ -32,7 +33,7 @@ Heading
 
 Fenced code block
 : We need to place them after the **first fence** and the language indicator — like `` ```md {.left}``
-{.dl-loose} 
+{.dl-loose}
 
 ### Different kinds of attributes
 
@@ -47,4 +48,4 @@ Other
 {.dl-loose}
 
 ## Layout
-Most _Perplex_ attributes style a specific element and the layout is shown on their pages. Some are of general use and follow on the next pages.   
+Most _Perplex_ attributes style a specific element and the layout is shown on their pages. Some are of general use and follow on the next pages.

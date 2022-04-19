@@ -15,9 +15,9 @@ menu:
 The title section of every page is generated from its front-matter parameters and its place in the content hierarchy.
 {.p-lead} <!--more-->
 
-- *Main title*, optional *subtitle*. 
+- _Main title_, optional _subtitle_.
 
-- *Breadcrumbs* and *previous-next*-navigation for documentation pages.
+- _Breadcrumbs_ and _previous-next_-navigation for documentation pages.
 
 ## Main Title
 

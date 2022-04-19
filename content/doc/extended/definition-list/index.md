@@ -14,11 +14,12 @@ weight: 30
 ---
 
 Definition lists consist of **terms** as list markers, which are associated with **details** in the list entries.
-{.p-lead} <!--more--> 
+{.p-lead} <!--more-->
 
 The definition list is an essential tool to structure textual content on a small scale. There is only one syntax, but _Perplex_ offers many styling options.  
 
 ## Syntax
+
 ```md
 First Term
 : Far far away, behind the word mountains, far from the countries Vokalia and 
@@ -32,11 +33,11 @@ Second Term Alternative
 Consonantia, there live the blind texts.
 ```
 
-Every list item begins with one or more *terms*. The lines after them contain the *description(s)* starting with a colon followed by a space. An empty line between the list items is mandatory.
+Every list item begins with one or more _terms_. The lines after them contain the _description(s)_ starting with a colon followed by a space. An empty line between the list items is mandatory.
 
 ## Layout
 
-The layout has to consider the length and number of all the components. The standard version is working with every combination of terms and descriptions, the additional options are not. 
+The layout has to consider the length and number of all the components. The standard version is working with every combination of terms and descriptions, the additional options are not.
 
 ### Standard
 
@@ -62,16 +63,16 @@ Wiener, Norbert
 
 ### Tight
 
-For a list with short single terms and only one short definition, a tighter style may be more suitable. We apply it with the [attribute]({{< relref "attribute" >}}) `{.dl-tight}`: 
+For a list with short single terms and only one short definition, a tighter style may be more suitable. We apply it with the [attribute]({{< relref "attribute" >}}) `{.dl-tight}`:
 
-First 
+First
 : Far far away, behind the word mountains...
 
 Second
 : There live the blind texts.
 {.dl-tight, .box}
 
-### Loose 
+### Loose
 
 Short single terms with long descriptions will look better with a loose style, that is applied by the [attribute]({{< relref "attribute" >}}) `{.dl-loose}`
 

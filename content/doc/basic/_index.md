@@ -13,7 +13,7 @@ title: Basic Markdown
 weight: 5
 ---
 
-The [**Commonmark specification**][cmark] has laid a stable ground for *_Markdown_*.
+The [**Commonmark specification**][cmark] has laid a stable ground for **Markdown**.
 {.p-lead} <!--more-->
 
 [cmark]: https://spec.commonmark.org
