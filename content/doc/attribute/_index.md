@@ -8,7 +8,7 @@ menu:
     name: Attributes
     pre: line_style
 title: Attributes
-weight: 20
+weight: 300
 ---
 
 Hugo's attribute injection is the key to most additional layout options of Perplex.

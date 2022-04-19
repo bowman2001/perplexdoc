@@ -8,5 +8,5 @@ menu:
     parent: replace
     pre: format_quote
 title: Author citation
-weight: 30
+weight: 440
 ---

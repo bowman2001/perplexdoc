@@ -11,7 +11,7 @@ menu:
 subtitle: false
 title: Task List
 toc: false
-weight: 90
+weight: 250
 ---
 
 A task list on a web page should be an interactive element with a connection between user input and the _Markdown_. _Perplex_ can't establish such a connection.

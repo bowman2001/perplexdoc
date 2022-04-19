@@ -10,7 +10,7 @@ menu:
     pre: segment
 subtitle: false
 title: Paragraphs
-weight: 5
+weight: 110
 ---
 
 Paragraphs are essential for a website focused on textual information. Comfortable proportions and surrounding whitespace contribute to their legibility in _Perplex_. The layout of other elements is related to them.

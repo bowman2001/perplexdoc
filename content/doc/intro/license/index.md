@@ -10,7 +10,7 @@ menu:
     pre: receipt
 subtitle: false
 title: Licences
-weight: 100
+weight: 40
 ---
 
 _Perplex_ is an open source theme for the open source software [_Hugo_][hugo] and needs to run with a recent version of it. No other installation requirements exist, but the theme and the documentation ship with included external software and content. Their licencers and the licences of their choosing are listed here.

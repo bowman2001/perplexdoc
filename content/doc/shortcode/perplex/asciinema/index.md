@@ -5,13 +5,19 @@ description: Wrapper for additional resources
 featImg: ""
 menu:
   doc:
-    name: Call Plugins
+    name: Asciinema
     parent: custom
-    pre: electrical_services
+    pre: smart_display
 subtitle: false
-title: Call plugins
-weight: 100
+title: Asciinema
+weight: 540
 ---
 
-These shortcodes allow to use additional software to format special input or call external services.
-{.p-lead}<!--more-->
+Record terminal sessions on the command line and share them with a shortcode. The recording software and the server for sharing sessions are open source. The service of the official server is free, and it's also possible to set up your own server instance.
+{.p-lead} <!--more-->
+
+[*Asciinema*](https://asciinema.org) is a command line program available for *macOS*, *Linux* and *BSD* derivatives. It saves recordings in a data file — locally or on a server. Working locally is convenient for testing, you can play back the recordings directly on the command line. To share a session as a video with the shortcode of _Perplex_, you need to save it on a server — the shortcode works and has only been tested with the official one. 
+
+## Syntax
+
+## Layout

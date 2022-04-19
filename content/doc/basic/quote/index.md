@@ -10,7 +10,7 @@ menu:
     pre: format_quote
 subtitle: false
 title: Quote
-weight: 20
+weight: 120
 ---
 
 Quoting is consciously repeating thoughts from another person, which yours are related to. When we reply to email, many programs append the previous mails automatically. These are just copies cluttering our conversations.

@@ -11,7 +11,7 @@ menu:
     pre: dashboard
 subtitle: false
 title: Layout
-weight: 1
+weight: 5
 ---
 
 **Perplex** produces a typographic layout, that adapts responsively to every modern screen size. It’s designed for optimal legibility down to a view-port of 360 Pixels width.

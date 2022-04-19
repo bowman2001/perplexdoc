@@ -9,7 +9,7 @@ menu:
     parent: basic
     pre: emoji_symbols
 title: Special Characters
-weight: 90
+weight: 190
 ---
 
 All available glyphs are valid Markdown. The following sections are about the special ones, we can not use directly.

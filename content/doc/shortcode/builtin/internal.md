@@ -8,7 +8,7 @@ menu:
     parent: builtin
     pre: source
 title: Internal Shortcodes
-weight: 1
+weight: 580
 ---
 
 ## Resolve internal URLs

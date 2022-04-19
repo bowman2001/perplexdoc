@@ -10,7 +10,7 @@ menu:
     pre: favorite
 subtitle: false
 title: Thanks
-weight: 90
+weight: 60
 draft: true
 ---
 

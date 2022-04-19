@@ -1,7 +1,7 @@
-<a class="secnav__item secnav__item--reverse" href="{{- .RelPermalink -}}">
-      {{- with .Params.menu.doc.pre -}}<span class="icon secnav__icon">{{- . -}}</span>{{- end -}}
+<a class="pagenav__item pagenav__item--prev" href="{{- .RelPermalink -}}">
+      {{- with .Params.menu.doc.pre -}}<span class="icon pagenav__icon">{{- . -}}</span>{{- end -}}
     <div>
-        {{- with .Title -}}<h2 class="secnav__title">{{- . | $.Page.RenderString -}}</h2>{{- end -}}
-        {{- with .Description -}}<p class="secnav__description">{{- . | $.Page.RenderString -}}</p>{{- end -}}
+        {{- with .Title -}}<h2 class="pagenav__title">{{- . | $.Page.RenderString -}}</h2>{{- end -}}
+        {{- with .Description -}}<p class="pagenav__description">{{- . | $.Page.RenderString -}}</p>{{- end -}}
     </div>
 </a>

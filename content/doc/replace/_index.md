@@ -10,7 +10,7 @@ menu:
     pre: find_replace
 subtitle: false
 title: Replacements
-weight: 15
+weight: 400
 ---
 
 A few HTML inline tags have no counterpart in **Goldmark**. **Perplex** offers a set of replacements to use them nonetheless.  

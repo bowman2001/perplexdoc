@@ -7,8 +7,8 @@ menu:
     name: Content.html
     parent: appendix
     pre: find_replace
-title: '`Content.html`'
-weight: 100
+title: 'content.html'
+weight: 855
 ---
 
 Inspired from a suggestion by [Joe Mooring](https://discourse.gohugo.io/u/jmooring/summary) at the [_Hugo_ community](https://discourse.gohugo.io).

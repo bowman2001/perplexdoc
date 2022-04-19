@@ -10,7 +10,7 @@ menu:
     pre: horizontal_rule
 subtitle: false
 title: Horizontal Rule
-weight: 40
+weight: 140
 ---
 
 Sometimes the separation of page segments by space is not clear enough. Then we add this layout element as an explicit visual separation.

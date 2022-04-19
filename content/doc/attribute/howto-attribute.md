@@ -10,7 +10,7 @@ menu:
     pre: help_outline
 subtitle: false
 title: How to use attributes?
-weight: 20
+weight: 310
 ---
 
 Hugo’s attributes are HTML attributes, which get injected into _Markdown_ text.

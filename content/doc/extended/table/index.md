@@ -9,7 +9,7 @@ menu:
     parent: extended
     pre: table_chart
 title: Tables
-weight: 50
+weight: 230
 ---
 
 | First |     Second     |  Third   |    Fourth    |    Fifth |

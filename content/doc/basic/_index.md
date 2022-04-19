@@ -10,7 +10,7 @@ menu:
     pre: article
 subtitle: false
 title: Basic Markdown
-weight: 5
+weight: 100
 ---
 
 The [**Commonmark specification**][cmark] has laid a stable ground for **Markdown**.

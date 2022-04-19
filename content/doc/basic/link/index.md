@@ -9,7 +9,7 @@ menu:
     parent: basic
     pre: link
 title: Links
-weight: 50
+weight: 150
 ---
 
 Internet references or short links are the binding fabric of the web. Markdown encourages their usage by providing simple markup options.

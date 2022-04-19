@@ -11,7 +11,7 @@ menu:
 subtitle: false
 title: Strike-through and Insertion
 toc: false
-weight: 70
+weight: 240
 ---
 
 Correction marks highlight changes while working on a draft. Lately, strike-through has also become a hip visual style.

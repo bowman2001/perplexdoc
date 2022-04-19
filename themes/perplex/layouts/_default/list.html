@@ -10,15 +10,13 @@
         <section class="md md--serif md--list">
             {{- partial "content.html" . -}}
         </section>
-        <section>
-            <nav class="secnav">
+            <nav class="pagenav pagenav--cols">
                 <ul>
                     {{- range .Pages -}}
                         <li>{{- .Render "li" -}}</li>
                     {{- end -}}
                 </ul>
             </nav>
-        </section>
     </main>
 {{- end -}}
 

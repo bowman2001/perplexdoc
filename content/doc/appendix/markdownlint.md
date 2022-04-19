@@ -4,7 +4,7 @@ title: .markdownlint.yaml
 description: Configuration file for the Markdown linter
 subtitle: false
 date: 2022-04-18T13:33:28+02:00
-weight: 999
+weight: 860
 featImg:
 menu:
   doc:

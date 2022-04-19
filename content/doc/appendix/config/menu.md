@@ -4,12 +4,12 @@ date: "2021-10-25T20:58:45+02:00"
 description: Description
 menu:
   doc:
-    name: '`menu.yaml`'
+    name: menu.yaml
     parent: config
     pre: menu
 subtitle: false
-title: '`menu.yaml`'
-weight: 15
+title: menu.yaml
+weight: 820
 ---
 
 {{< highlight yaml "linenos=true" >}}

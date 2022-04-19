@@ -10,7 +10,7 @@ menu:
     pre: hd
 subtitle: false
 title: Definition List
-weight: 30
+weight: 210
 ---
 
 Definition lists consist of **terms** as list markers, which are associated with **details** in the list entries.

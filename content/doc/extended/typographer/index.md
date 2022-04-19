@@ -10,7 +10,7 @@ menu:
     pre: format_quote
 subtitle: false
 title: Typographer
-weight: 60
+weight: 260
 ---
 
 Simple ASCII punctuation characters are substituted with typographical glyphs.

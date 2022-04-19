@@ -8,7 +8,7 @@ menu:
     parent: appendix
     pre: format_quote
 title: My Punctuation Keys
-weight: 100
+weight: 890
 ---
 
 | Satzzeichen                 |  #   |                             |

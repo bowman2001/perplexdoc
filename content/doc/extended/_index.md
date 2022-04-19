@@ -10,7 +10,7 @@ menu:
     pre: description
 subtitle: false
 title: Extended Markdown
-weight: 10
+weight: 200
 ---
 
 **PHP Markdown Extra** and **GitHub Flavored Markdown (GFM)** offer some widely used extensions to the basic **Commonmark** syntax.
@@ -27,4 +27,4 @@ Typographer
 
 All extensions are enabled in Hugo by default. You can disable them separately in the configuration file [`markup.yaml`]({{< relref "markup#8" >}}).
 
-## Extended Markdown Elements
+## Extensions

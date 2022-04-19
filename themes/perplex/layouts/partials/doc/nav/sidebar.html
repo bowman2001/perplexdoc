@@ -1,5 +1,5 @@
 <div class="sidebarbox">
-  <nav class="sidebarnav nav-content">
+  <nav class="sidenav nav-content">
       {{ with .Site.GetPage "/doc" }}
         <h4 class="sidenav__title"><a href='{{ .RelPermalink }}'>{{ .Title | $.Page.RenderString }}</a></h4>
       {{ end }}

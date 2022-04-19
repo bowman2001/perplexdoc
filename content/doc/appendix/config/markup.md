@@ -8,7 +8,7 @@ menu:
     parent: config
     pre: star_rate
 title: markup.yaml
-weight: 20
+weight: 815
 ---
 
 {{< highlight yaml "linenos=true" >}}

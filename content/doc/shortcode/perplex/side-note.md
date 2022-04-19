@@ -8,7 +8,7 @@ menu:
     parent: custom
     pre: note    
 title: Side-Note
-weight: 10
+weight: 530
 ---
 
 A note adds some information, that is not vital for the meaning of a text, but may be helpful for the understanding. It may explain context or shed light on a detail.

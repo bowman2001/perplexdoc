@@ -8,8 +8,8 @@ menu:
     parent: config
     pre: policy
 subtitle: false
-title: '`privacy.yaml`'
-weight: 100
+title: privacy.yaml
+weight: 835
 ---
 
 {{< highlight yaml "linenos=true" >}}

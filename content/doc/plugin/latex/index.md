@@ -10,7 +10,7 @@ menu:
     parent: plugin
     pre: functions
     title: LaTeX
-weight: 100
+weight: 710
 latex: true
 ---
 

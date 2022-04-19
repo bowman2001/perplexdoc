@@ -3,7 +3,7 @@ title: Lead Paragraph
 description: Introduce your page
 subtitle: false
 date: 2022-01-18T23:24:32+01:00 
-weight: 20
+weight: 620
 featImg: philipp-berndt-5i0GnoTTjSE-unsplash.jpg
 menu:
   doc:

@@ -4,7 +4,7 @@ date: "2021-09-11T00:07:48+02:00"
 description: Self-contained images
 subtitle: false
 title: figure
-weight: 10
+weight: 520
 menu:
   doc:
     name: figure

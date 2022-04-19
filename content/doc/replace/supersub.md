@@ -8,7 +8,7 @@ menu:
     parent: replace
     pre: superscript
 title: Super- and Subscripts
-weight: 10
+weight: 420
 ---
 
 When you need only a few super- or subscripts in your text, the replacement codes are there for you. When you want to include complex mathematical or chemical formulas you are certainly better off with [LaTeX][latex].

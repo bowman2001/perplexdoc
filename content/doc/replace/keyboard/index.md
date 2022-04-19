@@ -10,7 +10,7 @@ menu:
     pre: keyboard_alt
 subtitle: true
 title: Keyboard Legends
-weight: 20
+weight: 430
 ---
 
 ## Syntax

@@ -13,7 +13,7 @@ resources:
     title: Magazine article about Muhammed Ali
 subtitle: false
 title: Page Layout Elements
-weight: 40
+weight: 600
 ---
 
 Intro

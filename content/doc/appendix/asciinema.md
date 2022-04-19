@@ -6,11 +6,12 @@ featImg: ""
 menu:
   doc:
     name: Asciinema Wrapper
-    parent: shortcodecode
+    parent: appendix
     pre: smart_display
 subtitle: false
 title: Asciinema
-weight: 100
+weight: 880
+draft: true
 ---
 
 The shortcode is basically a wrapper for the official video player embedding script.

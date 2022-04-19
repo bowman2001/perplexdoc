@@ -10,7 +10,7 @@ menu:
     pre: cloud_upload
 subtitle: false
 title: Publish
-weight: 80
+weight: 25
 ---
 
 Only two basic steps are involved in publishing a static website: **Build & Deploy**. But there are many possible ways to realize them.

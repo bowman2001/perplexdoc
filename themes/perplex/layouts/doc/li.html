@@ -1,7 +1,4 @@
-<a class="secnav__item" href="{{- .RelPermalink -}}">
-		{{- with .Params.menu.doc.pre -}}<span class="icon secnav__icon">{{- . -}}</span>{{- end -}}
-		<div>
-		{{- with .Title -}}<h2 class="secnav__title">{{- . | $.Page.RenderString -}}</h2>{{- end -}}
-		{{- with .Description -}}<p class="secnav__description">{{- . | $.Page.RenderString -}}</p>{{- end -}}
-		</div>
+<a class="pagenav__item" href="{{- .RelPermalink -}}">
+		{{ partial "doc/nav/menu-icon.html" . }}
+		{{ partial "nav/page/title.html" . }}
 </a>

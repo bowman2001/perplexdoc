@@ -3,7 +3,7 @@ title: GoAT
 description: Go ASCII Tool
 subtitle: false
 date: 2022-03-03T09:44:13+01:00
-weight: 999
+weight: 720
 featImg:
 menu:
   doc:

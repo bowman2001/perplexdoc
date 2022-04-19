@@ -7,8 +7,8 @@ menu:
     name: config.yaml
     parent: config
     pre: home
-title: '`config.yaml`'
-weight: 10
+title: 'config.yaml'
+weight: 810
 ---
 
 {{< highlight yaml "linenos=true" >}}

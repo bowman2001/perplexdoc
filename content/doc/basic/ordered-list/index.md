@@ -10,7 +10,7 @@ menu:
     pre: format_list_numbered
 subtitle: false
 title: Ordered List
-weight: 30
+weight: 130
 ---
 
 Ordered lists suggest a very clear structure. Don't let them get too long — they get annoying after a while.

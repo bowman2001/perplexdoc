@@ -11,7 +11,7 @@ menu:
     pre: engineering
 subtitle: false
 title: Hugo
-weight: 20
+weight: 15
 ---
 
 The world's fastest static site engine is steadily gaining traction on its way to the first major release. **Hugo** provides a very reliable production environment and helps to build fast and secure websites.

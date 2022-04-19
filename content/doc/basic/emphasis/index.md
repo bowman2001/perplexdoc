@@ -10,7 +10,7 @@ menu:
     pre: format_italic
 subtitle: true
 title: Emphasis
-weight: 15
+weight: 115
 ---
 
 We have _light emphasis_ or **strong emphasis** to accentuate a segment of the text. We can **_nest_** both types.

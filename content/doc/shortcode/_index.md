@@ -10,7 +10,7 @@ menu:
     pre: integration_instructions
 subtitle: false
 title: Shortcodes
-weight: 30
+weight: 500
 ---
 
 

@@ -10,7 +10,7 @@ menu:
     pre: code
 subtitle: false
 title: Code
-weight: 35
+weight: 135
 ---
 
 **Perplex** offers space for 80 characters of code in one content line, when the screen is big enough. If the marginal column gets included, more than 120 fit in.

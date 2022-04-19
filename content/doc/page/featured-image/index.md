@@ -9,7 +9,7 @@ menu:
     pre: image
 subtitle: false
 title: Featured Image
-weight: 30
+weight: 630
 ---
 
 Perplex  include images at special places in the layout.

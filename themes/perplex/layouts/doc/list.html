@@ -12,8 +12,8 @@
 		{{- partial "content.html" . -}}
 	</section>
 	<section>
-		<nav class="secnav">
-		<ul class="secnav__list">
+		<nav class="pagenav pagenav--cols">
+		<ul class="pagenav__list">
 			{{- range .Pages -}}
 				<li>{{- .Render "li" -}}</li>
 			{{- end -}}

@@ -11,15 +11,13 @@
         <section class="md md--serif md--list">
             {{- partial "content.html" . -}}
         </section>
-        <section>
-            <nav class="secnav">
+            <nav class="pagenav">
                 <ul>
                     {{- range .Pages -}}
-                        {{- .Render "li" -}}
+                        <li>{{- .Render "summary" -}}</li>
                     {{- end -}}
                 </ul>
             </nav>
-        </section>
         <footer class="pagefooter">
             <div class="meta">
                 {{ partial "nav/breadcrumbs/footer.html" . }}

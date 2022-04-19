@@ -10,7 +10,7 @@ menu:
     pre: drag_handle
 subtitle: false
 title: Line Break
-weight: 10
+weight: 110
 ---
 
 Sometimes we like to begin a new line without starting a whole new text block. To place such a **hard line break** gets complicated, when **hard line wraps** limit the line length in our file.

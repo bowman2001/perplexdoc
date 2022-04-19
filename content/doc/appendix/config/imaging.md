@@ -7,8 +7,8 @@ menu:
     name: imaging.yaml
     parent: config
     pre: image
-title: '`imaging.yaml`'
-weight: 50
+title: 'imaging.yaml'
+weight: 830
 ---
 
 

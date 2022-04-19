@@ -10,7 +10,7 @@ menu:
     pre: text_fields
 subtitle: false
 title: Text Headings
-weight: 1
+weight: 105
 ---
 
 Headings introduce and order the segments on a page. On a website with many pages, each level should have similar importance.

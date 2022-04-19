@@ -10,7 +10,7 @@ menu:
     pre: security
 subtitle: false
 title: Security
-weight: 80
+weight: 30
 ---
 
 _Commonmark_ and its extensions are mostly inherently secure, because they don't allow manipulating the rendered HTML.
