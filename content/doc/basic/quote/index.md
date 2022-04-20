@@ -95,7 +95,7 @@ It should approximately match the number of characters in a normal line of text.
 > One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.[^1]
 {.blind}
 
-Blockquotes may include other markup, because we need emphasis, inline quotes, links, footnotes and other inline markup and maybe even lists inside quotations. The _Commonmark_ specification allows to use all elements of Markdown inside of a blockquote — theoretically.
+Blockquotes may include other markup, because we need emphasis, inline quotes, links, footnotes and other inline markup and maybe even lists inside quotations. The _CommonMark_ specification allows to use all elements of Markdown inside of a blockquote — theoretically.
 
 But think of nested blockquotes or tables inside of blockquotes in practice. They are an aesthetic nightmare in a typographical layout. This theme does not support every possibility. Feel free to write, if some important option is missing.
 

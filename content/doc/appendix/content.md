@@ -18,6 +18,6 @@ Inspired from a suggestion by [Joe Mooring](https://discourse.gohugo.io/u/jmoori
 {{< /highlight >}}
 
 {{< sidenote up=29 >}}
-The [9th line]({{< relref "#9" >}}) actually doesn’t look that crazy. [*Replacements*]({{< relref "replace" >}}) are applied everywhere in _Markdown_ and here the replacement for a text float shifts a part of its own regular expression to the right. Until now, I’ve found no way to stop this. But it’s only a problem in this meta-documentation and should be of no concern elsewhere.
+The [9th line]({{< relref "#9" >}}) actually doesn’t look that crazy. [_Replacements_]({{< relref "replace" >}}) are applied everywhere in _Markdown_ and here the replacement for a text float shifts a part of its own regular expression to the right. Until now, I’ve found no way to stop this. But it’s only a problem in this meta-documentation and should be of no concern elsewhere.
 
 {{< /sidenote >}}

@@ -13,7 +13,7 @@ title: Security
 weight: 30
 ---
 
-_Commonmark_ and its extensions are mostly inherently secure, because they don't allow manipulating the rendered HTML.
+_CommonMark_ and its extensions are mostly inherently secure, because they don't allow manipulating the rendered HTML.
 {.p-lead} <!-- more -->
 
 When we have control over the content for _Hugo_, we need a theme with 

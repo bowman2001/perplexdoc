@@ -13,7 +13,7 @@ title: Extended Markdown
 weight: 200
 ---
 
-**PHP Markdown Extra** and **GitHub Flavored Markdown (GFM)** offer some widely used extensions to the basic **Commonmark** syntax.
+**PHP Markdown Extra** and **GitHub Flavored Markdown (GFM)** offer some widely used extensions to the basic **CommonMark** syntax.
 {.p-lead} <!--more-->
 
 Some of these extensions have already been discussed:

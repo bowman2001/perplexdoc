@@ -22,7 +22,7 @@ The characters reserved for _Markdown_ formatting are not directly available any
 **Unescaped** formatting characters may suddenly produce strange layout errors, when we change the text in their vicinity. And they are driving _Markdown_ code editors and highlighters crazy.
 {{< /sidenote >}}
 
-When we escape a number sign `\#` for example its just the number sign ‘**\#**’ and not a formatting character anymore.
+When we escape a number sign `\#` for example it’s just the number sign ‘**\#**’ and not a formatting character anymore.
 
 ## HTML Entities
 

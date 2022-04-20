@@ -18,7 +18,7 @@ An unordered list groups a set of related items. Any item may contain a sub-list
 
 ## Syntax
 
-We can use `-`, `+` or `*` to mark the items of an unordered list. We have to stick to the one we started with in every list. There a two kinds of lists, _tight_ and _loose_ ones. And a list with one or more sub-lists is called _nested_.
+We can use `-`, `+` or `*` to mark the items of an unordered list. We have to stick to the one we started with in every list. There are two basic kinds of lists, _tight_ and _loose_. A list with sub-lists is called _nested_.
 
 ### Tight
 
@@ -56,7 +56,7 @@ The items of a loose list are separated by a blank line. The items may span acro
 - is all that matters
 ```
 
-To start a sublist inside a list item, the markers of the sublist have to be indented by two spaces or a tabulator. For your convenience you may switch the list marker for a new list level, but the indentation is all that matters.
+To start a sub-list inside a list item, the markers of the sub-list have to be indented by two spaces or a tabulator. For your convenience you may switch the list marker for a new list level, but the indentation is all that matters.
 
 ## Layout
 
@@ -72,23 +72,23 @@ The short tight list from above looks like this:
 
 ### Loose
 
-The loose items from above together with a few more look like this:
+The loose items from above look like this:
 
-- A loose list may contain more than one paragraph. You only have to keep   the indentation on the same level.
+- A loose list may contain more than one paragraph. You only have to keep the indentation on the same level.
 
-  Like this. Here we have separated paragraph inside of the same list item.
+  Like this. Here we have separated paragraph inside the same list item.
 
-- Here we are again after a blank line and we are still inside our list.
+- Here we are again after a blank line, and we are still inside our list.
 
 - **By the way**: It is not possible to mix tight and loose lists. Even if there is only one blank line between the items, the list is treated by _Goldmark_ as a loose list.
 
-- If you would change the marking symbol inside a list, _Goldmark_ will begin a new list, even if there a no blank lines. To use this intentionally to separate lists would be confusing.
+- If you changed the marking symbol inside a list, _Goldmark_ will begin a new list, even if there are no blank lines. To use this intentionally to separate lists would be confusing.
 
-Every unindented markdown content closes the list.
+Every block, which is not indented, closes the list.
 
 ### Nested
 
-#### Thight
+#### Tight
 
 Tight lists are vertically spaced like normal paragraphs:
 
@@ -117,24 +117,22 @@ On mobile screens the indentation of list items is already smaller. To enforce t
 
 #### Loose
 
-If there is at least one empty line between the items of a list and every sublist, the result looks like this:
+If there is at least one empty line between the items of a list and every sub-list, the result looks like this:
 
 - A loose list may contain more than one paragraph. You only have to keep the indentation on the same level.
 
-  Like this. Here we have separated paragraph inside of the same list item. And we can explain and explain until we don't know what to write any more. And we can even start a nested list.
+  Like this. Here we have separated paragraph inside the same list item. And we can explain and explain until we don't know what to write anymore. And we can even start a nested list.
 
-  - Here we have the first item of our new loose sub-list. There may be a lot of content inside of such an item. A new sub-list for example:
+  - Here we have the first item of our new loose sub-list. There may be a lot of content inside such an item. A new sub-list for example:
 
     - the asterisk is often used to mark _emphasized text_
 
-    - therefore its use as a list marker may be confusing.
+    - therefore, its use as a list marker may be confusing.
 
-  - Here we have the second item of our first sub-list. There may be a lot of content inside of such an item.
+  - Here we have the second item of our first sub-list. There may be a lot of content inside such an item.
 
-- Here we are again after a blank line and we are still inside our list.
+- Here we are again after a blank line, and we are still inside our list.
   By the way: It is not possible to mix tight and loose lists. Even if there is only one blank line between the items, the list is treated by _Goldmark_ as a loose list.
 
 - If you change the marking symbol, _Goldmark_ starts a new list even if the
   markdown items are tight. But it may be a bad idea to use this as a way of separating two lists.
-
-Every unindented paragraph or other unindented block element results in the definitive end of every list.

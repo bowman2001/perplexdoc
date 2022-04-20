@@ -31,14 +31,14 @@ resources:
 **Markdown** has become the favored markup language for structuring text files. With good cause: Its syntax is easy and yet quite comprehensive.
 {.p-lead} <!--more-->
 
-_Markdown_ files are plain text files with the suffixes `.md`, `.mdown` or `.markdown`. They contain a small set of characters for the markup keeping them easy to read and to work on. After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors emerged. To resolve their annoying incompatibilities and to create a dependable syntax, John Mc&hairsp;Farlane et al. proposed a strict  specification in 2011: [_Commonmark_][cmark]. This specification has been implemented in many _Markdown_ render engines since and important web-software providers thereby adhere to _Commonmark_. For a quick look at _Commonmark_ you can visit their crisp [one page overview](https://commonmark.org/help).
+_Markdown_ files are plain text files with the suffixes `.md`, `.mdown` or `.markdown`. They contain a small set of characters for the markup keeping them easy to read and to work on. After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors emerged. To resolve their annoying incompatibilities and to create a dependable syntax, John Mc&hairsp;Farlane et al. proposed a strict  specification in 2011: [_CommonMark_][cmark]. This specification has been implemented in many _Markdown_ render engines since and important web-software providers thereby adhere to _CommonMark_. For a quick look at _CommonMark_ you can visit their crisp [one page overview](https://CommonMark.org/help).
 
 ## _Markdown_ for _Perplex_
 
-_Perplex_ styles HTML, which is generated from extended _Commonmark_ by _Hugo’s_ default renderer [_Goldmark_][gmark]. Three extensions — the [_definition list_]({{< relref "definition-list" >}}), the [_footnote_]({{< relref "footnotes" >}}) and the [_typographer_]({{< relref "typographer" >}}) — have been adopted from [_PHP Markdown Extra_][phpmex]. Based on _Commonmark_, [_GitHub_](https://github.com) introduced _**G**itHub **F**lavored **M**arkdown (GFM)_ with the extensions [_table_]({{< relref "table" >}}), the [_task-list_]({{< relref "task-list">}}), [_strikethrough_]({{< relref "delins">}}) and _linkify_. They are defined in a [new specification][gfmspec] and are all available in _Goldmark_.
+_Perplex_ styles HTML, which is generated from extended _CommonMark_ by _Hugo’s_ default renderer [_Goldmark_][gmark]. Three extensions — the [_definition list_]({{< relref "definition-list" >}}), the [_footnote_]({{< relref "footnotes" >}}) and the [_typographer_]({{< relref "typographer" >}}) — have been adopted from [_PHP Markdown Extra_][phpmex]. Based on _CommonMark_, [_GitHub_](https://github.com) introduced _**G**itHub **F**lavored **M**arkdown (GFM)_ with the extensions [_table_]({{< relref "table" >}}), the [_task-list_]({{< relref "task-list">}}), [_strikethrough_]({{< relref "delins">}}) and _linkify_. They are defined in a [new specification][gfmspec] and are all available in _Goldmark_.
 
 {{< sidenote up=20 >}}
-**Blackfriday** is not fully _Commonmark_-compliant and has been deprecated by _Hugo_. _Black&shy;fri&shy;day_ generated HTML may be styled correctly most of the time in _Perplex_. But if you want to rely on _Perplex_, I strongly suggest switching to _Goldmark_.
+**Blackfriday** is not fully _CommonMark_-compliant and has been deprecated by _Hugo_. _Black&shy;fri&shy;day_ generated HTML may be styled correctly most of the time in _Perplex_. But if you want to rely on _Perplex_, I strongly suggest switching to _Goldmark_.
 {{< /sidenote >}}
 
 Further extensions may join in the future, but probably only a few if any, because simplicity remains essential for _Markdown_.
@@ -46,7 +46,7 @@ Further extensions may join in the future, but probably only a few if any, becau
 This documentation includes short reviews of every syntax element in _Goldmark_ and shows examples of their standard layout and alternative styling options by _Perplex_:
 
 [Basic Markdown Layout]({{< relref "basic" >}})
-: covers the elements of the [_Commonmark specification_][cmark].
+: covers the elements of the [_CommonMark specification_][cmark].
 
 [Extended Markdown Layout]({{< relref "extended" >}})
 : discusses the elements adopted from [_PHP Markdown Extra_][phpmex] and [_GFM_][gfmspec].
@@ -59,8 +59,8 @@ Two basic _Markdown_ elements are continuously creating confusion, because they 
 : The _Markdown_ image element is syntactically meant to be placed inside a block element. But it’s also allowed to be used self-contained and gets **automatically wrapped** by an empty paragraph block, then.[^1]
 
 [Line Break][lb]
-: _Commonmark_ and _GFM_ are not fully compatible in regard to this one element. There are two different ways to handle line breaks inside of text blocks:
-    1. Treat hard line wraps in _Markdown_ files as whitespace like _Commonmark_ does.
+: _CommonMark_ and _GFM_ are not fully compatible in regard to this one element. There are two different ways to handle line breaks inside of text blocks:
+    1. Treat hard line wraps in _Markdown_ files as whitespace like _CommonMark_ does.
     2. Treat hard line wraps as hard line wraps like _GFM_.
 {.dl-loose}
 
@@ -74,7 +74,7 @@ My following suggestions for the handling of these elements are short. Their iss
 
 There is one image element in _Markdown_ for embedding an image into a block element and no genuin element for a self-contained image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. _Perplex_ provides the shortcode [_figure_]({{< relref "doc/shortcode/builtin/internal" >}}) for this purpose.
 
-To surround every self-contained _Markdown_ image element with a paragraph — like _Commonmark_ proposes and _Hugo_ does — leads to a simple working solution, when the layout treats all images alike.
+To surround every self-contained _Markdown_ image element with a paragraph — like _CommonMark_ proposes and _Hugo_ does — leads to a simple working solution, when the layout treats all images alike.
 
 ![splash](splash2) _Perplex_ styles the _Markdown_ image element always embedded in text blocks as a float. In contrast to them, the self-contained images should stand out. _Perplex_ also offers layout variations for both kinds of images. That's why _Perplex_ users need to use the  [figure]({{< relref "figure" >}})-shortcode for self-contained images and the _Markdown_ image element only for [embedded ones][img].
 
@@ -97,13 +97,13 @@ _Hugo_ can handle both ways perfectly. Which rule our _Markdown_ follows does on
 Our options here are tied to the way we wrap the _Markdown_.
 
 With Hard Wraps
-: When we us hard line wraps, to manually limit our _Markdown_ line length, we can’t use them to indicate _intentional_ line breaks inside of text blocks anymore. We need the special syntax _Commonmark_ provides.
+: When we us hard line wraps, to manually limit our _Markdown_ line length, we can’t use them to indicate _intentional_ line breaks inside of text blocks anymore. We need the special syntax _CommonMark_ provides.
 
 With Soft Wraps
 : If the lines are not wrapped, a line break is the intuitive way to place an _intentional_ one.
 {.dl-loose}
 
-See the page [Line Break][lb] for the configuration setting and the question of _Commonmark_-compliance.
+See the page [Line Break][lb] for the configuration setting and the question of _CommonMark_-compliance.
 
 ## Special characters
 All available characters—more general _glyphs_—can be used in _Markdown_, either directly as _Unicode_ or as _HTML entities_ (like `&para;` for &para;—see [Entities]({{< relref "specialchar#html-entities" >}})). You may nonetheless get into trouble with glyphs, which are missing in the fonts for your website. But this is a general web-font issue independent of _Markdown_ rendering.
@@ -123,10 +123,10 @@ Some special editors are designed exclusively for authoring _Markdown_. They usu
 Many of these editors offer a convenient separate _preview window_. With _Hugo_ you have an even better option: When you run it as a server on your local computer, it will render your Markdown and deliver it to your browser instantly (see [Using Hugo]({{< relref "hugo#server-mode"  >}})). My personal solution is either an IDE or a programming editor in conjunction with _Hugo’s_ server mode.
 
 ## Markdown Linting
-_Commonmark_ is permissive to many small variations in the markup rules. To ensure a certain markup style in a team or a bigger project, we may use a linter. The node package [_Markdownlint_][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing. For this project the default settings are modified in the configuration file [`.markdownlint.yaml`][mlintconf] at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.  
+_CommonMark_ is permissive to many small variations in the markup rules. To ensure a certain markup style in a team or a bigger project, we may use a linter. The node package [_Markdownlint_][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing. For this project the default settings are modified in the configuration file [`.markdownlint.yaml`][mlintconf] at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.  
 
 [omd]: https://daringfireball.net/projects/markdown/ "Markdown project site by John Gruber"
-[cmark]: https://commonmark.org "Commonmark project site"
+[cmark]: https://CommonMark.org "CommonMark project site"
 [gmark]: https://github.com/yuin/goldmark "Goldmark repository"
 [phpmex]: https://michelf.ca/projects/php-markdown/extra/ "PHP Markdown Extra site"
 [gfmspec]: https://github.github.com/gfm "GitHub Flavored Markdown Specification"

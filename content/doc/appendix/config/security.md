@@ -13,5 +13,5 @@ menu:
     pre: security
 ---
 
-You can place your own lead paragraph here before the attribute *p-lead* and the *more tag*. If you don't want to use special styling, just remove the attribute.
+Lead
 {.p-lead} <!--more-->

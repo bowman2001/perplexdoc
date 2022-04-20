@@ -1,5 +1,5 @@
-# Code style unchecked to allow for bad examples
-MD048: false
+# Code block style unchecked to allow for an indented example
+MD046: false
 
 ### Defaults
 # Line length should not be limited, because we use soft wrapping

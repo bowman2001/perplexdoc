@@ -41,7 +41,7 @@ The layout has to consider the length and number of all the components. The stan
 
 ### Standard
 
-The standard layout resembles the default style  of common browsers:
+The standard layout resembles the default style of common browsers:
 
 First Term
 : {{< farfarshort 1 >}}

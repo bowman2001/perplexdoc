@@ -31,13 +31,13 @@ A code snippet is surrounded by single backticks like `` `code` ``.
 We have two ways to mark a block as code:
 
 Fenced
-: when a block is surrounded by three back-ticks `` ``` `` in the line above and beyond it's a _fenced code block_.
+: When a block is surrounded by three back-ticks `` ``` `` in the line above and beyond it's a _fenced code block_.
 
 Indented
-: a block of text indented by 4 spaces or a tab is also treated as a _code block_.
+: A block of text indented by 4 spaces or a tab is also treated as a _code block_.
 {.dl-loose}
 
-The _fenced_ version of the _Commonmark_ syntax is perferable for two reasons:
+The _fenced_ version of the _CommonMark_ syntax is preferable for two reasons:
 
 1. The following options are available only for fenced blocks:
 
@@ -63,23 +63,23 @@ In contrast to other block elements the attributes follow the **first fence** of
 The options suitable for _Perplex_ are:
 
 `linenos`
-: Enable or disable line numbers. They are disabled by default [for this project]({{< relref "markup#40" >}}), enable them with `linenos=true`
+: Enables or disables line numbers. They are disabled by default [for this project]({{< relref "markup#40" >}}) --- enable them with `linenos=true`.
 
 `hl_lines`
-: Especially highlight some code lines. The lines must be given as a set of numbers or ranges enclosed in square brackets. Every range has to be surrounded additionally by quotes: `hl_lines=[2,"5-7"]`.
+: Especially highlights some code lines. The lines must be given as a set of numbers or ranges enclosed in square brackets. Every range has to be surrounded additionally by quotes: `hl_lines=[2,"5-7"]`.
 
 `linenostart`
-: lets the line numbers begin with a given number, like `linenostart=23`
+: Lets the line numbers begin with a given number, like `linenostart=23`
 
 `lineanchors`
-: Add a prefix to the anchors on the line numbers. With `lineanchors=prefix` for example the anchors are named `prefix-1`, `prefix-2`, ...
+: Adds a prefix to the anchors on the line numbers. With `lineanchors=prefix` for example the anchors are named `prefix-1`, `prefix-2`, ...
 {.dl-loose}
 
 ## Layout
 
 gets rendered to:
 
-The html tag to mark the beginning of code is `<code>`. And to mark the end we use the corresponding closing tag `</code>`.
+The HTML tag to mark the beginning of code is `<code>`. And to mark the end we use the corresponding closing tag `</code>`.
 
 ### Code Blocks
 

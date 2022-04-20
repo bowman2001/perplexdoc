@@ -4,7 +4,7 @@ title: How to use shortcodes?
 description: Inject arbitrary HTML in Markdown
 subtitle: false
 date: 2022-04-15T22:09:40+02:00 
-weight: 1
+weight: 510
 featImg: img/Logo_of_Hugo_the_static_website_generator.svg
 menu:
   doc:
@@ -35,7 +35,7 @@ This call inserts three paragraphs of blind text.
 
 ### Named
 
-When we want to offer more parameters, we better name them, because it's tricky to remember many positions. An example for this kind the is the one for self-contained images. A call of [`{{</* figure */>}}`]({{< relref "figure" >}}) should include at least three parameters:
+When we want to offer more parameters, we better name them, because it's tricky to remember many positions. An example is the shortcode for self-contained images. A call of [`{{</* figure */>}}`]({{< relref "figure" >}}) should include at least three parameters:
 
 ```md
 {{</* figure src="image.jpg" alt="Description" title="Title" */>}} 

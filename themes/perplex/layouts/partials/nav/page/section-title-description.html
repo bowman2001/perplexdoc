@@ -1,0 +1,5 @@
+<div>
+    {{ with .CurrentSection.Title }} <div class="pagenav__meta">{{- . | $.Page.RenderString -}}</div>{{- end -}}
+    {{- with .Title -}}<div class="pagenav__title">{{- . | $.Page.RenderString -}}</div>{{- end -}}
+    {{- with .Description -}}<p class="pagenav__description">{{- . | $.Page.RenderString -}}</p>{{- end -}}
+</div>

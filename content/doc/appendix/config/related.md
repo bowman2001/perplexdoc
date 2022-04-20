@@ -14,4 +14,4 @@ weight: 825
 
 {{< highlight yaml "linenos=true" >}}
 {{< readfile file="/config/_default/related.yaml" >}}
-{{< /highlight >}} 
+{{< /highlight >}}
