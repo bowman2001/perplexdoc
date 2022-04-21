@@ -5,5 +5,7 @@
 **_Perplex_ is a typographic theme for [_Hugo_](https://gohugo.io).**
 
 ## Work in progress
-- The layout still contains bugs and is tested under <https://perplex.desider.at>
-- The theme is available in the `themes` folder, but hasn’t been released properly yet.
+
+- The layout still contains bugs and is online for testing purposes under <https://perplex.desider.at>
+- There is a lot of content, but some pages are still unfinished.
+- The theme is already available in the `themes` folder, but hasn’t been released properly yet.
