@@ -961,17 +961,17 @@ a.meta__item--text:hover {
   font-style: normal;
 }
 
-.title--list {
+.title--ruled {
   padding-bottom: calc(1rem + 1 * 0rem);
   padding-bottom: calc(1rem + 1 * var(--es));
 }
 
-.title--list > hr {
+.title--ruled > hr {
   border-top: .35rem solid #333;
   height: 1rem;
 }
 
-.title--list > h1 {
+.title--ruled > h1 {
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
   font-style: italic;
@@ -3172,20 +3172,30 @@ nav {
 
 .pagenav__list--flex {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.pagenav__list--flex > li {
-  width: 50%;
+  flex-direction: column;
 }
 
 .pagenav__list--flex .pagenav__item--prev {
-  margin-right: 1rem;
+  margin: 0 0 1rem 0;
 }
 
-.pagenav__list--flex .pagenav__item--next {
-  margin-left: 1rem;
+@media screen and (min-width: 37em) {
+  .pagenav__list--flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pagenav__list--flex .pagenav__item--prev {
+    margin: 0 1rem 0 0;
+  }
+
+  .pagenav__list--flex .pagenav__item--next {
+    margin: 0 0 0 1rem;
+  }
+
+  .pagenav__list--flex > li {
+    width: 50%;
+  }
 }
 
 .pagenav__item {
