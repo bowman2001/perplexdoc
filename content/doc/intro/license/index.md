@@ -13,7 +13,7 @@ title: Licences
 weight: 40
 ---
 
-_Perplex_ is an open source theme for the open source software [_Hugo_][hugo] and needs to run with a recent version of it. No other installation requirements exist, but the theme and the documentation ship with included external software and content. Their licencers and the licences of their choosing are listed here.
+_Perplex_ is an open source theme for the open source software [_Hugo_][hugo] and needs to run with a recent version. No other installation requirements exist, but the theme and the documentation include external software and content. Their licencers and the licences of their choosing are also listed here.
 {.p-lead} <!--more-->
 
 ## Perplex and its documentation
@@ -21,17 +21,17 @@ _Perplex_ is an open source theme for the open source software [_Hugo_][hugo] an
 Perplex Theme
 : is released by Jörg (Georg) Makowski under the [Apache 2.0 License][ap2].
 
-Perplex Documentation
-: All _Markdown_ files of the documentation are released by Jörg (Georg) Makowski under the [Creative Commons License (CC BY-SA)][cc4].
+Documentation
+: All _Markdown_ files for the documentation are released by Jörg (Georg) Makowski under the [Creative Commons License (CC BY-SA)][cc4].
 {.dl-loose}
 
-## The necessary website generator _Hugo_
+## Website generator _Hugo_
 
 [Hugo][hugo]
 : is released by its authors and contributors under the [Apache 2.0 License][ap2].
 {.dl-loose}
 
-## Fonts and icon fonts included in _Perplex_
+## Fonts and icon fonts
 
 [IBM Plex fonts](https://www.ibm.com/plex/)
 : have been released by _IBM_ to the public under the [Open Font License (OFL)][ofl].
@@ -40,7 +40,7 @@ Perplex Documentation
 : have been released by _Google_ to the public under the [Apache 2.0 License][ap2].
 {.dl-loose}
 
-## Optional software shipped with _Perplex_
+## Optional software
 
 [KaTeX][katex]
 : has been released by Emily Eisenberg, Sophie Alpert and contributors under the [MIT License][mit].
@@ -49,7 +49,7 @@ Perplex Documentation
 : has been released by Knut Sveidqvist and contributors under the [MIT License][mit].
 {.dl-loose}
 
-## Logos and pictures included in the documentation
+## Logos and pictures
 
 All logos
 : remain under the copyright of their respective owners. _Perplex_ logos are also released under the [Apache 2.0 License][ap2] by Jörg (Georg) Makowski.

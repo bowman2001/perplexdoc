@@ -14,7 +14,7 @@ weight: 60
 draft: true
 ---
 
-All images in this documentation were made available for free by numerous skilled photographers on [_Unsplash_](https://unsplash.com/). Their names are included in the title pop-up and you can usually follow the link in the caption to get to the original picture and the author. 
+All images in this documentation were made available for free by numerous skilled photographers on [_Unsplash_][unsplash]. Their names are included in the title pop-up and you can usually follow the link in the caption to get to the original picture and the author.
 
 The concept for a layout based on classical typographic principles grew over a few years out of many already existing ideas. I can’t even mention every helpful author I read about typography and web layout techniques. Many conceptual parts date back to _Matthew Buttericks_ beautiful online book [_Practical Typography_][pt], which also taught me a lot about typography in general and some about distinctive American-English features.
 
@@ -32,3 +32,4 @@ Without _Hugo_ and its small but very helpful community I wouldn’t have starte
 [go]: https://go.dev
 [ibm]: https://ibm.com
 [plex]: https://ibm.com/plex
+[unsplash]: https://unsplash.com/
