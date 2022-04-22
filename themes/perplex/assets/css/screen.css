@@ -2581,7 +2581,8 @@ nav {
 
 .pagenav {
   color: #222;
-  margin: 0 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
   max-width: 70rem;
 }
 
