@@ -798,10 +798,6 @@ a.meta__item--text:hover {
   text-decoration-color: #e00083;
 }
 
-.pageheader {
-  padding-top: 5rem;
-}
-
 .title h1, .md h1 {
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
@@ -2573,6 +2569,14 @@ nav {
 .ctrl-sw-right {
   justify-content: flex-end;
   padding-right: 1.5rem;
+}
+
+.pageheader {
+  padding-top: 5rem;
+}
+
+.pagefooter {
+  padding-bottom: 5rem;
 }
 
 .pagenav {

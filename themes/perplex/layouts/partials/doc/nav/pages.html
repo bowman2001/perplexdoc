@@ -1,4 +1,4 @@
-<nav class="pagenav">
+<nav class="pagenav mt1">
   <ul class="pagenav__list pagenav__list--flex">
       {{ $pages := where site.RegularPages.Reverse "Section" .Section -}}
       {{ with $pages.Prev . }}

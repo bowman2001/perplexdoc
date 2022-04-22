@@ -11,7 +11,6 @@ menu:
 subtitle: false
 title: Thanks
 weight: 60
-draft: true
 ---
 
 All images in this documentation were made available for free by numerous skilled photographers on [_Unsplash_][unsplash]. Their names are included in the title pop-up and you can usually follow the link in the caption to get to the original picture and the author.
