@@ -37,7 +37,7 @@ Every list item begins with one or more _terms_. The lines after them contain th
 
 ## Layout
 
-The layout has to consider the length and number of all the components. The standard version is working with every combination of terms and descriptions, the additional options are not.
+The layout has to consider the length and number of all the components. The _standard_ version is working with every combination of terms and descriptions the additional options are not. The _tight_ style suits single terms with details, which do usually not exceed one line on larger screens. The _loose_ style is intended for single terms with long details.
 
 ### Standard
 
@@ -63,7 +63,7 @@ Wiener, Norbert
 
 ### Tight
 
-For a list with short single terms and only one short definition, a tighter style may be more suitable. We apply it with the [attribute]({{< relref "attribute" >}}) `{.dl-tight}`:
+For a list with short single terms and only one short definition, a tighter style is more suitable. We apply it with the [attribute]({{< relref "attribute" >}}) `{.dl-tight}`:
 
 First
 : Far far away, behind the word mountains...
@@ -83,13 +83,3 @@ First Term
 Second Term
 : {{< farfarshort 1 >}}
 {.dl-loose, .box}
-
-When we need a little more space for the terms, we better use a third of the text width with `{.dl-loose3}`:
-
-First longer Term
-: {{< farfarshort 1 >}}
-: {{< farfarshort 1 >}}
-
-Second longer Term
-: {{< farfarshort 1 >}}
-{.dl-loose3, .box}
