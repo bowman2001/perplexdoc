@@ -1,4 +1,6 @@
 <div>
-    {{ with .CurrentSection.Title }} <div class="pagenav__meta">{{- . | $.Page.RenderString -}}</div>{{- end -}}
-    {{- with .Title -}}<div class="pagenav__title">{{- . | $.Page.RenderString -}}</div>{{- end -}}
+    {{ with .CurrentSection.Title }}
+      <div class="pagenav__meta">{{- . | $.Page.RenderString -}}</div>{{- end -}}
+    {{- with .Title -}}
+    <div class="pagenav__title">{{- . | $.Page.RenderString -}}</div>{{- end -}}
 </div>

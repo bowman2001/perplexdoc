@@ -13,7 +13,7 @@
     {{ end }}
 {{- end -}}
 {{ with $url }}
-{{ $args := ( dict "currentPage" $currentPage "name" . ) }}
-{{ $imgResource = ( partial "get-resource.html" $args ) }}
+    {{ $args := ( dict "currentPage" $currentPage "name" . ) }}
+    {{ $imgResource = ( partial "get-resource.html" $args ) }}
 {{ end }}
 {{ return $imgResource }}

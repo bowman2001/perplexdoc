@@ -1,31 +1,31 @@
 <nav class="pagenav">
   <ul class="pagenav__list pagenav__list--flex">
-    {{ $pages := where site.RegularPages.Reverse "Section" .Section -}}
-    {{ with $pages.Prev . }}
-    <li><a href="{{ .RelPermalink }}" class="pagenav__item pagenav__item--prev mt-05">
-        <div class="pagenav__itemcol">
-          <div class="pagenav__meta pagenav__meta--dir">Prev.</div>
-            {{ partial "doc/nav/menu-icon.html" . }}
-        </div>
-            {{ partial "nav/page/section-title.html" . }}
-        <div class="icon pagenav__icon pagenav__icon--arrow">navigate_before</div>
-      </a></li>
-    {{ else }}
-    {{ with .FirstSection }}{{ template "start" . }}{{ end }}
-    {{- end -}}
-    {{ with $pages.Next . }}
-    <li>
-      <a href="{{ .RelPermalink }}" class="pagenav__item pagenav__item--next mt-05">
-        <div class="pagenav__itemcol">
-          <div class="pagenav__meta pagenav__meta--dir">Next</div>
-            {{ partial "doc/nav/menu-icon.html" . }}
-        </div>
-          {{ partial "nav/page/section-title.html" . }}
-        <div class="icon pagenav__icon pagenav__icon--arrow">navigate_next</div>
-      </a></li>
-    {{ else }}
-    {{ with .FirstSection }}{{ template "start" . }}{{ end }}
-    {{- end -}}
+      {{ $pages := where site.RegularPages.Reverse "Section" .Section -}}
+      {{ with $pages.Prev . }}
+        <li><a href="{{ .RelPermalink }}" class="pagenav__item pagenav__item--prev mt-05">
+            <div class="pagenav__itemcol">
+              <div class="pagenav__meta pagenav__meta--dir">Prev.</div>
+                {{ partial "doc/nav/menu-icon.html" . }}
+            </div>
+                {{ partial "nav/page/section-title.html" . }}
+            <div class="icon pagenav__icon pagenav__icon--arrow">navigate_before</div>
+          </a></li>
+      {{ else }}
+          {{ with .FirstSection }}{{ template "start" . }}{{ end }}
+      {{- end -}}
+      {{ with $pages.Next . }}
+        <li>
+          <a href="{{ .RelPermalink }}" class="pagenav__item pagenav__item--next mt-05">
+            <div class="pagenav__itemcol">
+              <div class="pagenav__meta pagenav__meta--dir">Next</div>
+                {{ partial "doc/nav/menu-icon.html" . }}
+            </div>
+              {{ partial "nav/page/section-title.html" . }}
+            <div class="icon pagenav__icon pagenav__icon--arrow">navigate_next</div>
+          </a></li>
+      {{ else }}
+          {{ with .FirstSection }}{{ template "start" . }}{{ end }}
+      {{- end -}}
   </ul>
 </nav>
 
@@ -36,8 +36,9 @@
         <div class="icon pagenav__icon">article</div>
       </div>
       <div>
-          <div class="pagenav__meta">&nbsp;</div>
-          {{- with .Title -}}<div class="pagenav__title">{{- . | $.Page.RenderString -}}</div>{{- end -}}
+        <div class="pagenav__meta">&nbsp;</div>
+          {{- with .Title -}}
+          <div class="pagenav__title">{{- . | $.Page.RenderString -}}</div>{{- end -}}
       </div>
       <div class="icon pagenav__icon pagenav__icon--arrow">expand_less</div>
     </a></li>

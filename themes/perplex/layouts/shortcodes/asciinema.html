@@ -10,19 +10,19 @@
 {{ $cols := 80 }}
 {{ $rows := 25 }}
 {{ if .IsNamedParams }}
-{{ $id = .Get "id" }}
-{{ $startAt = .Get "startAt" }}
-{{ $autoplay = .Get "autoplay" }}
-{{ $preload = .Get "preload" }}
-{{ $loop = .Get "loop" }}
-{{ $speed = .Get "speed" }}
-{{ $idleTimeLimit = .Get "idleTimeLimit" }}
-{{ $theme = .Get "theme" }}
-{{ $rows = .Get "rows" }}
-{{ $cols = .Get "cols" }}
+    {{ $id = .Get "id" }}
+    {{ $startAt = .Get "startAt" }}
+    {{ $autoplay = .Get "autoplay" }}
+    {{ $preload = .Get "preload" }}
+    {{ $loop = .Get "loop" }}
+    {{ $speed = .Get "speed" }}
+    {{ $idleTimeLimit = .Get "idleTimeLimit" }}
+    {{ $theme = .Get "theme" }}
+    {{ $rows = .Get "rows" }}
+    {{ $cols = .Get "cols" }}
 {{ else }}
-{{ $id = .Get 0 }}
-{{ $rows = .Get 1 }}
+    {{ $id = .Get 0 }}
+    {{ $rows = .Get 1 }}
 {{ end }}
 <script type="text/javascript"
         src="https://asciinema.org/a/{{ $id }}.js"

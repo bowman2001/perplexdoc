@@ -1,35 +1,35 @@
 {{- define "main" -}}
-<main class="l-box" id="box">
-	<header class="pageheader">
-		{{- partial "img/featuredmargin.html" . -}}
-		<div class="title title--ruled">
-			<hr>
-			{{ partial "title/title.html" . }}
-			{{ partial "title/subtitle.html" . }}
-		</div>
-	</header>
-	<section class="md md--serif md--list">
-		{{- partial "content.html" . -}}
-	</section>
-	<section>
-		<nav class="pagenav pagenav--cols">
-		<ul class="pagenav__list">
-			{{- range .Pages -}}
-				<li>{{- .Render "li" -}}</li>
-			{{- end -}}
-		</ul>
-		</nav>
-	</section>
-	<section class="md md--serif">
-		{{- partial "after.html" . -}}
-	</section>
-	<footer class="pagefooter">
-		<div class="meta">
-			{{ partial "nav/breadcrumbs/footer.html" . }}
-			{{ partial "date/page/updated.html" . }}
-		</div>
-	</footer>
-</main>
+  <main class="l-box" id="box">
+    <header class="pageheader">
+        {{- partial "img/featuredmargin.html" . -}}
+      <div class="title title--ruled">
+        <hr>
+          {{ partial "title/title.html" . }}
+          {{ partial "title/subtitle.html" . }}
+      </div>
+    </header>
+    <section class="md md--serif md--list">
+        {{- partial "content.html" . -}}
+    </section>
+    <section>
+      <nav class="pagenav pagenav--cols">
+        <ul class="pagenav__list">
+            {{- range .Pages -}}
+              <li>{{- .Render "li" -}}</li>
+            {{- end -}}
+        </ul>
+      </nav>
+    </section>
+    <section class="md md--serif">
+        {{- partial "after.html" . -}}
+    </section>
+    <footer class="pagefooter">
+      <div class="meta">
+          {{ partial "nav/breadcrumbs/footer.html" . }}
+          {{ partial "date/page/updated.html" . }}
+      </div>
+    </footer>
+  </main>
 {{- end -}}
 
 {{- define "sidebar" -}}{{- partial "doc/nav/sidebar.html" . -}}{{- end -}}

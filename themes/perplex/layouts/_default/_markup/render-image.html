@@ -12,7 +12,7 @@
 
 <span class="embed">
 {{ if eq $img.MediaType.SubType "svg" }}
-	<img class="img-svg" src="{{ $img.RelPermalink }}" alt="{{ $img.Name }}" title="{{ $title }}">
+  <img class="img-svg" src="{{ $img.RelPermalink }}" alt="{{ $img.Name }}" title="{{ $title }}">
 {{ else }}
     {{/* $ratio := (div (mul $img.Height 1.0) $img.Width) */}}
     {{ $colmin := mul site.Params.layout.xmin site.Params.layout.column }}
@@ -34,16 +34,16 @@
     {{ end }}
     {{ $srcset = delimit $srcset "," }}
     {{ $sizes := print "(max-width: " $width_3col "px) calc( 100vw - " (mul 2 $gutter_mobile) "px ), " $colmax "px" }}
-		<img src="{{ $img.RelPermalink }}"
-		     srcset="{{ print $srcset }}"
-		     sizes="{{ print $sizes }}"
-		     alt="{{- .Text -}}"
+    <img src="{{ $img.RelPermalink }}"
+         srcset="{{ print $srcset }}"
+         sizes="{{ print $sizes }}"
+         alt="{{- .Text -}}"
          {{ with $title }}title="{{- . | markdownify -}}"{{ end }}
 		     loading="lazy"/>
 {{ end }}
 
     {{ with $img.Params.caption }}
-			<span class="caption">{{- . | markdownify -}}</span>
+      <span class="caption">{{- . | markdownify -}}</span>
     {{ end }}
 
     {{ with $img.Params.attr }}

@@ -1,24 +1,24 @@
 {{- define "main" -}}
-    <main id="box">
-        <header class="pageheader">
-            {{- partial "img/featuredmargin.html" . -}}
-            <div class="title title--ruled">
-                <hr>
-                {{ partial "title/title.html" . }}
-                {{ partial "title/subtitle.html" . }}
-            </div>
-        </header>
-        <section class="md md--serif md--list">
-            {{- partial "content.html" . -}}
-        </section>
-            <nav class="pagenav pagenav--cols">
-                <ul>
-                    {{- range .Pages -}}
-                        <li>{{- .Render "li" -}}</li>
-                    {{- end -}}
-                </ul>
-            </nav>
-    </main>
+  <main id="box">
+    <header class="pageheader">
+        {{- partial "img/featuredmargin.html" . -}}
+      <div class="title title--ruled">
+        <hr>
+          {{ partial "title/title.html" . }}
+          {{ partial "title/subtitle.html" . }}
+      </div>
+    </header>
+    <section class="md md--serif md--list">
+        {{- partial "content.html" . -}}
+    </section>
+    <nav class="pagenav pagenav--cols">
+      <ul>
+          {{- range .Pages -}}
+            <li>{{- .Render "li" -}}</li>
+          {{- end -}}
+      </ul>
+    </nav>
+  </main>
 {{- end -}}
 
 

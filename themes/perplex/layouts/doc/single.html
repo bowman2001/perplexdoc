@@ -1,33 +1,33 @@
 {{ define "main" }}
-<article id="box">
-	<header class="pageheader">
-		{{ partial "img/featuredmargin.html" . }}
-		<div class="meta">
-			{{ partial "nav/breadcrumbs/header.html" . }}
-			{{ partial "date/page/published.html" . }}
-		</div>
-		<div class="title">
-			{{ partial "title/title.html" . }}
-			{{ partial "title/subtitle.html" . }}
-		</div>
-	</header>
-	<section class="md md--serif">
-		{{ partial "content.html" . }}
-	</section>
-	<footer class="pagefooter">
-		<div class="meta">
-			{{ partial "nav/breadcrumbs/footer.html" . }}
-			{{ partial "date/page/updated.html" . }}
-		</div>
-		<div class="mt1">
-			{{ partial "doc/nav/pages.html" . }}
-		</div>
-	</footer>
-</article>
+  <article id="box">
+    <header class="pageheader">
+        {{ partial "img/featuredmargin.html" . }}
+      <div class="meta">
+          {{ partial "nav/breadcrumbs/header.html" . }}
+          {{ partial "date/page/published.html" . }}
+      </div>
+      <div class="title">
+          {{ partial "title/title.html" . }}
+          {{ partial "title/subtitle.html" . }}
+      </div>
+    </header>
+    <section class="md md--serif">
+        {{ partial "content.html" . }}
+    </section>
+    <footer class="pagefooter">
+      <div class="meta">
+          {{ partial "nav/breadcrumbs/footer.html" . }}
+          {{ partial "date/page/updated.html" . }}
+      </div>
+      <div class="mt1">
+          {{ partial "doc/nav/pages.html" . }}
+      </div>
+    </footer>
+  </article>
 {{ end }}
 
 {{ define "sidebar" }}
-	{{ partial "doc/nav/sidebar.html" . }}
+    {{ partial "doc/nav/sidebar.html" . }}
 {{ end }}
 
 {{- define "toc" -}} {{- partial "nav/toc.html" . -}}{{- end -}}

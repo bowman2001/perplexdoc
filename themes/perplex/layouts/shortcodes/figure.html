@@ -11,10 +11,10 @@
 {{ $attrlink := "" }}
 {{ $inner := "" }}
 {{ if .IsNamedParams }}
-		{{ $name = (printf "*%s*" (.Get "src")) }}
+    {{ $name = (printf "*%s*" (.Get "src")) }}
     {{ $img = .Page.Resources.GetMatch $name }}
     {{ with (.Get "class") }}{{ $class = $class | append . }}{{ end }}
-	  {{ with (.Get "link") }}{{ $link = . }}{{ end }}
+    {{ with (.Get "link") }}{{ $link = . }}{{ end }}
     {{ with (.Get "target") }}{{ $target = . }}{{ end }}
     {{ with (.Get "rel") }}{{ $rel = . }}{{ end }}
     {{ with (.Get "alt") }}{{ $alt = . }}{{ end }}
@@ -23,48 +23,49 @@
     {{ with (.Get "attr") }}{{ $attr = . }}{{ end }}
     {{ with (.Get "attrlink") }}{{ $attrlink = . }}{{ end }}
 {{ else }}
-		{{ $name = (.Get 0) }}
-		{{ $img = .Page.Resources.GetMatch $name }}
-		{{ with $img }}
-			{{ with .Params.class  }}{{ $class = $class | append . }}{{ end }}
-	    {{ with .Params.link }}{{ $link = . }}{{ end }}
-      {{ with .Params.target }}{{ $target = . }}{{ end }}
-      {{ with .Params.rel }}{{ $rel = . }}{{ end }}
-      {{ with .Params.alt }}{{ $alt = . }}{{ end }}
-      {{ with .Title }}{{ $title = .  }}{{ end }}
-      {{ with .Params.caption }}{{ $caption = . }}{{ end }}
-      {{ with .Params.attr }}{{ $attr = . }}{{ end }}
-      {{ with .Params.attrlink }}{{ $attrlink = . }}{{ end }}
-		{{ end }}
+    {{ $name = (.Get 0) }}
+    {{ $img = .Page.Resources.GetMatch $name }}
+    {{ with $img }}
+        {{ with .Params.class  }}{{ $class = $class | append . }}{{ end }}
+        {{ with .Params.link }}{{ $link = . }}{{ end }}
+        {{ with .Params.target }}{{ $target = . }}{{ end }}
+        {{ with .Params.rel }}{{ $rel = . }}{{ end }}
+        {{ with .Params.alt }}{{ $alt = . }}{{ end }}
+        {{ with .Title }}{{ $title = .  }}{{ end }}
+        {{ with .Params.caption }}{{ $caption = . }}{{ end }}
+        {{ with .Params.attr }}{{ $attr = . }}{{ end }}
+        {{ with .Params.attrlink }}{{ $attrlink = . }}{{ end }}
+    {{ end }}
 {{ end }}
 {{ with .Inner }}{{ $caption = . }}{{ end }}
 {{ with $img }}
-		<figure {{ with $class }}class='{{ delimit . " " | safeHTMLAttr }}'{{ end }}>
-        {{ if $link }}
-			<a href='{{ $link | safeHTMLAttr }}' {{ with $target }}target='{{ . | safeHTMLAttr }}'{{ end }}
-							{{ with $rel }}rel='{{ . | safeHTMLAttr }}'{{ end }}>
-          {{ end }}
-				{{ if eq $img.MediaType.SubType "svg" }}
-				<img class="img-svg" src='{{ .RelPermalink }}' {{ with $alt }} alt='{{ . | markdownify }}' {{ end }}
-								{{ with $title }} title='{{ . | markdownify }}' {{ end }} />
-				{{ else }}
-            {{ warnf "%d" $img.Height }}
-				<img src='{{ .RelPermalink }}' {{ with $alt }} alt='{{ . | markdownify }}' {{ end }}
-                {{ with $title }} title='{{ . | markdownify }}' {{ end }} />
-				{{ end }}
-        {{ if $link }}</a>{{ end }}
-        {{ if (or $caption $attr) }}
-					<figcaption>
-              {{ with ($caption | markdownify )}}<div class="caption">{{ . }}</div>{{ end }}
-							{{ with $attr }}
-								<div class="attr">
-                    {{ if $attrlink }}<a href='{{ $attrlink }}'>{{ end }}
-												{{ . | markdownify }}{{ if $attrlink }}</a>{{ end }}
-								</div>
-              {{ end }}
-					</figcaption>
+  <figure {{ with $class }}class='{{ delimit . " " | safeHTMLAttr }}'{{ end }}>
+      {{ if $link }}
+    <a href='{{ $link | safeHTMLAttr }}' {{ with $target }}target='{{ . | safeHTMLAttr }}'{{ end }}
+            {{ with $rel }}rel='{{ . | safeHTMLAttr }}'{{ end }}>
         {{ end }}
-		</figure>
+        {{ if eq $img.MediaType.SubType "svg" }}
+          <img class="img-svg" src='{{ .RelPermalink }}' {{ with $alt }} alt='{{ . | markdownify }}' {{ end }}
+                  {{ with $title }} title='{{ . | markdownify }}' {{ end }} />
+        {{ else }}
+            {{ warnf "%d" $img.Height }}
+            <img src='{{ .RelPermalink }}' {{ with $alt }} alt='{{ . | markdownify }}' {{ end }}
+                    {{ with $title }} title='{{ . | markdownify }}' {{ end }} />
+        {{ end }}
+        {{ if $link }}</a>{{ end }}
+      {{ if (or $caption $attr) }}
+        <figcaption>
+            {{ with ($caption | markdownify )}}
+            <div class="caption">{{ . }}</div>{{ end }}
+            {{ with $attr }}
+              <div class="attr">
+                  {{ if $attrlink }}<a href='{{ $attrlink }}'>{{ end }}
+                      {{ . | markdownify }}{{ if $attrlink }}</a>{{ end }}
+              </div>
+            {{ end }}
+        </figcaption>
+      {{ end }}
+  </figure>
 {{ else }}
     {{ warnf "%v: No page resource '%s' available." .Page $name  }}
 {{ end }}

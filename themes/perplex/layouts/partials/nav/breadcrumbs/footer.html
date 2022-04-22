@@ -16,7 +16,8 @@
     {{ end }}
     {{ if ne .p1 .p2  }}
       <li>
-        <a class="meta__item meta__item--text font-italic" href="{{ .p1.RelPermalink }}">{{ .p1.Title | markdownify }}</a>
+        <a class="meta__item meta__item--text font-italic"
+           href="{{ .p1.RelPermalink }}">{{ .p1.Title | markdownify }}</a>
       </li>
     {{ else }}
       <li>
