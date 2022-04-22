@@ -2738,43 +2738,6 @@ h6 {
   background: radial-gradient(#fefcfa, #f6e3d0);
 }
 
-.note > .content {
-  padding: .625rem 2rem;
-  overflow: hidden;
-}
-
-.note > .content h3,
-.note > .content h4,
-.note > .content h5,
-.note > .content h6,
-.note > .content .h-p {
-  display: inline;
-  font-size: 1.6083333333rem;
-  line-height: 2.5rem;
-  padding-top: .6476791667rem;
-  margin-bottom: -.6476791667rem;
-  padding-bottom: 0;
-  scroll-margin-top: 10.5rem;
-}
-
-.note > .content > p {
-  text-align: left;
-  font-size: 1.6083333333rem;
-  line-height: 2.5rem;
-  padding-top: .6476791667rem;
-  padding-bottom: .3523208333rem;
-  margin-bottom: 0;
-  scroll-margin-top: 10.5rem;
-  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 450;
-  color: #556;
-}
-
-.note > .content > p + p {
-  margin-top: -1rem;
-  text-indent: 2rem;
-}
-
 @media screen and (min-width: 37em) {
   .note {
     margin-left: 2rem;
@@ -2790,13 +2753,13 @@ h6 {
     background: transparent;
   }
 
-  .note > .content {
+  .note > .note__content {
     overflow: visible;
     padding: 1rem 0;
   }
 
-  .note > .content > h5,
-  .note > .content h6 {
+  .note > .note__content > h5,
+  .note > .note__content h6 {
     font-size: 1.68875rem;
     line-height: 2rem;
     padding-top: .367563125rem;
@@ -2805,7 +2768,7 @@ h6 {
     scroll-margin-top: 11rem;
   }
 
-  .note > .content > p {
+  .note > .note__content > p {
     font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 450;
     font-size: 1.68875rem;
@@ -2818,17 +2781,54 @@ h6 {
   }
 }
 
-.note-star1 .content > p:first-of-type,
-.note-star2 .content > p:first-of-type,
-.note-dagger1 .content > p:first-of-type,
-.note-dagger2 .content > p:first-of-type {
+.note__content {
+  padding: .625rem 2rem;
+  overflow: hidden;
+}
+
+.note__content h3,
+.note__content h4,
+.note__content h5,
+.note__content h6,
+.note__content .h-p {
+  display: inline;
+  font-size: 1.6083333333rem;
+  line-height: 2.5rem;
+  padding-top: .6476791667rem;
+  margin-bottom: -.6476791667rem;
+  padding-bottom: 0;
+  scroll-margin-top: 10.5rem;
+}
+
+.note__content > p {
+  text-align: left;
+  font-size: 1.6083333333rem;
+  line-height: 2.5rem;
+  padding-top: .6476791667rem;
+  padding-bottom: .3523208333rem;
+  margin-bottom: 0;
+  scroll-margin-top: 10.5rem;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 450;
+  color: #556;
+}
+
+.note__content > p + p {
+  margin-top: -1rem;
+  text-indent: 2rem;
+}
+
+.note-star1 .note__content > p:first-of-type,
+.note-star2 .note__content > p:first-of-type,
+.note-dagger1 .note__content > p:first-of-type,
+.note-dagger2 .note__content > p:first-of-type {
   position: relative;
 }
 
-.note-star1 .content > p:first-of-type:before,
-.note-star2 .content > p:first-of-type:before,
-.note-dagger1 .content > p:first-of-type:before,
-.note-dagger2 .content > p:first-of-type:before {
+.note-star1 .note__content > p:first-of-type:before,
+.note-star2 .note__content > p:first-of-type:before,
+.note-dagger1 .note__content > p:first-of-type:before,
+.note-dagger2 .note__content > p:first-of-type:before {
   position: absolute;
   font-family: 'IBM Plex Serif', Georgia, Times, serif;
   font-weight: 500;
@@ -2839,24 +2839,42 @@ h6 {
   color: #333;
 }
 
-.note-star1 .content > p:first-of-type:before {
+.note-star1 .note__content > p:first-of-type:before {
   content: "*";
 }
 
-.note-dagger1 .content > p:first-of-type:before {
-  content: "†";
-}
-
-.note-dagger2 .content > p:first-of-type:before {
-  content: "‡";
-}
-
-.note-star2 .content > p:first-of-type:before {
+.note-star2 .note__content > p:first-of-type:before {
   left: -1.5rem;
   content: "**";
 }
 
-.note-long > .checkbox-note ~ .content:after {
+.note-dagger1 .note__content > p:first-of-type:before {
+  content: "†";
+}
+
+.note-dagger2 .note__content > p:first-of-type:before {
+  content: "‡";
+}
+
+@media screen and (min-width: 48em) {
+  .note-long > .note__content {
+    position: static;
+    overflow: auto;
+    height: auto;
+  }
+
+  .note-long > .note__content:after {
+    display: none;
+  }
+}
+
+.checkbox-note {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.checkbox-note ~ .note__content:after {
   position: absolute;
   bottom: 0;
   width: calc(100% - 4rem);
@@ -2867,13 +2885,13 @@ h6 {
 }
 
 @media screen and (min-width: 48em) {
-  .note-long > .checkbox-note ~ .content {
+  .checkbox-note ~ .note__content {
     overflow: visible;
     height: auto;
   }
 }
 
-.note-long > .checkbox-note ~ .open-note {
+.checkbox-note ~ .open-note {
   display: block;
   position: absolute;
   width: 50%;
@@ -2887,7 +2905,7 @@ h6 {
   -webkit-tap-highlight-color: transparent;
 }
 
-.note-long > .checkbox-note ~ .open-note > .arrow {
+.checkbox-note ~ .open-note > .arrow {
   display: block;
   z-index: 999;
   width: 0;
@@ -2897,76 +2915,64 @@ h6 {
   border-left: 1rem solid transparent;
 }
 
-.note-long > .checkbox-note ~ .open-note:focus {
+.checkbox-note ~ .open-note:focus {
   color: transparent;
 }
 
-.note-long > .checkbox-note:not(checked) ~ .content {
+.checkbox-note:not(checked) ~ .note__content {
   height: 10.5rem;
 }
 
-.note-long > .checkbox-note:not(checked) ~ .content:after {
+.checkbox-note:not(checked) ~ .note__content:after {
   transition: opacity 150ms ease;
   opacity: 1;
 }
 
 @media screen and (min-width: 48em) {
-  .note-long > .checkbox-note:not(checked) ~ .content {
+  .checkbox-note:not(checked) ~ .note__content {
     height: 100%;
   }
 
-  .note-long > .checkbox-note:not(checked) ~ .content:after {
+  .checkbox-note:not(checked) ~ .note__content:after {
     display: none;
   }
 }
 
-.note-long > .checkbox-note:not(checked) ~ .open-note {
+.checkbox-note:not(checked) ~ .open-note {
   bottom: -3rem;
 }
 
-.note-long > .checkbox-note:not(checked) ~ .open-note > .arrow {
+.checkbox-note:not(checked) ~ .open-note > .arrow {
   border-top: 1rem solid #556;
   border-bottom: unset;
 }
 
 @media screen and (min-width: 48em) {
-  .note-long > .checkbox-note:not(checked) ~ .open-note {
+  .checkbox-note:not(checked) ~ .open-note {
     display: none;
   }
 }
 
-.note-long > .checkbox-note:checked ~ .content {
+.checkbox-note:checked ~ .note__content {
   height: 100%;
 }
 
-.note-long > .checkbox-note:checked ~ .content:after {
+.checkbox-note:checked ~ .note__content:after {
   transition: opacity 150ms ease;
   opacity: 0;
 }
 
-.note-long > .checkbox-note:checked ~ .open-note {
+.checkbox-note:checked ~ .open-note {
   bottom: -2.1rem;
 }
 
-.note-long > .checkbox-note:checked ~ .open-note > .arrow {
+.checkbox-note:checked ~ .open-note > .arrow {
   border-top: unset;
   border-bottom: 1rem solid #556;
 }
 
 @media screen and (min-width: 48em) {
-  .note-long > .checkbox-note:checked ~ .open-note {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 48em) {
-  .note-long > .content {
-    position: static;
-    overflow: auto;
-    height: auto;
-  }
-
-  .note-long > .content:after {
+  .checkbox-note:checked ~ .open-note {
     display: none;
   }
 }
