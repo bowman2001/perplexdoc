@@ -18,8 +18,8 @@ Footnotes are placed at the bottom of the page. They are best suited for technic
 
 Footnotes are indispensable for scientific documents or more rigorous essays. They reference sources or elaborate on details. Because they are placed at the end of the content, the footnote marker contains a link allowing to jump to the note. And the note contains a link back to the marker.
 
-{{< sidenote up=4 >}}
-To jump back and forth between the text and footnotes is distracting. _Perplex_ additionally offers a [side-note]({{< relref "side-note" >}}) like this one as an alternative placed nearby for more important content. On larger screens, it’s placed in the marginal column besides the main text. On mobile screens it’s inserted as an (expandable) box.  
+{{< sidenote up=6 >}}
+To jump back and forth between text and footnotes is distracting. _Perplex_ offers a [side-note]({{< relref "side-note" >}}) like this one as an alternative. It’s placed nearby for more important content. On larger in the marginal column besides the main text, on mobile screens it’s inserted as an (expandable) box.  
 {{< /sidenote >}}
 
 ## Syntax

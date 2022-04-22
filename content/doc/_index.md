@@ -12,7 +12,7 @@ menu:
     weight: 10
 ---
 
-The source files for all the following pages are licensed as **Creative Commons**, and they are available on [GitHub][doc].
+The _Markdown_ files for the following pages are licensed as **Creative Commons**. They are available on [GitHub][doc].
 {.p-lead} <!--more-->
 
 ## Chapters
