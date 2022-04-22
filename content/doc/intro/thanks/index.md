@@ -16,7 +16,7 @@ draft: true
 
 The idea for a layout based on classical typographic principles grew over a few years out of many already existing concepts. I’m sorry, I can’t mention every helpful author I consulted about typography and web layout techniques.
 
-Without _Hugo_ and its small but very reliable and helpful community I wouldn’t have come this far in implementing these ideas. I owe special thanks to the current and long time project leader [_Bjørn Erik Pedersen_][bep] for his constant improvements of the software and his help; to [_Joe Mooring_][jm] for his detailed and precise suggestions; and of course to [_Steve Francia_][sf], the current head of product for the [Go language][go] at _Google_, for bringing _Hugo_ to life.
+Without _Hugo_ and its small but very reliable and helpful community I wouldn’t have come this far in implementing these ideas. I owe special thanks to the current and long time project leader [_Bjørn Erik Pedersen_][bep] for his constant improvements of the software and his help; to [_Joe Mooring_][jm] for his detailed and precise suggestions; and of course to [_Steve Francia_][sf], for bringing _Hugo_ to life and building its core.
 
 _Perplex_ is --- as the name says --- designed around [_IBM’s_][ibm] open corporate font family [_Plex_][plex], which I can only use in a somewhat different way than IBM itself, because their fonts are so versatile and thankfully include a classic serif version.
 

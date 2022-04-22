@@ -2238,8 +2238,8 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent;
   }
   .note > .note__content {
-    overflow: visible;
     padding: 1rem 0;
+    overflow: visible;
   }
   .note > .note__content > h5, .note > .note__content h6 {
     font-size: 1.68875rem;

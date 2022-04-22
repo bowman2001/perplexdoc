@@ -2754,8 +2754,8 @@ h6 {
   }
 
   .note > .note__content {
-    overflow: visible;
     padding: 1rem 0;
+    overflow: visible;
   }
 
   .note > .note__content > h5,
