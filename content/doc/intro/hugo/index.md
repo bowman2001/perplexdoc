@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-09-07T21:43:30+02:00"
-description: The world's fastest static site generator
+description: The fastest static site engine
 featImg: img/Logo_of_Hugo_the_static_website_generator.svg
 menu:
   doc:

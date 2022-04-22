@@ -130,6 +130,26 @@ hr {
   clear: both;
 }
 
+.mt1 {
+  margin-top: 1rem;
+}
+
+.mt2 {
+  margin-top: 2rem;
+}
+
+.mt3 {
+  margin-top: 3rem;
+}
+
+.mt-05 {
+  margin-top: -0.5rem;
+}
+
+.mt-1 {
+  margin-top: -1rem;
+}
+
 :root {
   --fs: 51.8125%;
   --bw: 100%;
@@ -1607,12 +1627,12 @@ h6 {
   font-weight: 450;
 }
 
-.md.md-sans dl dt {
+.md.md--sans dl dt {
   font-weight: 500;
 }
 
-.md.md-sans dl dd,
-.md.md-sans dl dd > p {
+.md.md--sans dl dd,
+.md.md--sans dl dd > p {
   font-weight: 450;
 }
 
@@ -1786,6 +1806,7 @@ h6 {
   padding-bottom: calc(1.25892425rem + 1 * var(--es));
   margin-bottom: 0;
   scroll-margin-top: 10rem;
+  font-style: italic;
 }
 
 .md .p-big {
@@ -1847,18 +1868,6 @@ h6 {
 .md .box {
   position: relative;
   background-color: #fcf6ef;
-}
-
-.md .mt1 {
-  margin-top: 1rem;
-}
-
-.md .mt2 {
-  margin-top: 2rem;
-}
-
-.md .mt3 {
-  margin-top: 3rem;
 }
 
 @media screen and (min-width: 48em) {
@@ -2147,7 +2156,6 @@ h6 {
 .md--serif .p-lead {
   font-family: 'IBM Plex Serif', Georgia, Times, serif;
   font-weight: 500;
-  font-style: italic;
 }
 
 .md--serif .p-big,
@@ -2155,18 +2163,18 @@ h6 {
   font-weight: 500;
 }
 
-.md-sans p,
-.md-sans ul,
-.md-sans ol,
-.md-sans dl {
+.md--sans p,
+.md--sans ul,
+.md--sans ol,
+.md--sans dl {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 450;
 }
 
-.md-sans > blockquote > p,
-.md-sans > blockquote > ul,
-.md-sans > blockquote > ol,
-.md-sans > blockquote > dl {
+.md--sans > blockquote > p,
+.md--sans > blockquote > ul,
+.md--sans > blockquote > ol,
+.md--sans > blockquote > dl {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 450;
   font-size: 1.809375rem;
@@ -2178,10 +2186,10 @@ h6 {
   scroll-margin-top: 10rem;
 }
 
-.md-sans > .blockquote-hero > p,
-.md-sans > .blockquote-hero > ul,
-.md-sans > .blockquote-hero > ol,
-.md-sans > .blockquote-hero > dl {
+.md--sans > .blockquote-hero > p,
+.md--sans > .blockquote-hero > ul,
+.md--sans > .blockquote-hero > ol,
+.md--sans > .blockquote-hero > dl {
   font-size: 1.9375rem;
   line-height: 3rem;
   padding-top: .77440625rem;
@@ -2193,13 +2201,12 @@ h6 {
   font-style: italic;
 }
 
-.md-sans .p-lead {
+.md--sans .p-lead {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 500;
-  font-style: italic;
 }
 
-.md-sans .p-big {
+.md--sans .p-big {
   font-size: 2.583326875rem;
   line-height: 4rem;
   padding-top: calc(0.6992110853rem + 0.666667 * 0rem);
@@ -2211,50 +2218,50 @@ h6 {
   scroll-margin-top: calc(8.333333rem - 0.666667 * var(--es));
 }
 
-.md-dropcap2 > p:first-child:first-letter {
+.md--dropcap2 > p:first-child:first-letter {
   float: left;
   font-size: 6.3rem;
   line-height: 1;
   margin: -0.2rem .35rem -1rem -0.2rem;
 }
 
-.md-dropcap3 > p:first-child:first-letter {
+.md--dropcap3 > p:first-child:first-letter {
   float: left;
   font-size: 10.5rem;
   line-height: 1;
   margin: -0.9rem .5rem -1rem -0.2rem;
 }
 
-.md--list {
-  padding-bottom: 1rem;
-}
-
-.md-margin {
+.md--margin {
   margin-top: -1rem;
 }
 
 @media screen and (min-width: 79em) {
-  .md-margin > h1,
-  .md-margin > h2,
-  .md-margin > h3,
-  .md-margin > h4,
-  .md-margin > p,
-  .md-margin > blockquote,
-  .md-margin > ul,
-  .md-margin > ol,
-  .md-margin > dl,
-  .md-margin > table,
-  .md-margin > hr,
-  .md-margin > pre,
-  .md-margin > .highlight,
-  .md-margin .maincol,
-  .md-margin .literature,
-  .md-margin .footnotes,
-  .md-margin .asciicast {
+  .md--margin > h1,
+  .md--margin > h2,
+  .md--margin > h3,
+  .md--margin > h4,
+  .md--margin > p,
+  .md--margin > blockquote,
+  .md--margin > ul,
+  .md--margin > ol,
+  .md--margin > dl,
+  .md--margin > table,
+  .md--margin > hr,
+  .md--margin > pre,
+  .md--margin > .highlight,
+  .md--margin .maincol,
+  .md--margin .literature,
+  .md--margin .footnotes,
+  .md--margin .asciicast {
     max-width: 144rem;
     margin-left: 37rem;
     margin-right: 37rem;
   }
+}
+
+.md--list {
+  padding-bottom: 0;
 }
 
 .md figure {
@@ -3183,6 +3190,7 @@ nav {
   .pagenav__list--flex {
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
   }
 
   .pagenav__list--flex .pagenav__item--prev {
@@ -3195,12 +3203,14 @@ nav {
 
   .pagenav__list--flex > li {
     width: 50%;
+    height: 100%;
   }
 }
 
 .pagenav__item {
   display: flex;
   flex-wrap: nowrap;
+  align-items: stretch;
 }
 
 .pagenav__item:hover,
@@ -3232,7 +3242,7 @@ nav {
 
 .pagenav__item--prev {
   flex-flow: row-reverse;
-  padding: 1rem 2rem 1rem 0rem;
+  padding: 2rem 2rem 2rem 1rem;
   text-align: right;
 }
 
@@ -3241,7 +3251,7 @@ nav {
 }
 
 .pagenav__item--next {
-  padding: 1rem 0rem 1rem 2rem;
+  padding: 2rem 1rem 2rem 2rem;
 }
 
 .pagenav__item--next .pagenav__icon--arrow {
@@ -3258,9 +3268,9 @@ nav {
 }
 
 .pagenav__icon {
-  width: 4rem;
+  width: 5rem;
   color: rgba(0,0,0,0.4);
-  font-size: 3rem;
+  font-size: 2.5rem;
   flex-shrink: 0;
 }
 
@@ -3273,7 +3283,7 @@ nav {
 }
 
 .pagenav__itemcol {
-  width: 4rem;
+  width: 5rem;
 }
 
 .pagenav__meta {

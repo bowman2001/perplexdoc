@@ -15,6 +15,6 @@ menu:
 The source files for all the following pages are licensed as **Creative Commons**, and they are available on [GitHub][doc].
 {.p-lead} <!--more-->
 
-The documentation contains these chapters:
+## Chapters
 
 [doc]: https://github.com/bowman2001/perplexdoc

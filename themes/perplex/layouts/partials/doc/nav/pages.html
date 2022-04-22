@@ -2,12 +2,12 @@
   <ul class="pagenav__list pagenav__list--flex">
     {{ $pages := where site.RegularPages.Reverse "Section" .Section -}}
     {{ with $pages.Prev . }}
-    <li><a href="{{ .RelPermalink }}" class="pagenav__item pagenav__item--prev">
+    <li><a href="{{ .RelPermalink }}" class="pagenav__item pagenav__item--prev mt-05">
         <div class="pagenav__itemcol">
           <div class="pagenav__meta pagenav__meta--dir">Prev.</div>
             {{ partial "doc/nav/menu-icon.html" . }}
         </div>
-            {{ partial "nav/page/section-title-description.html" . }}
+            {{ partial "nav/page/section-title.html" . }}
         <div class="icon pagenav__icon pagenav__icon--arrow">navigate_before</div>
       </a></li>
     {{ else }}
@@ -15,12 +15,12 @@
     {{- end -}}
     {{ with $pages.Next . }}
     <li>
-      <a href="{{ .RelPermalink }}" class="pagenav__item pagenav__item--next">
+      <a href="{{ .RelPermalink }}" class="pagenav__item pagenav__item--next mt-05">
         <div class="pagenav__itemcol">
           <div class="pagenav__meta pagenav__meta--dir">Next</div>
             {{ partial "doc/nav/menu-icon.html" . }}
         </div>
-          {{ partial "nav/page/section-title-description.html" . }}
+          {{ partial "nav/page/section-title.html" . }}
         <div class="icon pagenav__icon pagenav__icon--arrow">navigate_next</div>
       </a></li>
     {{ else }}
@@ -30,7 +30,7 @@
 </nav>
 
 {{ define "start" }}
-  <li><a href="{{ .RelPermalink }}" class="pagenav__item pagenav__item--prev">
+  <li><a href="{{ .RelPermalink }}" class="pagenav__item pagenav__item--prev mt-05">
       <div class="pagenav__itemcol">
         <div class="pagenav__meta pagenav__meta--dir">Start</div>
         <div class="icon pagenav__icon">article</div>
@@ -38,7 +38,6 @@
       <div>
           <div class="pagenav__meta">&nbsp;</div>
           {{- with .Title -}}<div class="pagenav__title">{{- . | $.Page.RenderString -}}</div>{{- end -}}
-          {{- with .Description -}}<p class="pagenav__description">{{- . | $.Page.RenderString -}}</p>{{- end -}}
       </div>
       <div class="icon pagenav__icon pagenav__icon--arrow">expand_less</div>
     </a></li>
