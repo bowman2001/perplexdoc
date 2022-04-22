@@ -3289,7 +3289,8 @@ nav {
 .pagenav__meta {
   font-size: 1.453125rem;
   line-height: 2rem;
-  padding-top: 0.4558046875rem;
+  margin-top: -0.5441953125rem;
+  padding-top: 0;
   margin-bottom: -0.4558046875rem;
   padding-bottom: 0;
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
