@@ -3,7 +3,7 @@ publish = "public"
 command = "hugo --gc --minify"
 
 [build.environment]
-HUGO_VERSION = "0.97.1"
+HUGO_VERSION = "0.97.3"
 GO_VERSION = "1.18"
 HUGO_ENABLEGITINFO = "true"
 
