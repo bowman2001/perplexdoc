@@ -1,5 +1,5 @@
 {{- define "main" -}}
-  <main id="box">
+  <article id="box">
     <header class="pageheader">
         {{- partial "img/featuredmargin.html" . -}}
       <div class="title title-left">
@@ -16,7 +16,7 @@
           {{ partial "date/page/updated.html" . }}
       </div>
     </footer>
-  </main>
+  </article>
 {{- end -}}
 
 {{- define "toc" -}}{{- partial "nav/toc.html" . -}}{{- end -}}

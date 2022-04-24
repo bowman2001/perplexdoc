@@ -1,5 +1,5 @@
 {{- define "main" -}}
-  <main id="box">
+  <article id="box">
     <header class="pageheader">
       <aside class="right">
           {{- partial "img/featuredmargin.html" . -}}
@@ -18,7 +18,7 @@
           {{ partial "date/page/updated.html" . }}
       </div>
     </footer>
-  </main>
+  </article>
 {{- end -}}
 
 {{- define "sidebar" -}}{{- partial "article/nav/sidebar.html" . -}}{{- end -}}
