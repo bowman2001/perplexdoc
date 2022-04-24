@@ -5,9 +5,8 @@ description: Structured Plain Text Files
 featImg: img/Markdown-mark.svg
 menu:
   doc:
-    identifier: writing
     name: Markdown
-    parent: intro
+    parent: Introduction
     pre: edit
 subtitle: false
 title: Markdown

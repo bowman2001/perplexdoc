@@ -1,5 +1,5 @@
 {{- define "main" -}}
-  <main class="l-box" id="box">
+  <article class="l-box" id="box">
     <header class="pageheader">
         {{- partial "img/featuredmargin.html" . -}}
       <div class="title title--ruled">
@@ -11,15 +11,13 @@
     <div class="md md--serif md--list">
         {{- partial "content.html" . -}}
     </div>
-    <section>
-      <nav class="pagenav pagenav--cols">
+    <nav class="pagenav pagenav--cols">
         <ul class="pagenav__list">
             {{- range .Pages -}}
               <li>{{- .Render "li" -}}</li>
             {{- end -}}
         </ul>
       </nav>
-    </section>
     <section class="md md--serif">
         {{- partial "after.html" . -}}
     </section>
@@ -29,7 +27,7 @@
           {{ partial "date/page/updated.html" . }}
       </div>
     </footer>
-  </main>
+  </article>
 {{- end -}}
 
 {{- define "sidebar" -}}{{- partial "doc/nav/sidebar.html" . -}}{{- end -}}

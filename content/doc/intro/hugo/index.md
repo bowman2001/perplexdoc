@@ -5,9 +5,8 @@ description: The fastest static site engine
 featImg: img/Logo_of_Hugo_the_static_website_generator.svg
 menu:
   doc:
-    identifier: hugo
     name: Hugo
-    parent: intro
+    parent: Introduction
     pre: engineering
 subtitle: false
 title: Hugo

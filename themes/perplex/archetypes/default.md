@@ -8,7 +8,6 @@ featImg:
 menu:
   main:
     name: {{ replace .Name "-" " " | title }}
-    identifier: {{ .Name }}
     pre: remove
 draft: true
 ---

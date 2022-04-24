@@ -6,7 +6,7 @@ featImg: florencia-viadana-1iyGImW84cQ-unsplash.jpg
 menu:
   doc:
     name: Keyboard Legends
-    parent: replace
+    parent: Replacements
     pre: keyboard_alt
 subtitle: true
 title: Keyboard Legends

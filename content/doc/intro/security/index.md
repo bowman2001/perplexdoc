@@ -6,7 +6,7 @@ featImg: fly-d-mT7lXZPjk7U-unsplash.jpg
 menu:
   doc:
     name: Security
-    parent: intro
+    parent: Introduction
     pre: security
 subtitle: false
 title: Security

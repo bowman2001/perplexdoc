@@ -5,7 +5,7 @@ description: Tiny glyphs above or below the baseline
 menu:
   doc:
     name: Super- and Subscripts
-    parent: replace
+    parent: Replacements
     pre: superscript
 title: Super- and Subscripts
 weight: 420

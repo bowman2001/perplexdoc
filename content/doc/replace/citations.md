@@ -5,7 +5,7 @@ description: Reference an author by name
 menu:
   doc:
     name: Citation Sources
-    parent: replace
+    parent: Replacements
     pre: format_quote
 title: Author citation
 weight: 440

@@ -5,9 +5,8 @@ description: What's special about _Perplex_?
 featImg: hal-gatewood-tZc3vjPCk-Q-unsplash.jpg
 menu:
   doc:
-    identifier: layout
     name: Layout
-    parent: intro
+    parent: Introduction
     pre: dashboard
 subtitle: false
 title: Layout
