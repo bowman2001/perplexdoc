@@ -5,7 +5,7 @@ description: ""
 menu:
   doc:
     name: My Punctuation Keys
-    parent: appendix
+    parent: Appendix
     pre: format_quote
 title: My Punctuation Keys
 weight: 890

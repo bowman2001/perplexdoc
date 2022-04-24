@@ -6,7 +6,7 @@ featImg: ""
 menu:
   doc:
     name: Asciinema Wrapper
-    parent: appendix
+    parent: Appendix
     pre: smart_display
 subtitle: false
 title: Asciinema
@@ -15,7 +15,7 @@ draft: true
 ---
 
 The shortcode is basically a wrapper for the official video player embedding script.
-{.p-lead} <!--more--> 
+{.p-lead} <!--more-->
 
 {{< highlight go-html-template "linenos=true" >}}
 {{< readfile file="/themes/perplex/layouts/shortcodes/asciinema.html" >}}

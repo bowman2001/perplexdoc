@@ -5,7 +5,7 @@ description: Partial for processing `.Content`
 menu:
   doc:
     name: Content.html
-    parent: appendix
+    parent: Appendix
     pre: find_replace
 title: 'content.html'
 weight: 855
