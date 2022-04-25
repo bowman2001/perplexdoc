@@ -1,19 +1,19 @@
-<aside class="right3 {{ with .Get "up" }}up-{{.}}{{end}}">
-    {{ $cutoff := (mul 4 80) }}
+<aside class="right3 {{- with .Get "up" }} up-{{ . }}{{- end -}}">
+    {{- $cutoff := (mul 4 80) -}}
   <div class="note {{- with .Get "star" }} note-star{{- . -}} {{ end -}} {{ with .Get "dagger" }}note-dagger{{.}}{{end}} {{ if gt ( len .Inner ) $cutoff  }}note-long{{end}}">
-      {{ $html:= .Inner | $.Page.RenderString }}
-      {{ if gt ( len .Inner ) $cutoff }}
+      {{- $html:= .Inner | $.Page.RenderString -}}
+      {{- if gt ( len .Inner ) $cutoff -}}
         <input id="check-note-{{.Ordinal}}" class="checkbox-note" type="checkbox">
         <label class="open-note" for="check-note-{{.Ordinal}}">
           <span class="arrow"></span>
         </label>
-      {{ end }}
+      {{- end -}}
     <div class="note__content">
-        {{ if not ( strings.Contains $html "<p>" ) }}
+        {{- if not ( strings.Contains $html "<p>" ) -}}
           <p>{{- $html -}}</p>
-        {{ else }}
+        {{- else -}}
             {{- $html -}}
-        {{ end }}
+        {{- end -}}
     </div>
   </div>
 </aside>
