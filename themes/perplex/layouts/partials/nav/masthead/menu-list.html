@@ -7,7 +7,7 @@
         <a class="{{ if $currentPage.IsMenuCurrent $menuName . -}} is-active {{- end }} {{ if $currentPage.HasMenuCurrent $menuName . -}} has-active {{- end }}"
            href="{{ .URL }}">
             {{- with .Pre -}}<span class="icon">{{ . }}</span>{{ end }}
-            {{ with .Name }}{{ . | $.Page.RenderString }}{{ end }}
+            {{ with .Name }}{{ . | site.Home.RenderString }}{{ end }}
         </a></li>
     {{ end }}
 </ul>

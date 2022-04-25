@@ -38,7 +38,7 @@
       <div>
         <div class="pagenav__meta">&nbsp;</div>
           {{- with .Title -}}
-          <div class="pagenav__title">{{- . | $.Page.RenderString -}}</div>{{- end -}}
+          <div class="pagenav__title">{{- . | site.Home.RenderString -}}</div>{{- end -}}
       </div>
       <div class="icon pagenav__icon pagenav__icon--arrow">expand_less</div>
     </a></li>

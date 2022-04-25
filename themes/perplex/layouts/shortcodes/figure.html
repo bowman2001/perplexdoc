@@ -45,22 +45,22 @@
             {{ with $rel }}rel='{{ . | safeHTMLAttr }}'{{ end }}>
         {{ end }}
         {{ if eq $img.MediaType.SubType "svg" }}
-          <img class="img-svg" src='{{ .RelPermalink }}' {{ with $alt }} alt='{{ . | $.Page.RenderString }}' {{ end }}
-                  {{ with $title }} title='{{ . | $.Page.RenderString }}' {{ end }} />
+          <img class="img-svg" src='{{ .RelPermalink }}' {{ with $alt }} alt='{{ . | site.Home.RenderString }}' {{ end }}
+                  {{ with $title }} title='{{ . | site.Home.RenderString }}' {{ end }} />
         {{ else }}
             {{ warnf "%d" $img.Height }}
-            <img src='{{ .RelPermalink }}' {{ with $alt }} alt='{{ . | $.Page.RenderString }}' {{ end }}
-                    {{ with $title }} title='{{ . | $.Page.RenderString }}' {{ end }} />
+            <img src='{{ .RelPermalink }}' {{ with $alt }} alt='{{ . | site.Home.RenderString }}' {{ end }}
+                    {{ with $title }} title='{{ . | site.Home.RenderString }}' {{ end }} />
         {{ end }}
         {{ if $link }}</a>{{ end }}
       {{ if (or $caption $attr) }}
         <figcaption>
-            {{ with ($caption | $.Page.RenderString )}}
+            {{ with ($caption | site.Home.RenderString )}}
             <div class="caption">{{ . }}</div>{{ end }}
             {{ with $attr }}
               <div class="attr">
                   {{ if $attrlink }}<a href='{{ $attrlink }}'>{{ end }}
-                      {{ . | $.Page.RenderString }}{{ if $attrlink }}</a>{{ end }}
+                      {{ . | site.Home.RenderString }}{{ if $attrlink }}</a>{{ end }}
               </div>
             {{ end }}
         </figcaption>

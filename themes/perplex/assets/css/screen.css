@@ -842,7 +842,7 @@ a.meta__item--text:hover {
 }
 .title--ruled > hr {
   border-top: 0.35rem solid #333;
-  height: 1rem;
+  height: 0.65rem;
 }
 .title--ruled > h1 {
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
@@ -2113,6 +2113,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 25%;
   margin-top: 2rem;
   margin-bottom: calc(1rem + 1 * var(--es));
+  margin-left: 0;
   padding: 0;
   border-top: 0.33em solid #444444;
 }
@@ -2577,6 +2578,12 @@ nav {
 
 .pagefooter {
   padding-bottom: 5rem;
+}
+.pagefooter > hr {
+  border-top: 0.1rem solid #222;
+  padding-top: 2rem;
+  margin-left: 2rem;
+  max-width: 70rem;
 }
 
 .pagenav {

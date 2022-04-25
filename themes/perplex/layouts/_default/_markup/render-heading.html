@@ -1,6 +1,15 @@
+{{- if le .Level 4 -}}
 <h{{ .Level }}
         {{- range $k, $v := .Attributes -}}
             {{- (printf " %s=%q" $k $v) | safeHTMLAttr -}}
         {{- end -}}>
-	<span class="heading">{{ .Text | safeHTML }} <a class="heading__anchor" href="#{{ .Anchor | safeURL }}">#</a></span>
+	<span class="heading">{{ .Text | safeHTML }}</span><a class="heading__anchor" href="#{{ .Anchor | safeURL }}">#</a>
 </h{{ .Level }}>
+{{- else -}}
+<h{{ .Level }}
+				{{- range $k, $v := .Attributes -}}
+					{{- (printf " %s=%q" $k $v) | safeHTMLAttr -}}
+				{{- end -}}>
+	<span class="heading">{{ .Text | safeHTML }}</span>
+</h{{ .Level }}>
+{{- end -}}

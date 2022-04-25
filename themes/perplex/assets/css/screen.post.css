@@ -984,7 +984,7 @@ a.meta__item--text:hover {
 
 .title--ruled > hr {
   border-top: .35rem solid #333;
-  height: 1rem;
+  height: .65rem;
 }
 
 .title--ruled > h1 {
@@ -2572,6 +2572,7 @@ h6 {
   margin-top: 2rem;
   margin-bottom: calc(1rem + 1 * 0rem);
   margin-bottom: calc(1rem + 1 * var(--es));
+  margin-left: 0;
   padding: 0;
   border-top: .33em solid #444;
 }
@@ -3136,6 +3137,13 @@ nav {
 
 .pagefooter {
   padding-bottom: 5rem;
+}
+
+.pagefooter > hr {
+  border-top: .1rem solid #222;
+  padding-top: 2rem;
+  margin-left: 2rem;
+  max-width: 70rem;
 }
 
 .pagenav {

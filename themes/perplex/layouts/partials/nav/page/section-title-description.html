@@ -1,7 +1,7 @@
 <div>
     {{ with .CurrentSection.Title }}
-      <div class="pagenav__meta">{{- . | $.Page.RenderString -}}</div>{{- end -}}
+      <div class="pagenav__meta">{{- . | site.Home.RenderString -}}</div>{{- end -}}
     {{- with .Title -}}
-    <div class="pagenav__title">{{- . | $.Page.RenderString -}}</div>{{- end -}}
-    {{- with .Description -}}<p class="pagenav__description">{{- . | $.Page.RenderString -}}</p>{{- end -}}
+    <div class="pagenav__title">{{- . | site.Home.RenderString -}}</div>{{- end -}}
+    {{- with .Description -}}<p class="pagenav__description">{{- . | site.Home.RenderString -}}</p>{{- end -}}
 </div>

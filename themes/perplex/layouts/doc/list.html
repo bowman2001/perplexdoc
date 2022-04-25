@@ -12,14 +12,15 @@
         {{- partial "content.html" . -}}
     </div>
     <nav class="pagenav pagenav--cols">
-        <ul class="pagenav__list">
-            {{- range .Pages -}}
-              <li>{{- .Render "li" -}}</li>
-            {{- end -}}
-        </ul>
-      </nav>
+      <ul class="pagenav__list">
+          {{- range .Pages -}}
+            <li>{{- .Render "li" -}}</li>
+          {{- end -}}
+      </ul>
+    </nav>
     <!-- <section class="md md--serif">{{/*- partial "after.html" . -*/}}</section> -->
     <footer class="pagefooter">
+      <hr>
       <div class="meta">
           {{ partial "nav/breadcrumbs/footer.html" . }}
           {{ partial "date/page/updated.html" . }}

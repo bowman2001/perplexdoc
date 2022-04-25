@@ -19,12 +19,12 @@
   <div class="navpages__page">
     <h4>
         {{ with .Param "menu.doc.pre" }}<span class="icon">{{ . }}</span>{{ end }}
-        {{ .Title | $.Page.RenderString }}
+        {{ .Title | site.Home.RenderString }}
     </h4>
-      {{ with .Description }}<p>{{ . | $.Page.RenderString }}</p>{{ end }}
+      {{ with .Description }}<p>{{ . | site.Home.RenderString }}</p>{{ end }}
   </div>
 {{- end -}}
 
 {{- define "partials/nav/section/preview" -}}
-    {{ .Title | $.Page.RenderString }}
+    {{ .Title | site.Home.RenderString }}
 {{- end -}}
