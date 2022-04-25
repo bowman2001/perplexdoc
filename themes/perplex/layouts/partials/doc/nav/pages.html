@@ -1,6 +1,6 @@
 <nav class="pagenav mt1">
   <ul class="pagenav__list pagenav__list--flex">
-      {{ $pages := where site.RegularPages.Reverse "Section" .Section -}}
+      {{ $pages := where site.Pages.Reverse "Section" .Section -}}
       {{ with $pages.Prev . }}
         <li><a href="{{ .RelPermalink }}" class="pagenav__item pagenav__item--prev mt-05">
             <div class="pagenav__itemcol">

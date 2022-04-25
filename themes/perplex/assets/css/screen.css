@@ -2577,21 +2577,15 @@ nav {
 }
 
 .pagefooter {
+  padding-top: 0.9rem;
   padding-bottom: 5rem;
-}
-.pagefooter > hr {
-  border-top: 0.1rem solid #222;
-  padding-top: 2rem;
-  margin: 0 2rem;
-  max-width: 70rem;
 }
 
 .pagenav {
-  padding-bottom: calc(3rem + 2 * var(--es));
+  color: #222;
   margin-right: 2rem;
   margin-left: 2rem;
   max-width: 70rem;
-  color: #222;
 }
 
 .pagenav--cols {
@@ -2648,7 +2642,7 @@ nav {
 }
 
 .pagenav__item--prev, .pagenav__item--next {
-  margin: 1rem 0;
+  justify-content: space-between;
   border: 1px solid #0002;
   border-radius: 0.5rem;
   box-shadow: 0 0 1rem #0001;
@@ -2689,11 +2683,15 @@ nav {
 }
 
 .pagenav__icon--arrow {
-  flex: 10;
   align-self: center;
   font-size: 3rem;
   padding: 0;
   margin: 0;
+}
+@media screen and (min-width: 37em) {
+  .pagenav__icon--arrow {
+    flex: 10;
+  }
 }
 
 .pagenav__itemcol {
