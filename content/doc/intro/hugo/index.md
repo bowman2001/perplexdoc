@@ -180,7 +180,8 @@ The file `index.md` is rendered again as a single page, but now we can move page
 
 #### Blog posts
 
-When the number of blog entries rises, we need some structure. This is achieved with _taxonomies_, and Hugo's defaults are _categories_ and _tags_. We can use them immediately, the front matter already includes the empty parameters:
+When the number of blog entries rises, we need some structure. This is achieved with _taxonomies_, and Hugo's defaults are the usual _categories_ and _tags_. We can use them immediately, the front matter already includes the empty parameter keys:
+
 {{< sidenote up=14 >}}
 **New Taxonomies** may be defined in the configuration. Please read the corresponding [docs](https://gohugo.io/content-management/taxonomies#configure-taxonomies).
 {{< /sidenote >}}
