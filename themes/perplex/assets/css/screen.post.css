@@ -1670,7 +1670,6 @@ h6 {
 .md > ol,
 .md > dl,
 .md > table,
-.md > hr,
 .md > pre,
 .md > .highlight,
 .md .maincol,
@@ -1756,6 +1755,9 @@ h6 {
   margin-top: calc(1.4rem + 0.5 * var(--es));
   padding-bottom: calc(0.5rem + 1.5 * 0rem);
   padding-bottom: calc(0.5rem + 1.5 * var(--es));
+  margin-left: 2rem;
+  margin-right: 2rem;
+  max-width: 70rem;
   border-top: .1rem solid #a2a2a2;
 }
 
@@ -2243,7 +2245,6 @@ h6 {
   .md--margin > ol,
   .md--margin > dl,
   .md--margin > table,
-  .md--margin > hr,
   .md--margin > pre,
   .md--margin > .highlight,
   .md--margin .maincol,

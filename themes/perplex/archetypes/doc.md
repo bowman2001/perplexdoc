@@ -14,5 +14,5 @@ menu:
 draft: true
 ---
 
-Place your lead paragraph here. If you don't need special styling, remove the attribute. The *more-tag* marks the paragraph as the content *summary* for this page.
+Place your lead paragraph here. If you don't need special styling, remove the attribute `{.p-lead}`. The **more**-tag marks this placeholder paragraph as the content summary for this page. It’s an introduction for your readers and provides information to search engines. 
 {.p-lead} <!--more-->

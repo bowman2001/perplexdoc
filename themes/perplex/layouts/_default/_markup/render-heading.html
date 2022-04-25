@@ -1,4 +1,4 @@
-<h{{ .Level }} id="{{ .Anchor | safeURL }}"
+<h{{ .Level }}
         {{- range $k, $v := .Attributes -}}
             {{- (printf " %s=%q" $k $v) | safeHTMLAttr -}}
         {{- end -}}>

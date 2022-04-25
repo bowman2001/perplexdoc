@@ -1,6 +1,6 @@
 <aside class='right3 {{ with .Get "up" }}up-{{.}}{{end}}'>
     {{ $cutoff := (mul 4 80) }}
-  <section class='note {{with .Get "star"}}note-star{{.}}{{end}}
+  <div class='note {{with .Get "star"}}note-star{{.}}{{end}}
 	{{with .Get "dagger"}}note-dagger{{.}}{{end}} {{ if gt ( len .Inner ) $cutoff  }}note-long{{end}}'>
       {{ $html:= .Inner | $.Page.RenderString }}
       {{ if gt ( len .Inner ) $cutoff }}
@@ -16,5 +16,5 @@
             {{ $html }}
         {{ end }}
     </div>
-  </section>
+  </div>
 </aside>

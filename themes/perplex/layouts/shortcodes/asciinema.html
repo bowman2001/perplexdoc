@@ -24,8 +24,7 @@
     {{ $id = .Get 0 }}
     {{ $rows = .Get 1 }}
 {{ end }}
-<script type="text/javascript"
-        src="https://asciinema.org/a/{{ $id }}.js"
+<script src="https://asciinema.org/a/{{ $id }}.js"
         id="asciicast-{{ $id }}"
         {{ with $startAt }} data-t="{{ . }}" {{ end }}
         {{ with $autoplay }} data-autoplay="{{ . }}" {{ end }}
