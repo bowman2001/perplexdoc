@@ -45,22 +45,22 @@
             {{ with $rel }}rel='{{ . | safeHTMLAttr }}'{{ end }}>
         {{ end }}
         {{ if eq $img.MediaType.SubType "svg" }}
-          <img class="img-svg" src='{{ .RelPermalink }}' {{ with $alt }} alt='{{ . | markdownify }}' {{ end }}
-                  {{ with $title }} title='{{ . | markdownify }}' {{ end }} />
+          <img class="img-svg" src='{{ .RelPermalink }}' {{ with $alt }} alt='{{ . | $.Page.RenderString }}' {{ end }}
+                  {{ with $title }} title='{{ . | $.Page.RenderString }}' {{ end }} />
         {{ else }}
             {{ warnf "%d" $img.Height }}
-            <img src='{{ .RelPermalink }}' {{ with $alt }} alt='{{ . | markdownify }}' {{ end }}
-                    {{ with $title }} title='{{ . | markdownify }}' {{ end }} />
+            <img src='{{ .RelPermalink }}' {{ with $alt }} alt='{{ . | $.Page.RenderString }}' {{ end }}
+                    {{ with $title }} title='{{ . | $.Page.RenderString }}' {{ end }} />
         {{ end }}
         {{ if $link }}</a>{{ end }}
       {{ if (or $caption $attr) }}
         <figcaption>
-            {{ with ($caption | markdownify )}}
+            {{ with ($caption | $.Page.RenderString )}}
             <div class="caption">{{ . }}</div>{{ end }}
             {{ with $attr }}
               <div class="attr">
                   {{ if $attrlink }}<a href='{{ $attrlink }}'>{{ end }}
-                      {{ . | markdownify }}{{ if $attrlink }}</a>{{ end }}
+                      {{ . | $.Page.RenderString }}{{ if $attrlink }}</a>{{ end }}
               </div>
             {{ end }}
         </figcaption>

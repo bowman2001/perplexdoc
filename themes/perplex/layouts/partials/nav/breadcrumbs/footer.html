@@ -17,11 +17,11 @@
     {{ if ne .p1 .p2  }}
       <li>
         <a class="meta__item meta__item--text font-italic"
-           href="{{ .p1.RelPermalink }}">{{ .p1.Title | markdownify }}</a>
+           href="{{ .p1.RelPermalink }}">{{ .p1.Title | $.Page.RenderString }}</a>
       </li>
     {{ else }}
       <li>
-        <span class="meta__item meta__item--text font-italic">{{ .p2.Title | markdownify }}</span>
+        <span class="meta__item meta__item--text font-italic">{{ .p2.Title | $.Page.RenderString }}</span>
       </li>
     {{ end }}
 {{ end }}

@@ -35,7 +35,7 @@
 
 {{- define "item" -}}
   <a href="{{ .URL }}">
-      {{- with .Pre -}}<span class="icon">{{ . }}</span>{{ end }}<span class="li__text">{{ .Name | markdownify }}</span>
+      {{- with .Pre -}}<span class="icon">{{ . }}</span>{{ end }}<span class="li__text">{{ .Name | $.Page.RenderString }}</span>
   </a>
 {{- end -}}
 

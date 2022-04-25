@@ -9,7 +9,6 @@
     {{ $filepath := path.Split $img.Name }}
     {{ $title = $filepath.File }}
 {{ end }}
-
 <span class="embed">
 {{ if eq $img.MediaType.SubType "svg" }}
   <img class="img-svg" src="{{ $img.RelPermalink }}" alt="{{ $img.Name }}" title="{{ $title }}">
@@ -20,10 +19,8 @@
     {{ $measuremobile := mul site.Params.layout.xmax site.Params.layout.measure }}
     {{ $gutter_mobile := mul site.Params.layout.xmaxmobile site.Params.layout.guttermobile }}
     {{ $width_3col := mul site.Params.layout.xmin (add (mul 3 site.Params.layout.column) (mul 4 site.Params.layout.gutter)) }}
-
     {{ $args := (dict "min" $colmin "max" $measuremobile ) }}
     {{ $widths := partial "img/func/calc-sizes.html" $args }}
-
     {{ $srcset := slice }}
     {{ range $widths }}
         {{ if le . $img.Width }}
@@ -38,20 +35,18 @@
          srcset="{{ print $srcset }}"
          sizes="{{ print $sizes }}"
          alt="{{- .Text -}}"
-         {{ with $title }}title="{{- . | markdownify -}}"{{ end }}
+         {{ with $title }}title="{{- . | $.Page.RenderString -}}"{{ end }}
 		     loading="lazy"/>
 {{ end }}
-
     {{ with $img.Params.caption }}
-      <span class="caption">{{- . | markdownify -}}</span>
+      <span class="caption">{{- . | $.Page.RenderString -}}</span>
     {{ end }}
-
     {{ with $img.Params.attr }}
         {{ $attr := .  }}
         {{- if $img.Params.caption -}} · {{- end -}}
         {{ with $img.Params.attrlink }}<a href="{{ . | safeHTML }}">
-			<span class='attr'>{{- $attr | markdownify -}}</span></a>
-        {{ else }}<span class='attr'>{{- $attr | markdownify -}}</span>
+			<span class='attr'>{{- $attr | $.Page.RenderString -}}</span></a>
+        {{ else }}<span class='attr'>{{- $attr | $.Page.RenderString -}}</span>
         {{ end }}
     {{ end }}
 </span>

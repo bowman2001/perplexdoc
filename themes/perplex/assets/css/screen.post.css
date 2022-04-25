@@ -1039,75 +1039,34 @@ h6 {
   color: #333;
 }
 
-.md h1 > span,
-.md h2 > span,
-.md h3 > span,
-.md h4 > span,
-.md h5 > span,
-.md h6 > span {
-  display: inline-block;
-  position: relative;
-  z-index: 10;
-  left: -0.5rem;
-  padding: 0 .5rem;
-  transition: background-color 500ms, color 500ms, border-radius 500ms;
-  border-radius: .5rem;
-  background-color: transparent;
-}
-
-.md h1 > span > a,
-.md h2 > span > a,
-.md h3 > span > a,
-.md h4 > span > a,
-.md h5 > span > a,
-.md h6 > span > a {
-  position: absolute;
-  left: -1.5rem;
-  font-size: 1.93rem;
-  font-style: normal;
-  font-weight: 500;
-  transition: color 500ms;
-  text-decoration: none;
-  color: transparent;
-}
-
-.md h1 > span > a:hover,
-.md h1 > span > a:focus,
-.md h2 > span > a:hover,
-.md h2 > span > a:focus,
-.md h3 > span > a:hover,
-.md h3 > span > a:focus,
-.md h4 > span > a:hover,
-.md h4 > span > a:focus,
-.md h5 > span > a:hover,
-.md h5 > span > a:focus,
-.md h6 > span > a:hover,
-.md h6 > span > a:focus {
-  color: #000;
-}
-
-.md h1 > span:hover > a,
-.md h1 > span:focus > a,
-.md h2 > span:hover > a,
-.md h2 > span:focus > a,
-.md h3 > span:hover > a,
-.md h3 > span:focus > a,
-.md h4 > span:hover > a,
-.md h4 > span:focus > a,
-.md h5 > span:hover > a,
-.md h5 > span:focus > a,
-.md h6 > span:hover > a,
-.md h6 > span:focus > a {
-  color: #000;
-}
-
-.md h1:target > span,
-.md h2:target > span,
-.md h3:target > span,
-.md h4:target > span,
-.md h5:target > span,
-.md h6:target > span {
+.md h1:target .heading,
+.md h2:target .heading,
+.md h3:target .heading,
+.md h4:target .heading,
+.md h5:target .heading,
+.md h6:target .heading {
   background-color: #8ddbff;
+}
+
+.md h1:target .heading__anchor,
+.md h1:hover .heading__anchor,
+.md h1:focus .heading__anchor,
+.md h2:target .heading__anchor,
+.md h2:hover .heading__anchor,
+.md h2:focus .heading__anchor,
+.md h3:target .heading__anchor,
+.md h3:hover .heading__anchor,
+.md h3:focus .heading__anchor,
+.md h4:target .heading__anchor,
+.md h4:hover .heading__anchor,
+.md h4:focus .heading__anchor,
+.md h5:target .heading__anchor,
+.md h5:hover .heading__anchor,
+.md h5:focus .heading__anchor,
+.md h6:target .heading__anchor,
+.md h6:hover .heading__anchor,
+.md h6:focus .heading__anchor {
+  color: #000;
 }
 
 .md h2 {
@@ -1206,6 +1165,30 @@ h6 {
 .md h3 + ul,
 .md h3 + ol {
   margin-top: 1rem;
+}
+
+.md .heading {
+  display: inline-block;
+  position: relative;
+  left: -0.5rem;
+  padding: 0 .5rem;
+  transition: background-color 500ms, color 500ms;
+  border-radius: .5rem;
+  background-color: transparent;
+}
+
+.md .heading__anchor {
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 500;
+  transition: color 500ms;
+  text-decoration: none;
+  color: transparent;
+}
+
+.md .heading__anchor:hover,
+.md .heading__anchor:focus {
+  color: #000;
 }
 
 .md .h-warn,
@@ -3274,7 +3257,7 @@ nav {
 }
 
 .pagenav__icon {
-  width: 5rem;
+  width: 4rem;
   color: rgba(0,0,0,0.4);
   font-size: 2.5rem;
   flex-shrink: 0;
@@ -3289,7 +3272,7 @@ nav {
 }
 
 .pagenav__itemcol {
-  width: 5rem;
+  width: 4rem;
 }
 
 .pagenav__meta {
