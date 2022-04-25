@@ -5,7 +5,7 @@ description: Tiny codes for missing inline HTML elements
 featImg: brett-jordan-DDupbpu4MS4-unsplash.jpg
 menu:
   doc:
-    parent: replace
+    identifier: replace
     name: Replacements
     pre: find_replace
 subtitle: false
