@@ -5,7 +5,7 @@ description: Set text sections with a small line width into two columns
 menu:
   doc:
     name: Columns
-    parent: Attributes
+    parent: attributes
     pre: view_column
 subtitle: false
 title: Columns

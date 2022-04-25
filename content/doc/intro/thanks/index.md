@@ -6,7 +6,7 @@ featImg: rachel-coyne-tImZgkTcCbQ-unsplash.jpg
 menu:
   doc:
     name: Thanks
-    parent: Introduction
+    parent: intro
     pre: favorite
 subtitle: false
 title: Thanks

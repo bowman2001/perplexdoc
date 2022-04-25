@@ -10,7 +10,7 @@ menu:
   doc:
     name: Howto
     identifier: howtoreplace
-    parent: Replacements
+    parent: replace
     pre: help_outline
 ---
 

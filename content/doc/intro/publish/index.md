@@ -6,7 +6,7 @@ featImg: nasa-Q1p7bh3SHj8-unsplash.jpg
 menu:
   doc:
     name: Publish
-    parent: Introduction
+    parent: intro
     pre: cloud_upload
 subtitle: false
 title: Publish

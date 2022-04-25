@@ -8,7 +8,7 @@ weight: 520
 menu:
   doc:
     name: figure
-    parent: custom
+    parent: theme
     pre: add_photo_alternate
 resources:
 - src: fig/tiny.svg
@@ -126,9 +126,6 @@ This size is the default for images with a landscape ratio.
 
 {{< /figure >}}
 
-
-
 ### Large
-
 
 [hugofig]: https://gohugo.io/content-management/shortcodes/#figure

@@ -8,7 +8,6 @@ featImg:
 menu:
   doc:
     name: Goat
-    identifier: goat
     parent: plugin
     pre: schema
 draft: true
@@ -22,6 +21,7 @@ GoAT renders ASCII diagrams as SVG. It’s an implementation of [Markdeep’s](h
 The ASCII diagram is marked as a [fenced code block]({{< relref "code#code-block" >}}) with the language identifier `goat`
 
 {{< highlight md >}}
+
 ```goat
                   _______
  .---------.     /      /    .-----.
@@ -30,6 +30,7 @@ The ASCII diagram is marked as a [fenced code block]({{< relref "code#code-block
              |          |
               '--------'
 ```
+
 {{< /highlight >}}
 
 ## Layout

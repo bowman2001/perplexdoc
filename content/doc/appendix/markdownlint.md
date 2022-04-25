@@ -9,7 +9,7 @@ featImg:
 menu:
   doc:
     name: .markdownlint.yaml
-    parent: Appendix
+    parent: appendix
     pre: edit
 ---
 

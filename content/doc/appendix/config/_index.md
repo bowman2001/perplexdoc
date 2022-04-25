@@ -6,7 +6,7 @@ menu:
   doc:
     identifier: config
     name: Project Configuration
-    parent: Appendix
+    parent: appendix
     pre: toggle_on
 title: Project Configuration
 weight: 805

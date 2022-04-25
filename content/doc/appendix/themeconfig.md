@@ -7,7 +7,7 @@ weight: 850
 menu:
   doc:
     name: Theme Configuration
-    parent: Appendix
+    parent: appendix
     pre: smart_button
 draft: true
 ---

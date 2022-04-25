@@ -6,7 +6,7 @@ featImg: ""
 menu:
   doc:
     name: Asciinema Wrapper
-    parent: Appendix
+    parent: appendix
     pre: smart_display
 subtitle: false
 title: Asciinema

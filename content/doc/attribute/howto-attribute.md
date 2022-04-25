@@ -6,7 +6,7 @@ menu:
   doc:
     name: Howto
     identifier: howtoattribute
-    parent: Attributes
+    parent: attributes
     pre: help_outline
 subtitle: false
 title: How to use attributes?

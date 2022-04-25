@@ -8,7 +8,7 @@ weight: 10
 menu:
   doc:
     name: figure
-    parent: custom
+    parent: theme
     pre: add_photo_alternate
 resources:
 - src: img/mathias-konrath-JHb-UFfNOhI-unsplash.jpg
@@ -25,7 +25,6 @@ There is no Markdown counterpart for the complex HTML `figure` tag. To include b
 {.p-lead} <!--more-->
 
 Hugo already provides a [`figure` shortcode]({{< relref "internal#figure" >}}) and _Perplex_ overrides it. The original syntax remains valid. The _Perplex_ shortcode adds the possibility to write the caption between a starting and closing tag. This way we can use block elements of Markdown, especially small headings.
-
 
 ## Layout
 

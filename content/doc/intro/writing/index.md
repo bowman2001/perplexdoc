@@ -6,7 +6,7 @@ featImg: img/Markdown-mark.svg
 menu:
   doc:
     name: Markdown
-    parent: Introduction
+    parent: intro
     pre: edit
 subtitle: false
 title: Markdown

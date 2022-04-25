@@ -5,7 +5,7 @@ description: Perplex and Hugo are **Free Software**
 featImg: chris-brignola-X2CxUXFqKcM-unsplash.jpg
 menu:
   doc:
-    parent: Introduction
+    parent: intro
     name: Licences
     pre: receipt
 subtitle: false

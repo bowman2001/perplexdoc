@@ -6,7 +6,7 @@ featImg: hal-gatewood-tZc3vjPCk-Q-unsplash.jpg
 menu:
   doc:
     name: Layout
-    parent: Introduction
+    parent: intro
     pre: dashboard
 subtitle: false
 title: Layout

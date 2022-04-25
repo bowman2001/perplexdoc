@@ -8,16 +8,15 @@ featImg:
 menu:
   doc:
     name: Mermaid
-    identifier: mermaid
     parent: plugin
     pre: account_tree
 mermaid: true
 ---
 
-You can place your own lead paragraph here before the attribute *.p-lead* and the *more tag*. If you don't want to use special styling, just remove the attribute.
+You can place your own lead paragraph here before the attribute _.p-lead_ and the _more tag_. If you don't want to use special styling, just remove the attribute.
 {.p-lead} <!--more-->
 
-```mermaid 
+```mermaid
 graph TD
 A[Christmas]  -->|Get money| B(Go shopping)
 B --> C{Let me think}

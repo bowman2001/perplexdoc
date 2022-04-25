@@ -5,7 +5,7 @@ description: Description
 menu:
   doc:
     name: Side-Note
-    parent: custom
+    parent: theme
     pre: note    
 title: Side-Note
 weight: 530

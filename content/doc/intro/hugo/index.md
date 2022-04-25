@@ -6,7 +6,7 @@ featImg: img/Logo_of_Hugo_the_static_website_generator.svg
 menu:
   doc:
     name: Hugo
-    parent: Introduction
+    parent: intro
     pre: engineering
 subtitle: false
 title: Hugo

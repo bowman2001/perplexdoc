@@ -6,7 +6,7 @@ featImg: florencia-viadana-1iyGImW84cQ-unsplash.jpg
 menu:
   doc:
     name: Keyboard Legends
-    parent: Replacements
+    parent: replace
     pre: keyboard_alt
 subtitle: true
 title: Keyboard Legends
@@ -26,15 +26,15 @@ The operating system Linux offers these simple keyboard shortcuts to introduce p
 {#Alt Gr} + {#Y}
 : corresponds to the guillemet '»'
 
-{#Alt Gr} + {#X} 
+{#Alt Gr} + {#X}
 : produces the guillemet '«'
 
-{#Alt Gr} + {#Shift} + {#Y} 
+{#Alt Gr} + {#Shift} + {#Y}
 : gives us a single guillemet '›'
 
-{#Alt Gr} + {#Shift} + {#X} 
+{#Alt Gr} + {#Shift} + {#X}
 : produces '‹'
 
 ### Copy & Paste in Windows
 
-The operating system *Windows* allows copying a piece of text into the clipboard by typing {#Ctrl} + {#C}. To use the clipboard content in another location, we type {#Ctrl} + {#V}.
+The operating system _Windows_ allows copying a piece of text into the clipboard by typing {#Ctrl} + {#C}. To use the clipboard content in another location, we type {#Ctrl} + {#V}.

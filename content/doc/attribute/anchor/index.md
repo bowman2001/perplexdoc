@@ -6,7 +6,7 @@ featImg: grant-durr-21ztbENjzeI-unsplash.jpg
 menu:
   doc:
     name: Anchors
-    parent: Attributes
+    parent: attributes
     pre: anchor
 subtitle: false
 title: Anchors
