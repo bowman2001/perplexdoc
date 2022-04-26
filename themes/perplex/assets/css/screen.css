@@ -2620,7 +2620,7 @@ nav {
   display: flex;
   flex-direction: column;
 }
-.pagenav__list--flex .pagenav__item--prev {
+.pagenav__list--flex .pagenav__item--prev, .pagenav__list--flex .pagenav__item--start {
   margin: 0 0 1rem 0;
 }
 @media screen and (min-width: 37em) {
@@ -2629,7 +2629,7 @@ nav {
     justify-content: space-between;
     align-items: stretch;
   }
-  .pagenav__list--flex .pagenav__item--prev {
+  .pagenav__list--flex .pagenav__item--prev, .pagenav__list--flex .pagenav__item--start {
     margin: 0 1rem 0 0;
   }
   .pagenav__list--flex .pagenav__item--next {
@@ -2654,7 +2654,7 @@ a.pagenav__item:hover .pagenav__icon, a.pagenav__item:hover .pagenav__meta--dir,
   color: #e00083;
 }
 
-.pagenav__item--prev, .pagenav__item--next {
+.pagenav__item--prev, .pagenav__item--next, .pagenav__item--start {
   justify-content: space-between;
   border: 1px solid #0002;
   border-radius: 0.5rem;
@@ -2667,18 +2667,22 @@ a.pagenav__item--prev:hover, a.pagenav__item--prev:focus, a.pagenav__item--next:
   border-color: #e00083;
 }
 
+.pagenav__item--start {
+  color: #888;
+}
+
+.pagenav__item--prev, .pagenav__item--next, .pagenav__item--start {
+  padding: 1.9rem;
+}
+
 .pagenav__item--prev {
   flex-flow: row-reverse;
-  padding: 1.9rem 1.9rem 1.9rem 0.9rem;
   text-align: right;
 }
 .pagenav__item--prev .pagenav__icon--arrow {
   text-align: left;
 }
 
-.pagenav__item--next {
-  padding: 1.9rem 0.9rem 1.9rem 1.9rem;
-}
 .pagenav__item--next .pagenav__icon--arrow {
   text-align: right;
 }
