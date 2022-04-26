@@ -676,6 +676,10 @@ body {
   }
 }
 
+.section {
+  padding-bottom: calc(1rem + 1 * var(--es));
+}
+
 @media screen and (min-width: 37em) {
   .left, .right {
     position: relative;
@@ -1322,7 +1326,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .md {
-  padding-bottom: calc(3rem + 2 * var(--es));
+  padding-bottom: calc(1rem + 2 * var(--es));
 }
 .md p, .md li {
   hyphens: auto;
@@ -2580,12 +2584,20 @@ nav {
   padding-top: 0.9rem;
   padding-bottom: 5rem;
 }
+.pagefooter > hr {
+  margin: 0 2rem 2rem 2rem;
+  border-top: 0.1rem solid #222;
+  max-width: 70rem;
+}
 
 .pagenav {
   color: #222;
   margin-right: 2rem;
   margin-left: 2rem;
   max-width: 70rem;
+}
+.pagenav b {
+  font-weight: 500;
 }
 
 .pagenav--cols {
@@ -2634,10 +2646,11 @@ nav {
   flex-wrap: nowrap;
   align-items: stretch;
 }
-.pagenav__item:hover, .pagenav__item:focus {
+
+a.pagenav__item:hover, a.pagenav__item:focus {
   color: black;
 }
-.pagenav__item:hover .pagenav__icon, .pagenav__item:hover .pagenav__meta--dir, .pagenav__item:focus .pagenav__icon, .pagenav__item:focus .pagenav__meta--dir {
+a.pagenav__item:hover .pagenav__icon, a.pagenav__item:hover .pagenav__meta--dir, a.pagenav__item:focus .pagenav__icon, a.pagenav__item:focus .pagenav__meta--dir {
   color: #e00083;
 }
 
@@ -2645,15 +2658,18 @@ nav {
   justify-content: space-between;
   border: 1px solid #0002;
   border-radius: 0.5rem;
+}
+
+a.pagenav__item--prev, a.pagenav__item--next {
   box-shadow: 0 0 1rem #0001;
 }
-.pagenav__item--prev:hover, .pagenav__item--prev:focus, .pagenav__item--next:hover, .pagenav__item--next:focus {
+a.pagenav__item--prev:hover, a.pagenav__item--prev:focus, a.pagenav__item--next:hover, a.pagenav__item--next:focus {
   border-color: #e00083;
 }
 
 .pagenav__item--prev {
   flex-flow: row-reverse;
-  padding: 2rem 2rem 2rem 1rem;
+  padding: 1.9rem 1.9rem 1.9rem 0.9rem;
   text-align: right;
 }
 .pagenav__item--prev .pagenav__icon--arrow {
@@ -2661,7 +2677,7 @@ nav {
 }
 
 .pagenav__item--next {
-  padding: 2rem 1rem 2rem 2rem;
+  padding: 1.9rem 0.9rem 1.9rem 1.9rem;
 }
 .pagenav__item--next .pagenav__icon--arrow {
   text-align: right;

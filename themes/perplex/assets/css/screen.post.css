@@ -800,6 +800,11 @@ body {
   }
 }
 
+.section {
+  padding-bottom: calc(1rem + 1 * 0rem);
+  padding-bottom: calc(1rem + 1 * var(--es));
+}
+
 @media screen and (min-width: 37em) {
   .left,
   .right {
@@ -1623,8 +1628,8 @@ h6 {
 }
 
 .md {
-  padding-bottom: calc(3rem + 2 * 0rem);
-  padding-bottom: calc(3rem + 2 * var(--es));
+  padding-bottom: calc(1rem + 2 * 0rem);
+  padding-bottom: calc(1rem + 2 * var(--es));
 }
 
 .md p,
@@ -3140,11 +3145,21 @@ nav {
   padding-bottom: 5rem;
 }
 
+.pagefooter > hr {
+  margin: 0 2rem 2rem 2rem;
+  border-top: .1rem solid #222;
+  max-width: 70rem;
+}
+
 .pagenav {
   color: #222;
   margin-right: 2rem;
   margin-left: 2rem;
   max-width: 70rem;
+}
+
+.pagenav b {
+  font-weight: 500;
 }
 
 .pagenav--cols {
@@ -3204,15 +3219,15 @@ nav {
   align-items: stretch;
 }
 
-.pagenav__item:hover,
-.pagenav__item:focus {
+a.pagenav__item:hover,
+a.pagenav__item:focus {
   color: #000;
 }
 
-.pagenav__item:hover .pagenav__icon,
-.pagenav__item:hover .pagenav__meta--dir,
-.pagenav__item:focus .pagenav__icon,
-.pagenav__item:focus .pagenav__meta--dir {
+a.pagenav__item:hover .pagenav__icon,
+a.pagenav__item:hover .pagenav__meta--dir,
+a.pagenav__item:focus .pagenav__icon,
+a.pagenav__item:focus .pagenav__meta--dir {
   color: #e00083;
 }
 
@@ -3221,19 +3236,23 @@ nav {
   justify-content: space-between;
   border: 1px solid rgba(0,0,0,0.13333);
   border-radius: .5rem;
+}
+
+a.pagenav__item--prev,
+a.pagenav__item--next {
   box-shadow: 0 0 1rem rgba(0,0,0,0.06667);
 }
 
-.pagenav__item--prev:hover,
-.pagenav__item--prev:focus,
-.pagenav__item--next:hover,
-.pagenav__item--next:focus {
+a.pagenav__item--prev:hover,
+a.pagenav__item--prev:focus,
+a.pagenav__item--next:hover,
+a.pagenav__item--next:focus {
   border-color: #e00083;
 }
 
 .pagenav__item--prev {
   flex-flow: row-reverse;
-  padding: 2rem 2rem 2rem 1rem;
+  padding: 1.9rem 1.9rem 1.9rem .9rem;
   text-align: right;
 }
 
@@ -3242,7 +3261,7 @@ nav {
 }
 
 .pagenav__item--next {
-  padding: 2rem 1rem 2rem 2rem;
+  padding: 1.9rem .9rem 1.9rem 1.9rem;
 }
 
 .pagenav__item--next .pagenav__icon--arrow {

@@ -11,6 +11,7 @@
     <div class="md md--serif md--list">
         {{- partial "content.html" . -}}
     </div>
+    <div class="section">
     <nav class="pagenav pagenav--cols">
       <ul class="pagenav__list">
           {{- range .Pages -}}
@@ -18,6 +19,7 @@
           {{- end -}}
       </ul>
     </nav>
+    </div>
     <!-- <section class="md md--serif">{{/*- partial "after.html" . -*/}}</section> -->
     <footer class="pagefooter">
       <hr>

@@ -10,6 +10,7 @@ menu:
     identifier: docs
     name: Docs
     weight: 10
+weight: 1
 ---
 
 The _Markdown_ files for the following pages are licensed as **Creative Commons**. They are available on [GitHub][doc].
