@@ -19,7 +19,7 @@ The world's fastest static site engine is steadily gaining traction on its way t
 [_Hugo_](https://gohugo.io) is a versatile monolithic command line tool for _macOS_, _Windows_, _Linux_ and _BSD_ derivatives. Binaries for these operating systems and some containers are usually available within a day or a few after every release.
 
 {{< sidenote up=11 >}}
-The [Hugo source](https://github.com/gohugoio/hugo) can be compiled easily on every machine with a recent [Go environment](https://go.dev).
+The [Hugo source](https://github.com/gohugoio/hugo) can be compiled on every machine with a recent [Go environment](https://go.dev).
 {{< /sidenote >}}
 
 ## Getting started
@@ -28,7 +28,7 @@ The [Hugo documentation site](https://gohugo.io/documentation/) addresses develo
 
 ### Install Hugo
 
-Please read the [detailed installation instructions](https://gohugo.io/getting-started/installing/) for your operating system on the documentation site. _Perplex_ works with any recent version (≥ 0.92).
+Please read the [detailed installation instructions](https://gohugo.io/getting-started/installing/) for your operating system on the documentation site. _Perplex_ works with any recent version.
 
 ### Use Perplex
 
@@ -50,7 +50,7 @@ The folders of the example site follow the Hugo convention for root directories.
 ```
 
 `archetypes`
-: includes templates for creating new pages. Better don’t touch unless your confident.
+: includes templates for creating new pages. You better don’t touch them unless your confident.
 
 `assets`
 : is the place for site wide resources.
@@ -62,7 +62,7 @@ The folders of the example site follow the Hugo convention for root directories.
 : contains all the _Markdown_ files and page specific resources like images.
 
 `static`
-: _Hugo_ copies everything in this directory without processing to the root of the generated website.
+: _Hugo_ copies every directory and file in this folder without processing into the root of the generated website.
 
 `themes`
 : contains the _Perplex_ theme.
@@ -84,17 +84,17 @@ There are three ways to retrieve this and other themes from [GitHub](https://git
 
 2. Clone it with [_Git_](https://git-scm.com/) into the `themes` folder. _Git_ is _the_ version control system for collaborating on software projects.
 
-3. Add the _Perplex_ repository as a Hugo module. You need to have a [Go](https://go.dev) environment, because _Hugo_ modules rely on _Go_  modules.  The Hugo docs provide a guide to this powerful [feature](https://gohugo.io/hugo-modules).
+3. Import the _Perplex_ repository as a Hugo module. You need to have a recent [Go environment](https://go.dev), because _Hugo_ modules rely on _Go_  modules.  The Hugo docs provide a guide to this powerful [feature](https://gohugo.io/hugo-modules).
 
 {{< sidenote up=11 >}}
-As long as you don't use modules also for other parts of your project, this powerful and flexible feature may be over-complicated.
+As long as you don't use modules also for other parts of your project, this may be over-complicated.
 {{< /sidenote >}}
 
-Whatever option you have chosen, you need to tell Hugo to use the theme in the [config file]({{< relref "configyaml.md#6" >}}).
+Whatever option you choose, you need to tell Hugo to use the theme in the [config file]({{< relref "configyaml.md#6" >}}).
 
 ## Run Hugo locally {#server-mode}
 
-While working on a web project, we like to constantly watch the resulting pages. To render and serve an instant preview locally, we can run hugo in _server mode_ with the following command inside the root directory of the Hugo project:
+While working on a web project, we like to constantly watch the resulting pages. To render and serve an instant preview locally, we can run hugo in _server mode_. Run the following command in the root of the Hugo project to run the server:
 
 ```sh
 hugo server -D --minify --navigateToChanged
@@ -104,7 +104,7 @@ hugo server -D --minify --navigateToChanged
 **Hugo’s server** can also show a preview under a configured URL. But it's **by no means** a full-fledged web server.
 {{< /sidenote >}}
 
-The pages are rendered into the computer memory and served from there, nothing gets written to the file system. The site is served under <http://localhost:1313>.
+The pages are rendered into the computer memory and the site is served under <http://localhost:1313>.
 
 - The flag `-D` lets _Hugo_ include _drafted_ files. All files created with `hugo new` are usually configured as drafts, using `draft = true` in the front-matter. When a Markdown file is ready for publishing, we need to remove this entry or change it to `draft = false`.
 
@@ -137,7 +137,7 @@ draft = true
 
 The title has been guessed from the file name and the date from the moment we ran the command.[^1]
 
-The Markdown content begins after the front matter. As Markdown novice you don't need any formatting, because simple blocks of text are valid Markdown. When we save our work, Hugo will update our site in the browser. If we make a mistake, Hugo will display a descriptive error message on its console and in the browser.
+The Markdown content begins after the front matter. Hugo will update our site in the browser. If we make a mistake, Hugo will display a descriptive error message on its console and in the browser.
 
 [^1]: The templates for new files reside in the folder `archetypes`.
 
@@ -243,17 +243,19 @@ Because our new page is a demonstration, we like to file it in a special section
 hugo new doc/demo/_index.md
 ```
 
-The small difference between a _leaf bundle_ for a [single page]({{< relref "#single" >}}) and a _branch bundle_ is the leading underscore for the _Markdown_ master file. It's only `index.md` versus `_index.md` — but these two have a different purpose. A folder with a _leaf bundle_ collects material for _one_ page. A _branch bundle_ collects as many pages and may include as many other bundles as we need — there is no technical limit to the folder hierarchy. A branch bundle can act like a chapter, section or subsection. `_index.md` should contain general content about this section. The page for a _branch bundle_ usually also presents a list of selected content from every page in the branch.
+The small difference between a _leaf bundle_ for a [single page]({{< relref "#single" >}}) and a _branch bundle_ is the leading underscore for the _Markdown_ master file. It's only `index.md` versus `_index.md`. But they have a very different purpose. A folder with a _leaf bundle_ collects material for _one_ page. A _branch bundle_ collects as many pages and may include as many other bundles as we need — there is no technical limit to the depth of folder hierarchy. A branch bundle can act like a chapter, section or subsection. 
+
+`_index.md` should contain general content about this section. The page for a _branch bundle_ usually also presents a list of selected content from every page in the branch.
+
+{{< sidenote up=11 >}}
+**No subdirectories** are accessible to retrieve resources in `_index.md`. All resources specific for the list page generated from `_index.md` at the root of the _branch bundle_ need also to be placed in the branch root. This limitation avoids confusion about the purpose of subfolders.
+{{< /sidenote >}}
 
 To reflect this relationship in the menu, we need to set `parent = "demo"` in `my-first-doc-page` and Hugo rearranges the page structure and the menu alike.
 
 ### Page Bundles {#bundle}
 
 [_Branch bundles_]({{< relref "#branch-bundle" >}}) and [_leaf bundles_]({{< relref "#leaf-bundle" >}}) are both _page bundles_. A _branch bundle_ for a list page may also include page resources.
-
-{{< sidenote up=8 >}}
-**No subdirectories** are accessible to retrieve page resources from `_index.md`. Resources need to be placed in the branch root. This limitation avoids confusion about the purpose of subfolders.
-{{< /sidenote >}}
 
 ### Page Resources {#resources}
 

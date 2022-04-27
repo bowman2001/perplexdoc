@@ -1300,28 +1300,28 @@ h6 {
   transition: text-decoration 150ms;
   transition: text-decoration 150ms, -webkit-text-decoration 150ms;
   text-decoration: underline;
-  color: #0072a7;
+  color: #00699a;
   text-decoration-thickness: .125em;
-  -webkit-text-decoration-color: rgba(0, 114, 167, .1);
-          text-decoration-color: rgba(0, 114, 167, .1);
+  -webkit-text-decoration-color: rgba(0, 105, 154, .1);
+          text-decoration-color: rgba(0, 105, 154, .1);
 }
 
 .md a:hover,
 .md a:focus {
-  -webkit-text-decoration-color: rgba(0, 114, 167, .67);
-          text-decoration-color: rgba(0, 114, 167, .67);
+  -webkit-text-decoration-color: rgba(0, 105, 154, .67);
+          text-decoration-color: rgba(0, 105, 154, .67);
 }
 
 .md a[href^=http] {
-  color: #008f75;
-  -webkit-text-decoration-color: rgba(0, 143, 117, .1);
-          text-decoration-color: rgba(0, 143, 117, .1);
+  color: #00826b;
+  -webkit-text-decoration-color: rgba(0, 130, 107, .1);
+          text-decoration-color: rgba(0, 130, 107, .1);
 }
 
 .md a[href^=http]:hover,
 .md a[href^=http]:focus {
-  -webkit-text-decoration-color: rgba(0, 143, 117, .67);
-          text-decoration-color: rgba(0, 143, 117, .67);
+  -webkit-text-decoration-color: rgba(0, 130, 107, .67);
+          text-decoration-color: rgba(0, 130, 107, .67);
 }
 
 .md pre :target {

@@ -20,3 +20,4 @@ ignoreFiles:
   - dev
 ignoreErrors:
   - error-missing-instagram-accesstoken
+  - error-remote-getjson

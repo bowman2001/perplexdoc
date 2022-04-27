@@ -1060,19 +1060,19 @@ h1, h2, h3, h4, h5, h6 {
 .md a {
   transition: text-decoration 150ms;
   text-decoration: underline;
-  color: #0072a7;
+  color: #00699a;
   text-decoration-thickness: 0.125em;
-  text-decoration-color: rgba(0, 114, 167, 0.1);
+  text-decoration-color: rgba(0, 105, 154, 0.1);
 }
 .md a:hover, .md a:focus {
-  text-decoration-color: rgba(0, 114, 167, 0.67);
+  text-decoration-color: rgba(0, 105, 154, 0.67);
 }
 .md a[href^=http] {
-  color: #008f75;
-  text-decoration-color: rgba(0, 143, 117, 0.1);
+  color: #00826b;
+  text-decoration-color: rgba(0, 130, 107, 0.1);
 }
 .md a[href^=http]:hover, .md a[href^=http]:focus {
-  text-decoration-color: rgba(0, 143, 117, 0.67);
+  text-decoration-color: rgba(0, 130, 107, 0.67);
 }
 .md pre :target {
   text-decoration: none;

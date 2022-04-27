@@ -34,7 +34,7 @@ _Entities_ are ASCII codes for _Unicode glyphs_. These codes begin with an amper
 
 3. `&#8477;` means the set of real numbers&ensp;&#8477;&nbsp;.
 
- For more exotic ones you should check, if they are available in the [**IBM Plex** fonts][plexspec] this theme is shipping with. If a glyph is missing there, the browsers will first try to use a local font and may display a glyph with a noticeable different shape. And if they can't find it anywhere, they will probably display an ugly placeholder. The _real set_ &#8477; in example 3 is not included in _Plex_.  
+ For more exotic ones you should check, if they are available in the [**IBM Plex** fonts][plexspec] this theme is shipping with. If a glyph is missing there, the browsers will first try to use a local font and may display a glyph with a more or less noticeable different shape. And if they can't find it anywhere, they will display an ugly placeholder. You may take a good look at the the _real set_ &#8477; in example 3, it’s not included in _Plex_.  
 
 Please remember the two often neglected sets of general entities, which are meant to facilitate nice typography — the ones for _spacing_ and _(not) breaking_.
 
