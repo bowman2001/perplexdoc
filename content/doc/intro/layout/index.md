@@ -69,7 +69,8 @@ Despite its successfull efforts to make data-formatting as simple as possible, _
 
 ## In Case of Problems with _Perplex_
 
-There are **two repositories** for _Perplex_. One for the theme itself 
+There are **two repositories** for _Perplex_. One for the theme itself
+
 ### Bugs or missing features in the theme
 
 Please have a look first at the existing [issues][issue] for this theme. And please create a new one, if it’s not already there.

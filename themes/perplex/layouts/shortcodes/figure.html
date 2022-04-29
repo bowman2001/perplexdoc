@@ -48,7 +48,6 @@
           <img class="img-svg" src='{{ .RelPermalink }}' {{ with $alt }} alt='{{ . | site.Home.RenderString }}' {{ end }}
                   {{ with $title }} title='{{ . | site.Home.RenderString }}' {{ end }} />
         {{ else }}
-            {{ warnf "%d" $img.Height }}
             <img src='{{ .RelPermalink }}' {{ with $alt }} alt='{{ . | site.Home.RenderString }}' {{ end }}
                     {{ with $title }} title='{{ . | site.Home.RenderString }}' {{ end }} />
         {{ end }}

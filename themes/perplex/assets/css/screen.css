@@ -1428,6 +1428,9 @@ h1, h2, h3, h4, h5, h6 {
   scroll-margin-top: 10rem;
   font-style: italic;
 }
+.md .p-lead strong {
+  font-weight: 700;
+}
 .md .p-big {
   font-size: 2.5733333333rem;
   line-height: 4rem;

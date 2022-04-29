@@ -1795,6 +1795,10 @@ h6 {
   font-style: italic;
 }
 
+.md .p-lead strong {
+  font-weight: 700;
+}
+
 .md .p-big {
   font-size: 2.5733333333rem;
   line-height: 4rem;

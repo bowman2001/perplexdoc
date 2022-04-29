@@ -35,13 +35,18 @@
 
 {{- define "item" -}}
   <a href="{{ .URL }}">
-      {{- with .Pre -}}<span class="icon">{{ . }}</span>{{ end }}<span class="li__text">{{ .Name | site.Home.RenderString }}</span>
+      {{- with .Pre -}}<span class="icon">{{ . }}</span>{{ end }}<span
+            class="li__text">{{ .Name | site.Home.RenderString }}</span>
   </a>
 {{- end -}}
 
 {{- define "expand" -}}
-  <input id="menu-{{ .Identifier }}" class="chk-menu" type="checkbox">
-  <label class="open-menu" for="menu-{{ .Identifier }}"><span class="icon"></span></label>
+    {{ with .Identifier }}
+      <input id="menu-{{ . }}" class="chk-menu" type="checkbox">
+      <label class="open-menu" for="menu-{{ . }}"><span class="icon"></span></label>
+    {{ else }}
+        {{ warnf "Missing menu identifier for menu entry %q" .KeyName }}
+    {{ end }}
 {{- end -}}
 
 {{- define "partials/itemsHaveNoChildren" -}}
