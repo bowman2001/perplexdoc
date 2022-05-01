@@ -2573,7 +2573,7 @@ h6 {
 }
 
 .footnotes {
-  margin-top: -0.33em;
+  margin-top: -0.25em;
 }
 
 .footnotes > hr {
@@ -2583,7 +2583,7 @@ h6 {
   margin-bottom: calc(1rem + 1 * var(--es));
   margin-left: 0;
   padding: 0;
-  border-top: .33em solid #444;
+  border-top: .25em solid #444;
 }
 
 .footnotes > ol {

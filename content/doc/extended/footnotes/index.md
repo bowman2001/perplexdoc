@@ -24,7 +24,7 @@ To jump back and forth between text and footnotes is distracting. _Perplex_ offe
 
 ## Syntax
 
-A Footnote consists of a _marker_ and a separate _reference_ below.
+A Footnote consists of a _marker_ and a separate _reference_ below. Every _reference_ needs to be unique for logical reasons. But it’s not unusual and possible to refer multiple times to the same reference. A _marker_ may appear more than once on a page.
 
 ### Marker
 
@@ -34,7 +34,7 @@ A marker looks like `[^1]` or `[^footnotephrase]`. The brackets and the `^` char
 A marker should be placed **directly behind** a word or a sentence without any space in between. It’s allowed to have a space before, but then an ugly line break between the text and the marker may occur.
 {{< /sidenote >}}
 
-There’s only one rule: **All markers on a page need to be _unique_.**
+There’s only one rule: **All references on a page need to be _unique_**.
 
 ### Reference
 
@@ -44,29 +44,29 @@ The order of the references in the file is irrelevant, the generated footnotes a
 
 ```md
 This sentence includes a footnote after a word[^10] and one 
-at the end.[^footnotephrase]
+at the end.[^footnotephrase] We can refer more than once[^10] to a footnote.
 
 [^footnotephrase]: This footnote reference is placed above the other
 reference from the footnote marker before. This may happen easily with
 many footnotes and is no problem.
 
- If we indent a paragraph below a footnote reference by four
-  spaces or a tab, it still belongs to the footnote.
+    If we indent a paragraph below a footnote reference by four
+    spaces or a tab, it adds a new paragraph to this footnote.
 
-[^10]: This is the first footnote on this page.
+[^10]: This is the reference for the first and the last footnote in this example.
 ```
 
 ## Layout
 
 The markers on a page are always numbered in the order of their appearance and placed at the bottom of the page below a horizontal rule. The syntax example from above is styled like this:
 
-This sentence includes a footnote after a word[^10]  and one at the end.[^footnotephrase]
+This sentence includes a footnote after a word[^10]  and one at the end.[^footnotephrase] We can refer more than once[^10] to a footnote.
 {.box}
 
 [^footnotephrase]: This footnote reference is placed above the other reference from the footnote marker before. This may happen easily with many footnotes and is no problem.
 
- If we indent a paragraph below a footnote reference by four spaces or a tab, it still belongs to the footnote.
+    If we indent a paragraph below a footnote reference by four spaces or a tab, it adds a new paragraph to this footnote.
 
 [^10]: This is the first footnote on this page.
 
-The markers are enclosed in square brackets as it is custom in the field of natural sciences. The notes are moved as usual to the bottom of the page below a short rule.
+The markers are enclosed in square brackets by _Perplex_ as it is custom in the field of natural sciences. The notes are moved as usual to the bottom of the page below a horizontal rule.

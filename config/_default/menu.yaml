@@ -1,5 +1,7 @@
 social:
-  - identifier: source
-    name: Source
+  - name: Source
     pre: source
     url: https://github.com/bowman2001/perplexdoc
+  - name: Theme
+    pre: dashboard
+    url: https://github.com/bowman2001/perplex

@@ -13,10 +13,8 @@ title: Security
 weight: 30
 ---
 
-_CommonMark_ and its extensions are mostly inherently secure, because they don't allow manipulating the rendered HTML.
+Static websites based on _Markdown_ content are inherently very secure. And they are bullet-proof as long as the generating templates are and as long as authors can’t manipulate the generated HTML.  
 {.p-lead} <!-- more -->
-
-When we have control over the content for _Hugo_, we need a theme with
 
 ## Don’t allow raw HTML
 

@@ -2114,7 +2114,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footnotes {
-  margin-top: -0.33em;
+  margin-top: -0.25em;
 }
 .footnotes > hr {
   width: 25%;
@@ -2122,7 +2122,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: calc(1rem + 1 * var(--es));
   margin-left: 0;
   padding: 0;
-  border-top: 0.33em solid #444444;
+  border-top: 0.25em solid #444444;
 }
 .footnotes > ol {
   counter-reset: nr;
