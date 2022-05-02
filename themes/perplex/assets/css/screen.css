@@ -413,7 +413,7 @@ body {
 #page {
   width: 100vw;
   height: 100vh;
-  padding: 7rem 0 0 var(--pmv);
+  padding: 7rem var(--pmv) 0 var(--pmv);
 }
 
 ::selection {
@@ -894,8 +894,11 @@ h1, h2, h3, h4, h5, h6 {
 .md h1:target .heading, .md h2:target .heading, .md h3:target .heading, .md h4:target .heading, .md h5:target .heading, .md h6:target .heading {
   background-color: #8ddbff;
 }
-.md h1:target .heading__anchor, .md h1:hover .heading__anchor, .md h1:focus .heading__anchor, .md h2:target .heading__anchor, .md h2:hover .heading__anchor, .md h2:focus .heading__anchor, .md h3:target .heading__anchor, .md h3:hover .heading__anchor, .md h3:focus .heading__anchor, .md h4:target .heading__anchor, .md h4:hover .heading__anchor, .md h4:focus .heading__anchor, .md h5:target .heading__anchor, .md h5:hover .heading__anchor, .md h5:focus .heading__anchor, .md h6:target .heading__anchor, .md h6:hover .heading__anchor, .md h6:focus .heading__anchor {
-  color: black;
+.md h1:hover .heading__anchor, .md h1:focus .heading__anchor, .md h2:hover .heading__anchor, .md h2:focus .heading__anchor, .md h3:hover .heading__anchor, .md h3:focus .heading__anchor, .md h4:hover .heading__anchor, .md h4:focus .heading__anchor, .md h5:hover .heading__anchor, .md h5:focus .heading__anchor, .md h6:hover .heading__anchor, .md h6:focus .heading__anchor {
+  color: #7b7b7b;
+}
+.md h1:target .heading__anchor, .md h2:target .heading__anchor, .md h3:target .heading__anchor, .md h4:target .heading__anchor, .md h5:target .heading__anchor, .md h6:target .heading__anchor {
+  color: #222;
 }
 .md h2 {
   font-size: 2.145rem;

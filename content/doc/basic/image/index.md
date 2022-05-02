@@ -29,12 +29,12 @@ title: Images
 weight: 155
 ---
 
-Markdown images should always be embedded in a text block for **Perplex** and are styled accordingly. self-contained images are the domain of the shortcode for a [figure]({{< relref "figure" >}}).
+With **Perplex**, Markdown images should always be embedded in a text block. Self-contained images are the domain of the [figure]({{< relref "figure" >}}) shortcode.
 {.p-lead} <!--more-->
 
 ## Syntax
 
-Embedding an image is similar to placing a [link]({{< relref "link" >}}). The key difference is: The image element begins with an exclamation mark!
+Embedding an image is syntactically very similar to placing a [link]({{< relref "link" >}}). The key difference: The image element begins with an exclamation mark`!`.
 
 ### Short inline notation
 
@@ -44,11 +44,11 @@ Embedding an image is similar to placing a [link]({{< relref "link" >}}). The ke
 
 The _name_ of the image element inside the square brackets `[]` is used as alternative text[^1] in case the browser can't display the image.
 
-This syntax is preferable when the path is short — like the one for an image in a [_Hugo_ page bundle]({{< relref "hugo#bundle" >}}).
+This syntax is preferable when the relative path name is short — like for images in a [_Hugo_ page bundle]({{< relref "hugo#bundle" >}}).
 
 ### Reference notation
 
-As for [links]({{< relref "link" >}}) we can use a marker in a second pair of squared brackets to separate the image reference:
+We can use a marker in a second pair of squared brackets to separate the image reference:
 
 ```md {.left}
 ![Name][imgref]
@@ -60,10 +60,10 @@ We have to provide the image reference somewhere else in the same file by repeat
 [imgref]: long/path/to/image.jpg "Optional Title"
 ```
 
-This syntax is especially convenient, when an image is used more than once or when a complicated path or a long title would clutter the other content.
+This syntax is especially convenient, when an image is used more than once or when a long path or title would clutter the other content.
 
-{{< sidenote up=14 >}}
-**The optional title** for an image gets displayed, when a mouse pointer hovers over the image. Consider that many touch-screen devices don't have one.
+{{< sidenote up=13 >}}
+**The optional title** for an image gets displayed, when a mouse pointer hovers over the image. Consider that many touch-screen devices don't have one. The image title shouldn’t contain very important information.
 {{< /sidenote >}}
 
 ### Block Attributes
@@ -90,12 +90,12 @@ _Perplex_ embeds every image **as a float** into the containing paragraph. The m
 
 Because the image element is so easy to use, authors often include images self-contained {!_between paragraphs_}. This is a {!**problematic practice**}, because the image element will always be wrapped inside a paragraph in the resulting HTML.{^**} Therefore, the {!standard floating layout in _Perplex_ will be broken}.
 
-{{< sidenote star=2 up=15 >}}
+{{< sidenote up=14 >}}
 A self-contained image element is treated by _Markdown_ like a paragraph with the image as the sole content inside. The HTML `<img>`-tag is an inline element in need of a block element as container.
 {{< /sidenote >}}
 
 ### The best way {.h-p .h-tip}
-to deal with self-contained images in _Perplex_ is to use the [_figure_-shortcode]({{< relref "figure" >}}), that includes the image. But for a quick and dirty solution you can apply the attribute `{.p-img-full}` after the image element.
+to deal with self-contained images in _Perplex_ is to use the [_figure_-shortcode]({{< relref "figure" >}}), that includes the image.
 
 ### At the beginning of a paragraph
 
