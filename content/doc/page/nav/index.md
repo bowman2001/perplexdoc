@@ -8,7 +8,7 @@ featImg:
 menu:
   doc:
     name: Navigation
-    parent: special
+    parent: page
     pre: menu
 draft: true
 ---

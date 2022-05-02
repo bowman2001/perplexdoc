@@ -5,7 +5,7 @@ description: Pictures at particular places
 menu:
   doc:
     name: Featured Image
-    parent: special
+    parent: page
     pre: image
 subtitle: false
 title: Featured Image

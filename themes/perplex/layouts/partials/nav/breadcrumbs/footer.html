@@ -1,5 +1,3 @@
-{{ $context := . }}
-
 <nav>
   <ul class="meta__list">
       {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
@@ -15,13 +13,8 @@
         {{ partial "nav/breadcrumbs/separator.html" . }}
     {{ end }}
     {{ if ne .p1 .p2  }}
-      <li>
-        <a class="meta__item meta__item--text font-italic"
-           href="{{ .p1.RelPermalink }}">{{ .p1.Title | site.Home.RenderString }}</a>
-      </li>
+        {{ partial "nav/breadcrumbs/link.html" .p1 }}
     {{ else }}
-      <li>
-        <span class="meta__item meta__item--text font-italic">{{ .p2.Title | site.Home.RenderString }}</span>
-      </li>
+        {{ partial "nav/breadcrumbs/link.html" .p2 }}
     {{ end }}
 {{ end }}

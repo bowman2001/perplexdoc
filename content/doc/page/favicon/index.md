@@ -8,7 +8,7 @@ featImg:
 menu:
   doc:
     name: Favicon
-    parent: special
+    parent: page
     pre: emoji_symbols
 ---
 

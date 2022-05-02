@@ -779,10 +779,10 @@ figure > figcaption .attr {
 
 .meta__item {
   display: inline-block;
-  font-size: 1.6145833333rem;
+  font-size: 1.453125rem;
   line-height: 2rem;
-  padding-top: 0.3953385417rem;
-  padding-bottom: 0.6046614583rem;
+  padding-top: 0.4558046875rem;
+  padding-bottom: 0.5441953125rem;
   margin-bottom: 0;
 }
 
@@ -1297,6 +1297,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 37em) {
   .md .dl-loose > dt {
     float: left;
+    clear: left;
     width: 16.5rem;
   }
   .md .dl-loose > dd {
@@ -2733,12 +2734,10 @@ a.pagenav__item--prev:hover, a.pagenav__item--prev:focus, a.pagenav__item--next:
   padding-bottom: 0;
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 300;
-  font-style: italic;
 }
 
 .pagenav__meta--dir {
   font-weight: 200;
-  font-style: normal;
 }
 
 .pagenav__title {
