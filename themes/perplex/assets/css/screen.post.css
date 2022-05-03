@@ -481,7 +481,7 @@ html {
 }
 
 body {
-  background: #fefcfa;
+  background: #fffefd;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -693,7 +693,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
-    scrollbar-color: #ebb923 #f8e9da;
+    scrollbar-color: #ebb923 #ffebd7;
   }
 
   #main::-webkit-scrollbar {
@@ -706,7 +706,7 @@ body {
   }
 
   #main::-webkit-scrollbar-track {
-    background: #f8e9da;
+    background: #ffebd7;
   }
 }
 
@@ -721,7 +721,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   overscroll-behaviour: contain;
-  background-color: #fefcfa;
+  background-color: #fffefd;
 }
 
 #sidebar.is-visible {
@@ -1411,7 +1411,7 @@ h6 {
   padding: 0 .25em;
   text-transform: none;
   border: .1rem solid rgba(0,0,0,0.06667);
-  background-color: #fcf6ef;
+  background-color: #fff8f0;
 }
 
 .md dt code {
@@ -1462,17 +1462,17 @@ h6 {
 
 .md .highlight > div,
 .md .highlight > pre {
-  background-color: #fcf6ef !important;
+  background-color: #fff8f0 !important;
   border: .1rem solid rgba(0,0,0,0.06667);
 }
 
 .md .highlight > div pre,
 .md .highlight > pre pre {
-  background-color: #fcf6ef !important;
+  background-color: #fff8f0 !important;
 }
 
 .md .highlight table {
-  scrollbar-color: #ebb923 #f8e9da;
+  scrollbar-color: #ebb923 #ffebd7;
 }
 
 .md .highlight table::-webkit-scrollbar {
@@ -1485,7 +1485,7 @@ h6 {
 }
 
 .md .highlight table::-webkit-scrollbar-track {
-  background: #f8e9da;
+  background: #ffebd7;
 }
 
 .md .highlight table pre {
@@ -1861,7 +1861,7 @@ h6 {
 
 .md .box {
   position: relative;
-  background-color: #fcf6ef;
+  background-color: #fff8f0;
 }
 
 @media screen and (min-width: 48em) {
@@ -2487,7 +2487,7 @@ h6 {
   max-width: 70rem;
   text-align: center;
   border-radius: .5rem;
-  background-color: #f9efe6;
+  background-color: #fef1e4;
 }
 
 @media screen and (min-width: 37em) {
@@ -2736,7 +2736,7 @@ h6 {
   margin-bottom: calc(0.9rem + 1 * var(--es));
   border-top: .1rem solid #b0b0bd;
   border-bottom: .1rem solid #b0b0bd;
-  background: radial-gradient(#fefcfa, #f6e3d0);
+  background: radial-gradient(#fffefd, #ffe5ca);
 }
 
 @media screen and (min-width: 37em) {
@@ -2882,7 +2882,7 @@ h6 {
   height: 100%;
   content: "";
   pointer-events: none;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 33%, #fbf4ed 90%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 33%, #fff6ee 90%);
 }
 
 @media screen and (min-width: 48em) {
@@ -3358,7 +3358,7 @@ a.pagenav__item--next:focus {
   .sidebarbox {
     width: 35rem;
     height: 100%;
-    scrollbar-color: #ebb923 #f8e9da;
+    scrollbar-color: #ebb923 #ffebd7;
   }
 
   .sidebarbox::-webkit-scrollbar {
@@ -3371,7 +3371,7 @@ a.pagenav__item--next:focus {
   }
 
   .sidebarbox::-webkit-scrollbar-track {
-    background: #f8e9da;
+    background: #ffebd7;
   }
 }
 
