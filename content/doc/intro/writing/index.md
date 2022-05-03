@@ -30,7 +30,13 @@ resources:
 **Markdown** has become the favored markup language for structuring text files. With good cause: Its syntax is easy and yet quite comprehensive.
 {.p-lead} <!--more-->
 
-_Markdown_ files are plain text files with the suffixes `.md`, `.mdown` or `.markdown`. They contain a small set of characters for the markup keeping them easy to read and to work on. After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors emerged. To resolve their annoying incompatibilities and to create a dependable syntax, John Mc&hairsp;Farlane et al. proposed a strict  specification in 2011: [_CommonMark_][cmark]. This specification has been implemented in many _Markdown_ render engines since and important web-software providers thereby adhere to _CommonMark_. For a quick look at _CommonMark_ you can visit their crisp [one page overview](https://CommonMark.org/help).
+_Markdown_ files are plain text files with the suffix `.md`{^\*}.  They contain only a small set of simple ASCII signs as markup, which keeps them easy to read and to work with. After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors emerged.
+
+{{< sidenote star=1 up=8 >}}
+The suffixes `.mdown` and `.markdown` also indicate _Markdown_, but they are rarely used.
+{{< /sidenote >}}
+
+To resolve their annoying incompatibilities and to create a dependable syntax, John Mc&hairsp;Farlane et al. proposed a strict  specification in 2011: [_CommonMark_][cmark]. This specification has been implemented in many _Markdown_ render engines since and important web-software providers thereby adhere to _CommonMark_. For a quick look at _CommonMark_ you can visit their crisp [one page overview](https://CommonMark.org/help).
 
 ## _Markdown_ for _Perplex_
 
@@ -42,7 +48,7 @@ _Perplex_ styles HTML, which is generated from extended _CommonMark_ by _Hugo’
 
 Further extensions may join in the future, but probably only a few if any, because simplicity remains essential for _Markdown_.
 
-This documentation includes short reviews of every syntax element in _Goldmark_ and shows examples of their standard layout and alternative styling options by _Perplex_:
+This documentation includes a short review of every syntax element in _Goldmark_ and shows an example of its standard layout and alternative styling options with _Perplex_:
 
 [Basic Markdown Layout]({{< relref "basic" >}})
 : covers the elements of the [_CommonMark specification_][cmark].
@@ -71,7 +77,7 @@ My following suggestions for the handling of these elements are short. Their iss
 
 {{< figure splash />}}
 
-There is one image element in _Markdown_ for embedding an image into a block element and no genuin element for a self-contained image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. _Perplex_ provides the shortcode [_figure_]({{< relref "doc/shortcode/builtin/internal" >}}) for this purpose.
+There is one image element in _Markdown_ for embedding an image into a block element and no genuine element for a self-contained image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. _Perplex_ provides the shortcode [_figure_]({{< relref "doc/shortcode/builtin/internal" >}}) for this purpose.
 
 To surround every self-contained _Markdown_ image element with a paragraph — like _CommonMark_ proposes and _Hugo_ does — leads to a simple working solution, when the layout treats all images alike.
 
@@ -105,7 +111,7 @@ With Soft Wraps
 See the page [Line Break][lb] for the configuration setting and the question of _CommonMark_-compliance.
 
 ## Special characters
-All available characters—more general _glyphs_—can be used in _Markdown_, either directly as _Unicode_ or as _HTML entities_ (like `&para;` for &para;). The markup characters need to be escaped by a preceding backslash `\` to get treated litterally by the _Markdown_ renderer. See [Special Characters]({{< relref "specialchar#html-entities" >}}) for this topic.
+All available characters—more general _glyphs_—can be used in _Markdown_, either directly as _Unicode_ or as _HTML entities_ (like `&para;` for &para;). The markup characters need to be escaped by a preceding backslash `\` to get treated literally by the _Markdown_ renderer. See [Special Characters]({{< relref "specialchar#html-entities" >}}) for this topic.
 
 {{< sidenote up=14 >}}
 You can still get into trouble with glyphs, which are missing in the fonts for your website. But this is a general web-font issue independent of _Markdown_ rendering.

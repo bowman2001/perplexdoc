@@ -6,14 +6,14 @@ featImg: chris-brignola-X2CxUXFqKcM-unsplash.jpg
 menu:
   doc:
     parent: intro
-    name: Licences
+    name: Licenses
     pre: receipt
 subtitle: false
-title: Licences
+title: Licenses
 weight: 40
 ---
 
-_Perplex_ is an open source theme for the open source software [_Hugo_][hugo] and needs to run with a recent version. No other installation requirements exist, but the theme and the documentation include external software and content. Their licencers and the licences of their choosing are also listed here.
+_Perplex_ is an open source theme for the open source software [_Hugo_][hugo] and needs to run with a recent version. No other installation requirements exist, but the theme and the documentation include external software and content. Their licensers and the licenses of their choosing are also listed here.
 {.p-lead} <!--more-->
 
 ## Perplex and its documentation

@@ -14,7 +14,7 @@ weight: 30
 ---
 
 Static websites based on _Markdown_ content are inherently very secure. And they are bullet-proof as long as the generating templates are and as long as authors can’t manipulate the generated HTML.  
-{.p-lead} <!-- more -->
+{.p-lead} <!--more-->
 
 ## Don’t allow raw HTML
 

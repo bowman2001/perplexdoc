@@ -3,7 +3,7 @@
         {{- range $k, $v := .Attributes -}}
             {{- (printf " %s=%q" $k $v) | safeHTMLAttr -}}
         {{- end -}}>
-	<span class="heading">{{ .Text | safeHTML }}</span><a class="heading__anchor" href="#{{ .Anchor | safeURL }}">#</a>
+	<span class="heading">{{ .Text | safeHTML }}</span><a class="heading__anchor" href="#{{ .Anchor | safeURL }}"></a>
 </h{{ .Level }}>
 {{- else -}}
 <h{{ .Level }}

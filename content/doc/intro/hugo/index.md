@@ -13,7 +13,7 @@ title: Hugo
 weight: 15
 ---
 
-The world's fastest static site engine is steadily gaining traction on its way to the first major release. **Hugo** provides a very reliable production environment and helps to build fast and secure websites.
+The world’s fastest static site engine is steadily gaining traction on its way to the first major release. **Hugo** provides a very reliable production environment and helps to build fast and secure websites.
 {.p-lead} <!--more-->
 
 [_Hugo_](https://gohugo.io) is a versatile monolithic command line tool for _macOS_, _Windows_, _Linux_ and _BSD_ derivatives. Binaries for these operating systems and some containers are usually available within a day or a few after every release.
@@ -73,10 +73,10 @@ The folders of the example site follow the Hugo convention for root directories.
 When you are more familiar with _Hugo_, you start a new project with a command like
 
 ```sh {.left}
-hugo new site mysite
+hugo new site my-site
 ```
 
-This creates the directory `mysite` and a standard folder structure. Only a minimal set of template files without any styling is included in the layout folder. (TODO: delete it?) You don't need them, if you are using a theme.
+This creates the directory `my-site` and a standard folder structure. Only a minimal set of template files without any styling is included in the layout folder. (TODO: delete it?) You don't need them, if you are using a theme.
 
 There are three ways to retrieve this and other themes from [GitHub](https://github.com):
 
@@ -243,7 +243,7 @@ Because our new page is a demonstration, we like to file it in a special section
 hugo new doc/demo/_index.md
 ```
 
-The small difference between a _leaf bundle_ for a [single page]({{< relref "#single" >}}) and a _branch bundle_ is the leading underscore for the _Markdown_ master file. It's only `index.md` versus `_index.md`. But they have a very different purpose. A folder with a _leaf bundle_ collects material for _one_ page. A _branch bundle_ collects as many pages and may include as many other bundles as we need — there is no technical limit to the depth of folder hierarchy. A branch bundle can act like a chapter, section or subsection. 
+The small difference between a _leaf bundle_ for a [single page]({{< relref "#single" >}}) and a _branch bundle_ is the leading underscore for the _Markdown_ master file. It's only `index.md` versus `_index.md`. But they have a very different purpose. A folder with a _leaf bundle_ collects material for _one_ page. A _branch bundle_ collects as many pages and may include as many other bundles as we need — there is no technical limit to the depth of folder hierarchy. A branch bundle can act like a chapter, section or subsection.
 
 `_index.md` should contain general content about this section. The page for a _branch bundle_ usually also presents a list of selected content from every page in the branch.
 
