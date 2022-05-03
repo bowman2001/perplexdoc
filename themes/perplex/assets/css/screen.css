@@ -395,7 +395,7 @@ html {
 }
 
 body {
-  background: #fffefd;
+  background: #fefefe;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -582,7 +582,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
-    scrollbar-color: #EBB923 #ffebd7;
+    scrollbar-color: #EBB923 #ebebeb;
   }
   #main::-webkit-scrollbar {
     width: 1rem;
@@ -592,7 +592,7 @@ body {
     background: #EBB923;
   }
   #main::-webkit-scrollbar-track {
-    background: #ffebd7;
+    background: #ebebeb;
   }
 }
 
@@ -607,7 +607,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   overscroll-behaviour: contain;
-  background-color: #fffefd;
+  background-color: #fefefe;
 }
 #sidebar.is-visible {
   left: 0;
@@ -1140,7 +1140,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 0.25em;
   text-transform: none;
   border: 0.1rem solid #0001;
-  background-color: #fff8f0;
+  background-color: #f8f8f8;
 }
 .md dt code {
   font-weight: 500;
@@ -1189,14 +1189,14 @@ h1, h2, h3, h4, h5, h6 {
   } */
 }
 .md .highlight > div, .md .highlight > pre {
-  background-color: #fff8f0 !important;
+  background-color: #f8f8f8 !important;
   border: 0.1rem solid #0001;
 }
 .md .highlight > div pre, .md .highlight > pre pre {
-  background-color: #fff8f0 !important;
+  background-color: #f8f8f8 !important;
 }
 .md .highlight table {
-  scrollbar-color: #EBB923 #ffebd7;
+  scrollbar-color: #EBB923 #ebebeb;
 }
 .md .highlight table::-webkit-scrollbar {
   width: 1rem;
@@ -1206,7 +1206,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #EBB923;
 }
 .md .highlight table::-webkit-scrollbar-track {
-  background: #ffebd7;
+  background: #ebebeb;
 }
 .md .highlight table pre {
   padding-right: 0;
@@ -1228,7 +1228,7 @@ h1, h2, h3, h4, h5, h6 {
   scroll-margin-top: 10.5rem;
 }
 .md .note p > code {
-  color: #555566;
+  color: #667;
 }
 .md .note .highlight {
   padding: 1rem 0;
@@ -1483,7 +1483,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .md .box {
   position: relative;
-  background-color: #fff8f0;
+  background-color: #f8f8f8;
 }
 @media screen and (min-width: 48em) {
   .md .up-1 {
@@ -2039,7 +2039,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 70rem;
   text-align: center;
   border-radius: 0.5rem;
-  background-color: #fef1e4;
+  background-color: #f1f1f1;
 }
 @media screen and (min-width: 37em) {
   .md .asciicast {
@@ -2238,9 +2238,9 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   margin-top: 1.4rem;
   margin-bottom: calc(0.9rem + 1 * var(--es));
-  border-top: 0.1rem solid #b0b0bd;
-  border-bottom: 0.1rem solid #b0b0bd;
-  background: radial-gradient(#fffefd, #ffe5ca);
+  border-top: 0.1rem solid #c4c4cc;
+  border-bottom: 0.1rem solid #c4c4cc;
+  background: radial-gradient(#fefefe, #e5e5e5);
 }
 @media screen and (min-width: 37em) {
   .note {
@@ -2276,7 +2276,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0.632436875rem;
     margin-bottom: 0;
     scroll-margin-top: 11rem;
-    color: #86869b;
+    color: #667;
   }
 }
 
@@ -2303,7 +2303,7 @@ h1, h2, h3, h4, h5, h6 {
   scroll-margin-top: 10.5rem;
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 450;
-  color: #555566;
+  color: #667;
 }
 .note__content > p + p {
   margin-top: -1rem;
@@ -2362,7 +2362,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   content: "";
   pointer-events: none;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 33%, #fff6ee 90%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 33%, #f6f6f6 90%);
 }
 @media screen and (min-width: 48em) {
   .checkbox-note ~ .note__content {
@@ -2413,7 +2413,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -3rem;
 }
 .checkbox-note:not(checked) ~ .open-note > .arrow {
-  border-top: 1rem solid #555566;
+  border-top: 1rem solid #667;
   border-bottom: unset;
 }
 @media screen and (min-width: 48em) {
@@ -2434,7 +2434,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .checkbox-note:checked ~ .open-note > .arrow {
   border-top: unset;
-  border-bottom: 1rem solid #555566;
+  border-bottom: 1rem solid #667;
 }
 @media screen and (min-width: 48em) {
   .checkbox-note:checked ~ .open-note {
@@ -2764,7 +2764,7 @@ a.pagenav__item--prev:hover, a.pagenav__item--prev:focus, a.pagenav__item--next:
   .sidebarbox {
     width: 35rem;
     height: 100%;
-    scrollbar-color: #EBB923 #ffebd7;
+    scrollbar-color: #EBB923 #ebebeb;
   }
   .sidebarbox::-webkit-scrollbar {
     width: 1rem;
@@ -2774,7 +2774,7 @@ a.pagenav__item--prev:hover, a.pagenav__item--prev:focus, a.pagenav__item--next:
     background: #EBB923;
   }
   .sidebarbox::-webkit-scrollbar-track {
-    background: #ffebd7;
+    background: #ebebeb;
   }
 }
 

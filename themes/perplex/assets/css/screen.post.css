@@ -481,7 +481,7 @@ html {
 }
 
 body {
-  background: #fffefd;
+  background: #fefefe;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -693,7 +693,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
-    scrollbar-color: #ebb923 #ffebd7;
+    scrollbar-color: #ebb923 #ebebeb;
   }
 
   #main::-webkit-scrollbar {
@@ -706,7 +706,7 @@ body {
   }
 
   #main::-webkit-scrollbar-track {
-    background: #ffebd7;
+    background: #ebebeb;
   }
 }
 
@@ -721,7 +721,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   overscroll-behaviour: contain;
-  background-color: #fffefd;
+  background-color: #fefefe;
 }
 
 #sidebar.is-visible {
@@ -1411,7 +1411,7 @@ h6 {
   padding: 0 .25em;
   text-transform: none;
   border: .1rem solid rgba(0,0,0,0.06667);
-  background-color: #fff8f0;
+  background-color: #f8f8f8;
 }
 
 .md dt code {
@@ -1462,17 +1462,17 @@ h6 {
 
 .md .highlight > div,
 .md .highlight > pre {
-  background-color: #fff8f0 !important;
+  background-color: #f8f8f8 !important;
   border: .1rem solid rgba(0,0,0,0.06667);
 }
 
 .md .highlight > div pre,
 .md .highlight > pre pre {
-  background-color: #fff8f0 !important;
+  background-color: #f8f8f8 !important;
 }
 
 .md .highlight table {
-  scrollbar-color: #ebb923 #ffebd7;
+  scrollbar-color: #ebb923 #ebebeb;
 }
 
 .md .highlight table::-webkit-scrollbar {
@@ -1485,7 +1485,7 @@ h6 {
 }
 
 .md .highlight table::-webkit-scrollbar-track {
-  background: #ffebd7;
+  background: #ebebeb;
 }
 
 .md .highlight table pre {
@@ -1512,7 +1512,7 @@ h6 {
 }
 
 .md .note p > code {
-  color: #556;
+  color: #667;
 }
 
 .md .note .highlight {
@@ -1861,7 +1861,7 @@ h6 {
 
 .md .box {
   position: relative;
-  background-color: #fff8f0;
+  background-color: #f8f8f8;
 }
 
 @media screen and (min-width: 48em) {
@@ -2487,7 +2487,7 @@ h6 {
   max-width: 70rem;
   text-align: center;
   border-radius: .5rem;
-  background-color: #fef1e4;
+  background-color: #f1f1f1;
 }
 
 @media screen and (min-width: 37em) {
@@ -2734,9 +2734,9 @@ h6 {
   margin-top: 1.4rem;
   margin-bottom: calc(0.9rem + 1 * 0rem);
   margin-bottom: calc(0.9rem + 1 * var(--es));
-  border-top: .1rem solid #b0b0bd;
-  border-bottom: .1rem solid #b0b0bd;
-  background: radial-gradient(#fffefd, #ffe5ca);
+  border-top: .1rem solid #c4c4cc;
+  border-bottom: .1rem solid #c4c4cc;
+  background: radial-gradient(#fefefe, #e5e5e5);
 }
 
 @media screen and (min-width: 37em) {
@@ -2778,7 +2778,7 @@ h6 {
     padding-bottom: .632436875rem;
     margin-bottom: 0;
     scroll-margin-top: 11rem;
-    color: #86869b;
+    color: #667;
   }
 }
 
@@ -2811,7 +2811,7 @@ h6 {
   scroll-margin-top: 10.5rem;
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 450;
-  color: #556;
+  color: #667;
 }
 
 .note__content > p + p {
@@ -2882,7 +2882,7 @@ h6 {
   height: 100%;
   content: "";
   pointer-events: none;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 33%, #fff6ee 90%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 33%, #f6f6f6 90%);
 }
 
 @media screen and (min-width: 48em) {
@@ -2944,7 +2944,7 @@ h6 {
 }
 
 .checkbox-note:not(checked) ~ .open-note > .arrow {
-  border-top: 1rem solid #556;
+  border-top: 1rem solid #667;
   border-bottom: unset;
 }
 
@@ -2969,7 +2969,7 @@ h6 {
 
 .checkbox-note:checked ~ .open-note > .arrow {
   border-top: unset;
-  border-bottom: 1rem solid #556;
+  border-bottom: 1rem solid #667;
 }
 
 @media screen and (min-width: 48em) {
@@ -3358,7 +3358,7 @@ a.pagenav__item--next:focus {
   .sidebarbox {
     width: 35rem;
     height: 100%;
-    scrollbar-color: #ebb923 #ffebd7;
+    scrollbar-color: #ebb923 #ebebeb;
   }
 
   .sidebarbox::-webkit-scrollbar {
@@ -3371,7 +3371,7 @@ a.pagenav__item--next:focus {
   }
 
   .sidebarbox::-webkit-scrollbar-track {
-    background: #ffebd7;
+    background: #ebebeb;
   }
 }
 
