@@ -105,7 +105,7 @@ With Soft Wraps
 See the page [Line Break][lb] for the configuration setting and the question of _CommonMark_-compliance.
 
 ## Special characters
-All available characters—more general _glyphs_—can be used in _Markdown_, either directly as _Unicode_ or as _HTML entities_ (like `&para;` for &para;). The markup characters need to be escaped by a preceding backslash `\` to get treated litterally by the _Markdown_ renderer. See [Special Characters]({{< relref "specialchar#html-entities" >}}) for this topic. 
+All available characters—more general _glyphs_—can be used in _Markdown_, either directly as _Unicode_ or as _HTML entities_ (like `&para;` for &para;). The markup characters need to be escaped by a preceding backslash `\` to get treated litterally by the _Markdown_ renderer. See [Special Characters]({{< relref "specialchar#html-entities" >}}) for this topic.
 
 {{< sidenote up=14 >}}
 You can still get into trouble with glyphs, which are missing in the fonts for your website. But this is a general web-font issue independent of _Markdown_ rendering.

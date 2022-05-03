@@ -13,7 +13,7 @@ title: Layout
 weight: 5
 ---
 
-**Perplex** provides a typographic layout for your **Markdown** content, that adapts responsively to nearly every modern screen size. It’s designed for optimal legibility down to a view-port of 360 Pixels width.
+**Perplex** provides a typographic layout for your **Markdown** content, which adapts responsively to nearly every modern screen size. It’s designed for optimal legibility down to a view-port of 360 Pixels width.
 {.p-lead} <!--more-->
 
 _Perplex_ has been build on the basis of the [**IBM Plex**][plex] font family and is best suited for technical content with mixed sections of text and code. The layout is vertically aligned to a **baseline grid**[^1] to introduce a comfortable rhythm. Horizontally it’s divided into evenly spaced columns — their number depends on the screen width. On larger screens (view-port &ge; 592px) the [**responsive design**][rd] is combined with [**view-port sized typography**][ptres]—a.k.a. _fluid typography_—to deliver a coherent layout.
@@ -65,19 +65,17 @@ Page parameters
 : are set directly in the _Markdown_ text files. Every file starts with a _YAML_ front-matter block, which is enclosed by three dashes `---`.
 {.dl-loose}
 
-Despite its successfull efforts to make data-formatting as simple as possible, _YAML_ still needs to adhere to strict rules. This may be frustrating for beginners. _Perplex_ provides skeleton templates via _Hugo’s_ [`new` command][new]. It generates files with a working front-matter block for every type of content. They are filled with some reasonable auto-generated data and placeholders. The front-matter blocks for this documentation contain usually around 15 entries, and you probably have to change or add only a few of them in the beginning.
+Despite its successful efforts to make data-formatting as simple as possible, _YAML_ still needs to adhere to strict rules. This may be frustrating for beginners. _Perplex_ provides skeleton templates via _Hugo’s_ [`new` command][new]. It generates files with a working front-matter block for every type of content. They are filled with some reasonable auto-generated data and placeholders. The front-matter blocks for this documentation contain usually around 15 entries, and you probably have to change or add only a few of them in the beginning.
 
-## In Case of Problems with _Perplex_
+## In Case of Problems
 
-There are **two repositories** for _Perplex_. One for the theme itself
+There are **two repositories** for _Perplex_. One for the [theme][theme] itself and one for the [documentation][doc]. The documentation ships with a copy of the theme, but all work on the theme happens only in its repository.
 
 ### Bugs or missing features in the theme
 
-Please have a look first at the existing [issues][issue] for this theme. And please create a new one, if it’s not already there.
+Please have a look first at the already existing [issues][issue] for this theme. Please create a new one, if it’s not already there.
 
 ### Errors in the content of this documentation
-
-Feel free to correct  and generate a pull request for the
 
 [^1]: The concept for the baseline has been inspired by [Plumber][plumber]. Despite precise calculations is the vertical alignment sometimes a little of, noticeably on screens with a lower pixel density—usually desktop screens. All browser engines seem to face an inevitable trade-off between the quality of the font rendering and the precision of the line height.
 
@@ -85,6 +83,8 @@ Feel free to correct  and generate a pull request for the
 [plex]: https://ibm.com/plex
 [rd]: https://alistapart.com/article/responsive-web-design/
 [ptres]: https://practicaltypography.com/responsive-web-design.html
+[theme]: https://github.com/bowman2001/perplex
 [issue]: https://github.com/bowman2001/perplex/issues
+[doc]: https://github.com/bowman2001/perplexdoc
 [conf]: {{< relref "config.md" >}}
 [new]: {{< relref "hugo#first" >}}
