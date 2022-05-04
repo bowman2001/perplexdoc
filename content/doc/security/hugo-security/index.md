@@ -6,8 +6,9 @@ featImg:
 menu:
   doc:
     name: Hugo
+    identifier: hugosec
     parent: security
-    pre: remove
+    pre: engineering
 subtitle: false
 title: Hugo
 weight: 830
@@ -20,7 +21,6 @@ Security becomes a concern when we start to use external resources.
 
 Hugo
 : Our SSG can be configured to call external software like _GO_, the node module _PostCSS_ or other external software. By default _Perplex_ is self-reliant.
-
 
 ## Don’t allow raw HTML
 
