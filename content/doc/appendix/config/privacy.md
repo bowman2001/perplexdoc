@@ -9,7 +9,7 @@ menu:
     pre: policy
 subtitle: false
 title: privacy.yaml
-weight: 835
+weight: 1035
 ---
 
 {{< highlight yaml "linenos=true" >}}

@@ -11,5 +11,7 @@ favicon:
   svg: icon/favicon.svg
   png: icon/favicon.png
 
-sourceUrl: https://github.com/bowman2001/perplexdoc
+sourceURL: https://github.com/bowman2001/perplexdoc
 editTree: edit/main/content
+themeURL: https://github.com/bowman2001/perplex
+# TODO: issueTree

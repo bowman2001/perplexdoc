@@ -5,13 +5,11 @@
 enableInlineShortcodes: false
 exec:
   allow:
-    - ^dart-sass-embedded$
-    - ^go$
-    - ^npx$
-    - ^postcss$
-    - ^nano$
+    - ^go$ # Needed for modules
+    - ^npx$ # Needed for postcss
+    - ^postcss$ # Post-process the CSS stylesheet
   osEnv:
-    - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM|DISPLAY)$
+    - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$
 funcs:
   getenv:
     - ^HUGO_

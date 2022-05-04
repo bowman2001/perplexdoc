@@ -13,10 +13,10 @@ title: Hugo
 weight: 15
 ---
 
-The world’s fastest static site engine is steadily gaining traction on its way to the first major release. **Hugo** provides a very reliable production environment and helps to build fast and secure websites.
+The world’s fastest **S**tatic **S**ite **G**enerator (SSG) is steadily gaining traction on its way to the first major release. The monolith **Hugo** provides a very reliable production environment and helps to build fast and secure websites.
 {.p-lead} <!--more-->
 
-[_Hugo_](https://gohugo.io) is a versatile monolithic command line tool for _macOS_, _Windows_, _Linux_ and _BSD_ derivatives. Binaries for these operating systems and some containers are usually available within a day or a few after every release.
+[_Hugo_](https://gohugo.io) is a command line tool for _macOS_, _Windows_, _Linux_ and _BSD_ derivatives. Binaries for these operating systems and some containers are usually available within a day or a few after every release.
 
 {{< sidenote up=11 >}}
 The [Hugo source](https://github.com/gohugoio/hugo) can be compiled on every machine with a recent [Go environment](https://go.dev).
@@ -32,9 +32,7 @@ Please read the [detailed installation instructions](https://gohugo.io/getting-s
 
 ### Use Perplex
 
-When you are just getting acquainted with _Hugo_ and _Markdown_ or when you are curious about the source for this site, you should download the project as an example. It’s available on _GitHub_ and ships with all the files for the documentation, the _Perplex_ theme and a few examples for blog postings and simple pages.
-
-[^todo]: Include the link to the _Git_Hub repository.
+When you are just getting acquainted with _Hugo_ and _Markdown_ or when you are curious about the source for this site, you should download this documentation project as an example. It’s available on [_GitHub_]({{< param sourceURL >}}) and ships with all the files for the documentation, the _Perplex_ theme and a few examples for blog postings and simple pages.
 
 #### This documentation project
 
@@ -87,21 +85,21 @@ There are three ways to retrieve this and other themes from [GitHub](https://git
 3. Import the _Perplex_ repository as a Hugo module. You need to have a recent [Go environment](https://go.dev), because _Hugo_ modules rely on _Go_  modules.  The Hugo docs provide a guide to this powerful [feature](https://gohugo.io/hugo-modules).
 
 {{< sidenote up=11 >}}
-As long as you don't use modules also for other parts of your project, this may be over-complicated.
+As long as you don't intend to use modules also for other parts of your project, this workflow may be over-complicated.
 {{< /sidenote >}}
 
 Whatever option you choose, you need to tell Hugo to use the theme in the [config file]({{< relref "configyaml.md#6" >}}).
 
 ## Run Hugo locally {#server-mode}
 
-While working on a web project, we like to constantly watch the resulting pages. To render and serve an instant preview locally, we can run hugo in _server mode_. Run the following command in the root of the Hugo project to run the server:
+While working on a web project, we often like to constantly watch the resulting pages. To render and serve an instant local preview, we can run hugo in _server mode_. A command like the following in the root of the Hugo project starts the server:
 
 ```sh
 hugo server -D --minify --navigateToChanged
 ```
 
 {{< sidenote up=5 >}}
-**Hugo’s server** can also show a preview under a configured URL. But it's **by no means** a full-fledged web server.
+**Hugo’s server** can also show a private preview on the web under a configured URL. But it's **by no means** a full-fledged web server.
 {{< /sidenote >}}
 
 The pages are rendered into the computer memory and the site is served under <http://localhost:1313>.
@@ -275,7 +273,7 @@ Remote
 
 All configuration options and their defaults are described in the [docs](https://gohugo.io/getting-started/configuration/). The examples therein are given for a _single configuration file_ like `config.yaml` in your project root directory.
 
-The configuration for this _Perplex_ site is using the alternative option of a **configuration directory** named `config` with separate files for the sections. For the growing number of options this arrangement is much clearer. The top configuration file is called `config.yaml` the other ones are named like the section they contain — `markup.yaml` for example.
+The configuration for this _Perplex_ site is using the alternative option of a **configuration directory** named `config` with separate files for the sections. For the growing number of options this arrangement is much clearer. The top configuration file is called `config.yaml` the other ones are named like the section they contain.
 
 ### Please note {.h-info .h-p}
 
@@ -283,4 +281,4 @@ The configuration files for sections don't include the section identifier anymor
 
 ## Having trouble with _Hugo_?
 
-When you encounter problems specific to _Hugo_, visit the [Hugo community](https://discourse.gohugo.io) for support. First, search the forum archive, because most likely your problem has already been solved by some very helpful and busy members there. When you really need to start a new topic, please read the guidelines _How to Request Help_ at the top of the site.
+When you encounter problems specific to _Hugo_, visit the [Hugo community](https://discourse.gohugo.io) for support. Please search the forum archive first, because most likely your problem has already been solved. When you need to start a new topic, please read the guidelines _How to Request Help_ at the top of the site, before you do.

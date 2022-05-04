@@ -9,7 +9,7 @@ menu:
     pre: menu
 subtitle: false
 title: menu.yaml
-weight: 820
+weight: 1020
 ---
 
 {{< highlight yaml "linenos=true" >}}

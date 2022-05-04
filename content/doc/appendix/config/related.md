@@ -8,7 +8,7 @@ menu:
     parent: config
     pre: open_in_new
 title: related.yaml
-weight: 825
+weight: 1025
 ---
 
 

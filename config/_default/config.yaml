@@ -14,10 +14,9 @@ pluralizeListTitles: false
 enableEmoji: true
 enableGitInfo: true
 
-timeout: 30000
+timeout: 60000 # Milliseconds
 ignoreFiles:
   - doc/draft/.*
-  - dev
 ignoreErrors:
   - error-missing-instagram-accesstoken
   - error-remote-getjson

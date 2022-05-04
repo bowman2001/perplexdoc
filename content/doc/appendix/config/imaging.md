@@ -8,7 +8,7 @@ menu:
     parent: config
     pre: image
 title: 'imaging.yaml'
-weight: 830
+weight: 1030
 ---
 
 
