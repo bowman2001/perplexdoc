@@ -12,7 +12,7 @@ MD029:
   style: "ordered"
 # No inline HTML. But because inline HTML is already skipped and removed
 # with our Hugo configuration, the rule is not necessary. 
-# And it would also be triggerd by angled brackets intended for the typographer.
+# And it would also be triggered by angled brackets intended for the typographer.
 MD033: false 
 # Emphasis style
 MD049:

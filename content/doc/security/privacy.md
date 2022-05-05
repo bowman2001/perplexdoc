@@ -1,6 +1,6 @@
 ---
 author:
-title: Privacy
+title: User Privacy
 description: Page description placeholder
 subtitle: false
 date: 2022-05-04T23:57:34+02:00 
@@ -8,7 +8,7 @@ weight: 890
 featImg:
 menu:
   doc:
-    name: Privacy
+    name: User Privacy
     parent: security
     pre: policy
 draft: true
