@@ -9,7 +9,6 @@ exec:
     # - ^go$
     # - ^postcss$
     # - ^npx$ # Needed for postcss
-    # - ^nano$
   osEnv:
     - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$
 funcs:
