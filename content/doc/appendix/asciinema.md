@@ -10,7 +10,7 @@ menu:
     pre: smart_display
 subtitle: false
 title: Asciinema
-weight: 880
+weight: 1080
 draft: true
 ---
 

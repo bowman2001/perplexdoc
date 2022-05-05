@@ -8,23 +8,23 @@ menu:
     parent: appendix
     pre: format_quote
 title: My Punctuation Keys
-weight: 890
+weight: 1090
 ---
 
 | Satzzeichen                 |  #   |                             |
 | :-------------------------- | :--: | --------------------------: |
-| English double quotes left  |  “   |            {#Alt Gr} + {#B} |
-| English double quotes right |  ”   |            {#Alt Gr} + {#N} |
-| English single quote left   |  ‘   | {#Alt Gr} + {#Shift} + {#B} |
-| English single quote right  |  ’   | {#Alt Gr} + {#Shift} + {#N} |
+| Double quotes left  |  “   |            {#Alt Gr} + {#B} |
+| Double quotes right |  ”   |            {#Alt Gr} + {#N} |
+| Single quote left   |  ‘   | {#Alt Gr} + {#Shift} + {#B} |
+| Single quote right  |  ’   | {#Alt Gr} + {#Shift} + {#N} |
 | German guillemets left      |  »   |            {#Alt Gr} + {#Y} |
 | German guillemets right     |  «   |            {#Alt Gr} + {#X} |
-| Half german guillemet left  |  ›   | {#Alt Gr} + {#Shift} + {#Y} |
-| Half german guillemet right |  ‹   | {#Alt Gr} + {#Shift} + {#X} |
-| Gänsefüßchen unten          |  „   |            {#Alt Gr} + {#V} |
-| Gänsefüßchen oben           |  “   |            {#Alt Gr} + {#B} |
-| Hb. Anführung unten         |  ‚   | {#Alt Gr} + {#Shift} + {#V} |
-| Hb. Abführung oben          |  ‘   | {#Alt Gr} + {#Shift} + {#B} |
-| Apostroph                   |  ’   |            {#Alt Gr} + {##} |
+| Half gr. guillemet left  |  ›   | {#Alt Gr} + {#Shift} + {#Y} |
+| Half gr. guillemet right |  ‹   | {#Alt Gr} + {#Shift} + {#X} |
+| „Gänsefüßchen“ left          |  „   |            {#Alt Gr} + {#V} |
+| „Gänsefüßchen“ right           |  “   |            {#Alt Gr} + {#B} |
+| Single „Gänsefüßchen“ left         |  ‚   | {#Alt Gr} + {#Shift} + {#V} |
+| Single „Gänsefüßchen“ right          |  ‘   | {#Alt Gr} + {#Shift} + {#B} |
+| Apostrophe                   |  ’   |            {#Alt Gr} + {##} |
 | Ellipsis                    |  …   |            {#Alt Gr} + {#.} |
 | Long dash                   |  –   |            {#Alt Gr} + {#-} |
