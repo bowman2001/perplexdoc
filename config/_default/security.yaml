@@ -3,19 +3,20 @@
 #
 
 enableInlineShortcodes: false
-  exec:
-    allow:
+exec:
+  allow:
     # - ^dart-sass-embedded$
     # - ^go$
-    # - ^npx$
     # - ^postcss$
-    osEnv:
+    # - ^npx$ # Needed for postcss
+    # - ^nano$
+  osEnv:
     - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$
-  funcs:
-    getenv:
+funcs:
+  getenv:
     - ^HUGO_
-  http:
-    methods:
+http:
+  methods:
     - (?i)GET|POST
-    urls:
+  urls:
     - .*
