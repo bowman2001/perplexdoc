@@ -11,7 +11,7 @@ title: My Punctuation Keys
 weight: 1090
 ---
 
-| Satzzeichen                 |  #   |                             |
+| Punctuation name                |  #   |      Key combination                       |
 | :-------------------------- | :--: | --------------------------: |
 | Double quotes left  |  “   |            {#Alt Gr} + {#B} |
 | Double quotes right |  ”   |            {#Alt Gr} + {#N} |
@@ -19,8 +19,8 @@ weight: 1090
 | Single quote right  |  ’   | {#Alt Gr} + {#Shift} + {#N} |
 | German guillemets left      |  »   |            {#Alt Gr} + {#Y} |
 | German guillemets right     |  «   |            {#Alt Gr} + {#X} |
-| Half gr. guillemet left  |  ›   | {#Alt Gr} + {#Shift} + {#Y} |
-| Half gr. guillemet right |  ‹   | {#Alt Gr} + {#Shift} + {#X} |
+| German guillemet left  |  ›   | {#Alt Gr} + {#Shift} + {#Y} |
+| German guillemet right |  ‹   | {#Alt Gr} + {#Shift} + {#X} |
 | „Gänsefüßchen“ left          |  „   |            {#Alt Gr} + {#V} |
 | „Gänsefüßchen“ right           |  “   |            {#Alt Gr} + {#B} |
 | Single „Gänsefüßchen“ left         |  ‚   | {#Alt Gr} + {#Shift} + {#V} |

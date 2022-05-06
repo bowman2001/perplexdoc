@@ -19,11 +19,9 @@ To enable the production of secure websites using a workflow, which is itself as
 
 The _Hugo project_ has outlined its [security model][hugo] in the documentation.
 
-Hugo allows to call a few often used external pieces of software at runtime by default. When we want to include external content as a module for example, we need to enable the use of a separately installed _Go binary_ for this mechanism. Like with every other _Hugo_ theme, websites generated with _Perplex_ may include external content, but this project does not.
+Hugo allows by default to call a few often used binaries at runtime. When we want to include external content as a module for example, we need to enable the use of _Go_. Like with every other _Hugo_ theme, websites generated with _Perplex_ may include external content, but this project does not.
 
-All the other
-
-The [security configuration][secyaml]
+All the other default binaries are also commented out in the [security configuration][secyaml] for this project, because _Perplex_ templates do not call them.
 
 [hugo]: https://gohugo.io/about/security-model "Hugo’s Security Model"
 [secyaml]: {{< relref "securityyaml" >}}

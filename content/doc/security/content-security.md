@@ -16,7 +16,7 @@ menu:
 When we start to include content from unknown sources, we need to worry about the remaining possibilities to inject malicious code in Markdown files.
 {.p-lead} <!--more-->
 
-The possibility to extend _Markdown_ with HTML attributes and even with raw HTML may be purely beneficial{^\*} as long as we have full control of the content. But as soon as we include external content, we have to consider destructive intentions. The following suggestions should help to thwart them.  
+The possibility to extend _Markdown_ with HTML attributes and even with raw HTML may be purely beneficial{^\*} as long as we have full control of the content. But as soon as we include external content, we have to consider destructive intentions. The following suggestions should help to thwart them.
 
 {{< sidenote star=1 up=5 >}}
 _Hugo_ provides the parameter [`unsafe`]({{< relref "markup#24" >}}) for _Goldmark_ to accomplish this.
@@ -36,8 +36,18 @@ _Hugo_ offers two ways to extend _Markdown_ more securely. By injecting [HTML at
 _Hugo_ can also render _inline shortcodes_, which every content editor could program as she or he pleases. Because they allow basically the same kind of attacks as raw HTML, they are [prohibited by default]({{< relref "securityyaml#5" >}}).
 {{< /sidenote >}}
 
-It’s still possible to inject malicious code via HTML attributes, but those attempts are easier to spot than raw HTML attacks. Correct attributes are short and constrained to simple syntax – deviations from this pattern are immediately suspicious.
+It’s still theoretically possible to inject malicious code via HTML attributes. But _Hugo_ discards event attributes and other more complicated attempts are definitely easier to spot than raw HTML attacks. Correct attributes are short and constrained to simple syntax – deviations are immediately suspicious.
 
-_Perplex_ offers many attributes to achieve different styles and encourages to use them. Their remaining vulnerability could be contained, if only trusted editors would be allowed to apply them.
+_Perplex_ offers many attributes to achieve different styles and encourages to use them. One way to contain their remaining vulnerability could be to allow only trusted editors to apply them.
 
-## TODO: Code fences vs. highlight shortcode
+## Maximum security
+
+When you need the tightest security _Hugo_ can offer for your content, you need to let got of attributes and disable them completely.
+
+Blocks,
+Headings (title)
+: The attributes for these two element groups can be disabled in the `goldmark.parser.attribute` section of the configuration file [markup.yaml]({{< relref "markup#19">}}).
+
+Fenced code blocks
+: Besides a few special highlighting attributes _Hugo_ also allows to add custom attributes to fenced code blocks. To disable this possibility, you need to disable their automatic highlighting in the section `goldmark.highlight` of [markup.yaml]({{< relref "markup#32">}}). To use _Hugo’s_ internal highlighting you can alternatively use the shortcode `{{</* highlight */>}}`, which offers the same options as code fences with a slightly different syntax.
+{.dl-loose}

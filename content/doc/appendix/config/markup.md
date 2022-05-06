@@ -11,6 +11,9 @@ title: markup.yaml
 weight: 1015
 ---
 
+Configuration file in the folder `config/_default`:
+{.p-lead} <!--more-->
+
 {{< highlight yaml "linenos=true" >}}
 {{< readfile file="/config/_default/markup.yaml" >}}
 {{< /highlight >}}

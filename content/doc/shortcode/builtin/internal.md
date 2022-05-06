@@ -11,19 +11,19 @@ title: Internal Shortcodes
 weight: 580
 ---
 
-## Resolve internal URLs
+## Resolve internal URLs {#relref}
 
-To refer to a page on our site we can include the URL into a [link]({{< relref "link" >}}) like any other. But it's often long and when our content grows and evolves, the path may change. Therefore, we better leave the resolution to _Hugo_ by using an unambiguous name for the page.{^*}
+To refer to a page on our site we can include the URL into a [link]({{< relref "link" >}}) like any other. But it's often long and when our content grows and evolves, the path may change. Therefore, we better leave the resolution to _Hugo_ by using an unambiguous name for the page.
 
-{{< sidenote star=1 up=9 >}}
-If the name of a page is not unique, we still need to fill in the full path.
+{{< sidenote >}}
+If the name of a page is not unique, we still need to fill in the complete relative path. The advantage of `relref` then is, that _Hugo_ checks the existence of the file.
 {{< /sidenote >}}
 
 To replace unique names with URLs, _Hugo_ provides `relref` or `ref`. Internal links with these shortcodes look like
 
 ```md
 [Link]({{</* relref "link" */>}})
-[Introcuction]({{</* ref "intro" */>}})
+[Introduction]({{</* ref "intro" */>}})
 ```
 
 `relref`
@@ -39,7 +39,7 @@ _Markdown_ contains no element, that gets rendered into a figure, because this i
 
 _Perplex_ does override the built-in `figure` shortcode with its own, but the variables are kept in place. There are no adjustments necessary. Additional options are presented on the page for the theme [`figure`]({{< relref "figure" >}})
 
-## `highlight` Code
+## `highlight` Code {#highlight}
 
 The highlight shortcode is complex and may use some additional CSS files.
 
@@ -54,7 +54,7 @@ The highlight shortcode is complex and may use some additional CSS files.
 </section>
 {{< /highlight >}}
 
-### Get parameters with `param`
+### Get parameters with `param` {#param}
 
 We can show a configuration parameter in the content with this shortcode. Their values always get converted to a string:
 
