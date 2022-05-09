@@ -1,7 +1,7 @@
 ### Hugo template
 # Generated files by hugo
 /public/
-/resources/_gen/
+/resources/
 /.idea
 /.vscode
 .hugo_build.lock

@@ -10,7 +10,6 @@ menu:
 subtitle: false
 title: privacy.yaml
 weight: 1035
-draft: true
 ---
 
 {{< highlight yaml "linenos=true" >}}

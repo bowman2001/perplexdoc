@@ -9,7 +9,6 @@ menu:
     pre: image
 title: 'imaging.yaml'
 weight: 1030
-draft: true
 ---
 
 

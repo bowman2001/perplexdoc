@@ -9,7 +9,6 @@ menu:
     pre: home
 title: 'config.yaml'
 weight: 1010
-draft: true
 ---
 
 {{< highlight yaml "linenos=true" >}}
