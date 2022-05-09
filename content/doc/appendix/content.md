@@ -9,12 +9,13 @@ menu:
     pre: find_replace
 title: 'content.html'
 weight: 1055
+draft: true
 ---
 
 Inspired from a suggestion by [Joe Mooring](https://discourse.gohugo.io/u/jmooring/summary) at the [_Hugo_ community](https://discourse.gohugo.io).
 
 {{< highlight html "linenos=true" >}}
-{{< readfile file="/themes/perplex/layouts/partials/content.html" >}}
+{{< readfile file="/assets/perplex/layouts/partials/content.html" >}}
 {{< /highlight >}}
 
 {{< sidenote up=29 >}}

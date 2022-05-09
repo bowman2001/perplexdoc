@@ -10,6 +10,7 @@ menu:
     name: security.yaml
     parent: config
     pre: security
+draft: true
 ---
 
 The configuration file contains the security settings for the Perplex Documentation.

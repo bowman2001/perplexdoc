@@ -9,6 +9,7 @@ menu:
     pre: star_rate
 title: markup.yaml
 weight: 1015
+draft: true
 ---
 
 Configuration file in the folder `config/_default`:

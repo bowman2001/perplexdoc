@@ -10,6 +10,7 @@ menu:
     pre: toggle_on
 title: Project Configuration
 weight: 1005
+draft: true
 ---
 
 The following pages include the configuration files for this documentation and example site. The sections therein do not include the main section identifier as they do in the Hugo documentation. The names of the files are these identifiers, except for `config.yaml`.
