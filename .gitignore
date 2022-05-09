@@ -5,8 +5,3 @@
 /.idea
 /.vscode
 .hugo_build.lock
-
-# Executable may be added to repository
-hugo.exe
-hugo.darwin
-hugo.linux
