@@ -2,13 +2,15 @@
 
 # Documentation for _Perplex_
 
-**_Perplex_ is a typographic theme for [_Hugo_](https://gohugo.io).**
+**[_Perplex_](https://github.com/bowman2001/perplex) is a typographic theme for [_Hugo_](https://gohugo.io).**
 
-It’s online for testing purposes: <https://perplex.desider.at>
+It’s online for testing purposes <https://perplex.desider.at> and hasn’t been released properly yet.
+
+The theme is included in this project as hugo module from <https://github.com/bowman2001/perplex>. But you don’t need _Git_ nor a _Golang environment_, because a recent copy is available in the `_vendor` path.
 
 ## Work in progress
+- The start page is unfinished. If you want to have a look, you best begin with the extensive [documentation section](https://perplex.desider.at/doc) 
 
-- There’s no start page. If you want to have a look, begin with the [documentation section](https://perplex.desider.at/doc) 
-- The layout still contains bugs
-- There is a lot of content, but some later pages are still unfinished.
-- The theme is available in the `themes` folder as usual, but hasn’t been released properly yet.
+- The layout still contains bugs.
+
+- There is a lot of content in the documentation, but some pages are unfinished or need an update.
