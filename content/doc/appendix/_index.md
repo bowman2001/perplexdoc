@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-09-10T23:05:24+02:00"
-description: Additional Material
+description: Supplements
 menu:
   doc:
     identifier: appendix

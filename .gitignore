@@ -4,4 +4,5 @@
 /resources/
 /.idea
 /.vscode
+/.run
 .hugo_build.lock

@@ -24,7 +24,7 @@ The [Hugo source](https://github.com/gohugoio/hugo) can be compiled on every mac
 
 ## Getting started
 
-The [Hugo documentation site](https://gohugo.io/documentation/) addresses developers mostly and offers very detailed information. With a fully functional theme only a small amount of this knowledge is necessary to produce a professional static website.
+The [Hugo documentation site](https://gohugo.io/documentation/) addresses developers mostly and offers very detailed information. With a good theme only a small amount of this knowledge is necessary to produce a professional static website.
 
 ### Install Hugo
 
