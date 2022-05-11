@@ -32,57 +32,59 @@ Please read the [detailed installation instructions](https://gohugo.io/getting-s
 
 ### Use Perplex
 
-When you are just getting acquainted with _Hugo_ and _Markdown_ or when you are curious about the source for this site, you should download this documentation project as an example. It’s available on [_GitHub_]({{< param sourceURL >}}) and ships with all the files for the documentation, the _Perplex_ theme and a few examples for blog postings and simple pages.
+When you are just getting acquainted with _Hugo_ and _Markdown_ or when you are curious about the source for this site, you can download this documentation project as an example. It’s available on [_GitHub_]({{< param sourceURL >}}) and ships with all the files for the documentation and a few examples for blog postings and simple pages.
 
-#### This documentation project
+#### The documentation project
 
-The folders of the example site follow the Hugo convention for root directories.
+The folders for the project site contain only a minimal set of standard _Hugo_ folders.
 
 ```sh {.right .lh15 .hide-mobile}
+├── assets
+├── config
+└── content
+```
+
+`assets`
+: contains site wide resources.
+
+`config`
+: contains the configuration files for this project.
+
+`content`
+: contains all the _Markdown_ files and page specific resources like images.
+{.dl-loose}
+
+The additional `_vendor` folder includes a local copy of the [_Perplex_ theme]({{< param themeURL >}}).
+
+#### Start from scratch
+
+We create an empty new project with a command like
+
+```sh {.left}
+hugo new site mysite
+```
+
+It creates the directory `mysite` and the full standard folder structure.
+
+```sh {.right .lh15 .up-8}
 ├── archetypes
 ├── assets
 ├── config
 ├── content
-├── themes
-└── static
+├── layout
+├── static
+└── themes
 ```
 
-`archetypes`
-: includes templates for creating new pages. You better don’t touch them unless your confident.
+When we use a _Hugo_ theme, it ships with _archetypes_ and _layout_ templates and the correspondent folders in the project root are only meant for modified templates, which may override the ones from the theme. 
 
-`assets`
-: is the place for site wide resources.
+The _themes_ folder can hold as many themes as we like and there are three ways to retrieve a public theme from a _Git_ repository provider:
 
-`config`
-: contains the configuration files for the project.
+1. Download and unzip its compressed file package in the `themes` folder. This is the fastest way and the best option for a try-out.
 
-`content`
-: contains all the _Markdown_ files and page specific resources like images.
+2. Clone it with [_Git_](https://git-scm.com/) into the `themes` folder. If you want to version 
 
-`static`
-: _Hugo_ copies every directory and file in this folder without processing into the root of the generated website.
-
-`themes`
-: contains the _Perplex_ theme.
-{.dl-loose}
-
-#### Start from scratch
-
-When you are more familiar with _Hugo_, you start a new project with a command like
-
-```sh {.left}
-hugo new site my-site
-```
-
-This creates the directory `my-site` and a standard folder structure. Only a minimal set of template files without any styling is included in the layout folder. (TODO: delete it?) You don't need them, if you are using a theme.
-
-There are three ways to retrieve this and other themes from [GitHub](https://github.com):
-
-1. Download and unzip a compressed file package in the `themes` folder. This is the fastest way and the best option for starters.
-
-2. Clone it with [_Git_](https://git-scm.com/) into the `themes` folder. _Git_ is _the_ version control system for collaborating on software projects.
-
-3. Import the _Perplex_ repository as a Hugo module. You need to have a recent [Go environment](https://go.dev), because _Hugo_ modules rely on _Go_  modules.  The Hugo docs provide a guide to this powerful [feature](https://gohugo.io/hugo-modules).
+3. Import the _Perplex_ repository as a Hugo module. You need to have a recent [Go environment](https://go.dev) – _Hugo_ modules rely on _Go_ modules. The Hugo docs provide a guide to this powerful [feature](https://gohugo.io/hugo-modules). This project imports _Perplex_ in the configuration file [`module.yaml`]().
 
 {{< sidenote up=11 >}}
 As long as you don't intend to use modules also for other parts of your project, this workflow may be over-complicated.

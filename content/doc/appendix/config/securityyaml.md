@@ -1,6 +1,6 @@
 ---
 title: security.yaml
-description: Page description placeholder
+description: Hugo runtime Security Configuration
 subtitle: false
 date: 2022-01-25T14:09:06+01:00 
 weight: 1040
@@ -12,7 +12,7 @@ menu:
     pre: security
 ---
 
-The configuration file contains the security settings for the Perplex Documentation.
+The configuration file contains the security settings for this project. 
 {.p-lead} <!--more-->
 
 {{< highlight yaml "linenos=true" >}}

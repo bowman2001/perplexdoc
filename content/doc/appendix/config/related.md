@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-09-20T10:34:38+02:00"
-description: Configuration section for related content
+description: Configuration for Related Content
 menu:
   doc:
     name: related.yaml

@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-09-16T19:41:23+02:00"
-description: privacy section of the configuration
+description: Privacy Section of the Configuration
 menu:
   doc:
     name: privacy.yaml
