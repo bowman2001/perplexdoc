@@ -24,7 +24,7 @@ The [Hugo source](https://github.com/gohugoio/hugo) can be compiled on every mac
 
 ## Getting started
 
-The [Hugo documentation site](https://gohugo.io/documentation/) addresses developers mostly and offers very detailed information. With a good theme only a small amount of this knowledge is necessary to produce a professional static website.
+The [Hugo documentation site][hugodoc] addresses developers mostly and offers very detailed information. With a good theme only a small amount of this knowledge is necessary to produce a professional static website.
 
 ### Install Hugo
 
@@ -76,15 +76,15 @@ It creates the directory `mysite` and the full standard folder structure.
 └── themes
 ```
 
-When we use a _Hugo_ theme, it ships with _archetypes_ and _layout_ templates and the correspondent folders in the project root are only meant for modified templates, which may override the ones from the theme. 
+When we use a _Hugo_ theme, it ships with _archetypes_ and _layout_ templates and the correspondent folders in the project root are only meant for modified templates, which may override the ones from the theme.
 
 The _themes_ folder can hold as many themes as we like and there are three ways to retrieve a public theme from a _Git_ repository provider:
 
 1. Download and unzip its compressed file package in the `themes` folder. This is the fastest way and the best option for a try-out.
 
-2. Clone it with [_Git_](https://git-scm.com/) into the `themes` folder. If you want to version 
+2. Clone it with [_Git_](https://git-scm.com/) into the `themes` folder. If you want to version
 
-3. Import the _Perplex_ repository as a Hugo module. You need to have a recent [Go environment](https://go.dev) – _Hugo_ modules rely on _Go_ modules. The Hugo docs provide a guide to this powerful [feature](https://gohugo.io/hugo-modules). This project imports _Perplex_ in the configuration file [`module.yaml`]().
+3. Import the _Perplex_ repository as a Hugo module. You need to have a recent [Go environment](https://go.dev) – _Hugo_ modules rely on _Go_ modules. The Hugo docs provide a guide to this powerful [feature](https://gohugo.io/hugo-modules). This project imports _Perplex_ in the configuration file [`module.yaml`]({{< relref "moduleyaml.md" >}}).
 
 {{< sidenote up=11 >}}
 As long as you don't intend to use modules also for other parts of your project, this workflow may be over-complicated.
@@ -283,4 +283,6 @@ The configuration files for sections don't include the section identifier anymor
 
 ## Having trouble with _Hugo_?
 
-When you encounter problems specific to _Hugo_, visit the [Hugo community](https://discourse.gohugo.io) for support. Please search the forum archive first, because most likely your problem has already been solved. When you need to start a new topic, please read the guidelines _How to Request Help_ at the top of the site, before you do.
+When you encounter problems with _Hugo_ and don’t find an answer in its [documentation][hugodoc], the [Hugo community](https://discourse.gohugo.io) can probably support you. Please search the forum archive, because most likely your problem has already been solved. Before you start a new topic, please read the guidelines _How to Request Help_ at the top of the site first.
+
+[hugodoc]: https://gohugo.io/documentation

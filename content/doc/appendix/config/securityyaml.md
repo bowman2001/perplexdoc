@@ -12,7 +12,7 @@ menu:
     pre: security
 ---
 
-The configuration file contains the security settings for this project. 
+The configuration file contains the security settings for this project.
 {.p-lead} <!--more-->
 
 {{< highlight yaml "linenos=true" >}}

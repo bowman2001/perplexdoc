@@ -6,7 +6,7 @@
 
 It’s online for testing purposes <https://perplex.desider.at> and hasn’t been released properly yet.
 
-The theme is included in this project as hugo module from <https://github.com/bowman2001/perplex>. But you don’t need _Git_ nor a _Golang environment_, because a recent copy is available in the `_vendor` path.
+The theme is included in this project as hugo module from <https://github.com/bowman2001/perplex>. But you don’t need _Git_ nor a _Golang environment_, because there is a recent copy available in the `_vendor` path.
 
 ## Work in progress
 

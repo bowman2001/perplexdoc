@@ -43,7 +43,7 @@ To resolve their annoying incompatibilities and to create a dependable syntax, J
 _Perplex_ styles HTML, which is generated from extended _CommonMark_ by _Hugo’s_ default renderer [_Goldmark_][gmark]. Three extensions — the [_definition list_]({{< relref "definition-list" >}}), the [_footnote_]({{< relref "footnotes" >}}) and the [_typographer_]({{< relref "typographer" >}}) — have been adopted from [_PHP Markdown Extra_][phpmex]. Based on _CommonMark_, [_GitHub_](https://github.com) introduced _**G**itHub **F**lavored **M**arkdown (GFM)_ with the extensions [_table_]({{< relref "table" >}}), the [_task-list_]({{< relref "task-list">}}), [_strikethrough_]({{< relref "delins">}}) and _linkify_. They are defined in a [new specification][gfmspec] and are all available in _Goldmark_.
 
 {{< sidenote up=20 >}}
-**Blackfriday** is not fully _CommonMark_-compliant and has been deprecated by _Hugo_. _Black&shy;fri&shy;day_ generated HTML may be styled correctly most of the time in _Perplex_. But if you want to rely on _Perplex_, I strongly suggest switching to _Goldmark_.
+The **Blackfriday** renderer is not fully _CommonMark_-compliant. _Black&shy;fri&shy;day_ generated HTML may be styled correctly most of the time by _Perplex_. But if you want to rely on _Perplex_, I strongly suggest switching to _Goldmark_.
 {{< /sidenote >}}
 
 Further extensions may join in the future, but probably only a few if any, because simplicity remains essential for _Markdown_.
