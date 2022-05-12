@@ -10,7 +10,7 @@ menu:
     pre: dashboard
 subtitle: false
 title: Layout
-weight: 5
+weight: 7
 ---
 
 **Perplex** provides a typographic layout for your **Markdown** content, which adapts responsively to nearly every modern screen size. It’s designed for optimal legibility down to a view-port of 360 Pixels width.

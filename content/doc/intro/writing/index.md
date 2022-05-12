@@ -27,10 +27,10 @@ resources:
     attrlink: https://unsplash.com/photos/JJMoAiVl9jA
 ---
 
-**Markdown** has become the favored markup language for structuring text files. With good cause: Its syntax is easy and yet quite comprehensive.
+**Markdown** has become the favored markup language for structuring text files. With good cause: Its syntax is intuitive and yet quite comprehensive.
 {.p-lead} <!--more-->
 
-_Markdown_ files are plain text files with the suffix `.md`{^\*}.  They contain only a small set of simple ASCII signs as markup, which keeps them easy to read and to work with. After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors emerged.
+_Markdown_ consists of plain text marked up with a small set of ASCII signs. Its designed to be read and to work with as easily as possible, the files usually get the suffix `.md`. After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors emerged.
 
 {{< sidenote star=1 up=8 >}}
 The suffixes `.mdown` and `.markdown` also indicate _Markdown_, but they are rarely used.
@@ -69,15 +69,17 @@ Two basic _Markdown_ elements are continuously creating confusion, because they 
     2. Treat hard line wraps as hard line wraps like _GFM_.
 {.dl-loose}
 
-My following suggestions for the handling of these elements are short. Their issues are discussed in more detail on their pages.
+[^TODO]: Explain this continuation indent for description lists.
+
+The following suggestions for these elements are short. Their issues are discussed in more detail on their pages.
 
 [^1]: The corresponding  `<img/>` tag is an HTML inline element and needs an enclosing block element to become valid HTML 5.
 
 ### How to include images?
 
-{{< figure splash />}}
-
 There is one image element in _Markdown_ for embedding an image into a block element and no genuine element for a self-contained image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. _Perplex_ provides the shortcode [_figure_]({{< relref "doc/shortcode/builtin/internal" >}}) for this purpose.
+
+{{< figure splash />}}
 
 To surround every self-contained _Markdown_ image element with a paragraph — like _CommonMark_ proposes and _Hugo_ does — leads to a simple working solution, when the layout treats all images alike.
 
