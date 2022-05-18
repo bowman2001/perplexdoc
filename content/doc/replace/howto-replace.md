@@ -54,7 +54,7 @@ _Perplex_ applies the following replacements and styles them like the following 
 | Insertion   | +insert | {+insert} |
 
 {{< sidenote up=16 >}}
-These codes are substituted with the help of short regular expressions in the layout partial [`content.html`]({{< relref "content" >}}). Every call of `.Content` in the _Markdown_ templates is replaced with this partial. Other _Hugo_ themes could use it as well.  
+These codes are substituted with the help of short regular expressions in the layout template [`content.html`]({{< relref "content" >}}). Every call of `.Content` in the _Markdown_ templates is replaced with this partial. Other _Hugo_ themes could use it as well.  
 {{< /sidenote >}}
 
 [^todo]:| Break       | /       | break{/}here |

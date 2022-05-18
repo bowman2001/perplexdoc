@@ -6,11 +6,11 @@ featImg: jon-tyson-6_SA8qzmzx8-unsplash.jpg
 menu:
   doc:
     identifier: intro
-    name: Full Introduction
+    name: Introduction
     pre: lightbulb
 subtitle: false
 title: Introduction
-weight: 2
+weight: 3
 ---
 
 **Perplex** has been designed to publish information about software. It provides templates for a documentation with up to three section levels, a blog, longer articles and simple pages.

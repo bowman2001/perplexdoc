@@ -82,15 +82,15 @@ The _themes_ folder can hold as many themes as we like and there are three ways 
 
 1. Download and unzip its compressed file package in the `themes` folder. This is the fastest way and the best option for a try-out.
 
-2. Clone it with [_Git_](https://git-scm.com/) into the `themes` folder. If you want to version
+2. Clone it with [_Git_](https://git-scm.com/) into the `themes` folder. If you already are using _Git_ for your project, you probably should clone every theme as a submodule. This is also the best workflow to contribute to the development of a _Hugo_ theme.  
 
-3. Import the _Perplex_ repository as a Hugo module. You need to have a recent [Go environment](https://go.dev) – _Hugo_ modules rely on _Go_ modules. The Hugo docs provide a guide to this powerful [feature](https://gohugo.io/hugo-modules). This project imports _Perplex_ in the configuration file [`module.yaml`]({{< relref "moduleyaml.md" >}}).
+3. Import the _Perplex_ repository as a Hugo module. You need to have a recent [Go environment](https://go.dev) – _Hugo_ modules rely on _Go_ modules. The Hugo docs provide a [guide to this powerful feature](https://gohugo.io/hugo-modules). Once set up, _Hugo modules_ are the easiest way to update themes or other external components of your _Hugo_ configuration. There is an example for the configuration in the file [`module.yaml`]({{< relref "moduleyaml.md" >}}), because this project imports the theme as a module.
 
-{{< sidenote up=11 >}}
-As long as you don't intend to use modules also for other parts of your project, this workflow may be over-complicated.
+{{< sidenote up=20 >}}
+**This project** doesn’t need a _Go environment_, because it has a local copy (`_vendor`). But if you want to update the theme, you need to install _Go_ and apply the `hugo mod ...` commands.
 {{< /sidenote >}}
 
-Whatever option you choose, you need to tell Hugo to use the theme in the [config file]({{< relref "configyaml.md#6" >}}).
+When you chose option 1. or 2., you need to tell Hugo to use the theme in the [config file]({{< relref "configyaml.md#6" >}}). With the module you don’t.
 
 ## Run Hugo locally {#server-mode}
 
