@@ -97,44 +97,44 @@ When we rely on soft line wrapping everyone can read and edit the _Markdown_ usi
 **GitHub** decided to treat all hard wraps as such on their platform a short while ago.
 {{< /sidenote >}}
 
-_Hugo_ can handle both ways perfectly. Which rule our _Markdown_ follows does only affect our editing experience and has no effect on the resulting pages.
+_Hugo_ can handle both ways perfectly, the decision only affects our editing experience.
 
 #### How to break lines?
 
-Our options here are tied to the way we wrap the _Markdown_.
+Our options here are tied to the way we wrap _Markdown_ lines.
 
 With Hard Wraps
-: When we us hard line wraps, to manually limit our _Markdown_ line length, we can’t use them to indicate _intentional_ line breaks inside of text blocks anymore. We need the special syntax _CommonMark_ provides.
+: When we us hard line wraps, to manually limit the line length, we can’t use them to indicate _intentional_ line breaks inside of text blocks anymore. We need the special syntax _CommonMark_ provides.
 
 With Soft Wraps
 : If the lines are not wrapped, a line break is the intuitive way to place an _intentional_ one.
 {.dl-loose}
 
-See the page [Line Break][lb] for the configuration setting and the question of _CommonMark_-compliance.
+See the page [Line Break][lb] for the configuration and the question of _CommonMark_-compliance.
 
 ## Special characters
 All available characters—more general _glyphs_—can be used in _Markdown_, either directly as _Unicode_ or as _HTML entities_ (like `&para;` for &para;). The markup characters need to be escaped by a preceding backslash `\` to get treated literally by the _Markdown_ renderer. See [Special Characters]({{< relref "specialchar#html-entities" >}}) for this topic.
 
 {{< sidenote up=14 >}}
-You can still get into trouble with glyphs, which are missing in the fonts for your website. But this is a general web-font issue independent of _Markdown_ rendering.
+You can still get into trouble with glyphs, which are missing in the fonts of your website. But this is a general issue independent of _Markdown_ rendering.
 {{< /sidenote >}}
 
 ## File Encoding
-The _Markdown_ syntax works with every encoding. But almost all modern websites stick to the de facto standard _UTF-8_ and _Perplex_ does, too. Your _Markdown_ files should have this encoding and if you never thought about it before, they probably already do. This also holds for other text resources you fetch data from.
+The _Markdown_ syntax works with every encoding. But almost all modern websites stick to the de facto standard _UTF-8_ and _Perplex_ does, too. Your _Markdown_ files should be encoded in _UTF-8_ and if you never thought about it before, they probably already are. This also holds for other text resources you fetch data from.
 
 {{< sidenote up=17 >}}
 When you import strings from a JSON-file with _UTF-16_ encoding for example, the encoding outside the common ASCII set has a different meaning and leads to false and probably strange glyphs, when you use non-ASCII characters.
 {{< /sidenote >}}
 
 ## Markdown Editors
-Most programming editors and IDEs support _Markdown_ out of the box or provide plugins. There’s no need to search for a new editor, if you are already familiar with one.
+Most programming editors and IDEs support _Markdown_ out of the box or provide plugins. There’s no need to search for a new editor, if you are already satisfied with yours.
 
-Some special editors are designed exclusively for authoring _Markdown_. They usually offer a graphical user interface and other convenient features. But none of them is a perfect match for writing _Markdown_ for _Hugo_ and _Perplex_, because they don't support all kinds of attributes and don’t know about _Hugo_ shortcodes — as far as I know. They are dealing gracefully with these elements most of the time, but occasionally they don't.
+Some special editors are designed exclusively for authoring _Markdown_. They usually offer a graphical user interface and other convenient features. But none of them is a perfect match for writing _Markdown_ for _Hugo_ and _Perplex_, because they don’t support all kinds of attributes and can’t handle _Hugo_ shortcodes — as far as I know. They are dealing gracefully with these elements most of the time, but occasionally they don't.
 
 Many of these editors offer a convenient separate _preview window_. With _Hugo_ you have an even better option: When you run it as a server on your local computer, it will render your Markdown and deliver it to your browser instantly (see [Using Hugo]({{< relref "hugo#server-mode"  >}})). My personal solution is either an IDE or a programming editor in conjunction with _Hugo’s_ server mode.
 
 ## Markdown Linting
-_CommonMark_ is permissive to many small variations in the markup rules. To ensure a certain markup style in a team or a bigger project, we may use a linter. The node package [_Markdownlint_][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing. For this project the default settings are modified in the configuration file [`.markdownlint.yaml`][mlintconf] at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.  
+_CommonMark_ is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [_Markdownlint_][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing. For this project the default settings are modified in the configuration file [`.markdownlint.yaml`][mlintconf] at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.  
 
 [omd]: https://daringfireball.net/projects/markdown/ "Markdown project site by John Gruber"
 [cmark]: https://CommonMark.org "CommonMark project site"
