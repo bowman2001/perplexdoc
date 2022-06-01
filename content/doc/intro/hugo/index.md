@@ -13,7 +13,7 @@ title: Hugo
 weight: 15
 ---
 
-The world’s fastest **S**tatic **S**ite **G**enerator (SSG) is steadily gaining traction on its way to the first major release. The monolith **Hugo** provides a very reliable production environment and helps to build fast and secure websites.
+The world’s fastest **S**tatic **S**ite **G**enerator (SSG) is steadily gaining traction. The monolith **Hugo** provides a reliable production environment and allows to build fast and secure websites.
 {.p-lead} <!--more-->
 
 [_Hugo_](https://gohugo.io) is a command line tool for _macOS_, _Windows_, _Linux_ and _BSD_ derivatives. Binaries for these operating systems and some containers are usually available within a day or a few after every release.
@@ -24,7 +24,7 @@ The [Hugo source](https://github.com/gohugoio/hugo) can be compiled on every mac
 
 ## Getting started
 
-The [Hugo documentation site][hugodoc] addresses developers mostly and offers very detailed information. With a good theme only a small amount of this knowledge is necessary to produce a professional static website.
+The [Hugo documentation site][hugodoc] addresses developers mostly and offers very detailed information. With this theme only a small amount of the knowledge is necessary to produce a professional static website.
 
 ### Install Hugo
 
