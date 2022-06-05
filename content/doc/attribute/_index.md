@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-08-31T20:26:34+02:00"
-description: Inject attributes into the generated HTML
+description: Inject HTML attributes into Markdown
 menu:
   doc:
     identifier: attributes

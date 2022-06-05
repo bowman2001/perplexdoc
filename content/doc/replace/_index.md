@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-08-19T12:39:30+02:00"
-description: Tiny codes for missing inline HTML elements
+description: Additional inline HTML elements
 featImg: brett-jordan-DDupbpu4MS4-unsplash.jpg
 menu:
   doc:
