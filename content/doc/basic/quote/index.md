@@ -14,7 +14,7 @@ weight: 120
 ---
 
 Quoting is consciously repeating thoughts from another person, which yours are related to. When we reply to email, many programs append the previous mails automatically. These are just copies cluttering our conversations.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 A single word or short piece of text is usually quoted in the running text and is called an _inline quote_. A longer text segment of three or more lines is usually quoted as separate block and called a _blockquote_.
 

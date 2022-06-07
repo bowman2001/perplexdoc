@@ -14,15 +14,17 @@ menu:
 ---
 
 The title section has two different layout styles depending on the function and the place of a page in the site hierarchy.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 ## List and top-level page
+
 1. Header rule
 2. Page title
 3. Optional subtitle
 {.col2}
 
 ## Single content page
+
 1. Meta content
 2. First date published
 3. Page Title

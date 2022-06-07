@@ -12,7 +12,7 @@ weight: 1015
 ---
 
 Configuration file in the folder `config/_default`:
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 {{< highlight yaml "linenos=true" >}}
 {{< readfile file="/config/_default/markup.yaml" >}}

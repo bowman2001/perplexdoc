@@ -14,7 +14,7 @@ weight: 105
 ---
 
 Headings introduce and order the segments on a page. On a website with many pages, each level should have similar importance.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 ## Syntax
 

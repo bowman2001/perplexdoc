@@ -14,7 +14,7 @@ draft: true
 ---
 
 Except for the main menu, all navigational elements for _Perplex_ are generated from a few parameters in the front-matter of the _Markdown_ content files.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 ## Main Menu
 

@@ -14,7 +14,7 @@ weight: 15
 ---
 
 The world’s fastest _**S**tatic **S**ite **G**enerator (SSG)_ is steadily gaining traction. _Hugo_ provides a reliable production environment and allows to build fast and secure websites.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 [_Hugo_](https://gohugo.io) is a command line tool for _macOS_, _Windows_, _Linux_ and _BSD_ derivatives. Binaries for most operating systems and some containers are usually available within a day or a few after every release.
 

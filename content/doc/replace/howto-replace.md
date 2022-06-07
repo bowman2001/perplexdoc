@@ -15,7 +15,7 @@ menu:
 ---
 
 Place your lead paragraph here. If you don't need special styling, remove the attribute. The _more-tag_ marks the paragraph as the content _summary_ for this page.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 ## Syntax
 

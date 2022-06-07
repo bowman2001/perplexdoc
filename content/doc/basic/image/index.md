@@ -30,7 +30,7 @@ weight: 155
 ---
 
 With **Perplex**, Markdown images should always be embedded in a text block. Self-contained images are the domain of the [figure]({{< relref "figure" >}}) shortcode.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 ## Syntax
 

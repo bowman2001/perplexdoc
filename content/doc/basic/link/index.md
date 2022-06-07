@@ -13,7 +13,7 @@ weight: 150
 ---
 
 Internet references or short links are the binding fabric of the web. Markdown encourages their usage by providing simple markup options.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 The easiest way to create a link is to write the reference directly into the text and let it be handled _automatically_ by Hugo. If we want to _name_ a link, we need to connect the name with the reference.
 

@@ -14,7 +14,7 @@ weight: 220
 ---
 
 Footnotes are placed at the bottom of the page. They are best suited for technical information, which is not important for the intended meaning of the text.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 Footnotes are indispensable for scientific documents or more rigorous essays. They reference sources or elaborate on details. Because they are placed at the end of the content, the footnote marker contains a link allowing to jump to the note. And the note contains a link back to the marker.
 

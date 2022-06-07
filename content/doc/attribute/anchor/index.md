@@ -14,4 +14,4 @@ weight: 320
 ---
 
 _Hugo_ already generates HTML anchors for our _Markdown_ headings, which let us reach them directly through the table of contents or another reference. And it's easy to manually add anchors to any block element with attributes.  
-{.p-lead} <!-- more -->
+{.p-first} <!-- more -->

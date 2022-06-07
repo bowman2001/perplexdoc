@@ -13,7 +13,7 @@ menu:
 ---
 
 The configuration file contains the security settings for this project.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 {{< highlight yaml "linenos=true" >}}
 {{< readfile file="/config/_default/security.yaml" >}}

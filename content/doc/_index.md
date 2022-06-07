@@ -14,7 +14,7 @@ weight: 1
 ---
 
 The _Markdown_ files for the following pages are licensed as **Creative Commons**. They are available on [GitHub][doc].
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 ## Chapters
 

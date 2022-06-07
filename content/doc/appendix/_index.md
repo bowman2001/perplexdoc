@@ -13,4 +13,4 @@ weight: 1000
 ---
 
 This chapter provides various files and some additional material, to illustrate details of using _Hugo_ and _Perplex_ in connection with this documentation.
-{.p-lead} <!-- more -->
+{.p-first} <!-- more -->

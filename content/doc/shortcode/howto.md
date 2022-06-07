@@ -15,7 +15,7 @@ menu:
 ---
 
 _Hugo’s_ shortcodes can inject arbitrary HTML into _Markdown_. They are [“Markdown’s hidden superpower”](https://gohugo.io).
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 ## Syntax
 

@@ -12,4 +12,4 @@ title: Columns
 weight: 330
 ---
 Intro
-{.p-lead} <!-- more -->
+{.p-first} <!-- more -->

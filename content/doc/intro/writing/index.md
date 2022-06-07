@@ -28,7 +28,7 @@ resources:
 ---
 
 _Markdown_ has become the favored markup language for structuring text files. With good cause: Its syntax is intuitive and yet quite comprehensive.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 _Markdown_ consists of plain text marked up with a small set of ASCII signs. Its designed to be read and to work with as easily as possible, the files usually get the suffix `.md`. After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors emerged.
 

@@ -14,13 +14,13 @@ weight: 108
 ---
 
 Paragraphs are essential for a website focused on textual information. Comfortable proportions and surrounding whitespace contribute to their legibility in _Perplex_. The layout of other elements is related to them.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 ## Syntax
 
 Paragraphs are text segments, which are completed by an empty line in the _Markdown_.
 
-In addition to the normal paragraph _Perplex_ offers a _lead_ paragraph — like the first one on this page — and a _big_ paragraph. These styles are applied with the [attributes]({{< relref "attribute" >}}) `{.p-lead}` and `{.p-big}`.
+In addition to the normal paragraph _Perplex_ offers a _lead_ paragraph — like the first one on this page — and a _big_ paragraph. These styles are applied with the [attributes]({{< relref "attribute" >}}) `{.p-first}` and `{.p-big}`.
 
 ## Layout
 

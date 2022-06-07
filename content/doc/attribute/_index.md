@@ -12,4 +12,4 @@ weight: 300
 ---
 
 Hugo's attribute injection is the key to most additional layout options of Perplex.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->

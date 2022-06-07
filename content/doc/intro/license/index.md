@@ -14,7 +14,7 @@ weight: 40
 ---
 
 _Perplex_ is an open source theme for the open source software [_Hugo_][hugo]. There are no other mandatory software requirements, but theme and documentation ship with external software and content. Their licensers and the licenses of their choosing are listed here, also.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 ## Perplex and its documentation
 

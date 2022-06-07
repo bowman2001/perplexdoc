@@ -58,7 +58,7 @@ resources:
 ---
 
 Because no Markdown element corresponds to the complex HTML `<figure>` tag, we need this shortcode for self-contained images.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 Hugo already provides a [`figure`]({{< relref "internal#figure" >}}) shortcode and _Perplex_ overrides it. The original syntax remains valid with **one exception**. The _Perplex_ shortcode allows to write a caption in _Markdown_ between the starting and closing tag.
 

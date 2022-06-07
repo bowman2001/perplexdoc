@@ -12,5 +12,5 @@ menu:
     pre: electrical_services
 ---
 
-You can place your own lead paragraph here before the attribute *p-lead* and the *more tag*. If you don't want to use special styling, just remove the attribute.
-{.p-lead} <!--more-->
+You can place your own lead paragraph here before the attribute _p-lead_ and the _more tag_. If you don't want to use special styling, just remove the attribute.
+{.p-first} <!--more-->

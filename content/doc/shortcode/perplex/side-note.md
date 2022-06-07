@@ -12,7 +12,7 @@ weight: 530
 ---
 
 A note adds some information, that is not vital for the meaning of a text, but may be helpful for the understanding. It may explain context or shed light on a detail.
-{.p-lead}
+{.p-first}
 
 A note should accompany but not interrupt the text. If the screen is big enough, it is placed at one of the side margins in the vincinity of its reference. On small screens it is placed inside of the text and not at the end like a footnote with mere technical information.
 

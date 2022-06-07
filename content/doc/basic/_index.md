@@ -14,6 +14,6 @@ weight: 100
 ---
 
 The [**CommonMark specification**][cmark] has laid a stable ground for **Markdown**.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 [cmark]: https://spec.CommonMark.org

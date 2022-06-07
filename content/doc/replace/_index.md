@@ -14,4 +14,4 @@ weight: 400
 ---
 
 A few HTML inline tags have no counterpart in **Goldmark**. **Perplex** offers a set of replacements to use them nonetheless.  
-{.p-lead} <!--more-->
+{.p-first} <!--more-->

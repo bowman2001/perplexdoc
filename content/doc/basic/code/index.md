@@ -14,7 +14,7 @@ weight: 135
 ---
 
 **Perplex** offers space for 80 characters of code in one content line, when the screen is big enough. If the marginal column gets included, more than 120 fit in.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 Short snippets of code are often placed _in line_ with the normal text. Long pieces of code or entire files are marked as _code blocks_.
 

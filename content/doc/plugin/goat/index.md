@@ -14,7 +14,7 @@ draft: true
 ---
 
 GoAT renders ASCII diagrams as SVG. It’s an implementation of [Markdeep’s](http://casual-effects.com/markdeep/) ASCII renderer.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 ## Syntax
 

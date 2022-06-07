@@ -14,7 +14,7 @@ weight: 260
 ---
 
 Simple ASCII punctuation characters are substituted with typographical glyphs.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 The concept for _Typographer_ follows the [Smartypants](https://daringfireball.net/projects/smartypants/) project from John Gruber, who also started Markdown. Convenient typing options should encourage the use of good typography.
 

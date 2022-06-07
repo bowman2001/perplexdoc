@@ -14,7 +14,7 @@ weight: 7
 ---
 
 _Perplex_ provides a typographic layout for your _Markdown_ content, which adapts responsively to nearly every modern screen size. It’s designed for optimal legibility down to a view-port of 360 Pixels width.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 _Perplex_ has been build on the basis of the [**IBM Plex**][plex] font family and is best suited for technical content with mixed sections of text and code. The layout is vertically aligned to a **baseline grid**[^1] to introduce a comfortable rhythm. Horizontally it’s divided into evenly spaced columns — their number depends on the screen width. On larger screens (view-port &ge; 592px) the [**responsive design**][rd] is combined with [**view-port sized typography**][ptres]—a.k.a. _fluid typography_—to deliver a coherent layout.
 

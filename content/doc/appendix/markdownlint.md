@@ -14,7 +14,7 @@ menu:
 ---
 
 A Markdown linter helps to unify the markup style of the content. The following short configuration changes a few rules of [Markdownlint][mlint] for this project.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 {{< highlight yaml "linenos=true" >}}
 {{< readfile file="/content/.markdownlint.yaml" >}}

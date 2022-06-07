@@ -17,4 +17,4 @@ weight: 600
 ---
 
 **Perplex** generates all necessary page elements surrounding the content from data provided in the global configuration or the front-matter of the content files.
-{.p-lead} <!-- more -->
+{.p-first} <!-- more -->

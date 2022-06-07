@@ -14,7 +14,7 @@ weight: 130
 ---
 
 Ordered lists suggest a very clear structure. Don't let them get too long — they get annoying after a while.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 ## Syntax
 

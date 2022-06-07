@@ -13,7 +13,7 @@ weight: 630
 ---
 
 Perplex  include images at special places in the layout.
-{.p-lead} <!-- more -->
+{.p-first} <!-- more -->
 
 ## Featured image
 

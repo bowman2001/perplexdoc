@@ -15,7 +15,7 @@ weight: 240
 ---
 
 Correction marks highlight changes while working on a draft. Lately, strike-through has also become a hip visual style.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 To visually record important changes in our text, we can expressively cancel a part of the previous version by marking it ~~strike-through~~. The opposite action is to mark a part as {+inserted} later.
 {#layex}

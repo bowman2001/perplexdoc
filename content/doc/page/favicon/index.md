@@ -13,7 +13,7 @@ menu:
 ---
 
 The _Favorite Icon_ is placed in the `<head>` of every page. Browsers usually show the icon in the tab, the address bar and before bookmarks. It may be also displayed as application icon.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 ![favicon](icon/favicon.svg) The favorite icon is needed in many sizes and until recently in different image formats. There are many free web services to help create them from a single file. Fortunately most browsers now support vectorized icons in the SVG format. We can get away with two files: The SVG and a PNG fallback. The [real favicon generator](https://realfavicongenerator.net/) is able to produce icon sets from raster and from vector image files.  
 {.i-tiny}

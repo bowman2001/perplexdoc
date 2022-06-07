@@ -14,7 +14,7 @@ weight: 1025
 ---
 
 The module configuration for this project, which imports the _Perplex_ theme from its [GitHub repository]({{< param themeURL >}}).
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 {{< highlight yaml "linenos=true" >}}
 {{< readfile file="/config/_default/module.yaml" >}}

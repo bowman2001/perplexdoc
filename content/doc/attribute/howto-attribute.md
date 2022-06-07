@@ -14,7 +14,7 @@ weight: 310
 ---
 
 Hugo’s attributes are in the end HTML attributes, which get injected from the _Markdown_ file into the resulting page.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 Attributes are available for all kinds of _blocks_, for _headings_ and for _fenced code blocks_. We can allow them for blocks and headings in the configuration section for the _Goldmark_ parser, where the parameter `title` relates to all heading levels. They are by default disabled for blocks and enabled for headings. They are [all enabled]({{< relref "markup#19" >}}) for this documentation.
 

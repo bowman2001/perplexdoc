@@ -14,7 +14,7 @@ latex: true
 ---
 
 **LaTeX** is the most popular typesetting system for the natural sciences, its syntax has been established as a quasi-standard to type complex formulas.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 ## Syntax
 

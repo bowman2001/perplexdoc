@@ -15,7 +15,7 @@ weight: 830
 ---
 
 To enable the production of secure websites using a workflow, which is itself as secure as possible is one of the essential features of Hugo.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 The _Hugo project_ has outlined its [security model][hugo] in the documentation.
 

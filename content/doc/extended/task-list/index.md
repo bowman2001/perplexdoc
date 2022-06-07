@@ -15,7 +15,7 @@ weight: 250
 ---
 
 A task list on a web page should be an interactive element with a connection between user input and the _Markdown_. _Perplex_ can't establish such a connection.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 The task list element is a _GitHub_ specialty. _GitHub_ has established a bidirectional connection between the view in the browser and the hosted Markdown files.
 

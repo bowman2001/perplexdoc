@@ -14,7 +14,7 @@ menu:
 ---
 
 When we start to include content from unknown sources, we need to worry about the remaining possibilities to inject malicious code in Markdown files.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 The possibility to extend _Markdown_ with HTML attributes and even with raw HTML may be purely beneficial{^\*} as long as we have full control of the content. But as soon as we include external content, we have to consider destructive intentions. The following suggestions should help to thwart them.
 

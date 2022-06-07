@@ -14,7 +14,7 @@ weight: 25
 ---
 
 Only two basic steps are involved in publishing a static website: **Build & Deploy**. But there are many possible ways to realize them.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 Most available options and their workflow with _Hugo_ get described in the section [Hosting & Deployment][hd] of its documentation. In all cases we need to set the parameter `baseURL` to the site URL in the main configuration file [`config.yaml`]({{< relref "configyaml#6" >}}).
 

@@ -14,7 +14,7 @@ weight: 125
 ---
 
 An unordered list groups a set of related items. Any item may contain a sub-list. The longer a list is getting, the more it looses its purpose: To show a clear structure.
-{.p-lead} <!--more-->
+{.p-first} <!--more-->
 
 ## Syntax
 
