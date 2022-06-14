@@ -13,18 +13,7 @@ title: Extended Markdown
 weight: 200
 ---
 
-**PHP Markdown Extra** and **GitHub Flavored Markdown (GFM)** offer some widely used extensions to the basic **CommonMark** syntax.
+_PHP Markdown Extra_ and _GitHub Flavored Markdown (GFM)_ offer some widely used extensions to the basic _CommonMark_ syntax.
 {.p-first} <!--more-->
 
-Some of these extensions have already been discussed:
-
-Linkify
-: renders URLs in _Markdown_ automatically into links — the easiest way to [reference URLs]({{< relref "link#linkify" >}}).
-
-Typographer
-: substitutes ASCII punctuation characters with typographic glyphs. The substitution of quotation marks is a topic [on the quote page]({{< relref "quote#inline-quotes" >}}).
-{.dl-loose}
-
-All extensions are enabled in Hugo by default. You can disable them separately in the configuration file [`markup.yaml`]({{< relref "markup#8" >}}).
-
-## Extensions
+All extensions are enabled in _Hugo_ by default, but we can disable them separately. (See the configuration file [`markup.yaml`]({{< relref "markup#8" >}}) for this site)

@@ -1,7 +1,7 @@
 {{- define "main" -}}
   <div id="box">
     <header class="page-header">
-        {{- partial "img/featuredmargin.html" . -}}
+        {{- partial "img/featured.html" . -}}
       <div class="title title--ruled">
         <hr>
           {{ partial "title/title.html" . }}
@@ -20,7 +20,9 @@
       </ul>
     </nav>
     </div>
-    <!-- <section class="md md--serif">{{/*- partial "after.html" . -*/}}</section> -->
+    {{ with .Page.GetPage "after_index" }}
+    <section class="md md--serif">{{- partial "content.html" . }}</section>
+    {{ end }}
     <footer class="page-footer">
       <hr>
       <div class="meta">
