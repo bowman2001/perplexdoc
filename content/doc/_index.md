@@ -13,9 +13,7 @@ menu:
 weight: 1
 ---
 
-The _Markdown_ files for the following pages are licensed as **Creative Commons**. They are available on [GitHub][doc].
+The following content is generated from _Markdown_ files and publicly available in a [GitHub][doc] repository.
 {.p-first} <!--more-->
-
-## Chapters
 
 [doc]: https://github.com/bowman2001/perplexdoc

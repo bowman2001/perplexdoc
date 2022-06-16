@@ -2,7 +2,7 @@
 author: Georg Makowski
 date: "2021-09-07T21:02:57+02:00"
 description: Structured Plain Text Files
-featImg: img/Markdown-mark.svg
+featImg: logo/Markdown.svg
 menu:
   doc:
     name: Markdown

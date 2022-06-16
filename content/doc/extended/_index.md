@@ -2,7 +2,7 @@
 author: Georg Makowski
 date: "2021-08-26T21:15:24+02:00"
 description: Additional Markdown Elements
-featImg: img/Markdown-mark.svg
+featImg: logo/Markdown.svg
 menu:
   doc:
     identifier: extended

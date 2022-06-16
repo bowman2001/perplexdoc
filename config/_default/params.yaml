@@ -4,7 +4,7 @@
 
 # Site-wide default image. It gets overridden by
 # the page- or section-specific front-matter parameter.
-featImg: img/logo_Perplex_theme_for_Hugo_colored.svg
+featImg: logo/Perplex.svg
 
 # Site wide favicon for browser and OS display
 favicon:

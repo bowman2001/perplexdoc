@@ -5,7 +5,7 @@ description: Quick Layout Overview
 subtitle: false
 date: 2022-05-12T22:30:17+02:00 
 weight: 5
-featImg: img/Markdown-mark.svg
+featImg: logo/Markdown.svg
 menu:
   doc:
     name: Markdown Layout
