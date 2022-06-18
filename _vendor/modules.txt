@@ -1,1 +1,1 @@
-# github.com/bowman2001/perplex v0.0.0-20220618171644-512d7931e9c4
+# github.com/bowman2001/perplex v0.0.0-20220618172220-87b64fb1c76b
