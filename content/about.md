@@ -9,6 +9,7 @@ menu:
     identifier: about
     name: About
     weight: 100
+toc: false
 ---
 
 **Perplex** is a documentation theme for **Hugo**, the fastest site generator in the world. It produces a typographic layout, which adapts responsively to nearly all screen sizes. It’s designed for optimal legibility down to a view-port of 360 Pixels width.
