@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
-title: TL;DR
-description: Preview for seasoned _Hugo_ users
+title: Short Preview
+description: For seasoned _Hugo_ users
 subtitle: false
 date: 2022-05-11T23:46:08+02:00 
 weight: 2
@@ -9,7 +9,7 @@ featImg: moises-gonzalez-4xFUoiW3i4k-unsplash.jpg
 menu:
   doc:
     identifier: tldr
-    name: TL;DR
+    name: Preview
     pre: visibility
 draft: true
 ---
