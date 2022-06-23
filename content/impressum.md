@@ -8,5 +8,5 @@ featImg:
 toc: false
 ---
 
-Place your lead paragraph here. If you don't need special styling, remove the attribute. The *more-tag* marks the paragraph as the content *summary* for this page.
+Place your lead paragraph here. If you don't need special styling, remove the attribute. The _more-tag_ marks the paragraph as the content _summary_ for this page.
 {.p-first} <!--more-->
