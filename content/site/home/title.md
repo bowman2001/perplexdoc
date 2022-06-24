@@ -1,12 +1,11 @@
 ---
 title: Empty
 ---
+&nbsp;
 
 &nbsp;
 
 ![Perplex](logo/Perplex_white.svg)
 
-&nbsp;
-
-_The seriously typographic theme for **Hugo**_
+_Typographic layout for **Hugo**_
 {.p-big}
