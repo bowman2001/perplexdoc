@@ -1,11 +1,11 @@
 ---
-title: Empty
+title:
 ---
 &nbsp;
 
 &nbsp;
 
-![Perplex](logo/Perplex_white.svg)
+![Perplex](logo/Perplex.svg)
 
 _Typographic layout for **Hugo**_
 {.p-big}

@@ -1,9 +1,8 @@
 ---
-title: L1
+title: Layout
 date: 2022-06-23T11:54:04+02:00
-id: l1
+id: d4
 ---
-## Layout
 
 Create a consistent **modular layout** with _Markdown_ and a few _shortcodes_!  
 

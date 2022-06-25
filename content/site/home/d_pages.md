@@ -1,9 +1,8 @@
 ---
-title: D2
+title: Page types
 date: 2022-06-23T11:54:58+02:00
-id: d4
+id: d6
 ---
-## Page types
 
 Build a software documentation with up to three levels.
 

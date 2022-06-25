@@ -1,9 +1,8 @@
 ---
-title: D6
+title: Software
 date: 2022-06-23T11:55:39+02:00
-id: d6
+id: l5
 ---
-## Software
 
 Build your static website with _Hugo_ and _Perplex_ only.
 
