@@ -2,6 +2,7 @@
 title: Layout
 date: 2022-06-23T11:54:04+02:00
 id: d4
+weight: 30
 ---
 
 Create a consistent **modular layout** with _Markdown_ and a few _shortcodes_!  

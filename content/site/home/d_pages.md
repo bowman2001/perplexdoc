@@ -1,7 +1,8 @@
 ---
 title: Page types
 date: 2022-06-23T11:54:58+02:00
-id: d2
+id: d6
+weight: 100
 ---
 
 Build your [**technical documentation**]({{< relref "doc" >}}) with _Perplex_. The theme generates a sidebar menu for up to three section levels.
