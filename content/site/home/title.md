@@ -5,7 +5,7 @@ title:
 
 &nbsp;
 
-![Perplex](logo/Perplex.svg)
+![Perplex](logo/Perplex_white.svg)
 
 _Typographic layout for **Hugo**_
 {.p-big}

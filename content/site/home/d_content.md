@@ -1,24 +1,21 @@
 ---
 title: Content
 date: 2022-06-23T11:55:32+02:00
-id: d2
+id: d6
 ---
-Use text files containing
+Use **text files** containing
 
-[YAML](https://yaml.org)
-: for the meta-data (menus etc.)
+[Markdown]({{< relref "writing" >}})
+: for basic layout
 
-Markdown
-: content for basic layout
+[Attributes]({{< relref "attribute" >}})
+: for style variations
 
-Attributes
-: for many style variations
+[Shortcodes]({{< relref "shortcode" >}})
+: for complex layout
 
-Shortcodes
-: for complex HTML
-
-Replacements
-: for missing tags
+YAML
+: for meta-data (menus etc.)
 {.dl-tight}
 
 And structure your website simply with the folder hierarchy.
