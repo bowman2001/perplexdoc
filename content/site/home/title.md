@@ -1,11 +1,4 @@
 ---
-title:
+logo: logo/Perplex_white.svg
+description: Typographic layout for **Hugo**
 ---
-&nbsp;
-
-&nbsp;
-
-![Perplex](logo/Perplex_white.svg)
-
-_Typographic layout for **Hugo**_
-{.p-big}

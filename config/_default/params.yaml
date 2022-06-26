@@ -2,6 +2,8 @@
 # Theme-specific parameters
 #
 
+logo: logo/Perplex_white.svg
+
 # Site-wide default image. It gets overridden by
 # the page- or section-specific front-matter parameter.
 featImg: logo/Perplex.svg
