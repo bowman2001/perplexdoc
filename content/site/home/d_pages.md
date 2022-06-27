@@ -5,6 +5,8 @@ id: d6
 weight: 100
 ---
 
-Build your [**technical documentation**]({{< relref "doc" >}}) with _Perplex_. The theme generates a sidebar menu for up to three section levels.
+Create [documentation pages]({{< relref "doc" >}}) down to three folder levels deep. 
 
-Accompany your docs by a [**news blog**]({{< relref "blog" >}}) ordered by _taxonomies_ and add single pages for organizational content.
+Generate the sidebar menu including _material icons_ with a few front-matter parameters in the _Markdown_ files.
+
+Add a [**news blog**]({{< relref "blog" >}}) ordered by _taxonomies_ and add single pages for organizational content.

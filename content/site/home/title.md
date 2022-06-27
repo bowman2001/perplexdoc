@@ -1,9 +1,11 @@
 ---
-title: Typographic Layout
-description: Documentation theme for Hugo
+title: Typographic
+description: Perplex theme for Hugo
 ---
-Build your **documentation site** with the _Perplex_ theme.
+Build your **documentation site** with the free _Perplex_ theme.
 {.p-big .no-hyphens}
 
-Simply based on _Markdown_ files and generated most efficiently by _Hugo_.
+Create _Markdown_ files and let _Hugo_ and _Perplex_ generate this layout blazing fast.
 {.no-hyphens}
+
+
