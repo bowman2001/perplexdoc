@@ -19,4 +19,4 @@ YAML
 : for meta-data (menus etc.)
 {.dl-tight}
 
-And structure your website simply with the folder hierarchy.
+Determine your page URLs through the folder structure.
