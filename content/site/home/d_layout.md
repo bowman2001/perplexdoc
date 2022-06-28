@@ -5,8 +5,8 @@ id: d4
 weight: 30
 ---
 
-Create a consistent **modular layout** with _Markdown_ and a few _shortcodes_!  
+Realize the possibilities of the **grid layout**. Your content flows onto a _baseline grid_ in _evenly spaced columns_.
 
-The _Perplex_ stylesheet is placing your content on a _baseline grid_ and in _evenly spaced columns_.
+Move and resize figures, images and code boxes with [_Markdown attributes_]({{< relref "attribute">}})!
 
-_Responsive design_ combined with _view-port sized typography_!
+The _view-port-based responsive design_ guarantees a consistent layout.
