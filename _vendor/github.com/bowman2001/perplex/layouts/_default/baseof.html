@@ -6,14 +6,14 @@
     {{- partial "nav/masthead.html" . -}}
 </header>
 <div id="l-page">
-  <main id="l-main">
+  <main id="l-main" class="l-tnp">
       {{- block "main" . -}}{{- end -}}
     <footer id="l-footer" class="l-box">
         {{- partial "footer/site.html" . -}}
     </footer>
   </main>
   <div id="l-overlay"></div>
-  <aside class="l-nav" id="l-sidebar">
+  <aside id="l-sidebar" class="l-nav l-tnp">
     <header class="l-masthead l-masthead-sidebar l-wrap hide3">
         {{- partial "nav/sidebar-masthead.html" . -}}
     </header>
