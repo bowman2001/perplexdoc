@@ -11,6 +11,7 @@ menu:
 subtitle: false
 title: Thanks
 weight: 60
+toc: false
 ---
 
 All images in this documentation were made available for free by numerous skilled photographers on [_Unsplash_][unsplash]. Their names are included in the title pop-up and you can usually follow the link in the caption to get to the original picture and the author.
@@ -19,9 +20,13 @@ The concept for a layout based on classical typographic principles grew over a f
 
 _Perplex_ is --- as the name says --- designed around [_IBM’s_][ibm] open corporate font family [_Plex_][plex]. Its used differently here than on IBM’s pages. That’s possible, because their fonts are thankfully versatile and even include a nice serif version.
 
-Without _Chris Coyier’s_ extensive and always up-to-date website [_CSS-Tricks_][cc] I would have been lost in the CSS specs. He and his contributors have been keeping track of and explained the constantly evolving capabilities like only a few others.
+Without _Chris Coyier’s_ extensive and always up-to-date website [_CSS-Tricks_][cc] I would have been lost in the CSS specs. He and all contributors have been explaining all the constantly evolving capabilities like only a few others.
 
-Without _Hugo_ and its small, but very helpful community I wouldn’t have started and never came so far in implementing these layout ideas. I owe special thanks to [_Steve Francia_][sf], for bringing _Hugo_ to life and contributing to its core; to [_Joe Mooring_][jm] for his detailed and precise suggestions; and of course to the current and long time project leader [_Bjørn Erik Pedersen_][bep] for his constant improvements of the software and his advise.
+{{< sidenote up=11 >}}
+_CSS-Tricks_ has been acquired by _Digital Ocean_ recently. Hopefully, their staff will keep up the good work.
+{{< /sidenote >}}
+
+Without _Hugo_ and its small, but very helpful community I wouldn’t have started and never came so far in implementing these layout ideas. I owe special thanks to [_Steve Francia_][sf], for bringing _Hugo_ to life and developing its core; to [_Joe Mooring_][jm] for his detailed and precise suggestions; and of course to the current and long time project leader [_Bjørn Erik Pedersen_][bep] for his constant improvements of the software and his advise.
 
 [bep]: https://discourse.gohugo.io/u/bep/summary
 [jm]: https://discourse.gohugo.io/u/jmooring/summary

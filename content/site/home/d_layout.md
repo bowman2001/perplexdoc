@@ -9,4 +9,4 @@ Realize the possibilities of this **grid layout**. Let your content flow onto a 
 
 Move and resize figures, images and code boxes with [_Markdown attributes_]({{< relref "attribute">}})!
 
-_View-port-sized_ responsive design and typography offer a consistent layout on five classes of screen sizes.
+_View-port-sized_ responsive design and typography offer a consistent layout on all view-ports &gt; {$360px}.
