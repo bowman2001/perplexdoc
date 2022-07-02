@@ -10,6 +10,8 @@ menu:
 subtitle: false
 title: Appendix
 weight: 1000
+cascade:
+  toc: false
 ---
 
 This chapter provides various files and some additional material, to illustrate details of using _Hugo_ and _Perplex_ in connection with this documentation.
