@@ -24,7 +24,7 @@ The same results could also be achieved by using the _Unicode characters_ or _HT
 | :------------ | :--------------: | :-------: |
 | Quotes        |    `"Quote"`     |  "Quote"  |
 | Single quotes |    `'Quote'`     |  'Quote'  |
-| Apostrophe    |     `Hugo's`     |  Hugo's   |
+| Apostrophe    |     `Hugo’s`     |  Hugo’s   |
 | Angled quotes |   `<<Angle>>`    | <<Angle>> |
 | Em Dash       |      `---`       |   ---   |
 | En Dash       |       `--`       |    --     |

@@ -21,7 +21,7 @@ Sometimes we like to begin a new line without starting a whole new text block. T
 There are two ways to place _intentional_ hard line breaks, which depend on the way we handle _hard line wraps_.
 
 CommonMark
-: allows _hard wraps_ — a.&hairsp;k.&hairsp;a. _hard line breaks_ — to limit the line length in _Markdown_ files. They are treated just like spaces. Therefore, _CommonMark_ needs a special syntax element for an _intentional_ line break.
+: allows _hard wraps_ — a.&hairsp;k.&hairsp;a. _hard line breaks_ — to limit the line length in Markdown files. They are treated just like spaces. Therefore, _CommonMark_ needs a special syntax element for an _intentional_ line break.
 
 GitHub
 : instead, treats hard line breaks simply as such. In this case we probably need to use _soft wraps_ in our editor to limit the line length, which may be a good habit anyway. (See also: [Writing Markdown][hwl])
@@ -29,7 +29,7 @@ GitHub
 
 ### The CommonMark way
 
-_Hugo’s_ standard configuration is fully _CommonMark_-compliant, the parameter `hardWraps` is set to `false` by default. There are two ways now, to place an intentional line break:
+Hugo’s standard configuration is fully _CommonMark_-compliant, the parameter `hardWraps` is set to `false` by default. There are two ways now, to place an intentional line break:
 
 Two spaces
 : before the end of a line.
@@ -56,7 +56,7 @@ When you are allowed to deviate from _CommonMark_ in regard to this one element,
 
 ## Layout
 
-_Hugo_ still recognizes the _CommonMark_-breaks, when `hardWraps` is set to `true`.
+Hugo still recognizes the _CommonMark_-breaks, when `hardWraps` is set to `true`.
 
 ### Line Break {.h-p}
 

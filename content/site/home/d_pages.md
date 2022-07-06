@@ -9,4 +9,4 @@ Create a [**documentation**]({{< relref "doc" >}}) with up to three folder level
 
 Generate the sidebar menu including _material icons_ with a few front-matter parameters in your content files.
 
-Start a [**blog**]({{< relref "blog" >}}) ordered by _taxonomies_ and add single pages for organizational content.
+Start a [**blog**]({{< relref "blog" >}}) ordered by _taxonomies_ and add **single pages** for organizational content.

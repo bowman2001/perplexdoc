@@ -19,7 +19,7 @@ Footnotes are placed at the bottom of the page. They are best suited for technic
 Footnotes are indispensable for scientific documents or more rigorous essays. They reference sources or elaborate on details. Because they are placed at the end of the content, the footnote marker contains a link allowing to jump to the note. And the note contains a link back to the marker.
 
 {{< sidenote up=5 >}}
-To jump back and forth between text and footnotes is distracting. _Perplex_ offers a [side-note]({{< relref "side-note" >}}) like this one as an alternative for more important content. It’s placed, where it occurs in the _Markdown_. If possible in the marginal column besides the main text.  
+To jump back and forth between text and footnotes is distracting. Perplex offers a [marginal note]({{< relref "note" >}}) like this one as an alternative for more important content. It’s placed, where it occurs in the Markdown. If possible in the marginal column besides the main text.  
 {{< /sidenote >}}
 
 ## Syntax
@@ -69,4 +69,4 @@ This sentence includes a footnote after a word[^10]  and one at the end.[^footno
 
 [^10]: This is the reference for the first and the last footnote marker in this example.
 
-The markers are enclosed in square brackets by _Perplex_ as it is custom in the field of natural sciences. The notes are moved as usual to the bottom of the page below a horizontal rule.
+The markers are enclosed in square brackets by Perplex as it is custom in the field of natural sciences. The notes are moved as usual to the bottom of the page below a horizontal rule.

@@ -18,7 +18,7 @@ Quoting is consciously repeating thoughts from another person, which yours are r
 
 A single word or short piece of text is usually quoted in the running text and is called an _inline quote_. A longer text segment of three or more lines is usually quoted as separate block and called a _blockquote_.
 
-Some blockquotes should attract immediate attention while scanning the page. These are _hero quotes_ and _Perplex_ provides the [attribute]({{< relref "attribute" >}}) `{.blockquote-hero}` for alternative styling.
+Some blockquotes should attract immediate attention while scanning the page. These are _hero quotes_ and Perplex provides the [attribute]({{< relref "attribute" >}}) `{.blockquote-hero}` for alternative styling.
 
 ## Inline Quotes
 
@@ -31,7 +31,7 @@ But our keyboard usually doesn't show these typographically correct quotation ma
 
 ### In English
 
-_Hugo_ replaces the typographically _dumb_ straight quotes with the correct curly ones by default — this is the work of the  [typographer extension]({{< relref "typographer" >}}). We can simply place {#"} — the straight quote — around English quotes:
+Hugo replaces the typographically _dumb_ straight quotes with the correct curly ones by default — this is the work of the  [typographer extension]({{< relref "typographer" >}}). We can simply place {#"} — the straight quote — around English quotes:
 
 `"An inline quote"`&emsp;for&emsp;"An inline quote"
 {.p-big}
@@ -53,7 +53,7 @@ In German publishing we often find guillemets the other way around:
 `>>Zahnstocher<<`&emsp;for&emsp;>>Zahnstocher<<
 {.p-big}
 
-But we get into trouble with these, when we start a line with `>>`, because the `>` is also the _Markdown_ sign for a following [quotation block]({{< relref "#blockquote" >}}). We can begin the line with an invisible entity like the _zero width joiner_ `&zwj;` for a quick workaround:
+But we get into trouble with these, when we start a line with `>>`, because the `>` is also the Markdown sign for a following [quotation block]({{< relref "#blockquote" >}}). We can begin the line with an invisible entity like the _zero width joiner_ `&zwj;` for a quick workaround:
 
 &zwj;>>Noch einen Zahnstocher, bitte!<<
 {.p-big}

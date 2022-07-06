@@ -48,7 +48,7 @@ The nesting possibilities of the *CommonMark specification* are endless, but onl
 
 ## Which formatting characters are the best choice?
 
-At first sight _CommonMark_ treats the asterisk `*` and the underscore `_` as equally appropriate options to mark either light or strong emphasis. But the _Markdown_ concept suggests — at least to me — to use underscores for light emphasis, because they have a smaller footprint in the _Markdown_. The asterisks are thicker and suit the strong emphasis.
+At first sight _CommonMark_ treats the asterisk `*` and the underscore `_` as equally appropriate options to mark either light or strong emphasis. But the Markdown concept suggests — at least to me — to use underscores for light emphasis, because they have a smaller footprint in the Markdown. The asterisks are thicker and suit the strong emphasis.
 
 I haven’t checked the specification for this argument, but the asterisks are the only possible option in _CommonMark_ to strongly emphasize characters inside of words. We sometimes want to emphasize the first letter of some words to mark their abbreviation for example:
 

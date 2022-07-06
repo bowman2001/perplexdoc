@@ -21,7 +21,7 @@ Ordered lists suggest a very clear structure. Don't let them get too long — th
 List items begin with an integer followed by a period and a space. The order of the numbers is not important, we even may use always the same number. Markdown treats the numbers as markers and ignores their values. Every list will follow 1, 2, 3… .
 
 {{< sidenote up=8 >}}
-**The first number** gets injected as the `start` attribute of the `<ol>`-tag. But this value affects only the browser-internal counter and because _Perplex_ declares CSS-counters all lists start with 1 by default.
+**The first number** gets injected as the `start` attribute of the `<ol>`-tag. But this value affects only the browser-internal counter and because Perplex declares CSS-counters all lists start with 1 by default.
 
 It’s possible to manipulate the counters with attributes — see [With Interruption]({{< relref "#interruption" >}})
 {{< /sidenote >}}

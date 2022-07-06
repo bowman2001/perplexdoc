@@ -60,7 +60,7 @@ resources:
 Because no Markdown element corresponds to the complex HTML `<figure>` tag, we need this shortcode for self-contained images.
 {.p-first} <!--more-->
 
-Hugo already provides a [`figure`]({{< relref "internal#figure" >}}) shortcode and _Perplex_ overrides it. The original syntax remains valid with **one exception**. The _Perplex_ shortcode allows to write a caption in _Markdown_ between the starting and closing tag.
+Hugo already provides a [`figure`]({{< relref "internal#figure" >}}) shortcode and Perplex overrides it. The original syntax remains valid with **one exception**. The Perplex shortcode allows to write a caption in Markdown between the starting and closing tag.
 
 When there is no shortcode closing tag, we need to add a slash to the last angled bracket, to mark the shortcode as self-closing:
 
@@ -68,11 +68,11 @@ When there is no shortcode closing tag, we need to add a slash to the last angle
 {{</* figure src="image" /*/>}}
 ```
 
-In case we forget the self-closing slash, _Hugo_ will treat the following _Markdown_ as the expected caption and probably produce a garbled page.
+In case we forget the self-closing slash, Hugo will treat the following Markdown as the expected caption and probably produce a garbled page.
 
 ## Syntax
 
-You’ll find the syntax for _Hugo’s_ built-in `figure` in the [docs][hugofig]. The _Perplex_ version offers the same set of named parameters.  Because it tends to get very long and error-prone, _Perplex_ offers an alternative syntax using _Hugo’s_ page resources.
+You’ll find the syntax for Hugo’s built-in `figure` in the [docs][hugofig]. The Perplex version offers the same set of named parameters.  Because it tends to get very long and error-prone, Perplex offers an alternative syntax using Hugo’s page resources.
 
 ### Class Attributes
 

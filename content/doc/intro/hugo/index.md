@@ -13,10 +13,10 @@ title: Hugo
 weight: 15
 ---
 
-The world’s fastest _**S**tatic **S**ite **G**enerator (SSG)_ is steadily gaining traction. _Hugo_ provides a reliable production environment and allows to build fast and secure websites.
+The world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and secure websites.
 {.p-first} <!--more-->
 
-[_Hugo_](https://gohugo.io) is a command line tool for _macOS_, _Windows_, _Linux_ and _BSD_ derivatives. Binaries for most operating systems and some containers are usually available within a day or a few after every release.
+[Hugo](https://gohugo.io) is a command line tool for _macOS_, _Windows_, _Linux_ and _BSD_ derivatives. Binaries for most operating systems and some containers are usually available within a day or a few after every release.
 
 {{< sidenote up=11 >}}
 The [Hugo source](https://github.com/gohugoio/hugo) can be compiled on every machine with a recent [Go environment](https://go.dev).
@@ -24,19 +24,19 @@ The [Hugo source](https://github.com/gohugoio/hugo) can be compiled on every mac
 
 ## Getting started
 
-The [Hugo documentation site][hugodoc] addresses developers mostly and offers detailed information. With this theme only a small amount of it is necessary to produce a professional static website.
+The [Hugo documentation site][hugodoc] addresses developers mostly and offers detailed information. Only a small fraction of it is necessary to produce a professional static website with this theme.
 
 ### Install Hugo
 
-Please read the [installation instructions](https://gohugo.io/getting-started/installing/) for your operating system on the documentation site. _Perplex_ works with any recent version.
+Please read the [installation instructions](https://gohugo.io/getting-started/installing/) for your operating system on the documentation site. Perplex works with any recent version.
 
 ### Use Perplex
 
-When you are just getting acquainted with _Hugo_ and _Markdown_ or when you are curious about the source for this site, you can download this documentation project as an example. It’s available on [_GitHub_]({{< param sourceURL >}}) and ships with all the files for the documentation and a few examples for blog postings and simple pages.
+When you are just getting acquainted with Hugo and Markdown or when you are curious about the source for this site, you can download this documentation project as an example. It’s available on [_GitHub_]({{< param sourceURL >}}) and ships with all the files for the documentation and a few examples for blog postings and simple pages.
 
 #### The documentation project
 
-The folders for the project site contain only a minimal set of standard _Hugo_ folders.
+The folders for the project site contain only a minimal set of standard Hugo folders.
 
 ```sh {.right .lh15 .hide-mobile}
 ├── assets
@@ -51,10 +51,10 @@ The folders for the project site contain only a minimal set of standard _Hugo_ f
 : contains the configuration files for this project.
 
 `content`
-: contains all the _Markdown_ files and page specific resources like images.
+: contains all the Markdown files and page specific resources like images.
 {.dl-loose}
 
-The additional `_vendor` folder includes a local copy of the [_Perplex_ theme]({{< param themeURL >}}).
+The additional `_vendor` folder includes a local copy of the [Perplex theme]({{< param themeURL >}}).
 
 #### Start from scratch
 
@@ -76,15 +76,15 @@ It creates the directory `mysite` and the full standard folder structure.
 └── themes
 ```
 
-When we use a _Hugo_ theme, it ships with _archetypes_ and _layout_ templates and the correspondent folders in the project root are only meant for modified templates, which may override the ones from the theme.
+When we use a Hugo theme, it ships with _archetypes_ and _layout_ templates and the correspondent folders in the project root are only meant for modified templates, which may override the ones from the theme.
 
 The _themes_ folder can hold as many themes as we like and there are three ways to retrieve a public theme from a _Git_ repository provider:
 
 1. Download and unzip its compressed file package in the `themes` folder. This is the fastest way and the best option for a try-out.
 
-2. Clone it with [_Git_](https://git-scm.com/) into the `themes` folder. If you already are using _Git_ for your project, you probably should clone every theme as a submodule. This is also the best workflow to contribute to the development of a _Hugo_ theme.  
+2. Clone it with [_Git_](https://git-scm.com/) into the `themes` folder. If you already are using _Git_ for your project, you probably should clone every theme as a submodule. This is also the best workflow to contribute to the development of a Hugo theme.  
 
-3. Import the _Perplex_ repository as a Hugo module. You need to have a recent [Go environment](https://go.dev) – _Hugo_ modules rely on _Go_ modules. The Hugo docs provide a [guide to this powerful feature](https://gohugo.io/hugo-modules). Once set up, _Hugo modules_ are the easiest way to update themes or other external components of your _Hugo_ configuration. There is an example for the configuration in the file [`module.yaml`]({{< relref "moduleyaml.md" >}}), because this project imports the theme as a module.
+3. Import the Perplex repository as a Hugo module. You need to have a recent [Go environment](https://go.dev) – Hugo modules rely on _Go_ modules. The Hugo docs provide a [guide to this powerful feature](https://gohugo.io/hugo-modules). Once set up, _Hugo modules_ are the easiest way to update themes or other external components of your Hugo configuration. There is an example for the configuration in the file [`module.yaml`]({{< relref "moduleyaml.md" >}}), because this project imports the theme as a module.
 
 {{< sidenote up=20 >}}
 **This project** doesn’t need a _Go environment_, because it has a local copy (`_vendor`). But if you want to update the theme, you need to install _Go_ and apply the `hugo mod ...` commands.
@@ -101,14 +101,14 @@ hugo server -D --minify --navigateToChanged
 ```
 
 {{< sidenote up=5 >}}
-**Hugo’s server** can also show a private preview on the web under a configured URL. But it's **by no means** a full-fledged web server.
+**Hugo’s server** can also show a private preview on the web under a configured URL. But it's by no means a full-fledged web server.
 {{< /sidenote >}}
 
 The pages are rendered into the computer memory and the site is served under <http://localhost:1313>.
 
-- The flag `-D` lets _Hugo_ include _drafted_ files. All files created with `hugo new` are usually configured as drafts, using `draft = true` in the front-matter. When a Markdown file is ready for publishing, we need to remove this entry or change it to `draft = false`.
+- The flag `-D` lets Hugo include _drafted_ files. All files created with `hugo new` are usually configured as drafts, using `draft = true` in the front-matter. When a Markdown file is ready for publishing, we need to remove this entry or change it to `draft = false`.
 
-- The flag `--minify` tells _Hugo_ to remove unnecessary whitespace from the resulting code.
+- The flag `--minify` tells Hugo to remove unnecessary whitespace from the resulting code.
 
 - The flag `--navigateToChanged` tells the server to automatically relay the page from the last edited file to the browser.
 
@@ -122,7 +122,7 @@ hugo new blog/my-first-post.md
 
 The new file resides in the folder `content/blog/`. It contains a front matter section with reasonable entries or placeholders to start with.
 
-`title` and `date` are mandatory, a `description` is strongly recommended for _Perplex_ as it is for many other themes.
+`title` and `date` are mandatory, a `description` is strongly recommended for Perplex as it is for many other themes.
 
 ```yaml {class="col-left" linenos=true}
 +++
@@ -149,9 +149,9 @@ Show all the steps described above
 
 ## Content organization
 
-It may take a little while to get your head around _Hugo’s_ content folder structure. To keep the _general concept_ in mind did help me: _Hugo_ establishes a connection between the input  and the generated website, which is as short as possible. The folder structure determines the generated website structure in a similar way like _Markdown_ formatting determines the layout of our content.
+It may take a little while to get your head around Hugo’s content folder structure. To keep the _general concept_ in mind did help me: Hugo establishes a connection between the input  and the generated website, which is as short as possible. The folder structure determines the generated website structure in a similar way like Markdown formatting determines the layout of our content.
 
-The standard folders in the content directory of a _Perplex_ project are the content root itself `/` and the folders `doc`, `blog` and `article`. The theme provides layout templates for these page types. _Hugo_ applies the matching template automatically to every content file inside these directories and their subdirectories.
+The standard folders in the content directory of a Perplex project are the content root itself `/` and the folders `doc`, `blog` and `article`. The theme provides layout templates for these page types. Hugo applies the matching template automatically to every content file inside these directories and their subdirectories.
 
 The root `/`
 : contains top level pages, which should
@@ -180,7 +180,7 @@ The file `index.md` is rendered again as a single page, but now we can move page
 
 #### Blog posts
 
-When the number of blog entries rises, we need some structure. This is achieved with _taxonomies_, and Hugo's defaults are the usual _categories_ and _tags_. We can use them immediately, the front matter already includes the empty parameter keys:
+When the number of blog entries rises, we need some structure. This is achieved with _taxonomies_, and Hugo’s defaults are the usual _categories_ and _tags_. We can use them immediately, the front matter already includes the empty parameter keys:
 
 {{< sidenote up=14 >}}
 **New Taxonomies** may be defined in the configuration. Please read the corresponding [docs](https://gohugo.io/content-management/taxonomies#configure-taxonomies).
@@ -228,7 +228,7 @@ The new parameter _weight_ is of general meaning for the order of all pages, the
 : If this parameter contains the identifier of another page, the current page is a level beyond its parent in the menu. If there is no parent, the page gets a top level menu entry.
 
 `pre`
-: is used very specific by _Perplex_: It contains the identifier of a _Material Icon_ from _Google_. To change it, please visit their [website](http://fonts.google.com/icons). You can pick any icon there. Select it and copy the identifier from the icon font embedding section (It's usually the icon name written in lower letters and with underscores `_` instead of spaces).
+: is used very specific by Perplex: It contains the identifier of a _Material Icon_ from _Google_. To change it, please visit their [website](http://fonts.google.com/icons). You can pick any icon there. Select it and copy the identifier from the icon font embedding section (It's usually the icon name written in lower letters and with underscores `_` instead of spaces).
 {.dl-loose}
 
 ### List pages {#list}
@@ -243,7 +243,7 @@ Because our new page is a demonstration, we like to file it in a special section
 hugo new doc/demo/_index.md
 ```
 
-The small difference between a _leaf bundle_ for a [single page]({{< relref "#single" >}}) and a _branch bundle_ is the leading underscore for the _Markdown_ master file. It's only `index.md` versus `_index.md`. But they have a very different purpose. A folder with a _leaf bundle_ collects material for _one_ page. A _branch bundle_ collects as many pages and may include as many other bundles as we need — there is no technical limit to the depth of folder hierarchy. A branch bundle can act like a chapter, section or subsection.
+The small difference between a _leaf bundle_ for a [single page]({{< relref "#single" >}}) and a _branch bundle_ is the leading underscore for the Markdown master file. It's only `index.md` versus `_index.md`. But they have a very different purpose. A folder with a _leaf bundle_ collects material for _one_ page. A _branch bundle_ collects as many pages and may include as many other bundles as we need — there is no technical limit to the depth of folder hierarchy. A branch bundle can act like a chapter, section or subsection.
 
 `_index.md` should contain general content about this section. The page for a _branch bundle_ usually also presents a list of selected content from every page in the branch.
 
@@ -259,7 +259,7 @@ To reflect this relationship in the menu, we need to set `parent = "demo"` in `m
 
 ### Page Resources {#resources}
 
-There are three options to store and retrieve resources (like images) for _Hugo_:
+There are three options to store and retrieve resources (like images) for Hugo:
 
 Page specific
 : We can save them in the folder of a page bundle and access them there with the shortest possible path.
@@ -268,21 +268,21 @@ Site specific
 : We save them most suitably in the `assets` folder and can use them on every page of our project. We may have to create a folder structure in `assets` to organize them.
 
 Remote
-: Resources may also be retrieved via URL or API. This powerful but complex feature has been introduced recently. No remote connectors ship with _Perplex_ at the moment.
+: Resources may also be retrieved via URL or API. This powerful but complex feature has been introduced recently. No remote connectors ship with Perplex at the moment.
 {.dl-loose}
 
 ## Project configuration
 
 All configuration options and their defaults are described in the [docs](https://gohugo.io/getting-started/configuration/). The examples therein are given for a _single configuration file_ like `config.yaml` in your project root directory.
 
-The configuration for this _Perplex_ site is using the alternative option of a **configuration directory** named `config` with separate files for the sections. For the growing number of options this arrangement is much clearer. The top configuration file is called `config.yaml` the other ones are named like the section they contain.
+The configuration for this Perplex site is using the alternative option of a **configuration directory** named `config` with separate files for the sections. For the growing number of options this arrangement is much clearer. The top configuration file is called `config.yaml` the other ones are named like the section they contain.
 
 ### Please note {.h-info .h-p}
 
 The configuration files for sections don't include the section identifier anymore, because the name of the file _is_ the section identifier. When you adopt a configuration option from the Hugo docs, you may therefore need to remove the section identifier.
 
-## Having trouble with _Hugo_?
+## Having trouble with Hugo?
 
-When you encounter problems with _Hugo_ and don’t find an answer in its [documentation][hugodoc], the [Hugo community](https://discourse.gohugo.io) can probably support you. Please search the forum archive, because most likely your problem has already been solved. Before you start a new topic, please read the guidelines _How to Request Help_ at the top of the site first.
+When you encounter problems with Hugo and don’t find an answer in its [documentation][hugodoc], the [Hugo community](https://discourse.gohugo.io) can probably support you. Please search the forum archive, because most likely your problem has already been solved. Before you start a new topic, please read the guidelines _How to Request Help_ at the top of the site first.
 
 [hugodoc]: https://gohugo.io/documentation

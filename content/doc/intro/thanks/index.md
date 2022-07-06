@@ -18,7 +18,7 @@ All images in this documentation were made available for free by numerous skille
 
 The concept for a layout based on classical typographic principles grew over a few years out of many already existing ideas. I can’t even mention every helpful author I read about typography and web layout techniques. Many conceptual parts date back to _Matthew Butterick’s_ beautiful online book [_Practical Typography_][pt], which also taught me a lot about typography in general and some about distinctive American-English features.
 
-_Perplex_ is --- as the name says --- designed around [_IBM’s_][ibm] open corporate font family [_Plex_][plex]. Its used differently here than on IBM’s pages. That’s possible, because their fonts are thankfully versatile and even include a nice serif version.
+Perplex is --- as the name says --- designed around [_IBM’s_][ibm] open corporate font family [_Plex_][plex]. Its used differently here than on IBM’s pages. That’s possible, because their fonts are thankfully versatile and even include a nice serif version.
 
 Without _Chris Coyier’s_ extensive and always up-to-date website [_CSS-Tricks_][cc] I would have been lost in the CSS specs. He and all contributors have been explaining all the constantly evolving capabilities like only a few others.
 
@@ -26,7 +26,7 @@ Without _Chris Coyier’s_ extensive and always up-to-date website [_CSS-Tricks_
 _CSS-Tricks_ has been acquired by _Digital Ocean_ recently. Hopefully, their staff will keep up the good work.
 {{< /sidenote >}}
 
-Without _Hugo_ and its small, but very helpful community I wouldn’t have started and never came so far in implementing these layout ideas. I owe special thanks to [_Steve Francia_][sf], for bringing _Hugo_ to life and developing its core; to [_Joe Mooring_][jm] for his detailed and precise suggestions; and of course to the current and long time project leader [_Bjørn Erik Pedersen_][bep] for his constant improvements of the software and his advise.
+Without Hugo and its small, but very helpful community I wouldn’t have started and never came so far in implementing these layout ideas. I owe special thanks to [_Steve Francia_][sf], for bringing Hugo to life and developing its core; to [_Joe Mooring_][jm] for his detailed and precise suggestions; and of course to the current and long time project leader [_Bjørn Erik Pedersen_][bep] for his constant improvements of the software and his advise.
 
 [bep]: https://discourse.gohugo.io/u/bep/summary
 [jm]: https://discourse.gohugo.io/u/jmooring/summary

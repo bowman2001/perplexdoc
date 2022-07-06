@@ -44,7 +44,7 @@ Embedding an image is syntactically very similar to placing a [link]({{< relref 
 
 The _name_ of the image element inside the square brackets `[]` is used as alternative text[^1] in case the browser can't display the image.
 
-This syntax is preferable when the relative path name is short — like for images in a [_Hugo_ page bundle]({{< relref "hugo#bundle" >}}).
+This syntax is preferable when the relative path name is short — like for images in a [Hugo page bundle]({{< relref "hugo#bundle" >}}).
 
 ### Reference notation
 
@@ -78,7 +78,7 @@ This syntax is especially convenient, when an image is used more than once or wh
 
 ## Image resolution
 
-_Perplex_ relies on _Hugo’s_ image processing capabilities to generate differently sized versions of every image. Thereby, every browser can pick the smallest sufficient size based on the actual width of the image and the pixel density of the actual screen.
+Perplex relies on Hugo’s image processing capabilities to generate differently sized versions of every image. Thereby, every browser can pick the smallest sufficient size based on the actual width of the image and the pixel density of the actual screen.
 
 For good results, the original images should have a width of at least {{< imagewidth 2 >}} to allow double density on screens with a high resolution.
 
@@ -86,16 +86,16 @@ For good results, the original images should have a width of at least {{< imagew
 
 First, copies with different sizes are generated for the given image. They are all placed with the `srcset`-attribute inside the `<img>`-tag and to be at the disposal of the browsers. Based on the actual size of the image and the device resolution, every browser can download the optimal version.{^\*}
 
-_Perplex_ embeds every image **as a float** into the containing paragraph. The most obvious place is _at the beginning_ of paragraph. But we may want to place images also _in the middle_ of a paragraph. In both cases following paragraphs may flow around the image, too, when the containing paragraph is not very long.
+Perplex embeds every image **as a float** into the containing paragraph. The most obvious place is _at the beginning_ of paragraph. But we may want to place images also _in the middle_ of a paragraph. In both cases following paragraphs may flow around the image, too, when the containing paragraph is not very long.
 
-Because the image element is so easy to use, authors often include images self-contained {!_between paragraphs_}. This is a {!**problematic practice**}, because the image element will always be wrapped inside a paragraph in the resulting HTML.{^**} Therefore, the {!standard floating layout in _Perplex_ will be broken}.
+Because the image element is so easy to use, authors often include images self-contained {!_between paragraphs_}. This is a {!**problematic practice**}, because the image element will always be wrapped inside a paragraph in the resulting HTML.{^**} Therefore, the {!standard floating layout in Perplex will be broken}.
 
 {{< sidenote up=14 >}}
-A self-contained image element is treated by _Markdown_ like a paragraph with the image as the sole content inside. The HTML `<img>`-tag is an inline element in need of a block element as container.
+A self-contained image element is treated by Markdown like a paragraph with the image as the sole content inside. The HTML `<img>`-tag is an inline element in need of a block element as container.
 {{< /sidenote >}}
 
 ### The best way {.h-p .h-tip}
-to deal with self-contained images in _Perplex_ is to use the [_figure_-shortcode]({{< relref "figure" >}}), that includes the image.
+to deal with self-contained images in Perplex is to use the [_figure_-shortcode]({{< relref "figure" >}}), that includes the image.
 
 ### At the beginning of a paragraph
 

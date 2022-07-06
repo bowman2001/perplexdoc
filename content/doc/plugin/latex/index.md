@@ -1,7 +1,7 @@
 ---
 title: LaTeX
 date: "2021-05-18T10:15:06+02:00"
-description: Render Math inside _Markdown_
+description: Render Math inside Markdown
 subtitle: false
 featImg: LaTeX_logo.svg
 menu:
@@ -20,7 +20,7 @@ latex: true
 
 You need to enable the render engine for LaTeX — called [_KaTeX_][katex] --- by setting the parameter `latex` to `true`. You can do it either in the main configuration file for all pages or in the front-matter for specific pages.
 
-LaTeX’s formulas need to be surrounded by two dollar signs `$$` in _Hugo_.
+LaTeX’s formulas need to be surrounded by two dollar signs `$$` in Hugo.
 
 The following two formulas are the typesetting code for the reverse Fourier-transformation and an equation with infinite nested fractions, I can’t comprehend. There are **no line-breaks** allowed.
 

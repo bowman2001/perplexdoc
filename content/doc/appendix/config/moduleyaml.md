@@ -13,7 +13,7 @@ menu:
 weight: 1025
 ---
 
-The module configuration for this project, which imports the _Perplex_ theme from its [GitHub repository]({{< param themeURL >}}).
+The module configuration for this project, which imports the Perplex theme from its [GitHub repository]({{< param themeURL >}}).
 {.p-first} <!--more-->
 
 {{< highlight yaml "linenos=true" >}}

@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 title: Features
-description: What can _Perplex_ do for you?
+description: What can Perplex do for you?
 subtitle: false
 date: 2022-05-12T22:29:06+02:00 
 weight: 3

@@ -14,7 +14,7 @@ menu:
     pre: help_outline
 ---
 
-_Hugo’s_ shortcodes can inject arbitrary HTML into _Markdown_. They are [“Markdown’s hidden superpower”](https://gohugo.io).
+Hugo’s shortcodes can inject arbitrary HTML into Markdown. They are [“Markdown’s hidden superpower”](https://gohugo.io).
 {.p-first} <!--more-->
 
 ## Syntax

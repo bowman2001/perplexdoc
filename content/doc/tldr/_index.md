@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 title: Short Preview
-description: For seasoned _Hugo_ users
+description: For seasoned Hugo users
 subtitle: false
 date: 2022-05-11T23:46:08+02:00 
 weight: 2

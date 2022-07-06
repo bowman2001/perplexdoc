@@ -18,9 +18,9 @@ Headings introduce and order the segments on a page. On a website with many page
 
 ## Syntax
 
-_Markdown_ headings are preceded by number signs `#` and a space. The six available headings are associated with the following meaning in _Perplex_:
+Markdown headings are preceded by number signs `#` and a space. The six available headings are associated with the following meaning in Perplex:
 
-1. `# Page Title`&emsp;{s[**Not needed**][anchor] on standard _Perplex_ pages!}
+1. `# Page Title`&emsp;{s[**Not needed**][anchor] on standard Perplex pages!}
 
 2. `## Section Heading`
 
@@ -59,13 +59,13 @@ Headings are not only recognized by their font styling, but also by the white-sp
 
 # Page Title {.h-info .mt2 #title}
 
-If the page already has a title, the first heading **should not** occur in the _Markdown_ content. Like many themes _Perplex_ provides titles for all pages.
+If the page already has a title, the first heading **should not** occur in the Markdown content. Like many themes Perplex provides titles for all pages.
 
 {{< sidenote up=8 >}}
 The title is generated from parameters in the front-matter. (See [title]({{< relref "title" >}}))
 {{< /sidenote >}}
 
-We still may need the first heading on special pages without a title section, when we want to compose a title in the _Markdown_ content.
+We still may need the first heading on special pages without a title section, when we want to compose a title in the Markdown content.
 
 ## Section Heading
 {{< farfar 1 >}}

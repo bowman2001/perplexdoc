@@ -21,11 +21,11 @@ Replacement codes are surrounded by the curly braces `{` and `}` and begin with 
 
 x{_4}&ensp;x{^4}&emsp;X{_4}&ensp;X{^4} &emsp; x{_3}&ensp;x{^3}&emsp;X{_3}&ensp;X{^3} g{_5}
 
-Compare the _Perplex_ styling to the one _Plex_ fonts provide — unfortunately only for numbers. We can use them as _Unicode_ glyphs:
+Compare the Perplex styling to the one _Plex_ fonts provide — unfortunately only for numbers. We can use them as _Unicode_ glyphs:
 
 x₄&ensp;x⁴ &emsp; X₄&ensp;X⁴&emsp;x₃&ensp;x³ &emsp; X₃&ensp;X³
 
-This styling may be a good choice under special circumstances, the following examples include the _Perplex_ styling.
+This styling may be a good choice under special circumstances, the following examples include the Perplex styling.
 
 ### Chemical Formula
 

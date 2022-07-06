@@ -11,5 +11,5 @@ title: Attributes
 weight: 300
 ---
 
-Hugo's attribute injection is the key to most additional layout options of Perplex.
+Hugo’s attribute injection is the key to many additional layout options.
 {.p-first} <!--more-->

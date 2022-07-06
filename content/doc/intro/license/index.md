@@ -13,7 +13,7 @@ title: Licenses
 weight: 40
 ---
 
-_Perplex_ is an open source theme for the open source software [_Hugo_][hugo]. There are no other mandatory software requirements, but theme and documentation ship with external software and content. Their licensers and the licenses of their choosing are listed here, also.
+Perplex is an open source theme for the open source software [Hugo][hugo]. There are no other mandatory software requirements, but theme and documentation ship with external software and content. Their licensers and the licenses of their choosing are listed here, also.
 {.p-first} <!--more-->
 
 ## Perplex and its documentation
@@ -22,10 +22,10 @@ Perplex Theme
 : is released by Jörg (Georg) Makowski under the [Apache 2.0 License][ap2].
 
 Documentation
-: All _Markdown_ files for the documentation are released by Jörg (Georg) Makowski under the [Creative Commons License (CC BY-SA)][cc4].
+: All Markdown files for the documentation are released by Jörg (Georg) Makowski under the [Creative Commons License (CC BY-SA)][cc4].
 {.dl-loose}
 
-## Website generator _Hugo_
+## Website generator Hugo
 
 [Hugo][hugo]
 : is released by its authors and contributors under the [Apache 2.0 License][ap2].
@@ -52,7 +52,7 @@ Documentation
 ## Logos and pictures
 
 All logos
-: remain under the copyright of their respective owners. _Perplex_ logos are also released under the [Apache 2.0 License][ap2] by Jörg (Georg) Makowski.
+: remain under the copyright of their respective owners. Perplex logos are also released under the [Apache 2.0 License][ap2] by Jörg (Georg) Makowski.
 
 All pictures
 : have been retrieved from [Unsplash](https://unsplash.com) and remain under the copyright of their respective owners. Their names and the ID-codes are embedded in the filename, which is shown as pop-up title for every image. Additionally a link to the original is usually provided in the image caption.

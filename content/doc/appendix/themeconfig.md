@@ -1,6 +1,6 @@
 ---
 title: Theme Configuration
-description: Specific parameters for _Perplex_
+description: Specific parameters for Perplex
 subtitle: false
 date: 2022-01-28T19:41:07+01:00 
 weight: 1050

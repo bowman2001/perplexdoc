@@ -3,14 +3,19 @@
     <div id="l-content">
       <header class="page-header">
           {{- partial "img/featured.html" . -}}
-        <div class="title title--ruled">
-          <hr>
-            {{ partial "title/title.html" . }}
-            {{ partial "title/subtitle.html" . }}
-        </div>
+          {{ if eq .CurrentSection .FirstSection }}
+            <div class="title title--big">
+                {{ partial "title/title.html" . }}
+            </div>
+          {{ else }}
+            <div class="title title--ruled">
+              <hr>
+                {{ partial "title/title.html" . }}
+            </div>
+          {{ end }}
       </header>
         {{ with .Content }}
-          <div class="md md--serif md--list md--main md--linkcolor">
+          <div class="md md--sans md--list h-link-color md--link-color">
               {{- partial "content.html" . -}}
           </div>
         {{ end }}
@@ -24,7 +29,7 @@
         </nav>
       </div>
         {{ with .Page.GetPage "after_index" }}
-          <section class="md md--serif md--main md--linkcolor">
+          <section class="md md--sans h-link-color md--link-color">
               {{- partial "content.html" .Content }}
           </section>
         {{ end }}

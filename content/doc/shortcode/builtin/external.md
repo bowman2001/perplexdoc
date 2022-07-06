@@ -14,7 +14,7 @@ weight: 590
 
 ## Layout
 
-The styles are provided by the hosts of the content and may not always fit very well into the _Perplex_ layout.
+The styles are provided by the hosts of the content and may not always fit very well into the Perplex layout.
 
 ### Include a _gist_ from _GitHub_
 
@@ -22,28 +22,28 @@ A call of `{{</* gist spf13 7896402 "img.html" */>}}` gets rendered to:
 
 {{< gist spf13 7896402 "img.html" >}}
 
-See the [_Hugo_ documentation](https://gohugo.io/content-management/shortcodes#gist).
+See the [Hugo documentation](https://gohugo.io/content-management/shortcodes#gist).
 
 ### Include postings with `instagram`
 
 {{< instagram BWNjjyYFxVx >}}
 
-See the [_Hugo_ documentation](https://gohugo.io/content-management/shortcodes#instagram).
+See the [Hugo documentation](https://gohugo.io/content-management/shortcodes#instagram).
 
 ### Include messages from _Twitter_ with `tweet`
 
 {{< tweet 877500564405444608 >}}
 
-See the [_Hugo_ documentation](https://gohugo.io/content-management/shortcodes#tweet) for this specific shortcode.
+See the [Hugo documentation](https://gohugo.io/content-management/shortcodes#tweet) for this specific shortcode.
 
 ### Include videos with `vimeo`
 
 {{< vimeo 146022717 >}}
 
-See the [_Hugo_ documentation](https://gohugo.io/content-management/shortcodes#vimeo) for this specific shortcode.
+See the [Hugo documentation](https://gohugo.io/content-management/shortcodes#vimeo) for this specific shortcode.
 
 ### Include videos with `youtube`
 
 {{< youtube id="w7Ft2ymGmfc" title="A New Hugo Site in Under Two Minutes" >}}
 
-See the [_Hugo_ documentation](https://gohugo.io/content-management/shortcodes#youtube) for this specific shortcode.
+See the [Hugo documentation](https://gohugo.io/content-management/shortcodes#youtube) for this specific shortcode.

@@ -13,12 +13,12 @@ title: Code
 weight: 135
 ---
 
-**Perplex** offers space for 80 characters of code in one content line, when the screen is big enough. If the marginal column gets included, more than 120 fit in.
+The full-width text column offers space for {$80} characters of code in one line. When the marginal column is included in a code block, {$120} fit in.
 {.p-first} <!--more-->
 
-Short snippets of code are often placed _in line_ with the normal text. Long pieces of code or entire files are marked as _code blocks_.
+Short snippets of code are usually placed **in line** with the normal text. Long pieces of code or entire files are marked as **code blocks**.
 
-_Hugo_ can style and colorize code blocks according to their content with the built-in _Chroma highlighter_ and offers some options to style these blocks.  
+Hugo can style and colorize code blocks according to their content with the built-in _Chroma highlighter_ and offers some options to style these blocks.  
 
 ## Syntax
 
@@ -50,17 +50,17 @@ The _fenced_ version of the _CommonMark_ syntax is preferable for two reasons:
    4. Line anchors
    {.col2-l2}
 
-2. There is an overlap with the syntax for the extensions [footnote][ftn] and [definition-list][dl]. When we need subsequent paragraphs there, we need to indent them also by 4 spaces or a tab. If we place an indented code block after a footnote reference or a definition detail, _Hugo_ will treat it as a continuation and not as a code block.
+2. There is an overlap with the syntax for the extensions [footnote][ftn] and [definition-list][dl]. When we need subsequent paragraphs there, we need to indent them also by 4 spaces or a tab. If we place an indented code block after a footnote reference or a definition detail, Hugo will treat it as a continuation and not as a code block.
 
 ### Highlighting
 
-Many programming or markup languages are highlighted by _Chroma_, when we add their usual file suffixes or another identification code. The _Hugo_ docs include the full list of available [Chroma highlighting languages][hugochroma].
+Many programming or markup languages are highlighted by _Chroma_, when we add their usual file suffixes or another identification code. The Hugo docs include the full list of available [Chroma highlighting languages][hugochroma].
 
 ### Additional styling for fenced code blocks
 
 In contrast to other block elements the attributes follow the **first fence** of the code block on the same line after a space, like `` ```md {linenos=true}``.
 
-The options suitable for _Perplex_ are:
+The options suitable for Perplex are:
 
 `linenos`
 : Enables or disables line numbers. They are disabled by default [for this project]({{< relref "markup#40" >}}) --- enable them with `linenos=true`.
@@ -83,7 +83,7 @@ The HTML tag to mark the beginning of code is `<code>`. And to mark the end we u
 
 ### Code Blocks
 
-The first backticks marking a code block may be followed by an abbreviation for the kind of code. Then _Hugo_ is able to highlight and colorize the source code for better legibility. The abbreviations are usually the same or are referring to the common suffix for a file containing that kind of code.
+The first backticks marking a code block may be followed by an abbreviation for the kind of code. Then Hugo is able to highlight and colorize the source code for better legibility. The abbreviations are usually the same or are referring to the common suffix for a file containing that kind of code.
 
 ### Fenced
 

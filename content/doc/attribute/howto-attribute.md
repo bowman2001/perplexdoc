@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-12-19T13:27:29+01:00"
-description: Inject attributes into rendered HTML elements
+description: Inject HTML attributes in Markdown
 menu:
   doc:
     name: Howto
@@ -9,11 +9,11 @@ menu:
     parent: attributes
     pre: help_outline
 subtitle: false
-title: How to use attributes?
+title: How to use them?
 weight: 310
 ---
 
-Hugo’s attributes are in the end HTML attributes, which get injected from the _Markdown_ file into the resulting page.
+Hugo’s attributes are just HTML attributes, which get injected into the rendered result.
 {.p-first} <!--more-->
 
 Attributes are available for all kinds of _blocks_, for _headings_ and for _fenced code blocks_. We can allow them for blocks and headings in the configuration section for the _Goldmark_ parser, where the parameter `title` relates to all heading levels. They are by default disabled for blocks and enabled for headings. They are [all enabled]({{< relref "markup#19" >}}) for this documentation.
@@ -48,4 +48,4 @@ Other
 {.dl-loose}
 
 ## Layout
-Most _Perplex_ attributes style a specific element and the layout is shown on its page. Some are of general use, they are introduced on the next pages.
+Most Perplex attributes style a specific element and the layout is shown on its page. Some are of general use, they are introduced on the next pages.

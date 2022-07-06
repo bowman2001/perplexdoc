@@ -16,7 +16,7 @@ weight: 210
 Definition lists consist of **terms** as list markers, which are associated with **details** in the list entries.
 {.p-first} <!--more-->
 
-The definition list is an essential tool to structure textual content on a small scale. There is only one syntax, but _Perplex_ offers many styling options.  
+The definition list is an essential tool to structure textual content on a small scale. There is only one syntax, but Perplex offers many styling options.  
 
 ## Syntax
 

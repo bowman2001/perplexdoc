@@ -16,10 +16,10 @@ All available glyphs are valid Markdown. The following sections are about the sp
 
 ## Escaping formatting Characters
 
-The characters reserved for _Markdown_ formatting are not directly available anymore. Depending on the circumstances, the Markdown renderer may sometimes recognize, when they are used literally. But we can't count on that and have to _escape_ them by adding a backslash `\` in front.
+The characters reserved for Markdown formatting are not directly available anymore. Depending on the circumstances, the Markdown renderer may sometimes recognize, when they are used literally. But we can't count on that and have to _escape_ them by adding a backslash `\` in front.
 
 {{< sidenote up=8 >}}
-**Unescaped** formatting characters may suddenly produce strange layout errors, when we change the text in their vicinity. And they are driving _Markdown_ code editors and highlighters crazy.
+**Unescaped** formatting characters may suddenly produce strange layout errors, when we change the text in their vicinity. And they are driving Markdown code editors and highlighters crazy.
 {{< /sidenote >}}
 
 When we escape a number sign `\#` for example it’s just the number sign ‘**\#**’ and not a formatting character anymore.
@@ -54,7 +54,7 @@ Good typography needs the right amount of space between type. For the most part 
 
 ### Breaking Words — or not
 
-The major browsers do support hyphenation nowadays, _Perplex_ includes a [polyfill][hy] for the ones that don’t. That’s why we usually don’t need to introduce soft hyphens anymore.
+The major browsers do support hyphenation nowadays, Perplex includes a [polyfill][hy] for the ones that don’t. That’s why we usually don’t need to introduce soft hyphens anymore.
 
 The non-breaking entities are meant for situations where characters or words should never be separated by a new line.
 

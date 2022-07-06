@@ -4,19 +4,19 @@ date: "2021-08-18T10:59:52+02:00"
 description: Description
 menu:
   doc:
-    name: Side-Note
+    name: Note
     parent: theme
     pre: note    
-title: Side-Note
+title: Marginal Note
 weight: 530
 ---
 
-A note adds some information, that is not vital for the meaning of a text, but may be helpful for the understanding. It may explain context or shed light on a detail.
+A side-note contains information, that is not vital for the meaning of the main text, but may be helpful for its understanding. It explains context, sheds light on a detail etc.
 {.p-first}
 
-A note should accompany but not interrupt the text. If the screen is big enough, it is placed at one of the side margins in the vincinity of its reference. On small screens it is placed inside of the text and not at the end like a footnote with mere technical information.
+A side-note should accompany but not interrupt the text. If the screen is big enough, it is placed at right margins in the vicinity of its reference. On small screens it is placed before the following paragraph.
 
-Because a long note would fill the mobile screen and interrupt the reading flow, it is shortend to the first three lines and partially hidden. The interested reader can make it fully visible by a touch or click.
+Because a long note would interrupt the reading flow on mobile screens, it is partly hidden and can be made fully visible by touch or click.
 
 ## Syntax
 

@@ -14,7 +14,7 @@ title: Advertising
 weight: 100
 ---
 
-But I've also been working with two _Markdown_ editors for special purposes and for other work unrelated to this project:
+But I've also been working with two Markdown editors for special purposes and for other work unrelated to this project:
 
 [Typora](https://typora.io)
 : The software for Linux, macOS and Windows is still in a free beta testing phase, but working fine, mostly. It has a minimalistic *preview-editing mode* showing styled and editable Markdown in one window. And it provides an unmatched support for importing and editing tables.
