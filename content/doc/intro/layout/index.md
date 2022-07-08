@@ -36,40 +36,40 @@ Markdown is simple and simply great. It allows authors to compose the structure 
 There are professional solutions for a CMS-like workflow with web-GUIs. But they require a lot of additional configuration and I haven’t tried them with Perplex.
 {{< /sidenote >}}
 
-Because Markdown is so simple, the generated HTML remains limited. Most of the time that’s a good thing, because it’s therefor also predictable and easy to style. But sometimes the content begs for variations in the layout arrangement. Perplex offers many of them and allows to add some other HTML elements.
+Because Markdown is so simple, the complexity of the generated HTML remains limited. Most of the time that’s a good thing, but occasionally the content begs for variations in the layout arrangement or additional elements. Perplex offers both.
 
-## Additional Elements
+## Additional Styling and Elements
 
 [Attributes]({{< relref "attribute" >}})
-: are HTML attributes in single curly braces placed after Markdown elements. They mostly offer alternative styling. They get introduced on the pages of the specific element, they allow to alter, or in the chapter [Attributes]({{< relref "attribute" >}}) when they are of general use.
+: are HTML attributes in single curly braces placed after Markdown elements. They are introduced on the pages of the specific element, whose appearance they alter, or in the chapter [Attributes]({{< relref "attribute" >}}) if they are of general use.
 
 [Replacements]({{< relref "replace" >}})
-: are shorthands in single curly braces. They refer to inline HTML elements, which are missing in Hugo’s _Goldmark_ renderer.
+: are shorthands in single curly braces. They refer to the few less important inline HTML elements, which have no counterpart in Hugo’s Markdown.
 
 [Shortcodes]({{< relref "shortcode" >}})
-: are enclosed in two curly braces and angle brackets — like `{{</* shortcode */>}}`. They generate custom HTML in the rendered page and can take input parameters. They allow to add any HTML structure to Markdown, but tend to get complicated. Perplex includes some shortcodes, but only for those cases, where a _replacement_ or an _attribute_ is insufficient. If Hugo already provides a built-in shortcode, its established syntax is preserved as good as possible.
+: are enclosed in two curly braces and angle brackets — like `{{</* shortcode */>}}`. They can take input parameters and allow to extend Markdown with arbitrary HTML structures. They are a kind of superpower, but tend to get complicated. Perplex includes some shortcodes, but only in those cases, where a _replacement_ or an _attribute_ is insufficient. If Hugo already provides a built-in shortcode, its established syntax is preserved as good as possible.
 {.dl-loose}
 
-## Structured by _YAML_
+## Structured by YAML
 
-The complete navigation and all other page layout elements besides the content are controlled by meta-data _parameters_. This documentation relies on [_**Y**AML **A**in’t **M**arkup **L**anguage_](https://yaml.org) to format the data, because it’s well-known and has the widest support.
+The complete navigation and all other page layout elements besides the content are controlled by meta-data _parameters_. This documentation relies on [**Y**AML **A**in’t **M**arkup **L**anguage](https://yaml.org) to format the data, because it’s well-known and has the widest support.
 
 {{< sidenote up=14 >}}
-Hugo also processes meta-data formatted by _TOML_ and _JSON_ and allows to convert front-matter data between these formats.
+Hugo also processes meta-data formatted by TOML and JSON and allows to convert front-matter data between these formats.
 {{< /sidenote >}}
 
 Site parameters
 : for every Hugo project are contained in the site-wide [configuration][conf].
 
 Page parameters
-: are set directly in the Markdown text files. Every file starts with a _YAML_ front-matter block, which is enclosed by three dashes `---`.
+: are set directly in the Markdown text files. Every file starts with a YAML front-matter block, which is enclosed by three dashes `---`.
 {.dl-loose}
 
 Despite its successful efforts to make data-formatting as simple as possible, _YAML_ still needs to adhere to strict rules. This may be frustrating for beginners. Perplex provides skeleton templates via Hugo’s [`new` command][new]. It generates files with a working front-matter block for every type of content. They are filled with some reasonable auto-generated data and placeholders. The front-matter blocks for this documentation contain usually around 15 entries, and you probably have to change or add only a few of them in the beginning.
 
 ## In Case of Problems
 
-There are **two repositories** for Perplex. One for the [theme][theme] itself and one for the [documentation][doc]. The documentation ships with a copy of the theme, but all work on the theme happens only in its repository.
+There are _two repositories_ for Perplex. One for the [theme][theme] itself and one for the [documentation][doc]. The documentation ships with a copy of the theme, but all work on the theme happens only in its repository.
 
 ### Bugs or missing features in the theme
 

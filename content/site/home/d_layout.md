@@ -5,8 +5,8 @@ id: d4
 weight: 30
 ---
 
-Realize the possibilities of this **grid layout**. Let your content flow onto a _baseline grid_ in _evenly spaced columns_.
+Realize the possibilities of this grid layout. Let your content flow onto a baseline grid in evenly spaced columns.
 
-Move and resize figures, images and code boxes with [_Markdown attributes_]({{< relref "attribute">}})!
+Move and resize figures, images and code boxes with [Markdown attributes]({{< relref "attribute">}})!
 
-_View-port-sized_ responsive design and typography offer a consistent layout on all view-ports &gt; {$360px}.
+View-port-sized responsive design and typography offer a consistent layout on modern screens.

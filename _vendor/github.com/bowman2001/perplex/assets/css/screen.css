@@ -45,6 +45,7 @@ hr {
 :root {
   --fs: 51.8125%;
   --tnh: 10rem;
+  --tg: 3rem;
   --es: 0rem;
   --ta: left;
 }
@@ -64,6 +65,7 @@ hr {
   :root {
     --fs: 0.6578947368vw;
     --tnh: 5rem;
+    --tg: 4rem;
   }
 }
 @media screen and (min-width: 95em) {
@@ -258,7 +260,7 @@ body {
 }
 
 .l-tnp {
-  padding-top: calc(var(--tnh) + 1rem + 3 * var(--es));
+  padding-top: calc(var(--tnh) + var(--tg));
 }
 
 @media screen and (min-width: 37em) {
@@ -337,8 +339,8 @@ body {
 #l-home {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(7, auto) 1fr auto;
-  grid-template-areas: "dt" "l1" "d2" "l3" "d4" "l5" "d6" "." "fo";
+  grid-template-rows: 5rem repeat(6, auto) 1fr auto;
+  grid-template-areas: "." "dt" "l1" "d2" "l3" "d4" "l5" "d6" "." "fo";
   position: relative;
   z-index: 1;
   height: 100%;
@@ -346,7 +348,7 @@ body {
 @media screen and (min-width: 37em) {
   #l-home {
     grid-template-columns: 2rem repeat(2, 37rem) 2rem;
-    grid-template-rows: 3rem repeat(4, 37rem) 1fr auto;
+    grid-template-rows: 5rem repeat(4, 37rem) 1fr auto;
     grid-template-areas: ".  .  .  ." ".  dt .  ." ".  l1 d2 ." ".  d4 l3 ." ".  l5 d6 ." ".  .  .  ." ".  fo fo .";
   }
 }
@@ -733,7 +735,12 @@ body {
   }
 }
 
-.icon {
+.icon-svg {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+}
+.icon-font {
   font-family: "Material Icons", monospace;
   font-weight: 400;
   font-style: normal;
@@ -745,10 +752,10 @@ body {
   direction: ltr;
 }
 
-#tgl-sb .icon:after {
+#tgl-sb .icon-font:after {
   content: "\e5d2";
 }
-#tgl-sb.is-visible .icon:after {
+#tgl-sb.is-visible .icon-font:after {
   content: "\e9bd";
 }
 @media screen and (min-width: 79em) {
@@ -757,10 +764,10 @@ body {
   }
 }
 
-#toggle-toc .icon:after {
+#toggle-toc .icon-font:after {
   content: "\e896";
 }
-#toggle-toc.is-visible .icon:after {
+#toggle-toc.is-visible .icon-font:after {
   content: "\e5cd";
 }
 @media screen and (min-width: 120em) {
@@ -864,8 +871,7 @@ a.meta__item--text:hover {
   font-style: italic;
   text-transform: none;
   letter-spacing: 0.01em;
-  word-spacing: 0.015em;
-  letter-spacing: 0.005em;
+  word-spacing: 0.03em;
 }
 
 .title--li h2 {
@@ -1034,7 +1040,7 @@ a.meta__item--text:hover {
   margin-left: 2rem;
   margin-right: 2rem;
   max-width: 70rem;
-  border-top: 0.1rem solid #b97878;
+  border-top: 0.1rem solid rgba(33, 17, 17, 0.5);
 }
 @media screen and (min-width: 37em) {
   .md > p + ul, .md > p + ol {
@@ -1320,7 +1326,7 @@ a.meta__item--text:hover {
   font-weight: 300;
 }
 .md--serif .p-first strong {
-  font-weight: 600;
+  font-weight: 450;
 }
 
 .md--sans > p, .md--sans > ul, .md--sans > ol, .md--sans > dl, .md--sans > blockquote {
@@ -1690,15 +1696,15 @@ a.meta__item--text:hover {
   }
 }
 
-.md sup[id^=fnref] > a.footnote-ref {
+.md sup[id^=fnref] .footnote-ref {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 450;
   text-decoration: none;
 }
-.md sup[id^=fnref] > a.footnote-ref:before {
+.md sup[id^=fnref] .footnote-ref:before {
   content: " [";
 }
-.md sup[id^=fnref] > a.footnote-ref:after {
+.md sup[id^=fnref] .footnote-ref:after {
   content: "]";
 }
 .md sup[id^=fnref]:target {
@@ -1719,11 +1725,11 @@ a.meta__item--text:hover {
   padding: 0;
   border-top: 0.25em solid #444444;
 }
-.footnotes > ol {
+.footnotes ol {
   counter-reset: nr;
   color: #211111;
 }
-.footnotes > ol > li {
+.footnotes ol li {
   margin-bottom: 1.5rem;
   counter-increment: nr;
   transition: background-color 0.5s;
@@ -1732,32 +1738,30 @@ a.meta__item--text:hover {
   -webkit-column-break-inside: avoid;
   break-inside: avoid-column;
 }
-.footnotes > ol > li:target {
+.footnotes ol li:target {
   border-radius: 0.25em;
   background-color: #8fdbff;
 }
-.footnotes > ol > li:before {
+.footnotes ol li:before {
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
-  font-size: 1.68875rem;
+  font-size: 1.675625rem;
   line-height: 2.625rem;
-  padding-top: 0.680063125rem;
-  margin-bottom: -0.680063125rem;
+  padding-top: 0.6849784375rem;
+  margin-bottom: -0.6849784375rem;
   scroll-margin-top: calc(3.375rem + var(--tnh));
   float: left;
   height: 1em;
   content: counter(nr, decimal) ".";
 }
-.footnotes > ol > li > p {
-  font-family: 'IBM Plex Serif', Georgia, Times, serif;
-  font-weight: 450;
+.footnotes ol li p {
   font-size: 1.68875rem;
   line-height: 2.625rem;
   padding-top: 0.680063125rem;
   margin-bottom: -0.680063125rem;
   scroll-margin-top: calc(3.375rem + var(--tnh));
 }
-.footnotes > ol > li > p + p {
+.footnotes ol li p + p {
   text-indent: 2.5rem;
 }
 .footnotes ol li .footnote-backref {
@@ -1791,6 +1795,16 @@ a.meta__item--text:hover {
     column-count: 4;
   }
 }
+.md--sans .footnotes p {
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+}
+
+.md--serif .footnotes p {
+  font-family: 'IBM Plex Serif', Georgia, Times, serif;
+  font-weight: 450;
+}
+
 .md h2 {
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
@@ -1799,13 +1813,9 @@ a.meta__item--text:hover {
   padding-top: calc(1.42893rem + 1 * var(--es));
   padding-bottom: calc(0.57107rem + 1 * var(--es));
   scroll-margin-top: calc(2rem + var(--tnh) - 1 * var(--es));
-  letter-spacing: 0.02em;
-  word-spacing: 0.06em;
+  letter-spacing: 0.01em;
+  word-spacing: 0.03em;
   color: #222;
-}
-.md h2 > span {
-  display: block;
-  border-bottom: 0.1rem solid rgba(34, 34, 34, 0.25);
 }
 .md h3 {
   font-size: 2.3833333333rem;
@@ -1838,12 +1848,10 @@ a.meta__item--text:hover {
   padding-top: 0.777215rem;
   margin-bottom: -0.777215rem;
   scroll-margin-top: calc(3rem + var(--tnh));
+  padding-bottom: 0;
 }
 .md .h-p {
   margin-right: 1ch;
-}
-.md > h5, .md > h6, .md > .h-p {
-  padding-left: 2rem;
 }
 .md h5, .md .h-p {
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
@@ -1892,6 +1900,8 @@ a.meta__item--text:hover {
   padding-top: 0.464465rem;
   margin-bottom: -0.464465rem;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-bottom: 0;
 }
 
 .md--home {
@@ -1915,8 +1925,21 @@ a.meta__item--text:hover {
   padding-bottom: 0.2134225rem;
   font-family: 'IBM Plex Serif', Georgia, Times, serif;
   font-weight: 700;
-  letter-spacing: 0.03em;
-  word-spacing: 0.09em;
+  letter-spacing: 0.05em;
+  word-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.md--doc h2 {
+  font-size: 2.86rem;
+  line-height: 3rem;
+  padding-top: calc(1.42893rem + 1 * var(--es));
+  padding-bottom: calc(0.47107rem + 1 * var(--es));
+  scroll-margin-top: calc(2rem + var(--tnh) - 1 * var(--es));
+}
+.md--doc h2 > span {
+  display: block;
+  border-bottom: 0.1rem solid rgba(34, 34, 34, 0.5);
 }
 
 .md--white h2, .md--white h3, .md--white h4, .md--white h5, .md--white h6 {
@@ -2477,27 +2500,29 @@ a.meta__item--text:hover {
 .nav__link {
   transition: color 150ms ease-in-out, text-decoration-color 150ms, border-color 150ms ease-in-out;
 }
-.nav__link .icon {
-  transition: color 150ms ease-in-out;
+.nav__link .icon-font, .nav__link path {
+  transition: color 150ms ease-in-out, fill 150ms ease-in-out;
 }
 .nav__link:hover, .nav__link:focus {
   color: black;
-  text-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1333333333);
   border-color: hsl(325deg, 79%, 44%);
 }
-.nav__link:hover .icon, .nav__link:focus .icon {
+.nav__link:hover .icon-font, .nav__link:focus .icon-font {
   color: hsl(325deg, 79%, 44%);
+}
+.nav__link:hover path, .nav__link:focus path {
+  fill: hsl(325deg, 79%, 44%);
 }
 .nav__link.is-active {
   color: black;
   border-color: hsl(199deg, 100%, 38%);
   pointer-events: none;
 }
-.nav__link.is-active .icon {
+.nav__link.is-active .icon-font {
   color: hsl(199deg, 100%, 38%);
 }
 
-.icon {
+.icon-font {
   color: rgba(0, 0, 0, 0.54);
 }
 
@@ -2561,7 +2586,7 @@ a.meta__item--text:hover {
   font-weight: 700;
   font-size: 1.43rem;
   padding: 0.9rem 0 0.4rem 0;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 @media screen and (min-width: 48em) {
   .ctrl {
@@ -2590,29 +2615,12 @@ a.meta__item--text:hover {
   text-transform: uppercase;
 }
 
-.ctrl-sh {
-  height: 5rem;
-}
-.ctrl-sw button, .ctrl-sw a {
-  padding: 0 0.5rem;
-}
-
 .ctrl-left {
   justify-content: flex-start;
   padding-left: 1rem;
 }
 
-.ctrl-sw-left {
-  justify-content: flex-start;
-  padding-left: 1.5rem;
-}
-
 .ctrl-right {
-  justify-content: flex-end;
-  padding-right: 1rem;
-}
-
-.ctrl-sw-right {
   justify-content: flex-end;
   padding-right: 1.5rem;
 }
@@ -2813,7 +2821,7 @@ a.page-nav__item--prev, a.page-nav__item--next {
   padding-top: 1.8494935rem;
   padding-bottom: 1.1505065rem;
 }
-.sidebar__list li .icon {
+.sidebar__list li .icon-font {
   font-size: 150%;
   width: 5rem;
 }
@@ -2834,7 +2842,7 @@ a.page-nav__item--prev, a.page-nav__item--next {
   padding-top: 1.421772rem;
   padding-bottom: 0.578228rem;
 }
-.sidebar__list li li .icon {
+.sidebar__list li li .icon-font {
   width: 4rem;
 }
 .sidebar__list li li li {
@@ -2851,7 +2859,7 @@ a.page-nav__item--prev, a.page-nav__item--next {
     padding-top: 1.464465rem;
     padding-bottom: 0.535535rem;
   }
-  .sidebar__list > li > a > .icon {
+  .sidebar__list > li > a > .icon-font {
     font-size: 187.5%;
   }
   .sidebar__list li li a, .sidebar__list li li .open-menu, .sidebar__list li li .chk-menu {
@@ -2914,10 +2922,10 @@ a.page-nav__item--prev, a.page-nav__item--next {
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
-.open-menu > .icon {
+.open-menu > .icon-font {
   position: static;
 }
-.open-menu > .icon:after {
+.open-menu > .icon-font:after {
   content: "\e145";
 }
 
@@ -3023,16 +3031,18 @@ a.page-nav__item--prev, a.page-nav__item--next {
   border-left: 0.5rem solid #ccc;
   transition: color 150ms ease-in-out, text-decoration-color 150ms, border-color 150ms ease-in-out;
 }
-#TableOfContents a .icon {
-  transition: color 150ms ease-in-out;
+#TableOfContents a .icon-font, #TableOfContents a path {
+  transition: color 150ms ease-in-out, fill 150ms ease-in-out;
 }
 #TableOfContents a:hover, #TableOfContents a:focus {
   color: black;
-  text-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1333333333);
   border-color: hsl(325deg, 79%, 44%);
 }
-#TableOfContents a:hover .icon, #TableOfContents a:focus .icon {
+#TableOfContents a:hover .icon-font, #TableOfContents a:focus .icon-font {
   color: hsl(325deg, 79%, 44%);
+}
+#TableOfContents a:hover path, #TableOfContents a:focus path {
+  fill: hsl(325deg, 79%, 44%);
 }
 #TableOfContents li li > a {
   padding-left: 3rem;
