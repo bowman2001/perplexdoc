@@ -13,7 +13,7 @@ title: Line Break
 weight: 111
 ---
 
-Sometimes we like to begin a new line without starting a whole new text block. To place such a **hard line break** gets complicated, when **hard line wraps** limit the line length in our file.
+Sometimes we like to begin a new line without starting a whole new text block. To place such a hard line break gets complicated, when _hard line wraps_ limit the line length in our file.
 {.p-first} <!--more-->
 
 ## Syntax
