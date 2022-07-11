@@ -40,15 +40,15 @@ To resolve their annoying incompatibilities and to create a dependable syntax, J
 
 ## Markdown for Perplex
 
-Perplex styles HTML, which is generated from extended _CommonMark_ by Hugo’s default renderer [_Goldmark_][gmark]. Three extensions — the [_definition list_]({{< relref "definition-list" >}}), the [_footnote_]({{< relref "footnotes" >}}) and the [_typographer_]({{< relref "typographer" >}}) — have been adopted from [_PHP Markdown Extra_][phpmex]. Based on _CommonMark_, [_GitHub_](https://github.com) introduced _**G**itHub **F**lavored **M**arkdown (GFM)_ with the extensions [_table_]({{< relref "table" >}}), the [_task-list_]({{< relref "task-list">}}), [_strikethrough_]({{< relref "delins">}}) and _linkify_. They are defined in a [new specification][gfmspec] and are all available in _Goldmark_.
+Perplex styles HTML, which is generated from extended [CommonMark][cmark] by Hugo’s default renderer [Goldmark][gmark]. Three extensions — the [definition list]({{< relref "definition-list" >}}), the [footnote]({{< relref "footnotes" >}}) and the [typographer]({{< relref "typographer" >}}) — have been adopted from [PHP Markdown Extra][phpmex]. Based on CommonMark, [GitHub](https://github.com) introduced **G**itHub **F**lavored **M**arkdown (GFM) with the four extensions [table]({{< relref "table" >}}), the [task-list]({{< relref "task-list">}}), [strikethrough]({{< relref "delins">}}) and linkify. They are defined in a [new specification][gfmspec].
 
 {{< sidenote up=20 >}}
-The **Blackfriday** renderer is not fully _CommonMark_-compliant. _Black&shy;fri&shy;day_ generated HTML may be styled correctly most of the time by Perplex. But if you want to rely on Perplex, I strongly suggest switching to _Goldmark_.
+The deprecated **Blackfriday** renderer is not fully CommonMark-compliant. Black&shy;fri&shy;day generated HTML may be styled correctly most of the time by Perplex. But if you want to rely on Perplex, I strongly suggest switching to Goldmark.
 {{< /sidenote >}}
 
-Further extensions may join in the future, but probably only a few if any, because simplicity remains essential for Markdown.
+Further extensions may join in the future, but probably only a few if any, because simplicity is essential for Markdown.
 
-This documentation includes a short review of every syntax element in _Goldmark_ and shows an example of its standard layout and alternative styling options with Perplex:
+This documentation includes a short review of every syntax element in Goldmark and shows an example of its standard layout and alternative styling options with Perplex:
 
 [Basic Markdown Layout]({{< relref "basic" >}})
 : covers the elements of the [_CommonMark specification_][cmark].
@@ -64,9 +64,9 @@ Two basic Markdown elements are continuously creating confusion, because they ar
 : The Markdown image element is syntactically meant to be placed inside a block element. But it’s also allowed to be used self-contained and gets **automatically wrapped** by an empty paragraph block, then.[^1]
 
 [Line Break][lb]
-: _CommonMark_ and _GFM_ are not fully compatible in regard to this one element. There are two different ways to handle line breaks inside of text blocks:
-    1. Treat hard line wraps in Markdown files as whitespace like _CommonMark_ does.
-    2. Treat hard line wraps as hard line wraps like _GFM_.
+: CommonMark and GFM are not fully compatible in regard to this one element. There are two different ways to handle line breaks inside of text blocks:
+    1. Treat hard line wraps in Markdown files as whitespace like CommonMark does.
+    2. Treat hard line wraps as hard line wraps like GFM.
 {.dl-loose}
 
 [^TODO]: Explain this continuation indent for description lists.
@@ -77,14 +77,13 @@ The following suggestions for these elements are short. Their issues are discuss
 
 ### How to include images?
 
-There is one image element in Markdown for embedding an image into a block element and no genuine element for a self-contained image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. Perplex provides the shortcode [_figure_]({{< relref "doc/shortcode/builtin/internal" >}}) for this purpose.
+There is one image element in Markdown for embedding an image into a block element and no genuine element for a self-contained image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. Perplex provides the shortcode [{$figure}]({{< relref "doc/shortcode/builtin/internal" >}}) for this purpose.
 
 {{< figure splash />}}
 
 To surround every self-contained Markdown image element with a paragraph — like _CommonMark_ proposes and Hugo does — leads to a simple working solution, when the layout treats all images alike.
 
 ![splash](splash2) Perplex styles the Markdown image element always embedded in text blocks as a float. In contrast to them, the self-contained images should stand out. Perplex also offers layout variations for both kinds of images. That's why Perplex users need to use the  [figure]({{< relref "figure" >}})-shortcode for self-contained images and the Markdown image element only for [embedded ones][img].
-{.clear}
 
 ### How to wrap lines? {#wrap .clear}
 
