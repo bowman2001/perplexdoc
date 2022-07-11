@@ -13,5 +13,5 @@ title: Shortcodes
 weight: 500
 ---
 
-
-## Shortcodes available for Perplex
+We need shortcodes to utilize complex HTML structures beyond the capabilities of extended Markdown.
+{.p-first} <!--more--> 

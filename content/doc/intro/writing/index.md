@@ -138,7 +138,7 @@ Many of these editors offer a convenient separate _preview window_. With Hugo yo
 _CommonMark_ is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [_Markdownlint_][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing. For this project the default settings are modified in the configuration file [`.markdownlint.yaml`][mlintconf] at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.  
 
 [omd]: https://daringfireball.net/projects/markdown/ "Markdown project site by John Gruber"
-[cmark]: https://CommonMark.org "CommonMark project site"
+[cmark]: https://commonmark.org "CommonMark project site"
 [gmark]: https://github.com/yuin/goldmark "Goldmark repository"
 [phpmex]: https://michelf.ca/projects/php-markdown/extra/ "PHP Markdown Extra site"
 [gfmspec]: https://github.github.com/gfm "GitHub Flavored Markdown Specification"

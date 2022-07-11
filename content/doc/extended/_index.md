@@ -13,7 +13,7 @@ title: Extended Markdown
 weight: 200
 ---
 
-_PHP Markdown Extra_ and _GitHub Flavored Markdown (GFM)_ offer some widely used extensions to the basic _CommonMark_ syntax.
+PHP Markdown Extra and GitHub flavored Markdown (GFM) offer some widely used extensions to the basic CommonMark syntax.
 {.p-first} <!--more-->
 
 All extensions are enabled in Hugo by default, but we can disable them separately. (See the configuration file [`markup.yaml`]({{< relref "markup#8" >}}) for this site)

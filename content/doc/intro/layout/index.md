@@ -28,7 +28,7 @@ The stylesheet is intended for recent browsers used by around 95\% of the users 
 
 ## Based on Standardized Markdown
 
-Hugo’s default renderer _Goldmark_ processes _CommonMark Markdown_ and some extensions adopted from _PHP Markdown Extra_ and _GitHub flavored Markdown (GFM)_.
+Hugo’s default renderer [Goldmark][gmark] processes [CommonMark][cmark] Markdown and some extensions adopted from [PHP Markdown Extra][phpmex] and [**G**itHub **f**lavored **M**arkdown][gfmspec] (GfM).
 
 Markdown is simple and simply great. It allows authors to compose the structure of (web) pages with a few intuitive markup characters in plain text files. These structured files are rendered into reliable and clean (HTML) code.
 
@@ -52,7 +52,7 @@ Because Markdown is so simple, the complexity of the generated HTML remains limi
 
 ## Structured by YAML
 
-The complete navigation and all other page layout elements besides the content are controlled by meta-data _parameters_. This documentation relies on [**Y**AML **A**in’t **M**arkup **L**anguage](https://yaml.org) to format the data, because it’s well-known and has the widest support.
+The complete navigation and all other page layout elements besides the content are controlled by meta-data parameters. This documentation relies on [**Y**AML **A**in’t **M**arkup **L**anguage](https://yaml.org) to format the data, because it’s well-known and has the widest support.
 
 {{< sidenote up=14 >}}
 Hugo also processes meta-data formatted by TOML and JSON and allows to convert front-matter data between these formats.
@@ -86,5 +86,9 @@ Please have a look first at the already existing [issues][issue] for this theme.
 [theme]: https://github.com/bowman2001/perplex
 [issue]: https://github.com/bowman2001/perplex/issues
 [doc]: https://github.com/bowman2001/perplexdoc
+[cmark]: https://commonmark.org "CommonMark project site"
+[gmark]: https://github.com/yuin/goldmark "Goldmark repository"
+[phpmex]: https://michelf.ca/projects/php-markdown/extra/ "PHP Markdown Extra site"
+[gfmspec]: https://github.github.com/gfm "GitHub Flavored Markdown Specification"
 [conf]: {{< relref "config.md" >}}
 [new]: {{< relref "hugo#first" >}}
