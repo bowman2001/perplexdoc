@@ -32,9 +32,9 @@ Markdown has become the favored markup language for structuring text files. With
 
 Markdown consists of plain text marked up with a small set of ASCII signs. Its designed to be read and to work with as easily as possible, the files usually get the suffix `.md`. After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors emerged.
 
-{{< sidenote star=1 up=8 >}}
+{{< mnote star=1 up=8 >}}
 The suffixes `.mdown` and `.markdown` also indicate Markdown, but they are rarely used.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 To resolve their annoying incompatibilities and to create a dependable syntax, John Mc&hairsp;Farlane et al. proposed a strict  specification in 2011: [_CommonMark_][cmark]. This specification has been implemented in many Markdown render engines since and important web-software providers thereby adhere to _CommonMark_. For a quick look at _CommonMark_ you can visit their crisp [one page overview](https://CommonMark.org/help).
 
@@ -42,9 +42,9 @@ To resolve their annoying incompatibilities and to create a dependable syntax, J
 
 Perplex styles HTML, which is generated from extended [CommonMark][cmark] by Hugo’s default renderer [Goldmark][gmark]. Three extensions — the [definition list]({{< relref "definition-list" >}}), the [footnote]({{< relref "footnotes" >}}) and the [typographer]({{< relref "typographer" >}}) — have been adopted from [PHP Markdown Extra][phpmex]. Based on CommonMark, [GitHub](https://github.com) introduced **G**itHub **F**lavored **M**arkdown (GFM) with the four extensions [table]({{< relref "table" >}}), the [task-list]({{< relref "task-list">}}), [strikethrough]({{< relref "delins">}}) and linkify. They are defined in a [new specification][gfmspec].
 
-{{< sidenote up=20 >}}
+{{< mnote up=20 >}}
 The deprecated **Blackfriday** renderer is not fully CommonMark-compliant. Black&shy;fri&shy;day generated HTML may be styled correctly most of the time by Perplex. But if you want to rely on Perplex, I strongly suggest switching to Goldmark.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 Further extensions may join in the future, but probably only a few if any, because simplicity is essential for Markdown.
 
@@ -93,9 +93,9 @@ _My experience_ : No, these _hard line wraps_ cause us and collaborating authors
 
 When we rely on soft line wrapping everyone can read and edit the Markdown using a suitable line width. When we place manual wraps instead, everyone — including ourselves — has to deal with them again and again. They have to be moved or removed every time, when text is added or deleted.
 
-{{< sidenote up=14 >}}
+{{< mnote up=14 >}}
 **GitHub** decided to treat all hard wraps as such on their platform a short while ago.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 Hugo can handle both ways perfectly, the decision only affects our editing experience.
 
@@ -115,16 +115,16 @@ See the page [Line Break][lb] for the configuration and the question of _CommonM
 ## Special characters
 All available characters—more general _glyphs_—can be used in Markdown, either directly as _Unicode_ or as _HTML entities_ (like `&para;` for &para;). The markup characters need to be escaped by a preceding backslash `\` to get treated literally by the Markdown renderer. See [Special Characters]({{< relref "specialchar#html-entities" >}}) for this topic.
 
-{{< sidenote up=14 >}}
+{{< mnote up=14 >}}
 You can still get into trouble with glyphs, which are missing in the fonts of your website. But this is a general issue independent of Markdown rendering.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 ## File Encoding
 The Markdown syntax works with every encoding. But almost all modern websites stick to the de facto standard _UTF-8_ and Perplex does, too. Your Markdown files should be encoded in _UTF-8_ and if you never thought about it before, they probably already are. This also holds for other text resources you fetch data from.
 
-{{< sidenote up=17 >}}
+{{< mnote up=17 >}}
 When you import strings from a JSON-file with _UTF-16_ encoding for example, the encoding outside the common ASCII set has a different meaning and leads to false and probably strange glyphs, when you use non-ASCII characters.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 ## Markdown Editors
 Most programming editors and IDEs support Markdown out of the box or provide plugins. There’s no need to search for a new editor, if you are already satisfied with yours.

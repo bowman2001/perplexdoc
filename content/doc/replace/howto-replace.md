@@ -53,8 +53,8 @@ Perplex applies the following replacements and styles them like the following ex
 | Citation    | =author | {=author} |
 | Insertion   | +insert | {+insert} |
 
-{{< sidenote up=16 >}}
+{{< mnote up=16 >}}
 These codes are substituted with the help of short regular expressions in the layout template [`content.html`]({{< relref "content" >}}). Every call of `.Content` in the Markdown templates is replaced with this partial. Other Hugo themes could use it as well.  
-{{< /sidenote >}}
+{{< /mnote >}}
 
 [^todo]:| Break       | /       | break{/}here |

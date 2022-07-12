@@ -61,9 +61,9 @@ Headings are not only recognized by their font styling, but also by the white-sp
 
 If the page already has a title, the first heading **should not** occur in the Markdown content. Like many themes Perplex provides titles for all pages.
 
-{{< sidenote up=8 >}}
+{{< mnote up=8 >}}
 The title is generated from parameters in the front-matter. (See [title]({{< relref "title" >}}))
-{{< /sidenote >}}
+{{< /mnote >}}
 
 We still may need the first heading on special pages without a title section, when we want to compose a title in the Markdown content.
 

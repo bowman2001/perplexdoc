@@ -26,11 +26,11 @@ In addition to the normal paragraph Perplex offers a _lead_ paragraph — like t
 
 _Line height_ and _line length_ harmonize with the proportions of the _Plex_ fonts. The space between subsequent paragraphs is twice as big as the space between two lines inside a paragraph. On small screens it's a little less.
 
-{{< sidenote up=11 >}}
+{{< mnote up=11 >}}
 In print subsequent paragraphs are sometimes separated by indenting their first line, to interrupt the reading flow as little as possible.
 
 The technique is mostly used for prose, but also appropriate for notes like this one. Here, a vertical separation could falsely suggest the beginning of a new note.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 ### Two standard Paragraphs
 

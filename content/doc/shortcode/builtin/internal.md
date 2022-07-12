@@ -15,9 +15,9 @@ weight: 580
 
 To refer to a page on our site we can include the URL into a [link]({{< relref "link" >}}) like any other. But it's often long and when our content grows and evolves, the path may change. Therefore, we better leave the resolution to Hugo by using an unambiguous name for the page.
 
-{{< sidenote >}}
+{{< mnote >}}
 If the name of a page is not unique, we still need to fill in the complete relative path. The advantage of `relref` then is, that Hugo checks the existence of the file.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 To replace unique names with URLs, Hugo provides `relref` or `ref`. Internal links with these shortcodes look like
 

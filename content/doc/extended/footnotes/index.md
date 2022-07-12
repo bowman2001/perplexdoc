@@ -18,9 +18,9 @@ Footnotes are placed at the bottom of the page. They are best suited for technic
 
 Footnotes are indispensable for scientific documents or more rigorous essays. They reference sources or elaborate on details. Because they are placed at the end of the content, the footnote marker contains a link allowing to jump to the note. And the note contains a link back to the marker.
 
-{{< sidenote up=5 >}}
+{{< mnote up=5 >}}
 To jump back and forth between text and footnotes is distracting. Perplex offers a [marginal note]({{< relref "note" >}}) like this one as an alternative for more important content. It’s placed, where it occurs in the Markdown. If possible in the marginal column besides the main text.  
-{{< /sidenote >}}
+{{< /mnote >}}
 
 ## Syntax
 
@@ -30,9 +30,9 @@ A Footnote consists of a _marker_ and a separate _reference_ below. Every _refer
 
 A marker looks like `[^1]` or `[^footnotephrase]`. The brackets and the `^` character are mandatory, the name of the marker can be chosen arbitrarily — no need to count or follow some pattern.
 
-{{< sidenote up=11 >}}
+{{< mnote up=11 >}}
 A marker should be placed **directly behind** a word or a sentence without any space in between. It’s allowed to have a space before, but then an ugly line break between the text and the marker may occur.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 There’s only one rule: **All references on a page need to be _unique_**.
 

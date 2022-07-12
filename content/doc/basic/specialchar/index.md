@@ -18,9 +18,9 @@ All available glyphs are valid Markdown. The following sections are about the sp
 
 The characters reserved for Markdown formatting are not directly available anymore. Depending on the circumstances, the Markdown renderer may sometimes recognize, when they are used literally. But we can't count on that and have to _escape_ them by adding a backslash `\` in front.
 
-{{< sidenote up=8 >}}
+{{< mnote up=8 >}}
 **Unescaped** formatting characters may suddenly produce strange layout errors, when we change the text in their vicinity. And they are driving Markdown code editors and highlighters crazy.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 When we escape a number sign `\#` for example it’s just the number sign ‘**\#**’ and not a formatting character anymore.
 

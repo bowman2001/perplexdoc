@@ -62,9 +62,9 @@ We have to provide the image reference somewhere else in the same file by repeat
 
 This syntax is especially convenient, when an image is used more than once or when a long path or title would clutter the other content.
 
-{{< sidenote up=13 >}}
+{{< mnote up=13 >}}
 **The optional title** for an image gets displayed, when a mouse pointer hovers over the image. Consider that many touch-screen devices don't have one. The image title shouldn’t contain very important information.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 ### Block Attributes
 
@@ -90,9 +90,9 @@ Perplex embeds every image **as a float** into the containing paragraph. The mos
 
 Because the image element is so easy to use, authors often include images self-contained {!_between paragraphs_}. This is a {!**problematic practice**}, because the image element will always be wrapped inside a paragraph in the resulting HTML.{^**} Therefore, the {!standard floating layout in Perplex will be broken}.
 
-{{< sidenote up=14 >}}
+{{< mnote up=14 >}}
 A self-contained image element is treated by Markdown like a paragraph with the image as the sole content inside. The HTML `<img>`-tag is an inline element in need of a block element as container.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 ### The best way {.h-p .h-tip}
 to deal with self-contained images in Perplex is to use the [_figure_-shortcode]({{< relref "figure" >}}), that includes the image.

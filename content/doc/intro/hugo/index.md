@@ -18,9 +18,9 @@ The world’s fastest static site generator is steadily gaining traction. Hugo p
 
 [Hugo](https://gohugo.io) is a command line tool for _macOS_, _Windows_, _Linux_ and _BSD_ derivatives. Binaries for most operating systems and some containers are usually available within a day or a few after every release.
 
-{{< sidenote up=11 >}}
+{{< mnote up=11 >}}
 The [Hugo source](https://github.com/gohugoio/hugo) can be compiled on every machine with a recent [Go environment](https://go.dev).
-{{< /sidenote >}}
+{{< /mnote >}}
 
 ## Getting started
 
@@ -86,9 +86,9 @@ The _themes_ folder can hold as many themes as we like and there are three ways 
 
 3. Import the Perplex repository as a Hugo module. You need to have a recent [Go environment](https://go.dev) – Hugo modules rely on _Go_ modules. The Hugo docs provide a [guide to this powerful feature](https://gohugo.io/hugo-modules). Once set up, _Hugo modules_ are the easiest way to update themes or other external components of your Hugo configuration. There is an example for the configuration in the file [`module.yaml`]({{< relref "moduleyaml.md" >}}), because this project imports the theme as a module.
 
-{{< sidenote up=20 >}}
+{{< mnote up=20 >}}
 **This project** doesn’t need a _Go environment_, because it has a local copy (`_vendor`). But if you want to update the theme, you need to install _Go_ and apply the `hugo mod ...` commands.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 When you chose option 1. or 2., you need to tell Hugo to use the theme in the [config file]({{< relref "configyaml.md#6" >}}). With the module you don’t.
 
@@ -100,9 +100,9 @@ While working on a web project, we often like to constantly watch the resulting 
 hugo server -D --minify --navigateToChanged
 ```
 
-{{< sidenote up=5 >}}
+{{< mnote up=5 >}}
 **Hugo’s server** can also show a private preview on the web under a configured URL. But it's by no means a full-fledged web server.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 The pages are rendered into the computer memory and the site is served under <http://localhost:1313>.
 
@@ -174,17 +174,17 @@ hugo new blog/my-second-post/index.md
 
 The file `index.md` is rendered again as a single page, but now we can move page-specific resources in the folder of the _leaf branch_ and access them directly via their filename.
 
-{{< sidenote up=14 >}}
+{{< mnote up=14 >}}
 **Subdirectories** are possible. We can build only one single page with a leaf bundle, but there is no limit to the folder structure for resources.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 #### Blog posts
 
 When the number of blog entries rises, we need some structure. This is achieved with _taxonomies_, and Hugo’s defaults are the usual _categories_ and _tags_. We can use them immediately, the front matter already includes the empty parameter keys:
 
-{{< sidenote up=14 >}}
+{{< mnote up=14 >}}
 **New Taxonomies** may be defined in the configuration. Please read the corresponding [docs](https://gohugo.io/content-management/taxonomies#configure-taxonomies).
-{{< /sidenote >}}
+{{< /mnote >}}
 
 ```yaml {class="col-left" linenos=true linenostart=5 }
 categories:
@@ -247,9 +247,9 @@ The small difference between a _leaf bundle_ for a [single page]({{< relref "#si
 
 `_index.md` should contain general content about this section. The page for a _branch bundle_ usually also presents a list of selected content from every page in the branch.
 
-{{< sidenote up=11 >}}
+{{< mnote up=11 >}}
 **No subdirectories** are accessible to retrieve resources in `_index.md`. All resources specific for the list page generated from `_index.md` at the root of the _branch bundle_ need also to be placed in the branch root. This limitation avoids confusion about the purpose of subfolders.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 To reflect this relationship in the menu, we need to set `parent = "demo"` in `my-first-doc-page` and Hugo rearranges the page structure and the menu alike.
 

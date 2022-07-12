@@ -66,9 +66,9 @@ Because there are currently no replacement extension available for other languag
 
 2. We can always use [HTML entities]({{< relref "specialchar" >}}). We get the German _Gänsefüßchen_&ensp;&bdquo;&nbsp;and&nbsp;&ldquo;&nbsp; with `&bdquo;` and `&ldquo;` for example. Entities look weird in text files, but the result is as good as the original Unicode glyphs.
 
-{{< sidenote up=11 >}}
+{{< mnote up=11 >}}
 It’s technically possible to replace them later automatically with Unicode glyphs, but until now I’ve found no simple piece of software I can recommend.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 ## Blockquote
 
@@ -85,9 +85,9 @@ Every line of a block quotation has to start with a _right angled bracket_, empt
 
 The result is an indented block with a slightly smaller font size and two paragraphs:
 
-{{< sidenote up=8 >}}
+{{< mnote up=8 >}}
 It should approximately match the number of characters in a normal line of text.
-{{< /sidenote >}}
+{{< /mnote >}}
 
 > It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.
 >
