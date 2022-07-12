@@ -38,7 +38,7 @@ Every element is surrounded by the curly braces `{` and `}`. A special character
 
 `+`
 : Insertion `<ins>`
-{.dl-tight}
+{.dl-tight .col2}
 
 ## Quick Overview of the Layout
 
