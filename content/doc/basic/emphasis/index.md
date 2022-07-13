@@ -8,13 +8,12 @@ menu:
     name: Emphasis
     parent: basic
     pre: format_italic
-subtitle: true
 title: Emphasis
 weight: 116
 ---
 
 We have _light emphasis_ or **strong emphasis** to accentuate a segment of the text. We can **_nest_** both types.
-<!--more-->
+{.p-first} <!--more-->
 
 ## Light emphasis
 

@@ -11,7 +11,7 @@ title: My Punctuation Keys
 weight: 1090
 ---
 
-| Punctuation name                |  #   |      Key combination                       |
+| Punctuation name                |  Unicode |      Key combination                       |
 | :-------------------------- | :--: | --------------------------: |
 | Double quotes left  |  “   |            {#Alt Gr} + {#B} |
 | Double quotes right |  ”   |            {#Alt Gr} + {#N} |

@@ -16,11 +16,11 @@ weight: 260
 Simple ASCII punctuation characters are substituted with typographical glyphs.
 {.p-first} <!--more-->
 
-The concept for _Typographer_ follows the [Smartypants](https://daringfireball.net/projects/smartypants/) project from John Gruber, who also started Markdown. Convenient typing options should encourage the use of good typography.
+The Typographer provides the same functionality as the [Smartypants](https://daringfireball.net/projects/smartypants/) project from John Gruber, who also started Markdown. Convenient typing options encourage the use of good typography.
 
-The same results could also be achieved by using the _Unicode characters_ or _HTML entities_, but they are difficult to use. These are the substitutions the _Typographer_ offers:
+These are the substitutions:
 
-| Element       |   ASCII          |  Result   |
+| Name          |   ASCII          |  Result   |
 | :------------ | :--------------: | :-------: |
 | Quotes        |    `"Quote"`     |  "Quote"  |
 | Single quotes |    `'Quote'`     |  'Quote'  |
@@ -29,3 +29,7 @@ The same results could also be achieved by using the _Unicode characters_ or _HT
 | Em Dash       |      `---`       |   ---   |
 | En Dash       |       `--`       |    --     |
 | Ellipses      |      `...`       |    ...    |
+
+{{< mnote up=16 >}}
+The same results can also be achieved by using Unicode glyphs or HTML entities. They require more of an effort in the beginning, but in the long run you’ll never have to worry about substitutions again.
+{{< /mnote >}}

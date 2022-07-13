@@ -44,7 +44,7 @@ Every element is surrounded by the curly braces `{` and `}`. A special character
 
 Perplex applies the following replacements and styles them like the following examples:
 
-| Element     |  Code   |  Result   |
+| Element     |  Code without braces   |  Result   |
 |:------------|:-------:|:---------:|
 | Superscript |   ^3    |   {^3}    |
 | Subscript   |   _2    |   {_2}    |
