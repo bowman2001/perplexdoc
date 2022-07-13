@@ -1,22 +1,22 @@
 ---
 author: Georg Makowski
 date: "2021-09-07T21:33:03+02:00"
-description: What's special about Perplex?
+description: What's special about this theme?
 featImg: hal-gatewood-tZc3vjPCk-Q-unsplash.jpg
 menu:
   doc:
-    name: Layout
+    name: Perplex
     parent: intro
     pre: dashboard
 subtitle: false
-title: Layout
+title: Perplex
 weight: 7
 ---
 
-Perplex provides a typographic layout, that adapts responsively to modern screens. It’s designed for optimal legibility down to a view-port of {$360px} width.
+The theme adapts responsively and fluid to modern screens. It’s designed for optimal legibility down to a view-port of {$360px} width.
 {.p-first} <!--more-->
 
-Perplex has been build on the basis of the [IBM Plex][plex] font family and is best suited for technical content with mixed sections of text and code. The layout is vertically aligned to a **baseline grid**[^1] to introduce a comfortable rhythm. Horizontally it’s divided into evenly spaced columns — their number depends on the screen width. On larger screens (view-port &ge; 592px) the [responsive design][rd] is combined with [view-port sized typography][ptres]—a.k.a. fluid typography—to deliver a coherent layout.
+Perplex has been build on the basis of the [IBM Plex][plex] font family and is best suited for technical content with mixed sections of text and code. The layout is vertically aligned to a baseline grid[^1] to introduce a comfortable rhythm. Horizontally it’s divided into evenly spaced columns — their number depends on the screen width. On larger screens (view-port &ge; 592px) the [responsive design][rd] is combined with [view-port sized design][ptres]—a.k.a. fluid design—to stick to a coherent layout between breakpoints.
 
 {{< mnote up=14 >}}
 The **Plex** font family includes fonts for oriental languages written from right to left and for asian sign languages (some projected). So far, Perplex can't adapt to their needs, because I'm not acquainted with their layout habits.
@@ -69,13 +69,17 @@ Despite its successful efforts to make data-formatting as simple as possible, _Y
 
 ## In Case of Problems
 
-There are _two repositories_ for Perplex. One for the [theme][theme] itself and one for the [documentation][doc]. The documentation ships with a copy of the theme, but all work on the theme happens only in its repository.
+There are **two** repositories. One for the theme itself and one for the [documentation][doc]. This documentation project ships with a recent copy of the theme to simplify the initial setup, but work on the theme will only progress in its own repository.
 
-### Bugs or missing features in the theme
+### Trouble with the Theme?
 
-Please have a look first at the already existing [issues][issue] for this theme. Please create a new one, if it’s not already there.
+When you find a bug in the layout or miss some functionality, please visit the [theme repository][theme]. Have a look first at the already existing [issues][issue]. And please create a new one, if your problem is not already listed. I’m happy to discuss issues there and maybe you like to help optimizing Perplex.
 
-### Errors in the content of this documentation
+### Trouble with the documentation
+
+When you miss some explanation or find a misleading one, please visit the [documentation repository][doc]. Again, please have a look at already existing [issues][docissue] first and create a new one only, if you can’t find yours. I’ll improve the documentation as soon as possible.
+
+Should you stumble upon bad English, typos or wrong phrases, please excuse me. I’m not a native speaker and corrections are welcome. You may submit a pull request immediately.  
 
 [^1]: The concept for the baseline has been inspired by [Plumber][plumber]. Despite precise calculations is the vertical alignment sometimes a little of, noticeably on screens with a lower pixel density—usually desktop screens. All browser engines seem to face an inevitable trade-off between the quality of the font rendering and the precision of the line height.
 
@@ -86,6 +90,7 @@ Please have a look first at the already existing [issues][issue] for this theme.
 [theme]: https://github.com/bowman2001/perplex
 [issue]: https://github.com/bowman2001/perplex/issues
 [doc]: https://github.com/bowman2001/perplexdoc
+[docissue]: https://github.com/bowman2001/perplexdoc/issues
 [cmark]: https://commonmark.org "CommonMark project site"
 [gmark]: https://github.com/yuin/goldmark "Goldmark repository"
 [phpmex]: https://michelf.ca/projects/php-markdown/extra/ "PHP Markdown Extra site"

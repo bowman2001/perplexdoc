@@ -16,7 +16,7 @@ weight: 15
 The world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and secure websites.
 {.p-first} <!--more-->
 
-[Hugo](https://gohugo.io) is a command line tool for _macOS_, _Windows_, _Linux_ and _BSD_ derivatives. Binaries for most operating systems and some containers are usually available within a day or a few after every release.
+[Hugo](https://gohugo.io) is a command line tool for macOS, Windows, Linux and BSD derivatives. Binaries for most operating systems and some containers are usually available within a day or a few after every release.
 
 {{< mnote up=11 >}}
 The [Hugo source](https://github.com/gohugoio/hugo) can be compiled on every machine with a recent [Go environment](https://go.dev).

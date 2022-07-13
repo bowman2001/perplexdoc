@@ -13,16 +13,16 @@ title: Publish
 weight: 25
 ---
 
-Only two basic steps are involved in publishing a static website: **Build & Deploy**. But there are many possible ways to realize them.
+Only two basic steps are involved in publishing a static website: **Build & Deploy**. There are many ways to realize them.
 {.p-first} <!--more-->
 
-Most available options and their workflow with Hugo get described in the section [Hosting & Deployment][hd] of its documentation. In all cases we need to set the parameter `baseURL` to the site URL in the main configuration file [`config.yaml`]({{< relref "configyaml#6" >}}).
+Most available options and their workflow with Hugo are mentioned in the section [Hosting & Deployment][hd] of its documentation. In all cases we need to set the parameter `baseURL` to the site URL in the main configuration file [{$config.yaml}]({{< relref "configyaml#6" >}}).
 
-The following remarks should give you an impression of the two most common workflows.
+The following remarks should give you an impression of the two general workflows.
 
 ## Build & Deploy with your own hardware
 
-As long as only you are responsible for finalizing the content, its easy to stick to your computer for both steps. To generate a complete version of the site on the local file system, we run Hugo in its _build mode_ in the project root like this:
+As long as you are the only one responsible for finalizing the content, it’s easy to stick to your own computer for both steps. To generate a complete version of the site on the local file system, we run Hugo in its _build mode_ in the project root like this:
 
 ```md {.left}
 hugo --minify
@@ -32,6 +32,8 @@ Hugo then renders the site and writes the files by default into the folder `publ
 
 ## Automated Build and Continuous Deployment
 
-Special providers automate the build process with configurable virtual machines. This is especially useful for teams, which need a shared build environment. The provider gets access to their repository (usually _Git_), automatically pulls new content and (re)builds the site. Some of them own a _CDN_, which they populate immediately afterwards.
+Special providers automate the build process with configurable virtual machines. This is especially useful for teams, which need a shared build environment. The provider gets access to their repository (usually Git based), automatically pulls new content and (re)builds the site. Some of them own a CDN, which they populate immediately afterwards.
+
+This setup is also convenient for advanced non-commercial projects as long as commercial providers offer a free tier for personal or open-source use. Hugo is building sites so fast, you may well stay in their often generous limits.
 
 [hd]: https://gohugo.io/hosting-and-deployment/

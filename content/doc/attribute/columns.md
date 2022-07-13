@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-12-16T09:21:56+01:00"
-description: Set text sections with a small line width into two columns
+description: Let text sections with short lines flow into columns
 menu:
   doc:
     name: Columns
