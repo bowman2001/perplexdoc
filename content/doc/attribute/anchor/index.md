@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2022-01-06T14:15:12+01:00"
-description: CSS-identifiers can act as anchors for HTML elements
+description: Identify and refer to block elements
 featImg: grant-durr-21ztbENjzeI-unsplash.jpg
 menu:
   doc:

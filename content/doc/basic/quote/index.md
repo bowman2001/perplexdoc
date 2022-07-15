@@ -13,12 +13,12 @@ title: Quote
 weight: 120
 ---
 
-Quoting is consciously repeating thoughts from another person, which yours are related to. When we reply to email, many programs append the previous mails automatically. These are just copies cluttering our conversations.
+To quote someone means to recognize her or his thoughts as part of our own --- we may agree or disagree, but we refer to them. When we reply digitally --- by email for example --- many programs copy previous content and mark it automatically as “quoted” with a left border. But these are just copies cluttering the conversation and the border style allows to nest them indefinitely. 
 {.p-first} <!--more-->
 
-A single word or short piece of text is usually quoted in the running text and is called an _inline quote_. A longer text segment of three or more lines is usually quoted as separate block and called a _blockquote_.
+A single word or short piece of text is usually quoted in the running text and is called an _inline quote_. A longer text segment is usually quoted as separate block and called a _blockquote_.
 
-Some blockquotes should attract immediate attention while scanning the page. These are _hero quotes_ and Perplex provides the [attribute]({{< relref "attribute" >}}) `{.blockquote-hero}` for alternative styling.
+Some quotes should attract immediate attention while scanning the page. These are _hero quotes_ and Perplex provides the [attribute]({{< relref "attribute" >}}) `{.blockquote-hero}` to style them.
 
 ## Inline Quotes
 

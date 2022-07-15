@@ -26,4 +26,6 @@ Diophantus’ proof and Fermat’s conjecture:
 It is impossible to separate a cube into two cubes, or a fourth power into two fourth powers, or in general, any power higher than the second, into two like powers. I have discovered a truly marvelous proof of this, which this margin is too narrow to contain.
 {{< /mnote >}}
 
+&nbsp;
+
 Like to use marginal notes? Have a look at the shortcode [{$mnote}]({{< relref "mnote" >}}).

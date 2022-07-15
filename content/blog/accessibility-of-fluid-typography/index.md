@@ -9,13 +9,13 @@ categories:
 tags:
 ---
 
-Some doubts are circulating about the accessibility of view-port-based typography --- a.k.a. fluid typography. But combined with a responsive fluid layout, web-pages are especially user-friendly and accessible. This site is an example.
+Some doubts are circulating about the accessibility of view-port-based typography — a.k.a. fluid typography. But to the contrary do websites with a responsive fluid layout behave especially user-friendly and accessible. This site is an example.
 {.p-first} <!--more--> 
 
-View-port-sized fonts alone would actually pose a problem and that’s why developers usually avoid them. When a user changes the zoom-factor of his browser, they are not affected at all, because they solely depend on the width of the browser window.
+View-port-sized fonts alone actually pose a problem. When a user changes the zoom-factor of his browser, they are not affected at all, because they solely depend on the width of the browser window. That’s the reason, why web developers usually avoid them.
 
-But when the design is responsive, fluid sizes need to be, too. Breakpoints depending on the ‘em’-unit will react to the zoom setting of the browser as expected and change fluid sizes. 
+But when the design is responsive, fluid sizes can and should be too. Breakpoints depending on the ‘em’-unit will react to the zoom setting of the browser as expected and allow to change fluid sizes. 
 
-A fluid layout won’t react until a breakpoint is reached, but the moment it is, the layout changes to a larger or smaller version in our favor. And not only the fonts but all elements change, because they depend on ‘rem’ or ‘em’ units. We may have to change the zoom setting by a larger step, to make it happen --- that’s all.  
+A fluid layout won’t react to zoom changes until a breakpoint is reached, but the moment it is, the layout changes to a larger or smaller version in our favor. And not only the fonts but the size of all elements will change, when they are based on  ‘rem’ or ‘em’ units. We may have to change the zoom setting by a larger step, to make a layout change happen --- but that’s all.  
 
-Just try with {#Ctrl} + {#+} and {#Ctrl} + {#-} or the zoom setting of your browser! You may be surprised how well this layout meets accessibility demands.
+Give it a try with {#Ctrl} + {#+} and {#Ctrl} + {#-} or the zoom setting of your browser. You may be surprised how well this kind of layout meets accessibility demands.

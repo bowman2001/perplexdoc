@@ -11,5 +11,5 @@ title: Attributes
 weight: 300
 ---
 
-Hugo’s attribute injection is the key to many additional layout options.
+Hugo’s attributes are the key to style variations and other improvements.
 {.p-first} <!--more-->

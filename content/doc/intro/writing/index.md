@@ -27,16 +27,18 @@ resources:
     attrlink: https://unsplash.com/photos/JJMoAiVl9jA
 ---
 
-Markdown has become the favored markup language for structuring text files. With good cause: Its syntax is intuitive and yet quite comprehensive.
+Markdown has become the favored markup language for structuring text files. With good cause: The syntax is intuitive and yet quite comprehensive.
 {.p-first} <!--more-->
 
-Markdown consists of plain text marked up with a small set of ASCII signs. Its designed to be read and to work with as easily as possible, the files usually get the suffix `.md`. After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors emerged.
+Markdown consists of plain text marked up with a small set of ASCII signs. Its easy to read without special software and we can write Markdown in any text editor. Markdown files end with the suffix `.md`. 
 
-{{< mnote star=1 up=8 >}}
-The suffixes `.mdown` and `.markdown` also indicate Markdown, but they are rarely used.
+{{< mnote up=5 >}}
+The suffixes `.mdown` and `.markdown` also indicate Markdown, but are rarely used nowadays.
 {{< /mnote >}}
 
-To resolve their annoying incompatibilities and to create a dependable syntax, John Mc&hairsp;Farlane et al. proposed a strict  specification in 2011: [_CommonMark_][cmark]. This specification has been implemented in many Markdown render engines since and important web-software providers thereby adhere to _CommonMark_. For a quick look at _CommonMark_ you can visit their crisp [one page overview](https://CommonMark.org/help).
+After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors emerged.
+
+To resolve their incompatibilities and to create a more general dependable syntax, John Mc&hairsp;Farlane et al. proposed a strict  specification in 2011: [CommonMark][cmark]. This specification has been implemented by many Markdown render engines since and important web-software providers thereby adhere to CommonMark as a kind of standard. For a quick look at the syntax you can visit their crisp [one page overview](https://CommonMark.org/help).
 
 ## Markdown for Perplex
 
@@ -61,7 +63,7 @@ This documentation includes a short review of every syntax element in Goldmark a
 Two basic Markdown elements are continuously creating confusion, because they are treated in somewhat ambiguous ways:
 
 [Image][img]
-: The Markdown image element is syntactically meant to be placed inside a block element. But it’s also allowed to be used self-contained and gets **automatically wrapped** by an empty paragraph block, then.[^1]
+: The Markdown image element is syntactically meant to be placed inside a block element. But it’s also allowed to be used self-contained and gets automatically enclosed by an empty paragraph block, then.[^1]
 
 [Line Break][lb]
 : CommonMark and GFM are not fully compatible in regard to this one element. There are two different ways to handle line breaks inside of text blocks:
