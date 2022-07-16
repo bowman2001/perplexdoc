@@ -10,7 +10,7 @@ tags: [tip]
 Marginal notes allow to add further information in an elegant and unobtrusive way. We can glance over them and stay with the main text or digress shortly, when they pique our curiosity.
 {.p-first} <!--more-->
 
-The famous mathematician Fermat wrote his last conjecture around 1637 in the marginal column besides an ancient greek proof by Diophantus. The “marvellous proof” Fermat mentioned there has never been uncovered, but his note kept mathematicians busy for over 350 years --- until one of them could actually proof his hypothesis after years of ground-breaking work.
+The famous mathematician Fermat wrote his last conjecture around 1637 in the marginal column besides an ancient Greek proof by Diophantus. The “marvelous proof” Fermat mentioned there has never been uncovered, but his note kept mathematicians busy for over 350 years --- until one of them could actually proof his hypothesis after years of ground-breaking work.
 
 Diophantus’ proof and Fermat’s conjecture:  
 
