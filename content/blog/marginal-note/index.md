@@ -4,10 +4,10 @@ date: 2022-07-04T22:18:04+02:00
 weight: 1
 featImg: Diophantus-II-8-Fermat_cut.jpg
 categories:
-tags: [tip]
+tags: [Demo, Note]
 ---
 
-Marginal notes allow to add further information in an elegant and unobtrusive way. We can glance over them and stay with the main text or digress shortly, when they pique our curiosity.
+Marginal notes allow to add further information in an elegant and unobtrusive way. We can glance over them and stay with the main text or zone out for a while, when they pique our curiosity.
 {.p-first} <!--more-->
 
 The famous mathematician Fermat wrote his last conjecture around 1637 in the marginal column besides an ancient Greek proof by Diophantus. The “marvelous proof” Fermat mentioned there has never been uncovered, but his note kept mathematicians busy for over 350 years --- until one of them could actually proof his hypothesis after years of ground-breaking work.
@@ -26,6 +26,6 @@ Diophantus’ proof and Fermat’s conjecture:
 It is impossible to separate a cube into two cubes, or a fourth power into two fourth powers, or in general, any power higher than the second, into two like powers. I have discovered a truly marvelous proof of this, which this margin is too narrow to contain.
 {{< /mnote >}}
 
-&nbsp;
+---
 
 Like to use marginal notes? Have a look at the shortcode [{$mnote}]({{< relref "mnote" >}}).
