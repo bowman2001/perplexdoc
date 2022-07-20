@@ -83,7 +83,7 @@ There is one image element in Markdown for embedding an image into a block eleme
 
 {{< figure splash />}}
 
-To surround every self-contained Markdown image element with a paragraph — like _CommonMark_ proposes and Hugo does — leads to a simple working solution, when the layout treats all images alike.
+To surround every self-contained Markdown image element with a paragraph — like CommonMark proposes and Hugo does — leads to a simple working solution, when the layout treats all images alike.
 
 ![splash](splash2) Perplex styles the Markdown image element always embedded in text blocks as a float. In contrast to them, the self-contained images should stand out. Perplex also offers layout variations for both kinds of images. That's why Perplex users need to use the  [figure]({{< relref "figure" >}})-shortcode for self-contained images and the Markdown image element only for [embedded ones][img].
 
@@ -106,13 +106,13 @@ Hugo can handle both ways perfectly, the decision only affects our editing exper
 Our options here are tied to the way we wrap Markdown lines.
 
 With Hard Wraps
-: When we us hard line wraps, to manually limit the line length, we can’t use them to indicate _intentional_ line breaks inside of text blocks anymore. We need the special syntax _CommonMark_ provides.
+: When we us hard line wraps, to manually limit the line length, we can’t use them to indicate _intentional_ line breaks inside of text blocks anymore. We need the special syntax CommonMark provides.
 
 With Soft Wraps
 : If the lines are not wrapped, a line break is the intuitive way to place an _intentional_ one.
 {.dl-loose}
 
-See the page [Line Break][lb] for the configuration and the question of _CommonMark_-compliance.
+See the page [Line Break][lb] for the configuration and the question of CommonMark-compliance.
 
 ## Special characters
 All available characters—more general _glyphs_—can be used in Markdown, either directly as _Unicode_ or as _HTML entities_ (like `&para;` for &para;). The markup characters need to be escaped by a preceding backslash `\` to get treated literally by the Markdown renderer. See [Special Characters]({{< relref "specialchar#html-entities" >}}) for this topic.
@@ -136,7 +136,7 @@ Some special editors are designed exclusively for authoring Markdown. They usual
 Many of these editors offer a convenient separate _preview window_. With Hugo you have an even better option: When you run it as a server on your local computer, it will render your Markdown and deliver it to your browser instantly (see [Using Hugo]({{< relref "hugo#server-mode"  >}})). My personal solution is either an IDE or a programming editor in conjunction with Hugo’s server mode.
 
 ## Markdown Linting
-_CommonMark_ is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [_Markdownlint_][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing. For this project the default settings are modified in the configuration file [`.markdownlint.yaml`][mlintconf] at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.  
+CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [_Markdownlint_][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing. For this project the default settings are modified in the configuration file [`.markdownlint.yaml`][mlintconf] at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.  
 
 [omd]: https://daringfireball.net/projects/markdown/ "Markdown project site by John Gruber"
 [cmark]: https://commonmark.org "CommonMark project site"

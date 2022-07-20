@@ -11,5 +11,5 @@ title: Attributes
 weight: 300
 ---
 
-Hugo’s attributes are the key to style variations and other improvements.
+Hugo attributes are the key to style variations and other improvements. Perplex offers many of them.
 {.p-first} <!--more-->

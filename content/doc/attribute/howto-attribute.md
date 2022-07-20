@@ -13,7 +13,7 @@ title: How to use them?
 weight: 310
 ---
 
-Hugo’s attributes are plain HTML attributes, which are injected from the Markdown content into the rendered result.
+Hugo’s attributes are plain HTML attributes, which are injected from Markdown into the rendered HTML.
 {.p-first} <!--more-->
 
 Attributes are available for all kinds of **blocks**, for **headings** and for **fenced code blocks**. We can allow them for blocks and headings in the configuration section for the Goldmark parser, where the parameter {$title} relates to all heading levels. They are by default disabled for blocks and enabled for headings. They are [all enabled]({{< relref "markup#19" >}}) for this documentation.
@@ -48,4 +48,4 @@ Other
 {.dl-loose}
 
 ## Layout
-Most Perplex attributes style a specific element and the layout is shown on its page. Some are of general use, they are introduced on the next pages.
+Some attributes are of general use, they are introduced on the next pages. The most of them style a specific element and their style is shown there. To find a specific one quickly we have a [register]({{< relref "register" >}}).

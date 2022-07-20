@@ -20,16 +20,16 @@ Paragraphs are essential for a website focused on textual information. Comfortab
 
 Paragraphs are text segments, which are completed by an empty line in the Markdown.
 
-In addition to the normal paragraph Perplex offers a _lead_ paragraph — like the first one on this page — and a _big_ paragraph. These styles are applied with the [attributes]({{< relref "attribute" >}}) `{.p-first}` and `{.p-big}`.
+In addition to the normal paragraph Perplex offers a **first** paragraph — like the first one on this page — a **big** and a **small** one. These styles are applied with the [attributes]({{< relref "attribute" >}}) `{.p-first}`, `{.p-big}` and `{.p-small}`.
 
 ## Layout
 
-_Line height_ and _line length_ harmonize with the proportions of the _Plex_ fonts. The space between subsequent paragraphs is twice as big as the space between two lines inside a paragraph. On small screens it's a little less.
+Line height length follow the proportions of the fonts. The space between subsequent paragraphs is twice as big as the space between two lines inside a paragraph. On small screens it’s a little less.
 
 {{< mnote up=11 >}}
 In print subsequent paragraphs are sometimes separated by indenting their first line, to interrupt the reading flow as little as possible.
 
-The technique is mostly used for prose, but also appropriate for notes like this one. Here, a vertical separation could falsely suggest the beginning of a new note.
+The technique is mostly used for prose, but also appropriate for notes like this one. Here, a vertical separation would falsely suggest the beginning of a new note.
 {{< /mnote >}}
 
 ### Two standard Paragraphs

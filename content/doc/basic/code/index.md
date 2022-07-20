@@ -37,7 +37,7 @@ Indented
 : A block of text indented by 4 spaces or a tab is also treated as a _code block_.
 {.dl-loose}
 
-The _fenced_ version of the _CommonMark_ syntax is preferable for two reasons:
+The _fenced_ version of the CommonMark syntax is preferable for two reasons:
 
 1. The following options are available only for fenced blocks:
 

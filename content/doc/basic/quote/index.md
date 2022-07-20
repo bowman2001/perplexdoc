@@ -13,12 +13,12 @@ title: Quote
 weight: 120
 ---
 
-To quote someone means to recognize her or his thoughts as part of our own --- we may agree or disagree, but we refer to them. When we reply digitally --- by email for example --- many programs copy previous content and mark it automatically as “quoted” with a left border. But these are just copies cluttering the conversation and the border style allows to nest them indefinitely. 
+To quote someone means to recognize her or his thoughts as part of our own. We may agree or disagree, but we should refer to them correctly.
 {.p-first} <!--more-->
 
-A single word or short piece of text is usually quoted in the running text and is called an _inline quote_. A longer text segment is usually quoted as separate block and called a _blockquote_.
+A single word or short piece of text is usually quoted in the running text and is called an **inline quote**. A longer text segment is usually quoted as separate block and called a **blockquote**.
 
-Some quotes should attract immediate attention while scanning the page. These are _hero quotes_ and Perplex provides the [attribute]({{< relref "attribute" >}}) `{.blockquote-hero}` to style them.
+Some quotes should attract immediate attention while scanning the page. These are **hero quotes** and Perplex provides the [attribute]({{< relref "attribute" >}}) `{.blockquote-hero}` to style them.
 
 ## Inline Quotes
 
@@ -29,9 +29,9 @@ When we type `“I quote you”` we simply get “I quote you”.
 
 But our keyboard usually doesn't show these typographically correct quotation marks. That's why we often use simpler characters, which get replaced by our software.
 
-### In English
+### Substitution of English quotation marks
 
-Hugo replaces the typographically _dumb_ straight quotes with the correct curly ones by default — this is the work of the  [typographer extension]({{< relref "typographer" >}}). We can simply place {#"} — the straight quote — around English quotes:
+Hugo replaces the typographically dumb straight quotes with the correct curly ones by default — this is the work of the  [typographer extension]({{< relref "typographer" >}}). We can simply place {#"} — the straight quote — around English quotes:
 
 `"An inline quote"`&emsp;for&emsp;"An inline quote"
 {.p-big}
@@ -43,7 +43,7 @@ And a quote inside a quote is marked with {#\'} — the single straight quote:
 
 ### In French, Swiss and German (partially)
 
-We can open French and Swiss quotes with two {#<} and close them with two {#>} — these are the _angled brackets_. They get replaced with guillemets (_not guillemots_!).
+We can open French and Swiss quotes with two {#<} and close them with two {#>} angled brackets. They get replaced with guillemets (not guillemots!).
 
 `<<Pardon my French>>`&emsp;for&emsp;<<Pardon my French>>
 {.p-big}
@@ -53,7 +53,7 @@ In German publishing we often find guillemets the other way around:
 `>>Zahnstocher<<`&emsp;for&emsp;>>Zahnstocher<<
 {.p-big}
 
-But we get into trouble with these, when we start a line with `>>`, because the `>` is also the Markdown sign for a following [quotation block]({{< relref "#blockquote" >}}). We can begin the line with an invisible entity like the _zero width joiner_ `&zwj;` for a quick workaround:
+But we get into trouble with these, when we start a line with `>>`, because the `>` is also the Markdown sign for a following [quotation block]({{< relref "#blockquote" >}}). We can begin the line with an invisible entity like the zero width joiner `&zwj;` for a quick workaround:
 
 &zwj;>>Noch einen Zahnstocher, bitte!<<
 {.p-big}
@@ -94,7 +94,7 @@ It should approximately match the number of characters in a normal line of text.
 > One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.[^1]
 {.blind}
 
-Blockquotes may include other markup, because we need emphasis, inline quotes, links, footnotes and other inline markup and maybe even lists inside quotations. The _CommonMark_ specification allows to use all elements of Markdown inside of a blockquote — theoretically.
+Blockquotes may include other markup, because we need emphasis, inline quotes, links, footnotes and other inline markup and maybe even lists inside quotations. The CommonMark specification allows to use all elements of Markdown inside of a blockquote — theoretically.
 
 But think of nested blockquotes or tables inside of blockquotes in practice. They are an aesthetic nightmare in a typographical layout. This theme does not support every possibility. Feel free to write, if some important option is missing.
 

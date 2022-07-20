@@ -17,7 +17,7 @@ We have _light emphasis_ or **strong emphasis** to accentuate a segment of the t
 
 ## Light emphasis
 
-Surrounding a word with an asterisk `*` or underscore `_` produces *light emphasis*:
+Surrounding a word with an asterisk `*` or underscore `_` produces light emphasis:
 
 - `*asterisk*` is displayed *asterisk*.
 
@@ -33,7 +33,7 @@ Surrounding a word with two asterisks or underscores produces __strong emphasis_
 
 - `__underscores__` lead to __underscores__.
 
-Strong emphasis is styled with a **bold** version of the normal text font. This way the emphasis stands out. A good choice for distinctively structured text like a documentation, because we recognize the heavier weight immediately while _scanning_ the pages.
+Strong emphasis is styled with a **bold** version of the normal text font. This way the emphasis stands out. A good choice for distinctively structured text like a documentation, because we recognize the heavier weight immediately while scanning a page.
 
 ## Nested emphasis
 
@@ -47,10 +47,14 @@ The nesting possibilities of the *CommonMark specification* are endless, but onl
 
 ## Which formatting characters are the best choice?
 
-At first sight _CommonMark_ treats the asterisk `*` and the underscore `_` as equally appropriate options to mark either light or strong emphasis. But the Markdown concept suggests — at least to me — to use underscores for light emphasis, because they have a smaller footprint in the Markdown. The asterisks are thicker and suit the strong emphasis.
+At first sight CommonMark treats the asterisk `*` and the underscore `_` as equally appropriate options to mark either light or strong emphasis. But the Markdown concept suggests — at least to me — to use underscores for light emphasis, because they have a smaller footprint in the Markdown. The asterisks are thicker and suit the strong emphasis.
 
-I haven’t checked the specification for this argument, but the asterisks are the only possible option in _CommonMark_ to strongly emphasize characters inside of words. We sometimes want to emphasize the first letter of some words to mark their abbreviation for example:
+I haven’t checked the specification for this argument, but the asterisks are the only possible option in CommonMark to strongly emphasize characters inside of words. We sometimes want to emphasize the first letter of some words to mark their abbreviation for example:
 
 `**H**yper-**T**ext **M**arkup **L**anguage`&emsp;for&emsp;**H**yper-**T**ext **M**arkup **L**anguage is working fine.
 
 When we try this with underscores `__H__yper-__T__ext __M__arkup __L__anguage`, it only gets ugly: __H__yper-__T__ext __M__arkup __L__anguage.
+
+## Emphasis with sans-serif fonts
+
+Sans-serif fonts usually don’t have a distinctive italic style, even if their font includes an italic specimen. They look like a slightly tilted version of the regular font, which is a little irritating. When you already know, that your layout will use such an italic, you should prefer bold emphasis.
