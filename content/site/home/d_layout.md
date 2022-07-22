@@ -2,7 +2,6 @@
 title: Layout
 date: 2022-06-23T11:54:04+02:00
 id: d4
-weight: 30
 ---
 
 Realize the possibilities of this grid layout. Let your content flow onto a baseline grid in evenly spaced columns.
