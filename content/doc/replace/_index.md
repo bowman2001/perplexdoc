@@ -13,5 +13,5 @@ title: Replacements
 weight: 400
 ---
 
-A few HTML inline tags have no counterpart in **Goldmark**. **Perplex** offers a set of replacements to use them nonetheless.  
+Some simple HTML inline tags have no counterpart in the elements of Goldmark, Hugo’s Markdown renderer. Perplex offers a set of replacements to use them without enabling HTML in Markdown.  
 {.p-first} <!--more-->

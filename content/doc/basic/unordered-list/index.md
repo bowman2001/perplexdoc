@@ -13,12 +13,12 @@ title: Bullet List
 weight: 125
 ---
 
-An unordered list groups a set of related items. Any item may contain a sub-list. The longer a list is getting, the more it looses its purpose: To show a clear structure.
+A bullet list is an unordered list grouping a set of related items. Any item may contain a sub-list.
 {.p-first} <!--more-->
 
 ## Syntax
 
-We can use `-`, `+` or `*` to mark the items of an unordered list. We have to stick to the one we started with in every list. There are two basic kinds of lists, _tight_ and _loose_. A list with sub-lists is called _nested_.
+We can use `-`, `+` or `*` to mark the items of an unordered list. We have to stick to the one we started with in every list. There are two basic kinds of lists, **tight** and **loose**. A list with sub-lists is called **nested**.
 
 ### Tight
 
@@ -28,13 +28,12 @@ We can use `-`, `+` or `*` to mark the items of an unordered list. We have to st
 - The asterisk `*`
 ```
 
-When there is not a single blank line between the items, we have a _tight_ list.
+When there is not a single blank line between the items, we get a tight list. Every item can contain only one text block.
 
 ### Loose
 
 ```md
-- A loose list may contain more than one paragraph. You only have to keep the
-intendation on the same level.
+- A loose list may contain more than one paragraph. You only have to keep the indentation on the same level.
 
   Like this. Here we have separated paragraph inside of the same list item.
 

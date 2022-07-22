@@ -14,7 +14,7 @@ weight: 1080
 draft: true
 ---
 
-The shortcode is basically a wrapper for the official video player embedding script.
+The shortcode is a wrapper for the video player embedding script.
 {.p-first} <!--more-->
 
 {{< highlight go-html-template "linenos=true" >}}

@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 title: How to use replacements
-description: Replacement codes for some HTML inline tags
+description: Curly braces and an identifier
 subtitle: false
 date: 2022-04-19T13:00:09+02:00
 weight: 410
@@ -19,7 +19,7 @@ Place your lead paragraph here. If you don't need special styling, remove the at
 
 ## Syntax
 
-Every element is surrounded by the curly braces `{` and `}`. A special character after the first brace indicates the intended replacement.
+Every element is surrounded by the curly braces `{` and `}`. A special character after the first brace indicates the replacement.
 
 `^`
 : Superscript `<sup>`
@@ -29,6 +29,9 @@ Every element is surrounded by the curly braces `{` and `}`. A special character
 
 `#`
 : Keyboard `<kbd>`
+
+`$`
+: Variable `<var>`
 
 `!`
 : Mark `<mark>`
@@ -49,6 +52,7 @@ Perplex applies the following replacements and styles them like the following ex
 | Superscript |   ^3    |   {^3}    |
 | Subscript   |   _2    |   {_2}    |
 | Keyboard    |   #K    |   {#K}    |
+| Variable    |   $variable  | {$variable} |
 | Mark        |  !mark  |  {!mark}  |
 | Citation    | =author | {=author} |
 | Insertion   | +insert | {+insert} |

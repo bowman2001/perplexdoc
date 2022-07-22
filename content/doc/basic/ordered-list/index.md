@@ -13,22 +13,22 @@ title: Ordered List
 weight: 130
 ---
 
-Ordered lists suggest a very clear structure. Don't let them get too long — they get annoying after a while.
+Ordered lists group related items and mark them with ascending counters.
 {.p-first} <!--more-->
 
 ## Syntax
 
-List items begin with an integer followed by a period and a space. The order of the numbers is not important, we even may use always the same number. Markdown treats the numbers as markers and ignores their values. Every list will follow 1, 2, 3… .
+List items begin with an integer followed by a period and a space. The order of the numbers has no effect on the result, we even may use always the same number. Markdown treats the numbers as markers and ignores their values. Every list or sub-list will follow 1, 2, 3…, a, b, c… or I, II, III… .
+
+It’s possible to manipulate the counters with attributes. The one currently available is `.ol-continue` and lets us continue to start a new list where the last one did end (see [With Interruption]({{< relref "#interruption" >}})).
 
 {{< mnote up=8 >}}
-**The first number** gets injected as the `start` attribute of the `<ol>`-tag. But this value affects only the browser-internal counter and because Perplex declares CSS-counters all lists start with 1 by default.
-
-It’s possible to manipulate the counters with attributes — see [With Interruption]({{< relref "#interruption" >}})
+**The first number** gets injected as the `start` attribute of the `<ol>`-tag. But this value affects only the browser-internal counter. Because Perplex declares CSS-counters itself, all lists start with 1 or a by default.
 {{< /mnote >}}
 
 ## Layout
 
-The examples here are short, because the formatting is basically the same as for [unordered lists]({{< relref "unordered-list" >}}).
+The examples here are short, because the styling is basically the same as for the unordered [bullet list]({{< relref "unordered-list" >}}).
 
 ### Tight List
 

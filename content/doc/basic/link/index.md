@@ -12,20 +12,20 @@ title: Links
 weight: 150
 ---
 
-Internet references or short links are the binding fabric of the web. Markdown encourages their usage by providing simple markup options.
+Internet references or short “links” are the binding fabric of the web. Markdown encourages their use by providing simple markup options.
 {.p-first} <!--more-->
 
-The easiest way to create a link is to write the reference directly into the text and let it be handled _automatically_ by Hugo. If we want to _name_ a link, we need to connect the name with the reference.
+The easiest way to create a link is to write the reference directly into the text and let it be handled **automatically**. If we want to **name** a link, we need to connect the name with the reference.
 
-A reference on your own website is called an _internal link_, a reference to another an _external link_.
+A reference to your own website is called an **internal link**, a reference to another an **external link**.
 
 ## Syntax
 
 ### Automatic links
 
-A URL (**U**niform **R**esource **L**ocator) starting with `http://` or `https://` is automatically transformed into a link by the _linkify_ extension. If you want to stop this default behaviour, you can set `linkify = false` in the [configuration]({{< relref "markup#9" >}}).  
+A URL (**U**niform **R**esource **L**ocator) starting with `http://` or `https://` is automatically transformed into a link by the **linkify** extension. If you want to stop this default behavior, you can set `linkify` to `false` in the [configuration]({{< relref "markup#9" >}}).  
 
-To include links from a word or phrase there are two options:
+There are two ways to include links from a word or phrase:
 
 1. You can include them **inline** within the text.
 2. They may also be written in a separate **reference** like a footnote.

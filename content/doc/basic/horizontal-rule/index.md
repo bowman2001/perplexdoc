@@ -22,7 +22,7 @@ Sometimes the separation of page segments by space is not clear enough. Then we 
 *** or ---
 ```
 
-The horizontal rule is depicted by three asterisks or three hyphens at the beginning of a line. It’s possible to separate the characters by one space: `* * *` or `- - -`. They may be indented by up to three spaces. No other characters are allowed to follow on the same line.
+The horizontal rule is depicted by three asterisks or three hyphens at the beginning of a line. We may separate the characters by one space: `* * *` or `- - -` or indent them by up to three spaces. No other characters are allowed to follow on the same line.
 
 ## Layout
 
