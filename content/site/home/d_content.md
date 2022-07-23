@@ -19,4 +19,4 @@ YAML
 : for meta-data (menus etc.)
 {.dl-tight}
 
-Determine your page URLs through the folder structure.
+Determine site URLs simply by your folder structure or manage them precisely with configuration parameters.
