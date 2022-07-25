@@ -9,7 +9,7 @@ featImg:
 menu:
   doc:
     name: Howto
-    identifier: howtoreplace
+    identifier: howto-replace
     parent: replace
     pre: help_outline
 ---
