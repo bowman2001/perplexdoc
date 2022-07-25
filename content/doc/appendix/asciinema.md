@@ -12,6 +12,7 @@ subtitle: false
 title: Asciinema
 weight: 1080
 lastmod: 2022-07-25T15:48:00.191Z
+draft: true
 ---
 
 The shortcode is a wrapper for the video player embedding script.
