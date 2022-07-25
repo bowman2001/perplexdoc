@@ -1,6 +1,6 @@
 ---
 author: Georg Makowski
-date: "2022-01-12T21:33:11+01:00"
+date: 2022-01-12T21:33:11+01:00
 description: Embeds the *Asciinema* video player
 featImg: ""
 menu:
@@ -11,7 +11,7 @@ menu:
 subtitle: false
 title: Asciinema
 weight: 1080
-draft: true
+lastmod: 2022-07-25T15:48:00.191Z
 ---
 
 The shortcode is a wrapper for the video player embedding script.

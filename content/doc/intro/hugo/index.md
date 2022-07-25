@@ -124,7 +124,7 @@ The new file resides in the folder `content/blog/`. It contains a front matter s
 
 `title` and `date` are mandatory, a `description` is strongly recommended for Perplex as it is for many other themes.
 
-```yaml {class="col-left" linenos=true}
+```yaml {class="left" linenos=true }
 +++
 title = "My First Post"
 description = "Description"
@@ -273,9 +273,9 @@ Remote
 
 ## Project configuration
 
-All configuration options and their defaults are described in the [docs](https://gohugo.io/getting-started/configuration/). The examples therein are given for a _single configuration file_ like `config.yaml` in your project root directory.
+All configuration options and their defaults are described in the [docs](https://gohugo.io/getting-started/configuration/). The examples therein are given for a **single configuration file** like {$config.yaml} in your project root directory.
 
-The configuration for this Perplex site is using the alternative option of a **configuration directory** named `config` with separate files for the sections. For the growing number of options this arrangement is much clearer. The top configuration file is called `config.yaml` the other ones are named like the section they contain.
+The configuration for this Perplex site is using the alternative option of a **configuration directory** named {$config} with separate files for the sections. For the growing number of options this arrangement is much clearer. The top configuration file is still called {$config.yaml} the other ones are named like the section they contain.
 
 ### Please note {.h-info .h-p}
 
@@ -283,6 +283,6 @@ The configuration files for sections don't include the section identifier anymor
 
 ## Having trouble with Hugo?
 
-When you encounter problems with Hugo and don’t find an answer in its [documentation][hugodoc], the [Hugo community](https://discourse.gohugo.io) can probably support you. Please search the forum archive, because most likely your problem has already been solved. Before you start a new topic, please read the guidelines _How to Request Help_ at the top of the site first.
+When you encounter problems with Hugo and don’t find an answer in its [documentation][hugodoc], the [Hugo community](https://discourse.gohugo.io) will support you. Please search the forum archive, because most likely your problem has already been solved. And before you start a new topic, please read the guidelines **How to Request Help** at the top of the site first.
 
 [hugodoc]: https://gohugo.io/documentation

@@ -1,6 +1,6 @@
 ---
 author: Georg Makowski
-date: "2021-09-11T00:07:48+02:00"
+date: 2021-09-11T00:07:48+02:00
 description: Self-contained images
 subtitle: false
 title: figure
@@ -8,53 +8,61 @@ weight: 520
 menu:
   doc:
     name: figure
-    parent: theme
+    parent: shortcode
     pre: add_photo_alternate
 resources:
-- src: fig/tiny.svg
-  name: tiny
-  title: Tiny placeholder
-  params:
-    class: tiny
-- src: fig/small.svg
-  name: small
-  title: Small placeholder
-  params:
-    class: small left
-- name: small-portrait
-  src: fig/small_portrait.svg
-  title: Small portrait placeholder
-  params:
-    class: left
-- name: small-portrait-right
-  src: fig/small_portrait_right.svg
-  title: Small portrait placeholder
-  params:
-    class: right
-- src: fig/medium.svg
-  name: medium
-  title: Placeholder
-  params:
-    class: medium right
-- src: fig/large.svg
-  name: large
-  title: Placeholder
-  params:
-    class: large
-- src: fig/extra-large.svg
-  name: xlarge
-  title: Placeholder
-  params:
-    class: xlarge
-- src: mathias-konrath-JHb-UFfNOhI-unsplash.jpg
-  name: mathias
-  title: Skyline of Frankfurt
-  params:
-    class: large
-    attr: Mathias Konrath / Unsplash
-    attrlink: https://unsplash.com/@konni
-- src: beau-swierstra-Ndz-4phqtlg-unsplash.jpg
-  name: beau
+  - src: fig/tiny.svg
+    name: tiny
+    title: Tiny placeholder
+    params:
+      class: tiny 
+      caption: Tiny figure on the right
+  - src: fig/tiny.copy.svg
+    name: tiny2
+    title: Tiny placeholder
+    params:
+      class: tiny left
+      caption: Tiny figure on the left
+  - src: fig/small.svg
+    name: small
+    title: Small placeholder
+    params:
+      class: small left
+  - name: small-portrait
+    src: fig/small_portrait.svg
+    title: Small portrait placeholder
+    params:
+      class: left
+  - name: small-portrait-right
+    src: fig/small_portrait_right.svg
+    title: Small portrait placeholder
+    params:
+      class: right
+  - src: fig/medium.svg
+    name: medium
+    title: Placeholder
+    params:
+      class: medium right
+  - src: fig/large.svg
+    name: large
+    title: Placeholder
+    params:
+      class: large
+  - src: fig/extra-large.svg
+    name: xlarge
+    title: Placeholder
+    params:
+      class: xlarge
+  - src: mathias-konrath-JHb-UFfNOhI-unsplash.jpg
+    name: mathias
+    title: Skyline of Frankfurt
+    params:
+      class: large
+      attr: Mathias Konrath / Unsplash
+      attrlink: https://unsplash.com/@konni
+  - src: beau-swierstra-Ndz-4phqtlg-unsplash.jpg
+    name: beau
+lastmod: 2022-07-25T20:09:40.575Z
 ---
 
 Because no Markdown element corresponds to the complex HTML `<figure>` tag, we need this shortcode for self-contained images.
@@ -90,17 +98,15 @@ You’ll find the syntax for Hugo’s built-in `figure` in the [docs][hugofig]. 
 
 ### Tiny
 
-{{< figure tiny >}}
-A figure with a portrait ratio is
-{{< /figure >}}
+{{< figure tiny2 />}}
+
+{{< figure tiny />}}
 
 {{< farfar 2 >}}
 
 ### Small
 
-{{< figure small-portrait-right >}}
-A figure with a portrait ratio is
-{{< /figure >}}
+{{< figure small-portrait-right />}}
 
 {{< farfar 2 >}}
 
@@ -128,4 +134,4 @@ This size is the default for images with a landscape ratio.
 
 ### Large
 
-[hugofig]: https://gohugo.io/content-management/shortcodes/#figure
+[hugofig]: https://gohugo.io/content-management/shortcodes/#figure=

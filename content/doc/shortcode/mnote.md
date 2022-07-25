@@ -1,14 +1,15 @@
 ---
 author: Georg Makowski
-date: "2021-08-18T10:59:52+02:00"
+date: 2021-08-18T10:59:52+02:00
 description: Description
 menu:
   doc:
     name: Marginal Note
-    parent: theme
-    pre: note    
+    parent: shortcode
+    pre: note
 title: Marginal Note
 weight: 530
+lastmod: 2022-07-25T14:04:02.461Z
 ---
 
 A marginal note contains additional nonessential information. It explains some context, sheds light on a detail or speculates on a given topic etc.
@@ -46,7 +47,7 @@ When she reached the first hills of the Italic Mountains, she had a last view ba
 
 {{< farfar 2 >}}
 
-{{< mnote up=29 >}}
+{{< mnote up=28 >}}
 When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
 {.blind}
 On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.

@@ -6,7 +6,7 @@ featImg: ""
 menu:
   doc:
     name: Asciinema
-    parent: theme
+    parent: shortcode
     pre: smart_display
 subtitle: false
 title: Asciinema

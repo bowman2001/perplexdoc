@@ -77,13 +77,13 @@ There are **two** repositories. One for the theme itself and one for the [docume
 
 When you find a bug in the layout or miss some functionality, please visit the [theme repository][theme]. Have a look first at the already existing [issues][issue]. And please create a new one, if your problem is not already listed. I’m happy to discuss issues there and maybe you like to help optimizing Perplex.
 
-### Trouble with the documentation
+### Trouble with the Documentation?
 
-When you miss some explanation or find a misleading one, please visit the [documentation repository][doc]. Again, please have a look at already existing [issues][docissue] first and create a new one only, if you can’t find yours. I’ll improve the documentation as soon as possible.
+When you miss some explanation or find a misleading one, please go to the [documentation repository][doc]. Again, have a look at already existing [issues][docissue], please, and create a new one only, if you can’t find yours. I’ll improve the documentation as soon as possible.
 
-Should you stumble upon bad English, typos or wrong phrases, please excuse me. I’m not a native speaker and corrections are welcome. You may submit a pull request immediately.  
+Should you stumble upon bad English, typos or wrong phrases, please excuse me. I’m not a native speaker and corrections are very welcome. You may submit a pull request immediately.  
 
-[^1]: The concept for a baseline grid has been inspired by [Plumber][plumber]. The vertical alignment is sometimes a few pixels of --- despite precise calculations. This may be noticeable on screens with a lower pixel density—usually desktop screens. All browser engines seem to face an inevitable trade-off between the quality of the font rendering and the precision of the line height.
+[^1]: The concept for a baseline grid has been inspired by [Plumber][plumber]. The vertical alignment is sometimes a few pixels of --- despite precise calculations. This may be noticeable on screens with a lower pixel density --- usually desktop screens. All browser engines seem to face an inevitable trade-off between the quality of the font rendering and the precision of the line height.
 
 [^2]: The term _fluid typography_ is falling a bit short, because the whole layout adapts to the width of the browser-window (Also see [this posting]({{< relref "accessibility-of-fluid-typography" >}})).
 

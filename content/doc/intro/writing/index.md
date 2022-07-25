@@ -30,7 +30,7 @@ resources:
 Markdown has become the favored markup language for structuring text files. With good cause: The syntax is intuitive and yet quite comprehensive.
 {.p-first} <!--more-->
 
-Markdown consists of plain text marked up with a small set of ASCII signs. Its easy to read without special software and we can write Markdown in any text editor. Markdown files end with the suffix `.md`. 
+Markdown consists of plain text marked up with a small set of ASCII signs. Its easy to read without special software and we can write Markdown in any text editor. Markdown files end with the suffix `.md`.
 
 {{< mnote up=5 >}}
 The suffixes `.mdown` and `.markdown` also indicate Markdown, but are rarely used nowadays.
@@ -85,7 +85,7 @@ There is one image element in Markdown for embedding an image into a block eleme
 
 To surround every self-contained Markdown image element with a paragraph — like CommonMark proposes and Hugo does — leads to a simple working solution, when the layout treats all images alike.
 
-![splash](splash2) Perplex styles the Markdown image element always embedded in text blocks as a float. In contrast to them, the self-contained images should stand out. Perplex also offers layout variations for both kinds of images. That's why Perplex users need to use the  [figure]({{< relref "figure" >}})-shortcode for self-contained images and the Markdown image element only for [embedded ones][img].
+![splash](splash2) But Perplex styles the Markdown image element embedded in text blocks as a float by default. Perplex also offers layout variations for both kinds of images. That's why you should use the  [figure]({{< relref "figure" >}})-shortcode for self-contained images and the Markdown image element only for [embedded ones][img], if you start fresh with Perplex. For users with existing content, which relies on the img-element for all pictures, there is a fallback parameter [TODO].
 
 ### How to wrap lines? {#wrap .clear}
 

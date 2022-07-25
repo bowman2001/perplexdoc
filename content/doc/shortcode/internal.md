@@ -4,14 +4,14 @@ date: "2021-08-16T10:56:35+02:00"
 description: Simplify common tasks
 menu:
   doc:
-    name: Internal
-    parent: builtin
+    name: Hugo in-house
+    parent: shortcode
     pre: source
-title: Internal Shortcodes
-weight: 580
+title: Hugo’s built-in internal shortcodes
+weight: 590
 ---
 
-## Resolve internal URLs {#relref}
+## Resolve internal URLs {#relref} 
 
 To refer to a page on our site we can include the URL into a [link]({{< relref "link" >}}) like any other. But it's often long and when our content grows and evolves, the path may change. Therefore, we better leave the resolution to Hugo by using an unambiguous name for the page.
 

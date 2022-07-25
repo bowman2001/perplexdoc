@@ -12,7 +12,7 @@ Marginal notes allow to add further information in an elegant and unobtrusive wa
 
 The famous mathematician Fermat wrote his last conjecture around 1637 in the marginal column besides an ancient Greek proof by Diophantus. The “marvelous proof” Fermat mentioned there has never been uncovered, but his note kept mathematicians busy for over 350 years --- until one of them could actually proof his hypothesis after years of ground-breaking work.
 
-Diophantus’ proof and Fermat’s conjecture:  
+Diophantus’ proof and Fermat’s conjecture in plain English:  
 
 > To divide a given square into a sum of two squares.
 >
