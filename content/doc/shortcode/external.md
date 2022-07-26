@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-08-16T10:56:40+02:00"
-description: These shortcodes include content from external providers
+description: Embed content from external providers
 menu:
   doc:
     name: Hugo remote 
