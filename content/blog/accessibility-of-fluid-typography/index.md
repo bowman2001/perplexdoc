@@ -5,7 +5,7 @@ subtitle: false
 date: 2022-07-12T22:38:10+02:00
 weight: 1
 featImg: logo/Accessibility_logo.svg
-tags: [Fluid Design]
+tags: [fluid]
 draft: true
 ---
 

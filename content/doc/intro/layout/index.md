@@ -11,6 +11,7 @@ menu:
 subtitle: false
 title: Perplex
 weight: 7
+tags: [fluid]
 ---
 
 The theme adapts responsively and fluid to modern screens. It’s designed for optimal legibility down to a view-port of {$360px} width.
