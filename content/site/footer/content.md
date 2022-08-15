@@ -5,5 +5,3 @@ weight: 20
 ---
 [![Creative Commons 4.0](logo/CC-by-sa.svg)]({{< relref "license" >}})
 unless noted otherwise.
-
-[Project repository]({{< param "docURL" >}})

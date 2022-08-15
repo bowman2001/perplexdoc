@@ -16,5 +16,5 @@ title: Page Elements
 weight: 600
 ---
 
-**Perplex** generates all necessary page elements surrounding the content from data provided in the global configuration or the front-matter of the content files.
+**Perplex** generates all page elements beside the content from meta data, which is provided in the global configuration or the front-matter of the content files.
 {.p-first} <!-- more -->

@@ -63,6 +63,7 @@ resources:
   - src: beau-swierstra-Ndz-4phqtlg-unsplash.jpg
     name: beau
 lastmod: 2022-07-25T20:09:40.575Z
+tags: [figure]
 ---
 
 Because no Markdown element corresponds to the complex HTML `<figure>` tag, we need this shortcode for self-contained images.
@@ -128,9 +129,7 @@ This size is the default for images with a landscape ratio.
 
 ### Extra large
 
-{{< figure xlarge >}}
-
-{{< /figure >}}
+{{< figure xlarge />}}
 
 ### Large
 

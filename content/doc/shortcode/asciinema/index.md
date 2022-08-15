@@ -10,6 +10,7 @@ menu:
     pre: smart_display
 subtitle: false
 title: Asciinema
+categories: []
 weight: 540
 ---
 

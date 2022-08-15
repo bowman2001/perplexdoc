@@ -10,6 +10,8 @@ menu:
 title: Marginal Note
 weight: 530
 lastmod: 2022-07-25T14:04:02.461Z
+categories: [shortcode]
+tags: [note]
 ---
 
 A marginal note contains additional nonessential information. It explains some context, sheds light on a detail or speculates on a given topic etc.
@@ -39,7 +41,7 @@ There are short and long marginal notes. On screens, which allow for three colum
 {{< farfar 1 >}}
 
 {{< mnote up=14 >}}
-When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. 
+When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.
 {.p-blind}
 {{< /mnote >}}
 

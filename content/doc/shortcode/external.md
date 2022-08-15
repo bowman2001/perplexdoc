@@ -16,7 +16,7 @@ These are Hugo’s remote shortcodes to embed external content from popular serv
 
 ## Layout
 
-Styles are provided by the hosts of the content and may not always fit very well into the Perplex layout.
+Because the content providers include their own styles, they may not fit optimally into the Perplex layout.
 
 ### Include a _gist_ from _GitHub_
 
@@ -46,7 +46,7 @@ See the [Hugo documentation](https://gohugo.io/content-management/shortcodes#vim
 
 ### Include videos from _Youtube_
 
-#### Syntax 
+#### Syntax
 
 ```md
 {{</* youtube id="w7Ft2ymGmfc" title="A New Hugo Site in Under Two Minutes" */>}}
@@ -54,8 +54,6 @@ See the [Hugo documentation](https://gohugo.io/content-management/shortcodes#vim
 
 See the [Hugo documentation](https://gohugo.io/content-management/shortcodes#youtube) for further details.
 
-#### Layout 
+#### Layout
 
 {{< youtube id="w7Ft2ymGmfc" title="A New Hugo Site in Under Two Minutes" >}}
-
-

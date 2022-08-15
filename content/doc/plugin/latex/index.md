@@ -13,16 +13,20 @@ weight: 710
 latex: true
 ---
 
-**LaTeX** is the most popular typesetting system for the natural sciences, its syntax has been established as a quasi-standard to type complex formulas.
+LaTeX is the most popular typesetting system for the natural sciences, its syntax has been established as a quasi-standard to format complex mathematical formulas for print and web layout.
 {.p-first} <!--more-->
 
 ## Syntax
 
-You need to enable the render engine for LaTeX — called [_KaTeX_][katex] --- by setting the parameter `latex` to `true`. You can do it either in the main configuration file for all pages or in the front-matter for specific pages.
+You can enable the render engine for LaTeX included in Perplex — called [KaTeX][katex] --- by setting the parameter `latex` to `true`: Either in the main configuration file for all pages or in the front-matter for specific pages.
 
-LaTeX’s formulas need to be surrounded by two dollar signs `$$` in Hugo.
+{{< mnote up=11 >}}
+There is another excellent LaTeX render engine for the Web: [MathJax](https://www.mathjax.org/). I chose KaTeX for performance reasons, which may not be the best reason under all circumstances.
+{{< /mnote >}}
 
-The following two formulas are the typesetting code for the reverse Fourier-transformation and an equation with infinite nested fractions, I can’t comprehend. There are **no line-breaks** allowed.
+LaTeX formulas need to be surrounded by two dollar signs `$$`.
+
+The following two formulas represent the reverse Fourier-transformation and an equation with infinite nested fractions, which I can’t comprehend. There are **no line-breaks** allowed.
 
 ```latex
 $$f(x) = \int_{-\infty}^\infty\hat f(\xi)\\, e^{2 \pi i \xi x}\\,d\xi$$
@@ -32,7 +36,7 @@ $$\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-
 
 ## Layout
 
-The examples are both looking good anyway:
+The examples are both looking good, wether we can grasp their meaning or not:
 
 $$f(x) = \int_{-\infty}^\infty\hat f(\xi)\\, e^{2 \pi i \xi x}\\,d\xi$$
 

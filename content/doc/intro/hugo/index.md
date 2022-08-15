@@ -24,7 +24,7 @@ The [Hugo source](https://github.com/gohugoio/hugo) can be compiled on every mac
 
 ## Getting started
 
-The [Hugo documentation site][hugodoc] addresses developers mostly and offers detailed information. Only a small fraction of it is necessary to produce a professional static website with this theme.
+The [Hugo documentation site][hugodoc] addresses developers mostly and offers detailed and extensive information. Only a small part of it is necessary to produce a professional static website using a fully functional theme.
 
 ### Install Hugo
 
@@ -87,10 +87,10 @@ The _themes_ folder can hold as many themes as we like and there are three ways 
 3. Import the Perplex repository as a Hugo module. You need to have a recent [Go environment](https://go.dev) – Hugo modules rely on _Go_ modules. The Hugo docs provide a [guide to this powerful feature](https://gohugo.io/hugo-modules). Once set up, _Hugo modules_ are the easiest way to update themes or other external components of your Hugo configuration. There is an example for the configuration in the file [`module.yaml`]({{< relref "moduleyaml.md" >}}), because this project imports the theme as a module.
 
 {{< mnote up=20 >}}
-**This project** doesn’t need a _Go environment_, because it has a local copy (`_vendor`). But if you want to update the theme, you need to install _Go_ and apply the `hugo mod ...` commands.
+**This project** doesn’t need a _Go environment_, because it ships with a local copy of the theme (in the `_vendor` folder). If you want to update the theme separately, you need to install _Go_ and run the command `hugo mod get -u`.
 {{< /mnote >}}
 
-When you chose option 1. or 2., you need to tell Hugo to use the theme in the [config file]({{< relref "configyaml.md#6" >}}). With the module you don’t.
+When you chose option 1. or 2., you need to tell Hugo to use the theme in the [config file]({{< relref "configyaml.md#8" >}}). With the module you don’t, but the entry doesn’t hurt.
 
 ## Run Hugo locally {#server-mode}
 
@@ -111,6 +111,10 @@ The pages are rendered into the computer memory and the site is served under <ht
 - The flag `--minify` tells Hugo to remove unnecessary whitespace from the resulting code.
 
 - The flag `--navigateToChanged` tells the server to automatically relay the page from the last edited file to the browser.
+
+{{< mnote up=8 >}}
+With `hugo help` we get an overview of all possible commands and flags.
+{{< /mnote >}}
 
 ### Adding the first Content {#first}
 
