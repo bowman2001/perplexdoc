@@ -25,6 +25,7 @@ resources:
     caption: An embedded image
     attr: Mulyadi/Unsplash
     attrlink: https://unsplash.com/photos/JJMoAiVl9jA
+categories: [Markdown]
 ---
 
 Markdown has become the favored markup language for structuring text files. With good cause: The syntax is intuitive and yet quite comprehensive.

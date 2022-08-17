@@ -11,6 +11,8 @@ menu:
 subtitle: false
 title: Paragraphs
 weight: 108
+categories: [Markdown]
+tags: [Block]
 ---
 
 Paragraphs are essential for a website focused on textual information. Comfortable proportions and surrounding whitespace contribute to their legibility in Perplex. The layout of other elements is related to them.

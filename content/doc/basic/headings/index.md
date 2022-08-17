@@ -11,6 +11,8 @@ menu:
 subtitle: false
 title: Text Headings
 weight: 105
+categories: [Markdown]
+tags: [Block]
 ---
 
 Headings introduce and order the segments on a page. On a website with many pages, each level should have similar importance.

@@ -10,6 +10,8 @@ menu:
     pre: link
 title: Links
 weight: 150
+categories: [Markdown]
+tags: [Inline]
 ---
 
 Internet references or short “links” are the binding fabric of the web. Markdown encourages their use by providing simple markup options.

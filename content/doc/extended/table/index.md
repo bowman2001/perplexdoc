@@ -10,6 +10,8 @@ menu:
     pre: table_chart
 title: Tables
 weight: 230
+categories: [Markdown]
+tags: [Block]
 ---
 
 | First |     Second     |  Third   |    Fourth    |    Fifth |

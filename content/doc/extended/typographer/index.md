@@ -11,6 +11,8 @@ menu:
 subtitle: false
 title: Typographer
 weight: 260
+categories: [Markdown]
+tags: [Inline]
 ---
 
 Simple ASCII punctuation characters are substituted with typographical glyphs.

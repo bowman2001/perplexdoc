@@ -10,6 +10,8 @@ menu:
     pre: format_italic
 title: Emphasis
 weight: 116
+categories: [Markdown]
+tags: [Inline]
 ---
 
 We have _light emphasis_ or **strong emphasis** to accentuate a segment of the text. We can **_nest_** both types.

@@ -27,6 +27,8 @@ resources:
 subtitle: false
 title: Images
 weight: 155
+categories: [Markdown]
+tags: [Inline]
 ---
 
 With **Perplex**, Markdown images should always be embedded in a text block. Self-contained images are the domain of the [figure]({{< relref "figure" >}}) shortcode.

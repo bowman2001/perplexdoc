@@ -10,6 +10,8 @@ menu:
     pre: emoji_symbols
 title: Special Characters
 weight: 190
+categories: [Markdown]
+tags: [Inline]
 ---
 
 All available glyphs are valid Markdown. The following sections are about the special ones, we can not use directly.

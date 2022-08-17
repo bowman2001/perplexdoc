@@ -12,6 +12,8 @@ subtitle: false
 title: Strike-through and Insertion
 toc: false
 weight: 240
+categories: [Markdown]
+tags: [Inline]
 ---
 
 Correction marks highlight changes while working on a draft. Lately, strike-through has also become a hip visual style.

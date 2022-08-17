@@ -11,6 +11,8 @@ menu:
 subtitle: false
 title: Code
 weight: 135
+categories: [Markdown]
+tags: [Inline, Block]
 ---
 
 The full-width text column offers space for {$80} characters of code in one line. When the marginal column is included in a code block, {$120} fit in.
@@ -77,11 +79,11 @@ The options suitable for Perplex are:
 
 ## Layout
 
-gets rendered to:
+### Inline
 
-The HTML tag to mark the beginning of code is `<code>`. And to mark the end we use the corresponding closing tag `</code>`.
+The HTML tag to mark the beginning of code is `<code>`. And to mark the end we use the corresponding closing tag `</code>`. Markdown text surrounded by backticks like `` `text` `` gets enclosed by these tags.
 
-### Code Blocks
+### Block
 
 The first backticks marking a code block may be followed by an abbreviation for the kind of code. Then Hugo is able to highlight and colorize the source code for better legibility. The abbreviations are usually the same or are referring to the common suffix for a file containing that kind of code.
 

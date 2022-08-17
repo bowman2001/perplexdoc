@@ -11,6 +11,8 @@ menu:
 subtitle: false
 title: Ordered List
 weight: 130
+categories: [Markdown]
+tags: [Inline]
 ---
 
 Ordered lists group related items and mark them with ascending counters.

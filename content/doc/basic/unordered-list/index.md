@@ -11,6 +11,8 @@ menu:
 subtitle: false
 title: Bullet List
 weight: 125
+categories: [Markdown]
+tags: [Inline]
 ---
 
 A bullet list is an unordered list grouping a set of related items. Any item may contain a sub-list.

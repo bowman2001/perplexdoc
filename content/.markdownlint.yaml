@@ -7,6 +7,7 @@ MD022:
 # Duplicate headings
 MD024: 
   siblings_only: true
+  allow_different_nesting: true
 # Ordered list
 MD029: 
   style: "ordered"

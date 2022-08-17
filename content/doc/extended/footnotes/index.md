@@ -11,6 +11,8 @@ menu:
 subtitle: false
 title: Footnotes
 weight: 220
+categories: [Markdown]
+tags: [Block]
 ---
 
 Footnotes are placed at the bottom of the page. They are best suited for technical information, which is not important for the intended meaning of the text.

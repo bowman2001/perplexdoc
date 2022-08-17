@@ -11,6 +11,8 @@ menu:
 subtitle: false
 title: Line Break
 weight: 111
+categories: [Markdown]
+tags: [Inline]
 ---
 
 Sometimes we like to begin a new line without starting a whole new text block. To place such a hard line break gets complicated, when **hard line wraps** limit the line length inside our Markdown files.

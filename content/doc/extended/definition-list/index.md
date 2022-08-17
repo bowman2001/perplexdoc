@@ -11,6 +11,8 @@ menu:
 subtitle: false
 title: Definition List
 weight: 210
+categories: [Markdown]
+tags: [Block]
 ---
 
 Definition lists consist of **terms** as list markers, which are associated with **details** in the list entries.

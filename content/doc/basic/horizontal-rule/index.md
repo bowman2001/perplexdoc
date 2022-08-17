@@ -11,6 +11,8 @@ menu:
 subtitle: false
 title: Horizontal Rule
 weight: 140
+categories: [Markdown]
+tags: [Inline]
 ---
 
 Sometimes the separation of page segments by space is not clear enough. Then we can add this layout element as an explicit visual separation.
