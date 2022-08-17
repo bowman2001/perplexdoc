@@ -63,7 +63,8 @@ resources:
   - src: beau-swierstra-Ndz-4phqtlg-unsplash.jpg
     name: beau
 lastmod: 2022-07-25T20:09:40.575Z
-tags: [figure]
+categories: [shortcode]
+tags: [Block, Image]
 ---
 
 Because no Markdown element corresponds to the complex HTML `<figure>` tag, we need this shortcode for self-contained images.

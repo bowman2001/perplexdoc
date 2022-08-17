@@ -1,5 +1,5 @@
 ---
-title: Stream
+title: News
 description: Page description placeholder
 subtitle: false
 date: 2022-02-12T13:35:18+01:00

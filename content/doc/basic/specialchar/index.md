@@ -15,6 +15,7 @@ tags: [Inline]
 ---
 
 All available glyphs are valid Markdown. The following sections are about the special ones, we can not use directly.
+{.p-first} <!--more-->
 
 ## Escaping formatting Characters
 

@@ -11,8 +11,8 @@ menu:
 subtitle: false
 title: Hugo
 weight: 15
-categories: [Markdown]
-tags: [inline, Block]
+categories: [Hugo]
+tags: []
 ---
 
 The world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and secure websites.

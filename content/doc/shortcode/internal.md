@@ -11,7 +11,7 @@ title: Hugo’s built-in internal shortcodes
 weight: 590
 ---
 
-## Resolve internal URLs {#relref} 
+## Resolve internal URLs {#relref}
 
 To refer to a page on our site we can include the URL into a [link]({{< relref "link" >}}) like any other. But it's often long and when our content grows and evolves, the path may change. Therefore, we better leave the resolution to Hugo by using an unambiguous name for the page.
 

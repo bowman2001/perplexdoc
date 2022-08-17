@@ -14,6 +14,9 @@ categories: [Markdown]
 tags: [Block]
 ---
 
+Markdown tables need some care, because their layout breaks, when the content of one row exceeds the available width.
+{.p-first} <!--more-->
+
 | First |     Second     |  Third   |    Fourth    |    Fifth |
 | :---- | :------------: | :------: | :----------: | -------: |
 | left  |    centered    | centered |   centered   |    right |
