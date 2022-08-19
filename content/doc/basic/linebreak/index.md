@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-03-24T13:17:56+01:00"
 description: A break inside a paragraph
-featImg: annie-spratt-askpr0s66Rg-unsplash.jpg
 menu:
   doc:
     name: Line Break
@@ -13,6 +12,9 @@ title: Line Break
 weight: 111
 categories: [Markdown]
 tags: [Inline]
+resources:
+  - name: featured
+    src: annie-spratt-askpr0s66Rg-unsplash.jpg
 ---
 
 Sometimes we like to begin a new line without starting a whole new text block. To place such a hard line break gets complicated, when **hard line wraps** limit the line length inside our Markdown files.

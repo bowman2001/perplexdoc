@@ -2,8 +2,7 @@
 author: Georg Makowski
 date: "2021-09-13T22:45:36+02:00"
 description: Explicitly mark changes in the content
-featImg: engin-akyurt-GqJUczrwIG4-unsplash.jpg
-menu:
+menu: 
   doc:
     name: Delete or Insert
     parent: extended
@@ -14,6 +13,9 @@ toc: false
 weight: 240
 categories: [Markdown]
 tags: [Inline]
+resources:
+  - name: featured
+    src: engin-akyurt-GqJUczrwIG4-unsplash.jpg
 ---
 
 Correction marks highlight changes while working on a draft. Lately, strike-through has also become a hip visual style.

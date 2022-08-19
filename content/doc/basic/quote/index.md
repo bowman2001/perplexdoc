@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-03-24T13:21:59+01:00"
 description: Text segments from other sources
-featImg: cj-dayrit-xX2aYSBsyKo-unsplash.jpg
 menu:
   doc:
     name: Quote
@@ -13,6 +12,9 @@ title: Quote
 weight: 120
 categories: [Markdown]
 tags: [Block, Inline]
+resources:
+  - name: featured
+    src: cj-dayrit-xX2aYSBsyKo-unsplash.jpg
 ---
 
 To quote someone means to recognize her or his thoughts as part of our own. We may agree or disagree, but we should refer to them correctly.

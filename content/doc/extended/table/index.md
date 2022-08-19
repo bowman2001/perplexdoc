@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-03-23T22:42:54+01:00"
 description: Lay out tabular data in rows and columns
-featImg: mika-baumeister-Wpnoqo2plFA-unsplash.jpg
 menu:
   doc:
     name: Tables
@@ -12,6 +11,9 @@ title: Tables
 weight: 230
 categories: [Markdown]
 tags: [Block]
+resources:
+  - name: featured
+    src: mika-baumeister-Wpnoqo2plFA-unsplash.jpg
 ---
 
 Markdown tables need some care, because their layout breaks, when the content of one row exceeds the available width.

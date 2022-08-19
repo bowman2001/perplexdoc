@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-03-24T21:44:46+01:00"
 description: List marked with ordered natural numbers
-featImg: jan-antonin-kolar-lRoX0shwjUQ-unsplash.jpg
 menu:
   doc:
     name: Ordered List
@@ -13,6 +12,9 @@ title: Ordered List
 weight: 130
 categories: [Markdown]
 tags: [Inline]
+resources:
+  - name: featured
+    src: jan-antonin-kolar-lRoX0shwjUQ-unsplash.jpg
 ---
 
 Ordered lists group related items and mark them with ascending counters.

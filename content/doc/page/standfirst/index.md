@@ -4,12 +4,14 @@ description: Introduces or summarizes a page
 subtitle: false
 date: 2022-01-18T23:24:32+01:00 
 weight: 620
-featImg: philipp-berndt-5i0GnoTTjSE-unsplash.jpg
 menu:
   doc:
     name: Lead Paragraph
     parent: page
     pre: short_text
+resources:
+  - name: featured
+    src: philipp-berndt-5i0GnoTTjSE-unsplash.jpg
 ---
 
 When the first paragraph contains a short introduction or summary of the page, we can style it emphasized and provide it as meta-data for search optimization.

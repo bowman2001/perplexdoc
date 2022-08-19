@@ -2,9 +2,11 @@
 title: The Beauty of Marginal Notes
 date: 2022-07-04T22:18:04+02:00
 weight: 1
-featImg: Diophantus-II-8-Fermat_cut.jpg
 categories:
 tags: [Note, Demo]
+resources:
+- name: featured
+  src: Diophantus-II-8-Fermat_cut.jpg
 ---
 
 Marginal notes allow to add further information in an elegant and unobtrusive way. We can glance over them and stay with the main text or zone out for a while, when they pique our curiosity.

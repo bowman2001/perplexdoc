@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-09-07T21:33:03+02:00"
 description: What's special about this theme?
-featImg: hal-gatewood-tZc3vjPCk-Q-unsplash.jpg
 menu:
   doc:
     name: Perplex
@@ -12,6 +11,9 @@ subtitle: false
 title: Perplex
 weight: 7
 tags: [fluid]
+resources:
+  - name: featured
+    src: hal-gatewood-tZc3vjPCk-Q-unsplash.jpg
 ---
 
 The theme adapts responsively and fluid to modern screens. It’s designed for optimal legibility down to a view-port of {$360px} width.

@@ -1,14 +1,15 @@
 ---
 author: Georg Makowski
 date: "2021-03-25T10:41:36+01:00"
-description: Photographs, Graphics etc.
-featImg: mulyadi-JJMoAiVl9jA-unsplash.jpg
+description: Photos, Graphics etc.
 menu:
   doc:
     name: Image
     parent: basic
     pre: image
 resources:
+- name: featured
+  src: mulyadi-JJMoAiVl9jA-unsplash.jpg
 - name: normal
   src: normal.svg
   title: Normal placeholder

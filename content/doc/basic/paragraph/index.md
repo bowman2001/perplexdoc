@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-03-23T21:38:25+01:00"
 description: Essential building blocks of text
-featImg: finn-mund-8q2r2XQpDO0-unsplash.jpg
 menu:
   doc:
     name: Paragraphs
@@ -13,6 +12,9 @@ title: Paragraphs
 weight: 108
 categories: [Markdown]
 tags: [Block]
+resources:
+  - name: featured
+    src: finn-mund-8q2r2XQpDO0-unsplash.jpg
 ---
 
 Paragraphs are essential for a website focused on textual information. Comfortable proportions and surrounding whitespace contribute to their legibility in Perplex. The layout of other elements is related to them.

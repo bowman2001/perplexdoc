@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-03-25T10:34:57+01:00"
 description: A feature designed from and for GitHub
-featImg: glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg
 menu:
   doc:
     name: Task list
@@ -14,6 +13,9 @@ toc: false
 weight: 250
 categories: [Markdown]
 tags: [Block]
+resources:
+  - name: featured
+    src: glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg
 ---
 
 A task list on a web page should be an interactive element with a connection between user input and the Markdown. Perplex can't establish such a connection.

@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-03-24T21:44:41+01:00"
 description: List marked with a bullet
-featImg: torbjorn-helgesen-dz35efCT3ZA-unsplash.jpg
 menu:
   doc:
     name: Bullet list
@@ -13,6 +12,9 @@ title: Bullet List
 weight: 125
 categories: [Markdown]
 tags: [Inline]
+resources:
+  - name: featured
+    src: torbjorn-helgesen-dz35efCT3ZA-unsplash.jpg
 ---
 
 A bullet list is an unordered list grouping a set of related items. Any item may contain a sub-list.

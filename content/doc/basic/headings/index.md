@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-03-23T21:46:56+01:00"
 description: Main page structure
-featImg: ashni-Wh9ZC4727e4-unsplash.jpg
 menu:
   doc:
     name: Text Headings
@@ -13,6 +12,9 @@ title: Text Headings
 weight: 105
 categories: [Markdown]
 tags: [Block]
+resources:
+- name: featured
+  src: ashni-Wh9ZC4727e4-unsplash.jpg
 ---
 
 Headings introduce and order the segments on a page. On a website with many pages, each level should have similar importance.

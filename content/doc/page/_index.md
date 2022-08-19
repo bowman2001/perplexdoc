@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-09-16T19:36:58+02:00"
 description: Menu, navigation, meta-data etc. 
-featImg: roman-skrypnyk-fFW_xTie9Ik-unsplash.jpg
 menu:
   doc:
     identifier: page
@@ -14,6 +13,9 @@ resources:
 subtitle: false
 title: Page Elements
 weight: 600
+resources:
+  - name: featured
+    src: roman-skrypnyk-fFW_xTie9Ik-unsplash.jpg
 ---
 
 **Perplex** generates all page elements beside the content from meta data, which is provided in the global configuration or the front-matter of the content files.

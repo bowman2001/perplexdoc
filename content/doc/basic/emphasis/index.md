@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-03-23T21:46:33+01:00"
 description: Accentuate pieces of text
-featImg: brett-jordan-vyPVtz5p8D4-unsplash.jpg
 menu:
   doc:
     name: Emphasis
@@ -12,6 +11,9 @@ title: Emphasis
 weight: 116
 categories: [Markdown]
 tags: [Inline]
+resources:
+- name: featured
+  src: brett-jordan-vyPVtz5p8D4-unsplash.jpg
 ---
 
 We have _light emphasis_ or **strong emphasis** to accentuate a segment of the text. We can **_nest_** both types.

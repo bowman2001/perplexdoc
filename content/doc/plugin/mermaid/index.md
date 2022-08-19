@@ -11,6 +11,9 @@ menu:
     parent: plugin
     pre: account_tree
 mermaid: true
+resources:
+  - name: featured
+    src: emily-goodhart-vu1BlBAZ_RU-unsplash.jpg
 ---
 
 You can place your own lead paragraph here before the attribute _.p-first_ and the _more tag_. If you don't want to use special styling, just remove the attribute.

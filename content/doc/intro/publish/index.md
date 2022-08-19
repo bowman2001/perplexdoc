@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-09-14T12:56:56+02:00"
 description: Build & Deploy a static website
-featImg: nasa-Q1p7bh3SHj8-unsplash.jpg
 menu:
   doc:
     name: Publish
@@ -11,6 +10,9 @@ menu:
 subtitle: false
 title: Publish
 weight: 25
+resources: 
+  - name: featured
+    src: nasa-Q1p7bh3SHj8-unsplash.jpg
 ---
 
 Only two basic steps are involved in publishing a static website: **Build & Deploy**. There are many ways to realize them.

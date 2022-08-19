@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-03-23T22:11:38+01:00"
 description: All types of references to a URL
-featImg: edge2edge-media-t1OalCBUYRc-unsplash.jpg
 menu:
   doc:
     name: Links
@@ -12,6 +11,9 @@ title: Links
 weight: 150
 categories: [Markdown]
 tags: [Inline]
+resources: 
+  - name: featured
+    src: edge2edge-media-t1OalCBUYRc-unsplash.jpg
 ---
 
 Internet references or short “links” are the binding fabric of the web. Markdown encourages their use by providing simple markup options.

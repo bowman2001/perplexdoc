@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-03-24T21:26:08+01:00"
 description: References at the end of the page
-featImg: kelly-sikkema-et5mfj1eB94-unsplash.jpg
 menu:
   doc:
     name: Footnotes
@@ -13,6 +12,9 @@ title: Footnotes
 weight: 220
 categories: [Markdown]
 tags: [Block]
+resources:
+  - name: featured
+    src: kelly-sikkema-et5mfj1eB94-unsplash.jpg
 ---
 
 Footnotes are placed at the bottom of the page. They are best suited for technical information, which is not important for the intended meaning of the text.

@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-08-27T09:59:47+02:00"
 description: Substitution of punctuation 
-featImg: kristian-strand-p8gzCnZf39k-unsplash.jpg
 menu:
   doc:
     name: Typographer
@@ -13,6 +12,9 @@ title: Typographer
 weight: 260
 categories: [Markdown]
 tags: [Inline]
+resources:
+  - name: featured
+    src: kristian-strand-p8gzCnZf39k-unsplash.jpg
 ---
 
 Simple ASCII punctuation characters are substituted with typographical glyphs.

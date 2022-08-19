@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-12-22T22:29:23+01:00"
 description: Gratitude is due to many people
-featImg: rachel-coyne-tImZgkTcCbQ-unsplash.jpg
 menu:
   doc:
     name: Thanks
@@ -12,6 +11,9 @@ subtitle: false
 title: Thanks
 weight: 60
 toc: false
+resources: 
+  - name: featured
+    src: rachel-coyne-tImZgkTcCbQ-unsplash.jpg
 ---
 
 All images in this documentation were made available for free by numerous skilled photographers on [Unsplash][unsplash]. Their names are included in the title pop-up and you can usually follow the link in the caption to get to the original picture and the author.
