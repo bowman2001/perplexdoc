@@ -1,16 +1,26 @@
 {{ $imgResource := "" }}
-{{ $currentPage := .Page }}
-{{ $url := "" }}
-{{- with .Params.featImg -}}
-    {{ $url = . }}
-{{- else }}
-    {{ with .CurrentSection.Params.featImg }}
-        {{ $url = . }}
-    {{ else }}
-        {{ with .Site.Params.featImg }}
-            {{ $url = . }}
-        {{ end }}
+{{ with .Resources.GetMatch "featured" }}
+    {{ $imgResource = . }}
+{{ else }}
+    {{ with .CurrentSection.Resources.GetMatch "featured" }}
+        {{ $imgResource = . }}
     {{ end }}
-{{- end -}}
-{{ $imgResource = ( partial "get-resource.html" ( dict "currentPage" $currentPage "name" $url ) ) }}
+{{ end }}
+
+{{ if not $imgResource }}
+    {{ $currentPage := .Page }}
+    {{ $url := "" }}
+    {{- with .Params.featImg -}}
+        {{ $url = . }}
+    {{- else }}
+        {{ with .CurrentSection.Params.featImg }}
+            {{ $url = . }}
+        {{ else }}
+            {{ with .Site.Params.featImg }}
+                {{ $url = . }}
+            {{ end }}
+        {{ end }}
+    {{- end -}}
+    {{ $imgResource = ( partial "get-resource.html" ( dict "currentPage" $currentPage "name" $url ) ) }}
+{{ end }}
 {{ return $imgResource }}
