@@ -17,7 +17,7 @@ categories: [Markdown]
 tags: [Inline, Block]
 ---
 
-The full-width text column offers space for {$80} characters of code in one line. When the marginal column is included in a code block, {$120} fit in.
+The full-width text column offers space for {$80} characters of code in a line. When the marginal column is also used, {$120} fit in.
 {.p-first} <!--more-->
 
 Short snippets of code are usually placed **in line** with the normal text. Long pieces of code or entire files are marked as **code blocks**.

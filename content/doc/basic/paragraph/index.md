@@ -17,14 +17,16 @@ resources:
     src: finn-mund-8q2r2XQpDO0-unsplash.jpg
 ---
 
-Paragraphs are essential for a website focused on textual information. Comfortable proportions and surrounding whitespace contribute to their legibility in Perplex. The layout of other elements is related to them.
+Paragraphs are the essential building blocks of text. Comfortable proportions and surrounding whitespace contribute to their legibility. The layout of other elements is related to them.
 {.p-first} <!--more-->
 
 ## Syntax
 
-Paragraphs are text segments, which are completed by an empty line in the Markdown.
+Paragraphs are completed by an empty line in Markdown.
 
-In addition to the normal paragraph Perplex offers a **first** paragraph — like the first one on this page — a **big** and a **small** one. These styles are applied with the [attributes]({{< relref "attribute" >}}) `{.p-first}`, `{.p-big}` and `{.p-small}`.
+In addition to the normal paragraph Perplex offers a **first** paragraph — like the first one on this page. There is also a **big** and a **small** one. And in combination with a following subsection, we can use a **meta** paragraph to indicate a topic or some other general category.
+
+These styles are applied with the [attributes]({{< relref "attribute" >}}) `{.p-first}`, `{.p-big}`, `{.p-small}` and `{.p-meta}`.
 
 ## Layout
 
@@ -42,18 +44,27 @@ The technique is mostly used for prose, but also appropriate for notes like this
 
 ### Big Paragraph
 
-{{< farfar 1 >}}
+{{< farfarshort 1 >}}
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
 {.p-big .blind}
 
-{{< farfar 1 >}}
+{{< farfarshort 1 >}}
 
 ### Small Paragraph
 
-{{< farfar 1 >}}
+{{< farfarshort 1 >}}
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
 {.p-small .blind}
 
-{{< farfar 1 >}}
+{{< farfarshort 1 >}}
+
+### Meta Paragraph for headings
+
+Topic
+{.p-meta}
+
+#### Heading under the Topic
+
+{{< farfarshort 1 >}}
