@@ -32,7 +32,7 @@ categories: [Markdown]
 tags: [Inline, Image]
 ---
 
-With **Perplex**, Markdown images should always be embedded in a text block. Self-contained images are the domain of the [figure](/doc/shortcode/figure/) shortcode.
+With **Perplex**, Markdown images should always be embedded in a text block. Self-contained images are the domain of the {$figure} shortcode.
 {.p-first} <!--more-->
 
 ## Syntax
