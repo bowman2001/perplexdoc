@@ -42,6 +42,11 @@ Documentation
 : have been released by _Google_ to the public under the [Apache 2.0 License][ap2].
 {.dl-loose}
 
+## Javascript libraries
+
+[Lazysizes](https://github.com/aFarkas/lazysizes)
+: has been released to the public by [Alexander Farkas](https://github.com/aFarkas) under the [MIT License][mit]
+
 ## Optional software
 
 [KaTeX][katex]
