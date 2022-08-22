@@ -36,10 +36,10 @@ Documentation
 ## Fonts and icon fonts
 
 [IBM Plex fonts](https://www.ibm.com/plex/)
-: have been released by _IBM_ to the public under the [Open Font License (OFL)][ofl].
+: have been released by IBM to the public under the [Open Font License (OFL)][ofl].
 
 [Material Icons](https://fonts.google.com/icons)
-: have been released by _Google_ to the public under the [Apache 2.0 License][ap2].
+: have been released by Google to the public under the [Apache 2.0 License][ap2].
 {.dl-loose}
 
 ## Javascript libraries
@@ -51,10 +51,10 @@ Documentation
 ## Optional software
 
 [KaTeX][katex]
-: has been released by Emily Eisenberg, Sophie Alpert and contributors under the [MIT License][mit].
+: has been released by [Emily Eisenberg](https://github.com/xymostech), [Sophie Alpert](https://github.com/sophiebits) and contributors under the [MIT License][mit].
 
 [Mermaid][mermaid]
-: has been released by Knut Sveidqvist and contributors under the [MIT License][mit].
+: has been released by [Knut Sveidqvist](https://github.com/knsv) and contributors under the [MIT License][mit].
 {.dl-loose}
 
 ## Logos and pictures
@@ -63,7 +63,7 @@ All logos
 : remain under the copyright of their respective owners. Perplex logos are released under the [Apache 2.0 License][ap2] by Jörg (Georg) Makowski.
 
 All pictures
-: have been retrieved from [Unsplash](https://unsplash.com) and remain under the copyright of their respective owners. Their names and the ID-codes are embedded in the filename, which is shown as pop-up title for every image. Additionally a link to the original is usually provided in the image caption.
+: have been retrieved from [Unsplash](https://unsplash.com) and remain under the copyright of their respective owners. Their names and the ID-codes are embedded in the filename, which is shown as pop-up title. Additionally a link to the original is usually provided in the image caption.
 {.dl-loose}
 
 [hugo]: https://gohugo.io

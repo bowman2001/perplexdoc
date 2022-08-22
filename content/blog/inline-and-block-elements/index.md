@@ -12,13 +12,13 @@ tags: [Block, Inline, Image]
 draft: false
 ---
 
-Inline elements are placed on the same line until its filled and let the browser decide, when to wrap the lines. Block elements always completely fill a line and may include additional vertical space.
+Inline elements are placed on the same line until its filled and let the browser decide, when to wrap the lines. Block elements always completely fill the available width and may include additional vertical space.
 {.p-first} <!--more-->
 
 Inline and block display are the two basic modes of HTML layout, which are inherited by Markdown.
 
 Inline elements behave like text and may be embedded in text. They may contain other inline elements --- like [**`code` in emphasis with a link**]({{< relref "emphasis">}}) for example. Inline elements can’t include block elements, but they always need to be embedded in block elements.
 
-Block elements always fill up the available width and may contain other block elements or inline elements. An example for the latter is a paragraph, which always fills at least one line, but may include an arbitrary amount of text and inline elements.
+Block elements always fill up the available width and may contain other block elements or inline elements. An example for the latter is a paragraph, which always fills at least one line, but may include an arbitrary amount of inline elements and text.
 
-One Markdown element is creating some confusion, because its an inline element while we intuitively think of it as a block element: That’s the [image element]({{< relref "image" >}}).
+The Markdown [image element]({{< relref "image" >}}) is creating some confusion, because its an inline element. But we intuitively think of an image as a block element.
