@@ -45,7 +45,8 @@ Documentation
 ## Javascript libraries
 
 [Lazysizes](https://github.com/aFarkas/lazysizes)
-: has been released to the public by [Alexander Farkas](https://github.com/aFarkas) under the [MIT License][mit]
+: has been released to the public by [Alexander Farkas](https://github.com/aFarkas) under the [MIT License][mit].
+{.dl-loose}
 
 ## Optional software
 
@@ -59,7 +60,7 @@ Documentation
 ## Logos and pictures
 
 All logos
-: remain under the copyright of their respective owners. Perplex logos are also released under the [Apache 2.0 License][ap2] by Jörg (Georg) Makowski.
+: remain under the copyright of their respective owners. Perplex logos are released under the [Apache 2.0 License][ap2] by Jörg (Georg) Makowski.
 
 All pictures
 : have been retrieved from [Unsplash](https://unsplash.com) and remain under the copyright of their respective owners. Their names and the ID-codes are embedded in the filename, which is shown as pop-up title for every image. Additionally a link to the original is usually provided in the image caption.
