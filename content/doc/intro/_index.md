@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-09-06T12:53:19+02:00"
-description: The purpose of Perplex
+description: On the purpose and usage of Perplex
 menu:
   doc:
     identifier: intro
@@ -15,7 +15,7 @@ resources:
     src: jon-tyson-6_SA8qzmzx8-unsplash.jpg
 ---
 
-Perplex has been designed to publish information about software. It provides templates for a documentation with up to three section levels, a blog and single pages. Perplex works out of the box, no other software than a recent Hugo installation is required.
+Perplex provides advanced layout capabilities for all people, who like the simplicity and speed of the static site generator Hugo. 
 {.p-first} <!--more-->
 
-The chapters about Markdown and the layout options assume basic knowledge of Markdown and Hugo. Doesn't sound familiar at all? The following pages about these topics get you started.
+Because the main chapters of this documentation assume basic knowledge about Markdown and Hugo. Doesn't sound familiar at all? The following pages about these topics get you started.
