@@ -5,7 +5,6 @@ description: How to prevent injection of malicious code
 subtitle: false
 date: 2022-05-05T10:17:42+02:00 
 weight: 860
-featImg:
 menu:
   doc:
     name: Content

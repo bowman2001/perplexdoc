@@ -19,7 +19,7 @@ All element specific attributes are listed here. To attach them correctly, have 
 
 |Element    | Attribute Name | CSS-class |
 |:----------|:--------|-------:|
-| Headings  | Paragraph heading | {$.h-p} |
+| Headings  | [Paragraph heading]({{< relref "headings#h-p" >}}) | {$.h-p} |
 | | Small paragraph h. | {$.h-p .h-p-s} |
 | | Warning | {$.h-warn} |
 | | Info | {$.h-info} |

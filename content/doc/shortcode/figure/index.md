@@ -11,6 +11,8 @@ menu:
     parent: shortcode
     pre: add_photo_alternate
 resources:
+  - src: markus-spiske--dbOrdtrR1A-unsplash.jpg
+    name: featured
   - src: fig/tiny.svg
     name: tiny
     title: Tiny placeholder

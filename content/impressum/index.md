@@ -4,8 +4,10 @@ description: Page description placeholder
 subtitle: false
 date: 2022-06-16T22:54:46+02:00
 weight: 9999
-featImg: null
 toc: false
+resources:
+  - src: nastuh-abootalebi-ZtC4_rPCRXA-unsplash.jpg
+    name: featured
 lastmod: 2022-07-25T13:40:07.175Z
 ---
 

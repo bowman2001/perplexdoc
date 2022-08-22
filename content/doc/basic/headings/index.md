@@ -40,7 +40,7 @@ Usually we don’t want to apply the full hierarchy on moderate sized pages, bec
 
 To follow this recommendation _and_ skip headings visually, we need heading [attributes][attr].
 
-### Paragraph Headings
+### Paragraph Headings {#h-p}
 
 We can style any heading like a _paragraph heading_ with the [attribute][attr] `{.h-p}`. For the probably rare occasions we need to style a heading as a _small paragraph heading_ we need an additional attribute: `{.h-p .h-p-s}`.
 

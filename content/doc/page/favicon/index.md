@@ -4,12 +4,14 @@ description: The site icon
 subtitle: false
 date: 2022-01-30T18:51:37+01:00 
 weight: 650
-featImg: 
 menu:
   doc:
     name: Favicon
     parent: page
     pre: emoji_symbols
+resources:
+  - src: alexander-shatov-mr4JG4SYOF8-unsplash.jpg
+    name: featured
 ---
 
 The _Favorite Icon_ is placed in the `<head>` of every page. Browsers usually show the icon in the tab, the address bar and before bookmarks. It may be also displayed as application icon.

@@ -48,4 +48,6 @@ Other
 {.dl-loose}
 
 ## Layout
-Some attributes are of general use, they are introduced on the next pages. The most of them style a specific element and their style is shown there. To find a specific one quickly we have a [register]({{< relref "register" >}}).
+Some attributes are of general use, they are introduced on the next pages. 
+
+Most attributes style specific elements and their style is shown their pages. To find a specific one quickly, there is  a [register]({{< relref "register" >}}).

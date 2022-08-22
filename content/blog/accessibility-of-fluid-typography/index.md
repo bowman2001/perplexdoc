@@ -4,9 +4,10 @@ description: Is a view-port-based responsive design user-friendly?
 subtitle: false
 date: 2022-07-12T22:38:10+02:00
 weight: 1
-featImg: logo/Accessibility_logo.svg
 tags: [fluid]
-draft: true
+resources:
+  - src: Accessibility_logo.svg
+    name: featured
 ---
 
 Some doubts have been raised about the accessibility of fluid typography. But websites with a responsive fluid design can behave especially user-friendly and accessible. This site is an example.

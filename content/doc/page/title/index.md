@@ -4,7 +4,6 @@ title: Title Section
 description: The first section of content 
 date: 2022-01-17T15:42:24+01:00 
 weight: 610
-featImg:
 menu:
   doc:
     name: Title Section

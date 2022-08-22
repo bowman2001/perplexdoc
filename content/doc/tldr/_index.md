@@ -5,12 +5,14 @@ description: For seasoned Hugo users
 subtitle: false
 date: 2022-05-11T23:46:08+02:00 
 weight: 2
-featImg: rebecca-li-JahHqUiXlig-unsplash.jpg
 menu:
   doc:
     identifier: tldr
     name: Preview
     pre: visibility
+resources: 
+  - src: rebecca-li-JahHqUiXlig-unsplash.jpg
+    name: featured
 draft: true
 ---
 

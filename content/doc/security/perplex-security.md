@@ -5,7 +5,6 @@ description: Secure templates and plugins
 subtitle: false
 date: 2022-05-04T23:57:20+02:00 
 weight: 850
-featImg:
 menu:
   doc:
     name: Perplex

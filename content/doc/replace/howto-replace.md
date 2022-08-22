@@ -5,7 +5,6 @@ description: Curly braces and an identifier
 subtitle: false
 date: 2022-04-19T13:00:09+02:00
 weight: 410
-featImg:
 menu:
   doc:
     name: Howto
