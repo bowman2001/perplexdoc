@@ -4,7 +4,6 @@ description: ""
 subtitle: true
 date: 2022-02-07T22:34:58+01:00
 weight: 999
-featImg: f1612
 categories:
 - Typography
 - Layout
@@ -12,7 +11,7 @@ tags:
 - History
 resources:
 - src: 2215px-Mk_Frankfurt_Merian_Stadtansicht.jpg
-  name: f1612
+  name: featured
   title: Frankfurt in 1612
   params:
     caption: Frankfurt in 1612
@@ -113,16 +112,12 @@ draft: true
 This article uses material from the Wikipedia article [“History of Frankfurt am Main”][orig], which is released under the [Creative Commons Attribution-Share-Alike License 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by many [contributors](https://en.wikipedia.org/w/index.php?title=History_of_Frankfurt_am_Main&action=history). The contents are significant to me — I'm living there. But this copied article has the main purpose of demonstrating layout options. Some sections are missing and all internal references to Wikipedia are not reproduced. Please refer to the [original article][orig], to inform yourself and others in more detail about the _history of Frankfurt am Main_.
 {.p-first} <!--more-->
 
-The city of Frankfurt am Main started on a hill at a ford in the Main River. The city developed into a financial centre, nicknamed *the smallest metropolis in the world*.
+The city of Frankfurt am Main started on a hill at a ford in the Main River. The city developed into a financial centre, nicknamed _the smallest metropolis in the world_.
 
 ## Early History
 
-![](wappen) Frankfurt is located in what was originally a swampy portion of the Main valley, a lowland criss-crossed by channels of the river. The oldest parts are therefore to be found on the higher portions of the valley, through which passed the Roman road from Mainz (Roman _Moguntiacum_) to Heddernheim (Roman _Nida_). The Odenwald and Spessart ranges surrounded the area, lending a defensive advantage, and placenames show that the lowlands on both sides of the river were originally wooded.
+![Coat of Arms](wappen) Frankfurt is located in what was originally a swampy portion of the Main valley, a lowland criss-crossed by channels of the river. The oldest parts are therefore to be found on the higher portions of the valley, through which passed the Roman road from Mainz (Roman _Moguntiacum_) to Heddernheim (Roman _Nida_). The Odenwald and Spessart ranges surrounded the area, lending a defensive advantage, and placenames show that the lowlands on both sides of the river were originally wooded.
 {.i-small .i-small-right}
-
-
-
-
 
 The oldest part of the _Altstadt_, the old city center, is the Cathedral Hill (_Domhügel_), upon an island created by arms of the Main. Only from the West could it be reached by foot without getting wet; this, together with its location at a ford, gave it significant military and economic advantages.
 
@@ -132,12 +127,11 @@ With the retreat of the Roman border to the west bank of the Rhine in 259/260, t
 
 ### Early Middle Ages
 
-
-![](libellus) The name Frankfurt first appears in writing in the year 793, but it seems to have already been a considerable city. In 794 a letter from the Emperor to the bishop of Toledo contained “_in loco celebri, qui dicitur **Franconofurd**_”, which reads “that famous place, which is called Frankfurt.”
+![Libellus](libellus) The name Frankfurt first appears in writing in the year 793, but it seems to have already been a considerable city. In 794 a letter from the Emperor to the bishop of Toledo contained “_in loco celebri, qui dicitur **Franconofurd**_”, which reads “that famous place, which is called Frankfurt.”
 
 It seems Cathedral Hill was already permanently settled in Merovingian times (possibly first by Romans). In 1992 excavations at the cathedral found the rich grave of a girl, that has been dated to the late Merovingian period of the 7th century.
 
-![](karl) Charlemagne built himself a royal court at "Franconovurd", the "ford of the Franks", and in the summer of 794 held a church council there, convened by the grace of God, authority of the pope, and command of Charlemagne (canon 1), and attended by the bishops of the Frankish kingdom, Italy and the province of Aquitania, and even by ecclesiastics from England. The council was summoned primarily for the condemnation of Adoptionism. According to the testimony of contemporaries two papal legates were present, Theophylact and Stephen, representing Pope Adrian I. After an allocution by Charlemagne, the bishops drew up two memorials against the Adoptionists, one containing arguments from patristic writings; the other arguments from Scripture. The first was the _Libellus sacrosyllabus_, written by Paulinus, Patriarch of Aquileia, in the name of the Italian bishops; the second was the _Epistola Synodica_, addressed to the bishops of Spain by those of the Empire, Gaul and Aquitania. In the first of its fifty-six canons the council condemned Adoptionism, and in the second repudiated the Second Council of Nicaea of 787, which, according to the faulty Latin translation of its Acts (see Caroline Books), seemed to decree that the same kind of worship should be paid to images as to the Blessed Trinity, though the Greek text clearly distinguishes between _latreia_ and _proskynesis_; this constituted a condemnation of iconoclasm. The remaining fifty-four canons dealt with metropolitan jurisdiction, monastic discipline, superstition etc.
+![Charlemagne](karl) Charlemagne built himself a royal court at "Franconovurd", the "ford of the Franks", and in the summer of 794 held a church council there, convened by the grace of God, authority of the pope, and command of Charlemagne (canon 1), and attended by the bishops of the Frankish kingdom, Italy and the province of Aquitania, and even by ecclesiastics from England. The council was summoned primarily for the condemnation of Adoptionism. According to the testimony of contemporaries two papal legates were present, Theophylact and Stephen, representing Pope Adrian I. After an allocution by Charlemagne, the bishops drew up two memorials against the Adoptionists, one containing arguments from patristic writings; the other arguments from Scripture. The first was the _Libellus sacrosyllabus_, written by Paulinus, Patriarch of Aquileia, in the name of the Italian bishops; the second was the _Epistola Synodica_, addressed to the bishops of Spain by those of the Empire, Gaul and Aquitania. In the first of its fifty-six canons the council condemned Adoptionism, and in the second repudiated the Second Council of Nicaea of 787, which, according to the faulty Latin translation of its Acts (see Caroline Books), seemed to decree that the same kind of worship should be paid to images as to the Blessed Trinity, though the Greek text clearly distinguishes between _latreia_ and _proskynesis_; this constituted a condemnation of iconoclasm. The remaining fifty-four canons dealt with metropolitan jurisdiction, monastic discipline, superstition etc.
 
 Louis the Pious, Charlemagne's son, selected Frankfurt as his seat, extended the palatinate, built a larger palace, and in 838 had the city encircled by defensive walls and ditches.
 
@@ -145,7 +139,7 @@ After the Treaty of Verdun (843), Frankfurt became to all intents and purposes t
 
 ## Late Middle Ages
 
-![](reichsstadt) After the era of lesser importance under the Salian and Saxon emperors, a single event once again brought Frankfurt to the fore: it was in the local church in 1147 that Bernard of Clairvaux called, amongst others, the Hohenstaufen king Conrad III to the Second Crusade. Before leaving for Jerusalem, Conrad selected his ten-year-old son as heir, but the boy died before his father. Due to this, an election was held in Frankfurt five years later, and after the emperor Frederick Barbarossa was elected, Frankfurt became the customary place for the election of the German kings.
+![Reichsstadt](reichsstadt) After the era of lesser importance under the Salian and Saxon emperors, a single event once again brought Frankfurt to the fore: it was in the local church in 1147 that Bernard of Clairvaux called, amongst others, the Hohenstaufen king Conrad III to the Second Crusade. Before leaving for Jerusalem, Conrad selected his ten-year-old son as heir, but the boy died before his father. Due to this, an election was held in Frankfurt five years later, and after the emperor Frederick Barbarossa was elected, Frankfurt became the customary place for the election of the German kings.
 
 ### Free Imperial City of Frankfurt
 
@@ -153,16 +147,16 @@ By 1180 the city had expanded greatly, and by 1250 had seen an increase in privi
 
 ## The Early Modern era, 16th to 18th centuries
 
-![](aussicht) Starting from the 16th century, trade and the arts flowered in Frankfurt. Science and innovation progressed, and the invention of the printing press in nearby Mainz promoted education and knowledge. From the 15th to 17th centuries, the most important book fair in Germany was held in Frankfurt, a custom which would be revived in 1949.
+![View](aussicht) Starting from the 16th century, trade and the arts flowered in Frankfurt. Science and innovation progressed, and the invention of the printing press in nearby Mainz promoted education and knowledge. From the 15th to 17th centuries, the most important book fair in Germany was held in Frankfurt, a custom which would be revived in 1949.
 
- In the early 17th century tensions between the guilds and the patricians, who dominated the city council, led to substantial unrest. The guilds asked for greater participation in urban and fiscal policies as well as for economic restrictions of the Jewish community's rights. In 1612, following the election of Emperor Matthias, the council rejected the Guild's request, to read out publicly the imperial privileges given to the city. ![](fettmilch) This caused the so-called Fettmilch Rebellion, named after its leader, the baker Vinzenz Fettmilch. A part of the populace, mainly craftsmen, rose up against the city council. In 1614, the mob began a pogrom in the city's Jewish ghetto, and the emperor had to ask Mainz and Hessen-Darmstadt to restore order.
+ In the early 17th century tensions between the guilds and the patricians, who dominated the city council, led to substantial unrest. The guilds asked for greater participation in urban and fiscal policies as well as for economic restrictions of the Jewish community's rights. In 1612, following the election of Emperor Matthias, the council rejected the Guild's request, to read out publicly the imperial privileges given to the city. ![Fettmilch rebellion](fettmilch) This caused the so-called Fettmilch rebellion, named after its leader, the baker Vinzenz Fettmilch. A part of the populace, mainly craftsmen, rose up against the city council. In 1614, the mob began a pogrom in the city's Jewish ghetto, and the emperor had to ask Mainz and Hessen-Darmstadt to restore order.
 {.i-midst .i-right}
 
 In the Thirty Years' War, Frankfurt was able to maintain its neutrality; the city council had avoided siding with one opponent or another after its negative experiences in the Schmalkaldic War. This issue became critical between 1631 and 1635, when the Swedish regent Gustav Adolf came to Frankfurt demanding accommodation and provisions for himself and his troops. But the city mastered these adversities more easily than what was to follow the war: the plague ravaged the city, as it would most of Europe at this time. In the 1648 Peace of Westphalia, Frankfurt was confirmed as an Imperial Free City, and soon reached new heights of prosperity. The Palais Barckhaus at Zeil in Frankfurt even served as residence of Emperor Charles VII until 1744.
 
 ## From the French Revolution to the end of the Free State
 
-![](f1770) During the French Revolutionary War, General Custine occupied Frankfurt in October 1792. On December 2 of the same year, the city was retaken.
+![Frankfurt in 1770](f1770) During the French Revolutionary War, General Custine occupied Frankfurt in October 1792. On December 2 of the same year, the city was retaken.
 
 In January 1806, General Augereau occupied the city with 9,000 men and extorted 4 million francs from it. Frankfurt's status as a free city ended when it was granted to Karl Theodor Anton Maria von Dalberg in the same year. In 1810 Dalberg's territories were reorganized into the Grand Duchy of Frankfurt.
 
@@ -172,7 +166,7 @@ On November 2, 1813, the allies drew together in Frankfurt, to re-establish its 
 
 The city took good heed of this advice. When in 1831 Arthur Schopenhauer, a lecturer at the time, moved from Berlin to Frankfurt, he justified it with the lines: "Healthy climate, beautiful surroundings, the amenities of large cities, the Natural History Museum, better theater, opera, and concerts, more Englishman, better coffee houses, no bad water… and a better dentist."
 
-![](wachensturm) In 1833 a revolutionary movement attempted to topple the Diet of the royalist German Confederation, which sat at Frankfurt, and was quickly put down. [^2]
+![Wachensturm](wachensturm) In 1833 a revolutionary movement attempted to topple the Diet of the royalist German Confederation, which sat at Frankfurt, and was quickly put down. [^2]
 
 ### The Revolutions of 1848 and their aftermath
 
@@ -186,7 +180,7 @@ Starting in August 1863, a political gathering focused on German federal reform 
 
 The spire of the cathedral tower marks the geographical center of the city at exactly 50° 6\' 42.5\" North and 8° 41\' 9.4\" East.
 
-![](view)
+![View](view)
 
 ## Recent History
 

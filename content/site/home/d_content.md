@@ -12,7 +12,7 @@ Use text files containing
 [Attributes]({{< relref "attribute" >}})
 : for style variations
 
-[Shortcodes]({{< relref "shortcode" >}})
+[Shortcodes]({{< relref "/doc/shortcode" >}})
 : for complex layout
 
 YAML

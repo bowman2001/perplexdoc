@@ -35,7 +35,7 @@ This call inserts three paragraphs of blind text.
 
 ### Named
 
-When we want to offer more parameters, we better name them, because it's tricky to remember many positions. An example is the shortcode for self-contained images. A call of [`{{</* figure */>}}`]({{< relref "figure" >}}) should include at least three parameters:
+When we want to offer more parameters, we better name them, because it's tricky to remember many positions. An example is the shortcode for self-contained images. A call of [{$figure}]({{< relref "figure" >}}) should include at least three parameters:
 
 ```md
 {{</* figure src="image.jpg" alt="Description" title="Title" */>}} 

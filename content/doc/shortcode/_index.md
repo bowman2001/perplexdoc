@@ -12,7 +12,7 @@ title: Shortcodes
 weight: 500
 resources:
   - name: featured
-    src: roman-synkevych-vXInUOv1n84-unsplash.jpg
+    src: Hugo.svg
 ---
 
 We need shortcodes to utilize complex HTML structures beyond the capabilities of extended Markdown.

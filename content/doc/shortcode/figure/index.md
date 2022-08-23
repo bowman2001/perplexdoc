@@ -17,7 +17,7 @@ resources:
     name: tiny
     title: Tiny placeholder
     params:
-      class: tiny 
+      class: tiny right
       caption: Tiny figure on the right
   - src: fig/tiny.copy.svg
     name: tiny2
@@ -80,7 +80,7 @@ When there is no shortcode closing tag, we need to add a slash to the last angle
 {{</* figure src="image" /*/>}}
 ```
 
-In case we forget the self-closing slash, Hugo will treat the following Markdown as the expected caption and probably produce a garbled page.
+Should we miss the self-closing slash, Hugo cannot warn us. It will treat the following Markdown as the expected caption and produce a probably very garbled result.
 
 ## Syntax
 
