@@ -9,3 +9,8 @@ HUGO_ENABLEGITINFO = "true"
 
 [context.develop]
 command = "hugo --gc --minify --environment development"
+
+[[redirects]]
+from = "/*"
+to = "/404/"
+status = 404
