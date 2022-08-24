@@ -1,4 +1,4 @@
 ---
 title: Home
-images: [logo/Perplex.svg]
+images: [/logo/Perplex.svg]
 ---
