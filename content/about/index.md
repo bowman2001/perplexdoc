@@ -3,7 +3,6 @@ title: About
 description: About Perplex and its author
 subtitle: false
 date: 2022-01-26T14:59:56+01:00
-featImg:
 menu:
   main: 
     identifier: about
