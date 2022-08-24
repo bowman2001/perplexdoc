@@ -2,6 +2,11 @@
 # Theme-specific parameters
 #
 
+# logo: logo/Perplex.svg
+
+# Site-wide fallback for the featured image.
+featured: logo/Perplex.svg
+
 # Site wide favicon for browser and OS display
 favicon:
   svg: icon/favicon.svg
