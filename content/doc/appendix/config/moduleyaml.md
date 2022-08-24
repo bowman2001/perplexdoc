@@ -4,7 +4,6 @@ title: module.yaml
 description: Module configuration
 subtitle: false
 date: 2022-05-11T14:03:23+02:00 
-featImg:
 menu:
   doc:
     name: module.yaml

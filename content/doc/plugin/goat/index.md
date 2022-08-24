@@ -4,13 +4,11 @@ description: Go ASCII Tool
 subtitle: false
 date: 2022-03-03T09:44:13+01:00
 weight: 720
-featImg:
 menu:
   doc:
     name: Goat
     parent: plugin
     pre: schema
-draft: true
 ---
 
 GoAT renders ASCII diagrams as SVG. It’s an implementation of [Markdeep’s](http://casual-effects.com/markdeep/) ASCII renderer.

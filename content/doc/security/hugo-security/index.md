@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2022-01-12T14:20:05+01:00"
 description: Security at Runtime
-featImg: 
 menu:
   doc:
     name: Hugo
@@ -12,6 +11,9 @@ menu:
 subtitle: false
 title: Hugo
 weight: 830
+resources:
+  - src: fly-d-mT7lXZPjk7U-unsplash.jpg
+    name: featured
 ---
 
 To enable the production of secure websites using a workflow, which is itself as secure as possible is one of the essential features of Hugo.

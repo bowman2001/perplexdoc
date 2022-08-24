@@ -3,7 +3,6 @@ title: LaTeX
 date: "2021-05-18T10:15:06+02:00"
 description: Render Math inside Markdown
 subtitle: false
-featImg: logo/LaTeX_logo.svg
 menu:
   doc:
     name: LaTeX
@@ -11,6 +10,9 @@ menu:
     pre: functions
 weight: 710
 latex: true
+resources:
+  - src: LaTeX_logo.svg
+    name: featured
 ---
 
 LaTeX is the most popular typesetting system for the natural sciences, its syntax has been established as a quasi-standard to format complex mathematical formulas for print and web layout.

@@ -4,13 +4,14 @@ description: Main menu, sidebar, page navigation and Table of Contents
 subtitle: false
 date: 2022-01-18T23:25:10+01:00 
 weight: 640
-featImg:
 menu:
   doc:
     name: Navigation
     parent: page
     pre: menu
-draft: true
+resources:
+  - src: jon-tyson-lXSDIGp9yIE-unsplash.jpg
+    name: featured
 ---
 
 Except for the main menu, all navigational elements for Perplex are generated from a few parameters in the front-matter of the content files.

@@ -4,7 +4,6 @@ description: Hugo runtime Security Configuration
 subtitle: false
 date: 2022-01-25T14:09:06+01:00 
 weight: 1040
-featImg:
 menu:
   doc:
     name: security.yaml

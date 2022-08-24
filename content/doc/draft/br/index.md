@@ -3,7 +3,6 @@ author: Georg Makowski
 date: "2022-01-08T22:49:27+01:00"
 description: Description
 draft: true
-featImg: ""
 menu:
   doc:
     identifier: linebreak

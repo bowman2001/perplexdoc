@@ -5,7 +5,6 @@ description: A list of all specific attributes for Perplex
 subtitle: false
 date: 2022-07-20T23:21:00+02:00 
 weight: 390
-featImg: 
 menu:
   doc:
     name: Register

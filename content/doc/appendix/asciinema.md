@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: 2022-01-12T21:33:11+01:00
 description: Embeds the *Asciinema* video player
-featImg: ""
 menu:
   doc:
     name: Asciinema Wrapper

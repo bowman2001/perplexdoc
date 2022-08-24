@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-09-07T21:02:57+02:00"
 description: Structured Plain Text Files
-featImg: logo/Markdown.svg
 menu:
   doc:
     name: Markdown
@@ -12,6 +11,8 @@ subtitle: false
 title: Markdown
 weight: 10
 resources:
+- src: Markdown.svg
+  name: featured
 - src: erda-estremera-eMX1aIAp9Nw-unsplash.jpg
   name: splash
   params:
@@ -26,6 +27,7 @@ resources:
     attr: Mulyadi/Unsplash
     attrlink: https://unsplash.com/photos/JJMoAiVl9jA
 categories: [Markdown]
+tags: [Editing]  
 ---
 
 Markdown has become the favored markup language for structuring text files. With good cause: The syntax is intuitive and yet quite comprehensive.

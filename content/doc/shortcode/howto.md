@@ -5,7 +5,6 @@ description: Inject arbitrary HTML in Markdown
 subtitle: false
 date: 2022-04-15T22:09:40+02:00 
 weight: 510
-featImg: logo/Hugo.svg
 menu:
   doc:
     name: Howto

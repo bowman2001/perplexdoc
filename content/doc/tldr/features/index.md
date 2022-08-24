@@ -5,7 +5,6 @@ description: What can Perplex do for you?
 subtitle: false
 date: 2022-05-12T22:29:06+02:00 
 weight: 3
-featImg:
 menu:
   doc:
     name: Features

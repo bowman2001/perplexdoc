@@ -2,7 +2,6 @@
 author: Georg Makowski
 date: "2021-09-07T21:43:30+02:00"
 description: The fastest static site engine
-featImg: logo/Hugo.svg
 menu:
   doc:
     name: Hugo
@@ -12,7 +11,10 @@ subtitle: false
 title: Hugo
 weight: 15
 categories: [Hugo]
-tags: []
+tags: [SSG]
+resources:
+  - src: Hugo.svg
+    name: featured
 ---
 
 The world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and secure websites.
