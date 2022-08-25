@@ -1,1 +1,16 @@
 baseURL: 'https://bowman2001.github.io/perplexdoc'
+title: Perplex
+DefaultLanguageCode: en-us
+DefaultContentLanguage: en
+metaDataFormat: yaml
+pluralizeListTitles: false
+enableEmoji: true
+enableGitInfo: true
+
+timeout: 60000 # Milliseconds
+refLinksErrorLevel: WARNING
+ignoreFiles:
+  - doc/draft/.*
+ignoreErrors:
+  - error-missing-instagram-accesstoken
+  - error-remote-getjson
