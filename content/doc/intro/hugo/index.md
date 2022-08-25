@@ -261,7 +261,7 @@ The small difference between a _leaf bundle_ for a [single page]({{< relref "#si
 
 To reflect this relationship in the menu, we need to set `parent = "demo"` in `my-first-doc-page` and Hugo rearranges the page structure and the menu alike.
 
-### Page Bundles {#bundle}
+### Page Bundles
 
 [_Branch bundles_]({{< relref "#branch-bundle" >}}) and [_leaf bundles_]({{< relref "#leaf-bundle" >}}) are both _page bundles_. A _branch bundle_ for a list page may also include page resources.
 

@@ -50,4 +50,4 @@ The page title is taken from the `title` parameter in the front-matter and may c
 ### Subtitle
 The subtitle is taken from the `description` parameter in the front-matter, if the front-matter parameter `subtitle` is `true`. It may also contain inline markup.
 
-The subtitle is an optional element, because there is also the possibility to show a [_lead paragraph_]({{< relref "lead" >}}) at the beginning of the content. It’s up to the editor, which elements to use.
+The subtitle is an optional element, because there is also the possibility to show a [_lead paragraph_]({{< relref "standfirst" >}}) at the beginning of the content. It’s up to the editor, which elements to use.

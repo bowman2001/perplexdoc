@@ -29,19 +29,19 @@ The security concern is simple: Raw HTML allows to inject all kinds of malicious
 
 ## Alternatives
 
-Hugo offers two ways to extend Markdown more securely. By injecting [HTML attributes]({{< relref "attribute">}}) or with [shortcodes]({{< relref "shortcode" >}}), which are provided by the theme or the project maintainers.
+Hugo offers two ways to extend Markdown more securely. By injecting [HTML attributes]({{< relref "attribute">}}) or configurable HTML snippets with [shortcodes](/doc/shortcode). They are often provided by theme developers or project maintainers.
 
 {{< mnote up=11 >}}
-Hugo can also render _inline shortcodes_, which every content editor could program as she or he pleases. Because they allow basically the same kind of attacks as raw HTML, they are [prohibited by default]({{< relref "securityyaml#5" >}}).
+Hugo can also render _inline shortcodes_, so every content editor could introduce them directly in the Markdown. Because they allow basically the same kind of attacks as raw HTML, they are [prohibited by default]({{< relref "securityyaml#5" >}}).
 {{< /mnote >}}
 
-It’s still possible to inject malicious code via HTML attributes. Hugo discards all event attributes. Other more complicated attempts remain possible, but they are easier to spot than raw HTML attacks. Correct attributes are constrained to simple syntax – deviations are immediately suspicious.
+It’s still possible to inject malicious code via HTML attributes. Hugo discards all event attributes. Other more complicated attempts remain possible, but they are easier to spot than raw HTML attacks. Correct attributes are constrained to simple syntax – deviations are suspicious.
 
-Perplex offers many attributes to achieve different styles and encourages to use them. One way to contain their remaining vulnerability could be to allow only trusted editors to apply them in the last step of content creation.
+Perplex offers many attributes to achieve different styles and encourages to use them. One way to contain the remaining vulnerability by attribute attacks could be to allow only trusted editors to apply them in the last step of the content creation process.
 
 ## Maximum security
 
-When you need the tightest security Hugo can offer for your content, you need to let go of attributes and disable them completely.
+When you need the tightest security Hugo can offer for your content, you need to let go of attributes and disable them completely. You could still provide carefully crafted shortcodes, to achieve the same results.
 
 Blocks,
 Headings (title)

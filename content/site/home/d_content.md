@@ -6,13 +6,13 @@ id: d2
 
 Use text files containing
 
-[Markdown]({{< relref "writing" >}})
+[Markdown](/doc/intro/markdown)
 : for basic layout
 
-[Attributes]({{< relref "attribute" >}})
+[Attributes](/doc/attribute)
 : for style variations
 
-[Shortcodes]({{< relref "/doc/shortcode" >}})
+[Shortcodes](/doc/shortcode)
 : for complex layout
 
 YAML

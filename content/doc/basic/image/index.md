@@ -47,7 +47,7 @@ Embedding an image is syntactically very similar to placing a [link]({{< relref 
 
 The _name_ of the image element inside the square brackets `[]` is used as alternative text[^1] in case the browser can't display the image.
 
-This syntax is preferable when the relative path name is short — like for images in a [Hugo page bundle]({{< relref "hugo#bundle" >}}).
+This syntax is preferable when the relative path name is short — like for images in a [Hugo page bundle]({{< relref "doc/intro/hugo#page-bundles" >}}).
 
 ### Reference notation
 

@@ -80,4 +80,4 @@ Separated they live in Bookmarksgrove right at the coast of the Semantics, a lar
 
 [hw]: {{< relref "markup#24" >}}
 
-[hwl]: {{< relref "writing#wrap" >}}
+[hwl]: /doc/intro/markdown#wrap

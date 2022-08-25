@@ -82,7 +82,7 @@ The following suggestions for these elements are short. Their issues are discuss
 
 ### How to include images?
 
-There is one image element in Markdown for embedding an image into a block element and no genuine element for a self-contained image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. Perplex provides the shortcode [{$figure}]({{< relref "doc/shortcode/builtin/internal" >}}) for this purpose.
+There is one image element in Markdown for embedding an image into a block element and no genuine element for a self-contained image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. Perplex provides the shortcode [{$figure}]({{< relref "doc/shortcode/internal" >}}) for this purpose.
 
 {{< figure splash />}}
 
@@ -136,7 +136,7 @@ Most programming editors and IDEs support Markdown out of the box or provide plu
 
 Some special editors are designed exclusively for authoring Markdown. They usually offer a graphical user interface and other convenient features. But none of them is a perfect match for writing Markdown for Hugo and Perplex, because they don’t support all kinds of attributes and can’t handle Hugo shortcodes — as far as I know. They are dealing gracefully with these elements most of the time, but occasionally they don't.
 
-Many of these editors offer a convenient separate _preview window_. With Hugo you have an even better option: When you run it as a server on your local computer, it will render your Markdown and deliver it to your browser instantly (see [Using Hugo]({{< relref "hugo#server-mode"  >}})). My personal solution is either an IDE or a programming editor in conjunction with Hugo’s server mode.
+Many of these editors offer a convenient separate _preview window_. With Hugo you have an even better option: When you run it as a server on your local computer, it will render your Markdown and deliver it to your browser instantly (see [Using Hugo](/doc/intro/hugo#server-mode). My personal solution is either an IDE or a programming editor in conjunction with Hugo’s server mode.
 
 ## Markdown Linting
 CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [_Markdownlint_][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing. For this project the default settings are modified in the configuration file [`.markdownlint.yaml`][mlintconf] at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.  
@@ -147,6 +147,6 @@ CommonMark is permissive to small variations in the markup rules. To ensure a ce
 [phpmex]: https://michelf.ca/projects/php-markdown/extra/ "PHP Markdown Extra site"
 [gfmspec]: https://github.github.com/gfm "GitHub Flavored Markdown Specification"
 [mlint]: https://github.com/DavidAnson/markdownlint "Markdownlint"
-[lb]: {{< relref "linebreak" >}}
-[img]: {{< relref "image" >}}
+[lb]: /doc/basic/linebreak
+[img]: /doc/basic/image
 [mlintconf]: {{< relref "markdownlint" >}}
