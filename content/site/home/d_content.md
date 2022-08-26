@@ -15,7 +15,7 @@ Use text files containing
 [Shortcodes](/doc/shortcode)
 : for complex layout
 
-YAML
+[YAML](https://yaml.org)
 : for meta-data (menus etc.)
 {.dl-tight}
 
