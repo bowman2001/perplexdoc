@@ -10,7 +10,7 @@ menu:
 title: Links
 weight: 150
 categories: [Markdown]
-tags: [Inline]
+tags: [Inline, Link]
 resources: 
   - name: featured
     src: edge2edge-media-t1OalCBUYRc-unsplash.jpg

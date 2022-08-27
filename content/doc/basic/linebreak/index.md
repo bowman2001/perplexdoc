@@ -11,7 +11,7 @@ subtitle: false
 title: Line Break
 weight: 111
 categories: [Markdown]
-tags: [Inline]
+tags: [Inline, Linebreak]
 resources:
   - name: featured
     src: annie-spratt-askpr0s66Rg-unsplash.jpg

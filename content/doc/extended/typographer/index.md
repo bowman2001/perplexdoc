@@ -11,7 +11,7 @@ subtitle: false
 title: Typographer
 weight: 260
 categories: [Markdown]
-tags: [Inline]
+tags: [Inline, Typographer]
 resources:
   - name: featured
     src: kristian-strand-p8gzCnZf39k-unsplash.jpg

@@ -14,7 +14,7 @@ subtitle: false
 title: Code
 weight: 135
 categories: [Markdown]
-tags: [Inline, Block]
+tags: [Inline, Block, Code]
 ---
 
 The full-width text column offers space for {$80} characters of code in a line. When the marginal column is also used, {$120} fit in.

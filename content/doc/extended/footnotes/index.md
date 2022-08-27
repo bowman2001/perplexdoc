@@ -11,7 +11,7 @@ subtitle: false
 title: Footnotes
 weight: 220
 categories: [Markdown]
-tags: [Block]
+tags: [Block, Footnotes]
 resources:
   - name: featured
     src: kelly-sikkema-et5mfj1eB94-unsplash.jpg

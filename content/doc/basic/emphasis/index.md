@@ -10,7 +10,7 @@ menu:
 title: Emphasis
 weight: 116
 categories: [Markdown]
-tags: [Inline]
+tags: [Inline, Emphasis]
 resources:
 - name: featured
   src: brett-jordan-vyPVtz5p8D4-unsplash.jpg

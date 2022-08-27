@@ -12,16 +12,18 @@ title: Task List
 toc: false
 weight: 250
 categories: [Markdown]
-tags: [Block]
+tags: [Block, Task-List]
 resources:
   - name: featured
     src: glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg
 ---
 
-A task list on a web page should be an interactive element with a connection between user input and the Markdown. Perplex can't establish such a connection.
+A task list on a web page should be an interactive element which directly changes the corresponding Markdown. A theme can't establish such a connection on its own.
 {.p-first} <!--more-->
 
-The task list element is a _GitHub_ specialty. _GitHub_ has established a bidirectional connection between the view in the browser and the hosted Markdown files.
+The task list element is a GitHub specialty. GitHub has established a bidirectional connection between the view in the browser and its hosted Markdown files.
+
+Without that, we can still use the Markdown task list, but we can change it only in the content file.
 
 ## Syntax
 

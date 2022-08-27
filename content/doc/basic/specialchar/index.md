@@ -10,7 +10,7 @@ menu:
 title: Special Characters
 weight: 190
 categories: [Markdown]
-tags: [Inline]
+tags: [Inline, Glyph]
 resources:
   - name: featured
     src: raphael-schaller-GkinCd2enIY-unsplash.jpg

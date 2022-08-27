@@ -11,7 +11,7 @@ subtitle: false
 title: Text Headings
 weight: 105
 categories: [Markdown]
-tags: [Block]
+tags: [Block, Headings]
 resources:
 - name: featured
   src: ashni-Wh9ZC4727e4-unsplash.jpg

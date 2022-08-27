@@ -10,7 +10,7 @@ menu:
 title: Tables
 weight: 230
 categories: [Markdown]
-tags: [Block]
+tags: [Block, Table]
 resources:
   - name: featured
     src: mika-baumeister-Wpnoqo2plFA-unsplash.jpg
