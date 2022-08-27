@@ -20,7 +20,7 @@ The problem came up in the [Hugo-forum](https://discourse.gohugo.io/t/list-as-a-
 I did not include the resulting code, you can inspect it as usual with your browser-tool.
 {{< /mnote >}}
 
-### Version 1
+## Version 1
 {{< playground >}}
 > He adds up:
 > : - The cost of raw materials to be processed
@@ -31,7 +31,7 @@ I did not include the resulting code, you can inspect it as usual with your brow
 > {.dl-loose}
 {{< /playground >}}
 
-### Version 2
+## Version 2
 {{< playground >}}
 > He adds up:
 > : The cost of raw materials to be processed
