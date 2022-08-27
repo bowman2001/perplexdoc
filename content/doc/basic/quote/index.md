@@ -11,7 +11,7 @@ subtitle: false
 title: Quote
 weight: 120
 categories: [Markdown]
-tags: [Block, Inline, Quote]
+tags: [Block, Inline, Blockquote, Quote]
 resources:
   - name: featured
     src: cj-dayrit-xX2aYSBsyKo-unsplash.jpg
