@@ -20,7 +20,8 @@ The problem came up in the [Hugo-forum](https://discourse.gohugo.io/t/list-as-a-
 I did not include the resulting code, you can inspect it as usual with your browser-tool.
 {{< /mnote >}}
 
-## Version 1
+## Bullet list inside of definition list
+### Version 1
 {{< playground >}}
 > He adds up:
 > : - The cost of raw materials to be processed
@@ -31,7 +32,7 @@ I did not include the resulting code, you can inspect it as usual with your brow
 > {.dl-loose}
 {{< /playground >}}
 
-## Version 2
+### Version 2
 {{< playground >}}
 > He adds up:
 > : The cost of raw materials to be processed
@@ -45,3 +46,19 @@ I did not include the resulting code, you can inspect it as usual with your brow
 Markdown is very sensitive to indentation, when combining various formatting signs and [attributes]({{< relref "/doc/attribute" >}}). We need to align our code perfectly.
 
 The HTML code is the expected one, which markup fits the content in the best way is a matter of taste. The layout of the theme is alright in both cases.
+
+Nested definition lists are tricky and another request for the opposite problem came up after that. 
+
+## Definition list nested inside a bullet list
+
+This time without a surrounding blockquote.
+
+{{< playground >}}
+* **1980** 
+  : blablabl
+* **1988**
+  : blabla
+  : blabla
+{{< /playground >}}
+
+And again the correct indentation leads to correct HTML. But I could optimize my theme styles, the spacing is not quite right.
