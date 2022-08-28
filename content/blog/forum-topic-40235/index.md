@@ -62,3 +62,14 @@ This time without a surrounding blockquote.
 {{< /playground >}}
 
 And again the correct indentation leads to correct HTML. But I could optimize my theme styles, the spacing is not quite right.
+
+I don’t know the context, but maybe a simpler solution without the bullets could serve the same purpose:
+
+{{< playground >}}
+1980
+: blablabl
+
+1988
+: blabla
+: blabla
+{{< /playground >}}
