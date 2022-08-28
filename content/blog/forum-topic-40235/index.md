@@ -1,5 +1,5 @@
 ---
-title: Blockquote with Nested List
+title: Blockquote with Nested Definition List
 description: Demo for topic 40235 in the Hugo-Forum
 subtitle: false
 date: 2022-08-27T15:01:18+02:00
