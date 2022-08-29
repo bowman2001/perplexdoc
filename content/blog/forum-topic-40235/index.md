@@ -61,7 +61,7 @@ This time without a surrounding blockquote.
   : blabla
 {{< /playground >}}
 
-And again the correct indentation leads to correct HTML. But I could optimize my theme styles, the spacing is not quite right.
+And again the correct indentation leads to correct HTML.
 
 I don’t know the context, but maybe a simpler solution without the bullets could serve the same purpose:
 
