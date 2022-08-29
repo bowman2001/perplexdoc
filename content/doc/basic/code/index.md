@@ -152,6 +152,6 @@ Every _blank_ line indicates the beginning of a _new_ paragraph.
 
 [hugochroma]: https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages
 
-[ftn]: {{< relref "footnotes#reference" >}}
+[ftn]: {{< relref "doc/extended/footnotes#reference" >}}
 
-[dl]: {{< relref "definition-list" >}}
+[dl]: {{< relref "doc/extended/definition-list" >}}

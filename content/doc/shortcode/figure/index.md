@@ -19,7 +19,7 @@ resources:
     params:
       class: tiny right
       caption: Tiny figure on the right
-  - src: fig/tiny.copy.svg
+  - src: fig/tiny2.svg
     name: tiny2
     title: Tiny placeholder
     params:
@@ -65,7 +65,7 @@ resources:
   - src: beau-swierstra-Ndz-4phqtlg-unsplash.jpg
     name: beau
 lastmod: 2022-07-25T20:09:40.575Z
-categories: [shortcode]
+categories: [Shortcode]
 tags: [Block, Image]
 ---
 

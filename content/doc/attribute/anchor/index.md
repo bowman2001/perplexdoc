@@ -33,7 +33,7 @@ page or from another page on this site.
 ### Reference
 
 From same page
-: The reference is a [link]({{< relref "link" >}}) to the anchor `[link to anchor]({{< relref "#our-identifier">}})`.
+: The reference is a [link]({{< relref "doc/basic/link" >}}) to the anchor `[link to anchor]({{< relref "#our-identifier">}})`.
 
 From another page
 : The reference is a link to the page with the anchor appended `[link to anchor]({{< relref "anchor#our-identifier">}})`.

@@ -10,6 +10,8 @@ menu:
     parent: plugin
     pre: account_tree
 mermaid: true
+categories: [Markdown]
+tags: [Diagram]
 resources:
   - name: featured
     src: emily-goodhart-vu1BlBAZ_RU-unsplash.jpg

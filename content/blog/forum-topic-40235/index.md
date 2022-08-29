@@ -5,7 +5,8 @@ subtitle: false
 date: 2022-08-27T15:01:18+02:00
 weight: 999
 categories: [Markdown]
-tags: [Demo, Blockquote, Definition List]
+tags: [Blockquote, Definition List]
+series: [Demo]
 resources:
 - src: romain-vignes-ywqa9IZB-dU-unsplash.jpg
   name: featured
@@ -16,7 +17,7 @@ A definition list inside a blockquote with a sublist in one of its items is an i
 
 The problem came up in the [Hugo-forum](https://discourse.gohugo.io/t/list-as-a-definition-list-item/40235) and it was not clear to at first. So I created two demos. The original question was not about the layout, only about the resulting HTML code.\*
 
-{{< mnote star=1 >}}
+{{< mnote star=1 down=2 >}}
 I did not include the resulting code, you can inspect it as usual with your browser-tool.
 {{< /mnote >}}
 

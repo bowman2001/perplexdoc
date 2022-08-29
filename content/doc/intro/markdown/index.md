@@ -45,7 +45,7 @@ To resolve their incompatibilities and to create a more general dependable synta
 
 ## Markdown for Perplex
 
-Perplex styles HTML, which is generated from extended [CommonMark][cmark] by Hugo’s default renderer [Goldmark][gmark]. Three extensions — the [definition list]({{< relref "definition-list" >}}), the [footnote]({{< relref "footnotes" >}}) and the [typographer]({{< relref "typographer" >}}) — have been adopted from [PHP Markdown Extra][phpmex]. Based on CommonMark, [GitHub](https://github.com) introduced **G**itHub **F**lavored **M**arkdown (GFM) with the four extensions [table]({{< relref "table" >}}), the [task-list]({{< relref "task-list">}}), [strikethrough]({{< relref "delins">}}) and linkify. They are defined in a [new specification][gfmspec].
+Perplex styles HTML, which is generated from extended [CommonMark][cmark] by Hugo’s default renderer [Goldmark][gmark]. Three extensions — the [definition list]({{< relref "doc/extended/definition-list" >}}), the [footnote]({{< relref "doc/extended/footnotes" >}}) and the [typographer]({{< relref "doc/extended/typographer" >}}) — have been adopted from [PHP Markdown Extra][phpmex]. Based on CommonMark, [GitHub](https://github.com) introduced **G**itHub **F**lavored **M**arkdown (GFM) with the four extensions [table]({{< relref "doc/extended/table" >}}), the [task-list]({{< relref "doc/extended/task-list">}}), [strikethrough]({{< relref "delins">}}) and linkify. They are defined in a [new specification][gfmspec].
 
 {{< mnote up=20 >}}
 The deprecated **Blackfriday** renderer is not fully CommonMark-compliant. Black&shy;fri&shy;day generated HTML may be styled correctly most of the time by Perplex. But if you want to rely on Perplex, I strongly suggest switching to Goldmark.

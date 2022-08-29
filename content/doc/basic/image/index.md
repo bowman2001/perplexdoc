@@ -37,7 +37,7 @@ With **Perplex**, Markdown images should always be embedded in a text block. Sel
 
 ## Syntax
 
-Embedding an image is syntactically very similar to placing a [link]({{< relref "link" >}}). The key difference: The image element begins with an exclamation mark`!`.
+Embedding an image is syntactically very similar to placing a [link]({{< relref "doc/basic/link" >}}). The key difference: The image element begins with an exclamation mark`!`.
 
 ### Short inline notation
 

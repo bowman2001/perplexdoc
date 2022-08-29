@@ -35,7 +35,7 @@ But our keyboard usually doesn't show these typographically correct quotation ma
 
 ### Substitution of English quotation marks
 
-Hugo replaces the typographically dumb straight quotes with the correct curly ones by default — this is the work of the  [typographer extension]({{< relref "typographer" >}}). We can simply place {#"} — the straight quote — around English quotes:
+Hugo replaces the typographically dumb straight quotes with the correct curly ones by default — this is the work of the  [typographer extension]({{< relref "doc/extended/typographer" >}}). We can simply place {#"} — the straight quote — around English quotes:
 
 `"An inline quote"`&emsp;for&emsp;"An inline quote"
 {.p-big}

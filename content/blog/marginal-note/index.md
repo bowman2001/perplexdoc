@@ -2,8 +2,9 @@
 title: The Beauty of Marginal Notes
 date: 2022-07-04T22:18:04+02:00
 weight: 1
-categories:
-tags: [Note, Demo]
+categories: [Shortcode]
+tags: [Note]
+series: [Demo]
 resources:
 - name: featured
   src: Diophantus-II-8-Fermat_cut.jpg
