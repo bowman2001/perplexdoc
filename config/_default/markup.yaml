@@ -37,5 +37,5 @@ highlight:
   lineNos: false
   lineNumbersInTable: true
   noClasses: true
-  style: monokailight
+  style: monokai
   tabWidth: 4

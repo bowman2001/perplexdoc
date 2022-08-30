@@ -67,10 +67,10 @@ A reference link is marked by a second set of square brackets with a reference n
 
 [Link to Example][refexample]
 
-The reference marker has to be repeated anywhere beyond the link, followed by a colon `:`, the URL and an optional title:
+The reference marker has to be repeated somewhere else in the file, followed by a colon `:`, the URL and an optional title:
 
 `[refexample]: http://www.example.com "Example page"`
 
-This line is never shown, the information is only used to generate the correct reference for the link text above.
+This line is never shown, the information is only used to generate the the link.
 
 [refexample]: http://www.example.com "Universal example page"
