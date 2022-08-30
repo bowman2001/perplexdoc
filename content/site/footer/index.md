@@ -7,7 +7,7 @@ resources:
     name: browserstack
   - src: logo/CC-by-sa.svg
     name: cc
-  - src: logo/github-pages.png
+  - src: logo/GitHub_logo_2013.svg
     name: github
   - src: logo/Hugo.svg
     name: hugo
