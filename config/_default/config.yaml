@@ -14,6 +14,12 @@ enableGitInfo: true
 
 timeout: 60000 # Milliseconds
 refLinksErrorLevel: WARNING
+
+taxonomies:
+  tag: tags
+  category: categories
+  series: series
+
 ignoreFiles:
   - doc/draft/.*
 ignoreErrors:

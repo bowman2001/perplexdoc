@@ -4,7 +4,8 @@ description: Is a view-port-based responsive design user-friendly?
 subtitle: false
 date: 2022-07-12T22:38:10+02:00
 weight: 1
-tags: [Fluid]
+categories: [Layout]
+tags: [Fluid responsive]
 resources:
   - src: Accessibility_logo.svg
     name: featured
