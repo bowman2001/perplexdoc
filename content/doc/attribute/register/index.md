@@ -10,7 +10,6 @@ menu:
     name: Register
     parent: attributes
     pre: app_registration
-draft: true
 ---
 
 All element specific attributes are listed here. To attach them correctly, have a look at the short [Howto]({{< relref "howto-attribute" >}}).

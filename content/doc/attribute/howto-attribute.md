@@ -50,4 +50,4 @@ Other
 ## Layout
 Some attributes are of general use, they are introduced on the next pages. 
 
-Most attributes style specific elements and their style is shown their pages. To find a specific one quickly, there is  a [register]({{< relref "register" >}}).
+Most attributes style specific elements and their style is shown their pages. To find a specific one quickly, there is  a [register]({{< relref "doc/attribute/register" >}}).
