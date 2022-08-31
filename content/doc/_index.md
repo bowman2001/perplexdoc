@@ -3,7 +3,8 @@ author: Georg Makowski
 date: 2021-09-15T11:42:44+02:00
 description: The Perplex theme for Hugo
 subtitle: false
-title: Docs
+title: Documentation
+linktitle: Docs
 menu:
   main:
     identifier: docs
