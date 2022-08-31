@@ -9,6 +9,7 @@ menu:
     pre: article
 subtitle: false
 title: Basic Markdown
+linktitle: Basic
 weight: 100
 resources:
   - src: Markdown.svg

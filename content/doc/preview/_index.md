@@ -1,6 +1,7 @@
 ---
 author: Georg Makowski
 title: Short Preview
+linktitle: Preview
 description: For seasoned Hugo users
 subtitle: false
 date: 2022-05-11T23:46:08+02:00 

@@ -32,7 +32,7 @@ It’s possible to manipulate the counters with attributes. The one currently av
 
 ## Layout
 
-The examples here are short, because the styling is basically the same as for the unordered [bullet list]({{< relref "unordered-list" >}}).
+The examples here are short, because the styling is basically the same as for the unordered [bullet list]({{< relref "doc/basic/bullet-list" >}}).
 
 ### Tight List
 
@@ -51,7 +51,7 @@ The examples here are short, because the styling is basically the same as for th
 2. {{< farfarshort 2 >}}
 
 #### The interruption {.h-p .up-1}
-of an ordered list for a general remark should not interrupt the counting, we need to go on afterwards where we left. The class [attribute]({{< relref "attribute" >}}) `{.ol-continue}` lets a list continue, where the previous did stop.
+of an ordered list for a general remark should not interrupt the counting, we need to go on afterwards where we left. The class [attribute]({{< relref "doc/attribute" >}}) `{.ol-continue}` lets a list continue, where the previous did stop.
 {.up-1}
 
 1. {{< farfarshort 1 >}}

@@ -9,6 +9,7 @@ menu:
     pre: text_fields
 subtitle: false
 title: Text Headings
+linktitle: Headings
 weight: 105
 categories: [Markdown]
 tags: [Block, Headings]

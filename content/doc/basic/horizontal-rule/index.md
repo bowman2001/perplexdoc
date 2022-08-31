@@ -9,6 +9,7 @@ menu:
     pre: horizontal_rule
 subtitle: false
 title: Horizontal Rule
+linktitle: Rule
 weight: 140
 categories: [Markdown]
 tags: [Block, Rule]

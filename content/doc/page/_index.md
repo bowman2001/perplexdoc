@@ -12,6 +12,7 @@ resources:
     title: Magazine article about Muhammed Ali
 subtitle: false
 title: Page Elements
+linktitle: Page
 weight: 600
 resources:
   - name: featured

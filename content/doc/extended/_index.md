@@ -9,6 +9,7 @@ menu:
     pre: description
 subtitle: false
 title: Extended Markdown
+linktitle: Extended
 weight: 200
 resources:
   - src: Markdown.svg

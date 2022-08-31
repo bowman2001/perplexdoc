@@ -9,6 +9,7 @@ menu:
     pre: lightbulb
 subtitle: false
 title: Introduction
+linktitle: Intro
 weight: 3
 resources:
   - name: featured

@@ -27,7 +27,7 @@ resources:
     attr: Mulyadi/Unsplash
     attrlink: https://unsplash.com/photos/JJMoAiVl9jA
 categories: [Markdown]
-tags: [Editing]  
+tags: [Linebreak, Image, Editor, Linter]  
 ---
 
 Markdown has become the favored markup language for structuring text files. With good cause: The syntax is intuitive and yet quite comprehensive.
@@ -138,8 +138,8 @@ Some special editors are designed exclusively for authoring Markdown. They usual
 
 Many of these editors offer a convenient separate _preview window_. With Hugo you have an even better option: When you run it as a server on your local computer, it will render your Markdown and deliver it to your browser instantly (see [Using Hugo](/doc/intro/hugo#server-mode). My personal solution is either an IDE or a programming editor in conjunction with Hugo’s server mode.
 
-## Markdown Linting
-CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [_Markdownlint_][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing. For this project the default settings are modified in the configuration file [`.markdownlint.yaml`][mlintconf] at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.  
+## Markdown Linter
+CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing. For this project the default settings are modified in the configuration file [`.markdownlint.yaml`][mlintconf] at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.  
 
 [omd]: https://daringfireball.net/projects/markdown/ "Markdown project site by John Gruber"
 [cmark]: https://commonmark.org "CommonMark project site"

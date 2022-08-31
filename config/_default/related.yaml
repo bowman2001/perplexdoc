@@ -8,8 +8,8 @@ toLower: false
 
 indices:
   - name: categories
-    weight: 35
+    weight: 10
   - name: tags
-    weight: 15
+    weight: 40
   - name: series
     weight: 50

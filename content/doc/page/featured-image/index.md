@@ -9,6 +9,10 @@ menu:
     pre: image
 subtitle: false
 title: Featured Image
+linktitle: Featured
+categories: [Page]
+tags: [image]
+series: [images]
 weight: 630
 ---
 
