@@ -342,3 +342,5 @@ github.com/bowman2001/perplex v0.0.0-20220831082937-8d2c4ff6bf98 h1:+4ry4c23rOBu
 github.com/bowman2001/perplex v0.0.0-20220831082937-8d2c4ff6bf98/go.mod h1:UeLfM8Szsmk7ePMhkrFUSsyZ3IQwHckbCSsQDtXdGjQ=
 github.com/bowman2001/perplex v0.0.0-20220831232359-7a7fe70b0da7 h1:HFz7qJPvqiJTqcb3+ndutTqSDew7eFqYFAfl12sJseg=
 github.com/bowman2001/perplex v0.0.0-20220831232359-7a7fe70b0da7/go.mod h1:UeLfM8Szsmk7ePMhkrFUSsyZ3IQwHckbCSsQDtXdGjQ=
+github.com/bowman2001/perplex v0.0.0-20220901171524-53374ab09401 h1:v1ZjLxuBDH2Nh+3c+HoQet3eQemcTDkRYHuQhRf7IEo=
+github.com/bowman2001/perplex v0.0.0-20220901171524-53374ab09401/go.mod h1:UeLfM8Szsmk7ePMhkrFUSsyZ3IQwHckbCSsQDtXdGjQ=

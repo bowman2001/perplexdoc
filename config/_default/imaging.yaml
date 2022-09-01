@@ -3,8 +3,8 @@
 #
 
 # Options for bitmap files
-resampleFilter: box
-quality: 90
+resampleFilter: Lanczos
+quality: 80
 anchor: smart
 
 exif:
