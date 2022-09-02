@@ -22,6 +22,7 @@ I did not include the resulting code, you can inspect it as usual with your brow
 {{< /mnote >}}
 
 ## Bullet list inside of definition list
+
 ### Version 1
 {{< playground >}}
 > He adds up:
@@ -48,16 +49,16 @@ Markdown is very sensitive to indentation, when combining various formatting sig
 
 The HTML code is the expected one, which markup fits the content in the best way is a matter of taste. The layout of the theme is alright in both cases.
 
-Nested definition lists are tricky and another request for the opposite problem came up after that. 
+Nested definition lists are tricky and another request for the opposite problem came up after that.
 
 ## Definition list nested inside a bullet list
 
 This time without a surrounding blockquote.
 
 {{< playground >}}
-* **1980** 
+- **1980**
   : blablabl
-* **1988**
+- **1988**
   : blabla
   : blabla
 {{< /playground >}}

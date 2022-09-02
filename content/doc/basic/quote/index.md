@@ -119,8 +119,18 @@ This prodces the following layout:
 
 The author of a hero quote -- the "hero" -- is usually cited by name. To give her or him the special place on the right, she or he has to be tagged with the [replacement code]({{< relref "replace" >}}) for a citation.
 
-## Testing pull quotes
+## Hanging quotes
 
-»Test«
+Micro-typography is usually missing on the web, but its easy to generate hanging quotes at the beginning of a paragraph. They are applied to English “quotes”, «guillemets» and German „Gänsefüßchen“.
+
+“This is a quote surrounded by English double quotes”
+
+«Pardon my french»
+
+»Könnte ich bitte einen Zahnstocher bekommen?«
+{lang=de}
+
+„Könnte ich bitte noch einen Zahnstocher bekommen?”
+{lang=de}
 
 [^1]: https://www.blindtextgenerator.com/lorem-ipsum

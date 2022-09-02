@@ -17,7 +17,7 @@ resources:
     src: finn-mund-8q2r2XQpDO0-unsplash.jpg
 ---
 
-Paragraphs are the essential building blocks of text. Comfortable proportions and surrounding whitespace contribute to their legibility. The layout of other elements is related to them.
+Paragraphs are the essential building blocks of text. Comfortable proportions and surrounding whitespace contribute to their legibility.
 {.p-first} <!--more-->
 
 ## Syntax
@@ -30,7 +30,7 @@ These styles are applied with the [attributes]({{< relref "attribute" >}}) `{.p-
 
 ## Layout
 
-Line height length follow the proportions of the fonts. The space between subsequent paragraphs is twice as big as the space between two lines inside a paragraph. On small screens it’s a little less.
+Line height and length are coordinated with the proportions of the font-family Plex. The space between subsequent paragraphs is twice as big as the space between two lines inside a paragraph. On small screens it’s a little less.
 
 {{< mnote up=11 >}}
 In print subsequent paragraphs are sometimes separated by indenting their first line, to interrupt the reading flow as little as possible.
@@ -61,6 +61,8 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 {{< farfarshort 1 >}}
 
 ### Meta Paragraph for headings
+
+{{< farfarshort 1 >}}
 
 Topic
 {.p-meta}
