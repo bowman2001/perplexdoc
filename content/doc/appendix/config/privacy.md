@@ -12,6 +12,9 @@ title: privacy.yaml
 weight: 1035
 ---
 
+Privacy configuration file in {$config/_default}
+{.p-first} <!--more-->
+
 {{< highlight yaml "linenos=true" >}}
 {{< readfile file="/config/_default/privacy.yaml" >}}
 {{< /highlight >}}

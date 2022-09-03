@@ -8,13 +8,13 @@ menu:
     parent: appendix
     pre: smart_display
 subtitle: false
-title: Asciinema
+title: Asciinema wrapper
 weight: 1080
 lastmod: 2022-07-25T15:48:00.191Z
 draft: true
 ---
 
-The shortcode is a wrapper for the video player embedding script.
+A wrapper shortcode for the embedding script hosted by Asciinema
 {.p-first} <!--more-->
 
 {{< highlight go-html-template "linenos=true" >}}

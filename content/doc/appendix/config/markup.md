@@ -14,7 +14,7 @@ tags: [Goldmark]
 series: [Configuration]
 ---
 
-Configuration file {$markup.yaml} for the Goldmark renderer in the folder {$config/_default}:
+Markup configuration file in {$config/_default}
 {.p-first} <!--more-->
 
 {{< highlight yaml "linenos=true" >}}

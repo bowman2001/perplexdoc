@@ -11,6 +11,12 @@ menu:
 title: Project Configuration
 linktitle: Config
 weight: 1005
+resources:
+  - src: Perplex.svg
+    name: default
 ---
 
-The following pages include the configuration for this project. The sections therein do not include the main section identifier as they do in the Hugo documentation. The names of the files are these identifiers, except for the top level file {$config.yaml}.
+The following pages show all configuration files for this project.
+{.p-first} <!--more-->
+
+The section files don’t include a main section identifier as they often do in the Hugo documentation. The names of the files are these identifiers --- except for the top level file {$config.yaml}.

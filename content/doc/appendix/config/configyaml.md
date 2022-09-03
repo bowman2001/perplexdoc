@@ -14,7 +14,7 @@ categories: [Hugo]
 tags: [Goldmark, Configuration]
 ---
 
-The main configuration file for this project in {$config/_default/config.yaml}
+Main configuration file in {$config/_default}
 {.p-first}<!--more-->
 
 {{< highlight yaml "linenos=true" >}}

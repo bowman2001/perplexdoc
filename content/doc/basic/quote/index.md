@@ -117,7 +117,7 @@ This prodces the following layout:
 > {= ---  Famous Person}
 {.blockquote-hero}
 
-The author of a hero quote -- the "hero" -- is usually cited by name. To give her or him the special place on the right, she or he has to be tagged with the [replacement code]({{< relref "replace" >}}) for a citation.
+The author of a hero quote --- the "hero" --- is usually cited by name. To move the name to the right, it has to be tagged with the [replacement code]({{< relref "replace" >}}) for a citation.
 
 ## Hanging quotes
 

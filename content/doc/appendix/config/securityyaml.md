@@ -11,7 +11,7 @@ menu:
     pre: security
 ---
 
-The configuration file contains the security settings for this project.
+Security configuration file in {$config/_default}
 {.p-first} <!--more-->
 
 {{< highlight yaml "linenos=true" >}}

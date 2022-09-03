@@ -14,5 +14,5 @@ cascade:
   toc: false
 ---
 
-This chapter provides various files and some additional material, to illustrate details of using Hugo and Perplex in connection with this documentation.
+This chapter includes files and other additional material used for this project.
 {.p-first} <!-- more -->

@@ -12,6 +12,9 @@ title: menu.yaml
 weight: 1020
 ---
 
+Menu configuration file in {$config/_default}.
+{.p-first}<!--more-->
+
 {{< highlight yaml "linenos=true" >}}
 {{< readfile file="/config/_default/menu.yaml" >}}
 {{< /highlight >}}

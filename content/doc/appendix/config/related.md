@@ -11,6 +11,8 @@ title: related.yaml
 weight: 1025
 ---
 
+Related configuration file in {$config/_default}
+{.p-first} <!--more-->
 
 {{< highlight yaml "linenos=true" >}}
 {{< readfile file="/config/_default/related.yaml" >}}
