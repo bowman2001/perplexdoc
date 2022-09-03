@@ -10,6 +10,8 @@ menu:
 subtitle: false
 title: Publish
 weight: 25
+categories: [Workflow]
+tags: [Publish]
 resources: 
   - name: featured
     src: nasa-Q1p7bh3SHj8-unsplash.jpg

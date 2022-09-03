@@ -7,9 +7,6 @@ weight: 1
 categories: [Hugo]
 tags: [HTML, Security]
 draft: true
-resources: 
-  - src: Hugo.svg
-    name: featured
 ---
 
 Replacements let Hugo inject some missing inline HTML tags. They can be placed inside Markdown without enabling HTML.

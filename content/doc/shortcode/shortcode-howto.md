@@ -13,7 +13,7 @@ menu:
     pre: help_outline
 ---
 
-Hugo’s shortcodes can inject arbitrary HTML into Markdown. They are [“Markdown’s hidden superpower”](https://gohugo.io).
+Hugo’s shortcode capabilities can inject arbitrary and configurable HTML from within Markdown. They are [“Markdown’s hidden superpower”](https://gohugo.io).
 {.p-first} <!--more-->
 
 ## Syntax
@@ -30,12 +30,20 @@ The shortcode  `{{</* farfar */>}}` is sometimes used on these pages. It has onl
 {{</* farfar 3 */>}}  
 ```
 
-This call inserts three paragraphs of blind text.
+This call produces three paragraphs of blind text.
+
+{{< mnote up=8 >}}
+I am **not** recommending the use of {$farfar}. I’ve intentionally chosen some funny text with a lot of bad or made-up English resulting from some kind-of “direct” German translation.
+{{< /mnote >}}
 
 ### Named
 
-When we want to offer more parameters, we better name them, because it's tricky to remember many positions. An example is the shortcode for self-contained images. A call of [{$figure}]({{< relref "figure" >}}) should include at least three parameters:
+When we want to offer more parameters, we better name them, because it's tricky to remember many of them and their position. An example is the shortcode for self-contained images. A call of [{$figure}]({{< relref "doc/shortcode/figure" >}}) could include these three parameters and more:
 
 ```md
 {{</* figure src="image.jpg" alt="Description" title="Title" */>}} 
 ```
+
+{{< mnote up=5 >}}
+This shortcode you could and maybe even should use for all your stand-alone images.
+{{< /mnote >}}

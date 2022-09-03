@@ -10,8 +10,8 @@ menu:
 subtitle: false
 title: Hugo
 weight: 15
-categories: [Hugo]
-tags: [SSG]
+categories: [Workflow]
+tags: [Hugo]
 resources:
   - src: Hugo.svg
     name: featured

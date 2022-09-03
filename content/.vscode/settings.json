@@ -7,8 +7,4 @@
         "lavored",
         "mnote"
     ],
-    "frontMatter.framework.id": "hugo",
-    "frontMatter.content.publicFolder": "static",
-    "frontMatter.framework.startCommand": "hugo server -D --minify --navigateToChanged",
-    "frontMatter.preview.host": "http://localhost:1313"
 }

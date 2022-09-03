@@ -15,5 +15,5 @@ resources:
     src: Hugo.svg
 ---
 
-We need shortcodes to utilize complex HTML structures beyond the capabilities of extended Markdown.
-{.p-first} <!--more--> 
+We need shortcodes to build complex HTML structures beyond the capabilities of (extended) Markdown.
+{.p-first} <!--more-->

@@ -26,7 +26,7 @@ resources:
     caption: An embedded image
     attr: Mulyadi/Unsplash
     attrlink: https://unsplash.com/photos/JJMoAiVl9jA
-categories: [Markdown]
+categories: [Workflow, Markdown]
 tags: [Linebreak, Image, Editor, Linter]  
 ---
 
