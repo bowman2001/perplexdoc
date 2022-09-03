@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-09-16T19:39:31+02:00"
-description: Configuration files for this site
+description: Configuration files for this project
 menu:
   doc:
     identifier: config
@@ -9,7 +9,8 @@ menu:
     parent: appendix
     pre: toggle_on
 title: Project Configuration
+linktitle: Config
 weight: 1005
 ---
 
-The following pages include the configuration for this project. The sections therein do not include the main section identifier as they do in the Hugo documentation. The names of the files are these identifiers, except for the top level file `config.yaml`.
+The following pages include the configuration for this project. The sections therein do not include the main section identifier as they do in the Hugo documentation. The names of the files are these identifiers, except for the top level file {$config.yaml}.

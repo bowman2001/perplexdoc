@@ -9,9 +9,12 @@ menu:
     pre: star_rate
 title: markup.yaml
 weight: 1015
+categories: [Hugo]
+tags: [Goldmark]
+series: [Configuration]
 ---
 
-Configuration file in the folder `config/_default`:
+Configuration file {$markup.yaml} for the Goldmark renderer in the folder {$config/_default}:
 {.p-first} <!--more-->
 
 {{< highlight yaml "linenos=true" >}}
