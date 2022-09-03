@@ -9,6 +9,8 @@ menu:
     name: security.yaml
     parent: config
     pre: security
+categories: [Hugo]
+tags: [Related, Configuration]
 ---
 
 Security configuration file in {$config/_default}

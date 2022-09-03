@@ -10,6 +10,8 @@ menu:
 subtitle: false
 title: menu.yaml
 weight: 1020
+categories: [Hugo]
+tags: [Menu, Configuration]
 ---
 
 Menu configuration file in {$config/_default}.

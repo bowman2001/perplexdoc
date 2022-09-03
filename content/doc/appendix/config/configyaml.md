@@ -11,7 +11,7 @@ menu:
 title: 'config.yaml'
 weight: 1010
 categories: [Hugo]
-tags: [Goldmark, Configuration]
+tags: [Configuration]
 ---
 
 Main configuration file in {$config/_default}

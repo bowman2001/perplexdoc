@@ -9,9 +9,8 @@ menu:
     pre: star_rate
 title: markup.yaml
 weight: 1015
-categories: [Hugo]
-tags: [Goldmark]
-series: [Configuration]
+categories: [Hugo, Markdown]
+tags: [Goldmark, Configuration]
 ---
 
 Markup configuration file in {$config/_default}

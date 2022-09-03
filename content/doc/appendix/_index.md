@@ -12,6 +12,9 @@ title: Appendix
 weight: 1000
 cascade:
   toc: false
+resources: 
+  - src: Hugo.svg
+    name: featured
 ---
 
 This chapter includes files and other additional material used for this project.
