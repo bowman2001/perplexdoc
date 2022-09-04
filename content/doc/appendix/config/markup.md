@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-09-13T10:05:04+02:00"
-description: _Goldmark_ configuration
+description: Markdown configuration
 menu:
   doc:
     name: markup.yaml
@@ -9,11 +9,11 @@ menu:
     pre: star_rate
 title: markup.yaml
 weight: 1015
-categories: [Hugo, Markdown]
-tags: [Goldmark, Configuration]
+categories: [Hugo]
+tags: [Markdown, Configuration]
 ---
 
-Markup configuration file in {$config/_default}
+Markdown configuration file in {$config/_default}
 {.p-first} <!--more-->
 
 {{< highlight yaml "linenos=true" >}}

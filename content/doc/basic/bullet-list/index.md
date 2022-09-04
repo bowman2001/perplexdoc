@@ -11,7 +11,7 @@ subtitle: false
 title: Bullet List
 weight: 125
 categories: [Markdown]
-tags: [Inline, Bullet List]
+tags: [Inline, Bullet list]
 resources:
   - name: featured
     src: torbjorn-helgesen-dz35efCT3ZA-unsplash.jpg

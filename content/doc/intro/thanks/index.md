@@ -18,7 +18,7 @@ resources:
 
 All images in this documentation were made available for free by numerous skilled photographers on [Unsplash][unsplash]. Their names are included in the title pop-up and you can usually follow the link in the caption to get to the original picture and the author.
 
-The concept for a layout based on classical typographic principles grew over a few years out of many already existing ideas. I can’t even mention every helpful author I read about typography and web layout techniques. Many conceptual parts date back to [Matthew Butterick’s][mb] beautiful online book [_Practical Typography_][pt], which also taught me a lot about typography in general and some about distinctive American-English features.
+The concept for a layout based on classical typographic principles grew over a few years out of many already existing ideas. I can’t even mention every helpful author I read about typography and web layout techniques. Many conceptual parts date back to [Matthew Butterick’s][mb] beautiful online book [_Practical Typo&shy;graphy_][pt], which also taught me a lot about typography in general and some about distinctive American-English features.
 
 Perplex is --- as the name says --- designed on top of [IBM’s][ibm] open corporate font family [Plex][plex]. Their fonts are thankfully very versatile and include a nice serif version.
 
