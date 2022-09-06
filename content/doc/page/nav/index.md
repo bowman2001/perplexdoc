@@ -9,9 +9,8 @@ menu:
     name: Navigation
     parent: page
     pre: menu
-resources:
-  - src: jon-tyson-lXSDIGp9yIE-unsplash.jpg
-    name: featured
+categories: [Layout]
+tags: [Navigation]
 ---
 
 Except for the main menu, all navigational elements for Perplex are generated from a few parameters in the front-matter of the content files.

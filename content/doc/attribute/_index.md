@@ -9,6 +9,7 @@ menu:
     pre: line_style
 title: Attributes
 weight: 300
+categories: [Theme, Hugo]
 ---
 
 Hugo attributes are the key to style variations and other improvements. Perplex offers many of them.

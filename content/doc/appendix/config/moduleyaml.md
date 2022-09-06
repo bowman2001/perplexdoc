@@ -11,7 +11,7 @@ menu:
     pre: view_module
 weight: 1025
 categories: [Hugo]
-tags: [Modules, Configuration]
+tags: [Module, Configuration]
 ---
 
 Module configuration file in {$config/_default}

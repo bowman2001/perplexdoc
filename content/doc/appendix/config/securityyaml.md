@@ -10,7 +10,7 @@ menu:
     parent: config
     pre: security
 categories: [Hugo]
-tags: [Related, Configuration]
+tags: [Configuration, Security]
 ---
 
 Security configuration file in {$config/_default}

@@ -9,6 +9,8 @@ menu:
     name: Title Section
     parent: page
     pre: title
+categories: [Layout]
+tags: [title]
 ---
 
 The title section has two different layout styles depending on the function and the place of a page in the site hierarchy.

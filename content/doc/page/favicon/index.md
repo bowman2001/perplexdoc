@@ -10,10 +10,10 @@ menu:
     parent: page
     pre: emoji_symbols
 resources:
-  - src: alexander-shatov-mr4JG4SYOF8-unsplash.jpg
-    name: featured
   - src: favicon.svg
     name: favicon
+categories: [Layout]
+tags: [Favicon]
 ---
 
 The _Favorite Icon_ is placed in the `<head>` of every page. Browsers usually show the icon in the tab, the address bar and before bookmarks. It may be also displayed as application icon.

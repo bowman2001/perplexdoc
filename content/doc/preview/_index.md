@@ -14,6 +14,8 @@ menu:
 resources: 
   - src: rebecca-li-JahHqUiXlig-unsplash.jpg
     name: featured
+categories: [Theme]
+tags: [Markdown]
 draft: true
 ---
 

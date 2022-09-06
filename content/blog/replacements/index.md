@@ -5,11 +5,11 @@ subtitle: false
 date: 2022-09-01T23:55:26+02:00
 weight: 1
 categories: [Hugo]
-tags: [HTML, Security]
+tags: [Replacements, HTML, Security]
 draft: true
 ---
 
-Replacements let Hugo inject some missing inline HTML tags. They can be placed inside Markdown without enabling HTML.
+They let Hugo inject some missing inline HTML tags and can be used in Markdown instead of raw HTML.
 {.p-first} <!--more-->
 
 My first implementation fell short, because I cleared the inserted HTML with the obligatory function [{$safeHTML}](https://gohugo.io/functions/safehtml/) without considering the consequences. It was possible to place HTML tags inside the replacement codes! The replacements did all look like that:

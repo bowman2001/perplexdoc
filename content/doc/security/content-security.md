@@ -15,7 +15,7 @@ menu:
 When a project includes content from unknown sources, we need to worry about content security.
 {.p-first} <!--more-->
 
-The possibility to extend Markdown with raw HTML{^\*} poses no threat as long as we have full control of the content. But as soon as we include external content, we have to consider destructive intentions. The following suggestions should help to thwart them.
+The possibility to extend Markdown with raw HTML{^\*} poses no threat as long as we have full control of the content. But as soon as we include external content, we have to consider bad intentions. The following suggestions should help to thwart them.
 
 {{< mnote star=1 up=5 >}}
 Hugo provides the parameter [`unsafe`]({{< relref "markup#24" >}}) for _Goldmark_ to allow this.
@@ -23,7 +23,7 @@ Hugo provides the parameter [`unsafe`]({{< relref "markup#24" >}}) for _Goldmark
 
 ## Don’t allow raw HTML
 
-There already is a good reason for _Goldmark_ to discard all HTML in Markdown by default: _The whole purpose of **Markdown** is to get rid of coding HTML directly_.
+There already is a good reason for Goldmark to discard all HTML in Markdown by default: The whole purpose of **Markdown** is to get rid of coding HTML directly.
 
 The security concern is simple: Raw HTML allows to inject all kinds of malicious code into a website – to call external Javascript routines in a `<script>`-tag would be the most obvious one.
 

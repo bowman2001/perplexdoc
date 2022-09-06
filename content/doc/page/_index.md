@@ -19,5 +19,5 @@ resources:
     src: roman-skrypnyk-fFW_xTie9Ik-unsplash.jpg
 ---
 
-**Perplex** generates all page elements beside the content from meta data, which is provided in the global configuration or the front-matter of the content files.
+**Perplex** generates all page elements from meta-data parameters. We can provide page specific data in the front-matter and global data in the project configuration.
 {.p-first} <!-- more -->
