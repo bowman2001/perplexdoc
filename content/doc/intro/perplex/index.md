@@ -9,7 +9,7 @@ menu:
     pre: dashboard
 subtitle: false
 title: Perplex
-weight: 7
+weight: 11
 categories: [Theme]
 tags: [Fluid, Responsive, Layout]
 resources:

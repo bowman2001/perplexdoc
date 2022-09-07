@@ -3,11 +3,11 @@ title: Favicon
 description: The site icon
 subtitle: false
 date: 2022-01-30T18:51:37+01:00 
-weight: 650
+weight: 695
 menu:
   doc:
     name: Favicon
-    parent: page
+    parent: siteelem
     pre: emoji_symbols
 resources:
   - src: favicon.svg

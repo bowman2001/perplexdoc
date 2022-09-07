@@ -5,7 +5,6 @@ subtitle: false
 date: 2022-06-26T14:59:56+01:00
 menu:
   main: 
-    identifier: about
     name: About
     weight: 100
 toc: false

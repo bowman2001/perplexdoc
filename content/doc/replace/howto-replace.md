@@ -57,7 +57,7 @@ Perplex applies the following replacements and styles them like the following ex
 | Insertion   | +insert | {+insert} |
 
 {{< mnote up=16 >}}
-These codes are substituted with the help of short regular expressions in the layout template [`content.html`]({{< relref "doc/appendix/content" >}}). Every call of `.Content` in the Markdown templates is replaced with this partial. Other Hugo themes could use it as well.  
+These codes are substituted with the help of short regular expressions in the layout template [`content.html`]({{< relref "doc/appendix/replacements" >}}). Every direct call of `.Content` in the Markdown templates is replaced with this partial, which processes `.Content`.  
 {{< /mnote >}}
 
 [^todo]:| Break       | /       | break{/}here |

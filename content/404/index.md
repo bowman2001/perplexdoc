@@ -1,6 +1,6 @@
 ---
 title: 404
-aliases: [/404.html]
+aliases: [404.html]
 description: This URL does not exist
 subtitle: true
 date: 2022-08-02T23:32:36+02:00

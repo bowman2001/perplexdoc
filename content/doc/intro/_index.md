@@ -10,7 +10,7 @@ menu:
 subtitle: false
 title: Introduction
 linktitle: Intro
-weight: 3
+weight: 10
 resources:
   - name: featured
     src: jon-tyson-6_SA8qzmzx8-unsplash.jpg

@@ -9,7 +9,7 @@ menu:
     pre: edit
 subtitle: false
 title: Markdown
-weight: 10
+weight: 15
 resources:
 - src: Markdown.svg
   name: featured

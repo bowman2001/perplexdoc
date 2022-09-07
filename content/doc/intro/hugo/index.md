@@ -9,7 +9,7 @@ menu:
     pre: engineering
 subtitle: false
 title: Hugo
-weight: 15
+weight: 20
 categories: [Workflow]
 tags: [Hugo]
 resources:
