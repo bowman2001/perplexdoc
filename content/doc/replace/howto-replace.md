@@ -40,21 +40,25 @@ Every element is surrounded by the curly braces `{` and `}`. A special character
 
 `+`
 : Insertion `<ins>`
+
+`/`
+: Line break `<br>`
 {.dl-tight .col2}
 
 ## Quick Overview of the Layout
 
 Perplex applies the following replacements and styles them like the following examples:
 
-| Element     |  Code without braces   |  Result   |
-|:------------|:-------:|:---------:|
-| Superscript |   ^3    |   {^3}    |
-| Subscript   |   _2    |   {_2}    |
-| Keyboard    |   #K    |   {#K}    |
-| Variable    |   $variable  | {$variable} |
-| Mark        |  !mark  |  {!mark}  |
-| Citation    | =author | {=author} |
-| Insertion   | +insert | {+insert} |
+| Element     |     Code     |   Result    |
+|:------------|:------------:|:-----------:|
+| Superscript |    {‍^3}     |    {^3}     |
+| Subscript   |    {‍_2}     |    {_2}     |
+| Keyboard    |    {‍#K}     |    {#K}     |
+| Variable    | {‍$variable} | {$variable} |
+| Mark        |   {‍!mark}   |   {!mark}   |
+| Citation    |  {‍=author}  |  {=author}  |
+| Insertion   |  {‍+insert}  |  {+insert}  |
+| Line Break  |     {‍/}     |     {/}     |
 
 {{< mnote up=16 >}}
 These codes are substituted with the help of short regular expressions in the layout template [`content.html`]({{< relref "doc/appendix/replacements" >}}). Every direct call of `.Content` in the Markdown templates is replaced with this partial, which processes `.Content`.  

@@ -22,4 +22,4 @@ categories: [Theme]
 Perplex has been designed to publish technical content. It provides templates for a documentation with up to three section levels, a blog, longer articles (still unfinished) and single pages.
 {.p-first} <!--more-->
 
-Perplex works out of the box, no other software than a recent Hugo installation and this theme are required to build a website like this one from your Markdown files and your resources.
+Perplex works out of the box, no other software than a recent Hugo installation and this theme are required to build a website like this one from Markdown files with front-matter and the associated resources.

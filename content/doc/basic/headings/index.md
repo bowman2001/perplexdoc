@@ -37,11 +37,13 @@ Markdown headings are preceded by number signs `#` and a space. The six availabl
 
 6. `###### Small Paragraph Heading`
 
-Usually we don’t want to apply the full hierarchy on moderate sized pages, because too much structure is confusing. For an appropriate layout, it’s often desirable to skip one or two levels and use paragraph headings inside of sections for example. But this is against recommended HTML guidelines. Headings should be used strictly in their descending order, because screen readers and other automatic interpreters get confused otherwise. To follow this recommendation we need to skip headings visually. 
+Usually we don’t want to apply the full hierarchy on moderate sized pages, because too much structure is confusing. For an appropriate layout, it may be desirable to skip one or two levels and use paragraph headings inside of sections for example.
 
-An easy way to inform readers about especially important text segments is to highlight their headings with signal colors.
+But this is against recommended HTML guidelines. Headings should be used strictly in their descending order, because screen readers and other automatic interpreters get confused otherwise. To follow this recommendation we need to skip headings visually.
 
-For all these variations we can add Markdown [attributes][attr].
+Another variation of their style is to highlight them. Its an easy way to inform readers about especially important text segments.
+
+For these style variations Perplex offers Markdown [attributes][attr].
 
 ### Paragraph Headings {#h-p}
 
@@ -49,7 +51,7 @@ We can style any heading like a paragraph heading with the attribute `{.h-p}`. F
 
 ### Special Headings
 
-When we want to highlight some **warning**, an important **information** or **tip**, we can use `{.h-warn}`, `{.h-info}` or `{.h-tip}`.
+To highlight some **warning**, an important **information** or **tip**, we have the attributes `{.h-warn}`, `{.h-info}` or `{.h-tip}`.
 
 A warning paragraph for example starts with a heading like this:
 
@@ -58,13 +60,25 @@ A warning paragraph for example starts with a heading like this:
 Far far away, behind the word mountains, far from the countries Vokalia and…
 ```
 
+### Linebreak for Headings
+There is one problem, we can’t solve directly with Markdown, attributes or even a shortcode. Sometimes we want to force a linebreak in long headings, when the usual line length on larger screens breaks them at an unfortunate place.
+
+In this case we can use the [replacement]({{< relref "doc/replacements/">}}) `{‍/}` like this:
+
+```md
+### A long subsection heading about a very complex topic{‍/}exceeding the line length
+```
+
+#### Beware {.h-warn .h-p}
+This special linebreak replacement is only needed in headings or titles, because they can’t be wrapped in Markdown. Otherwise Markdown [can handle them]({{< relref "doc/basic/linebreak" >}}).
+
 ## Layout
 
 Headings are not only recognized by their font styling but also by the white-space surrounding them. That's why the following examples are shown in the way they usually appear: In front and in between some text.
 
 ***
 
-# Page Title {.h-info .mt2 .mb2 #title}
+# Page Title {.mt3 .mb3 #title}
 
 If the page already has a title, the first heading **should not** occur in the Markdown content. Like many themes Perplex provides titles for all pages.
 
@@ -82,10 +96,12 @@ We still may need the first heading on special pages without a title section, wh
 
 ### A long subsection heading about a very complex topic exceeding the line length
 
-Because of line break before the last word this heading looks quite bad. Nice if we could insert a line-break at a better place. But there is no Markdown for this case and we don’t want to use raw HTML. But its possible:
+Because of the line break before the last word this heading looks quite bad on larger screens. We can correct this with the replacement `{‍/}`:
+
 ### Another subsection heading about a very complex topic{/}exceeding the line length
 
-[Replacement]({{< relref "doc/replacement" >}}) to the rescue. The slash surrounded by single curly braces `{‍/‍}` gets substituted by a `<br>` tag. The tag is disabled on small screens, because it would make things even worse there for long headings.
+The inserted `<br>`-tag gets disabled on small screens, because it would make things even worse there for long headings.
+
 #### Sub-Subsection Heading
 {{< farfar 1 >}}
 
@@ -94,7 +110,6 @@ Because of line break before the last word this heading looks quite bad. Nice if
 
 #### Warning Paragraph {.h-warn .h-p}
 {{< farfar 1 >}}
-
 
 ##### Info Paragraph {.h-info}
 {{< farfar 1 >}}

@@ -18,7 +18,7 @@ The codes all look like `{*text}`, where `*` is a placeholder for an ASCII sign 
 replaceRE `\{\+([^}]*)\}` "<ins>$1</ins>"
 ```
 
-A solution to this threat is to disallow filled angled brackets inside the replacement code.   
+A solution to this threat is to disallow filled angled brackets inside the replacement code.
 
 ## Testing Ground
 

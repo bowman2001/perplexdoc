@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-09-17T00:03:28+02:00"
-description: Perplex and Hugo are **Free Software** 
+description: Perplex and Hugo consist of Open Source
 menu:
   doc:
     parent: intro
