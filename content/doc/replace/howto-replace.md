@@ -13,41 +13,12 @@ menu:
     pre: help_outline
 ---
 
-Place your lead paragraph here. If you don't need special styling, remove the attribute. The _more-tag_ marks the paragraph as the content _summary_ for this page.
+Replacements are kind of a hack, but they are easy to use. I’ve been waiting too long now for the right solution: Some extensions for Goldmark, which can be enabled in Hugo.
 {.p-first} <!--more-->
 
-## Syntax
+## Quick Overview
 
-Every element is surrounded by the curly braces `{` and `}`. A special character after the first brace indicates the replacement.
-
-`^`
-: Superscript `<sup>`
-
-`_`
-: Subscript `<sub>`
-
-`#`
-: Keyboard `<kbd>`
-
-`$`
-: Variable `<var>`
-
-`!`
-: Mark `<mark>`
-
-`=`
-: Citation `<cite>`
-
-`+`
-: Insertion `<ins>`
-
-`/`
-: Line break `<br>`
-{.dl-tight .col2}
-
-## Quick Overview of the Layout
-
-Perplex applies the following replacements and styles them like the following examples:
+Perplex includes the following replacement codes and styles them like this:
 
 | Element     |     Code     |   Result    |
 |:------------|:------------:|:-----------:|
@@ -60,8 +31,11 @@ Perplex applies the following replacements and styles them like the following ex
 | Insertion   |  {‍+insert}  |  {+insert}  |
 | Line Break  |     {‍/}     |     {/}     |
 
-{{< mnote up=16 >}}
-These codes are substituted with the help of short regular expressions in the layout template [`content.html`]({{< relref "doc/appendix/replacements" >}}). Every direct call of `.Content` in the Markdown templates is replaced with this partial, which processes `.Content`.  
+{{< mnote up=8 >}}
+We can’t see the result of the line break because the `<br>` tag is invisible.
 {{< /mnote >}}
 
-[^todo]:| Break       | /       | break{/}here |
+These codes are substituted with the help of short regular expressions in the layout template [{$replacements.html}]({{< relref "doc/appendix/replacements" >}}). It processes the Hugo variable `.Content` which contains the rendered Markdown content as HTML string. 
+
+### Available as module {.h-p .h-tip}
+The file used by Perplex is the only essential content of the repository [hugo-mod-replacements](https://github.com/bowman2001/hugo-mod-replacements).
