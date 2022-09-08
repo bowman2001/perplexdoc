@@ -80,6 +80,12 @@ We still may need the first heading on special pages without a title section, wh
 ### Subsection Heading
 {{< farfar 1 >}}
 
+### A long subsection heading about a very complex topic exceeding the line length
+
+Because of line break before the last word this heading looks quite bad. Nice if we could insert a line-break at a better place. But there is no Markdown for this case and we don’t want to use raw HTML. But its possible:
+### Another subsection heading about a very complex topic{/}exceeding the line length
+
+[Replacement]({{< relref "doc/replacement" >}}) to the rescue. The slash surrounded by single curly braces `{‍/‍}` gets substituted by a `<br>` tag. The tag is disabled on small screens, because it would make things even worse there for long headings.
 #### Sub-Subsection Heading
 {{< farfar 1 >}}
 
@@ -88,6 +94,7 @@ We still may need the first heading on special pages without a title section, wh
 
 #### Warning Paragraph {.h-warn .h-p}
 {{< farfar 1 >}}
+
 
 ##### Info Paragraph {.h-info}
 {{< farfar 1 >}}

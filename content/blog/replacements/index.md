@@ -9,10 +9,10 @@ tags: [Replacements, HTML, Security]
 draft: true
 ---
 
-They let Hugo inject some missing inline HTML tags and can be used in Markdown instead of raw HTML.
+Surrounding chunks of text with the single curly braces `{` and `}` and a special ASCII sign lets Hugo inject inline HTML tags with regular expressions. This kind of replacement code can be used in Markdown instead of enabling raw HTML.
 {.p-first} <!--more-->
 
-My first implementation fell short, because I cleared the inserted HTML with the obligatory function [{$safeHTML}](https://gohugo.io/functions/safehtml/) without considering the consequences. It was possible to place HTML tags inside the replacement codes! The replacements did all look like that:
+The codes all look like `{*text}`, where `*` is a placeholder for an ASCII sign triggering the indented replacement. The one for the insertion tag `<ins>` uses `+` as identification character and triggers the following replacement.
 
 ```go-html-template
 replaceRE `\{\+([^}]*)\}` "<ins>$1</ins>"
