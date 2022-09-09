@@ -1,4 +1,4 @@
-{{ $img := partial "get-resourceInPageOrParents.html" (dict "name" .Destination "currentPage" .Page ) }}
+{{ $img := partial "get-resource.html" (dict "name" .Destination "currentPage" .Page ) }}
 {{ if not $img }}
     {{ errorf "%v - No image with the name '%s' has been found." .Page .Destination }}
 {{ end }}
@@ -18,10 +18,10 @@
       {{ with .Params.attr }}
           {{ $attr := .  }}
           {{- if $img.Params.caption -}} · {{- end -}}
-          {{ with $img.Params.attrlink }}<a href="{{ . | safeHTML }}">
-			<span class='attribution'>{{- $attr | site.Home.RenderString -}}</span></a>
+          {{ with $img.Params.attrlink }}<a href="{{ . | safeHTMLAttr }}">
+			      <span class='attribution'>{{- $attr | site.Home.RenderString -}}</span></a>
           {{ else }}<span class='attribution'>{{- $attr | site.Home.RenderString -}}</span>
           {{ end }}
       {{ end }}
-</span>
+  </span>
 {{ end }}
