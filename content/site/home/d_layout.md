@@ -8,4 +8,4 @@ Realize the possibilities of this layout. Let your content flow onto a baseline 
 
 Screens with a view-port width &ge; {$592px} present text and code with an optimized line-length.  
 
-Move and resize figures, images and code boxes with [Markdown attributes]({{< relref "attribute">}}).
+Move and resize figures, images and code boxes with [Markdown attributes]({{< relref "doc/attribute">}}).

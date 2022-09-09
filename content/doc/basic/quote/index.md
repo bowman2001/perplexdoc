@@ -22,7 +22,7 @@ To quote someone means to recognize her or his thoughts as part of our own. We m
 
 A single word or short piece of text is usually quoted in the running text and is called an **inline quote**. A longer text segment is usually quoted as separate block and called a **blockquote**.
 
-Some quotes should attract immediate attention while scanning the page. These are **hero quotes** and Perplex provides the [attribute]({{< relref "attribute" >}}) `{.blockquote-hero}` to style them.
+Some quotes should attract immediate attention while scanning the page. These are **hero quotes** and Perplex provides the [attribute]({{< relref "doc/attribute" >}}) `{.blockquote-hero}` to style them.
 
 ## Inline Quotes
 
@@ -104,7 +104,7 @@ But think of nested blockquotes or tables inside of blockquotes in practice. The
 
 ## Hero quote
 
-Because there is only the one possible markup for blockquotes described above, we have to use the [attribute]({{< relref "attribute" >}}) `.blockquote-hero`. The last lines of a hero quote look like this:
+Because there is only the one possible markup for blockquotes described above, we have to use the [attribute]({{< relref "doc/attribute" >}}) `.blockquote-hero`. The last lines of a hero quote look like this:
 
 ```md
 > name of Lorem Ipsum decided to leave for the far World of Grammar.

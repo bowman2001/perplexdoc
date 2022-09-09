@@ -63,7 +63,7 @@ Far far away, behind the word mountains, far from the countries Vokalia and…
 ### Linebreak for Headings
 There is one problem, we can’t solve directly with Markdown, attributes or even a shortcode. Sometimes we want to force a linebreak in long headings, when the usual line length on larger screens breaks them at an unfortunate place.
 
-In this case we can use the [replacement]({{< relref "doc/replacements/">}}) `{‍/}` like this:
+In this case we can use the [replacement]({{< relref "doc/replace/howto-replace">}}) `{‍/}` like this:
 
 ```md
 ### A long subsection heading about a very complex topic{‍/}exceeding the line length

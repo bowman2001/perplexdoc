@@ -17,5 +17,5 @@ categories: [Theme]
 tags: [Replacements, HTML]
 ---
 
-Some simple HTML inline tags have no counterpart in the elements of Goldmark, Hugo’s Markdown renderer. Perplex offers a set of replacements to use them without enabling HTML in Markdown.  
+There are no corresponding elements for some HTML inline tags in Goldmark, Hugo’s Markdown renderer. Perplex offers a set of replacements to use them without enabling insecure raw HTML in Markdown.  
 {.p-first} <!--more-->

@@ -33,10 +33,10 @@ tags: [Linebreak, Image, Editor, Linter]
 Markdown has become the favored markup language for structuring text files. With good cause: The syntax is intuitive and yet quite comprehensive.
 {.p-first} <!--more-->
 
-Markdown consists of plain text marked up with a small set of ASCII signs. Its easy to read without special software and we can write Markdown in any text editor. Markdown files end with the suffix `.md`.
+Markdown consists of plain text marked up with a small set of ASCII signs. Its easy to read without special software and we can write Markdown in any text editor. Markdown files end with the suffix {$.md}.
 
 {{< mnote up=5 >}}
-The suffixes `.mdown` and `.markdown` also indicate Markdown, but are rarely used nowadays.
+The suffixes {$.mdown} and {$.markdown} also indicate Markdown, but are rarely used nowadays.
 {{< /mnote >}}
 
 After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors emerged.
@@ -56,17 +56,17 @@ Further extensions may join in the future, but probably only a few if any, becau
 This documentation includes a short review of every syntax element in Goldmark and shows an example of its standard layout and alternative styling options with Perplex:
 
 [Basic Markdown Layout]({{< relref "basic" >}})
-: covers the elements of the [_CommonMark specification_][cmark].
+: covers the elements of the [CommonMark specification][cmark].
 
 [Extended Markdown Layout]({{< relref "extended" >}})
-: discusses the elements adopted from [_PHP Markdown Extra_][phpmex] and [_GFM_][gfmspec].
+: discusses the elements adopted from [PHP Markdown Extra][phpmex] and [GFM][gfmspec].
 
 ## Caveats and Opportunities
 
 Two basic Markdown elements are continuously creating confusion, because they are treated in somewhat ambiguous ways:
 
 [Image][img]
-: The Markdown image element is syntactically meant to be placed inside a block element. But it’s also allowed to be used self-contained and gets automatically enclosed by an empty paragraph block, then.[^1]
+: The Markdown image element is syntactically meant to be placed inside a block element. But it’s also allowed to be used self-contained and gets automatically enclosed by a paragraph then.[^1]
 
 [Line Break][lb]
 : CommonMark and GFM are not fully compatible in regard to this one element. There are two different ways to handle line breaks inside of text blocks:
@@ -76,7 +76,7 @@ Two basic Markdown elements are continuously creating confusion, because they ar
 
 [^TODO]: Explain this continuation indent for description lists.
 
-The following suggestions for these elements are short. Their issues are discussed in more detail on their pages.
+The following suggestions for these elements are short. Their issues are discussed in more detail on their own pages.
 
 [^1]: The corresponding  `<img/>` tag is an HTML inline element and needs an enclosing block element to become valid HTML 5.
 

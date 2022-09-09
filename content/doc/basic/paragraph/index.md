@@ -26,7 +26,7 @@ Paragraphs are completed by an empty line in Markdown.
 
 In addition to the normal paragraph Perplex offers a **first** paragraph — like the first one on this page. There is also a **big** and a **small** one. And in combination with a following subsection, we can use a **meta** paragraph to indicate a topic or some other general category.
 
-These styles are applied with the [attributes]({{< relref "attribute" >}}) `{.p-first}`, `{.p-big}`, `{.p-small}` and `{.p-meta}`.
+These styles are applied with the [attributes]({{< relref "doc/attribute" >}}) `{.p-first}`, `{.p-big}`, `{.p-small}` and `{.p-meta}`.
 
 ## Layout
 

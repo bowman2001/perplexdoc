@@ -20,7 +20,7 @@ resources:
 The theme adapts responsively and fluid to modern screens. It’s designed for optimal legibility down to a view-port of {$360px} width.
 {.p-first} <!--more-->
 
-Perplex has been build on the basis of the [IBM Plex][plex] font family{^\*} and is best suited for technical content with mixed sections of text and code. The layout is vertically aligned to a _baseline grid_[^1] to introduce a comfortable rhythm. Horizontally it’s divided into evenly spaced columns — their number grows with the screen width.
+Perplex has been build on the basis of the [IBM Plex][plex] font family{^\*} and is best suited for technical content with mixed sections of text and code. The layout is vertically aligned to a **baseline grid**[^1] to introduce a comfortable rhythm. Horizontally it’s divided into evenly spaced columns — their number grows with the screen width.
 
 {{< mnote up=8 star=1 >}}
 The **Plex** font family includes fonts for oriental languages written from right to left and for asian sign languages (some projected). So far, Perplex can't adapt to their needs, because I'm not acquainted with their layout habits.
@@ -47,13 +47,13 @@ Because Markdown is simple, the resulting HTML also is. Sometimes we may like to
 ## Alternative Styling and additional Elements
 
 [Attributes](/doc/attribute)
-: are HTML attributes in single curly braces placed after Markdown elements. They are introduced on the pages of the specific element, whose appearance they alter, or in the chapter [Attributes]({{< relref "attribute" >}}) if they are of general use.
+: are HTML attributes in single curly braces placed after Markdown elements. They are introduced on the pages of the specific element, whose appearance they alter, or in the chapter [Attributes]({{< relref "doc/attribute" >}}) if they are of general use.
 
 [Replacements](/doc/replace)
 : are shorthands in single curly braces. They refer to the few less important inline HTML elements, which have no counterpart in Hugo’s Markdown.
 
 [Shortcodes](/doc/shortcode)
-: are enclosed in two curly braces and angle brackets — like `{{</* shortcode */>}}`. They can take input parameters and allow to extend Markdown with arbitrary HTML structures. They are a kind of superpower, but tend to get complicated. Perplex includes some shortcodes, but only in those cases, where a _replacement_ or an _attribute_ is insufficient. If Hugo already provides a built-in shortcode, its established syntax is preserved as good as possible.
+: are enclosed in two curly braces and angle brackets — like `{{</* shortcode */>}}`. They can take input parameters and allow to extend Markdown with arbitrary HTML structures. They are powerful but tend to get complicated quick. Perplex includes some shortcodes, but only in those cases, where a replacement or an attribute is insufficient. If Hugo already provides a built-in shortcode, its established syntax is preserved as good as possible.
 {.dl-loose}
 
 ## Structured by YAML
