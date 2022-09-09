@@ -9,7 +9,7 @@ tags: [Replacements, HTML, Security]
 draft: true
 ---
 
-Surrounding chunks of text with the single curly braces `{` and `}` and a special ASCII sign lets Hugo inject inline HTML tags with regular expressions. This kind of replacement code can be used in Markdown instead of enabling raw HTML.
+Surrounding chunks of text with single curly braces and a special ASCII sign lets Hugo inject inline HTML tags with regular expressions. This kind of replacement code can be used in Markdown instead of enabling raw HTML.
 {.p-first} <!--more-->
 
 The codes all look like `{*text}`, where `*` is a placeholder for an ASCII sign triggering the indented replacement. The one for the insertion tag `<ins>` uses `+` as identification character and triggers the following replacement.

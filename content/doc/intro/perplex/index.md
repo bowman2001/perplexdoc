@@ -42,7 +42,7 @@ Markdown is simple and simply great. It allows authors to structure their conten
 
 Hugo’s default renderer [Goldmark][gmark] translates [CommonMark][cmark] Markdown and some extensions adopted from [PHP Markdown Extra][phpmex] and [**G**itHub **f**lavored **M**arkdown][gfmspec] (GFM).
 
-Because Markdown is simple, the resulting HTML also is. Sometimes we may like to change a style or use more complex elements. Perplex offers solutions for both demands.
+Because Markdown is simple, the resulting HTML also is. Sometimes we may like to change a style or use more complex elements. As of now, Perplex offers many attributes and a few shortcodes.
 
 ## Alternative Styling and additional Elements
 
@@ -53,7 +53,7 @@ Because Markdown is simple, the resulting HTML also is. Sometimes we may like to
 : are shorthands in single curly braces. They refer to the few less important inline HTML elements, which have no counterpart in Hugo’s Markdown.
 
 [Shortcodes](/doc/shortcode)
-: are enclosed in two curly braces and angle brackets — like `{{</* shortcode */>}}`. They can take input parameters and allow to extend Markdown with arbitrary HTML structures. They are powerful but tend to get complicated quick. Perplex includes some shortcodes, but only in those cases, where a replacement or an attribute is insufficient. If Hugo already provides a built-in shortcode, its established syntax is preserved as good as possible.
+: are enclosed in two curly braces and angle brackets — like `{{</* shortcode */>}}`. They can take input parameters and allow to extend Markdown with arbitrary HTML structures. They are powerful but tend to get complicated quickly. Perplex includes some shortcodes, but only in those cases, where a replacement or an attribute is insufficient. If Hugo already provides a built-in shortcode, its established syntax is preserved as good as possible.
 {.dl-loose}
 
 ## Structured by YAML

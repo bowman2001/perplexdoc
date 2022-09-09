@@ -5,7 +5,7 @@ subtitle: false
 date: 2022-07-12T22:38:10+02:00
 weight: 1
 categories: [Theme, Layout]
-tags: [Fluid responsive]
+tags: [Fluid, Responsive]
 resources:
   - src: Accessibility_logo.svg
     name: featured

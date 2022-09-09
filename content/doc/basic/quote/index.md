@@ -26,52 +26,52 @@ Some quotes should attract immediate attention while scanning the page. These ar
 
 ## Inline Quotes
 
-Quotes in the running text need to be enclosed by quotation marks.
+Quotes in the running text just need to be enclosed by quotation marks.
 
 When we type `“I quote you”` we simply get “I quote you”.
 {.p-big}
 
-But our keyboard usually doesn't show these typographically correct quotation marks. That's why we often use simpler characters, which get replaced by our software.
+But our keyboard usually doesn't show these typographically correct _curly_ quotation marks and we like to use the directly available straight ones, which get then replaced by our software.
 
 ### Substitution of English quotation marks
 
-Hugo replaces the typographically dumb straight quotes with the correct curly ones by default — this is the work of the  [typographer extension]({{< relref "doc/extended/typographer" >}}). We can simply place {#"} — the straight quote — around English quotes:
+Hugo replaces the typographically dumb straight quotes with the correct curly ones by default — this is the responsibility of the  [typographer extension]({{< relref "doc/extended/typographer" >}}). We can use {#"} — straight quotes — like this:
 
 `"An inline quote"`&emsp;for&emsp;"An inline quote"
 {.p-big}
 
-And a quote inside a quote is marked with {#\'} — the single straight quote:
+And a single word or a quote inside a quote is marked with {#\'} — single straight quotes:
 
 `"A quote 'inside'"`&emsp;for&emsp;"A quote 'inside'"
 {.p-big}
 
 ### In French, Swiss and German (partially)
 
-We can open French and Swiss quotes with two {#<} and close them with two {#>} angled brackets. They get replaced with guillemets (not guillemots!).
+We can open French and Swiss quotes with two {#<} angled brackets and close them with two {#>} in the other direction. They get replaced with nice guillemets (not guillemots!).
 
 `<<Pardon my French>>`&emsp;for&emsp;<<Pardon my French>>
 {.p-big}
 
-In German publishing we often find guillemets the other way around:
+In German publishing we usually find guillemets the other way around:
 
 `>>Zahnstocher<<`&emsp;for&emsp;>>Zahnstocher<<
 {.p-big}
 
-But we get into trouble with these, when we start a line with `>>`, because the `>` is also the Markdown sign for a following [quotation block]({{< relref "#blockquote" >}}). We can begin the line with an invisible entity like the zero width joiner `&zwj;` for a quick workaround:
+But we get into trouble with these, when we start a line with `>>`, because the `>` is also the sign for a [quotation block]({{< relref "#blockquote" >}}). We can begin the line with an invisible entity like the zero width joiner `&zwj;` for a quick workaround:
 
 &zwj;>>Noch einen Zahnstocher, bitte!<<
 {.p-big}
 
 ### General Solutions
 
-Because there are currently no replacement extension available for other languages, we need to think about a way to include them more directly
+Because the typographer can't handle other languages, we need to think about a way to include them directly
 
-1. We can learn some _keyboard shortcuts_ to include often needed punctuation. But they depend on the operating system and the language. On some systems, they are relatively easy to remember, on others, they are practically useless.
+1. We can learn some _keyboard shortcuts_ to include often needed punctuation. They depend on the operating system and the keyboard layout. On some systems, they are relatively easy to remember, on others, they are practically useless. But you could give it at least a try and look them up for your configuration. Maybe they are useful.
 
 2. We can always use [HTML entities]({{< relref "specialchar" >}}). We get the German _Gänsefüßchen_&ensp;&bdquo;&nbsp;and&nbsp;&ldquo;&nbsp; with `&bdquo;` and `&ldquo;` for example. Entities look weird in text files, but the result is as good as the original Unicode glyphs.
 
 {{< mnote up=11 >}}
-It’s technically possible to replace them later automatically with Unicode glyphs, but until now I’ve found no simple piece of software I can recommend.
+It’s possible to replace them later automatically with Unicode glyphs and maybe your editor has a plugin for that.
 {{< /mnote >}}
 
 ## Blockquote
@@ -100,7 +100,7 @@ It should approximately match the number of characters in a normal line of text.
 
 Blockquotes may include other markup, because we need emphasis, inline quotes, links, footnotes and other inline markup and maybe even lists inside quotations. The CommonMark specification allows to use all elements of Markdown inside of a blockquote — theoretically.
 
-But think of nested blockquotes or tables inside of blockquotes in practice. They are an aesthetic nightmare in a typographical layout. This theme does not support every possibility. Feel free to write, if some important option is missing.
+But think of nested blockquotes or tables inside of blockquotes in practice. They can become an aesthetic nightmare. This theme does not support every possibility. Feel free to file an issue in the theme repository, if some important option has no suitable layout.
 
 ## Hero quote
 
