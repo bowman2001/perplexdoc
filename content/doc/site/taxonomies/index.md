@@ -10,6 +10,8 @@ menu:
     name: Taxonomies
     parent: siteelem
     pre: category
+categories: [Theme]
+tags: [Navigation, Taxonomies]
 ---
 
 TODO

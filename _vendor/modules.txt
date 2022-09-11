@@ -1,2 +1,2 @@
-# github.com/bowman2001/perplex v0.0.0-20220909165735-6d94629136cd
+# github.com/bowman2001/perplex v0.0.0-20220911205956-4d05441376ab
 # github.com/bowman2001/hugo-mod-replacements v0.0.0-20220908204158-063fff518d6c

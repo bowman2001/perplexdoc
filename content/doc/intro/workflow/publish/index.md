@@ -5,11 +5,11 @@ description: Build & Deploy a static website
 menu:
   doc:
     name: Publish
-    parent: intro
+    parent: workflow
     pre: cloud_upload
 subtitle: false
 title: Publish
-weight: 25
+weight: 50
 categories: [Workflow]
 tags: [Publish]
 resources: 

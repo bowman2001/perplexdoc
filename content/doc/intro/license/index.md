@@ -9,7 +9,7 @@ menu:
     pre: receipt
 subtitle: false
 title: Licenses
-weight: 40
+weight: 55
 resources:
   - name: featured
     src: chris-brignola-X2CxUXFqKcM-unsplash.jpg

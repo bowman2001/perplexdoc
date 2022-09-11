@@ -1,6 +1,6 @@
 ---
 title: Standfirst Paragraph
-description: Introduces and summarizes the following content
+description: Introduces or summarizes the page
 subtitle: false
 date: 2022-01-18T23:24:32+01:00 
 weight: 620
@@ -12,6 +12,8 @@ menu:
 resources:
   - name: featured
     src: philipp-berndt-5i0GnoTTjSE-unsplash.jpg
+categories: [Theme]
+tags: [Standfirst, Paragraph]
 ---
 
 When the first paragraph contains a short introduction or summary of the page, we can style it emphasized and provide it as meta-data for search optimization.

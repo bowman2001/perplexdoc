@@ -11,7 +11,7 @@ menu:
     name: Site Navigation
     parent: siteelem
     pre: menu
-categories: [Site]
+categories: [Theme]
 tags: [Navigation, Social]
 ---
 

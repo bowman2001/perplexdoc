@@ -1,6 +1,6 @@
 ---
-title: Navigation and Page Order
-description: Sidebar, Page Navigation and Table of Contents
+title: Page Navigation
+description: Sidebar, Prev/Next and Table of Contents
 subtitle: false
 date: 2022-01-18T23:25:10+01:00 
 menu:
@@ -8,8 +8,8 @@ menu:
     name: Navigation
     parent: page
     pre: switch_right
-categories: [Layout]
-tags: [Navigation]
+categories: [Theme]
+tags: [Navigation, Page]
 weight: 640
 ---
 
