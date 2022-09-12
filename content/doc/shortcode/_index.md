@@ -13,6 +13,8 @@ weight: 500
 resources:
   - name: featured
     src: Hugo.svg
+categories: [Theme]
+tags: [Hugo]
 ---
 
 We need shortcodes to build complex HTML structures beyond the capabilities of (extended) Markdown.

@@ -9,4 +9,7 @@ menu:
     pre: format_quote
 title: Author citation
 weight: 440
+resources: 
+  - src: gatien-bataille-ngu1d-CPbB4-unsplash.jpg
+    name: featured
 ---

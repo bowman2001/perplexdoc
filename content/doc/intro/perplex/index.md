@@ -104,4 +104,4 @@ Should you stumble upon bad English, typos or wrong phrases, please excuse me. I
 [phpmex]: https://michelf.ca/projects/php-markdown/extra/ "PHP Markdown Extra site"
 [gfmspec]: https://github.github.com/gfm "GitHub Flavored Markdown Specification"
 [conf]: {{< relref "config.md" >}}
-[new]: {{< relref "hugo#first" >}}
+[new]: {{< relref "doc/intro/workflow/getting-started#first" >}}

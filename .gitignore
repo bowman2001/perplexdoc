@@ -9,3 +9,4 @@
 /.run
 .hugo_build.lock
 /config/development
+/script

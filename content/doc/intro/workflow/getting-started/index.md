@@ -12,7 +12,6 @@ menu:
     pre: start
 categories: [Theme]
 tags: [Hugo, Installation]
-draft: true
 ---
 
 The world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and secure websites.

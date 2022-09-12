@@ -12,17 +12,20 @@ menu:
     pre: create_new_folder
 categories: [Workflow, Theme]
 tags: [Hugo]
-draft: true
 ---
 
-The folder structure determines the generated website structure in a similar way like Markdown formatting determines the layout of our content.
+The folder structure is the foundation for the generated website structure. (TODO: Finish)
 {.p-first} <!--more-->
 
-## Content organization
+## Content organization 
 
-It may take a little while to get your head around Hugo’s content folder structure. To keep the _general concept_ in mind did help me: Hugo establishes a connection between the input  and the generated website, which is as short as possible. 
+It may take a little while to get your head around Hugo’s content folder structure. To keep the general concept in mind did help me: Hugo establishes a connection between the Markdown input and the generated pages, which is as short as possible.
 
-The content of a Perplex itself {$/} and the folders `doc`, `blog` and `article`. The theme provides layout templates for these page types. Hugo applies the matching template automatically to every content file inside these directories and their subdirectories.
+{{< mnote up=14 >}}
+Hugo also offers the possibility to include additional data or to render raw HTML files, but this theme doesn’t utilize this functionality for now.  
+{{< /mnote >}}
+
+The content of the root itself {$/} and the folders `doc`, `blog` and `article`. The theme provides layout templates for these page types. Hugo applies the matching template automatically to every content file inside these directories and their subdirectories.
 
 The root `/`
 : contains top level pages, which should
@@ -75,13 +78,8 @@ hugo new doc/demo/my-first-doc-page.md
 we start with a front matter, that contains a few more entries than a blog post. The first 5 lines, that we already have seen, are left out:
 
 ```yaml {linenos=true linenostart=6 class=col-left}
-weight = 100
-[menu.doc]
-  name = "My First Doc Page"
-  identifier = 'my-first-doc-page'
-  parent = ''
-  pre = 'remove'
-+++
+TODO
+---
 ```
 
 The new parameter _weight_ is of general meaning for the order of all pages, the others are menu entries and are lined up under the `` section and are specifically creating the structure of the doc menu `[menu.doc]`.

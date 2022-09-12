@@ -1,7 +1,7 @@
 ---
 author: Georg Makdowski
-title: Use Hugo’s local Server
-description: Hugo’s server provides an instant local preview 
+title: Hugo’s local Server
+description: Get an instant local preview 
 subtitle: false
 date: 2022-09-11T14:58:16+02:00 
 weight: 35
@@ -32,7 +32,7 @@ Hugo’s server is configurable and can also show a private preview under a publ
 
 The pages are rendered into the memory and the site is served under <http://localhost:1313> by default.
 
-- The flag `-D` lets Hugo include **drafted** files. All files created with `hugo new` are usually configured as drafts, using `draft: true` in the front-matter. When a Markdown file is ready for [publishing]({{< relref "doc/intro/publish" >}}), we need to remove this entry or change it to `draft: false`.
+- The flag `-D` lets Hugo include **drafted** files. All files created with `hugo new` are usually configured as drafts, using `draft: true` in the front-matter. When a Markdown file is ready for [publishing]({{< relref "doc/intro/workflow/publish" >}}), we need to remove this entry or change it to `draft: false`.
 
 - The flag `--minify` tells Hugo to remove unnecessary whitespace from the resulting code.
 

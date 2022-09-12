@@ -20,13 +20,13 @@ Replacement codes are surrounded by the curly braces `{` and `}` and begin with 
 
 ## Layout
 
-x{_4}&ensp;x{^4}&emsp;X{_4}&ensp;X{^4} &emsp; x{_3}&ensp;x{^3}&emsp;X{_3}&ensp;X{^3} g{_5}
+x{_4} x{^4} X{_4} X{^4}   x{_3} x{^3} X{_3} X{^3}
 
-Compare the Perplex styling to the one _Plex_ fonts provide — unfortunately only for numbers. We can use them as _Unicode_ glyphs:
+Compare the Perplex styling to the one the Plex fonts provide directly — unfortunately only for numbers. We can use them as Unicode glyphs:
 
-x₄&ensp;x⁴ &emsp; X₄&ensp;X⁴&emsp;x₃&ensp;x³ &emsp; X₃&ensp;X³
+x₄ x⁴   X₄ X⁴ x₃ x³   X₃ X³
 
-This styling may be a good choice under special circumstances, the following examples include the Perplex styling.
+The numbers are very small and the subscripts are not on the same line (this may be due to a missing CSS configuration parameter). Therefor, the following examples demonstrate the theme replacements.
 
 ### Chemical Formula
 
@@ -38,6 +38,6 @@ A simple function f(x) = 3x{^2} + 5x{^5} is looking good.
 
 ### Fractions
 
-Every fraction with small numbers like {^2}&frasl;{_3} or big ones like {^23}&frasl;{_747} may be included using super- and subscripts with a fraction line (entity `&frasl;`) in between them.
+Every fraction with small numbers like {^2}⁄{_3} or big ones like {^23}⁄{_747} may be included using super- and subscripts with a fraction line (entity `&frasl;`) in between them.
 
 [latex]: {{< relref "latex" >}}

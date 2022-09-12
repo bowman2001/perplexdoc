@@ -41,5 +41,5 @@ The task list gets rendered into a static list with inactive input elements. By 
 - [ ]  Third entry
 
 {{< mnote up=11 >}}
-With the coming CSS parent selector `:has` it should be easy to use the checkboxes as list markers and style the task list in a better way.
+With the coming CSS parent selector {$:has} it should be easy to use the checkboxes as list markers and style the task list in a better way.
 {{< /mnote >}}
