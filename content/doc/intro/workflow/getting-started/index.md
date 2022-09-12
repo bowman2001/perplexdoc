@@ -54,7 +54,7 @@ The folders for the project site contain only a minimal set of standard Hugo fol
 : contains all the Markdown files and page specific resources like images.
 {.dl-loose}
 
-The additional {$\_vendor} folder includes a recent copy of the [Perplex theme]({{< param themeURL >}}).
+The additional {$\_vendor} folder includes a recent copy of the [Perplex theme]({{< param themeURL >}}). The theme is imported as a module, but because its vendored into this folder there is no need for a Go environment.
 
 #### Start from scratch
 
@@ -84,29 +84,22 @@ The {$themes} folder can hold as many themes as we like and there are three ways
 
 2. Clone it with [**Git**](https://git-scm.com/) into the {$themes} folder. If you already are using Git for your project, you probably should clone every theme as a submodule. This is also the best workflow to contribute to the development of a Hugo theme or module.  
 
-3. Import a theme as a Hugo module. You need a recent [Golang environment](https://go.dev) for that – Hugo modules rely on Go modules. The Hugo docs provide a [guide to this powerful feature](https://gohugo.io/hugo-modules). Once set up, Hugo modules are the easiest way to update themes or other external components. There is an example for the configuration in the file [{$module.yaml}]({{< relref "moduleyaml.md" >}}), because this project imports the theme as a module.
+3. Import a theme as a Hugo module. You need a recent [Golang environment](https://go.dev) for that – Hugo modules rely on Go modules. The Hugo docs provide a [guide to this feature](https://gohugo.io/hugo-modules). Once set up, Hugo modules are the easiest way to update themes or other external components, content etc. There is simple example for the configuration in the file [{$module.yaml}]({{< relref "moduleyaml.md" >}}).
 
-{{< mnote up=20 >}}
-**This project** doesn’t need a Go environment, because it ships with a local copy of the theme (in the {$\_vendor} folder). If you want to update the theme separately, you need to install Go and run the command `hugo mod get -u`.
-{{< /mnote >}}
-
-When you chose option 1. or 2., you need to tell Hugo to use the theme in the [config file]({{< relref "configyaml.md#8" >}}). With the module you don’t, but the entry doesn’t hurt.
+When you chose option 1. or 2., you need to tell Hugo to use the theme in the [config file]({{< relref "configyaml.md#8" >}}). With the module you don’t, Hugo includes modules by default as themes.
 
 ## Project configuration
 
-All configuration options and their defaults are described in the [docs](https://gohugo.io/getting-started/configuration/). The examples therein are given for a **single configuration file** like {$config.yaml} in your project root directory.
+All configuration options are explained in the [docs](https://gohugo.io/getting-started/configuration/). The examples therein are given for a **single configuration file** like {$config.yaml} in your project root directory.
 
 The configuration for this project is using the alternative option of a **configuration directory** named {$config} with separate files for the sections. For the growing number of options this arrangement is clearer. The top configuration file is still called {$config.yaml} the other ones are named like the section they contain.
 
 ### Please note {.h-info .h-p}
 
-The configuration files for sections don't include the section identifier anymore, because the name of the file _is_ the section identifier. When you adopt a configuration option from the Hugo docs, you may therefore need to remove the section identifier.
+The configuration files for sections don't include the section identifier anymore, because the name of the file already is the section identifier. When you adopt a configuration option from the Hugo docs, you need to remove the section identifier. And should you copy a configuration option from a section in the config folder into a single {$config.yaml} you need to add it again. Same goes for TOML.
 
 ## Having trouble with Hugo?
 
-When you encounter problems with Hugo and don’t find an answer in its [documentation][hugodoc], the [Hugo community](https://discourse.gohugo.io) will support you. Please search the forum archive, because most likely your problem has already been solved. And before you start a new topic, please read the guidelines **How to Request Help** at the top of the site first.
-
-[hugodoc]: https://gohugo.io/documentation
-
+When you encounter problems with Hugo and don’t find an answer in its [documentation][hugodoc], the [Hugo community](https://discourse.gohugo.io) will support you. Please search the forum archive, because most likely your problem has already been solved. If you are confronted with a new problem, please read the guidelines **How to Request Help** at the top of the site first, before you submit your request.
 
 [hugodoc]: https://gohugo.io/documentation

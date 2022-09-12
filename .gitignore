@@ -1,8 +1,11 @@
 ### Hugo template
 # Generated files by hugo
-/public/
-/resources/
+/public
+/resources
+
+# Local configuration
 /.idea
 /.vscode
 /.run
 .hugo_build.lock
+/config/development
