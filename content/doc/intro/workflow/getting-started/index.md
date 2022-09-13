@@ -12,9 +12,12 @@ menu:
     pre: start
 categories: [Theme]
 tags: [Hugo, Installation]
+resources: 
+  - src: damian-markutt-Dhmn6ete6g8-unsplash.jpg
+    name: featured
 ---
 
-The world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and secure websites.
+The world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and secure websites. The Perplex theme is build specifically for this marvelous engine.
 {.p-first} <!--more-->
 
 [Hugo](https://gohugo.io) is a single command line tool for macOS, Windows, Linux and BSD derivatives. A binary for most operating systems and some containers is usually available within a day or a few after every release.
@@ -27,35 +30,45 @@ The [Hugo documentation site][hugodoc] addresses developers mostly and offers de
 
 ## Install Hugo
 
-Please read the [installation instructions](https://gohugo.io/getting-started/installing/) for your operating system on the documentation site. Perplex works with any recent version.
+Please follow the [installation instructions](https://gohugo.io/getting-started/installing/) for your operating system on the documentation site. Perplex works with any recent version.
 
-## Use Perplex
+## Get Perplex
 
 When you start to get acquainted with Hugo or when you are curious about the source for this site, you can download this documentation project as an example. It’s publicly available on [GitHub]({{< param sourceURL >}}) and ships with all the files for the documentation and a few examples for blog postings and articles.
 
 ### The documentation project
 
-The folders for the project site contain only a minimal set of standard Hugo folders.
+The folders for the project site are a subset of the standard Hugo folders.
 
 ```sh {.right .lh15 .hide-mobile}
 ├── assets
 ├── config
-└── content
+├── content
 ```
 
 {$assets}
-: contains site wide resources.
+: provides site wide resources (not many) to be processed by the theme.
 
 {$config}
-: contains the configuration files for this project.
+: is the configuration folder with all site parameters for this project.
 
 {$content}
-: contains all the Markdown files and page specific resources like images.
+: contains all the Markdown files and resources (mostly images).
 {.dl-loose}
 
 The additional {$\_vendor} folder includes a recent copy of the [Perplex theme]({{< param themeURL >}}). The theme is imported as a module, but because its vendored into this folder there is no need for a Go environment.
 
-#### Start from scratch
+#### Project configuration
+
+All configuration options are explained in the [docs](https://gohugo.io/getting-started/configuration/). The examples therein are given for a **single configuration file** like {$config.yaml} in your project root directory.
+
+The configuration for this project is using the alternative option of a **configuration directory** named {$config} with separate files for the sections. For the growing number of options this arrangement is clearer. The top configuration file is still called {$config.yaml} the other ones are named like the section they contain.
+
+##### Please note {.h-info}
+
+The configuration files for sections don't include the section identifier anymore, because the name of the file already is the section identifier. When you adopt a configuration option from the Hugo docs, you need to remove the section identifier. And should you copy a configuration option from a section in the config folder into a single {$config.yaml} you need to add it again. Same goes for TOML.
+
+### Start a project from scratch
 
 We create an empty new project with a command like
 
@@ -75,7 +88,7 @@ and get the folder {$mysite} with all the standard folders.
 └── themes
 ```
 
-As Hugo themes usually do, Perplex includes its own folders for {$archetypes}, {$assets} and {$layouts} and the corresponding folders in the project root are only meant for additional or modified templates to override the ones from the theme with the same name.
+As Hugo themes usually do, Perplex includes its folders for {$archetypes}, {$assets},{$layouts} and {$static} and the corresponding folders in the project root are meant for additional material or modified templates to override the ones from the theme with the same name.
 
 The {$themes} folder can hold as many themes as we like and there are three ways to retrieve a public theme from a Git repository provider:
 
@@ -86,16 +99,6 @@ The {$themes} folder can hold as many themes as we like and there are three ways
 3. Import a theme as a Hugo module. You need a recent [Golang environment](https://go.dev) for that – Hugo modules rely on Go modules. The Hugo docs provide a [guide to this feature](https://gohugo.io/hugo-modules). Once set up, Hugo modules are the easiest way to update themes or other external components, content etc. There is simple example for the configuration in the file [{$module.yaml}]({{< relref "moduleyaml.md" >}}).
 
 When you chose option 1. or 2., you need to tell Hugo to use the theme in the [config file]({{< relref "configyaml.md#8" >}}). With the module you don’t, Hugo includes modules by default as themes.
-
-## Project configuration
-
-All configuration options are explained in the [docs](https://gohugo.io/getting-started/configuration/). The examples therein are given for a **single configuration file** like {$config.yaml} in your project root directory.
-
-The configuration for this project is using the alternative option of a **configuration directory** named {$config} with separate files for the sections. For the growing number of options this arrangement is clearer. The top configuration file is still called {$config.yaml} the other ones are named like the section they contain.
-
-### Please note {.h-info .h-p}
-
-The configuration files for sections don't include the section identifier anymore, because the name of the file already is the section identifier. When you adopt a configuration option from the Hugo docs, you need to remove the section identifier. And should you copy a configuration option from a section in the config folder into a single {$config.yaml} you need to add it again. Same goes for TOML.
 
 ## Having trouble with Hugo?
 

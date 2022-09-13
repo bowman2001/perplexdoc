@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: 2021-09-15T11:42:44+02:00
-description: The Perplex theme for Hugo
+description: Perplex --- the all purpose IT theme for Hugo
 subtitle: false
 title: Documentation
 linktitle: Docs
@@ -15,7 +15,6 @@ lastmod: 2022-07-25T13:35:45.886Z
 resources:
 - name: featured
   src: jaredd-craig-HH4WBGNyltc-unsplash.jpg
-categories: [Theme]
 ---
 
 

@@ -11,13 +11,11 @@ menu:
 subtitle: false
 title: Workflow
 weight: 20
-categories: [Workflow, Theme]
-tags: [Hugo]
 resources:
   - src: Hugo.svg
     name: featured
 ---
 
-
+A short guide from installation over content organization to publishing with Hugo and Perplex.
 {.p-first} <!--more-->
 
