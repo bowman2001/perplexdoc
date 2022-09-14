@@ -1,13 +1,11 @@
 ---
 title: Columns
-description: Tag description placeholder
+description: All about this layout mode
 subtitle: true
 date: 2022-09-14T09:52:43+02:00
 resources:
-- src: content/tags/columns/pablo-hermoso-FDgLKYrhT9w-unsplash.jpg
+- src: pablo-hermoso-FDgLKYrhT9w-unsplash.jpg
   name: featured
-  title:
   params: 
-    attr:
-    attrlink:
+    alt: Four columns made of stone
 ---

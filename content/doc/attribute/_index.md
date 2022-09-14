@@ -13,5 +13,7 @@ categories: [Theme, Hugo]
 tags: [Attribute]
 ---
 
-Hugo attributes are the key to style variations and other improvements. Perplex offers many of them.
+Markdown attributes are the key to style variations and other improvements of the rendered result. Perplex offers many of them.
 {.p-first} <!--more-->
+
+Attributes are an extension of the Markdown syntax which implemented by [Goldmark](https://github.com/yuin/goldmark) and many other but not all Markdown render engines.

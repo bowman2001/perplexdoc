@@ -1,22 +1,21 @@
 ---
-author:
-title: Columns
-description: Page description placeholder
+author: Georg Makowski
+title: Layout Columns
+description: Generate longer columns
 subtitle: false
 date: 2022-09-14T09:43:19+02:00 
-weight: 999
+weight: 535
 menu:
   doc:
+    identifier: layoutcol
     name: Columns
-    parent: 
-    pre: remove
-categories: []
-tags: []
-resources:
-  - src: 
-    name: featured
-draft: true
+    parent: shortcode
+    pre: view_column
+categories: [Theme]
+tags: [Columns, Shortcode]
 ---
 
-Place your lead paragraph here. If you don't need special styling, remove the attribute `{.p-first}`. The **more**-tag marks this placeholder paragraph as the content summary for this page. It’s an introduction for your readers and provides information to search engines. 
+This shortcode is meant for a sequence of content blocks with many short items.
 {.p-first} <!--more-->
+
+We can use [column attributes]({{< relref "doc/attribute/columns" >}}) to separate a single Markdown block into columns.
