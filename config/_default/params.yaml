@@ -9,3 +9,7 @@ favicon:
 
 sourceURL: https://github.com/bowman2001/perplexdoc
 sourceEditTree: edit/main/content
+
+imaging:
+  sizestep: 25
+  max_width: 1920

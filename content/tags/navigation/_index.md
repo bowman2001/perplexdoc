@@ -8,4 +8,6 @@ resources:
   name: featured
   params: 
     alt: Cardinal points
+    hint: photo
+    ratio: 1
 ---

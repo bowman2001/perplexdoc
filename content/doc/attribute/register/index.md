@@ -10,10 +10,15 @@ menu:
     name: Register
     parent: attributes
     pre: app_registration
+categories: [Theme]
+tags: [Attribute] 
+toc: false
 ---
 
-All element specific attributes are listed here. To attach them correctly, have a look at the short [Howto]({{< relref "howto-attribute" >}}).
+All element specific attributes should be listed here.
 {.p-first} <!--more-->
+
+To attach the attributes correctly in Markdown, have a look at the short [Howto]({{< relref "howto-attribute" >}}).
 
 |Element    | Attribute Name | CSS-class |
 |:----------|:--------|-------:|

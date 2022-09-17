@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-12-29T17:52:55+01:00"
-description: Pictures at particular places
+description: This image decorates your page and grabs attention on social media
 menu:
   doc:
     name: Featured Image
@@ -14,6 +14,12 @@ categories: [Page]
 tags: [image]
 series: [images]
 weight: 630
+resources:
+  - src: ray-hennessy-gdTxVSAE5sk-unsplash.jpg
+    name: featured
+    params:
+      alt: firework over water
+      hint: photo
 ---
 
 Perplex  include images at special places in the layout.

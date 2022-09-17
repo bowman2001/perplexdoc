@@ -16,6 +16,10 @@ tags: [Block, Headings]
 resources:
 - name: featured
   src: ashni-Wh9ZC4727e4-unsplash.jpg
+  params:
+    hint: text 
+    anchor: Bottom
+    ratio: 1.1
 ---
 
 Headings introduce and order the segments on a page. On a website with many pages, each level should have similar importance.

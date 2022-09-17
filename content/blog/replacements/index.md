@@ -9,10 +9,10 @@ tags: [Replacements, HTML, Security]
 draft: true
 ---
 
-Surrounding chunks of text with single curly braces and a special ASCII sign lets Hugo inject inline HTML tags with regular expressions. This kind of replacement code can be used in Markdown instead of enabling raw HTML.
+Single curly braces and a special ASCII sign let Hugo inject inline HTML tags with the help of regular expressions. Replacement codes are the better alternative to enabling raw HTML in Markdown.
 {.p-first} <!--more-->
 
-The codes all look like `{*text}`, where `*` is a placeholder for an ASCII sign triggering the indented replacement. The one for the insertion tag `<ins>` uses `+` as identification character and triggers the following replacement.
+The codes all look like `{+text}`, where `+` is a placeholder for an ASCII sign triggering the indented replacement. The one for the insertion tag `<ins>` uses `+` as identification character and triggers the following replacement.
 
 ```go-html-template
 replaceRE `\{\+([^}]*)\}` "<ins>$1</ins>"

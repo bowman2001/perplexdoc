@@ -14,6 +14,9 @@ tags: [Inline, Emphasis]
 resources:
 - name: featured
   src: brett-jordan-vyPVtz5p8D4-unsplash.jpg
+  params:
+    hint: text
+    ratio: 1.5
 ---
 
 We have _light emphasis_ or **strong emphasis** to accentuate a segment of the text. We can **_nest_** both types.

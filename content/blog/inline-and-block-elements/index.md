@@ -22,7 +22,7 @@ Inline elements
 {.dl-loose}
 
 {{< mnote up=12 >}}
-It’s possible and common practice to place an anchor-tag `<a>` around block elements to generate a link in HTML code. But then its display mode should be set to {$inline-block} or some other mode with vertical spacing.
+It’s common practice to place an anchor-tag `<a>` around block elements to generate a linked page elements in HTML. But then, its display mode is explicitly changed into one with vertical spacing. This is impossible in Markdown.
 {{< /mnote >}}
 
 Block elements
@@ -31,4 +31,4 @@ Block elements
 
 The Markdown [image element](/doc/basic/image) is creating some confusion, because its an inline element. Because many images appear visually as blocks, we falsely tend to infer they should be block elements. But a Markdown image is always inline and embedded in an enclosing block. When its placed stand-alone on a separated line, its not only an image but enclosed in a paragraph block of its own.
 
-To generate a stand-alone image resulting in semantically correct HTML, we need the [{$figure} shortcode](/doc/shortcode/figure). And we can easily add CSS-styles to resize or move the resulting figure --- even beside the main text column. 
+To generate a stand-alone image resulting in semantically correct HTML, we need the [{$figure} shortcode](/doc/shortcode/figure). And we can easily add CSS-styles to resize or move the resulting figure --- even beside the main text column.

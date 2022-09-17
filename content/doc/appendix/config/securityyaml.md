@@ -10,11 +10,14 @@ menu:
     parent: config
     pre: security
 categories: [Hugo]
-tags: [Configuration, Security]
+tags: [Security, Configuration]
 ---
 
-Security configuration file in {$config/_default}
+The security configuration file in {$config/&zwnj;_default} contains the runtime security settings for Hugo.
 {.p-first} <!--more-->
+
+The general concept is to restrict Hugo’s access to its surrounding environment --- a.k.a. sand-boxing.
+
 
 {{< highlight yaml "linenos=true" >}}
 {{< readfile file="/config/_default/security.yaml" >}}

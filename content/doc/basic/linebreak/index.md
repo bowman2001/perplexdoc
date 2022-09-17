@@ -15,6 +15,10 @@ tags: [Inline, Linebreak]
 resources:
   - name: featured
     src: annie-spratt-askpr0s66Rg-unsplash.jpg
+    params:
+      anchor: Center
+      hint: text
+      ratio: 1.5
 ---
 
 Sometimes we like to begin a new line without starting a whole new text block. To place such a hard line break gets complicated, when **hard line wraps** limit the line length inside our Markdown files.

@@ -15,6 +15,10 @@ tags: [Block, Paragraph]
 resources:
   - name: featured
     src: finn-mund-8q2r2XQpDO0-unsplash.jpg
+    params:
+      alt: Some paragraphs of text
+      hint: text
+      quality: 90
 ---
 
 Paragraphs are the essential building blocks of text. Comfortable proportions and surrounding whitespace contribute to their legibility.

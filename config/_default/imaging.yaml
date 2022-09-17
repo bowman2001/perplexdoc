@@ -3,7 +3,6 @@
 #
 
 # Options for bitmap files
-resampleFilter: Lanczos
 quality: 80
 anchor: smart
 

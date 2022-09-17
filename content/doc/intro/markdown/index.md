@@ -16,16 +16,12 @@ resources:
 - src: erda-estremera-eMX1aIAp9Nw-unsplash.jpg
   name: splash
   params:
-    class: large
-    caption: A self-contained image
-    attr: Erda Estremera/Unsplash
-    attrlink: "https://unsplash.com/photos/eMX1aIAp9Nw"
+    size: large
+    caption: Self-contained image
 - src: mulyadi-JJMoAiVl9jA-unsplash.jpg
   name: splash2
   params:
-    caption: An embedded image
-    attr: Mulyadi/Unsplash
-    attrlink: https://unsplash.com/photos/JJMoAiVl9jA
+    caption: Embedded image
 categories: [Workflow, Markdown]
 tags: [Linebreak, Image, Editor, Linter]  
 ---
@@ -94,9 +90,9 @@ To surround every self-contained Markdown image element with a paragraph — lik
 
 When we start writing Markdown, this question may not come to mind, because we often decide habitually: But should we still manually wrap the lines after a certain amount of characters — or better not?
 
-_My experience_ : No, these _hard line wraps_ cause us and collaborating authors a lot of unnecessary trouble in the long run. Almost all text editor programs are nowadays able to _softly wrap_ long lines. Maybe we have to turn on that option for Markdown, but it should definitely be there.
+Hard line wraps cause us and collaborating authors a lot of unnecessary trouble in the long run. Almost all text editor programs are nowadays able to **softly wrap** long lines. Maybe we have to turn on that option for Markdown, but it should definitely be there.
 
-When we rely on soft line wrapping everyone can read and edit the Markdown using a suitable line width. When we place manual wraps instead, everyone — including ourselves — has to deal with them again and again. They have to be moved or removed every time, when text is added or deleted.
+When we rely on soft line wrapping everyone can read and edit the Markdown using a suitable line width. When we place manual wraps, everyone — including ourselves — has to deal with them again and again. They have to be moved or removed every time, when text is added or deleted.
 
 {{< mnote up=14 >}}
 **GitHub** decided to treat all hard wraps as such on their platform a short while ago.
