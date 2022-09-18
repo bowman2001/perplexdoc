@@ -24,12 +24,12 @@ Correction marks highlight changes while working on a draft. Lately, strike-thro
 To visually record important changes in our text, we can expressively cancel a part of the previous version by marking it ~~strike-through~~. The opposite action is to mark a part as {+inserted} later.
 {#layex}
 
-The extension _strike-through_ has been introduced by [GitHub](https://github.com), because a hell of a lot collaborative work is going on there. On a finalized page it tends to look unprofessional, if it's not some kind of change-log.
+The extension _strike-through_ has been introduced by [GitHub](https://github.com), because a hell of a lot collaborative work is going on there. On a finalized page it tends to look unprofessional if it's not some kind of change-log.
 
 ## Syntax
 
-Strike-through is applied by surrounding text with two swung dashes `~~` on every side. There is no extension for an _insertion_, but you can use a [replacement]({{< relref "replace" >}}) starting with `+`.
+Strike-through is applied by surrounding text with two swung dashes on every side like `~~deletion~~`. There is no Markdown syntax for an insertion available in Hugo (yet), but you can use the [replacement code]({{< relref "replace" >}}) with the plus sign like `{‍+insertion}` .
 
 ## Layout
 
-Please see the [second paragraph]({{< relref "#layex" >}}).
+See the [second paragraph]({{< relref "#layex" >}}).

@@ -17,14 +17,9 @@ resources:
     name: tiny
     title: Tiny placeholder
     params:
-      class: tiny right
+      size: tiny
+      posh: right
       caption: Tiny figure on the right
-  - src: fig/tiny2.svg
-    name: tiny2
-    title: Tiny placeholder
-    params:
-      class: tiny left
-      caption: Tiny figure on the left
   - src: fig/small.svg
     name: small
     title: Small placeholder
@@ -102,7 +97,7 @@ You’ll find the syntax for Hugo’s built-in `figure` in the [docs][hugofig]. 
 
 ### Tiny
 
-{{< figure tiny2 />}}
+{{< figure src="tiny" pos="left" caption="Named parameter" />}}
 
 {{< figure tiny />}}
 

@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-03-24T21:23:17+01:00"
-description: Content from an editor or a command line
+description: Editor or command line content
 menu:
   doc:
     name: Code
@@ -10,6 +10,10 @@ menu:
 resources:
 - name: featured
   src: markus-spiske-1LLh8k2_YFk-unsplash.jpg
+  params:
+    alt: Code on a screen
+    ratio: 1
+    hint: picture
 subtitle: false
 title: Code
 weight: 135
@@ -41,9 +45,9 @@ Indented
 : A block of text indented by 4 spaces or a tab is also treated as a _code block_.
 {.dl-loose}
 
-The _fenced_ version of the CommonMark syntax is preferable for two reasons:
+The **fenced** version of the CommonMark syntax is **preferable** for two reasons:
 
-1. The following options are available only for fenced blocks:
+1. The following styling options are only available for fenced blocks:
 
    1. Code highlighting
 
@@ -54,11 +58,11 @@ The _fenced_ version of the CommonMark syntax is preferable for two reasons:
    4. Line anchors
    {.col2-l2}
 
-2. There is an overlap with the syntax for the extensions [footnote][ftn] and [definition-list][dl]. When we need subsequent paragraphs there, we need to indent them also by 4 spaces or a tab. If we place an indented code block after a footnote reference or a definition detail, Hugo will treat it as a continuation and not as a code block.
+2. There is an overlap with the syntax for the extensions [footnote][ftn] and [definition-list][dl]. When we have subsequent paragraphs there, we need to indent them also by 4 spaces or a tab. If we try to place an indented code block after a footnote reference or a definition detail, Hugo will treat it as this kind of continuation indent and not as a code block.
 
 ### Highlighting
 
-Many programming or markup languages are highlighted by _Chroma_, when we add their usual file suffixes or another identification code. The Hugo docs include the full list of available [Chroma highlighting languages][hugochroma].
+Chroma can highlight many languages, when we add their usual file suffixes. The Hugo docs include the full list of available [Chroma highlighting languages][hugochroma].
 
 ### Additional styling for fenced code blocks
 
