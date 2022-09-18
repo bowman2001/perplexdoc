@@ -12,4 +12,4 @@ sourceEditTree: edit/main/content
 
 imaging:
   sizestep: 25
-  max_width: 1920
+  fallback_width: 1920

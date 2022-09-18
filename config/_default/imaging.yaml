@@ -3,8 +3,11 @@
 #
 
 # Options for bitmap files
-quality: 80
-anchor: smart
+
+quality       : 80
+anchor        : smart
+hint          : photo
+resampleFilter: mitchellnetravali
 
 exif:
   includeFields: ""

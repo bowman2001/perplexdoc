@@ -8,6 +8,9 @@ series: [Demo]
 resources:
 - name: featured
   src: Diophantus-II-8-Fermat_cut.jpg
+  params:
+    alt: Reprint of Diophantus
+    hint: text
 ---
 
 Marginal notes allow to add further information in an elegant and unobtrusive way. We can glance over them and stay with the main text or zone out for a while, when they pique our curiosity.
