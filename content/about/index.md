@@ -8,10 +8,20 @@ menu:
     name: About
     weight: 100
 toc: false
+resources:
+  - src: Joerg_Makowski.jpg
+    name: jm
+    params:
+      pos: left
+      size: tiny
+      alt: Jörg (Georg) Makowski
+      hint: photo
 ---
 
 Perplex is a technical theme for Hugo, the fastest site generator in the world. It produces a typographic layout, which adapts responsively to nearly all screen sizes. It’s designed for optimal legibility down to a view-port of {$360} Pixels width.
 {.p-first} <!--more-->
+
+{{< figure jm />}}
 
 Perplex is designed for the IBM Plex font family and best suited for content with mixed sections of text and code. The layout is vertically aligned to a baseline grid to generate a comfortable rhythm. Horizontally it’s divided into evenly spaced columns — their number depends on the screen width. On larger screens the responsive design is combined with view-port sized typography—a.k.a. fluid typography—to deliver a coherent layout. The CSS stylesheet is compatible with recent browsers used by around 95% of all users in the world.
 

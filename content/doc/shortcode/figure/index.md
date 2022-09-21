@@ -24,37 +24,39 @@ resources:
     name: small
     title: Small placeholder
     params:
-      class: small left
+      size: small 
+      posh: left
   - name: small-portrait
     src: fig/small_portrait.svg
     title: Small portrait placeholder
     params:
-      class: left
+      posh: left
   - name: small-portrait-right
     src: fig/small_portrait_right.svg
     title: Small portrait placeholder
     params:
-      class: right
+      posh: right
   - src: fig/medium.svg
     name: medium
     title: Placeholder
     params:
-      class: medium right
+      size: medium 
+      posh: right
   - src: fig/large.svg
     name: large
     title: Placeholder
     params:
-      class: large
+      size: large
   - src: fig/extra-large.svg
     name: xlarge
     title: Placeholder
     params:
-      class: xlarge
+      size: xlarge
   - src: mathias-konrath-JHb-UFfNOhI-unsplash.jpg
     name: mathias
     title: Skyline of Frankfurt
     params:
-      class: large
+      size: large
       attr: Mathias Konrath / Unsplash
       attrlink: https://unsplash.com/@konni
   - src: beau-swierstra-Ndz-4phqtlg-unsplash.jpg

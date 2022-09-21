@@ -4,7 +4,7 @@
 
 # Options for bitmap files
 
-quality       : 80
+quality       : 75
 anchor        : smart
 hint          : photo
 resampleFilter: mitchellnetravali
