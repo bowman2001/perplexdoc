@@ -11,5 +11,5 @@ sourceURL: https://github.com/bowman2001/perplexdoc
 sourceEditTree: edit/main/content
 
 imaging:
-  sizestep: 25
+  sizestep: 100
   fallback_width: 1920
