@@ -38,6 +38,9 @@ The pages are rendered into the memory and the site is served under <http://loca
 
 - The flag `--navigateToChanged` tells the server to relay the page of the last changed file to the browser. As soon as we save a file the corresponding page pops up in the browser.
 
+### Disable fast auto-save {.h-tip .h-p}
+Some editors are saving our work so fast, that nearly every keystroke leads to a regeneration of the corresponding page. And when we are in the process of changing sensitive content like front-matter parameters we can easily bring down Hugo’s server, because Hugo won’t process inconsistent files. Then we have to restart the server, which is not a big deal, but gets annoying after a while.
+
 ## Adding your first content {#first}
 
 To generate a new Markdown file, we go to the root folder of our project and use a command like

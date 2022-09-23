@@ -1,9 +1,1 @@
-{{ $desc := "" }}
-{{ with .Summary }}
-  {{ $desc = . | site.Home.RenderString | plainify }}
-  {{ else }}
-    {{ with .Description }}
-      {{ $desc = . | site.Home.RenderString | plainify }}
-    {{ end }}
-{{ end }}
-{{ return ($desc | truncate 200)  }}
+{{ return ( ( partial "head/meta/func/description.html" . ) | truncate 200 ) }}
