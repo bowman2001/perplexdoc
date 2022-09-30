@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 title: About Perplex & Me
 description: Background information
 subtitle: false
@@ -16,6 +17,7 @@ resources:
       size: tiny
       alt: Jörg (Georg) Makowski
       hint: photo
+type: profile
 ---
 
 Perplex is a technical theme for Hugo, the fastest site generator in the world. It produces a typographic layout, which adapts responsively to nearly all screen sizes. It’s designed for optimal legibility down to a view-port of {$360} Pixels width.
