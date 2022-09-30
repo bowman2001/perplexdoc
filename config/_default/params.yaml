@@ -1,6 +1,8 @@
 #
-# Theme-specific parameters
+# Additional parameters
 #
+
+description: Perplex is a typographic theme with advanced layout capabilities for the static site generator Hugo. Its designed to publish technical content in a full documentation, in blog postings or longer articles—all with optimal legibility down to a viewport of 360px.
 
 # Site wide favicon for browser and OS display
 favicon:
