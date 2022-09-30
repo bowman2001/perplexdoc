@@ -60,17 +60,15 @@ The documentation
 ## Logos and pictures
 
 All logos
-: remain under the copyright of their respective owners. Perplex logos are released under the [Apache 2.0 License][ap2] by Jörg (Georg) Makowski.
+: remain under the copyright of their respective owners. Perplex logos are released under the [Apache 2.0 License][mylicense] by Jörg (Georg) Makowski.
 
 All pictures
 : Remain under the copyright of their respective owners. The image caption usually mentions the author and a link to the source except for images in the public domain.
 {.dl-loose}
 
 [hugo]: https://gohugo.io
-[katex]: https://katex.org/
-[mermaid]: https://mermaid-js.github.io/mermaid/#/
+[katex]: https://katex.org
+[mermaid]: https://mermaid-js.github.io/mermaid
 [ofl]: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 [mylicense]: {{< param themeURL >}}/blob/main/LICENSE
-[ap2]: http://www.apache.org/licenses/LICENSE-2.0
 [cc4]: https://creativecommons.org/licenses/by-sa/4.0/legalcode
-[mit]: 
