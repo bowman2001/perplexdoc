@@ -1,4 +1,5 @@
 ---
+author: Georg Makowski
 title: Two basic layout types
 description: Inline & Block
 subtitle: false
