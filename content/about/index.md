@@ -1,8 +1,8 @@
 ---
 author: Georg Makowski
-title: About Perplex & Me
-description: Background information
-subtitle: false
+title: About Me
+description: Georg Makowski
+subtitle: true
 date: 2022-06-26T14:59:56+01:00
 menu:
   main: 
@@ -10,21 +10,16 @@ menu:
     weight: 100
 toc: false
 resources:
-  - src: Joerg_Makowski.jpg
-    name: jm
-    params:
-      pos: left
-      size: tiny
-      alt: Jörg (Georg) Makowski
-      hint: photo
+- src: Joerg_Makowski.jpg
+  name: featured
 type: profile
+draft: true
 ---
 
-Perplex is a technical theme for Hugo, the fastest site generator in the world. It produces a typographic layout, which adapts responsively to nearly all screen sizes. It’s designed for optimal legibility down to a view-port of {$360} Pixels width.
+I’m a physicist, writer and web typographer. There is no obvious straight line in what I do --- you only get the short version.
 {.p-first} <!--more-->
 
-{{< figure jm />}}
+I’ve got my physics diploma in 2000 with an A grade in the field of signal processing and applied chaotic dynamics, but I was frustrated. Physics always has been a means to an end for me, but even after my studies I couldn’t see the end --- despite getting a well payed job of course. I started to work for a doctoral degree in the astrophysical field of stellar pulsation and had to realize again, that there was no end in sight for me. And I quit. During my whole studies I’ve had chosen information technology as minor subject and started to  
 
-Perplex is designed for the IBM Plex font family and best suited for content with mixed sections of text and code. The layout is vertically aligned to a baseline grid to generate a comfortable rhythm. Horizontally it’s divided into evenly spaced columns — their number depends on the screen width. On larger screens the responsive design is combined with view-port sized typography—a.k.a. fluid typography—to deliver a coherent layout. The CSS stylesheet is compatible with recent browsers used by around 95% of all users in the world.
-
-The content for pages is most suitable delivered by _Markdown_ files in a directory tree, which determines the website structure. The meta-data for navigational elements, images and other resources is formatted by a data markup language: _YAML_, _TOML_ or _JSON_. Global data is contained in the project configuration, page specific data in the front-matter section of their files.
+My first name actually is the natively good sounding _Jörg_, but my wise English teacher in my sixth grade spontaneously decided in our first lesson not to call me by this name in English. Because its a short German version of Georg we settled for that without any further explanation. It took me a few years to realize how considerate his choice has been.
+{.p-small}

@@ -16,11 +16,11 @@ resources:
     src: rachel-coyne-tImZgkTcCbQ-unsplash.jpg
 ---
 
-All images in this documentation were made available free of charge by numerous skilled photographers on [Unsplash][unsplash]. Their names or identifiers appear in the caption.
+All images in this documentation were made available free of charge by numerous skilled photographers on [Unsplash][unsplash]. Their names and a link to the original source are given in the captions.
 
-The concept for a layout geared towards classical typographic principles grew over a few years out of many already existing ideas. I can’t even mention every helpful author I read about typography and CSS techniques. Many conceptual parts date back to [Matthew Butterick’s][mb] beautiful online book [_Practical Typo&shy;graphy_][pt], which also taught me a lot about typography in general and some about distinctive American-English features.
+The concept for a layout geared towards classical typographic principles grew over some years out of many already existing ideas. I can’t even mention every helpful author I read about typography and CSS techniques. Many conceptual parts date back to [Matthew Butterick’s][mb] beautiful online book [Practical Typo&shy;graphy][pt]. He also taught me a lot about typography in general and some about distinctive American-English features.
 
-Perplex is --- as the name says --- based on [IBM’s][ibm] open corporate font family [Plex][plex]. Their fonts are beautiful and very versatile.
+Perplex is --- as the name says --- based on [IBM’s][ibm] open corporate font family [Plex][plex]. These fonts are really made for technical publishing and even offer a nice serif specimen.
 
 Without [Chris Coyier’s][cc] always up-to-date website [CSS-Tricks][cc] I would have been lost in the CSS specs. He and all his contributors have been clarifying the constantly evolving capabilities of CSS like only a few others.
 
@@ -28,7 +28,7 @@ Without [Chris Coyier’s][cc] always up-to-date website [CSS-Tricks][cc] I woul
 **CSS-Tricks** has been acquired by [Digital Ocean](https://digitalocean.com) recently. Hopefully, their staff will keep up the good work.
 {{< /mnote >}}
 
-Without Hugo and its active community I couldn’t have realized this. I owe special thanks to [Steve Francia][sf] for bringing Hugo to life, to [Joe Mooring][jm] for his numerous precise suggestions and examples and of course to the current and long time project leader [Bjørn Erik Pedersen][bep] for his ongoing enhancements and improvements of Hugo.
+Last but not least: Only thanks to [Hugo](https://gohugo.io) and its active community I could realize this long dream of mine. I owe special thanks to [Steve Francia][sf] for bringing Hugo to life, to [Joe Mooring][jm] for his numerous precise suggestions and examples and of course to the long time project leader [Bjørn Erik Pedersen][bep] for his ongoing enhancements and improvements.
 
 [cc]: https://chriscoyier.net/
 [mb]: https://matthewbutterick.com

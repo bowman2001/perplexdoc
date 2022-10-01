@@ -4,10 +4,10 @@ date: 2022-06-23T11:55:39+02:00
 id: l3
 ---
 
-Store [images](/doc/basic/image) and [figures](/doc/shortcode/figure) together with your Markdown content if they are page-specific or as global assets to use them throughout your whole site.
+Store [images](/doc/basic/image) locally together with the Markdown content they belong to.
 
-Let Hugo and Perplex handle the various sizes for an optimal resolution on all screens.
+Let Hugo and Perplex handle the generation of all the various sizes for their optimal screen resolution.
 
 Initial image processing time on Netlify for
-around 120 images on this site: {$&approx; 45s}.
+around 120 original images on this site &approx; {$60sec} --- then cached.
 {.p-small}

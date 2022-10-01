@@ -24,7 +24,7 @@ The theme
 : is released by Jörg (Georg) Makowski under the [Apache 2.0 License][mylicense].
 
 The documentation
-: is released by Jörg (Georg) Makowski under the [Creative Commons License (CC BY-SA)][cc4] except the material from other sources.
+: is released by Jörg (Georg) Makowski under the [Creative Commons License (CC BY-SA)][cc4] except marked material from other sources.
 {.dl-loose}
 
 ## Website generator Hugo

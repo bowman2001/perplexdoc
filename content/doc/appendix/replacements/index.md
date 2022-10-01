@@ -9,7 +9,7 @@ menu:
     pre: find_replace
 title: 'replacements.html'
 weight: 1055
-draft: true
+draft: false
 ---
 
 This template file contains the regular expressions for all replacements codes.

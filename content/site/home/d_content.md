@@ -4,7 +4,7 @@ date: 2022-06-23T11:55:32+02:00
 id: d2
 ---
 
-Use text files containing
+Write text files containing
 
 [Markdown](/doc/intro/markdown)
 : for basic layout
@@ -19,4 +19,4 @@ Use text files containing
 : for meta-data (menus etc.)
 {.dl-tight}
 
-Determine site URLs simply by your folder structure or manage them precisely with configuration parameters.
+The URL structure is basically determined by your folder hierarchy and fully customizable.

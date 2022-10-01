@@ -1,7 +1,7 @@
 ---
 author: Georg Makdowski
 title: Hugo’s local Server
-description: Get an instant local preview 
+description: Show an instant preview in your browser 
 subtitle: false
 date: 2022-09-11T14:58:16+02:00 
 weight: 35

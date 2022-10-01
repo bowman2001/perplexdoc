@@ -24,7 +24,7 @@ Correction marks highlight changes while working on a draft. Lately, strike-thro
 To visually record important changes in our text, we can expressively cancel a part of the previous version by marking it ~~strike-through~~. The opposite action is to mark a part as {+inserted} later.
 {#layex}
 
-The extension _strike-through_ has been introduced by [GitHub](https://github.com), because a hell of a lot collaborative work is going on there. On a finalized page it tends to look unprofessional if it's not some kind of change-log.
+The extension **strike-through** has been introduced by [GitHub](https://github.com), because a hell of a lot collaborative work is going on there. On a finalized page it tends to look unprofessional if it's not some kind of change-log.
 
 ## Syntax
 
