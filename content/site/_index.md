@@ -8,7 +8,7 @@ _build:
 resources:
   - src: Perplex.svg
     name: featured
-  - src: Hugo.svg
+  - src: Hugo.png
     name: hugo
     params:
       link: https://gohugo.io

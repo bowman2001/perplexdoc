@@ -12,7 +12,7 @@ subtitle: false
 title: Workflow
 weight: 20
 resources:
-  - src: Hugo.svg
+  - src: Hugo.png
     name: featured
 ---
 
