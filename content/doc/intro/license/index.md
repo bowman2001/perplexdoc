@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-09-17T00:03:28+02:00"
-description: Perplex and Hugo consist of Open Source
+description: Perplex and Hugo are open source
 menu:
   doc:
     parent: intro
@@ -69,6 +69,5 @@ All pictures
 [hugo]: https://gohugo.io
 [katex]: https://katex.org
 [mermaid]: https://mermaid-js.github.io/mermaid
-[ofl]: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 [mylicense]: {{< param themeURL >}}/blob/main/LICENSE
 [cc4]: https://creativecommons.org/licenses/by-sa/4.0/legalcode
