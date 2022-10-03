@@ -10,6 +10,7 @@ series: [Demo]
 resources:
 - src: romain-vignes-ywqa9IZB-dU-unsplash.jpg
   name: featured
+draft: true
 ---
 
 A definition list inside a blockquote with a sublist in one of its items is an interesting case for Markdown and its layout.
