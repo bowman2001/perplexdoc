@@ -91,9 +91,9 @@ Should you stumble upon bad English, typos or wrong phrases, please excuse me. I
 
 [^2]: The term _fluid typography_ is falling a bit short here. Perplex is using kind of a responsive fluid design because the whole layout adapts to the width of the browser-window (Also see [this posting]({{< relref "accessibility-of-fluid-typography" >}})).
 
-[plumber]: https://jamonserrano.github.io/plumber-sass/
+[plumber]: https://jamonserrano.github.io/plumber-sass
 [plex]: https://ibm.com/plex
-[rd]: https://alistapart.com/article/responsive-web-design/
+[rd]: https://alistapart.com/article/responsive-web-design
 [ptres]: https://practicaltypography.com/responsive-web-design.html
 [theme]: https://github.com/bowman2001/perplex
 [issue]: https://github.com/bowman2001/perplex/issues

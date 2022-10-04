@@ -51,7 +51,7 @@ The documentation
 ## Optional software
 
 [KaTeX][katex]
-: has been released by [{=Emily Eisenberg}](https://github.com/xymostech), [{=Sophie Alpert}](https://github.com/sophiebits) and contributors under the [MIT License][https://github.com/KaTeX/KaTeX/blob/main/LICENSE].
+: has been released by [{=Emily Eisenberg}](https://github.com/xymostech), [{=Sophie Alpert}](https://github.com/sophiebits) and contributors under the [MIT License](https://github.com/KaTeX/KaTeX/blob/main/LICENSE).
 
 [Mermaid][mermaid]
 : has been released by [{=Knut Sveidqvist}](https://github.com/knsv) and contributors under the [MIT License](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE).
@@ -69,5 +69,5 @@ All pictures
 [hugo]: https://gohugo.io
 [katex]: https://katex.org
 [mermaid]: https://mermaid-js.github.io/mermaid
-[mylicense]: {{< param themeURL >}}/blob/main/LICENSE
 [cc4]: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+[mylicense]: {{< param themeURL >}}/blob/main/LICENSE
