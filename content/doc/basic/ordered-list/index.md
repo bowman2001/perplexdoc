@@ -17,7 +17,7 @@ resources:
     src: jan-antonin-kolar-lRoX0shwjUQ-unsplash.jpg
 ---
 
-Ordered lists group related items and mark them with ascending counters.
+Ordered lists group related items and mark them with ascending counters. They provide a very clear structure but appear tedious when they get too long. Consider to insert a normal paragraph or another block element in between the items of a long list.
 {.p-first} <!--more-->
 
 ## Syntax
@@ -32,7 +32,7 @@ It’s possible to manipulate the counters with attributes. The one currently av
 
 ## Layout
 
-The examples here are short, because the styling is basically the same as for the unordered [bullet list]({{< relref "doc/basic/bullet-list" >}}).
+Only two layout examples are following here, because the styling options for an ordered list are basically the same as for an unordered [bullet list]({{< relref "doc/basic/bullet-list" >}}).
 
 ### Tight List
 
