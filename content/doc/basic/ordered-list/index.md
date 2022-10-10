@@ -17,7 +17,7 @@ resources:
     src: jan-antonin-kolar-lRoX0shwjUQ-unsplash.jpg
 ---
 
-Ordered lists group related items and mark them with ascending counters. They provide a very clear structure but appear tedious when they get too long. Consider to insert a normal paragraph or another block element in between the items of a long list.
+Ordered lists group related items and mark them with ascending counters. They provide a very clear structure but are tedious to read when they get too long. Consider to insert a normal paragraph or another block element in between the items of a long list.
 {.p-first} <!--more-->
 
 ## Syntax

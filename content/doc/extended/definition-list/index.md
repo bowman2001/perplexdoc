@@ -41,7 +41,7 @@ Every list item begins with one or more _terms_. The lines after them contain th
 
 ## Layout
 
-The layout has to consider the length and number of all the components. The _standard_ version is working with every combination of terms and descriptions the additional options are not. The _tight_ style suits single terms with details, which do usually not exceed one line on larger screens. The _loose_ style is intended for single terms with long details.
+The layout has to consider the length and number of all the components. The _standard_ version is working with every combination of terms and descriptions the additional options are not. The _tight_ style suits single terms with details, which do usually not exceed one line on larger screens. The _loose_ style is intended for terms with extensive details.
 
 ### Standard
 
