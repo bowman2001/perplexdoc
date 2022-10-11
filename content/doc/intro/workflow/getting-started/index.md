@@ -20,13 +20,13 @@ resources:
 The world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and secure websites. The Perplex theme is build specifically for this marvelous engine.
 {.p-first} <!--more-->
 
-[Hugo](https://gohugo.io) is a single command line tool for macOS, Windows, Linux and BSD derivatives. A binary for most operating systems and some containers is usually available within a day or a few after every release.
+[Hugo](https://gohugo.io) is a single command line tool for macOS, Windows, Linux and BSD derivatives. Binaries for most operating systems and some containers are usually available within a day or a few after every release.
 
 {{< mnote up=11 >}}
 The [Hugo source](https://github.com/gohugoio/hugo) can be compiled on every machine with a recent [Go environment](https://go.dev).
 {{< /mnote >}}
 
-The [Hugo documentation site][hugodoc] addresses developers mostly and offers detailed and extensive information. Only a small part of it is necessary to produce a professional static website using a fully functional theme.
+The [Hugo documentation site][hugodoc] addresses developers mostly and offers detailed information. Only a small part of the provided knowledge is necessary to produce a professional static website when we are using a fully functional theme.
 
 ## Install Hugo
 
@@ -34,7 +34,7 @@ Please follow the [installation instructions](https://gohugo.io/getting-started/
 
 ## Get Perplex
 
-When you start to get acquainted with Hugo or when you are curious about the source for this site, you can download this documentation project as an example. It’s publicly available on [GitHub]({{< param sourceURL >}}) and ships with all the files for the documentation and a few examples for blog postings and articles.
+When you start to get acquainted with Hugo or when you are curious about the source for this site, you can download this documentation project as an example. It’s available on [GitHub]({{< param sourceURL >}}) and ships with all the files for the documentation and a few examples for blog postings and articles.
 
 ### The documentation project
 
@@ -43,7 +43,7 @@ The folders for the project site are a subset of the standard Hugo folders.
 ```sh {.right .lh15 .hide-mobile}
 ├── assets
 ├── config
-├── content
+└── content
 ```
 
 {$assets}
@@ -56,7 +56,7 @@ The folders for the project site are a subset of the standard Hugo folders.
 : contains all the Markdown files and resources (mostly images).
 {.dl-loose}
 
-The additional {$\_vendor} folder includes a recent copy of the [Perplex theme]({{< param themeURL >}}). The theme is imported as a module, but because its vendored into this folder there is no need for a Go environment.
+The additional {$\_vendor} folder includes a recent copy of the [Perplex theme]({{< param themeURL >}}). The theme is imported as a module, but because of this copy there is no need to provide a Go environment.
 
 #### Project configuration
 
@@ -78,7 +78,7 @@ hugo new site mysite
 
 and get the folder {$mysite} with all the standard folders.
 
-```sh {.right .lh15 .up-8}
+```sh {.right .lh15 .hide-mobile .up-8}
 ├── archetypes
 ├── assets
 ├── config

@@ -89,7 +89,7 @@ Should you stumble upon bad English, typos or wrong phrases, please excuse me. I
 
 [^1]: The concept for a baseline grid has been inspired by [Plumber][plumber]. The vertical alignment is sometimes a few pixels off --- despite precise calculations. This may be noticeable on screens with a lower pixel density --- usually desktop screens. All browser engines seem to face an inevitable trade-off between quality of font rendering and precision of line height.
 
-[^2]: The term _fluid typography_ is falling a bit short here. Perplex is using kind of a responsive fluid design because the whole layout adapts to the width of the browser-window (Also see [this posting]({{< relref "accessibility-of-fluid-typography" >}})).
+[^2]: The term _fluid typography_ is falling a bit short here. Perplex is using a responsive fluid design, the whole layout can adapt to the width of the browser-window (Also see [this posting]({{< relref "accessibility-of-fluid-typography" >}})).
 
 [plumber]: https://jamonserrano.github.io/plumber-sass
 [plex]: https://ibm.com/plex
