@@ -8,6 +8,8 @@ toc: false
 resources:
   - src: nastuh-abootalebi-ZtC4_rPCRXA-unsplash.jpg
     name: featured
+    params:
+      alt: A big office
 lastmod: 2022-07-25T13:40:07.175Z
 ---
 

@@ -13,8 +13,10 @@ weight: 400
 resources:
   - name: featured
     src: brett-jordan-DDupbpu4MS4-unsplash.jpg
+    params:
+      alt: 
 categories: [Theme]
-tags: [Replacements, HTML]
+tags: [HTML, Replacements]
 ---
 
 There are no corresponding elements for some HTML inline tags in Goldmark, Hugo’s Markdown renderer. Perplex offers a set of replacements to use them without enabling insecure raw HTML in Markdown.  

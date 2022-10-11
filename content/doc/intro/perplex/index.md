@@ -15,6 +15,8 @@ tags: [Fluid, Responsive, Layout]
 resources:
   - name: featured
     src: hal-gatewood-tZc3vjPCk-Q-unsplash.jpg
+    params:
+      alt: Page layout wire-frames
 ---
 
 The theme adapts responsively and fluid to modern screens. It’s designed for optimal legibility down to a view-port of {$360px} width.

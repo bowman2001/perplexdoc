@@ -14,6 +14,8 @@ tags: [Inline, Glyphs]
 resources:
   - name: featured
     src: raphael-schaller-GkinCd2enIY-unsplash.jpg
+    params:
+      alt: Movable type for printing letters
 ---
 
 All available glyphs are valid Markdown. The following sections are about the special ones, we can not use directly.

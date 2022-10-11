@@ -17,6 +17,7 @@ resources:
 - name: featured
   src: ashni-Wh9ZC4727e4-unsplash.jpg
   params:
+    alt: Newspaper page with lots of different headings
     hint: text 
     anchor: Bottom
     ratio: 1.1

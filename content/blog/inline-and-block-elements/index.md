@@ -8,6 +8,8 @@ weight: 1
 resources:
   - src: valery-sysoev-p9OkL4yW3C8-unsplash.jpg
     name: featured
+    params: 
+      alt: HTML code on a computer screen
 categories: [Content]
 tags: [Markdown, Block, Inline, Image]
 series: [Images]

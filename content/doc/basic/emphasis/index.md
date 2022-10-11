@@ -15,6 +15,7 @@ resources:
 - name: featured
   src: brett-jordan-vyPVtz5p8D4-unsplash.jpg
   params:
+    alt: The word “Bold” in bold letters
     hint: text
     ratio: 1.5
 ---

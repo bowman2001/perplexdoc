@@ -12,6 +12,10 @@ toc: false
 resources:
 - src: Joerg_Makowski.jpg
   name: featured
+  params:
+    alt: Jörg Makowski in 2018
+    attr: by Elisa Makowski
+    attrlink: http://elisa-makowski.de
 type: profile
 draft: true
 ---

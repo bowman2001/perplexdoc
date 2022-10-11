@@ -16,6 +16,8 @@ tags: [Block, Rule]
 resources:
   - name: featured
     src: miti-WmmcTOe3vqA-unsplash.jpg
+    params:
+      alt: Straight condensation trail behind an airplane
 ---
 
 Sometimes the separation of page segments by space is not clear enough. Then we can add this layout element as an explicit visual separation.
