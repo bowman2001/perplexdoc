@@ -15,6 +15,8 @@ tags: [Block, Inline, Blockquote, Quote]
 resources:
   - name: featured
     src: cj-dayrit-xX2aYSBsyKo-unsplash.jpg
+    params:
+      alt: The quote “All ideas grow out of other ideas” written on a a large stairway
 ---
 
 To quote someone means to recognize her or his thoughts as part of our own. We may agree or disagree, but we should refer to them correctly.

@@ -16,6 +16,7 @@ resources:
   - name: featured
     src: annie-spratt-askpr0s66Rg-unsplash.jpg
     params:
+      alt: A page in a book with a lot of line breaks
       anchor: Center
       hint: text
       ratio: 1.5

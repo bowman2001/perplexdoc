@@ -10,6 +10,8 @@ menu:
 resources: 
   - src: grant-durr-21ztbENjzeI-unsplash.jpg
     name: featured
+    params:
+      alt: The anchor of a ship
 subtitle: false
 title: Anchors
 weight: 320

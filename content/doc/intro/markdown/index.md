@@ -13,9 +13,12 @@ weight: 15
 resources:
 - src: Markdown.svg
   name: featured
+  params:
+    alt: Markdown logo
 - src: erda-estremera-eMX1aIAp9Nw-unsplash.jpg
   name: splash
   params:
+    alt: A splashing drop of water
     size: large
     caption: Self-contained image
 - src: mulyadi-JJMoAiVl9jA-unsplash.jpg

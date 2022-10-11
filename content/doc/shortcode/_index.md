@@ -13,6 +13,8 @@ weight: 500
 resources:
   - name: featured
     src: Hugo.svg
+    params:
+      alt: The Hugo logo
 categories: [Theme]
 tags: [Hugo]
 ---

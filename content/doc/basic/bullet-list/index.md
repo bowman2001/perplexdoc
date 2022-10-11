@@ -15,6 +15,8 @@ tags: [Inline, Bullet list]
 resources:
   - name: featured
     src: torbjorn-helgesen-dz35efCT3ZA-unsplash.jpg
+    params:
+      alt: A small notebook with a bullet list
 ---
 
 A bullet list is an unordered list grouping a set of related items. Any item may contain a sub-list.

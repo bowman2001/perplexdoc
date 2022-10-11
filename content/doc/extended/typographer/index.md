@@ -15,6 +15,8 @@ tags: [Inline, Typographer]
 resources:
   - name: featured
     src: kristian-strand-p8gzCnZf39k-unsplash.jpg
+    params:
+      alt: Some specimen of movable type for printing 
 ---
 
 Simple ASCII punctuation characters are substituted with typographical glyphs.

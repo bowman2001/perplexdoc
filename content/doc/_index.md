@@ -15,6 +15,8 @@ lastmod: 2022-07-25T13:35:45.886Z
 resources:
 - name: featured
   src: jaredd-craig-HH4WBGNyltc-unsplash.jpg
+  params:
+    alt: A levitating book seen through an opening in a wall of books
 ---
 
 

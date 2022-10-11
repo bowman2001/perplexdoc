@@ -15,6 +15,8 @@ tags: [Publish]
 resources: 
   - name: featured
     src: nasa-Q1p7bh3SHj8-unsplash.jpg
+    params:
+      alt: The Gulf of Mexico by night from outer space, the artificial lights are forming a net
 ---
 
 Two basic steps need to be taken to publish a static website: **Build & Deploy**. There are many ways to realize them.

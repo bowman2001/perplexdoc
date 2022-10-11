@@ -14,6 +14,8 @@ toc: false
 resources: 
   - name: featured
     src: rachel-coyne-tImZgkTcCbQ-unsplash.jpg
+    params:
+      alt: An open book with a lot of hand-written notes and a nice flower laying on the left page
 ---
 
 All images in this documentation were made available free of charge by numerous skilled photographers on [Unsplash][unsplash]. Their names and a link to the original source are given in the captions.

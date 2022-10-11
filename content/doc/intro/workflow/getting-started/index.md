@@ -15,6 +15,8 @@ tags: [Hugo, Installation]
 resources: 
   - src: damian-markutt-Dhmn6ete6g8-unsplash.jpg
     name: featured
+    params:
+      alt: Colorful sunrise in the amazing Rätikon Mountain-Range, Switzerland
 ---
 
 The world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and secure websites. The Perplex theme is build specifically for this marvelous engine.

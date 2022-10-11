@@ -14,6 +14,8 @@ weight: 200
 resources:
   - src: Markdown.svg
     name: featured
+    params:
+      alt: Markdown logo
 ---
 
 PHP Markdown Extra and GitHub flavored Markdown (GFM) introduced some widely used extensions to the CommonMark syntax. The following pages briefly recap the syntax for these elements, show their standard layout and alternative options.

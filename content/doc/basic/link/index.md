@@ -14,6 +14,8 @@ tags: [Inline, Link]
 resources: 
   - name: featured
     src: edge2edge-media-t1OalCBUYRc-unsplash.jpg
+    params:
+      alt: A few chain links
 ---
 
 Internet references or short “links” are the binding fabric of the web. Markdown encourages their use by providing simple markup options.

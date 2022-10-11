@@ -10,20 +10,22 @@ menu:
 resources:
 - name: featured
   src: mulyadi-JJMoAiVl9jA-unsplash.jpg
+  params:
+    alt: Splashing ring of water
 - name: normal
   src: normal.svg
-  title: Normal placeholder
   params:
+    alt: Placeholder image, default size
     caption: The default size for an embedded image
 - name: small
   src: small.svg
-  title: Small placeholder
   params:
+    alt: Placeholder image, small size
     caption: A small embedded image
 - name: tiny
   src: tiny.svg
-  title: Tiny placeholder
   params:
+    alt: Placeholder image, tiny size
     caption: Tiny image
 subtitle: false
 title: Images

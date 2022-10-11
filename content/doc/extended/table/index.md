@@ -14,6 +14,8 @@ tags: [Block, Table]
 resources:
   - name: featured
     src: mika-baumeister-Wpnoqo2plFA-unsplash.jpg
+    params:
+      alt: A detail from a large data list
 ---
 
 Markdown tables need some care, because their layout breaks, when the content of one row exceeds the available width.

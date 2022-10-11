@@ -14,6 +14,8 @@ weight: 20
 resources:
   - src: Hugo.png
     name: featured
+    params:
+      alt: Hugo logo
 ---
 
 A short guide from installation over content organization to publishing with Hugo and Perplex.

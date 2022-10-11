@@ -11,7 +11,9 @@ menu:
     pre: short_text
 resources:
   - name: featured
-    src: philipp-berndt-5i0GnoTTjSE-unsplash.jpg
+    src: alevision-co-45sDm4wCOWc-unsplash.jpg
+    params:
+      alt: A natural opening towards the sky from the sea
 categories: [Theme]
 tags: [Standfirst, Paragraph]
 ---

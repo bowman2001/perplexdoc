@@ -13,49 +13,51 @@ menu:
 resources:
   - src: markus-spiske--dbOrdtrR1A-unsplash.jpg
     name: featured
+    params:
+      alt: Some HTML figure tags on a computer screen
   - src: fig/tiny.svg
     name: tiny
-    title: Tiny placeholder
     params:
+      alt: Placeholder image, tiny size
       size: tiny
       posh: right
       caption: Tiny figure on the right
   - src: fig/small.svg
     name: small
-    title: Small placeholder
     params:
+      alt: Placeholder image, small size
       size: small 
       posh: left
   - name: small-portrait
     src: fig/small_portrait.svg
-    title: Small portrait placeholder
     params:
+      alt: Placeholder image, default portrait size
       posh: left
   - name: small-portrait-right
     src: fig/small_portrait_right.svg
-    title: Small portrait placeholder
     params:
+      alt: Placeholder image, small portrait size
       posh: right
   - src: fig/medium.svg
     name: medium
-    title: Placeholder
     params:
+      alt: Placeholder image, medium size
       size: medium 
       posh: right
   - src: fig/large.svg
     name: large
-    title: Placeholder
     params:
+      alt: Placeholder image, large size
       size: large
   - src: fig/extra-large.svg
     name: xlarge
-    title: Placeholder
     params:
       size: xlarge
+      alt: Placeholder image, extra large size
   - src: mathias-konrath-JHb-UFfNOhI-unsplash.jpg
     name: mathias
-    title: Skyline of Frankfurt
     params:
+      alt: Skyline of Frankfurt am Main
       size: large
       attr: Mathias Konrath / Unsplash
       attrlink: https://unsplash.com/@konni

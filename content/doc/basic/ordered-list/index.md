@@ -15,6 +15,8 @@ tags: [Block, Ordered List]
 resources:
   - name: featured
     src: jan-antonin-kolar-lRoX0shwjUQ-unsplash.jpg
+    params: 
+      alt: An old wooden library database
 ---
 
 Ordered lists group related items and mark them with ascending counters. They provide a very clear structure but are tedious to read when they get too long. Consider to insert a normal paragraph or another block element in between the items of a long list.

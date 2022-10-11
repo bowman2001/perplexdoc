@@ -13,6 +13,8 @@ menu:
 resources:
   - src: ales-nesetril-Im7lZjxeLhg-unsplash.jpg
     name: featured
+    params:
+      alt: A half open glowing computer notebook
 categories: [Workflow, Theme]
 tags: [Hugo]
 ---
@@ -38,8 +40,8 @@ The pages are rendered into the memory and the site is served under <http://loca
 
 - The flag `--navigateToChanged` tells the server to relay the page of the last changed file to the browser. As soon as we save a file the corresponding page pops up in the browser.
 
-### Disable fast auto-save {.h-tip .h-p}
-Some editors are saving our work so fast, that nearly every keystroke leads to a regeneration of the corresponding page. And when we are in the process of changing sensitive content like front-matter parameters we can easily bring down Hugo’s server, because Hugo won’t process inconsistent files. Then we have to restart the server, which is not a big deal, but gets annoying after a while. It’s better to set the auto-save to a longer duration. This lets us save consistent versions of our work manually and check the result.
+### Set a reasonable auto-save delay {.h-tip .h-p}
+Some editors are saving our work so fast by default, that nearly every keystroke leads to a new file version and the regeneration of the corresponding page. When we are in the process of changing sensitive content like front-matter parameters this can easily bring down Hugo’s server, because Hugo can’t process inconsistent files. Then we have to restart the server, which is not a big deal, but gets annoying after a while. It’s better to set the auto-save delay to a value, which lets us save consistent file versions.
 
 ## Adding your first content {#first}
 

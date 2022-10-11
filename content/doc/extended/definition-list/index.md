@@ -15,6 +15,8 @@ tags: [Block, Definition List]
 resources:
   - name: featured
     src: sandy-millar-Kl4LNdg6on4-unsplash.jpg
+    params: 
+      alt: A few entries in a printed dictionary
 ---
 
 Definition lists consist of **terms** as list markers, which are associated with **details** in the list entries.
