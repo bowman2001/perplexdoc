@@ -19,7 +19,7 @@ resources:
 Its an essential feature of Hugo to enable the production of secure websites while using a workflow, which is itself as secure as possible.
 {.p-first} <!--more-->
 
-The Hugo project has outlined its [**security model**][hugo] at the beginning of its documentation.
+The Hugo project is putting a strong focus on security issues and has outlined its [**security model**][hugo] at the beginning of the documentation.
 
 Hugo allows by default to call a few much needed external binaries at runtime. When we want to include external content as a module for example, we need to enable the use of the Golang environment, which provides secure handling of dependencies. To generate our CSS with the Dart-Sass preprocessor, we need to call its embedded binary. To post-process our CSS-stylesheets we may like to call the PostCSS CLI, which is a node package and includes a lot of other node packages. It’s sometimes even convenient to let Hugo call an editor.
 

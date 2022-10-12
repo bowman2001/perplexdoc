@@ -14,6 +14,8 @@ weight: 600
 resources:
   - name: featured
     src: roman-skrypnyk-fFW_xTie9Ik-unsplash.jpg
+    params:
+      alt: Double-page of an old magazine with fancy text layout on the left and a picture of the boxer Muhammad Ali on the right
 ---
 
 **Perplex** generates all page elements from meta-data parameters. We can provide page specific data in the front-matter and global data in the project configuration.

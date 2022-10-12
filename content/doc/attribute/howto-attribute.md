@@ -11,9 +11,11 @@ menu:
 subtitle: false
 title: How to use them?
 weight: 310
+categories: [Theme, Hugo]
+tags: [Attribute]
 ---
 
-Hugo’s attributes are plain HTML attributes, which are injected from Markdown into the rendered HTML.
+Hugo’s attributes are plain HTML attributes getting injected from the Markdown source into the rendered HTML.
 {.p-first} <!--more-->
 
 Attributes are available for all kinds of **blocks**, for **headings** and for **fenced code blocks**. We can allow them for blocks and headings in the configuration section for the Goldmark parser, where the parameter {$title} relates to all heading levels. They are by default disabled for blocks and enabled for headings. They are [all enabled]({{< relref "markup#19" >}}) for this documentation.

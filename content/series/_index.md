@@ -5,4 +5,6 @@ weight: 10
 resources:
   - src: ali-shah-lakhani-dwbzzB03gUE-unsplash.jpg
     name: featured
+    params:
+      alt: A series of issues from the same magazine 
 --- 

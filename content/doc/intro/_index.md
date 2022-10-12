@@ -14,6 +14,8 @@ weight: 10
 resources:
   - name: featured
     src: jon-tyson-6_SA8qzmzx8-unsplash.jpg
+    params:
+      alt: "Red glowing neon letters: “Ready or Not”"  
 ---
 
 Perplex is a theme with advanced typographical layout capabilities for the static site generator Hugo.

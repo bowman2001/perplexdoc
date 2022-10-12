@@ -29,7 +29,7 @@ Perplex includes the following replacement codes and styles them:
 | Keyboard    |    {‍#K}     |    {#K}     |
 | Variable    | {‍$variable} | {$variable} |
 | Mark        |   {‍!mark}   |   {!mark}   |
-| Citation    |  {‍=author}  |  {=author}  |
+| Citation    |  {‍=work}  |  {=work}  |
 | Insertion   |  {‍+insert}  |  {+insert}  |
 | Line Break  |     a{‍/}b     |     a{/}b     |
 

@@ -38,25 +38,25 @@ The documentation
 ## Fonts and icon fonts
 
 [IBM Plex fonts](https://www.ibm.com/plex/)
-: have been released by {=IBM} to the public under the [Open Font License (OFL)](https://github.com/IBM/plex/blob/master/LICENSE.txt).
+: have been released by IBM to the public under the [Open Font License (OFL)](https://github.com/IBM/plex/blob/master/LICENSE.txt).
 
 [Material Icons](https://fonts.google.com/icons)
-: have been released by {=Google} to the public under the [Apache 2.0 License](https://github.com/google/material-design-icons/blob/master/LICENSE).
+: have been released by Google to the public under the [Apache 2.0 License](https://github.com/google/material-design-icons/blob/master/LICENSE).
 {.dl-loose}
 
 ## Javascript libraries
 
 [Lazysizes](https://github.com/aFarkas/lazysizes)
-: has been released to the public by [{=Alexander Farkas}](https://github.com/aFarkas) under the [MIT License](https://github.com/aFarkas/lazysizes/blob/gh-pages/LICENSE).
+: has been released to the public by [Alexander Farkas](https://github.com/aFarkas) under the [MIT License](https://github.com/aFarkas/lazysizes/blob/gh-pages/LICENSE).
 {.dl-loose}
 
 ## Optional software
 
 [KaTeX][katex]
-: has been released by [{=Emily Eisenberg}](https://github.com/xymostech), [{=Sophie Alpert}](https://github.com/sophiebits) and contributors under the [MIT License](https://github.com/KaTeX/KaTeX/blob/main/LICENSE).
+: has been released by [Emily Eisenberg](https://github.com/xymostech), [Sophie Alpert](https://github.com/sophiebits) and contributors under the [MIT License](https://github.com/KaTeX/KaTeX/blob/main/LICENSE).
 
 [Mermaid][mermaid]
-: has been released by [{=Knut Sveidqvist}](https://github.com/knsv) and contributors under the [MIT License](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE).
+: has been released by [Knut Sveidqvist](https://github.com/knsv) and contributors under the [MIT License](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE).
 {.dl-loose}
 
 ## Logos and pictures

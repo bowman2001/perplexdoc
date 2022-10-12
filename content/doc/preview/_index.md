@@ -14,6 +14,8 @@ menu:
 resources: 
   - src: rebecca-li-JahHqUiXlig-unsplash.jpg
     name: featured
+    params:
+      alt: A hand slides a few cords to the side and opens a view to the beach
 categories: [Theme]
 tags: [Markdown]
 draft: true

@@ -15,6 +15,8 @@ resources:
 subtitle: false
 title: Anchors
 weight: 320
+categories: [Theme, Hugo]
+tags: [Attribute]
 ---
 
 It's easy to manually add anchors to any block element with an identifier attribute and to reference them with a Markdown link.  

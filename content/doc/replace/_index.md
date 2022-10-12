@@ -14,7 +14,7 @@ resources:
   - name: featured
     src: brett-jordan-DDupbpu4MS4-unsplash.jpg
     params:
-      alt: 
+      alt: Scrabble stones forming the word “Substitut” short of an ‘e’
 categories: [Theme]
 tags: [HTML, Replacements]
 ---
