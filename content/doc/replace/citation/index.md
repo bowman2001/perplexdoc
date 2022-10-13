@@ -18,4 +18,3 @@ resources:
 
 The `<cite>` tag has changed its purpose over time. It has been used to mark the name of authors, but today it should mark the name of  creative works like books, articles or other websites.
 {.p-first}<!--more-->
-
