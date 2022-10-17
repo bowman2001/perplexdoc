@@ -51,9 +51,11 @@ Embedding an image is syntactically similar to placing a [link]({{< relref "doc/
  ![Name](image.jpg)
  ```
 
-The name of the image element inside the square brackets `[]` is used as alternative text[^1] in case the browser can't display the image and is mandatory.
+The name of the image element inside the square brackets `[]` is used as alternative text[^1] in case the browser can't display the image.
 
-This syntax is preferable when the relative path name is short — like for images in a [Hugo page bundle]({{< relref "doc/intro/workflow/content#page-bundles" >}}).
+{{< mnote up=11 >}}
+We should always provide an alternative text. Perplex allows to specify an `alt` parameter in the resource meta-data. If we do, we can leave the brackets empty or override the resource parameter.
+{{< /mnote >}}
 
 ### Reference notation
 
@@ -77,18 +79,23 @@ This syntax is especially convenient, when an image is used more than once or wh
 
 ### Passing parameters
 
-Markdown images can’t handle more parameters than the ones mentioned above. To offer layout options, Perplex includes additional parameters for the images. All of them can be given as resource meta-data in the front-matter. The parameters changing the layout, can alternatively be added directly to the image resource name as query string.
+Markdown can’t handle more image parameters than the ones mentioned here. To offer layout variations, Perplex includes additional parameters for the images with the help of Hugo. All of them can be given as resource meta-data in the front-matter. Alternatively we can change layout parameters directly in the Markdown by adding a query string to the image name.
 
 #### Resource meta-data
 
-| Parameter | Identifier | Possible values |
+| Parameter | Key | Values |
 |:---------|:----------|:---------|
 | Alternate text | alt | Plain string |
 | Attribution | attr | Inline Markdown string |
 | Attribution link | attrlink | URL |
 | Caption | caption | Inline Markdown string |
 | Class | class | CSS class names |
-| TODO: Finish |
+| Link | link | URL |
+| Horiz. position | posh | {{% parameters imaging.embedded.posh %}} |
+| Vert. position | posv | {{% parameters imaging.embedded.posv %}} |
+| Related | rel | See [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) |
+| Size | size | {{% parameters imaging.embedded.size %}} |
+| Target | target | {{% parameters link.target %}} |
 
 #### In place query string
 
@@ -96,56 +103,52 @@ Markdown images can’t handle more parameters than the ones mentioned above. To
 https://name.org?id=val&id2=val2
 ```
 
-The syntax for query strings has been introduced to extend URLs with optional parameters. The start of every query string is marked by an interrogation mark `?`. Then follows a short parameter key, the equal sign `=` and the parameter value. Consecutive key-value pairs a separated by an ampersand `&`.
+The syntax for query strings has been introduced to extend URLs with optional parameters. The start of every query string is marked by an interrogation mark `?`. Then follows a short parameter key, the equal sign `=` and the parameter value. Consecutive key-value pairs are separated by an ampersand `&`.
 
 {{< mnote up=17 >}}
-These query strings are usually meant to be generated automatically to specify API requests. 
+These query strings are usually generated automatically to specify API requests. The idea to use their well established syntax to pass on layout parameters goes back to a suggestion by Joe Mooring in the Hugo forum.
 {{< /mnote >}}
 
-We are using the syntax here for the few layout parameters, which tend to change more often in the process of content creation. We can specify the size and the position of an image like:
+We are using the syntax here for the few layout parameters, which tend to change more often in the process of content creation. We can only specify the size and the position of an image like:
 
 ```md
 ![Alternative text](image.jpg?size=small&posh=right)
 ```
 
-| Parameter | Key | Possible values |
+| Parameter | Key | Values |
 |:----|:----|:----|
 | Size | size (s) | {{% parameters imaging.embedded.size %}} |
 | Horiz. position | posh (ph) | {{% parameters imaging.embedded.posh %}} |
 | Vert. position | posv (pv) | {{% parameters imaging.embedded.posv %}} |
 
-## Image resolution
+##### Override {.h-info}
 
-Perplex relies on Hugo’s powerful image processing capabilities. Many different sized versions of every image are generated automatically, so every client browser can pick the optimal size to display.
+When these parameters are already defined in the resource section of the front-matter, the in-place parameters will override them.
 
-{{< mnote up=14 >}}
-When we build a project with many images — like this one or example — we have to show a little patience in the beginning. Image processing may take a few minutes. The generated images are cached by Hugo and we don’t have to wait again in subsequent runs.
+## Resolution
+
+Perplex relies on Hugo’s powerful image processing capabilities. Many different sized versions of every image are generated automatically, so every client browser can pick the optimal size to display. We don’t have to worry about the sizes, but we should supply a large enough original image. For crisp embedded images in the default size, the originals should have a width of at least {${{< colwidth 3 >}}} to allow triple density on screens with high resolution.
+
+{{< mnote up=20 >}}
+When we build a project with many images — like this one or example — we have to show a little patience in the beginning. Image processing may take a few minutes. The generated images are then cached by Hugo and we don’t have to wait again in subsequent runs. When you are using external builds, you should enable caching or include the {$resources} folder in your repository.
 {{< /mnote >}}
 
-The For good results, the original images should have a width of at least {{< imagewidth 2 >}} to allow double density on screens with a high resolution.
+In case we can’t provide a large enough version of an image, Perplex uses an [excellent interpolation filter][filter] provided by Hugo to enhance its size. Interpolated images may look blurry, there is nothing we can do about that.
 
 ## Layout
 
-Perplex embeds every image **as a float** into the containing paragraph. The most obvious place is _at the beginning_ of paragraph. But we may want to place images also _in the middle_ of a paragraph. In both cases following paragraphs may have to flow around the image, too, when the containing paragraph is not very long.
+Perplex embeds every image **as a float** into the containing text block by default. The default is the most common choice **at the beginning** of the block. But we may want to place images also **in the middle**. In both cases following blocks may have to flow around the image, too, when the containing one is short.
 
-{{< mnote up=14 >}}
-A self-contained image element is treated by Markdown like a paragraph with the image as the sole content inside. The HTML `<img>`-tag is an inline element in need of a block element as container.
-{{< /mnote >}}
+### At the beginning
 
-### The best way {.h-p .h-tip}
-
-to deal with self-contained images in Perplex is to use the [_figure_-shortcode]({{< relref "figure" >}}), that includes the image.
-
-### At the beginning of a paragraph
-
-This is the most common place for an embedded image. By default its placed embedded on the left, if the screen is wide enough.
+This is the most common place for an embedded image. By default its placed on the left, if the screen is wide enough.
 
 #### Default size
 
 ![](normal) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 {.blind .blind-right}
 
-![](normal?pos=right) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+![](normal?posh=right) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 {.blind .blind-left}
 
 #### Small size
@@ -153,7 +156,7 @@ This is the most common place for an embedded image. By default its placed embed
 ![](small?size=small) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life.
 {.blind}
 
-![](small?pos=right&size=small) Far, far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life.
+![](small?posh=right&size=small) Far, far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life.
 {.blind}
 
 #### Tiny size
@@ -161,10 +164,10 @@ This is the most common place for an embedded image. By default its placed embed
 ![](tiny?s=tiny) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
 {.blind}
 
-![](tiny?s=tiny&p=right) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+![](tiny?s=tiny&ph=right) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
 {.blind}
 
-### In the middle of a paragraph
+### In the middle
 
 #### Default
 
@@ -179,7 +182,7 @@ Far, far away, behind the word mountains, far from the countries Vokalia and Con
 
 #### Small
 
-Far, far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. ![](small?size=small&posv=middle) A small river named Duden flows by their place and supplies it with the necessary regelialia.
+Far, far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. ![](small?s=small&pv=middle) A small river named Duden flows by their place and supplies it with the necessary regelialia.
 
  Far, far away, behind the word mountains, far from the countries Vokalia and Consonantia. ![](small?ph=right&pv=middle&s=small) Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life.
 {.blind}
@@ -193,6 +196,20 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 
 ## Fallback to full width
 
+When your content already relies on self-contained Markdown images, it will take some time to restructure them. Because their default layout in Perplex will be broken—the default layout is only half the size of the main text column—we have a fallback.
+
+{{< mnote up=14 >}}
+A self-contained image element is treated by Markdown like a paragraph with the image as the sole content inside. The HTML `<img>`-tag is an inline element in need of a block element as container. When we use the [{$figure}-shortcode]({{< relref "figure" >}}) for self-contained images, we can also make them bigger than the main text column or place them on the sides.
+{{< /mnote >}}
+
+We can set the configuration parameter `embedFull` to `true` in the site configuration to use it for all images. We can also place this parameter in the front-matter of specific pages. Or we can set the size of a specific image to `full`, which is probably only useful for this demonstration:
+
+```md
+![A surreal colored corridor](efe-kurnaz-RnCPiXixooY-unsplash.jpg?size=full)
+```
+
 ![A surreal colored corridor](efe-kurnaz-RnCPiXixooY-unsplash.jpg?size=full)
 
 [^1]: for the `alt`-attribute.
+
+[filter]: https://gohugo.io/content-management/image-processing/#resampling-filter
