@@ -48,13 +48,13 @@ Embedding an image is syntactically similar to placing a [link]({{< relref "doc/
 ### Short inline notation
 
  ```md {.left}
- ![Name](image.jpg)
+ ![Alternative Text](image.jpg)
  ```
 
-The name of the image element inside the square brackets `[]` is used as alternative text[^1] in case the browser can't display the image.
+The alternative text inside the square brackets `[]` is used by screen readers, pure text browsers and search engines.
 
 {{< mnote up=11 >}}
-We should always provide an alternative text. Perplex allows to specify an `alt` parameter in the resource meta-data. If we do, we can leave the brackets empty or override the resource parameter.
+We should always provide an alternative text. Perplex also allows to specify an `alt` parameter in the resource meta-data, when we reference an image there. In that case, we have two options: We can leave the brackets empty or override this resource parameter.
 {{< /mnote >}}
 
 ### Reference notation
@@ -85,7 +85,7 @@ Markdown can’t handle more image parameters than the ones mentioned here. To o
 
 | Parameter | Key | Values |
 |:---------|:----------|:---------|
-| Alternate text | alt | Plain string |
+| Alternative text | alt | Plain string |
 | Attribution | attr | Inline Markdown string |
 | Attribution link | attrlink | URL |
 | Caption | caption | Inline Markdown string |
