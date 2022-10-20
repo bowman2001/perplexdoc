@@ -87,7 +87,7 @@ There is one image element in Markdown for embedding an image into a block eleme
 
 To surround every self-contained Markdown image element with a paragraph — like CommonMark proposes and Hugo does — leads to a simple working solution, when the layout treats all images alike.
 
-![splash](splash2) But Perplex styles the Markdown image element embedded in text blocks as a float by default. Perplex also offers layout variations for both kinds of images. That's why you should use the  [figure]({{< relref "figure" >}})-shortcode for self-contained images and the Markdown image element only for [embedded ones][img], if you start fresh with Perplex. For users with existing content, which relies on the img-element for all pictures, there is a fallback parameter [TODO].
+![splash](splash2) But Perplex styles the Markdown image element embedded in text blocks as a float by default. Perplex also offers layout variations for both kinds of images. That's why you should use the  [figure]({{< relref "figure" >}})-shortcode for self-contained images and the Markdown image element only for [embedded ones][img], if you start fresh with Perplex. For users with existing content, which relies on the img-element for all pictures, there is a fallback parameter.
 
 ### How to wrap lines? {#wrap .clear}
 
@@ -135,7 +135,7 @@ Most programming editors and IDEs support Markdown out of the box or provide plu
 
 Some special editors are designed exclusively for authoring Markdown. They usually offer a graphical user interface and other convenient features. But none of them is a perfect match for writing Markdown for Hugo and Perplex, because they don’t support all kinds of attributes and can’t handle Hugo shortcodes — as far as I know. They are dealing gracefully with these elements most of the time, but occasionally they don't.
 
-Many of these editors offer a convenient separate _preview window_. With Hugo you have an even better option: When you run it as a server on your local computer, it will render your Markdown and deliver it to your browser instantly (see [Using Hugo](/doc/intro/workflow/local-server). My personal solution is either an IDE or a programming editor in conjunction with Hugo’s server mode.
+Many of these editors offer a convenient separate preview window. With Hugo you have an even better option: When you run it as a server on your local computer, it will render your Markdown and deliver it to your browser instantly (see [Using Hugo](/doc/intro/workflow/local-server). My personal solution is either an IDE or a programming editor in conjunction with Hugo’s server mode.
 
 ## Markdown Linter
 CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing. For this project the default settings are modified in the configuration file [`.markdownlint.yaml`][mlintconf] at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.  
