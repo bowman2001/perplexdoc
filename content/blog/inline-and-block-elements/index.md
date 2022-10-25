@@ -15,7 +15,7 @@ tags: [Markdown, Block, Inline, Image]
 series: [Images]
 ---
 
-Markdown only has two basic layout modes: **inline & block**. Before we think about applying others with an attribute or a shortcode, we need to understand them.
+Markdown only  two basic layout modes: **inline & block**. Before we think about applying others with an attribute or a shortcode, we need to understand them.
 {.p-first} <!--more-->
 
 The distinction between those two in Markdown seems simple. Every block is surrounded by at least one blank line. Everything written on the same or the directly following line is inline --- except lists and their items. We usually don’t need to think about layout modes and use them intuitively correct. One problematic element is the main reason to recall the distinction:  

@@ -73,8 +73,6 @@ Two basic Markdown elements are continuously creating confusion, because they ar
     2. Treat hard line wraps as hard line wraps like GFM.
 {.dl-loose}
 
-[^TODO]: Explain this continuation indent for description lists.
-
 The following suggestions for these elements are short. Their issues are discussed in more detail on their own pages.
 
 [^1]: The corresponding  `<img/>` tag is an HTML inline element and needs an enclosing block element to become valid HTML 5.
