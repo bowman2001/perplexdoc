@@ -28,32 +28,41 @@ resources:
       alt: Placeholder image, small size
       size: small 
       posh: left
+      caption: Small on the left
+      attr: GM
   - name: small-portrait
     src: fig/small_portrait.svg
     params:
-      alt: Placeholder image, default portrait size
-      posh: left
-  - name: small-portrait-right
-    src: fig/small_portrait_right.svg
-    params:
       alt: Placeholder image, small portrait size
-      posh: right
+      size: small
+      posh: left
+      attr: GM
   - src: fig/medium.svg
     name: medium
     params:
       alt: Placeholder image, medium size
       size: medium 
       posh: right
+      attr: GM
+  - src: fig/normal.svg
+    name: normal
+    params:
+      alt: Placeholder image, normal size
+      size: normal
+      posh: left
+      attr: GM
   - src: fig/large.svg
     name: large
     params:
       alt: Placeholder image, large size
       size: large
+      attr: GM
   - src: fig/extra-large.svg
     name: xlarge
     params:
       size: xlarge
       alt: Placeholder image, extra large size
+      attr: gm
   - src: mathias-konrath-JHb-UFfNOhI-unsplash.jpg
     name: mathias
     params:
@@ -99,39 +108,39 @@ You’ll find the syntax for Hugo’s built-in `figure` in the [docs][hugofig]. 
 
 ## Layout
 
-### Tiny
-
-{{< figure src="tiny" pos="left" caption="Named parameter" />}}
-
-{{< figure tiny />}}
-
-{{< farfar 2 >}}
-
 ### Small
 
-{{< figure small-portrait-right />}}
-
-{{< farfar 2 >}}
-
-{{< figure small />}}
+{{< figure src="small-portrait" posh="right" >}}
+Small portrait figure on the right
+{{< /figure >}}
 
 {{< farfar 1 >}}
+
+{{< figure small >}}
+Small figure on the left (default horizontal position)
+{{< /figure >}}
+
+{{< farfar 2 >}}
 
 ### Medium
 
 {{< figure medium >}}
-This size is the default for images with a landscape ratio.
+This size is a good choice for images with a landscape ratio.
 {{< /figure >}}
 
-{{< farfar 3 >}}
+{{< farfar 2 >}}
 
-### Large (default)
+### Normal
 
-{{< figure large />}}
+{{< figure normal >}}
+The **default** normal size is using the full text width. If the margin is available, the caption is placed there.
+{{< /figure >}}
 
-### Extra large
+### Large
 
-{{< figure xlarge />}}
+{{< figure large >}}
+In the documentation layout the large size fills the text width and the margin. The text of the caption is constrained to the text width.
+{{< /figure>}}
 
 ### Large
 

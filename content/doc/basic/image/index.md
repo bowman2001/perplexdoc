@@ -77,11 +77,13 @@ This syntax is especially convenient, when an image is used more than once or wh
 **The optional title** for an image gets displayed, when a mouse pointer hovers over the image. Consider that many touch-screen devices don't have one. The image title shouldn’t contain very important information.
 {{< /mnote >}}
 
-### Passing parameters
+### Passing extra parameters
 
-Markdown can’t handle more image parameters than the ones mentioned here. To offer layout variations, Perplex includes additional parameters for the images with the help of Hugo. All of them can be given as resource meta-data in the front-matter. Alternatively we can change layout parameters directly in the Markdown by adding a query string to the image name.
+Markdown can’t handle more image parameters than the ones mentioned above. To offer layout variations, Perplex can handle additional parameters with the help of Hugo. All of them can be given as resource meta-data in the front-matter. Alternatively we can change some layout parameters directly in the Markdown by adding parameters to the image name.
 
 #### Resource meta-data
+
+We can specify these parameters with the given types of values:
 
 | Parameter | Key | Values |
 |:---------|:----------|:---------|
@@ -97,23 +99,21 @@ Markdown can’t handle more image parameters than the ones mentioned here. To o
 | Size | size | {{% parameters imaging.embedded.size %}} |
 | Target | target | {{% parameters link.target %}} |
 
-#### In place query string
+#### Adding parameters in-place
 
-```sh {.left}
-https://name.org?id=val&id2=val2
-```
-
-The syntax for query strings has been introduced to extend URLs with optional parameters. The start of every query string is marked by an interrogation mark `?`. Then follows a short parameter key, the equal sign `=` and the parameter value. Consecutive key-value pairs are separated by an ampersand `&`.
-
-{{< mnote up=17 >}}
-These query strings are usually generated automatically to specify API requests. The idea to use their well established syntax to pass on layout parameters goes back to a suggestion by Joe Mooring in the Hugo forum.
-{{< /mnote >}}
-
-We are using the syntax here for the few layout parameters, which tend to change more often in the process of content creation. We can only specify the size and the position of an image like:
+We can use a special syntax to set the few layout parameters, which tend to change more often in the process of content creation. The size and the position of an image can be specified like:
 
 ```md
 ![Alternative text](image.jpg?size=small&posh=right)
 ```
+
+The start of every name extension is marked by an interrogation mark `?`. Then follows a short parameter key, the equal sign `=` and the parameter value. Consecutive key-value pairs are separated by an ampersand `&`.[^1]
+
+{{< mnote up=17 >}}
+The idea to use the well established syntax for query strings goes back to a suggestion by Joe Mooring in the Hugo forum.
+{{< /mnote >}}
+
+We can specify a few parameters to a given set of values:
 
 | Parameter | Key | Values |
 |:----|:----|:----|
@@ -121,19 +121,21 @@ We are using the syntax here for the few layout parameters, which tend to change
 | Horiz. position | posh (ph) | {{% parameters imaging.embedded.posh %}} |
 | Vert. position | posv (pv) | {{% parameters imaging.embedded.posv %}} |
 
-##### Override {.h-info}
+[^1]: The syntax for **query strings** has been introduced to extend URLs with optional parameters like `https://name.org?id=val&id2=val2`. They are usually generated automatically to specify API requests.
 
-When these parameters are already defined in the resource section of the front-matter, the in-place parameters will override them.
+##### Overriding resource parameters {.h-info}
+
+When the given parameters are already defined in the resource section of the front-matter, the in-place parameters will override them.
 
 ## Resolution
 
-Perplex relies on Hugo’s powerful image processing capabilities. Many different sized versions of every image are generated automatically, so every client browser can pick the optimal size to display. We don’t have to worry about the sizes, but we should supply a large enough original image. For crisp embedded images in the default size, the originals should have a width of at least {${{< colwidth 3 >}}} to allow triple density on screens with high resolution.
+Perplex relies on Hugo’s powerful image processing capabilities. Many different sized versions of every image are generated automatically, so every client browser can pick the optimal size to display. We don’t have to worry about all these sizes, but we should supply a large enough original image. For crisp embedded images in the default size, the originals should have a width of at least {${{< colwidth 3 >}}} to allow triple density on screens with high resolution.
 
 {{< mnote up=20 >}}
-When we build a project with many images — like this one or example — we have to show a little patience in the beginning. Image processing may take a few minutes. The generated images are then cached by Hugo and we don’t have to wait again in subsequent runs. When you are using external builds, you should enable caching or include the {$resources} folder in your repository.
+When we build a project with many images — like this one or example — we have to show a little patience in the beginning. Image processing may take a few minutes. The generated images are cached by Hugo and we don’t have to wait again in subsequent runs. For builds on virtual machines, you should enable a caching mechanism.
 {{< /mnote >}}
 
-In case we can’t provide a large enough version of an image, Perplex uses an [excellent interpolation filter][filter] provided by Hugo to enhance its size. Interpolated images may look blurry, there is nothing we can do about that.
+In case we can’t provide a large enough version of an image, Perplex uses an [excellent interpolation filter][filter] provided by Hugo to enlarge its size smoothly. Those interpolated images may look blurry nonetheless, a high resolution of the original is always preferable.
 
 ## Layout
 
@@ -209,7 +211,5 @@ We can set the configuration parameter `embedFull` to `true` in the site configu
 ```
 
 ![A surreal colored corridor](efe-kurnaz-RnCPiXixooY-unsplash.jpg?size=full)
-
-[^1]: for the `alt`-attribute.
 
 [filter]: https://gohugo.io/content-management/image-processing/#resampling-filter
