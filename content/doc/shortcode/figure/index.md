@@ -94,17 +94,23 @@ Should we miss the self-closing slash, Hugo cannot warn us. It will treat the fo
 
 You’ll find the syntax for Hugo’s built-in `figure` in the [docs][hugofig]. The Perplex version offers the same set of named parameters.  Because it tends to get very long and error-prone, Perplex offers an alternative syntax using Hugo’s page resources.
 
-### Class Attributes
+##### Resource meta-data
 
-| Attribute(s) | Mobile                      | Two columns                 | &ge; Three columns              |
-|:-------------|-----------------------------|:----------------------------|:--------------------------------|
-| tiny         | {^1}&frasl;{_2} float right | {^1}&frasl;{_2} float right | {^1}&frasl;{_2} float right     |
-| small        | full                        | 1 float right               | 1 float right                   |
-| small left   | full                        | 1 float left                | 1 float left                    |
-| medium       | full                        | full                        | 1{^1}&frasl;{_2} float right                   |
-| large        | full                        | full                        | 2 left                          |
-| large right  | full                        | full                        | 2 float right                   |
-| xlarge       | full                        | full                        | full                            |
+We can specify the following parameters with the given keys and types of values:
+
+| Parameter | Key | Values |
+|:---------|:----------|:---------|
+| Alternative text | alt | Plain string |
+| Attribution | attr | Inline Markdown string |
+| Attribution link | attrlink | URL |
+| Caption | caption | Inline Markdown string |
+| Class | class | CSS class names |
+| Link | link | URL |
+| Horiz. position | posh | {{% parameters imaging.embedded.posh %}} |
+| Vert. position | posv | {{% parameters imaging.embedded.posv %}} |
+| Related | rel | See [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) |
+| Size | size | {{% parameters imaging.embedded.size %}} |
+| Target | target | {{% parameters link.target %}} |
 
 ## Layout
 
@@ -114,18 +120,18 @@ You’ll find the syntax for Hugo’s built-in `figure` in the [docs][hugofig]. 
 Small portrait figure on the right
 {{< /figure >}}
 
-{{< farfar 1 >}}
+{{< farfar 2 >}}
 
 {{< figure small >}}
 Small figure on the left (default horizontal position)
 {{< /figure >}}
 
-{{< farfar 2 >}}
+{{< farfar 1 >}}
 
 ### Medium
 
 {{< figure medium >}}
-This size is a good choice for images with a landscape ratio.
+This size is a good choice for images with a landscape ratio. On smaller screens with only two columns its displayed like a small image.
 {{< /figure >}}
 
 {{< farfar 2 >}}

@@ -83,7 +83,7 @@ Markdown can’t handle more image parameters than the ones mentioned above. To 
 
 #### Resource meta-data
 
-We can specify these parameters with the given types of values:
+We can specify the following parameters with the given keys and types of values:
 
 | Parameter | Key | Values |
 |:---------|:----------|:---------|
