@@ -145,7 +145,7 @@ The **default** normal size is using the full text width. If the margin is avail
 ### Large
 
 {{< figure large >}}
-In the documentation layout the large size fills the text width and the margin. The text of the caption is constrained to the text width.
+In the documentation layout the large size fills the text width and the right margin. The text of the caption is constrained to the text width. The attribution is placed in the right margin an on the right as usual.
 {{< /figure>}}
 
 ### Large
