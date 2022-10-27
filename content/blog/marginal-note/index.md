@@ -30,9 +30,9 @@ The famous mathematician Fermat wrote his last conjecture around 1637 in the mar
 
 {{< figure wiles />}}
 
-The proof has been considered generally inaccessible until Sir Andrew John Wiles publicly announced a very complicated one in 1993 after seven years of ground-breaking work. Only a few mathematicians were able to follow him and found out, that his first version did contain some errors. Wiley finally published an acceptable version in 1995 --- a break-through in number theory which won him a few prizes.  
+The proof has been considered generally inaccessible until Sir Andrew John Wiles publicly announced one in 1993 after seven years of ground-breaking work. A few mathematicians were able to follow him and found out, that his first promising version still contained some flaws. Wiley finally published a completely convincing version in 1995 --- a break-through in number theory which won him a few prizes.  
 
-His proof is still inaccessible even to many mathematicians. But the ancient proof by Diophantus’ and Fermat’s conjecture are relatively easy to follow in the English translation:  
+His proof is so complicated, that its still inaccessible --- even to many mathematicians. But the ancient proof by Diophantus’ and Fermat’s original conjecture are relatively easy to follow in the English translation:  
 
 > To divide a given square into a sum of two squares.
 >
