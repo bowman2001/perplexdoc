@@ -15,13 +15,6 @@ resources:
     name: featured
     params:
       alt: Some HTML figure tags on a computer screen
-  - src: fig/tiny.svg
-    name: tiny
-    params:
-      alt: Placeholder image, tiny size
-      size: tiny
-      posh: right
-      caption: Tiny figure on the right
   - src: fig/small.svg
     name: small
     params:
@@ -35,7 +28,7 @@ resources:
     params:
       alt: Placeholder image, small portrait size
       size: small
-      posh: left
+      posh: right
       attr: gm
   - src: fig/medium.svg
     name: medium
@@ -72,29 +65,30 @@ resources:
       attrlink: https://unsplash.com/@konni
   - src: beau-swierstra-Ndz-4phqtlg-unsplash.jpg
     name: beau
-lastmod: 2022-07-25T20:09:40.575Z
 categories: [Shortcode]
 tags: [Block, Image]
 ---
 
-Because no Markdown element corresponds to the complex HTML `<figure>` tag, we need this shortcode for self-contained images.
+Because no Markdown element corresponds to the complex HTML `<figure>` tag, we need this shortcode for self-contained stand-alone images.
 {.p-first} <!--more-->
 
-Hugo already provides a [`figure`]({{< relref "internal#figure" >}}) shortcode and Perplex overrides it. The original syntax remains valid with **two exceptions**.
-
-1. The Perplex shortcode allows to write the caption between the starting and closing shortcode tag. When there is no shortcode closing tag, we need to add a slash to the last angled bracket, to mark the shortcode as self-closing like `{{</* figure src="image" /*/>}}`.
-
-    Should we miss the self-closing slash, Hugo can’t recognize the mistake. It will treat all the following Markdown as the expected caption and produce a garbled page.
-
-2. The {$title} parameter has a different meaning in Perplex. The Hugo shortcode treats it as a caption title and generates a `<h4>` tag. The Perplex {$figure} interprets the {$title} parameter as title attribute and adds it to the resulting figure tag, because the caption should contain only inline Markdown.  
+Hugo already provides a [`figure`]({{< relref "internal#figure" >}}) shortcode and Perplex overrides this shortcode.
 
 ## Syntax
 
-You’ll find the syntax for Hugo’s built-in `figure` in the [docs][hugofig]. The Perplex version offers the same set of named parameters.  Because it tends to get very long and error-prone, Perplex offers an alternative syntax using Hugo’s page resources.
+The original syntax remains valid with **two exceptions**.
 
-### Resource meta-data
+1. The Perplex shortcode allows to write the caption between the starting and closing shortcode tag. When there is no shortcode closing tag, we need to add a slash to the last angled bracket, to mark the shortcode as self-closing like `{{</* figure src="image" /*/>}}`.
 
-We can specify the following parameters with the given keys and types of values:
+    Should we miss the self-closing slash, Hugo can’t recognize the mistake and expects a closing tag. It will treat all the following Markdown as the caption and produce a probably very garbled page.
+
+2. The {$title} parameter has a different meaning in Perplex. The Hugo shortcode treats it as a title for the caption and generates a `<h4>` tag. The Perplex {$figure} instead uses the {$title} parameter as title attribute and adds it to the resulting figure tag, because captions should contain only inline Markdown in the Perplex layout.  
+
+The Perplex version offers the same set of named parameters as Hugo’s built-in shortcode and a few more to specify size and position of a figure.
+
+### Named parameters
+
+We can specify the following parameters with the given key names and types of values:
 
 | Parameter | Key | Values |
 |:---------|:----------|:---------|
@@ -110,7 +104,15 @@ We can specify the following parameters with the given keys and types of values:
 | Size | size | {{% parameters imaging.embedded.size %}} |
 | Target | target | {{% parameters link.target %}} |
 
+When we need many of these parameters, the figure tag gets very long and therefore prone to typing errors. Perplex also offers the alternative to specify these parameters in the resources section of the front-matter.
+
+#### Overriding of front-matter meta-data {.h-p .h-info}
+
+When we have set parameters in the front-matter and also specify them in named parameters for the shortcode, the latter will override the former. Same goes for the optional caption between the shortcode tags.
+
 ## Layout
+
+The numbers in the following placeholder images are roughly a multiple of the main text width.
 
 ### Small
 
@@ -154,8 +156,6 @@ This size takes up 2 times of the main text width and is oversized on this docum
 The size of an extra large image will only show on large desktop screens. Extra-large is an oversize in documentation pages, because it extends beyond the right margin. Therefore, it should be used sparingly and with great care.
 {{< /figure >}}
 
-### Layout on blog an article pages
+### Layout on blog and article pages
 
-The layout of many possible figures will be different on blog and article pages, because they have no sidebar navigation in the left margin.  
-
-[hugofig]: https://gohugo.io/content-management/shortcodes/#figure=
+The layout of some figures is different on blog and article pages, because we can also use the left margin there. (see [figure posting]({{< relref "blog/figure" >}}))  
