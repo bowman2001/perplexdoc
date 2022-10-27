@@ -19,17 +19,18 @@ resources:
   name: splash
   params:
     alt: A splashing drop of water
-    size: large
-    caption: Self-contained image
+    size: normal
+    caption: Self-contained stand-alone image
 - src: mulyadi-JJMoAiVl9jA-unsplash.jpg
   name: splash2
   params:
     caption: Embedded image
+    alt: Another splashing water drop
 categories: [Workflow, Markdown]
 tags: [Linebreak, Image, Editor, Linter]  
 ---
 
-Markdown has become the favored markup language to structure text files. With good cause: The syntax is intuitive and there are a lot of possibilities to translate them into a visual layout format.  
+Markdown has become the favored markup language to structure text files. With good cause: The syntax is intuitive and there are a lot of possibilities to translate them into a visual layout format.
 {.p-first} <!--more-->
 
 Markdown files consist of plain text marked up with a small set of ASCII signs. We can read and work on them with any text editor. They end with the suffix {$.md}.

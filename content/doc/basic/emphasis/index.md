@@ -20,8 +20,10 @@ resources:
     ratio: 1.5
 ---
 
-We have _light emphasis_ or **strong emphasis** to accentuate a segment of the text. We can **_nest_** both types.
-{.p-first} <!--more-->
+We have two types of emphasis to accentuate segments of our content: _Light emphasis_ or **strong emphasis**. And we can **_nest_** both types.
+<!--more-->
+
+This page obviously needs to be full of emphasis, but in general we should apply emphasis sparingly. Overemphasizing text is irritating and defeats the purpose. If there is emphasis everywhere, it doesn’t stand out anymore.
 
 ## Light emphasis
 
@@ -57,12 +59,12 @@ The nesting possibilities of the *CommonMark specification* are endless, but onl
 
 At first sight CommonMark treats the asterisk `*` and the underscore `_` as equally appropriate options to mark either light or strong emphasis. But the Markdown concept suggests — at least to me — to use underscores for light emphasis, because they have a smaller footprint in the Markdown. The asterisks are thicker and suit the strong emphasis.
 
-I haven’t checked the specification for this argument, but the asterisks are the only possible option in CommonMark to strongly emphasize characters inside of words. We sometimes want to emphasize the first letter of some words to mark their abbreviation for example:
+I haven’t checked the specification details for this argument, but the asterisks are the only possible option in CommonMark to strongly emphasize characters inside of words. We sometimes want to emphasize the first letter of some words to mark their abbreviation for example:
 
-`**H**yper-**T**ext **M**arkup **L**anguage`&emsp;for&emsp;**H**yper-**T**ext **M**arkup **L**anguage is working fine.
+- `**H**yper-**T**ext **M**arkup **L**anguage`&emsp;for&emsp;**H**yper-**T**ext **M**arkup **L**anguage is working fine.
 
-When we try this with underscores `__H__yper-__T__ext __M__arkup __L__anguage`, it only gets ugly: __H__yper-__T__ext __M__arkup __L__anguage.
+- In `__H__yper-__T__ext __M__arkup __L__anguage` the underscores are ignored by Goldmark and even left inside the text: __H__yper-__T__ext __M__arkup __L__anguage.
 
 ## Emphasis with sans-serif fonts
 
-Sans-serif fonts usually don’t have a distinctive italic style, even if their font includes an italic specimen. They look like a slightly tilted version of the regular font, which is a little irritating. When you already know, that your layout will use such an italic, you should prefer bold emphasis.
+Sans-serif fonts usually don’t have a distinctive italic style, even if their font includes an italic specimen. They mostly look like a slightly tilted version of the regular font. When you already know, that your layout will use such an sans-serif font for the body copy, you should prefer bold emphasis.

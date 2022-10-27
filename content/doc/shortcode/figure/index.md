@@ -29,34 +29,34 @@ resources:
       size: small 
       posh: left
       caption: Small on the left
-      attr: GM
+      attr: gm
   - name: small-portrait
     src: fig/small_portrait.svg
     params:
       alt: Placeholder image, small portrait size
       size: small
       posh: left
-      attr: GM
+      attr: gm
   - src: fig/medium.svg
     name: medium
     params:
       alt: Placeholder image, medium size
       size: medium 
       posh: right
-      attr: GM
+      attr: gm
   - src: fig/normal.svg
     name: normal
     params:
       alt: Placeholder image, normal size
       size: normal
       posh: left
-      attr: GM
+      attr: gm
   - src: fig/large.svg
     name: large
     params:
       alt: Placeholder image, large size
       size: large
-      attr: GM
+      attr: gm
   - src: fig/extra-large.svg
     name: xlarge
     params:
@@ -80,21 +80,19 @@ tags: [Block, Image]
 Because no Markdown element corresponds to the complex HTML `<figure>` tag, we need this shortcode for self-contained images.
 {.p-first} <!--more-->
 
-Hugo already provides a [`figure`]({{< relref "internal#figure" >}}) shortcode and Perplex overrides it. The original syntax remains valid with **one exception**. The Perplex shortcode allows to write a caption in Markdown between the starting and closing tag.
+Hugo already provides a [`figure`]({{< relref "internal#figure" >}}) shortcode and Perplex overrides it. The original syntax remains valid with **two exceptions**.
 
-When there is no shortcode closing tag, we need to add a slash to the last angled bracket, to mark the shortcode as self-closing:
+1. The Perplex shortcode allows to write the caption between the starting and closing shortcode tag. When there is no shortcode closing tag, we need to add a slash to the last angled bracket, to mark the shortcode as self-closing like `{{</* figure src="image" /*/>}}`.
 
-```md {.left}
-{{</* figure src="image" /*/>}}
-```
+    Should we miss the self-closing slash, Hugo can’t recognize the mistake. It will treat all the following Markdown as the expected caption and produce a garbled page.
 
-Should we miss the self-closing slash, Hugo cannot warn us. It will treat the following Markdown as the expected caption and produce a probably very garbled result.
+2. The {$title} parameter has a different meaning in Perplex. The Hugo shortcode treats it as a caption title and generates a `<h4>` tag. The Perplex {$figure} interprets the {$title} parameter as title attribute and adds it to the resulting figure tag, because the caption should contain only inline Markdown.  
 
 ## Syntax
 
 You’ll find the syntax for Hugo’s built-in `figure` in the [docs][hugofig]. The Perplex version offers the same set of named parameters.  Because it tends to get very long and error-prone, Perplex offers an alternative syntax using Hugo’s page resources.
 
-##### Resource meta-data
+### Resource meta-data
 
 We can specify the following parameters with the given keys and types of values:
 
@@ -148,6 +146,16 @@ The **default** normal size is using the full text width. If the margin is avail
 In the documentation layout the large size fills the text width and the right margin. The text of the caption is constrained to the text width. The attribution is placed in the right margin an on the right as usual.
 {{< /figure>}}
 
-### Large
+### Extra Large
+
+This size takes up 2 times of the main text width and is oversized on this documentation page. If there is a long table of contents included on a page and a figure with this size and a big height, the TOC may overlap the image in every possible scrolling position.
+
+{{< figure xlarge >}}
+The size of an extra large image will only show on large desktop screens. Extra-large is an oversize in documentation pages, because it extends beyond the right margin. Therefore, it should be used sparingly and with great care.
+{{< /figure >}}
+
+### Layout on blog an article pages
+
+The layout of many possible figures will be different on blog and article pages, because they have no sidebar navigation in the left margin.  
 
 [hugofig]: https://gohugo.io/content-management/shortcodes/#figure=
