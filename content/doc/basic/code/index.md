@@ -21,12 +21,12 @@ categories: [Markdown]
 tags: [Inline, Block, Code]
 ---
 
-The full-width text column offers space for {$80} characters of code in a line. When the marginal column is also used, {$120} fit in.
+The main text column offers space for {$80} characters of code in one line. When we need {$120} to fit in one line, we can choose to additionally use the marginal column.
 {.p-first} <!--more-->
 
-Short snippets of code are usually placed **in line** with the normal text. Long pieces of code or entire files are marked as **code blocks**.
+Short snippets of code are usually placed **in line** with the normal text. Longer pieces of code or entire files should be embedded as **code blocks**.
 
-Hugo can style and colorize code blocks according to their content with the built-in _Chroma highlighter_ and offers some options to style these blocks.  
+Hugo can style and colorize code blocks according to their content with the built-in _Chroma highlighter_ and offers some options to style these blocks.
 
 ## Syntax
 
@@ -39,10 +39,10 @@ A code snippet is surrounded by single backticks like `` `code` ``.
 We have two ways to mark a block as code:
 
 Fenced
-: When a block is surrounded by three back-ticks `` ``` `` in the line above and beyond it's a _fenced code block_.
+: When a block is surrounded by three back-ticks `` ``` `` in the line above and beyond it's a **fenced code block**.
 
 Indented
-: A block of text indented by 4 spaces or a tab is also treated as a _code block_.
+: A block of text indented by 4 spaces or a tab is also treated as a **code block**.
 {.dl-loose}
 
 The **fenced** version of the CommonMark syntax is **preferable** for two reasons:
@@ -59,10 +59,11 @@ The **fenced** version of the CommonMark syntax is **preferable** for two reason
    {.col2-l2}
 
 2. There is an overlap with the syntax for the extensions [footnote][ftn] and [definition-list][dl]. When we have subsequent paragraphs there, we need to indent them also by 4 spaces or a tab. If we try to place an indented code block after a footnote reference or a definition detail, Hugo will treat it as this kind of continuation indent and not as a code block.
+   {#overlap}
 
 ### Highlighting
 
-Chroma can highlight many languages, when we add their usual file suffixes. The Hugo docs include the full list of available [Chroma highlighting languages][hugochroma].
+Chroma can highlight many languages, when we add their usual file suffixes. The Hugo docs include the full list of available [languages][hugochroma].
 
 ### Additional styling for fenced code blocks
 
@@ -91,19 +92,28 @@ The HTML tag to mark the beginning of code is `<code>`. And to mark the end we u
 
 ### Block
 
-The first backticks marking a code block may be followed by an abbreviation for the kind of code. Then Hugo is able to highlight and colorize the source code for better legibility. The abbreviations are usually the same or are referring to the common suffix for a file containing that kind of code.
+The first backticks marking a code block may be followed by an abbreviation for the code language. Then Hugo is able to highlight and colorize the source code for better legibility. The abbreviations are usually the same as the common suffix for a code file.
 
 ### Fenced
+
+#### Without line numbers
 
 ```md
 The *HTML* tag at the **beginning** of code is `<code>`.
 And to mark the **end** we use the corresponding closing tag `</code>`.
 ```
 
+#### With line numbers (table layout)
+
+```md {linenos=true}
+The *HTML* tag at the **beginning** of code is `<code>`.
+And to mark the **end** we use the corresponding closing tag `</code>`.
+```
+
 ### Indented
 
-     The _HTML_ tag at the **beginning** of code is `<code>`.
-     And to mark the **end** we use the corresponding closing tag `</code>`.
+    The _HTML_ tag at the **beginning** of code is `<code>`.
+    And to mark the **end** we use the corresponding closing tag `</code>`.
 
 ### Long lines
 

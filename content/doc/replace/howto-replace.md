@@ -31,16 +31,10 @@ Perplex includes the following replacement codes and styles them:
 | Mark        |   {‍!mark}   |   {!mark}   |
 | Citation    |  {‍=work}  |  {=work}  |
 | Insertion   |  {‍+insert}  |  {+insert}  |
-| Line Break  |     a{‍/}b     |     a{/}b     |
-
-{{< mnote up=8 >}}
-
-This line break is **by no means** a solution for [ordinary line breaks]({{< relref "doc/basic/linebreak" >}}). Its only meant for [headings]({{< relref "doc/basic/headings" >}}).
-{{< /mnote >}}
 
 These codes are substituted with the help of short regular expressions in the layout template [{$replacements.html}]({{< relref "doc/appendix/replacements" >}}). It processes the Hugo variable `.Content` which contains the rendered Markdown content as HTML string. The procedure is safe, because Goldmark treats the curly braces and their content like any other Markdown and discards raw HTML to prevent script attacks. Should you enable raw HTML, security is not your concern anyway.
 
 ### Available as a module {.h-p .h-tip}
-The template file for the theme has a separated repository [hugo-mod-replacements](https://github.com/bowman2001/hugo-mod-replacements).
+A copy of the replacements template gets included from a separate repository: [hugo-mod-replacements](https://github.com/bowman2001/hugo-mod-replacements).
 
-To manipulate our generated HTML with regular expressions isn’t bad, because its secure and fast. But it’s a syntax hack and can’t be parsed the usual way. There are relatively common syntax extensions for most of these elements which other Markdown renderers have already implemented. [Extensions for Goldmark](https://github.com/yuin/goldmark/tree/master/extension) which could be enabled in Hugo, would be the better solution. Then we could run a regex parser for the last time on these replacements and turn them into extended Markdown syntax.
+To manipulate our generated HTML with simple regular expressions is secure and fast. But these are syntax hacks which can’t be parsed by Markdown renderers. A better solution would be to add [extensions for Goldmark](https://github.com/yuin/goldmark/tree/master/extension) and for many elements there already is a relatively common syntax in other Markdown flavors. If they would be available for Goldmark, we could run a regex parser for the last time on these replacements and change them into regular extended syntax.

@@ -26,13 +26,13 @@ resources:
 Marginal notes allow to add further information in an elegant and unobtrusive way. We can glance over them and stay with the main text or zone out for a while, when they pique our curiosity.
 {.p-first} <!--more-->
 
-The famous mathematician Fermat wrote his last conjecture around 1637 in the marginal column besides an ancient Greek proof by Diophantus. The “marvelous proof” Fermat mentioned there has never been uncovered and his note kept mathematicians busy for over 350 years.  
+The famous mathematician Fermat wrote his last conjecture around 1637 in the marginal column besides an ancient Greek proof by Diophantus. The “marvelous proof” Fermat mentioned there has never been uncovered and his note kept mathematicians wondering for over 350 years.
 
 {{< figure wiles />}}
 
-The proof has been considered generally inaccessible until Sir Andrew John Wiles publicly announced one in 1993 after seven years of ground-breaking work. A few mathematicians were able to follow him and found out, that his first promising version still contained some flaws. Wiley finally published a completely convincing version in 1995 --- a break-through in number theory which won him a few prizes.  
+A proof has been considered generally inaccessible until Sir Andrew John Wiles announced to have found one in 1993 after years of ground-breaking work. A few mathematicians were able to follow him and pointed some flaws out, that his first promising preliminary version did still contain. Wiley finally published a completely convincing version in 1995 --- a break-through in number theory which won him a few prizes.  
 
-His proof is so complicated, that its still inaccessible --- even to many mathematicians. But the ancient proof by Diophantus’ and Fermat’s original conjecture are relatively easy to follow in the English translation:  
+The proof is so advanced, that its still inaccessible to almost everyone. But the ancient proof by Diophantus’ and Fermat’s conjecture are relatively easy to follow:  
 
 > To divide a given square into a sum of two squares.
 >
