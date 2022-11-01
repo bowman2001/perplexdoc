@@ -7,6 +7,8 @@ In this case we can use the [replacement]({{< relref "doc/replace/howto-replace"
 ### A long subsection heading about a very complex topic{‍/}exceeding the line length
 ```
 
+#### Beware {.h-warn .h-p}
+This special linebreak replacement is only needed in headings or titles, because they can’t be wrapped in Markdown. Otherwise Markdown [can handle them]({{< relref "doc/basic/linebreak" >}}).
 
 ### A long subsection heading about a very complex topic exceeding the line length
 

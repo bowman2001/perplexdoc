@@ -65,9 +65,6 @@ A warning paragraph for example starts with a heading like this:
 Far far away, behind the word mountains, far from the countries Vokalia and…
 ```
 
-#### Beware {.h-warn .h-p}
-This special linebreak replacement is only needed in headings or titles, because they can’t be wrapped in Markdown. Otherwise Markdown [can handle them]({{< relref "doc/basic/linebreak" >}}).
-
 ## Layout
 
 Headings are not only recognized by their font styling but also by the white-space surrounding them. That's why the following examples are shown in the way they usually appear: In front and in between some text.

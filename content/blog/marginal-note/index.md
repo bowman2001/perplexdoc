@@ -1,5 +1,6 @@
 ---
 title: The Beauty of Marginal Notes
+description: Demo for the marginal note shortcode
 date: 2022-07-04T22:18:04+02:00
 weight: 1
 categories: [Shortcode]

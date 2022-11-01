@@ -28,7 +28,7 @@ We can use `-`, `+` or `*` to mark the items of an unordered list. We have to st
 
 ### Tight
 
-```md {class="col-left"}
+```md {class=left}
 - The minus sign `-`
 - The plus sign `+`
 - The asterisk `*`
@@ -38,7 +38,7 @@ When there is not a single blank line between the items, we get a tight list. Ev
 
 ### Loose
 
-```md
+```md {.large}
 - A loose list may contain more than one paragraph. You only have to keep the indentation on the same level.
 
   Like this. Here we have separated paragraph inside of the same list item.
@@ -68,8 +68,6 @@ To start a sub-list inside a list item, the markers of the sub-list have to be i
 Perplex is styling _tight_, _loose_ and _nested_ lists of both kinds. As additional option, you may enforce a smaller indentation on tight lists with a class attribute.
 
 ### Tight
-
-The short tight list from above looks like this:
 
 - The minus sign `-`
 - The plus sign `+`

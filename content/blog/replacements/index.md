@@ -3,9 +3,9 @@ title: Replacements
 description: Short expressions in single curly braces
 subtitle: false
 date: 2022-09-01T23:55:26+02:00
-weight: 1
 categories: [Content]
 tags: [Replacements, HTML, Security]
+series: [Demo]
 draft: true
 ---
 
