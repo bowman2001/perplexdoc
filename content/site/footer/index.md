@@ -6,12 +6,12 @@ resources:
   params:
     alt: Browserstack logo
     link: https://browserstack.com
-- src: img/CC-by-sa.svg
+- src: img/cc-by-sa.svg
   name: cc
   params:
     alt: Creative Commons 4.0 logo
     link: https://creativecommons.org/licenses/by-sa/4.0/
-- src: img/GitHub_logo_2013.svg
+- src: img/GitHub.svg
   name: github
   params:
     alt: GitHub logo
@@ -26,7 +26,7 @@ resources:
   params:
     alt: Perplex logo
     link: https://perplex.desider.at
-- src: img/Netlify.svg
+- src: img/Netlify_logo.png
   name: netlify
   params:
     alt: Netlify logo

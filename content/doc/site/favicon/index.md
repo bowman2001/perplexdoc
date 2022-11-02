@@ -12,6 +12,8 @@ menu:
 resources:
   - src: favicon.svg
     name: favicon
+    params:
+      size: tiny 
 categories: [Theme]
 tags: [Favicon]
 ---
@@ -19,8 +21,7 @@ tags: [Favicon]
 The **Favorite Icon** is placed in the HTML `<head>` of every page. Browsers usually show the icon in the tab, the address bar and before bookmarks. It may also get used as an application icon, when the website implements the necessary functionality.
 {.p-first} <!--more-->
 
-![favicon](favicon) The favorite icon is needed in many sizes and --- until recently --- in different image formats. There are still many web services, which create all these files from a single raster image. But fortunately, most browsers now support resizable vectorized icons in the SVG format. We can now get away with two files: The SVG and a PNG fallback.
-{.i-tiny}
+![Favorite icon of this site](favicon) The favorite icon is needed in many sizes and --- until recently --- in different image formats. There are still many web services, which create all these files from a single raster image. But fortunately, most browsers now support resizable vectorized icons in the SVG format. We can now get away with two files: The SVG and a PNG fallback.
 
 The [real favicon generator](https://realfavicongenerator.net/) for example generates these icon sets from raster and from vector image files for free. This theme is expecting the two files {$favicon.svg} and {$favicon.png} in the folder {$assets/icon}. That should be it.
 
