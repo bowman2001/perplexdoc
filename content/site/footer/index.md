@@ -26,9 +26,10 @@ resources:
   params:
     alt: Perplex logo
     link: https://perplex.desider.at
-- src: img/Netlify_logo.png
+- src: img/Netlify_logo.svg
   name: netlify
   params:
+    svg: img
     alt: Netlify logo
     link: https://netlify.com
 - src: img/sonarcloud-logo.svg

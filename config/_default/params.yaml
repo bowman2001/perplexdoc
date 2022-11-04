@@ -4,6 +4,7 @@
 
 description: Perplex is a typographic theme with advanced layout capabilities. You can publish technical content in a full documentation, a blog or longer articles.
 embedFull: false
+svg: inline
 
 # Site wide favicon for browser and OS display
 favicon:
