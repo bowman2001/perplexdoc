@@ -1,6 +1,6 @@
 <svg width="1600" height="900" version="1.1" viewBox="0 0 423 238" xmlns="http://www.w3.org/2000/svg">
   <g transform="translate(0 -58.9)" opacity=".94">
-    <rect y="58.9" width="423" height="238" fill-opacity=".267" stroke-width="1.59"/>
+    <rect y="58.9" width="423" height="238" fill="#c0c0c0" stroke-width="1.59"/>
     <g stroke-width=".265" aria-label="Extra Large">
       <path d="m191.72 137.02v-5.9121h3.4304v0.78771h-2.5325v1.7279h2.2869v0.77924h-2.2869v1.8295h2.5325v0.78771z"/>
       <path d="m195.74 137.02 1.3806-2.2446-1.3467-2.1598h0.96558l0.86394 1.4907h0.0932l0.86394-1.4907h0.92323l-1.3298 2.1598 1.3806 2.2446h-0.96558l-0.89782-1.5754h-0.10164l-0.90629 1.5754z"/>
