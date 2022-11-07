@@ -150,10 +150,10 @@ In the documentation layout the large size fills the text width and the right ma
 
 ### Extra Large
 
-This size takes up 2 times of the main text width and is oversized on this documentation page. If there is a long table of contents included on a page and a figure with this size and a big height, the TOC may overlap the image in every possible scrolling position.
+This size could take up 2 times of the main text width but is oversized on this documentation page. If there is a long table of contents included on a page and a figure with this size, the TOC may overlap the image in every possible scrolling position. Therefore, this size doesn’t get bigger than large figures on documentation pages.
 
 {{< figure xlarge >}}
-The size of an extra large image will only show on large desktop screens. Extra-large is an oversize in documentation pages, because it extends beyond the right margin. Therefore, it should be used sparingly and with great care.
+The size of an extra large image will only show in blog and article pages. Extra-large would be oversized on a documentation page, because the sidebar navigation blocks the left margin.
 {{< /figure >}}
 
 ### Layout on blog and article pages
