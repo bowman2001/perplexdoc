@@ -3,7 +3,7 @@
 ##
 
 # The domain of the site
-baseURL: 'https://perplex.desider.at'
+baseURL: http://example.com
 title: Perplex
 DefaultLanguageCode: en-us
 DefaultContentLanguage: en
@@ -12,7 +12,7 @@ pluralizeListTitles: false
 enableEmoji: true
 enableGitInfo: true
 
-timeout: 300000 # Milliseconds
+timeout: 500000 # Milliseconds
 refLinksErrorLevel: WARNING
 
 taxonomies:
@@ -20,8 +20,6 @@ taxonomies:
   category: categories
   series: series
 
-ignoreFiles:
-  - doc/draft/.*
 ignoreErrors:
   - error-missing-instagram-accesstoken
   - error-remote-getjson

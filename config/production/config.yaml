@@ -1,0 +1,4 @@
+baseURL: 'https://perplex.desider.at'
+
+ignoreFiles:
+  - doc/draft/.*
