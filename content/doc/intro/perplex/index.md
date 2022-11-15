@@ -75,7 +75,7 @@ Page parameters
 
 Despite its successful efforts to make data-formatting as simple as possible, _YAML_ needs to adhere to strict rules which sometimes rely on the correct indentation. This may be frustrating for beginners. Perplex provides skeleton templates via Hugo’s [`new` command][new]. It generates files with a working front-matter block for every type of content. These YAML-blocks are filled with some reasonable auto-generated parameters or placeholders. The front-matter blocks for this documentation usually around 15-20 entries, and you probably have to change or add only a few of them in the beginning.
 
-## In Case of Problems
+## In Case of Problems {#trouble}
 
 There are **two** repositories. One for the theme itself and one for the documentation. This documentation project ships with a recent copy of the theme to simplify the initial setup, but all work on the theme only happens in its own repository.
 
@@ -83,7 +83,7 @@ There are **two** repositories. One for the theme itself and one for the documen
 
 When you find a bug in the layout or miss some functionality, please visit the [theme repository][theme]. Have a look first at the already existing [issues][issue]. Please create a new one, if your problem is not already listed. I’m happy to discuss issues there and maybe you like to help to optimize and extend Perplex.
 
-### Trouble with the Documentation?
+### Trouble with the Documentation? 
 
 When you miss some explanation or find a misleading one, please go to the [documentation repository][doc]. Again, have a look at already existing [issues][docissue], please. Only create a new issue, if you can’t find your problem. I’ll improve the documentation as soon as possible.
 

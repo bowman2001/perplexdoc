@@ -20,7 +20,7 @@ resources:
   params:
     alt: A splashing drop of water
     size: normal
-    caption: Self-contained stand-alone image
+    caption: Stand-alone image
 - src: mulyadi-JJMoAiVl9jA-unsplash.jpg
   name: splash2
   params:
@@ -33,7 +33,7 @@ tags: [Linebreak, Image, Editor, Linter]
 Markdown has become the favored markup language to structure text files. With good cause: The syntax is intuitive and there are a lot of possibilities to translate them into a visual layout format.
 {.p-first} <!--more-->
 
-Markdown files consist of plain text marked up with a small set of ASCII signs. We can read and work on them with any text editor. They usually end with the suffix {$.md}.
+Markdown files consist of plain text marked up with a small set of ASCII signs. We can read and change them with any text editor. They usually end with the suffix {$.md}.
 
 {{< mnote up=5 >}}
 The suffixes {$.mdown} and {$.markdown} also indicate Markdown, but they are rarely used nowadays.
@@ -137,7 +137,7 @@ Some special editors are designed exclusively for authoring Markdown. They usual
 Many of these editors offer a convenient separate preview window. With Hugo you have an even better option: When you run Hugo in its web-server mode on the local machine you are writing your Markdown on, it will render your files and deliver the result to your browser instantly (see [Using Hugo](/doc/intro/workflow/local-server). My personal solution is either an IDE or a programming editor in conjunction with Hugo’s server mode.
 
 ## Markdown Linter
-CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing. 
+CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing.
 
 {{< mnote up=14 >}}
 For this project the default settings are modified in the configuration file [`.markdownlint.yaml`]({{< relref "markdownlint" >}}) at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.
