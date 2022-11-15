@@ -19,8 +19,7 @@ resources:
     alt: A levitating book seen through an opening in a wall of books
 ---
 
-
-Perplex is designed to publish technical content. It provides templates for a blog, a documentation with up to three section levels, and single pages. Template for long articles will follow.
+Perplex is a theme for a technical blog or documentation with advanced layout capabilities.
 {.p-first} <!--more-->
 
-Perplex works out of the box, only a recent Hugo installation and this theme are required to build a website like this from Markdown files with front-matter and resources like images.
+Perplex works out of the box. Only a recent Hugo installation and the theme are required to build a website like this from Markdown files and associated resources.
