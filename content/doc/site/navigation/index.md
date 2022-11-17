@@ -7,7 +7,6 @@ date: 2022-09-07T15:24:13+02:00
 weight: 660
 menu:
   doc:
-    identifier: sitenav
     name: Site Navigation
     parent: siteelem
     pre: menu

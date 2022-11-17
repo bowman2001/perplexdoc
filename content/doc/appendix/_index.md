@@ -13,8 +13,9 @@ weight: 1000
 cascade:
   toc: false
 resources: 
-  - src: Hugo.svg
+  - src: Perplex.svg
     name: featured
+    alt: Perplex logo
 ---
 
 This chapter includes files and other additional material used for this project.
