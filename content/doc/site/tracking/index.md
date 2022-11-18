@@ -33,10 +33,10 @@ There is some concern about Google collecting data from website visitors via its
 
 ## Fathom Analytics
 
-Fathom is a smaller company offering its popular privacy-focused service [Fathom Analytics][fathomref]\*. Because they don’t collect any personal data, we don’t need to inform our visitors about this service.
+Fathom is a smaller company offering its popular service [Fathom Analytics][fathomref]\*. It’s privacy-focused and because they don’t collect any individual data from our visitors, we don’t need to inform them about this merely statistical service.
 
 {{< mnote up=11 star=1 >}}
-This is an affiliate link. Should you subscribe to Fathom’s service, I would appreciate if you could do so by following this link. You can save 10 bucks this way.
+This is an affiliate link. Should you subscribe to Fathom’s service, I would appreciate if you could do so by following [this link](https://usefathom.com/ref/CENRRH). You can save 10 bucks this way.
 {{< /mnote >}}
 
 Fathom doesn’t offer as many tools and information as Google. But if you don’t need all this anyway, you will probably like their clear and simple backend. The most important advantage of the service --- at least for me: We can use tracking without an annoying initial banner on our site!
