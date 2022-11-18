@@ -41,7 +41,7 @@ This is an affiliate link. Should you subscribe to Fathom’s service, I would a
 
 Fathom doesn’t offer as many tools and information as Google. But if you don’t need all this anyway, you will probably like their clear and simple backend. The most important advantage of the service --- at least for me: We can use tracking without an annoying initial banner on our site!
 
-This advantage comes at a (reasonable) price. Fathom doesn’t use the data from your website for anything else than their aggregated analytical information and wants to be paid after a short tryout period.
+This advantage comes at a (reasonable) price. Because Fathom doesn’t monetize the data from your website they want to be paid for their service after a short tryout period.
 
 When you have a fathom id for your site, place it like `fathomSiteID: ABCDEFG` in the [parameter section][fid] of your configuration. And when you are using their _custom domain_ you also need to provide the full link like `fathomCustomDomain: https://custom.yourdomain.com` also in [this section][fcustom].
 
