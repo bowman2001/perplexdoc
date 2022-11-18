@@ -36,14 +36,14 @@ There is some concern about Google collecting data from website visitors via its
 Fathom is a smaller company offering its popular privacy-focused service [Fathom Analytics][fathomref]\*. Because they don’t collect any personal data, we don’t need to inform our visitors about this service.
 
 {{< mnote up=11 star=1 >}}
-This is an affiliate link. Should you subscribe to the service of Fathom, I would appreciate if you could do so by following this link. You can save 10 bucks this way.
+This is an affiliate link. Should you subscribe to Fathom’s service, I would appreciate if you could do so by following this link. You can save 10 bucks this way.
 {{< /mnote >}}
 
 Fathom doesn’t offer as many tools and information as Google. But if you don’t need all this anyway, you will probably like their clear and simple backend. The most important advantage of the service --- at least for me: We can use tracking without an annoying initial banner on our site!
 
 This advantage comes at a (reasonable) price. Fathom doesn’t use the data from your website for anything else than their aggregated analytical information and wants to be paid after a short tryout period.
 
-When you have a fathom id for your site, place it like `fathomSiteID: ABCDEFG` in the [parameter section][fid] of your configuration. And when you are using their _custom domain_ you also need to provide the full link like `fathomCustomDomain: https://custom.yourdomain.com` in [this section][fcustom] 
+When you have a fathom id for your site, place it like `fathomSiteID: ABCDEFG` in the [parameter section][fid] of your configuration. And when you are using their _custom domain_ you also need to provide the full link like `fathomCustomDomain: https://custom.yourdomain.com` also in [this section][fcustom].
 
 [gparam]: {{< relref "configyaml#19" >}}
 [fathomref]: <https://usefathom.com/ref/CENRRH>
