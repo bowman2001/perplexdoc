@@ -18,4 +18,5 @@ imaging:
   sizestep: 100
   fallback_width: 1920
 
-# fathomAnalytics:
+# fathomSiteID: ABCDEFG
+# fathomCustomDomain: https://custom.yourdomain.com
