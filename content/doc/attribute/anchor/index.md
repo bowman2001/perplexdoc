@@ -20,13 +20,15 @@ tags: [Attribute]
 ---
 
 It's easy to manually add anchors to any block element with an identifier attribute and to reference them with a Markdown link.  
-{.p-first} <!-- more -->
+{.p-first} <!--more-->
 
 ## Syntax
 
+When we manually add an **anchor** attribute, we usually want to place on or more **references** somewhere else.  
+
 ### Anchor
 
-We add the anchor as an identification attribute like any other attribute. We can use the long form `id=our-identifier` or the short one `#our-identifier`:
+We add the anchor as an identification attribute like any other attribute. We can use the long form `id=our-identifier` or the short form `#our-identifier`:
 
 ```md
 This is the text block, we would like to refer to from another place on this 
@@ -40,7 +42,7 @@ From same page
 : The reference is a [link]({{< relref "doc/basic/link" >}}) to the anchor `[link to anchor]({{< relref "#our-identifier">}})`.
 
 From another page
-: The reference is a link to the page with the anchor appended `[link to anchor]({{< relref "anchor#our-identifier">}})`.
+: The reference is a link to the page with the anchor appended `[link to anchor]({{< relref "page#our-identifier">}})`.
 {.dl-loose}
 
 ## Layout
