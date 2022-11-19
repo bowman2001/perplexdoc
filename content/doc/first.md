@@ -1,14 +1,14 @@
 ---
 author:
-title: {{ replace .Name "-" " " | title }}
+title: First
 description: Page description placeholder
 subtitle: false
-date: {{ .Date }} 
+date: 2022-11-19T22:35:00+01:00 
 weight: 9999
 menu:
   doc:
-    identifier: {{ .Name }}-{{ substr (delimit (shuffle (split (md5 .Name) "")) "") 0 8 }}
-    name: {{ replace .Name "-" " " | title }}
+    identifier: first-5478c
+    name: First
     parent: 
     pre: remove
 categories: []
