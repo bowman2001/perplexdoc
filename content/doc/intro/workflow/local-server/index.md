@@ -19,7 +19,7 @@ categories: [Workflow, Theme]
 tags: [Hugo]
 ---
 
-When we work on a web project, we like to examine the resulting pages as fast as possible. We can start Hugo in server mode to generate a local preview in no time.
+When we are working on a website, we like to examine the resulting pages immediately. We can start Hugo in server mode to generate a local preview in no time.
 {.p-first} <!--more-->
 
  A command like the following in the root of a project starts the [Hugo server][server]:
@@ -32,7 +32,7 @@ hugo server -D --minify --navigateToChanged
 Hugo’s server is configurable and can also show a private preview under a public URL. But it's **not** a full-fledged web server.
 {{< /mnote >}}
 
-The pages are rendered into the memory and the site is served under <http://localhost:1313> by default.
+The HTML pages are rendered into memory and the site is served under <http://localhost:1313> by default.
 
 - The flag `-D` lets Hugo include **drafted** files. All files created with `hugo new` are usually configured as drafts, using `draft: true` in the front-matter. When a Markdown file is ready for [publishing]({{< relref "doc/intro/workflow/publish" >}}), we need to remove this entry or change it to `draft: false`.
 
@@ -53,24 +53,24 @@ hugo new blog/first.md
 
 The new file is created in the folder {$content/blog}. It already contains a front matter section with some reasonable entries or placeholders to start with.
 
-The `title`, `date` and `description` parameters is strongly recommended for Perplex as it is for many other themes.
+The `title`, `date` and `description` parameters are strongly recommended for Perplex as they are for many other themes. All internal navigation depends on them.
 
 ```yaml {class="left" linenos=true }
 ---
 title: First 
-description: 
+description: Description placeholder
 date: 2022-07-01T21:22:27+02:00
-categories: [Theme]
-tags: [Demo]
+categories: []
+tags: []
 draft: true
 ---
 ```
 
-The title has been guessed from the file name and the date from the moment we ran the command.[^1]
+The title is guessed from the file name and the date from the moment we ran the `hugo new` command.[^1]
 
-The Markdown content begins after the front matter. Hugo will update our site in the browser. If we make a mistake, Hugo will display a descriptive error message on its console and in the browser.
+The Markdown content begins after the front matter. Hugo will update our site in the browser as soon as we save a changed version of the file. When we make mistakes, Hugo will display a descriptive error message on its console and in the browser (if Hugo’s server is providing the pages).
 
-[^1]: The templates for new files reside in the folder {$archetypes}.
+[^1]: The templates for the file generation with `hugo new` reside in the folder {$archetypes}.
 
 ### Example session {#example}
 

@@ -14,29 +14,36 @@ categories: [Workflow, Theme]
 tags: [Hugo]
 ---
 
-The folder structure is the foundation for the generated website structure. (TODO: Finish)
+The folder structure lays the foundation for the website structure. Perplex relies mostly on Hugo’s page bundle features.
 {.p-first} <!--more-->
 
-## Content organization 
-
-It may take a little while to get your head around Hugo’s content folder structure. To keep the general concept in mind did help me: Hugo establishes a connection between the Markdown input and the generated pages, which is as short as possible.
+It may take a little while to get your head around Hugo’s content folder structure. Its helping me to keep its general concept in mind: Hugo processes our folder structure and all the files therein following the shortest logic path. Therefore, all overhead is avoided but small details can matter.
 
 {{< mnote up=14 >}}
-Hugo also offers the possibility to include additional data or to render raw HTML files, but this theme doesn’t utilize this functionality for now.  
+Hugo also offers to process data or to include raw HTML files, but this theme doesn’t use this functionality for now.  
 {{< /mnote >}}
 
-The content of the root itself {$/} and the folders `doc`, `blog` and `article`. The theme provides layout templates for these page types. Hugo applies the matching template automatically to every content file inside these directories and their subdirectories.
+The content of the root itself {$/} and the folders {$doc}, {$news}, {$blog} and {$article} may contain Markdown files and their resources. The theme provides different layout templates for them. Hugo applies the matching templates automatically to every content file inside these directories and their subdirectories.
 
-The root `/`
-: contains top level pages, which should
+The root {$/}
+: may contain top level pages
 
-`doc`
-`blog`
-`article`
+{$doc}
+: is for the documentation and can handle three folder levels deep filled with Markdown files and their resources.
+
+{$news}
+: is for very short postings like announcements, which are listed in a continuous stream on the top level news page.
+
+{$blog}
+: is for short postings, which are accessible through the top level blog list page.
+
+{$article}
+: is for longer postings or essays, which are listed as cards on a top level page.
+{.dl-loose}
 
 ### Single pages {#single}
 
-We already created a new file [`blog/my-first-post.md`]({{< relref "#first" >}}). This is the simplest way to generate a new page.
+You may have already created the new demo file `blog/first.md` while following the example in the section [first content]({{< relref "local-server#first" >}}). This is the simplest way to generate a new posting without any additional resources.
 
 #### Leaf Bundle
 

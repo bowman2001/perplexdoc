@@ -63,7 +63,7 @@ The folders for the project site are a subset of the standard Hugo folders.
 : hosts all directories or files without the need for processing. They are copied to the publication folder (default: public) as they are. At the moment this folder only includes one file.
 {.dl-loose}
 
-The additional {$\_vendor} folder includes a recent copy of the [Perplex theme]({{< param themeURL >}}). The theme is imported as a module. Because of this copy, there is no need to install a Go environment. You can inspect the theme in this folder, but you better start at its own [repository]({{< param themeURL >}}).
+The additional {$\_vendor} folder includes a recent copy of the Perplex theme. It’s imported as a module from there. Because of this copy, there is no need to install a Go environment. You can inspect the theme in this folder, but you better start at its own [repository]({{< param themeURL >}}).
 
 #### Project configuration
 
