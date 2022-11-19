@@ -20,16 +20,16 @@ resources:
       caption: Rätikon Mountain-Range
 ---
 
-Hugo, the world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and very secure websites. The Perplex theme is build specifically for this marvelous engine.
+Hugo, the world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build very fast and secure websites. The Perplex theme is build specifically for this marvelous engine.
 {.p-first} <!--more-->
 
-[Hugo](https://gohugo.io) is a single command line tool for macOS, Windows, Linux and BSD derivatives. Binaries for most operating systems and some containers are usually available within a day or a few after every release.
+[Hugo](https://gohugo.io) is a single command line tool for macOS, Windows, Linux and BSD derivatives. Binaries for most operating systems and some containers are usually available within a day or a few after every minor release.
 
 {{< mnote up=11 >}}
 The [Hugo source](https://github.com/gohugoio/hugo) can be compiled on every machine with a recent [Go environment](https://go.dev).
 {{< /mnote >}}
 
-The [Hugo documentation site][hugodoc] addresses developers mostly and offers detailed information. With a fully functional theme only a small part of this knowledge is necessary to produce a professional static website.
+The [Hugo documentation site][hugodoc] addresses developers mostly and offers detailed information. With a good theme only a small part of this knowledge is necessary to produce a professional website.
 
 ## Install Hugo
 
@@ -37,7 +37,7 @@ Please follow the [installation instructions](https://gohugo.io/getting-started/
 
 ## Get Perplex
 
-When you start to get acquainted with Hugo or when you are curious about the Markdown content for this site, you can download this documentation project as an example. It’s licensed as Creative Commons ([CC-BY-SA 4.0][cc]), available on [GitHub]({{< param sourceURL >}}) and ships with all the files for the documentation and a few examples for blog postings and articles.
+When you start to get acquainted with Hugo or need examples of Markdown content for Perplex, you should simply get this documentation project. It’s licensed as Creative Commons ([CC-BY-SA 4.0][cc]), available on [GitHub]({{< param sourceURL >}}) and ships with all the files for the documentation and a few examples the other kind of texts.
 
 ### The documentation project
 
@@ -51,23 +51,23 @@ The folders for the project site are a subset of the standard Hugo folders.
 ```
 
 {$assets}
-: provides site wide resources (not many) to be processed by the theme.
+: provides site wide resources to be processed by the theme (not many).
 
 {$config}
-: is the configuration folder with all site parameters for this project.
+: is the configuration folder with all site wide parameters for this project.
 
 {$content}
-: contains all the Markdown files and resources (mostly images).
+: contains the Markdown files and their resources (mostly images). This is where you probably want to start looking.
 
 {$static}
 : hosts all directories or files without the need for processing. They are copied to the publication folder (default: public) as they are. At the moment this folder only includes one file.
 {.dl-loose}
 
-The additional {$\_vendor} folder includes a recent copy of the [Perplex theme]({{< param themeURL >}}). The theme is imported as a module, but because of this copy there is no need to install a Go environment.
+The additional {$\_vendor} folder includes a recent copy of the [Perplex theme]({{< param themeURL >}}). The theme is imported as a module. Because of this copy, there is no need to install a Go environment. You can inspect the theme in this folder, but you better start at its own [repository]({{< param themeURL >}}).
 
 #### Project configuration
 
-All configuration options are explained in the [Hugo docs](https://gohugo.io/getting-started/configuration/). The examples therein are given for a **single configuration file** like {$config.yaml} in your project root directory.
+All configuration options are listed in the [Hugo docs](https://gohugo.io/getting-started/configuration/). The examples therein are given for a **single configuration file** like {$config.yaml} in your project root directory.
 
 The configuration for this project is using the alternative option of a **configuration directory** named {$config} with separate files for the configuration sections. For the growing number of options this arrangement is clearer. The top configuration file is still called {$config.yaml} the other ones are named like the section they contain.
 
@@ -109,9 +109,9 @@ When you chose option 1. or 2., you need to tell Hugo to use the theme in the [c
 
 ## Having trouble with Hugo?
 
-When you encounter problems specifically with Hugo and don’t find an answer in its [documentation][hugodoc], the [Hugo community](https://discourse.gohugo.io) will support you. Please search the forum archive, because most likely your problem has already been answered. If you are confronted with a new problem, please read the guidelines **How to Request Help** at the top of the site first, before you submit your request.
+When you encounter problems specifically with Hugo and don’t find an answer in its [documentation][hugodoc], the [Hugo community](https://discourse.gohugo.io) will support you. Please search the forum archive, because most likely your problem has already been answered. If you are confronted with a new problem, please read the guidelines **How to Request Help** at the top of the site first, before you submit your request. You may need to provide a (temporary) public repository to let people inspect your code in detail.
 
-All problems with this theme or this documentation should be addressed in [their repositories](/doc/intro/perplex#trouble)!
+All problems specifically with this theme or this documentation should be addressed in [their repositories](/doc/intro/perplex#trouble)!
 
 [hugodoc]: https://gohugo.io/documentation
 [cc]: https://creativecommons.org/licenses/by-sa/4.0/
