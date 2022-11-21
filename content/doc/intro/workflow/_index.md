@@ -20,4 +20,3 @@ resources:
 
 A short guide from installation over content organization to publishing with Hugo and Perplex.
 {.p-first} <!--more-->
-

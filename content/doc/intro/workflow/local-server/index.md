@@ -1,5 +1,5 @@
 ---
-author: Georg Makdowski
+author: Georg Makowski
 title: Hugo’s local Server
 description: Show an instant preview in your browser 
 subtitle: false
