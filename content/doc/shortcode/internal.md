@@ -11,12 +11,17 @@ title: Hugo’s built-in internal shortcodes
 weight: 590
 ---
 
+Hugo ships with a few shortcodes to handle your own content and configuration.
+{.p-first} <!--more-->
+
 ## Resolve internal URLs {#relref}
 
-To refer to a page on our site we can include the URL into a [link]({{< relref "doc/basic/link" >}}) like any other. But it's often long and when our content grows and evolves, the path may change. Therefore, we better leave the resolution to Hugo by using an unambiguous name for the page.
+To refer to a page on our site we can include the URL into a [link]({{< relref "doc/basic/link" >}}) like any other. But it's often long and when our content grows and evolves, the path may change. Therefore, we may leave the resolution to Hugo by using an unambiguous name for the page.
+
+If the name of a page is not unique, we still need to fill in the complete relative path. The advantage of `relref` is, that Hugo checks the existence of the file and issues a warning or an error.
 
 {{< mnote >}}
-If the name of a page is not unique, we still need to fill in the complete relative path. The advantage of `relref` then is, that Hugo checks the existence of the file.
+When the content of your site grows and you start to use taxonomies, their page names may be duplications of content pages. This is not a problem by itself and happens a lot in this project. But then, the page names are not unique anymore.
 {{< /mnote >}}
 
 To replace unique names with URLs, Hugo provides `relref` or `ref`. Internal links with these shortcodes look like

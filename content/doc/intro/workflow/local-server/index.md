@@ -68,7 +68,7 @@ draft: true
 
 The title is guessed from the file name and the date from the moment we ran the `hugo new` command.[^1]
 
-The Markdown content begins after the front matter. Hugo will update our site in the browser as soon as we save a changed version of the file. When we make mistakes, Hugo will display a descriptive error message on its console and in the browser (if Hugo’s server is providing the pages).
+The Markdown content begins after the front-matter. Hugo will update our site in the browser as soon as we save a changed version of the file. When we make mistakes, Hugo will display a descriptive error message on its console and in the browser (if Hugo’s server is providing the pages).
 
 [^1]: The templates for the file generation with `hugo new` reside in the folder {$archetypes}.
 
