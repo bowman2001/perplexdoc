@@ -29,7 +29,7 @@ hugo server -D --minify --navigateToChanged
 ```
 
 {{< mnote up=6 >}}
-Hugo’s server is configurable and can also show a private preview under a public URL. But it's **not** a full-fledged web server.
+Hugo’s server is configurable and can also show your site under a public URL and an arbitrary port. But it's **not** a full-fledged web server and can't handle a lot of traffic. The server is **only** useful for private previews.
 {{< /mnote >}}
 
 The HTML pages are rendered into memory and the site is served under <http://localhost:1313> by default.
@@ -41,7 +41,7 @@ The HTML pages are rendered into memory and the site is served under <http://loc
 - The flag `--navigateToChanged` tells the server to relay the page of the last changed file to the browser. As soon as we save a file the corresponding page pops up in the browser.
 
 ### Set a reasonable auto-save delay {.h-tip .h-p}
-Some editors are saving our work so fast by default, that nearly every keystroke leads to a new file version and the regeneration of the corresponding page. When we are in the process of changing sensitive content like front-matter parameters this can easily bring down Hugo’s server, because Hugo can’t process inconsistent files. Then we have to restart the server, which is not a big deal, but gets annoying after a while. It’s better to set the auto-save delay to a value, which lets us save consistent file versions.
+Some editors are saving our work so fast by default, that nearly every keystroke leads to a new file version and the regeneration of the corresponding page. When we are in the process of changing sensitive content like front-matter parameters this can easily bring down Hugo’s server, because Hugo can’t process inconsistent files. Then we have to restart the server, which is not a big deal, but gets annoying after a while. It’s better to set the auto-save delay to a bigger value, which lets us save consistent file versions manually.
 
 ## Adding your first content {#first}
 
@@ -51,9 +51,9 @@ To generate a new Markdown file, we go to the root folder of our project and use
 hugo new blog/first.md
 ```
 
-The new file is created in the folder {$content/blog}. It already contains a front matter section with some reasonable entries or placeholders to start with.
+The new file is created in the folder {$content/blog}. It already contains a front-matter section with some reasonable entries or placeholders to start with.
 
-The `title`, `date` and `description` parameters are strongly recommended for Perplex as they are for many other themes. All internal navigation depends on them.
+The `title`, `date` and `description` parameters are mandatory for Perplex as they are for many other themes. The pages headers, page sorting and the navigation depends on them.
 
 ```yaml {class="left" linenos=true }
 ---
