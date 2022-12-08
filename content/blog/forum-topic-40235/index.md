@@ -5,7 +5,7 @@ subtitle: false
 date: 2022-08-27T15:01:18+02:00
 weight: 999
 categories: [Markdown]
-tags: [Blockquote, Definition List]
+tags: [Quote, List]
 series: [Demo]
 resources:
 - src: romain-vignes-ywqa9IZB-dU-unsplash.jpg

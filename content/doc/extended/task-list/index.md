@@ -12,12 +12,12 @@ title: Task List
 toc: false
 weight: 250
 categories: [Markdown]
-tags: [Block, Task-List]
+tags: [Block, List]
 resources:
   - name: featured
     src: glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg
     params:
-      alt: A hand writing a task list into a small notebook
+      alt: Hand written task list
 ---
 
 A task list on a web page should be an interactive element which directly changes the corresponding Markdown. A theme can't establish such a connection on its own.

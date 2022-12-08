@@ -11,7 +11,7 @@ subtitle: false
 title: Ordered List
 weight: 130
 categories: [Markdown]
-tags: [Block, Ordered List]
+tags: [Block, List]
 resources:
   - name: featured
     src: jan-antonin-kolar-lRoX0shwjUQ-unsplash.jpg

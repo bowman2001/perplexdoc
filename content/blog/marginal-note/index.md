@@ -31,9 +31,9 @@ The famous mathematician Fermat wrote his last conjecture around 1637 in the mar
 
 {{< figure wiles />}}
 
-A proof has been considered generally inaccessible until Sir Andrew John Wiles announced to have found one in 1993 after years of ground-breaking work. A few mathematicians were able to follow him and pointed some flaws out, that his first promising preliminary version did still contain. Wiley finally published a completely convincing version in 1995 --- a break-through in number theory which won him a few prizes.  
+A proof has been considered generally inaccessible until Sir Andrew John Wiles announced to have found one in 1993 after years of ground-breaking work. A few mathematicians were able to follow him and pointed out some flaws in his first preliminary version. Wiley finally published a convincing version in 1995 — a break-through in number theory which won him a few prizes.  
 
-The proof is so advanced, that its still inaccessible to almost everyone. But the ancient proof by Diophantus’ and Fermat’s conjecture are relatively easy to follow:  
+Wiley’s proof is so advanced, that its still inaccessible to almost everyone. But the initial problems — Diophantus’ successful method for the second power and Fermat’s conjecture for higher powers — are relatively easy to follow:  
 
 > To divide a given square into a sum of two squares.
 >

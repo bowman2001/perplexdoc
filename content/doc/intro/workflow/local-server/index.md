@@ -19,7 +19,7 @@ categories: [Workflow, Theme]
 tags: [Hugo]
 ---
 
-When we are working on a website, we like to examine the resulting pages immediately. We can start Hugo in server mode to generate a local preview in no time.
+When we are working on our content, we often like to examine the resulting pages immediately. To generate an immediate (local) preview, we can run Hugo in its server mode.
 {.p-first} <!--more-->
 
  A command like the following in the root of a project starts the [Hugo server][server]:
