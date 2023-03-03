@@ -14,6 +14,8 @@ resources:
     name: featured
     params:
       alt: "A sign on a tree cites Martin Luther King in French: “Croyez en vos rêves et ils se réaliseront peut-être. Croyez en vous et ils se réaliseron sûrement.”"
+categories: [Theme]
+tags: [Replacements] 
 ---
 
 The `<cite>` tag has changed its purpose over time. It has been used to mark the name of authors, but today it should mark the name of  creative works like books, articles or other websites.

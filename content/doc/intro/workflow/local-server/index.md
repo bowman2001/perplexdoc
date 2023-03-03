@@ -15,7 +15,7 @@ resources:
     name: featured
     params:
       alt: A half open glowing computer notebook
-categories: [Workflow, Theme]
+categories: [Workflow]
 tags: [Hugo]
 ---
 

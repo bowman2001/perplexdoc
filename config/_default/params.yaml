@@ -2,7 +2,7 @@
 # Additional parameters
 #
 
-description: Perplex is a typographic theme with advanced layout capabilities. You can publish technical content in a full documentation, a blog or longer articles.
+description: Perplex is a typographic theme with advanced layout capabilities. You can publish technical content in a documentation, a blog, as news or long articles.
 embedFull: false
 svg: inline
 
@@ -13,10 +13,9 @@ favicon:
 
 sourceURL: https://github.com/bowman2001/perplexdoc
 sourceEditTree: edit/main/content
-themeURL: https://github.com/bowman2001/perplex
 
 imaging:
-  sizestep: 100
+  sizestep: 25
   fallback_width: 1920
 
 # fathomSiteID: ABCDEFG

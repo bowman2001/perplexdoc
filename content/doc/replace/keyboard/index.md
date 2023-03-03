@@ -18,17 +18,19 @@ resources:
 title: Keyboard Legend
 weight: 430
 categories: [Theme]
-tags: [Replacement]
+tags: [Replacements]
 ---
 
-Sometimes we need to explicitly refer to the keyboard strokes needed to complete a task.
+Refer explicitly to keyboard strokes in your text.
 {.p-first} <!--more-->
 
 ## Syntax
 
-The replacement character `#` indicates a key legend. The replacement code `{‍#K}` for example shows the {#K}.  
+The replacement character `#` indicates a key legend. 
 
 ## Layout
+
+The replacement code `{‍#K}` for example shows the {#K}.  
 
 ### Guillemets in Linux
 
@@ -45,7 +47,8 @@ The operating system Linux offers these simple keyboard shortcuts to introduce p
 
 {#Alt Gr} + {#Shift} + {#X}
 : produces '‹'
+{.dl-loose3}
 
 ### Copy & Paste in Windows
 
-The operating system _Windows_ allows copying a piece of text into the clipboard by typing {#Ctrl} + {#C}. To use the clipboard content in another location, we type {#Ctrl} + {#V}.
+The operating system _Windows_ allows copying a piece of text into the clipboard by typing {#Ctrl} + {#C}. To insert the clipboard content at another location, we type {#Ctrl} + {#V}.

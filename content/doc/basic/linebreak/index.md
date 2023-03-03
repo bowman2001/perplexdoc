@@ -47,7 +47,7 @@ One backslash `\`
 : directly after the text and before the end of the line.
 {.dl-loose}
 
-Both options are error-prone. Spaces before the end of the line are usually invisible in text editors and get easily deleted by accident. The backslash is visible, but if there only one additional space glyph between the backslash and the invisible newline character, the `\` is treated literally and visible on the resulting page.
+Both options are error-prone. Spaces before the end of the line are usually invisible in text editors and get easily deleted by accident. The backslash is visible, but if there’s only one additional space glyph between `\` and the also invisible newline character, the `\` is treated literally. We get a visible `\` instead of a newline on the page.
 
 ### The GitHub Way
 

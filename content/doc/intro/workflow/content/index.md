@@ -23,22 +23,22 @@ It may take a little while to get your head around Hugo’s content folder struc
 Hugo also offers to process data or to include raw HTML files, but this theme doesn’t use this functionality for now.  
 {{< /mnote >}}
 
-The content of the root itself {$/} and the folders {$doc}, {$news}, {$blog} and {$article} may contain Markdown files and their resources. The theme provides different layout templates for them. Hugo applies the matching templates automatically to every content file inside these directories and their subdirectories.
+The content of the root {$/} and the folders {$doc}, {$news}, {$blog} and {$article} may contain Markdown files and their resources. The theme provides different layout templates for them. Hugo applies the matching templates automatically to every content file inside these directories and their subdirectories.
 
-The root {$/}
-: may contain top level pages
+{$/}
+: is for top level pages
 
 {$doc}
 : is for the documentation and can handle three folder levels deep filled with Markdown files and their resources.
 
 {$news}
-: is for very short postings like announcements, which are listed in a continuous stream on the top level news page.
+: is for short postings like announcements, which are listed in a continuous stream on the top level news page.
 
 {$blog}
-: is for short postings, which are accessible through the top level blog list page.
+: is for postings, which are accessible through the top level blog list page.
 
 {$article}
-: is for longer postings or essays, which are listed as cards on a top level page.
+: is for longer postings or essays, which are listed as cards on the top level list page.
 {.dl-loose}
 
 ### Single pages {#single}

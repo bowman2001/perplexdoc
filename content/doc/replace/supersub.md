@@ -10,11 +10,13 @@ menu:
 title: Super- and Subscripts
 weight: 420
 categories: [Theme]
-tags: [HTML, Replacements]
+tags: [Replacements]
 ---
 
-When you need only a few super- or subscripts in your text, the replacement codes are there for you. When you want to include complex mathematical or chemical formulas you are certainly better off with [LaTeX][latex] notation.
+When you need only a few super- or subscripts in your text, the replacement codes are there for you.
 {.p-first} <!--more-->
+
+Should you plan to include complex mathematical or chemical formulas you are probably better off with [LaTeX notation][latex].
 
 ## Syntax
 

@@ -11,7 +11,7 @@ subtitle: false
 title: Definition List
 weight: 210
 categories: [Markdown]
-tags: [Block, List]
+tags: [List, Block]
 resources:
   - name: featured
     src: sandy-millar-Kl4LNdg6on4-unsplash.jpg

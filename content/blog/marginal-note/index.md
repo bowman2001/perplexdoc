@@ -1,6 +1,6 @@
 ---
 title: The Beauty of Marginal Notes
-description: Demo for the marginal note shortcode
+description: Demo of the marginal note
 date: 2022-07-04T22:18:04+02:00
 weight: 1
 categories: [Shortcode]
@@ -31,9 +31,9 @@ The famous mathematician Fermat wrote his last conjecture around 1637 in the mar
 
 {{< figure wiles />}}
 
-A proof has been considered generally inaccessible until Sir Andrew John Wiles announced to have found one in 1993 after years of ground-breaking work. A few mathematicians were able to follow him and pointed out some flaws in his first preliminary version. Wiley finally published a convincing version in 1995 — a break-through in number theory which won him a few prizes.  
+A proof has been considered generally inaccessible until Sir Andrew John Wiles announced to have found one in 1993 after years of ground-breaking work. A few mathematicians were able to follow him and pointed out some flaws in his first preliminary version. Wiley finally published a completely convincing version in 1995 — a break-through in number theory which won him a few prizes.  
 
-Wiley’s proof is so advanced, that its still inaccessible to almost everyone. But the initial problems — Diophantus’ successful method for the second power and Fermat’s conjecture for higher powers — are relatively easy to follow:  
+Wiley’s proof is still only accessible to mathematical specialists. But the initial mathematical problem — Diophantus’ successful method to split a second power into the sum of two second powers and Fermat’s conjecture about the impossibility to do the same for higher powers — are relatively easy to grasp:  
 
 > To divide a given square into a sum of two squares.
 >
@@ -44,7 +44,7 @@ Wiley’s proof is so advanced, that its still inaccessible to almost everyone. 
 > Thus one number is {^256}&frasl;{_25} and the other {^144}&frasl;{_25}. The sum of these numbers is 16 and each summand is a square.
 
 {{< mnote up=24 >}}
-It is impossible to separate a cube into two cubes, or a fourth power into two fourth powers, or in general, any power higher than the second, into two like powers. I have discovered a truly marvelous proof of this, which this margin is too narrow to contain. --- _Pierre de Fermat_
+It is impossible to separate a cube into two cubes, or a fourth power into two fourth powers, or in general, any power higher than the second, into two like powers. I have discovered a truly marvelous proof of this, which this margin is too narrow to contain.
 {{< /mnote >}}
 
 ---

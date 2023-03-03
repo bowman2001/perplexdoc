@@ -13,12 +13,15 @@ resources:
 categories: [Content]
 tags: [Markdown, Block, Inline, Image]
 series: [Images]
+draft: true
 ---
 
-Markdown only  two basic layout modes: **inline & block**. Before we think about applying others with an attribute or a shortcode, we need to understand them.
+HTML generated from Markdown contains the standard layout modes for HTML tags: **inline & block**. 
 {.p-first} <!--more-->
 
-The distinction between those two in Markdown seems simple. Every block is surrounded by at least one blank line. Everything written on the same or the directly following line is inline --- except lists and their items. We usually don’t need to think about layout modes and use them intuitively correct. One problematic element is the main reason to recall the distinction:  
+The distinction between those two in Markdown is relatively simple. Every block is surrounded by at least one blank line at the top and the bottom or visually separated by other means. Everything written on the same or the directly following line therefore gets included in such a block. List items are blocks themselves and nested elements may also be blocks. The innermost elements of blocks are inline. 
+
+We don’t need to think about layout modes most of the time and use them intuitively correct. One problematic element is the main reason to recall the distinction:  
 
 Inline elements
 : behave like characters and may be embedded in text. They are placed on the same line as long as there is any horizontal space left --- and then the line wraps and so on. They may contain other inline elements --- like **a piece of `code` in emphasis** for example. Inline elements shouldn’t include block elements, but they always need to be embedded in block elements.

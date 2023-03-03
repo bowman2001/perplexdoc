@@ -1,25 +1,25 @@
 ---
 author: Georg Makowski
 date: "2021-03-24T21:44:41+01:00"
-description: List marked with a bullet
+description: List marked with bullets
 menu:
   doc:
-    name: Bullet list
+    name: Simple list
     parent: basic
     pre: format_list_bulleted
 subtitle: false
-title: Bullet List
+title: Simple List
 weight: 125
 categories: [Markdown]
-tags: [Block, List]
+tags: [List, Block]
 resources:
   - name: featured
     src: torbjorn-helgesen-dz35efCT3ZA-unsplash.jpg
     params:
-      alt: A small notebook with a bullet list
+      alt: A small notebook with a list
 ---
 
-A bullet list is an unordered list grouping a set of related items. Any item may contain a sub-list.
+A simple list is unordered and groups a set of related items. Any item may contain a sub-list.
 {.p-first} <!--more-->
 
 ## Syntax

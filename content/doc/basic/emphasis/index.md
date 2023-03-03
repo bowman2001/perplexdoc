@@ -63,7 +63,7 @@ I haven’t checked the specification details for this argument, but the asteris
 
 - `**H**yper-**T**ext **M**arkup **L**anguage`&emsp;for&emsp;**H**yper-**T**ext **M**arkup **L**anguage is working fine.
 
-- In `__H__yper-__T__ext __M__arkup __L__anguage` the underscores are ignored by Goldmark and even left inside the text: __H__yper-__T__ext __M__arkup __L__anguage.
+- In `__H__yper-__T__ext __M__arkup __L__anguage` the underscores are ignored by CommonMark (Goldmark) and even left inside the text: __H__yper-__T__ext __M__arkup __L__anguage.
 
 ## Emphasis with sans-serif fonts
 

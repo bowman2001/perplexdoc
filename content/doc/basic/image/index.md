@@ -51,10 +51,10 @@ Embedding an image is syntactically similar to placing a [link]({{< relref "doc/
  ![Alternative Text](image.jpg)
  ```
 
-The alternative text inside the square brackets `[]` is used by screen readers, pure text browsers and search engines.
+The alternative text inside the square brackets `[]` is used by screen readers, pure text browsers and all kinds of data scrapers.
 
 {{< mnote up=11 >}}
-We should always provide an alternative text. Perplex also allows to specify an `alt` parameter in the resource meta-data, when we reference an image there. In that case, we have two options: We can leave the brackets empty or override this resource parameter.
+Perplex also allows to specify an `alt` parameter in the resource meta-data, when we reference an image there. In that case, we have two options: We can leave the brackets empty or override this resource parameter.
 {{< /mnote >}}
 
 ### Reference notation

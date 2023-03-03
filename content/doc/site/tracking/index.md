@@ -33,17 +33,15 @@ There is some concern about Google collecting data from website visitors via its
 
 ## Fathom Analytics
 
-Fathom is a smaller company offering its popular service [Fathom Analytics][fathomref]\*. It’s privacy-focused and because they don’t collect any individual data from our visitors, we don’t need to inform them about this merely statistical service.
+[Fathom Analytics][fathomref]\* is privacy-focused and paid, because it doesn’t monetize data from visitors. It doesn’t collect any individual data from visitors and is a merely statistical service for website operators. With Fathom you don’t need to force your visitors to decide upon which data they would like to share, before they can start to use your site. In short: There is no need for another annoying pop-up!
 
-{{< mnote up=11 star=1 >}}
+{{< mnote up=17 star=1 >}}
 This is an affiliate link. Should you subscribe to Fathom’s service, I would appreciate if you could do so by following [this link](https://usefathom.com/ref/CENRRH). You can save 10 bucks this way.
 {{< /mnote >}}
 
-Fathom doesn’t offer as many tools and information as Google. But if you don’t need all this anyway, you will probably like their clear and simple backend. The most important advantage of the service --- at least for me: We can use tracking without an annoying initial banner on our site!
+This advantage comes at a (reasonable) price after a short tryout period. Fathom doesn’t offer as many tools and information as Google. But if you don’t need all this anyway, you will probably like their clear and simple backend.
 
-This advantage comes at a (reasonable) price. Because Fathom doesn’t monetize the data from your website they want to be paid for their service after a short tryout period.
-
-When you have a fathom id for your site, place it like `fathomSiteID: ABCDEFG` in the [parameter section][fid] of your configuration. And when you are using their _custom domain_ you also need to provide the full link like `fathomCustomDomain: https://custom.yourdomain.com` also in [this section][fcustom].
+When you’ve gotten a fathom id for your site, place it like `fathomSiteID: ABCDEFG` in the [parameter section][fid] of your configuration. And when you are using their _custom domain_ you also need to provide the full link like `fathomCustomDomain: https://custom.yourdomain.com` also in [this section][fcustom].
 
 [gparam]: {{< relref "configyaml#19" >}}
 [fathomref]: <https://usefathom.com/ref/CENRRH>

@@ -12,7 +12,7 @@ title: Task List
 toc: false
 weight: 250
 categories: [Markdown]
-tags: [Block, List]
+tags: [List, Block]
 resources:
   - name: featured
     src: glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg
