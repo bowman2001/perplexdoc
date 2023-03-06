@@ -9,7 +9,7 @@ menu:
     name: Title Section
     parent: page
     pre: title
-categories: [Layout]
+categories: [Theme]
 tags: [title]
 ---
 

@@ -9,9 +9,9 @@ menu:
     parent: attributes
     pre: help_outline
 subtitle: false
-title: How to use them?
+title: How to use Attributes?
 weight: 310
-categories: [Theme, Hugo]
+categories: [Hugo]
 tags: [Attribute]
 ---
 

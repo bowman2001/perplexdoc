@@ -10,8 +10,8 @@ resources:
     name: featured
     params: 
       alt: HTML code on a computer screen
-categories: [Content]
-tags: [Markdown, Block, Inline, Image]
+categories: [Markdown]
+tags: [Block, Inline, Image]
 series: [Images]
 draft: true
 ---

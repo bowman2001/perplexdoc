@@ -47,7 +47,7 @@ Please remember the often neglected sets of general entities, which are meant to
 
 ### Spacing
 
-Good typography needs the right amount of space between type. For the most part this is the job of the web designer. But the horizontal space inside the text remains the responsibility of the author. When some words or characters need more or less horizontal space, the Markdown should include this information:
+Good typography needs the right amount of space between type. For the most part this is the job of the web designer. But horizontal spacing inside the text remains the responsibility of the human editor. The following HTML entities :
 
 | Name                    | Entity Code |  Example   |
 |:------------------------|:-----------:|:----------:|
@@ -70,7 +70,14 @@ The non-breaking entities are meant for situations where characters or words sho
 | Soft hyphen               |   `&shy;`  |  x&shy;x   |
 | Non breaking space        |  `&nbsp;`  |  x&nbsp;x  |
 | Narrow non breaking space | `&#x202f;` | x&#x202f;x |
+| Zero width joiner         | `&zwj;`    | x&zwj;x    |
+
+## Emojis
+
+Hugo supports emojis in Markdown content, if we set the global parameter [`enableEmoji`][he] to `true`.
 
 [plexspec]: https://ibm.com/plex/specs
 
 [hy]: https://github.com/mnater/Hyphenopoly
+
+[he]: https://gohugo.io/getting-started/configuration/#enableemoji

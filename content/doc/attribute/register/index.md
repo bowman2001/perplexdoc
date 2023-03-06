@@ -30,5 +30,6 @@ To attach the attributes correctly in Markdown, have a look at the short [Howto]
 | Paragraph | Standfirst paragraph | {$.p-first} |
 | | Big paragraph | {$.p-big} |
 | | Small paragraph | {$.p-small} |
+| | Meta paragraph | {$.p-meta} |
 | Blockquote | Hero quote | {$.blockquote-hero} |
 | Ordered list | continue counting | {$.ol-continue} |
