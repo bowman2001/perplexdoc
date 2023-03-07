@@ -18,7 +18,7 @@ resources:
       alt: "Red glowing neon letters: “Ready or Not”"  
 ---
 
-Perplex is designed to publish technical content written in **Markdown** with the static site generator **Hugo**. It provides templates for blog postings, a documentation with up to three section levels and single pages. Templates for long articles will follow soon.
+Perplex is designed to publish technical content written in **Markdown** using the powerful static site generator **Hugo**. It provides templates for a documentation with up to three section levels, blog postings, short news and single pages. Templates for long articles will follow soon.
 {.p-first} <!--more-->
 
 The main chapters of this documentation assume basic knowledge about Markdown and Hugo. Doesn't sound familiar at all? The following pages about these topics get you started.

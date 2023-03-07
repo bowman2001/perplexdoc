@@ -15,8 +15,9 @@ cascade:
 resources: 
   - src: Perplex.svg
     name: featured
-    alt: Perplex logo
+    params:
+      container: "no"
 ---
 
-This chapter includes files and other additional material used for this project.
+This chapter presents files and other additional material.
 {.p-first} <!-- more -->

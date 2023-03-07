@@ -12,7 +12,7 @@ title: Strike-through and Insertion
 toc: false
 weight: 240
 categories: [Markdown]
-tags: [Inline, Delete, Insert]
+tags: [Inline]
 resources:
   - name: featured
     src: engin-akyurt-GqJUczrwIG4-unsplash.jpg

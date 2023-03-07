@@ -18,61 +18,63 @@ resources:
       alt: A few chain links
 ---
 
-Internet references or short “links” are the binding fabric of the web. Markdown encourages their use by providing simple markup options.
+Internet references or short “links” are the binding fabric of the web. Markdown encourages their use by providing a bunch of simple markup options.
 {.p-first} <!--more-->
 
-The easiest way to create a link is to write the reference directly into the text and let it be handled **automatically**. If we want to **name** a link, we need to connect the name with the reference.
-
-A reference to your own website is called an **internal link**, a reference to another an **external link**.
+Irrespective of the way we write our text links, their layout looks the same. Perplex distinguishes only between **internal links** to our own website and **external links** to others by applying a different color for their decoration.
 
 ## Syntax
 
-### Automatic links
+The easiest way to create a link is to write an URL (**U**niform **R**esource **L**ocator) directly into the text and let it be handled **automatically**. Sometimes we may want to explicitly show an URL like this, but often we prefer to **name** them. To achieve this, we need to connect the name with the reference.
 
-A URL (**U**niform **R**esource **L**ocator) starting with `http://` or `https://` is automatically transformed into a link by the **linkify** extension. If you want to stop this default behavior, you can set `linkify` to `false` in the [configuration]({{< relref "markup#9" >}}).  
+### Automatic links from URLs
 
-There are two ways to include links from a word or phrase:
+CommonMark transforms **marked** URLs into full HTML references. With the **linkify** extension we can even omit the marks and write raw URLs.
 
-1. You can include them **inline** within the text.
-2. They may also be written in a separate **reference** like a footnote.
+#### Marked links
 
-## Automatic links {#linkify}
+CommonMark URLs need to be enclosed in angle brackets `<>` like `<http://www.example.com>` and are rendered into <http://www.example.com>.
 
-We can surround URLs for better legibility in the markdown file
-with angle brackets `<>`. The result is the same:
+#### Raw URLs {#linkify}
 
-`http://www.example.com`&ensp;or&ensp;`<http://www.example.com>`
-are linked automatically to
-<http://www.example.com> or <http://www.example.com>.
+Every URL starting with `http://` or `https://` is automatically transformed into a link by the **linkify** extension. If you want to stop this default behavior, you can set `linkify` to `false` in the [configuration]({{< relref "markup#9" >}}).  
 
-## Inline link
+### Named links
+
+There are two ways to turn a phrase or word into a link. We can include them **inline** within the text, which is convenient but bloats the text especially in case of long URLs. The alternative is to write the URL into a separate **reference** like a footnote.
+
+#### Inline link
 
 The link inside of the text has to be enclosed by square brackets `[]` and the
-URL and the optional title follow directly afterwards in parens `()`.
-
-### Examples
+URL and the optional title follow directly afterwards in parens `()`. Like this:
 
 ```md
-- [This is an inline-style link](https://www.google.com)
-- [This is an inline-style link](https://www.google.com "Google's Homepage")
- with a title.
- Hover your mouse on top of it.
+1. This is an [inline-style link](https://www.google.com)
+
+2. This is an [inline-style link](https://www.google.com "Google's Homepage")
+   with a title. Hover your mouse over it.
+{.col2}
 ```
 
-- [This is an inline-style link](https://www.google.com)
-- [This is an inline-style link](https://www.google.com "Google's Homepage") with a title.
-Hover your mouse on top of it.
+And the resulting links look like this:
 
-## Reference link
+1. This is an [inline-style link](https://www.google.com)
 
-A reference link is marked by a second set of square brackets with a reference name inside. `[Link to Example][refexample]` is displayed as:
+2. This is an [inline-style link](https://www.google.com "Google's Homepage") with a title. Hover your mouse over it.
+{.col2 .box}
 
-[Link to Example][refexample]
+{{< mnote up=10 >}}
+The tooltip is a nice feature, but because we can’t hover with the mouse over elements on a touch screen they won’t be available there.
+{{< /mnote >}}
 
-The reference marker has to be repeated somewhere else in the file, followed by a colon `:`, the URL and an optional title:
+#### Reference link
 
-`[refexample]: http://www.example.com "Example page"`
+A reference link is marked by a second set of square brackets with a short reference name inside. `[Link to Example][ref]` is again displayed as [Link to Example][ref] when we repeat the reference marker somewhere else in the file, followed by a colon `:`, the URL and an optional title:
 
-This line is never shown, the information is only used to generate the the link.
+```md
+[ref]: http://www.example.com "Example page"
+```
 
-[refexample]: http://www.example.com "Universal example page"
+This line is never shown, the URL and the title are just used as attributes of the link element.
+
+[ref]: http://www.example.com "Example page"

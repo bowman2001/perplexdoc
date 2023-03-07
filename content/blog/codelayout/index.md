@@ -4,13 +4,6 @@ title: Code Layout
 description: Demo for styling options in a blog posting or article
 subtitle: false
 date: 2022-11-01T14:54:07+01:00
-resources:
-- name: featured
-  src: markus-spiske-1LLh8k2_YFk-unsplash.jpg
-  params:
-    alt: Code on a screen
-    ratio: 1.5
-    hint: picture
 categories: [Markdown]
 tags: [Code, Inline, Block]
 series: [Demo]

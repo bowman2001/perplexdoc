@@ -19,28 +19,26 @@ resources:
       alt: A book with a lot of hand-written notes 
 ---
 
-Footnotes are placed at the bottom of the page. They are best suited for technical information, which is not important for the intended meaning of the text.
+Footnotes are placed at the footer of the page :wink:. Therefore they are best suited for (formal) information, which is not essential for the meaning of the text.
 {.p-first} <!--more-->
 
-Footnotes are indispensable for scientific documents or more rigorous essays. They reference sources or elaborate on details. Because they are placed at the end of the content, the footnote marker contains a link allowing to jump to the note. And the note contains a link back to the marker.
+Footnotes are indispensable for scientific texts and more rigorous essays. They reference sources or elaborate on details. Because they are placed at the end of the content, the footnote marker contains a link allowing to jump to the note. And the note contains a link back to the marker.
 
 {{< mnote up=5 >}}
-To jump back and forth between text and footnotes is distracting. Perplex offers a [marginal note]({{< relref "note" >}}) like this one as an alternative for more important notes. If possible it gets placed in the marginal column besides the main text.  
+To jump back and forth between text and footnotes is distracting. Perplex offers a [marginal note]({{< relref "note" >}}) like this one as an alternative for more important notes. If possible the note gets placed in the marginal column besides the main text. On smaller screens it appears in a box with a limited height.
 {{< /mnote >}}
 
 ## Syntax
 
-A Footnote consists of a **marker** and a separate **reference** below. Every reference needs to be unique for logical reasons. But it’s possible to refer multiple times to the same reference. The same **marker** may appear more than once on a page.
+A Footnote consists of a **marker** and a separate **reference** below. Every reference needs to be unique for logical reasons. But it’s possible to refer multiple times to the same reference and the same **marker** may appear more than once on a page.
 
 ### Marker
 
-A marker looks like `[^1]` or `[^footnotephrase]`. The brackets and the `^` character are mandatory, the name of the marker can be chosen arbitrarily — no need to count or follow some pattern.
+A marker looks like `[^1]` or `[^footnotephrase]`. The brackets and the `^` character are mandatory, the name of the marker can be chosen arbitrarily — no need to count or follow some pattern. There’s only one rule: All references on a page need to be **unique**.
 
-{{< mnote up=11 >}}
-A marker should be placed **directly behind** a word or a sentence without any space in between. It’s allowed to have a space before, but then an ugly line break between the text and the marker may occur.
+{{< mnote up=14 >}}
+A marker should be placed **directly behind** a word or a sentence without any space in between. It’s not prohibited to leave space before, but an ugly line break between the text and the marker may occur.
 {{< /mnote >}}
-
-There’s only one rule: All references on a page need to be **unique**.
 
 ### Reference
 

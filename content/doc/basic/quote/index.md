@@ -11,12 +11,7 @@ subtitle: false
 title: Quote
 weight: 120
 categories: [Markdown]
-tags: [Block, Inline, Blockquote, Quote]
-resources:
-  - name: featured
-    src: cj-dayrit-xX2aYSBsyKo-unsplash.jpg
-    params:
-      alt: The quote “All ideas grow out of other ideas” written on a a large stairway
+tags: [Block, Inline, Quote]
 ---
 
 To quote someone means to recognize her or his thoughts as part of our own. We may agree or disagree, but we should refer to them correctly.
@@ -68,12 +63,15 @@ But we get into trouble with these, when we start a line with `>>`, because the 
 
 Because the typographer can't handle other languages, we need to think about a way to include them directly
 
-1. We can learn some _keyboard shortcuts_ to include often needed punctuation. They depend on the operating system and the keyboard layout. On some systems, they are relatively easy to remember, on others, they are practically useless. But you could give it at least a try and look them up for your configuration. Maybe they are useful.
+Keyboard Shortcuts
+: We can learn key combinations to include often needed punctuation. Unfortunately, they depend on the operating system and the keyboard layout. On some systems, they are relatively easy to remember, on others, they are practically useless. But you could give it at least a try and look them up for your configuration.
 
-2. We can always use [HTML entities]({{< relref "specialchar" >}}). We get the German _Gänsefüßchen_&ensp;&bdquo;&nbsp;and&nbsp;&ldquo;&nbsp; with `&bdquo;` and `&ldquo;` for example. Entities look weird in text files, but the result is as good as the original Unicode glyphs.
+[HTML entities]({{< relref "specialchar" >}})
+: We get the German _Gänsefüßchen_&ensp;&bdquo;&nbsp;and&nbsp;&ldquo;&nbsp; with `&bdquo;` and `&ldquo;` for example. Entities look weird in text files, but the result is as good as the original Unicode glyphs.
+{.dl-loose}
 
-{{< mnote up=11 >}}
-It’s possible to replace them later automatically with Unicode glyphs and maybe your editor has a plugin for that.
+{{< mnote up=12 >}}
+It’s possible to replace them with Unicode glyphs and maybe your editor has a plugin for that.
 {{< /mnote >}}
 
 ## Blockquote

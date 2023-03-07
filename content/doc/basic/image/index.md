@@ -8,10 +8,6 @@ menu:
     parent: basic
     pre: image
 resources:
-- name: featured
-  src: mulyadi-JJMoAiVl9jA-unsplash.jpg
-  params:
-    alt: Splashing ring of water
 - name: normal
   src: normal.svg
   params:
@@ -34,7 +30,7 @@ subtitle: false
 title: Images
 weight: 155
 categories: [Markdown]
-tags: [Inline, Image]
+tags: [Image]
 series: [images]
 ---
 

@@ -16,7 +16,8 @@ resources:
     name: featured
     params:
       alt: Hugo logo
+      container: "no"
 ---
 
-A short guide from installation over content organization to publishing with Hugo and Perplex.
+A guide from installation to publishing with Hugo and Perplex.
 {.p-first} <!--more-->

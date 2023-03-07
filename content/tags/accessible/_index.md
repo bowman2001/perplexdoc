@@ -10,4 +10,5 @@ resources:
     alt: Accessibility logo of the United Nations
     attr: SVG by Pablo Busatto
     attrlink:
+    container: "no"
 ---
