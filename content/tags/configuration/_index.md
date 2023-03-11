@@ -1,6 +1,6 @@
 ---
 title: Configuration
-description: All about configuring a Hugo and Perplex project
+description: Configure Hugo & Perplex
 subtitle: true
 date: 2023-03-07T23:55:49+01:00
 resources:

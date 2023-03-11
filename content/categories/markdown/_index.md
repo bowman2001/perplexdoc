@@ -7,5 +7,6 @@ resources:
 - src: Markdown.svg
   name: featured
   params:
+    alt: Markdown logo
     container: "no"
 ---

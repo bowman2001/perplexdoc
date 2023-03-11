@@ -15,7 +15,7 @@ resources:
     name: featured
     params:
       alt: A half open glowing computer notebook
-categories: [Workflow]
+categories: [Getting started]
 tags: [Hugo]
 ---
 
@@ -74,8 +74,16 @@ The Markdown content begins after the front-matter. Hugo will update our site in
 
 ### Example session {#example}
 
-Show all the steps described above
+TODO: Show all the steps described above. The following session is an old test:
 
 {{< asciinema id=fFz7xPpWGOdRCcLXBdYTXqPXu rows=20 startAt=2  >}}
 
 [server]: https://gohugo.io/commands/hugo_server
+
+### Editor links {.h-tip}
+
+A few editors offer a protocol to open them with a link. As of now, Perplex always provides a link to open the content of the current file in a local Visual Studio Code instance. The date of every page contains the link and this is very convenient as soon as your site grows bigger.
+
+{{< mnote up=14 >}}
+Links to other editors could be provided, too, if they offer this functionality.
+{{< /mnote >}}

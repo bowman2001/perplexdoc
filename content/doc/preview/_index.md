@@ -2,7 +2,7 @@
 author: Georg Makowski
 title: Short Preview
 linktitle: Preview
-description: For seasoned Hugo users
+description: Have a quick look into the capabilities of this theme
 subtitle: false
 date: 2022-05-11T23:46:08+02:00 
 weight: 2
@@ -16,8 +16,6 @@ resources:
     name: featured
     params:
       alt: A hand slides a few cords to the side and opens a view to the beach
-categories: [Theme]
-tags: [Markdown]
 draft: true
 ---
 

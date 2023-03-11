@@ -61,12 +61,10 @@ resources:
     params:
       alt: Skyline of Frankfurt am Main
       size: large
-      attr: Mathias Konrath / Unsplash
-      attrlink: https://unsplash.com/@konni
   - src: beau-swierstra-Ndz-4phqtlg-unsplash.jpg
     name: beau
-categories: [Shortcode]
-tags: [Block, Image]
+categories: [Markdown]
+tags: [Shortcode]
 ---
 
 Because no Markdown element corresponds to the complex HTML `<figure>` tag, we need this shortcode for self-contained stand-alone images.

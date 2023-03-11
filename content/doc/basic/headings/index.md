@@ -12,15 +12,7 @@ title: Text Headings
 linktitle: Headings
 weight: 105
 categories: [Markdown]
-tags: [Block, Headings]
-resources:
-- name: featured
-  src: ashni-Wh9ZC4727e4-unsplash.jpg
-  params:
-    alt: Newspaper page with lots of different headings
-    hint: text 
-    anchor: Bottom
-    ratio: 1.1
+tags: [Headings, Block]
 ---
 
 Headings introduce and order the segments on a page. On a website with many pages, each level should have similar importance.
@@ -44,11 +36,11 @@ Markdown headings are preceded by number signs `#` and a space. The six availabl
 
 Usually we don’t want to apply the full hierarchy on moderate sized pages, because too much structure is confusing. For an appropriate layout, it may be desirable to skip one or two levels and use paragraph headings inside of sections for example.
 
-But this is against recommended HTML guidelines. Headings should be used strictly in their descending order, because screen readers and other automatic interpreters get confused otherwise. To follow this recommendation we need to skip headings visually.
+But this is against recommended HTML guidelines. Headings should be used strictly in their descending order, because screen readers and other automatic interpreters get confused otherwise. To follow this recommendation we need to skip headings only visually.
 
-Another variation of their style is to highlight them. Its an easy way to inform readers about especially important text segments.
+Another variation of their style is to highlight them. It’s an easy way to inform readers about especially important text segments.
 
-For these style variations Perplex offers Markdown [attributes][attr].
+Perplex offers Markdown [attributes][attr] for these style variations.
 
 ### Paragraph Headings {#h-p}
 

@@ -9,11 +9,11 @@ menu:
     pre: superscript
 title: Super- and Subscripts
 weight: 420
-categories: [Theme]
+categories: [Markdown]
 tags: [Replacements]
 ---
 
-When you need only a few super- or subscripts in your text, the replacement codes are there for you.
+When you need only a few super- or subscripts in your Markdown, the replacement codes are there for you.
 {.p-first} <!--more-->
 
 Should you plan to include complex mathematical or chemical formulas you are probably better off with [LaTeX notation][latex].

@@ -11,11 +11,11 @@ menu:
     identifier: shortcodehowto
     parent: shortcode 
     pre: help_outline
-categories: [Hugo]
+categories: [Markdown]
 tags: [Shortcode]
 ---
 
-Hugo’s shortcode capabilities can inject arbitrary and configurable HTML from within Markdown. They are “Markdown’s hidden superpower”.
+Hugo’s shortcodes can inject arbitrary and configurable HTML from within Markdown files. They are “Markdown’s hidden superpower”.
 {.p-first} <!--more-->
 
 ## Syntax

@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: 2021-08-18T10:59:52+02:00
-description: Description
+description: Place a note in the right marginal column of the page
 menu:
   doc:
     name: Marginal Note
@@ -9,15 +9,8 @@ menu:
     pre: note
 title: Marginal Note
 weight: 530
-lastmod: 2022-07-25T14:04:02.461Z
-categories: [shortcode]
-tags: [note]
-resources:
-  - src: Diophantus-II-8-Fermat_cut.jpg
-    name: featured
-    params:
-      alt: Old reprint of a classic proof by Diophantus followed by Fermat’s famous last conjecture 
-      attr: PD
+categories: [Markdown]
+tags: [Marginal Note, Shortcode]
 ---
 
 A marginal note contains additional nonessential information. It explains some context, sheds light on a detail or speculates on a given topic etc.

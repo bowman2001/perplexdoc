@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-03-23T22:11:38+01:00"
-description: All types of references to a URL
+description: All types of references to a URL in our text
 menu:
   doc:
     name: Links
@@ -10,7 +10,7 @@ menu:
 title: Links
 weight: 150
 categories: [Markdown]
-tags: [Inline, Link]
+tags: [Inline]
 resources: 
   - name: featured
     src: edge2edge-media-t1OalCBUYRc-unsplash.jpg

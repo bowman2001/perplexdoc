@@ -14,7 +14,7 @@ resources:
     name: featured
     params:
       alt: "A sign on a tree cites Martin Luther King in French: “Croyez en vos rêves et ils se réaliseront peut-être. Croyez en vous et ils se réaliseron sûrement.”"
-categories: [Theme]
+categories: [Markdown]
 tags: [Replacements] 
 ---
 

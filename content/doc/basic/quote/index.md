@@ -11,7 +11,7 @@ subtitle: false
 title: Quote
 weight: 120
 categories: [Markdown]
-tags: [Block, Inline, Quote]
+tags: [Quote, Block, Inline]
 ---
 
 To quote someone means to recognize her or his thoughts as part of our own. We may agree or disagree, but we should refer to them correctly.

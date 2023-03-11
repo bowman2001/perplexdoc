@@ -11,7 +11,7 @@ subtitle: false
 title: Footnotes
 weight: 220
 categories: [Markdown]
-tags: [Block, Footnotes]
+tags: [Block]
 resources:
   - name: featured
     src: kelly-sikkema-et5mfj1eB94-unsplash.jpg
@@ -19,7 +19,7 @@ resources:
       alt: A book with a lot of hand-written notes 
 ---
 
-Footnotes are placed at the footer of the page :wink:. Therefore they are best suited for (formal) information, which is not essential for the meaning of the text.
+Footnotes are best suited for (formal) information, which is not essential for the meaning of the text.
 {.p-first} <!--more-->
 
 Footnotes are indispensable for scientific texts and more rigorous essays. They reference sources or elaborate on details. Because they are placed at the end of the content, the footnote marker contains a link allowing to jump to the note. And the note contains a link back to the marker.

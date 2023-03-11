@@ -11,8 +11,8 @@ menu:
     identifier: howto-replace
     parent: replace
     pre: help_outline
-categories: [Theme]
-tags: [HTML, Replacements]
+categories: [Markdown]
+tags: [Replacements]
 ---
 
 The syntax is simple: The targeted piece of text is enclosed by the curly braces `{` and `}` and an ASCII sign after the first one. `x{‍^3}` for example gets turned into x{^3}.

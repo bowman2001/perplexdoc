@@ -10,6 +10,7 @@ menu:
     name: Features
     parent: tldr
     pre: featured_play_list
+categories: [Getting started]
 draft: true
 ---
 

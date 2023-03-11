@@ -17,7 +17,7 @@ resources:
       quality: 0.5
 title: Keyboard Legend
 weight: 430
-categories: [Theme]
+categories: [Markdown]
 tags: [Replacements]
 ---
 

@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-08-15T23:14:50+02:00"
-description: Custom HTML constructs
+description: Use arbitrary layout objects in Markdown 
 menu:
   doc:
     identifier: shortcode
@@ -10,14 +10,9 @@ menu:
 subtitle: false
 title: Shortcodes
 weight: 500
-resources:
-  - name: featured
-    src: Hugo.svg
-    params:
-      alt: The Hugo logo
-categories: [Theme]
-tags: [Hugo]
+categories: [Markdown]
+tags: [Shortcode]
 ---
 
-We need shortcodes to build complex HTML structures beyond the capabilities of (extended) Markdown.
+We need shortcodes to introduce complex layout structures beyond the capabilities of (extended) Markdown.
 {.p-first} <!--more-->

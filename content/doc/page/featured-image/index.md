@@ -36,6 +36,6 @@ resources:
       alt: fireworks over open water
 ```
 
-The image is identified by its reserved name `featured`. Only one featured image is allowed per page and it should be at least {${{< colwidth 3 >}}} wide.
+The image is identified by its reserved name `featured`. Only one featured image is allowed per page and it should be at least {${{< width/column 2 >}}} wide to display it with double density on high resolution screens.
 
-If no featured image is given for a page, Perplex will search for one: First in its taxonomies (and there the tags have priority), then in its parent folder.
+If no featured image is given for a page, Perplex will search for one: First in its taxonomies (and there the tags have priority), then in its parent folders.

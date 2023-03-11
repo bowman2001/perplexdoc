@@ -11,10 +11,12 @@ subtitle: false
 title: Markdown
 weight: 15
 resources:
+resources:
 - src: Markdown.svg
   name: featured
   params:
     alt: Markdown logo
+    container: "no"
 - src: erda-estremera-eMX1aIAp9Nw-unsplash.jpg
   name: splash
   params:
@@ -26,34 +28,34 @@ resources:
   params:
     caption: Embedded image
     alt: Another splashing water drop
-categories: [Workflow, Markdown]
-tags: [Linebreak, Image, Editor, Linter]  
+categories: [Getting started, Markdown]
+tags: [Linebreak, Image]  
 ---
 
-Markdown has become the favored markup language to structure text files. With good cause: The syntax is intuitive and there are a lot of possibilities to translate them into a visual layout format.
+Markdown has become the favored markup language to structure text files. With good cause: Markdown syntax is relatively intuitive and can be rendered into several layout formats.
 {.p-first} <!--more-->
 
 Markdown files consist of plain text marked up with a small set of ASCII signs. We can read and change them with any text editor. They usually end with the suffix {$.md}.
 
 {{< mnote up=5 >}}
-The suffixes {$.mdown} and {$.markdown} also indicate Markdown, but they are rarely used nowadays.
+The suffixes {$.mdown} and {$.markdown} also indicate Markdown, but are rarely used nowadays.
 {{< /mnote >}}
 
 After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors of Markdown emerged.
 
-To resolve their incompatibilities and to create a general basic and dependable syntax, John Mc&hairsp;Farlane et al. proposed a strict specification in 2011: [CommonMark][cmark]. This specification has been implemented by many Markdown render engines since and important web-software providers thereby adhere to CommonMark as a kind of standard. For a quick look at the syntax you can visit their crisp [one page overview](https://CommonMark.org/help).
+To resolve their incompatibilities and to create a dependable basic syntax, John Mc&hairsp;Farlane et al. proposed a strict specification in 2011: [CommonMark][cmark]. This specification has been implemented by many Markdown render engines since and important web-software providers thereby adhere to CommonMark as a kind of standard. For a quick look at the syntax you can visit their crisp [one page overview](https://CommonMark.org/help).
 
 ## Markdown for Perplex
 
 Perplex styles HTML, which is generated from extended [CommonMark][cmark] by Hugo’s default renderer [Goldmark][gmark]. Three extensions — the [definition list][dl], the [footnote][fnote] and the [typographer][typo] — have been adopted from [PHP Markdown Extra][phpmex]. Based on CommonMark, [GitHub](https://github.com) introduced **G**itHub **F**lavored **M**arkdown (GFM) with the four extensions [table][table], the [task-list][task], [strikethrough][strike] and linkify. They are defined in a [new specification][gfmspec].
 
 {{< mnote up=20 >}}
-The deprecated **Blackfriday** renderer is not fully CommonMark-compliant. Black&shy;fri&shy;day generated HTML may be styled correctly most of the time by Perplex. But if you want to rely on Perplex, I strongly suggest switching to Goldmark and a recent Hugo version.
+Hugo’s deprecated **Blackfriday** renderer is not fully CommonMark-compliant. Black&shy;fri&shy;day generated HTML may be styled correctly most of the time. But if you want to rely on Perplex or any other recent theme, I strongly suggest switching to Goldmark and a recent Hugo version.
 {{< /mnote >}}
 
-Further extensions may join in the future, but probably only a few if any, because simplicity is essential for Markdown.
+Further extensions may join in the future, but probably only a few if any, because simplicity is Markdown’s essential characteristic.
 
-This documentation includes a short review of every syntax element in Goldmark and shows an example of its standard layout and alternative styling options with Perplex:
+This documentation includes a short review of every syntax element known to Goldmark and shows examples of their standard layout in Perplex and alternative styling options the theme provides:
 
 [Basic Markdown Layout]({{< relref "basic" >}})
 : covers the elements of the [CommonMark specification][cmark].
@@ -66,7 +68,7 @@ This documentation includes a short review of every syntax element in Goldmark a
 Two basic Markdown elements are continuously creating confusion, because they are treated in somewhat ambiguous ways:
 
 [Image][img]
-: The Markdown image element is syntactically meant to be placed inside a block element. But it’s also allowed to be used stand-alone and gets automatically enclosed by a paragraph then.[^1]
+: The CommonMark image element is syntactically meant to be placed inside a block element. But it’s also allowed to be used stand-alone and gets automatically enclosed by a paragraph then.[^1]
 
 [Line Break][lb]
 : CommonMark and GFM are not fully compatible in regard to this one element. There are two different ways to handle line breaks inside of text blocks:
@@ -76,11 +78,11 @@ Two basic Markdown elements are continuously creating confusion, because they ar
 
 The following suggestions for these elements are short. Their issues are discussed in more detail on their own pages.
 
-[^1]: The corresponding  `<img/>` tag is an HTML inline element and needs an enclosing block element in valid HTML 5.
+[^1]: The corresponding  `<img/>` tag is an HTML inline element and demands an enclosing block element in HTML 5.
 
 ### How to include images?
 
-There is one image element in Markdown for embedding an image into a block element and no genuine element for a stand-alone image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. Hugo and Perplex provide the shortcode [{$figure}][fig] for this purpose.
+There is one image element in CommonMark for embedding an image into a block element and no genuine element for a stand-alone image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. Hugo and Perplex provide the shortcode [{$figure}][fig] for this purpose. 
 
 {{< figure splash />}}
 
@@ -134,7 +136,9 @@ Most programming editors and IDEs support Markdown out of the box or provide plu
 
 Some special editors are designed exclusively for authoring Markdown. They usually offer a graphical user interface and other convenient features. But none of them is a perfect match for writing Markdown for Hugo and Perplex, because they don’t support all kinds of attributes and can’t handle Hugo shortcodes — as far as I know (a few of them are progressing fast). They are dealing gracefully with these elements most of the time, but occasionally they don't.
 
-Many of these editors offer a convenient separate preview window. With Hugo you have an even better option: When you run Hugo in its web-server mode on the local machine you are writing your Markdown on, it will render your files and deliver the result to your browser instantly (see [Using Hugo](/doc/intro/workflow/local-server). My personal solution is either an IDE or a programming editor in conjunction with Hugo’s server mode.
+### Consider Hugo’s server mode for local previews {.h-tip}
+
+Many of the special Markdown editors offer a separate preview window. With Hugo you have an even **better option**: When you run Hugo in its web-server mode on the local machine you’re writing your Markdown on, it will render your files and deliver the result to your browser instantly (see [Using Hugo](/doc/intro/workflow/local-server). My preferred solution is either an IDE or a programming editor in conjunction with Hugo’s server mode.
 
 ## Markdown Linter
 CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing.

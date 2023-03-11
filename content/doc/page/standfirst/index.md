@@ -15,7 +15,7 @@ resources:
     params:
       alt: A natural opening towards the sky from the sea
 categories: [Theme]
-tags: [Standfirst, Paragraph]
+tags: [Standfirst]
 ---
 
 When the first paragraph contains a short introduction or summary of the page, we can style it emphasized and provide it as meta-data for search optimization.

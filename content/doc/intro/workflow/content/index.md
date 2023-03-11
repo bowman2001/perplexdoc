@@ -10,7 +10,7 @@ menu:
     name: Contents
     parent: workflow
     pre: create_new_folder
-categories: [Workflow, Theme]
+categories: [Getting started]
 tags: [Hugo]
 ---
 
@@ -88,7 +88,7 @@ may be defined in the configuration. Please read the [Hugo docs](https://gohugo.
 
 ##### Taxonomies {.h-tip}
 
-apply to our whole site and are completely independent of the folder structure. and evolves in growing projects. But we shouldn’t let it get out of hand. It’s better to use only a small set of the general categories and apply only one or maybe two to any page. We can add more tags describing aspects of the content, but more than five get irritating and defy their purpose.
+apply to our whole site and are completely independent of the folder structure. The number of taxonomies tends to grow with the size of projects. We shouldn’t let them get out of hand. It’s better to use only a small set of general categories and apply only one or maybe two to any page. We can add tags marking aspects of the content, but more than a few of them may also get irritating.
 
 #### Sidebar Menu for Documentation Pages
 
@@ -143,6 +143,6 @@ After the front-matter {\_index.md} may contain general content about its sectio
 **No subdirectories** are accessible to retrieve resources in `_index.md`. All resources specific for the list also need to be placed at the root of the _branch bundle_. This limitation avoids confusion about the purpose of possible subfolders.
 {{< /mnote >}}
 
-### Page Bundles
+### Page Bundles {#bundles}
 
 [Branch bundles]({{< relref "#branch-bundle" >}}) and [leaf bundles]({{< relref "#leaf-bundle" >}}) are both called **page bundles**, which share the possibility to store resource files. Other than the page bundles the branch bundles for list pages can’t retrieve their own resources from subfolders, because these may well contain more page bundles.

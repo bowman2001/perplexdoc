@@ -11,7 +11,7 @@ subtitle: false
 title: Paragraphs
 weight: 108
 categories: [Markdown]
-tags: [Block, Paragraph]
+tags: [Block]
 resources:
   - name: featured
     src: finn-mund-8q2r2XQpDO0-unsplash.jpg
@@ -26,9 +26,9 @@ Paragraphs are the essential building blocks of text. Comfortable proportions an
 
 ## Syntax
 
-Paragraphs are completed by an empty line in Markdown.
+A paragraph is a sequence of Unicode characters with arbitrary length. It’s finished by an empty line.
 
-In addition to the normal paragraph Perplex offers a **first** paragraph — like the first one on this page. There is also a **big** and a **small** one. And in combination with a following subsection, we can use a **meta** paragraph to indicate a topic or some other general category.
+In addition to the normal paragraph Perplex offers a **first** paragraph — like the first one on this page. There is also a **big** and a **small** one. We can also assign a topic or some other general category to a following section by adding a **meta** paragraph above it.
 
 These styles are applied with the [attributes]({{< relref "doc/attribute" >}}) `{.p-first}`, `{.p-big}`, `{.p-small}` and `{.p-meta}`.
 
@@ -71,6 +71,6 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 Topic
 {.p-meta}
 
-#### Heading under the Topic
+#### Heading with Topic
 
 {{< farfarshort 1 >}}

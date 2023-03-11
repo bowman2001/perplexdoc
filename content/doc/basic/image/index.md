@@ -77,7 +77,7 @@ This syntax is especially convenient, when an image is used more than once or wh
 
 Markdown can’t handle more image parameters than the ones mentioned above. To offer layout variations, Perplex can handle additional parameters with the help of Hugo. All of them can be given as resource meta-data in the front-matter. Alternatively we can change some layout parameters directly in the Markdown by adding parameters to the image name.
 
-#### Resource meta-data
+#### Resource meta-data {#meta-data}
 
 We can specify the following parameters with the given keys and types of values:
 
@@ -117,6 +117,9 @@ We can specify a few parameters to a given set of values:
 | Horiz. position | posh (ph) | {{% parameters imaging.embedded.posh %}} |
 | Vert. position | posv (pv) | {{% parameters imaging.embedded.posv %}} |
 
+##### The value `middle`
+for the vertical positioning doesn’t move an embedded image into the middle of the block. Its only an indicator for the layout to add some additional space for images, which are already placed in the middle of a text block.
+
 [^1]: The syntax for **query strings** has been introduced to extend URLs with optional parameters like `https://name.org?id=val&id2=val2`. They are usually generated automatically to specify API requests.
 
 ##### Overriding resource parameters {.h-info}
@@ -125,10 +128,18 @@ When the given parameters are already defined in the resource section of the fro
 
 ## Resolution
 
-Perplex relies on Hugo’s powerful image processing capabilities. Many different sized versions of every image are generated automatically, so every client browser can pick the optimal size to display. We don’t have to worry about all these sizes, but we should supply a large enough original image. For crisp embedded images in the default size, the originals should have a width of at least {${{< colwidth 3 >}}} to allow triple density on screens with high resolution.
+Perplex relies on Hugo’s image processing capabilities. Many different sized versions of every image are generated automatically, so every client browser can pick the optimal size to display. We only need to supply a large enough original image. For crisp images on high density screens we should at least provide images for double density display.
+
+| Image type | 2&times;density | 3&times;density |
+|:-----------|:-------:|:-----:|
+| block | {{< width/measure 2 >}} | {{< width/measure 3 >}} |
+| large block | {{< width/measure 3 >}} | {{< width/measure 4.5 >}} |
+| extra-large block | {{< width/measure 4 >}} | {{< width/measure 6 >}} |
+| embedded \& small block | {{< width/column 2 >}} | {{< width/column 3 >}} |
+| small embedded | {{< width/column 1 >}} | {{< width/column 1.5 >}} |
 
 {{< mnote up=20 >}}
-When we build a project with many images — like this one or example — we have to show a little patience in the beginning. Image processing may take a few minutes. The generated images are cached by Hugo and we don’t have to wait again in subsequent runs. For builds on virtual machines, you should enable a caching mechanism.
+When we build a project with more than hundred images — like this project — we have to show a little patience on the first Hugo run. Image processing may take a few minutes. The generated images are cached by Hugo and we don’t have to wait again in subsequent runs. For builds on virtual machines, we should enable a caching mechanism or include the reserved {$_resources} folder, where processed files are stored.
 {{< /mnote >}}
 
 In case we can’t provide a large enough version of an image, Perplex uses an [excellent interpolation filter][filter] provided by Hugo to enlarge its size smoothly. Those interpolated images may look blurry nonetheless, a high resolution of the original is always preferable.

@@ -12,7 +12,7 @@ title: Horizontal Rule
 linktitle: Rule
 weight: 140
 categories: [Markdown]
-tags: [Block, Rule]
+tags: [Block]
 resources:
   - name: featured
     src: miti-WmmcTOe3vqA-unsplash.jpg

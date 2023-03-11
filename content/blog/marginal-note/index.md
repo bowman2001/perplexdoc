@@ -3,17 +3,10 @@ title: The Beauty of Marginal Notes
 description: Demo of the marginal note
 date: 2022-07-04T22:18:04+02:00
 weight: 1
-categories: [Shortcode]
-tags: [Note]
+categories: [Markdown]
+tags: [Marginal Note, Shortcode]
 series: [Demo]
 resources:
-- name: featured
-  src: Diophantus-II-8-Fermat_cut.jpg
-  params:
-    alt: Reprint of Diophantus
-    hint: text
-    attr: PD
-    caption: Reprint of Diophantus arithmetica including Fermat’s theorem
 - src: 810px-Andrew_wiles1-3.jpg
   name: wiles
   params:

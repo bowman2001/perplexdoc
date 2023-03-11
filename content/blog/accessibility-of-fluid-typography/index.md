@@ -1,12 +1,12 @@
 ---
 author: Georg Makowski
-title: Accessible Fluid Design
+title: Accessible fluid-responsive Design
 description: Is a view-port-based responsive design user-friendly? 
 subtitle: false
 date: 2022-07-12T22:38:10+02:00
 weight: 1
-categories: [Theme]
-tags: [Accessible, Fluid, Responsive]
+categories: [Design]
+tags: [Accessible, Fluid-responsive]
 ---
 
 There are some doubts about the accessibility of fluid typography among web developers. But websites with a responsive fluid design can behave especially user-friendly and accessible. This site is an example.

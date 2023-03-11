@@ -14,6 +14,11 @@ latex: true
 resources:
   - src: LaTeX_logo.svg
     name: featured
+    params:
+      alt: LateX logo
+      container: "no"
+categories: [Markdown]
+tags: [latex]
 ---
 
 LaTeX is the most popular typesetting system for the natural sciences, its syntax has been established as a quasi-standard to format complex mathematical formulas for print and web layout.

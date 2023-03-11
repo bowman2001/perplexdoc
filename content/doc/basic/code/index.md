@@ -7,18 +7,11 @@ menu:
     name: Code
     parent: basic
     pre: code
-resources:
-- name: featured
-  src: markus-spiske-1LLh8k2_YFk-unsplash.jpg
-  params:
-    alt: Code on a screen
-    ratio: 1
-    hint: picture
 subtitle: false
 title: Code
 weight: 135
 categories: [Markdown]
-tags: [Inline, Block, Code]
+tags: [Code, Inline, Block]
 ---
 
 The main text column offers space for {$80} characters of code in one line. When we need {$120} to fit in one line, we can choose to additionally use the marginal column.
