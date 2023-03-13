@@ -1,0 +1,6 @@
+{{- if and .Site.IsServer .File -}}
+{{- with (.Param "sourcePath") -}}
+{{- $path := print "vscode://file" . $.File.Path  -}}
+<a {{ printf "href=%q" $path | safeHTMLAttr }} rel="nofollow">
+    {{- end -}}
+    {{- end -}}

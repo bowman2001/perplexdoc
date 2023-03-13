@@ -1,42 +1,35 @@
 {{- define "main" -}}
   <div id="l-content-box" class="l-box l-box--full">
-    <div id="l-content">
-      <header class="page-header page-header--title-left">
-        <div class="title">
-          <hr>
-            {{ partial "title/taxonomy.html" .Page }}
-            {{ partial "title/subtitle.html" .Page }}
+    <header class="page-header page-header--title-left">
+      <div class="title title--taxo">
+        <hr>
+          {{ partial "file/editor_start.html" .Page }}
+          {{ partial "title/taxoterm.html" .Page }}
+          {{ partial "title/subtitle.html" .Page }}
+          {{ partial "file/editor_end.html" .Page }}
+      </div>
+    </header>
+      {{ with .Content }}
+        <div class="md md--sans md--margin-left md--h-serif md--list">
+            {{- partial "replacements.html" . -}}
         </div>
-      </header>
-        {{ with .Content }}
-          <div class="md md--sans md--margin-left md--h-serif md--list">
-              {{- partial "replacements.html" . -}}
-          </div>
-        {{ end }}
-      {{ with .Pages }}
-      <nav class="card-nav card-nav--top margin-left">
-        <ul class="card-nav__list">
-            {{ $n := len . }}
-            {{ $normal := 3 }}
-            {{ $small := 7 }}
-            {{- range $index, $page := . -}}
-                {{ if eq $index 0 }}
-                  <li class="card card--full">{{- $page.Render "li-card-full-img" -}}</li>
-                {{ else if lt $index $normal }}
-                  <li class="card">{{- $page.Render "li-card-img" -}}</li>
-                {{ else if lt $index $small }}
-                  <li class="card card--small">{{- $page.Render "li-card-small-img" -}}</li>
-                {{ else }}
-                  <li class="card card--tiny">{{- $page.Render "li-card-small" -}}</li>
-                {{ end }}
-            {{- end -}}
-        </ul>
-      </nav>
       {{ end }}
-    </div>
+      {{ with .Pages }}
+        <nav class="card-nav card-nav--3 card-nav--top margin-left">
+          <ul class="card-nav__list">
+              {{- range . -}}
+              <li class="card card--1">{{- .Render "li-card-1-col-img" -}}</li>{{- end -}}
+          </ul>
+        </nav>
+      {{ end }}
     <footer class="page-footer page-footer--taxo">
-      <hr>
-        {{ partial "nav/taxonomies/site.html" . }}
+        <hr>
+        {{ partial "nav/taxonomies/site/lists.html" . }}
     </footer>
   </div>
 {{- end -}}
+{{ define "footer" -}}
+  <footer id="l-footer" class="l-box margin-left">
+      {{- partial "footer/site.html" . -}}
+  </footer>
+{{ end -}}

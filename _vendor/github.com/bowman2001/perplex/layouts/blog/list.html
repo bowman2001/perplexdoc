@@ -1,8 +1,9 @@
 {{- define "main" -}}
 <div id="l-content-box" class="l-box l-box--full">
   <header class="page-header">
-    <div class="title title--list title--sans padding-left">
-      {{ partial "blog/title/title-list.html" . }}
+    <div class="title title--first margin-left">
+      <hr>
+      {{ partial "title/title.html" . }}
     </div>
   </header>
   {{ with .Content }}
@@ -11,12 +12,12 @@
   </div>
   {{ end }}
   <ul class="page-list">
-    {{ $n := 5 }}
+    {{ $n := 10 }}
     {{ with site.Params.paginateNr }}{{ $n = . }}{{ end }}
-    {{ range (.Paginate .Pages $n).Pages.ByDate.Reverse }}
+    {{ range (.Paginate .RegularPages $n).Pages.ByDate.Reverse }}
     <li class="li-box">
-      {{- .Render "li-full" -}}
       <hr>
+      {{- .Render "li" -}}
     </li>
     {{- end -}}
   </ul>

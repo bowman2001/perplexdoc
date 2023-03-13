@@ -15,7 +15,7 @@ MD029:
 # with our Hugo configuration, the rule is not necessary. 
 # And it would also be triggered by angled brackets intended for the typographer.
 MD033: false 
-# Image need to have an alternative description. But because Perplex allows to 
+# Images need to have an alternative description. But because Perplex allows to 
 # provide it in the resources and issues a warning in case its missing, there is
 # no need to throw this warning
 MD045: false

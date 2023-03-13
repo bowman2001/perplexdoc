@@ -1,5 +1,0 @@
-{{ $last := sub (len .) 1 }}
-{{ range $index, $tag := . }}
-  <a href="{{ $tag.Permalink }}"><span class="meta__item meta__item--text">{{ $tag.LinkTitle |
-          site.Home.RenderString }}</span>{{- if (lt $index $last) }} ·&nbsp;{{ end }}</a>
-{{ end }}
