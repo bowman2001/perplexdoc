@@ -5,7 +5,6 @@ subtitle: false
 date: 2022-09-01T23:55:26+02:00
 categories: [Module]
 tags: [Replacements, Security]
-draft: true
 ---
 
 Replacement codes help to avoid raw HTML in Markdown. Single curly braces and special ASCII characters let Hugo inject tags into the already rendered HTML with regular expressions.
