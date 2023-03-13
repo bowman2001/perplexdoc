@@ -10,16 +10,19 @@ series: [Demo]
 resources:
 - src: romain-vignes-ywqa9IZB-dU-unsplash.jpg
   name: featured
+  params:
+    alt: Lexicon entry
 draft: true
 ---
 
-A definition list inside a blockquote with a sublist in one of its items is an interesting case for Markdown and its layout.
-{.p-first}<!--more-->
+A definition list inside a blockquote with a sub-list in one of its items is an interesting problem for Markdown layout.
+{.p-first}
+<!--more-->
 
-The problem came up in the [Hugo-forum](https://discourse.gohugo.io/t/list-as-a-definition-list-item/40235) and it was not clear to at first. So I created two demos. The original question was not about the layout, only about the resulting HTML code.\*
+The problem came up in the [Hugo-forum](https://discourse.gohugo.io/t/list-as-a-definition-list-item/40235). At first it was a little unclear, so I created two demos. The original question was not about the layout, only about the resulting HTML code.\*
 
 {{< mnote star=1 down=2 >}}
-I did not include the resulting code, you can inspect it as usual with your browser-tool.
+I don’t include the resulting code, you can inspect it as usual with your browser-tool.
 {{< /mnote >}}
 
 ## Bullet list inside of definition list
@@ -54,7 +57,7 @@ Nested definition lists are tricky and another request for the opposite problem 
 
 ## Definition list nested inside a bullet list
 
-This time without a surrounding blockquote.
+And there was a follow-up question. This time without a surrounding blockquote.
 
 {{< playground >}}
 - **1980**
@@ -66,7 +69,7 @@ This time without a surrounding blockquote.
 
 And again the correct indentation leads to correct HTML.
 
-I don’t know the context, but maybe a simpler solution without the bullets could serve the same purpose:
+I don’t know the context, but maybe a simpler solution without a definition list instead of a bulleted one would serve the purpose in a better way:
 
 {{< playground >}}
 1980

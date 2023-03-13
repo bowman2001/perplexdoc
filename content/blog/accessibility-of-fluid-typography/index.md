@@ -10,7 +10,8 @@ tags: [Accessible, Fluid-responsive]
 ---
 
 There are some doubts about the accessibility of fluid typography among web developers. But websites with a responsive fluid design can behave especially user-friendly and accessible. This site is an example.
-{.p-first} <!--more-->
+{.p-first}
+<!--more-->
 
 Just give it a try with {#Ctrl} + {#+} and {#Ctrl} + {#-} or the zoom setting of your desktop browser. You will be surprised how well you can zoom in or out of this layout. Even the images get reloaded in a higher resolution, if necessary.
 {.p-big}
