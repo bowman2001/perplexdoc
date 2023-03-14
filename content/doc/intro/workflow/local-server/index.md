@@ -82,8 +82,10 @@ TODO: Show all the steps described above. The following session is an old test:
 
 ### Editor links {.h-tip}
 
-A few editors offer a protocol to open them with a link. As of now, Perplex always provides a link to open the content of the current file in a local Visual Studio Code instance. The date of every page contains the link and this is very convenient as soon as your site grows bigger.
+A few editors offer a protocol to open files with a special link. As of now, Perplex provides a link to open the content file in a local instance of _Visual Studio Code_.
 
-{{< mnote up=14 >}}
+{{< mnote up=8 >}}
 Links to other editors could be provided, too, if they offer this functionality.
 {{< /mnote >}}
+
+This link is only present if Hugo runs in server-mode. Then, its placed in the date at the top or the bottom of regular pages. Because taxonomy pages don’t show a date, the link is placed in the title.

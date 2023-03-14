@@ -1,8 +1,11 @@
 ---
 title: Page
-description: Page description placeholder
-subtitle: false
+description: Variable page specific elements
+subtitle: true
 date: 2023-03-13T10:41:36+01:00
-weight: 10
-
+resources:
+  - src:
+    name: featured
+    params:
+      alt:
 ---

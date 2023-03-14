@@ -10,16 +10,17 @@ menu:
     name: Resources
     parent: workflow 
     pre: collections
-categories: [Resources]
-tags: [Hugo]
+categories: [resources, getting-started]
 ---
 
-This theme expects local resources. All additional files like images need to be placed in page bundles. Page resources from parent sections or taxonomies can be re-used conveniently.
+This theme expects resources like images as local files. We need to place them in page bundles and register them in the front-matter of the Markdown file. Resource files from parent sections or taxonomies can be re-used conveniently.
 {.p-first} <!--more-->
 
-## Hugo’s options {#resources}
+Hugo allows to handle resources in different ways and this theme has chosen the one which has a lot of support by Hugo out of the box, offers a lot of flexibility and doesn’t rely on external services.
 
-There are generally three options to store and retrieve resource files (like images):
+## Hugo’s general options {#resources}
+
+There are three ways to store and retrieve resource files (like images):
 
 Page specific
 : We can save them in the folder of a page bundle and access them with a short relative path. We can register the resources in the front-matter and add additional meta-data. This Hugo feature has one big advantage: Every content page is self-sufficient and may be re-used in other sites simply by cloning its folder.
@@ -41,16 +42,15 @@ resources:
     name: image
 ```
 
-A resource is registered as usual for Hugo by providing its source path and adding a name. We can add as many files we like this way to the list under the `resources` key. Its also possible to add arbitrary meta-data under an additional `params` key. This theme processes a bunch of them for the [CommonMark image element](/doc/basic/image#meta-data).  
-
+A resource needs to be registered as usual by providing its source path and adding a short name as an identifier label. We can add as many files we like to the list under the `resources` key. Its also possible to add arbitrary meta-data under an additional `params` key. This theme can process a bunch of them for the [CommonMark image element](/doc/basic/image#meta-data).
 
 ### Resources from other page bundles
 
-There may be also a downside depending on content structure. In case we want to include a resource more than once, we need to store it repeatedly. To overcome this problem at least partially, this theme is also looking for resources in taxonomy and parent pages, when they are not included in a given page bundle.
+There may be also a downside of this approach depending on the specific content structure. In case we want to include a resource more than once, we need to store and register it repeatedly. To overcome this problem at least partially, this theme is also looking for resources in taxonomy and parent pages, when they are not found in the current page. This also allows to use resources in simple pages, which aren’t bundles themselves.
 
 #### Lookup order
 
-In case a resource is not found in a given page bundle, the theme tries the next related page and so on in the following order:
+In case a resource is not found in a given page, the theme tries the next related page and so on in the following order:
 
 1. Page
 2. First tag of the page

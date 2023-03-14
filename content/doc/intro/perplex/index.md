@@ -10,8 +10,8 @@ menu:
 subtitle: false
 title: Perplex
 weight: 11
-categories: [Theme]
-tags: [Fluid, Responsive, Layout]
+categories: [design, getting-started]
+tags: [fluid-responsive]
 resources:
   - name: featured
     src: hal-gatewood-tZc3vjPCk-Q-unsplash.jpg

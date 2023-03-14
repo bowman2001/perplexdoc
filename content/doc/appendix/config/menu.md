@@ -14,8 +14,10 @@ categories: [Hugo]
 tags: [Menu, Configuration]
 ---
 
-Menu configuration file in {$config/_default}.
+Menu configuration file in {$config/_default}. Contains mostly menus for external links.
 {.p-first}<!--more-->
+
+The menu structure for internal links is preferably build from front-matter parameters in the corresponding Markdown files!
 
 {{< highlight yaml "linenos=true" >}}
 {{< readfile file="/config/_default/menu.yaml" >}}

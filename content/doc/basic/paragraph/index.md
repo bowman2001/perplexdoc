@@ -11,7 +11,7 @@ subtitle: false
 title: Paragraphs
 weight: 108
 categories: [Markdown]
-tags: [Block]
+tags: [paragraph, block]
 resources:
   - name: featured
     src: finn-mund-8q2r2XQpDO0-unsplash.jpg

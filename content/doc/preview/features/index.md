@@ -14,5 +14,7 @@ categories: [Getting started]
 draft: true
 ---
 
-Place your lead paragraph here. If you don't need special styling, remove the attribute `{.p-first}`. The **more**-tag marks this placeholder paragraph as the content summary for this page. It’s an introduction for your readers and provides information to search engines.
+Optimal legibility and a clear coherent structure for various kinds of technical content are the central feature of this theme.
 {.p-first} <!--more-->
+
+Perplex is a multi-purpose theme and provides a layout for these types of content:
