@@ -28,6 +28,8 @@ A proof has been considered generally inaccessible until Sir Andrew John Wiles a
 
 Wiley’s proof is still only accessible to mathematical specialists. But the initial mathematical problem — Diophantus’ successful method to split a second power into the sum of two second powers and Fermat’s conjecture about the impossibility to do the same for higher powers — are relatively easy to grasp:  
 
+- - -
+
 > To divide a given square into a sum of two squares.
 >
 > To divide 16 into a sum of two squares.
@@ -40,6 +42,6 @@ Wiley’s proof is still only accessible to mathematical specialists. But the in
 It is impossible to separate a cube into two cubes, or a fourth power into two fourth powers, or in general, any power higher than the second, into two like powers. I have discovered a truly marvelous proof of this, which this margin is too narrow to contain.
 {{< /mnote >}}
 
----
+- - -
 
 Like to use marginal notes? Have a look at the shortcode [{$mnote}]({{< relref "mnote" >}}).

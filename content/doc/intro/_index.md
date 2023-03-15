@@ -1,7 +1,10 @@
 ---
 author: Georg Makowski
 date: "2021-09-06T12:53:19+02:00"
-description: On the purpose and usage of Perplex
+description: On the purpose and usage of this theme
+seo:
+  title: Introduction into the Hugo theme Perplex
+  description: Perplex is a Hugo theme designed to publish technical content written in Markdown. There are layout variants for a documentation, a blog, a news feed and articles.
 menu:
   doc:
     identifier: intro

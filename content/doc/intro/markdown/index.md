@@ -35,10 +35,10 @@ tags: [Linebreak, Image]
 Markdown has become the favored markup language to structure text files. With good cause: Markdown syntax is relatively intuitive and can be rendered into several layout formats.
 {.p-first} <!--more-->
 
-Markdown files consist of plain text marked up with a small set of ASCII signs. We can read and change them with any text editor. They usually end with the suffix {$.md}.
+Markdown files consist of plain text marked up with a small set of ASCII signs. We can read and change them with any text editor. They usually end with the suffix ›{$md}‹.
 
 {{< mnote up=5 >}}
-The suffixes {$.mdown} and {$.markdown} also indicate Markdown, but are rarely used nowadays.
+The suffixes ›{$mdown}‹ and ›{$markdown}‹ also indicate Markdown, but are rarely used nowadays.
 {{< /mnote >}}
 
 After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors of Markdown emerged.

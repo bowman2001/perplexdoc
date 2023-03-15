@@ -18,7 +18,7 @@ tags: [Attribute]
 Hugo’s attributes are plain HTML attributes getting injected from the Markdown source into the rendered HTML.
 {.p-first} <!--more-->
 
-Attributes are available for all kinds of **blocks**, for **headings** and for **fenced code blocks**. We can allow them for blocks and headings in the configuration section for the Goldmark parser, where the parameter {$title} relates to all heading levels. They are by default disabled for blocks and enabled for headings. They are [all enabled]({{< relref "markup#19" >}}) for this documentation.
+Attributes are available for all kinds of **blocks**, for **headings** and for **fenced code blocks**. We can allow them for blocks and headings in the configuration section for the Goldmark parser, where the parameter {$title} relates to all heading levels. They are by default disabled for blocks and enabled for headings. They are [all enabled]({{< relref "markup#19" >}} "Title") for this documentation.
 
 ## Syntax
 
@@ -50,6 +50,6 @@ Other
 {.dl-loose}
 
 ## Layout
-Some attributes are of general use, they are introduced on the next pages. 
+Some attributes are of general use, they are introduced on the next pages.
 
 Most attributes style specific elements and their style is shown their pages. To find a specific one quickly, there is  a [register]({{< relref "doc/attribute/register" >}}).
