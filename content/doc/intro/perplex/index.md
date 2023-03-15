@@ -12,11 +12,6 @@ title: Perplex
 weight: 11
 categories: [design, getting-started]
 tags: [fluid-responsive]
-resources:
-  - name: featured
-    src: hal-gatewood-tZc3vjPCk-Q-unsplash.jpg
-    params:
-      alt: Page layout wire-frames
 ---
 
 The theme layout adapts responsively and fluid to modern screens. It’s designed for optimal legibility down to a view-port of {$360px} width.

@@ -17,6 +17,7 @@ resources:
   params:
     alt: Markdown logo
     container: "no"
+    size: tiny
 - src: erda-estremera-eMX1aIAp9Nw-unsplash.jpg
   name: splash
   params:
@@ -82,7 +83,7 @@ The following suggestions for these elements are short. Their issues are discuss
 
 ### How to include images?
 
-There is one image element in CommonMark for embedding an image into a block element and no genuine element for a stand-alone image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. Hugo and Perplex provide the shortcode [{$figure}][fig] for this purpose. 
+There is one image element in CommonMark for embedding an image into a block element and no genuine element for a stand-alone image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. Hugo and Perplex provide the shortcode [{$figure}][fig] for this purpose.
 
 {{< figure splash />}}
 
