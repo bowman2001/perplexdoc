@@ -1,13 +1,13 @@
 ---
 author: Georg Makowski
 date: 2021-09-11T00:07:48+02:00
-description: Self-contained images
+description: Old shortcode for self-contained images
 subtitle: false
-title: figure
-weight: 520
+title: Figure
+weight: 595
 menu:
   doc:
-    name: figure
+    name: Figure
     parent: shortcode
     pre: add_photo_alternate
 resources:
