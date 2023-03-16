@@ -145,4 +145,4 @@ After the front-matter {\_index.md} may contain general content about its sectio
 
 ### Page Bundles {#bundles}
 
-[Branch bundles]({{< relref "#branch-bundle" >}}) and [leaf bundles]({{< relref "#leaf-bundle" >}}) are both called **page bundles**, which share the possibility to store resource files. Other than the page bundles the branch bundles for list pages can’t retrieve their own resources from subfolders, because these may well contain more page bundles.
+[Branch bundles]({{< relref "#list" >}}) and [leaf bundles]({{< relref "#leaf" >}}) are both called **page bundles**, which share the possibility to store resource files. Other than the page bundles the branch bundles for list pages can’t retrieve their own resources from subfolders, because these may well contain more page bundles.

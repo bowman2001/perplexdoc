@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 title: Markdown Layout
-description: The usual one page Markdown Layout Overview
+description: One page Markdown Layout Overview
 subtitle: false
 date: 2022-05-12T22:30:17+02:00 
 weight: 5
