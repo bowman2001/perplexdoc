@@ -65,13 +65,13 @@ Headings are not only recognized by their font styling but also by the white-spa
 
 # Page Title {.mt3 .mb3 #title}
 
-If the page already has a title, the first heading **should not** occur in the Markdown content. Like many themes Perplex provides titles for all pages.
+If the page already has a title, the first heading **should not** occur in the Markdown content. Like many themes does this one generate titles on all pages.
 
 {{< mnote up=8 >}}
-The [page title]({{< relref "doc/page/title" >}}) is generated from parameters in the front-matter.
+The entire [title section]({{< relref "doc/page/title" >}}) is generated from parameters in the front-matter.
 {{< /mnote >}}
 
-We still may need the first heading on special pages without a title section, when we want to compose a title in the Markdown content.
+The first heading remains reserved for titles. We may want to compose a title in Markdown on special pages. But with this theme we usually don’t need it at all.
 
 ## Section Heading
 {{< farfar 1 >}}

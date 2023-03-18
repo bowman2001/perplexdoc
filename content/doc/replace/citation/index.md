@@ -1,13 +1,13 @@
 ---
 author: Georg Makowski
 date: "2021-08-26T20:15:12+02:00"
-description: This tag should mark external work 
+description: This tag marks external creative works 
 menu:
   doc:
     name: Citation Sources
     parent: replace
     pre: format_quote
-title: Reference the creative work of others
+title: Reference work of other people
 weight: 440
 resources: 
   - src: gatien-bataille-ngu1d-CPbB4-unsplash.jpg

@@ -14,7 +14,8 @@ resources:
   - name: featured
     src: chris-brignola-X2CxUXFqKcM-unsplash.jpg
     params:
-      alt: Two long rows of white stone columns 
+      alt: Two long rows of white stone columns
+tags: [license]
 ---
 
 Perplex is an open source theme for the open source software [Hugo][hugo]. There are no other mandatory software requirements, but theme and documentation ship with external software and content. Their licensers and the licenses of their choosing are listed here, also.

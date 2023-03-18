@@ -28,12 +28,12 @@ When we manually add an **anchor** attribute, we usually want to place on or mor
 
 ### Anchor
 
-We add the anchor as an identification attribute like any other attribute. We can use the long form `id=our-identifier` or the short form `#our-identifier`:
+We add the anchor as an identification attribute like any other attribute. We can use the long form `id=our-identifier` or the short form `#our-identifier`. It’s more consistent to use the short version, because we **have** to use this one in the reference:
 
-```md
+```
 This is the text block, we would like to refer to from another place on this 
 page or from another page on this site.
-{id=our-identifier}
+{#our-identifier}
 ```
 
 ### Reference
@@ -47,7 +47,7 @@ From another page
 
 ## Layout
 
-This is the text block, we would like to refer to from another place on this page or from another page on this site.
-{#our-identifier}
+This is the text block, we would like to refer to.
+{id=our-identifier}
 
 And this is [the reference]({{< relref "#our-identifier">}}). When the anchored block is targeted by a reference, it gets a little background highlighting. Usually the anchored block is far away from the reference. Then, the browser jumps to right place first.

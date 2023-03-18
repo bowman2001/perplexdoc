@@ -10,8 +10,6 @@ menu:
 subtitle: false
 title: Shortcodes
 weight: 500
-categories: [Markdown]
-tags: [Shortcode]
 ---
 
 We need shortcodes to introduce complex layout structures beyond the capabilities of (extended) Markdown.

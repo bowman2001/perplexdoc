@@ -18,5 +18,5 @@ resources:
       alt: Double-page of an old magazine with fancy text layout on the left and a picture of the boxer Muhammad Ali on the right
 ---
 
-**Perplex** generates all page elements from meta-data parameters. We can provide page specific data in the front-matter and global data in the project configuration.
+The theme generates all variable elements around the content from page specific meta-data. We need to provide these parameters in the front-matter.
 {.p-first} <!-- more -->

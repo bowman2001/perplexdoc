@@ -16,7 +16,7 @@ sourceEditTree: edit/main/content
 
 imaging:
   sizestep: 25
-  fallback_width: 1920
+  fallbackwidth: 1400
 
 # fathomSiteID: ABCDEFG
 # fathomCustomDomain: https://custom.yourdomain.com

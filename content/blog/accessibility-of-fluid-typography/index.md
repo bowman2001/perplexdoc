@@ -13,7 +13,7 @@ There are some doubts about the accessibility of fluid typography among web deve
 {.p-first}
 <!--more-->
 
-Just give it a try with {#Ctrl} + {#+} and {#Ctrl} + {#-} or the zoom setting of your desktop browser. You will be surprised how well you can zoom in or out of this layout. Even the images get reloaded in a higher resolution, if necessary.
+Just give it a try with {%Ctrl} + {%+} and {%Ctrl} + {%-} or the zoom setting of your desktop browser. You will be surprised how well you can zoom in or out of this layout. Even the images get reloaded in a higher resolution, if necessary.
 {.p-big}
 
 Fluid fonts solely depend on the width of the browser window or the view-port width of the mobile device. When a user changes the zoom-factor of his browser or his device, they are not affected at all. That’s the problem with fluid sized fonts. The solution is obvious: We need to change their value accordingly, when we change the layout responsively.

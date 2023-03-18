@@ -32,19 +32,19 @@ But our keyboard usually doesn't show these typographically correct _curly_ quot
 
 ### Substitution of English quotation marks
 
-Hugo replaces the typographically dumb straight quotes with the correct curly ones by default — this is the responsibility of the  [typographer extension]({{< relref "doc/extended/typographer" >}}). We can use {#"} — straight quotes — like this:
+Hugo replaces the typographically dumb straight quotes with the correct curly ones by default — this is the responsibility of the  [typographer extension]({{< relref "doc/extended/typographer" >}}). We can use {%"} — straight quotes — like this:
 
 `"An inline quote"`&emsp;for&emsp;"An inline quote"
 {.p-big}
 
-And a single word or a quote inside a quote is marked with {#\'} — single straight quotes:
+And a single word or a quote inside a quote is marked with {%\'} — single straight quotes:
 
 `"A quote 'inside'"`&emsp;for&emsp;"A quote 'inside'"
 {.p-big}
 
 ### In French, Swiss and German (partially)
 
-We can open French and Swiss quotes with two {#<} angled brackets and close them with two {#>} in the other direction. They get replaced with nice guillemets (not guillemots!).
+We can open French and Swiss quotes with two {%<} angled brackets and close them with two {%>} in the other direction. They get replaced with nice guillemets (not guillemots!).
 
 `<<Pardon my French>>`&emsp;for&emsp;<<Pardon my French>>
 {.p-big}

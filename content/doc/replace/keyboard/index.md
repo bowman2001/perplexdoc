@@ -30,25 +30,25 @@ The replacement character `#` indicates a key legend.
 
 ## Layout
 
-The replacement code `{‍#K}` for example shows the {#K}.  
+The replacement code `{‍#K}` for example shows the {%K}.  
 
 ### Guillemets in Linux
 
 The operating system Linux offers these simple keyboard shortcuts to introduce punctuation elements for French, Swiss and German typography.
 
-{#Alt Gr} + {#Y}
+{%Alt Gr} + {%Y}
 : corresponds to the guillemet '»'
 
-{#Alt Gr} + {#X}
+{%Alt Gr} + {%X}
 : produces the guillemet '«'
 
-{#Alt Gr} + {#Shift} + {#Y}
+{%Alt Gr} + {%Shift} + {%Y}
 : gives us a single guillemet '›'
 
-{#Alt Gr} + {#Shift} + {#X}
+{%Alt Gr} + {%Shift} + {%X}
 : produces '‹'
 {.dl-loose3}
 
 ### Copy & Paste in Windows
 
-The operating system _Windows_ allows copying a piece of text into the clipboard by typing {#Ctrl} + {#C}. To insert the clipboard content at another location, we type {#Ctrl} + {#V}.
+The operating system _Windows_ allows copying a piece of text into the clipboard by typing {%Ctrl} + {%C}. To insert the clipboard content at another location, we type {%Ctrl} + {%V}.

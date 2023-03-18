@@ -52,7 +52,7 @@ Good typography needs the right amount of space between type. For the most part 
 | Name                    | Entity Code |  Example   |
 |:------------------------|:-----------:|:----------:|
 | No space                |             |     xx     |
-| Normal space            |  {#Space}   |    x x     |
+| Normal space            |  {%Space}   |    x x     |
 | Hair space              | `&hairsp;`  | x&hairsp;x |
 | Thin space              | `&thinsp;`  | x&thinsp;x |
 | en space (wide as an n) |  `&ensp;`   |  x&ensp;x  |
