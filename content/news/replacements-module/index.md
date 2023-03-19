@@ -16,10 +16,10 @@ The codes look like `{*text}`, where `*` is a placeholder for one or more ASCII 
 replaceRE `\{\^([^}]*)\}` "<sup>$1</sup>"
 ```
 
-This syntax and method does not collide with any other as far as I know. And it’s definitely safe against attacks, because the regular expressions are applied after content security checks. But it’s still a workaround and a better option would be to write extensions for Hugo’s default Markdown renderer [Goldmark][goldmark].
+This syntax does not collide with any other elements --- as far as I know. And it’s definitely safe against attacks, because the regular expressions are applied after the Markdown rendering. But it’s still only a workaround and a better option would be to write extensions for Hugo’s default Markdown renderer [Goldmark][goldmark].
 
 {{< mnote up=14 >}}
-[**Markdown attributes**](/doc/attribute) have a similar syntax, but they aren’t present in the rendered HTML code anymore. Except for code examples. That’s why we need to avoid any ASCII glyph, which also acts as an CSS attribute identifier.
+[**Markdown attributes**](/doc/attribute) have a similar syntax, but they aren’t present in the rendered HTML code anymore. Except for code examples. We need to avoid any marker, which also acts as an CSS attribute identifier.
 {{< /mnote >}}
 
 All replacements are chained together in one Hugo partial, which can process every piece of rendered Markdown content in the templates (mostly `.Content`).

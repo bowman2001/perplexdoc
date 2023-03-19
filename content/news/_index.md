@@ -10,7 +10,4 @@ menu:
     weight: 10
 cascade:
   toc: false
-resources: 
-  - src: Perplex.svg
-    name: featured
 ---
