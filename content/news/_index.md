@@ -1,6 +1,5 @@
 ---
 title: News
-listtitle: Stream
 description: Short postings and announcements
 subtitle: false
 date: 2022-02-12T13:35:18+01:00
