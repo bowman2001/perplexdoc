@@ -16,10 +16,10 @@ series: [Images]
 draft: true
 ---
 
-HTML generated from Markdown contains the standard layout modes for HTML tags: **inline & block**. 
+HTML generated from Markdown contains the standard layout modes for HTML tags: **inline & block**.
 {.p-first} <!--more-->
 
-The distinction between those two in Markdown is relatively simple. Every block is surrounded by at least one blank line at the top and the bottom or visually separated by other means. Everything written on the same or the directly following line therefore gets included in such a block. List items are blocks themselves and nested elements may also be blocks. The innermost elements of blocks are inline. 
+The distinction between those two in Markdown is relatively simple. Every block is surrounded by at least one blank line at the top and the bottom or visually separated by other means. Everything written on the same or the directly following line therefore gets included in such a block. List items are blocks themselves and nested elements may also be blocks. The innermost elements of blocks are inline.
 
 We don’t need to think about layout modes most of the time and use them intuitively correct. One problematic element is the main reason to recall the distinction:  
 
