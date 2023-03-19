@@ -26,11 +26,11 @@ Ordered lists group related items and mark them with ascending counters. They pr
 
 List items begin with an integer followed by a period and a space. The order of the numbers has no effect on the result, we even may use always the same number. Markdown treats the numbers as markers and ignores their values. Every list or sub-list will follow 1, 2, 3…, a, b, c… or I, II, III… .
 
-It’s possible to manipulate the counters with attributes. The one currently available is `.ol-continue` and lets us continue to start a new list where the last one did end (see [With Interruption]({{< relref "#interruption" >}})).
-
-{{< mnote up=8 >}}
-**The first number** gets injected as the `start` attribute of the `<ol>`-tag. But this value affects only the browser-internal counter. Because Perplex declares CSS-counters itself, all lists start with 1 or a by default.
+{{< mnote up=14 >}}
+**CommonMark** injects the **first number** of a list as the `start` attribute of the `<ol>`-tag, if this number is not equal to {$1}. Unfortunately this value is only accessible for the browser-internal list counter. This theme declares its own counters in CSS and I’ve found no good way to get hold of the start value.
 {{< /mnote >}}
+
+It’s possible to manipulate the counters with attributes. The one currently available is `.ol-continue` and lets us continue to start a new list where the last one did end (see [With Interruption]({{< relref "#interruption" >}})).
 
 ## Layout
 
@@ -53,7 +53,7 @@ Only two layout examples are following here, because the styling options for an 
 2. {{< farfarshort 2 >}}
 
 #### The interruption {.h-p .up-1}
-of an ordered list for a general remark should not interrupt the counting, we need to go on afterwards where we left. The class [attribute]({{< relref "doc/attribute" >}}) `{.ol-continue}` lets a list continue, where the previous did stop.
+of an ordered list for a general remark should not interrupt the counting. We need to proceed where we left. The class [attribute]({{< relref "doc/attribute" >}}) `{.ol-continue}` lets a list continue counting, where the previous did stop.
 {.up-1}
 
 1. {{< farfarshort 1 >}}

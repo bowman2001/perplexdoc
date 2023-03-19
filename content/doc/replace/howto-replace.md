@@ -1,7 +1,8 @@
 ---
 author: Georg Makowski
 title: How to use replacements
-description: Curly braces and an identifier
+linktitle: Howto
+description: Curly braces and an identifier in Markdown
 subtitle: false
 date: 2022-04-19T13:00:09+02:00
 weight: 410
@@ -26,7 +27,7 @@ Perplex includes the following replacement codes and styles them:
 |:------------|:------------:|:-----------:|
 | Superscript |    {‍^3}     |    {^3}     |
 | Subscript   |    {‍_2}     |    {_2}     |
-| Keyboard    |    {‍#K}     |    {#K}     |
+| Keyboard    |    {‍%K}     |    {%K}     |
 | Variable    | {‍$variable} | {$variable} |
 | Mark        |   {‍!mark}   |   {!mark}   |
 | Citation    |  {‍=work}  |  {=work}  |
