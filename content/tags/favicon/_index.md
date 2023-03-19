@@ -1,6 +1,6 @@
 ---
 title: Favicon
-description: Tag description placeholder
+description: The general site icon
 subtitle: true
 date: 2022-09-06T14:41:23+02:00
 resources:

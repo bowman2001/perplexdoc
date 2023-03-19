@@ -1,7 +1,6 @@
 ---
 title: Blog
-listtitle: Stream
-description: Short postings and announcements
+description: List of postings
 subtitle: false
 date: 2022-02-12T13:35:18+01:00
 menu:
@@ -11,7 +10,4 @@ menu:
     weight: 30
 cascade:
   toc: false
-resources: 
-  - src: Perplex.svg
-    name: featured
 ---
