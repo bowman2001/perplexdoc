@@ -10,7 +10,7 @@ menu:
 title: 'replacements.html'
 weight: 1055
 categories: []
-tags: [replacements]
+tags: replacement]
 ---
 
 This template file contains the regular expressions for all replacements codes.

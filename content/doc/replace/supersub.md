@@ -10,7 +10,7 @@ menu:
 title: Super- and Subscripts
 weight: 420
 categories: [Markdown]
-tags: [Replacements]
+tags: replacement]
 ---
 
 When you need only a few super- or subscripts in your Markdown, the replacement codes are there for you.
