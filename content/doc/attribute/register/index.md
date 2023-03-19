@@ -10,7 +10,7 @@ menu:
     name: Register
     parent: attributes
     pre: app_registration
-categories: [Theme]
+categories: [Markdown]
 tags: [Attribute] 
 toc: false
 ---

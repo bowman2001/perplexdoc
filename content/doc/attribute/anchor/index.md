@@ -15,7 +15,7 @@ resources:
 subtitle: false
 title: Anchors
 weight: 320
-categories: [Theme, Hugo]
+categories: [Markdown]
 tags: [Attribute]
 ---
 

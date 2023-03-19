@@ -53,7 +53,7 @@ Only two layout examples are following here, because the styling options for an 
 2. {{< farfarshort 2 >}}
 
 #### The interruption {.h-p .up-1}
-of an ordered list for a general remark should not interrupt the counting. We need to proceed where we left. The class [attribute]({{< relref "doc/attribute" >}}) `{.ol-continue}` lets a list continue counting, where the previous did stop.
+of an ordered list for a general remark should not interrupt the counting. We need to proceed where we left. The [class attribute]({{< relref "doc/attribute/howto" >}}) `{.ol-continue}` lets a list continue counting, where the previous did stop.
 {.up-1}
 
 1. {{< farfarshort 1 >}}

@@ -10,7 +10,7 @@ menu:
 subtitle: false
 title: Columned Text Blocks
 weight: 330
-categories: [Theme]
+categories: [Markdown]
 tags: [Columns, Attribute]
 ---
 

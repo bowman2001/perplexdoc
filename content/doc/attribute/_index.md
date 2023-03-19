@@ -9,8 +9,6 @@ menu:
     pre: line_style
 title: Attributes
 weight: 300
-categories: [Theme]
-tags: [Attribute]
 ---
 
 Markdown attributes are the key to style variations and other improvements of the rendered result. Perplex offers many of them.

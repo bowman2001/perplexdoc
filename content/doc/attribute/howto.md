@@ -11,7 +11,7 @@ menu:
 subtitle: false
 title: How to use Attributes?
 weight: 310
-categories: [Hugo]
+categories: [Markdown]
 tags: [Attribute]
 ---
 
