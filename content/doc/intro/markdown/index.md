@@ -119,17 +119,17 @@ With Soft Wraps
 See the page [Line Break][lb] for the configuration and the question of CommonMark-compliance.
 
 ## Special characters
-All available characters—more general _glyphs_—can be used in Markdown, either directly as Unicode or as HTML entities (like `&para;` for &para;). The markup characters need to be escaped by a preceding backslash `\` to get treated literally by the Markdown renderer. See [Special Characters]({{< relref "specialchar#html-entities" >}}) for more information about this topic.
+All available characters—more general _characters_—can be used in Markdown, either directly as Unicode or as HTML entities (like `&para;` for &para;). The markup characters need to be escaped by a preceding backslash `\` to get treated literally by the Markdown renderer. See [Special Characters]({{< relref "specialchar#html-entities" >}}) for more information about this topic.
 
 {{< mnote up=14 >}}
-You can still get into trouble with glyphs, which are missing in the fonts of your website. But this is a general issue independent of Markdown rendering.
+You can still get into trouble with characters, which are missing in the fonts of your website. But this is a general issue independent of Markdown rendering.
 {{< /mnote >}}
 
 ## File Encoding
 The Markdown syntax works with every encoding. But almost all modern websites stick to the de facto standard **UTF-8** and Perplex does, too. Your Markdown files should be encoded in UTF-8 and if you never thought about it before, they probably already are. This also holds for other text resources you may fetch data from.
 
 {{< mnote up=17 >}}
-When you import strings from a JSON-file with UTF-16 encoding for example, the encoding outside the common ASCII set has a different meaning and leads to false and probably strange glyphs, when you use non-ASCII characters.
+When you import strings from a JSON-file with UTF-16 encoding for example, the encoding outside the common ASCII set has a different meaning and leads to false and probably strange characters, when you use non-ASCII characters.
 {{< /mnote >}}
 
 ## Markdown Editors

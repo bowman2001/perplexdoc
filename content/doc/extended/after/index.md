@@ -11,5 +11,5 @@ Linkify
 : renders URLs in Markdown automatically into links — a quick and dirty way to [reference URLs]({{< relref "doc/basic/link#linkify" >}}).
 
 Typographer
-: substitutes ASCII punctuation characters with typographic glyphs. The substitution of quotation marks is a topic [on the quote page]({{< relref "doc/basic/quote#inline-quotes" >}}).
+: substitutes ASCII punctuation characters with typographic characters. The substitution of quotation marks is a topic [on the quote page]({{< relref "doc/basic/quote#inline-quotes" >}}).
 {.dl-loose}

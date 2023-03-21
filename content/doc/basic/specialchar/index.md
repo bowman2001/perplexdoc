@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-03-25T10:53:07+01:00"
-description: How to write special characters
+description: How to use special characters
 menu:
   doc:
     name: Special Characters
@@ -9,8 +9,8 @@ menu:
     pre: emoji_symbols
 title: Special Characters
 weight: 190
-categories: [Markdown]
-tags: [Inline, Glyphs]
+categories: [markdown]
+tags: [spacing, inline]
 resources:
   - name: featured
     src: raphael-schaller-GkinCd2enIY-unsplash.jpg
@@ -18,43 +18,44 @@ resources:
       alt: Movable type for printing letters
 ---
 
-All available glyphs are valid Markdown. The following sections are about the special ones, we can not use directly.
+All available characters are valid Markdown. The following sections are about the special ones we can’t use directly.
 {.p-first} <!--more-->
+
 
 ## Escaping formatting Characters
 
-The characters reserved for Markdown formatting are not directly available anymore. To use them literally we need to _escape_ them by adding a backslash `\` in front.
+The characters reserved for Markdown formatting are not directly available anymore. To use them literally we need to **escape** them by adding a backslash `\` in front.
 
 {{< mnote up=11 >}}
 **Unescaped** formatting characters may be treated literally or not, depending on the circumstances. They can suddenly produce strange layout errors, when we change the text in their vicinity. And they most certainly irritate code editors and highlighters.
 {{< /mnote >}}
 
-When we escape a number sign `\#` for example it’s just the number sign ‘**\#**’ and not a formatting character anymore.
+When we escape a number sign `\#` for example it’s just the number sign ‘**\#**’.
 
 ## HTML Entities
 
-_Entities_ are ASCII codes for _Unicode glyphs_. These codes begin with an ampersand `&` and end with a semicolon `;`. For example:
+**Entities** are ASCII codes for **Unicode characters**. These codes begin with an ampersand `&` and end with a semicolon `;`. For example:
 
-1. `&para;` means the paragraph glyph&ensp;&para;&nbsp;.
+1. `&para;` means the paragraph&ensp;&para;&nbsp;.
 
-2. `&sect;` means the section glyph&ensp;&sect;&nbsp;.
+2. `&sect;` means the section&ensp;&sect;&nbsp;.
 
 3. `&#8477;` means the set of real numbers&ensp;&#8477;&nbsp;.
 
- For more exotic ones you should check, if they are available in the [**IBM Plex** fonts][plexspec] this theme is shipping with. If a glyph is missing there, the browsers will first try to use a local font and may display a glyph with a more or less noticeable different shape. And if they can't find it anywhere, they will display an ugly placeholder. You may take a good look at the &#8477; in example 3. It’s not included in the Plex fonts but usually available in system fonts and will differ more or less in shape.
+ For more exotic ones you should check, if they are available in the [**IBM Plex** fonts][plexspec] this theme is shipping with. If a character is missing there, the browsers will first try to use a local font and may display a glyph with a more or less noticeable different shape. And if they can't find a representation for the character anywhere, they will display an ugly placeholder glyph. You may take a good look at the &#8477; in example 3. It’s not included in the Plex fonts but usually available in system fonts and will differ more or less in shape.
 
 Please remember the often neglected sets of general entities, which are meant to facilitate nice typography — the ones for **spacing** and **(not) breaking**.
 
 ### Spacing
 
-Good typography needs the right amount of space between type. For the most part this is the job of the web designer. But horizontal spacing inside the text remains the responsibility of the human editor. The following HTML entities :
+Good typography needs the right amount of space between type. For the most part this is the job of the web designer. But the horizontal spacing between words and characters remain the responsibility of the editor. The following HTML entities are available in Plex and many other good fonts:
 
 | Name                    | Entity Code |  Example   |
 |:------------------------|:-----------:|:----------:|
-| No space                |             |     xx     |
-| Normal space            |  {%Space}   |    x x     |
+| No space (for comparison) |             |     xx     |
 | Hair space              | `&hairsp;`  | x&hairsp;x |
 | Thin space              | `&thinsp;`  | x&thinsp;x |
+| Normal space            |  {%Space}   |    x x     |
 | en space (wide as an n) |  `&ensp;`   |  x&ensp;x  |
 | em space (wide as an m) |  `&emsp;`   |  x&emsp;x  |
 | num space               |  `&numsp;`  | 1&numsp;3  |

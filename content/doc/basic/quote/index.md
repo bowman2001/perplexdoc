@@ -67,11 +67,11 @@ Keyboard Shortcuts
 : We can learn key combinations to include often needed punctuation. Unfortunately, they depend on the operating system and the keyboard layout. On some systems, they are relatively easy to remember, on others, they are practically useless. But you could give it at least a try and look them up for your configuration.
 
 [HTML entities]({{< relref "specialchar" >}})
-: We get the German _Gänsefüßchen_&ensp;&bdquo;&nbsp;and&nbsp;&ldquo;&nbsp; with `&bdquo;` and `&ldquo;` for example. Entities look weird in text files, but the result is as good as the original Unicode glyphs.
+: We get the German _Gänsefüßchen_&ensp;&bdquo;&nbsp;and&nbsp;&ldquo;&nbsp; with `&bdquo;` and `&ldquo;` for example. Entities look weird in text files, but the result is as good as the original Unicode characters.
 {.dl-loose}
 
 {{< mnote up=12 >}}
-It’s possible to replace them with Unicode glyphs and maybe your editor has a plugin for that.
+It’s possible to replace them with Unicode characters and maybe your editor has a plugin for that.
 {{< /mnote >}}
 
 ## Blockquote

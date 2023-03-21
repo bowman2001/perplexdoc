@@ -9,8 +9,8 @@ menu:
     pre: format_quote
 title: Example Punctuation Keymap
 weight: 1090
-categories: []
-tags: [Typing]
+categories: [Markdown]
+tags: [punctuation]
 resources:
   - src: aryan-dhiman-iGLLtLINSkw-unsplash.jpg
     name: featured

@@ -19,13 +19,12 @@ resources:
       alt: Some specimen of movable type for printing 
 ---
 
-Simple ASCII punctuation characters are substituted with typographical glyphs.
+Simple ASCII punctuation characters are substituted with the typographic correct ones.
 {.p-first} <!--more-->
 
-The Typographer provides the same functionality as the [Smartypants](https://daringfireball.net/projects/smartypants/) project from John Gruber, who also started Markdown. Convenient typing options encourage the use of good typography.
+The Typographer provides in principle the same functionality as the [Smartypants](https://daringfireball.net/projects/smartypants/) project from John Gruber, who also started Markdown. Convenient typing options encourage the use of good typography.
 
-These are the substitutions:
-
+## Substitutions
 | Name          |   ASCII          |  Result   |
 | :------------ | :--------------: | :-------: |
 | Quotes        |    `"Quote"`     |  "Quote"  |
@@ -36,6 +35,7 @@ These are the substitutions:
 | En Dash       |       `--`       |    --     |
 | Ellipses      |      `...`       |    ...    |
 
-{{< mnote up=16 >}}
-The same results can also be achieved by using Unicode glyphs or HTML entities. They require more of an effort in the beginning, but in the long run you’ll never have to worry about substitutions again.
-{{< /mnote >}}
+## Unicode characters {.h-tip}
+The same results can also be achieved by using Unicode characters or HTML entities. They require more of an effort in the beginning, but in the long run you’ll never have to worry about the correct substitutions again. The typographer extension mostly handles English punctuation and there are a few edge cases, which can’t be recognized algorithmically.
+
+If you are serious about typographically correct punctuation and want to process your Markdown with other renderers, there is no better way than taking care of it by yourself.

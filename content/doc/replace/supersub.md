@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: "2021-03-23T22:21:23+01:00"
-description: Tiny glyphs above or below the baseline
+description: Tiny characters above or below the baseline
 menu:
   doc:
     name: Super- and Subscripts
@@ -26,7 +26,7 @@ Replacement codes are surrounded by the curly braces `{` and `}` and begin with 
 
 x{_4} x{^4} X{_4} X{^4}   x{_3} x{^3} X{_3} X{^3}
 
-Compare the Perplex styling to the one the Plex fonts provide directly — unfortunately only for numbers. We can use them as Unicode glyphs:
+Compare the Perplex styling to the one the Plex fonts provide directly — unfortunately only for numbers. We can use them as Unicode characters:
 
 x₄ x⁴   X₄ X⁴ x₃ x³   X₃ X³
 
