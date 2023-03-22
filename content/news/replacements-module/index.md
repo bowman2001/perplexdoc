@@ -19,7 +19,7 @@ replaceRE `\{\^([^}]*)\}` "<sup>$1</sup>"
 This syntax does not collide with any other elements --- as far as I know. And it’s definitely safe against attacks, because the regular expressions are applied after the Markdown rendering. But it’s still only a workaround and a better option would be to write extensions for Hugo’s default Markdown renderer [Goldmark][goldmark].
 
 {{< mnote up=14 >}}
-[**Markdown attributes**](/doc/attribute) have a similar syntax, but they aren’t present in the rendered HTML code anymore. Except for code examples. We need to avoid any marker, which also acts as an CSS attribute identifier.
+[**Markdown attributes**](/doc/attribute) have a similar syntax, but they aren’t present in the rendered HTML code anymore. Except for Markdown code examples with attributes. Therefore, the `#` and `.` marker are avoided.
 {{< /mnote >}}
 
 All replacements are chained together in one Hugo partial, which can process every piece of rendered Markdown content in the templates (mostly `.Content`).
