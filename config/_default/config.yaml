@@ -4,7 +4,7 @@
 
 # The domain of the site
 baseURL: http://example.com
-title: Perplex
+title: Perplex Theme
 DefaultLanguageCode: en-us
 DefaultContentLanguage: en
 metaDataFormat: yaml
