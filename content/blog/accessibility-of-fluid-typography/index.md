@@ -9,19 +9,21 @@ categories: [Design]
 tags: [Accessible, Fluid-responsive]
 ---
 
-There are still some doubts about the accessibility of fluid typography. But websites with a responsive fluid design can behave especially user-friendly and accessible. This site is an example.
+Websites with a fluid-responsive design behave especially user-friendly and accessible. This site is an example.
 {.p-first}
 <!--more-->
 
-Just give it a try with {%Ctrl} + {%+} and {%Ctrl} + {%-} or the zoom setting of your desktop browser. You will be surprised how well you can zoom in or out of this layout. Even the images get reloaded in a higher resolution.
+There are still some doubts about the accessibility of fluid typography.
+
+Just give it a try with {%Ctrl} + {%+} and {%Ctrl} + {%-} or the zoom setting of your desktop browser. You can zoom in or out of this layout easily. You only may have to take a few zoom steps, before the layout changes completely.
 {.p-big}
 
-Fluid fonts solely depend on the width of the browser window or the view-port width of the mobile device. When a user changes the zoom-factor of his browser or his device, they are not affected at all. That’s the general problem with simply fluid sized fonts. The solution is obvious: We need to change their fluid size accordingly, when we change the layout responsively.
+Fluid fonts solely depend on the width of the browser window or the view-port width of the mobile device. When a user changes the zoom-factor of his browser or his device, they are not affected at all. That’s the problem with a fixed fluid size. The solution is obvious: We need to change the fluid size accordingly, when we change the layout responsively.
 
 {{< mnote up=17 >}}
 The CSS function {$clamp} has been introduced to allow a single view-port dependent size within min-max constraints. For a layout with different fluid states like this one two constraints aren’t enough and breakpoints are the only way to go.
 {{< /mnote >}}
 
-Fluid fonts are not suitable for every screen width. For various reasons we shouldn’t deviate to much from the default browser font-size on mobile devices. Responsive fluid design is beneficial on larger screens --- tablet sizes and up. Breakpoints depending on the ‘em’-unit allow to fit our fluid text precisely into the variants of our responsive layout. On large desktop screens we need to stop the fluid growth again, because their height is usually more restricted than their width.
+Fluid fonts are not suitable for every screen width. For various reasons we shouldn’t deviate to much from the default browser font-size on mobile devices. Responsive fluid design is mostly beneficial on larger screens --- tablet sizes and up. Breakpoints depending on the ‘em’-unit allow to fit our fluid text precisely into the variants of our responsive layout. On large desktop screens we need to stop the fluid growth again, because their height is usually more restricted than their width.
 
-A responsive fluid layout changes to a larger or smaller version in our favor as soon as a breakpoint is reached --- wether we change the width or change our zoom setting. This theme does not only change the font sizes but all elements, because they all rely on the same fluid base font-size.
+This theme does not only change the font sizes but all elements, because they all rely on the same fluid base font-size.Even the images get reloaded in a higher resolution.
