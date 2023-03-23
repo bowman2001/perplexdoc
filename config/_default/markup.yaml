@@ -16,6 +16,7 @@ goldmark:
   parser:
     autoHeadingID: true
     autoHeadingIDType: github
+    wrapStandAloneImageWithinParagraph: false
     attribute:
       block: true
       title: true
