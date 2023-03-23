@@ -7,7 +7,7 @@ categories: [Module]
 tags: [Replacement, Security]
 ---
 
-Replacement codes let us avoid raw HTML in Markdown. Hugo can insert missing inline HTML tags into the rendered Markdown with simple regular expressions.
+Replacement codes let us avoid raw HTML in Markdown. Hugo can insert missing inline HTML tags into the rendered Markdown with regular expressions.
 {.p-first} <!--more-->
 
 The codes look like `{*text}`, where `*` is a placeholder for one or more ASCII characters. The superscript tag `<sup>` for example is marked by `^` and fits the following regular expression (Golang syntax):
