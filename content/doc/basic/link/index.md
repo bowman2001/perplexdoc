@@ -8,7 +8,6 @@ menu:
     parent: basic
     pre: link
 title: Links
-weight: 150
 categories: [Markdown]
 tags: [Inline]
 resources: 
@@ -16,6 +15,7 @@ resources:
     src: edge2edge-media-t1OalCBUYRc-unsplash.jpg
     params:
       alt: A few chain links
+weight: 145
 ---
 
 Internet references or short “links” are the binding fabric of the web. Markdown encourages their use by providing a bunch of simple markup options.

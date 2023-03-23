@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 title: Local Installation
-description: How to install Hugo & Perplex
+description: How to install Hugo and a theme
 subtitle: false
 date: 2022-09-11T14:57:26+02:00 
 weight: 30
@@ -31,13 +31,13 @@ The [Hugo source](https://github.com/gohugoio/hugo) can be compiled on every mac
 
 The [Hugo documentation site][hugodoc] addresses developers mostly and offers detailed information. With a good theme only a small part of this knowledge is necessary to produce a professional website.
 
-## How to install Hugo
+## Install Hugo
 
 Please follow the specific [installation instructions](https://gohugo.io/getting-started/installing/) for your operating system on the Hugo documentation site (the docs). Because Hugo is still evolving and Perplex may use recent features you should choose an installation, which is easy to update frequently.
 
 ## Get Perplex
 
-When you start to get acquainted with Hugo or need examples of Markdown content for Perplex, you should simply get this documentation project. It’s licensed as Creative Commons ([CC-BY-SA 4.0][cc]), available on [GitHub]({{< param sourceURL >}}) and ships with all the files for the documentation and a few examples the other kind of texts.
+When you start to get acquainted with Hugo or need examples of Markdown content for Perplex, you should simply get this documentation project. It’s licensed as Creative Commons ([CC-BY-SA 4.0][cc]), available on [GitHub]({{< param sourceURL >}}) and ships with all the files for the documentation and a few examples the other kinds of content.
 
 ### The documentation project
 

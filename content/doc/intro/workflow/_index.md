@@ -19,5 +19,5 @@ resources:
       container: "no"
 ---
 
-A guide from installation to publishing with Hugo and Perplex.
+A short guide about working & publishing with Hugo and this theme.
 {.p-first} <!--more-->
