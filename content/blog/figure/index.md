@@ -4,6 +4,8 @@ date: 2021-09-11T00:07:48+02:00
 description: Old way to create a self-contained stand-alone image
 subtitle: false
 title: Figure Shortcode
+categories: [Shortcode]
+tags: [figure, block]
 resources:
   - src: markus-spiske--dbOrdtrR1A-unsplash.jpg
     name: featured
@@ -59,8 +61,6 @@ resources:
       attrlink: https://unsplash.com/@konni
   - src: beau-swierstra-Ndz-4phqtlg-unsplash.jpg
     name: beau
-categories: [Shortcode]
-tags: [figure, block]
 ---
 
 
