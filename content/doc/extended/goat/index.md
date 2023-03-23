@@ -35,5 +35,5 @@ GoAt is not directly an extension of the Markdown renderer, but a new option for
 {{< /playground >}}
 
 {{< mnote up=22 >}}
-The font layout of GoAT is hard-coded into the resulting SVG. The text layout should get adapted, but its complicated.
+The font layout of GoAT is hard-coded into the resulting SVG. The typography should get adapted to the theme. But this looks complicated to me.
 {{< /mnote >}}

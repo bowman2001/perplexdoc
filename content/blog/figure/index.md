@@ -1,9 +1,9 @@
 ---
 author: Georg Makowski
 date: 2021-09-11T00:07:48+02:00
-description: Self-contained stand-alone images
+description: Old way to create a self-contained stand-alone image
 subtitle: false
-title: figure
+title: Figure Shortcode
 resources:
   - src: markus-spiske--dbOrdtrR1A-unsplash.jpg
     name: featured
@@ -60,18 +60,18 @@ resources:
   - src: beau-swierstra-Ndz-4phqtlg-unsplash.jpg
     name: beau
 categories: [Shortcode]
-tags: [Block, Image]
+tags: [figure, block]
 ---
 
 
 Because no Markdown element corresponds to the complex HTML `<figure>` tag, we need this shortcode for self-contained stand-alone images.
 {.p-first} <!--more-->
 
-Hugo already provides a [`figure`]({{< relref "internal#figure" >}}) shortcode and Perplex overrides this shortcode.
+Hugo already provides a [{$figure}]({{< relref "internal#figure" >}}) shortcode and Perplex overrides it while keeping the original syntax.
 
 ## Syntax
 
-The original syntax remains valid with **two exceptions**.
+**Two exceptions** from the original syntax couldn’t be avoided for the shortcode of the theme:
 
 1. The Perplex shortcode allows to write the caption between the starting and closing shortcode tag. When there is no shortcode closing tag, we need to add a slash to the last angled bracket, to mark the shortcode as self-closing like `{{</* figure src="image" /*/>}}`.
 
@@ -83,15 +83,15 @@ The Perplex version offers the same set of named parameters as Hugo’s built-in
 
 ### Named parameters
 
-We can specify the following parameters with the given key names and types of values:
+We can specify the following parameters:
 
-| Parameter | Key | Values |
+| Parameter | Key | Value type |
 |:---------|:----------|:---------|
 | Alternative text | alt | Plain string |
 | Attribution | attr | Inline Markdown string |
 | Attribution link | attrlink | URL |
 | Caption | caption | Inline Markdown string |
-| Class | class | CSS class names |
+| Class | class | CSS class name |
 | Link | link | URL |
 | Horiz. position | posh | {{% parameters imaging.embedded.posh %}} |
 | Vert. position | posv | {{% parameters imaging.embedded.posv %}} |
@@ -107,7 +107,7 @@ When we have set parameters in the front-matter and also specify them in named p
 
 ## Layout
 
-The numbers in the following placeholder images are roughly a multiple of the main text width.
+The numbers in the following placeholder images roughly indicate a multiple of the main text width.
 
 ### Small
 

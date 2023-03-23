@@ -12,7 +12,6 @@ resources:
   name: featured
   params:
     alt: Lexicon entry
-draft: true
 ---
 
 A definition list inside a blockquote with a sub-list in one of its items is an interesting problem for Markdown layout.

@@ -151,9 +151,9 @@ In the documentation layout the large size fills the text width and the right ma
 This size could take up 2 times of the main text width but is oversized on this documentation page. If there is a long table of contents included on a page and a figure with this size, the TOC may overlap the image in every possible scrolling position. Therefore, this size doesn’t get bigger than large figures on documentation pages.
 
 {{< figure xlarge >}}
-The size of an extra large image will only show in blog and article pages. Extra-large would be oversized on a documentation page, because the sidebar navigation blocks the left margin.
+The size of an extra large image will only show in blog and article pages. It’s treated here like a large image, because the sidebar occupies the left margin.
 {{< /figure >}}
 
 ### Layout on blog and article pages
 
-The layout of some figures is different on blog and article pages, because we can also use the left margin there. (see [figure posting]({{< relref "blog/figure" >}}))  
+The layout of some figures is different on pages without a sidebar, because they can use the left margin there. (see [figure posting]({{< relref "blog/images/figure" >}})) for example.  
