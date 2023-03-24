@@ -11,7 +11,7 @@ resources:
     params: 
       alt: HTML code on a computer screen
 categories: [Markdown]
-tags: [Block, Inline, Image]
+tags: [Layout, Block, Inline, Image]
 series: [Images]
 draft: true
 ---

@@ -9,7 +9,7 @@ tags: [Code, Inline, Block]
 series: [Demo]
 ---
 
-The main text column offers space for {$80} characters of code in one line. When we need {$120} to fit in one line, we can expand code boxes into the marginal column(s).
+The main text column offers space for {$80} characters of code in one line. When we need {$120} to fit in, we can expand code boxes into the marginal column(s).
 {.p-first} <!--more-->
 
 Short snippets of code are usually placed **in line** with the normal text. Longer pieces of code or entire files should be embedded as **code blocks**.

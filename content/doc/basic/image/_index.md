@@ -13,5 +13,5 @@ title: Images
 weight: 150
 ---
 
-Perplex handles all Markdown images by default as floats inside a text block. Self-contained separate images are the domain of the {$figure} shortcode. But there is a fallback for the widespread self-contained use of Markdown images.
+The theme distinguishes between stand-alone and embedded images in Markdown. Stand-alone images are placed as figures and inline images are embedded as floats.
 {.p-first} <!--more-->

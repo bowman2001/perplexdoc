@@ -15,7 +15,7 @@ tags: [image, block]
 series: [images]
 ---
 
-The CommonMark image syntax is short and simple and the theme generates a default layout. We need Hugo’s resource parameters to alter the layout of specific images and to add a caption etc.
+The CommonMark image syntax is short and simple and the theme generates a default layout for both kinds of images. To alter their appearance we need Hugo’s resource feature in the front-matter.
 {.p-first}
 <!--more-->
 
@@ -55,6 +55,30 @@ We have to provide the image reference somewhere else in the same file by repeat
 
 This syntax is especially convenient, when an image is used more than once. Or when a long path/title would clutter the content.
 
+### Place in the content
+
+CommonMark does’t care, where we place the an image element. But since version {$0.111} Hugo does – thanks a lot! We can use the Markdown image element in two different ways, now:
+
+#### Stand-alone
+
+```md {.left}
+Paragraph before…
+
+![Name][imgref]
+
+Paragraph after…
+```
+
+We surround our image element with empty lines and it’s a Markdown block element and gets treated as a figure.
+
+#### Embedded {.clear}
+
+```md {.left}
+![Name][imgref] The paragraph 
+containing the image
+```
+
+We write it in line with our paragraph text–usually at the beginning–and it gets embedded as a float.
 
 ### Passing extra parameters
 
