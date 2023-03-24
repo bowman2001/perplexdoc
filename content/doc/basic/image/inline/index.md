@@ -13,25 +13,6 @@ menu:
 categories: [markdown]
 tags: [image, block]
 series: [images]
-resources:
-- name: normal
-  src: normal.svg
-  params:
-    alt: Placeholder image, default size
-    caption: The default size for an embedded image
-    attr: gm
-- name: small
-  src: small.svg
-  params:
-    alt: Placeholder image, small size
-    caption: A small embedded image
-    attr: gm
-- name: tiny
-  src: tiny.svg
-  params:
-    alt: Placeholder image, tiny size
-    caption: Tiny image
-    attr: gm
 ---
 
 **Placeholder**: Put your own introduction paragraph here instead of this one.
