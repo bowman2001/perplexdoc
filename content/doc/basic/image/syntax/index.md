@@ -57,7 +57,7 @@ This syntax is especially convenient, when an image is used more than once. Or w
 
 ### Place in the content
 
-CommonMark does’t care, where we place the an image element. But since version {$0.111} Hugo does – thanks a lot! We can use the Markdown image element in two different ways, now:
+CommonMark doesn’t care, where we place an image element. But since version {$0.108} Hugo does! We can use the Markdown image element in two distinctive ways:
 
 #### Stand-alone
 
