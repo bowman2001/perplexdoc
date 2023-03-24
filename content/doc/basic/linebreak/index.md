@@ -40,7 +40,7 @@ GitHub
 
 Hugo’s standard configuration is fully CommonMark-compliant, the parameter `hardWraps` is set to `false` by default. There are two ways now, to place an intentional line break:
 
-Two spaces
+Two spaces `  `
 : before the end of a line.
 
 One backslash `\`
@@ -51,7 +51,7 @@ Both options are error-prone. Spaces before the end of the line are usually invi
 
 ### The GitHub Way
 
-To format line-breaks like GitHub, we need to set `hardWraps` to `true`, as in the [configuration for this project][hw]. The syntax becomes intuitive:
+To format line-breaks like GitHub, we need to set `hardWraps` to `true`, as in the [configuration for this project][hw]. Now, the syntax becomes intuitive:
 
 Hard line breaks
 : break lines hard.

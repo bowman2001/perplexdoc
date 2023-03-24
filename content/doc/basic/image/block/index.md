@@ -79,7 +79,7 @@ The theme allows to resize your stand-alone Markdown images and change their pla
 
 ## Layout
 
-The numbers in the following placeholder images are roughly a multiple of the main text width.
+The numbers in the following placeholder images are roughly a multiple of the main text width. The body copy is just blind text, the captions are descriptive.
 
 ### Small
 

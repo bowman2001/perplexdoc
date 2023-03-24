@@ -10,19 +10,43 @@ menu:
     name: Embedded
     parent: images
     pre: image
+resources:
+- name: normal
+  src: normal.svg
+  params:
+    alt: Placeholder image, default size
+    caption: The default size and position for an embedded image
+    attr: gm
+- name: normalright
+  src: normalright.svg
+  params:
+    alt: Placeholder image, default size
+    caption: The default size on the right
+    attr: gm
+- name: small
+  src: small.svg
+  params:
+    alt: Placeholder image, small size
+    caption: A small embedded image
+    attr: gm
+- name: tiny
+  src: tiny.svg
+  params:
+    alt: Placeholder image, tiny size
+    caption: Tiny image
+    attr: gm
 categories: [markdown]
 tags: [image, block]
 series: [images]
 ---
 
-**Placeholder**: Put your own introduction paragraph here instead of this one.
+The theme embeds an inline Markdown image  **as a float** in the layout.
 {.p-first}
 <!--more-->
 
-
 ## Layout
 
-Perplex embeds every image **as a float** into the containing text block by default. The default is the most common choice **at the beginning** of the block. But we may want to place images also **in the middle**. In both cases following blocks may have to flow around the image, too, when the containing one is short.
+The default is the most common choice **at the beginning** of the block. But we may want to place images also **in the middle**. In both cases following blocks may have to flow around the image, too, when the containing one is short.
 
 ### At the beginning
 
@@ -33,7 +57,7 @@ This is the most common place for an embedded image. By default its placed on th
 ![](normal) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 {.blind .blind-right}
 
-![](normal?posh=right) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+![](normalright?posh=right) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 {.blind .blind-left}
 
 #### Small size
