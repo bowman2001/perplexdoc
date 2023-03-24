@@ -18,7 +18,7 @@ resources:
 title: Keyboard Legend
 weight: 430
 categories: [Markdown]
-tags: replacement]
+tags: [replacement]
 ---
 
 Refer explicitly to keyboard strokes in your text.
