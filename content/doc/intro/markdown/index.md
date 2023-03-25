@@ -38,7 +38,7 @@ Markdown has become the favored markup language to structure text files. With go
 
 Markdown files consist of plain text marked up with a small set of ASCII signs. We can read and change them with any text editor. They usually end with the suffix ›{$md}‹.
 
-{{< mnote up=5 >}}
+{{< mnote up=11 >}}
 The suffixes ›{$mdown}‹ and ›{$markdown}‹ also indicate Markdown, but are rarely used nowadays.
 {{< /mnote >}}
 

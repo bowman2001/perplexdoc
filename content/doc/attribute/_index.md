@@ -8,6 +8,7 @@ menu:
     name: Attributes
     pre: line_style
 title: Attributes
+tags: [attribute]
 weight: 300
 ---
 
