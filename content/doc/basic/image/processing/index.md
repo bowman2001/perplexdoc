@@ -1,6 +1,6 @@
 ---
 author: Georg Makowski
-title: Processing
+title: Image Processing
 description: The theme generates all necessary versions 
 subtitle: false
 date: 2023-03-23T11:51:34+01:00 
@@ -33,7 +33,7 @@ For crisp images on high density screens we should at least provide images for d
 | embedded (default) \& small block | {{< width/column 2 >}} | {{< width/column 3 >}} |
 | small embedded | {{< width/column 1 >}} | {{< width/column 1.5 >}} |
 
-When we build a project with more than hundred images — like this project — we have to show a little patience on the first Hugo run. Image processing may take a few minutes. The generated images are cached by Hugo and we don’t have to wait again in subsequent runs. 
+When we build a project with more than hundred images — like this project — we have to show a little patience on the first Hugo run. Image processing may take a few minutes. The generated images are cached by Hugo and we don’t have to wait again in subsequent runs.
 
 {{< mnote up=14 >}}
 On **virtual machines** we should enable a caching mechanism. If the provider pulls the content from a repository, we can  include the reserved {$_resources} folder, where processed files are stored.

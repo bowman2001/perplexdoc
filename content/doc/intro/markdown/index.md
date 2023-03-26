@@ -66,7 +66,7 @@ This documentation includes a short review of every syntax element known to Gold
 
 ## Caveats and Opportunities
 
-Two basic Markdown elements are continuously creating confusion, because they are treated in somewhat ambiguous ways:
+Two Markdown elements are continuously creating confusion, because they are treated in somewhat ambiguous ways:
 
 [Image][img]
 : The CommonMark image element is syntactically meant to be placed inside a block element. But it’s also allowed to be used stand-alone and gets automatically enclosed by a paragraph then.[^1]
@@ -83,13 +83,13 @@ The following suggestions for these elements are short. Their issues are discuss
 
 ### How to include images?
 
-There is one image element in CommonMark for embedding an image into a block element and no genuine element for a stand-alone image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. Hugo and Perplex provide the shortcode [{$figure}][fig] for this purpose.
+There is one image element in CommonMark for embedding an image into a block element and no genuine element for a stand-alone image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. Thankfully, since version 0.108.0 Hugo can distinguish a stand-alone image from one inside of a text block and allows the theme to generate a figure:
 
-{{< figure splash />}}
+![](splash)
 
-To surround every stand-alone Markdown image element with a paragraph — like CommonMark proposes and Hugo does — leads to a simple working solution, when the layout treats all images alike.
+Hugo and Perplex used to provide the shortcode [{$figure}][fig] for this purpose. It’s only kept for backwards compatibility, the new solution is much more convenient.
 
-![splash](splash2) Perplex styles the Markdown image element as a float by default. Perplex also offers layout variations for both kinds of images. That's why you should use the  [figure]({{< relref "figure" >}})-shortcode for stand-alone images and the Markdown image element only for [embedded ones][img], when you start fresh. Because of the widespread use of the Markdown image-element for stand-alone images, Perplex offers a [fallback-parameter](/doc/basic/image#fallback) to show them in full text width.
+![splash](splash2) Perplex styles the embedded Markdown image element always as a float. The theme offers layout variations for both kinds of images. For example: We can place embedded images on the left or the right inside the text block. Stand-alone images can be placed in the margin of the following text block. Look into the section about [images](/doc/basic/image) for all the options.
 
 ### How to wrap lines? {#wrap .clear}
 

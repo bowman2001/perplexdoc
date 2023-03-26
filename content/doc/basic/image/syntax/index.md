@@ -21,11 +21,17 @@ The CommonMark image syntax is short and simple and the theme generates a defaul
 
 ## Syntax
 
-Embedding an image is syntactically similar to placing a [link]({{< relref "doc/basic/link" >}}). The sole difference: The image element begins with an exclamation mark`!`.
+Embedding an image is syntactically similar to placing a [link]({{< relref "doc/basic/link" >}}). The sole difference: The image element begins with an exclamation mark `!`.
 
-There are also two versions of CommonMark images: Inline notation & reference notation.
+And there are also two notations to reference the source: **Inline** or **reference** .
 
-### Inline notation
+Additionally the theme distinguishes between the two possible ways to place an image in Markdown: **Stand-alone** or **embedded**.
+
+And the theme can also take in **resource parameters** or **in-place parameters** to alter the layout of an image.
+
+### Notation
+
+#### Inline
 
  ```md
  ![Alternative Text](image.jpg "Optional Title")
@@ -39,7 +45,7 @@ The optional title is added as the title attribute to the HTML `<img>`.
 **The title attribute** gets displayed, when a mouse pointer hovers over the element. Consider that many touch-screen devices don't have one. The image title shouldn’t contain essential information, its only a convenience for some users.
 {{< /mnote >}}
 
-### Reference notation
+#### Reference 
 
 We can use a marker in a second pair of squared brackets to separate the image reference:
 
@@ -53,9 +59,7 @@ We have to provide the image reference somewhere else in the same file by repeat
 [imgref]: long/path/to/image.jpg "Optional Title"
 ```
 
-This syntax is especially convenient, when an image is used more than once. Or when a long path/title would clutter the content.
-
-### Place in the content
+### Placement
 
 CommonMark doesn’t care, where we place an image element. But since version {$0.108} Hugo does! We can use the Markdown image element in two distinctive ways:
 
@@ -104,15 +108,14 @@ We can specify the following parameters with the given keys and types of values:
 
 In case we use the {$alt} parameter, we can leave the first bracket of the img element empty.
 
-#### Text in the first bracket {.h-p .h-info}
-alway overrides the resource parameter.
+##### Alternate Text {.h-info}
+in the Markdown image overrides the resource parameter.
 
-#### Adding parameters in-place
-
+#### In-place parameters
 We can use a special syntax to set the few layout parameters, which tend to change more often in the process of content creation. The size and the position of an image can be specified like:
 
 ```md
-![Alternative text](image.jpg?size=small&posh=right)
+![Alternative text](image.jpg?s=small&ph=right)
 ```
 
 The start of every name extension is marked by an interrogation mark `?`. Then follows a short parameter key, the equal sign `=` and the parameter value. Consecutive key-value pairs are separated by an ampersand `&`.[^1]

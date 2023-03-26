@@ -1,6 +1,7 @@
 ---
 author: Georg Makowski
 date: 2021-09-11T00:07:48+02:00
+expiryDate: 2022-09-11T00:07:48+02:00
 description: Old way to create a self-contained stand-alone image
 subtitle: false
 title: Figure Shortcode

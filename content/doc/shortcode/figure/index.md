@@ -6,7 +6,7 @@ subtitle: false
 title: Figure
 weight: 595
 menu:
-  doc:
+  doc: 
     name: Figure
     parent: shortcode
     pre: add_photo_alternate

@@ -12,25 +12,19 @@ menu:
     pre: image
 resources:
 - name: normal
-  src: normal.svg
+  src: normal_text.svg
   params:
-    alt: Placeholder image, default size
-    caption: The default size and position for an embedded image
-    attr: gm
-- name: normalright
-  src: normalright.svg
-  params:
-    alt: Placeholder image, default size
-    caption: The default size on the right
+    alt: Placeholder image, normal size
+    caption: Normal size
     attr: gm
 - name: small
-  src: small.svg
+  src: small_text.svg
   params:
     alt: Placeholder image, small size
     caption: A small embedded image
     attr: gm
 - name: tiny
-  src: tiny.svg
+  src: tiny_text.svg
   params:
     alt: Placeholder image, tiny size
     caption: Tiny image
@@ -46,18 +40,25 @@ The theme embeds an inline Markdown image  **as a float** in the layout.
 
 ## Layout
 
-The default is the most common choice **at the beginning** of the block. But we may want to place images also **in the middle**. In both cases following blocks may have to flow around the image, too, when the containing one is short.
+The most common choice for an embedded image is **at the beginning** of a paragraph. But we may want to place images also **in the middle** of one. In both cases following blocks will flow around the image, too, when the containing one is too short.
+
+### Default
+
+The default size is the normal one placed on the left. Images without an entry in the front-matter should be used only at the beginning of text blocks. Registering an image as a [resource](/doc/intro/workflow/resources) opens many options. We can [add a caption](#normal) for example.
+
+![Placeholder image](normal.svg) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+{.blind .blind-right}
 
 ### At the beginning
 
 This is the most common place for an embedded image. By default its placed on the left, if the screen is wide enough.
 
-#### Default size
+#### Normal size {#normal}
 
 ![](normal) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 {.blind .blind-right}
 
-![](normalright?posh=right) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+![](normal?posh=right) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 {.blind .blind-left}
 
 #### Small size

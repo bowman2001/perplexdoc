@@ -15,6 +15,7 @@ tags: [image]
 resources:
   - src: 
     name: featured
+draft: true
 ---
 
 Image processing in larger projects needs to find a compromise between the speed of the resulting pages and the amount of processing time and storage space.

@@ -11,30 +11,38 @@ menu:
     parent: workflow 
     pre: collections
 categories: [resources, getting-started]
+tags: [image]
 ---
 
-This theme expects resources like images as local files. We need to place them in page bundles and register them in the front-matter of the Markdown file. Resource files from parent sections or taxonomies can be re-used conveniently.
+This theme expects resources like images as local files. We need to place them in page bundles and register them in the front-matter of the Markdown file. Resource files from parent sections or taxonomies may be re-used conveniently.
 {.p-first} <!--more-->
 
-Hugo allows to handle resources in different ways and this theme has chosen the one which has a lot of support by Hugo out of the box, offers a lot of flexibility and doesn’t rely on external services.
+Hugo allows to handle resources in different ways and this theme supports the one which has a lot of support by Hugo out of the box, offers a lot of flexibility and doesn’t rely on external services{^*}.
+
+{{< mnote star=1 >}}
+The theme could be extended to work with external providers of course, but this won’t be part of the standard release.
+{{< /mnote >}}
 
 ## Hugo’s general options {#resources}
 
 There are three ways to store and retrieve resource files (like images):
 
 Page specific
-: We can save them in the folder of a page bundle and access them with a short relative path. We can register the resources in the front-matter and add additional meta-data. This Hugo feature has one big advantage: Every content page is self-sufficient and may be re-used in other sites simply by cloning its folder.
+: We can save them in the folder of a page bundle and access them with a short relative path. We then need to register the resources in the front-matter and add additional meta-data. This Hugo feature has one big advantage: Every content structure is self-sufficient and may be re-used in other sites simply by cloning its folder.
 
 Site specific
-: We can save them in the {$assets} folder and can use them for every page of our project. The [favorite icon]({{< relref "doc/site/favicon" >}}) is a typical case. Hugo doesn’t offer a native data structure to add meta-data to assets, but its possible to build them.
+: We can save them in the {$assets} folder and can use them for every page of our project. The [favorite icon]({{< relref "doc/site/favicon" >}}) is an example for this theme.
 
 Remote
-: Resources may also be retrieved via URL or API. This powerful feature has been introduced recently.
+: Resources may also be retrieved via URL or API. This feature has been introduced recently and hasn’t been tried with this theme.
 {.dl-loose}
+
+Every file in a page bundle can only get registered once and is then not available anymore under its original name in Hugo.
+{.box-info}
 
 ## Resources for this theme
 
-Perplex relies exclusively on [page bundles](/doc/intro/workflow/content#bundles) to store page specific resources.
+The theme relies on [page bundles](/doc/intro/workflow/content#bundles) to store page specific resources.
 
 ```YAML {.left}
 resources:
@@ -42,13 +50,15 @@ resources:
     name: image
 ```
 
-A resource needs to be registered as usual by providing its source path and adding a short name as an identifier label. We can add as many files we like to the list under the `resources` key. Its also possible to add arbitrary meta-data under an additional `params` key. This theme can process a bunch of them for the [CommonMark image element](/doc/basic/image#meta-data).
+A resource needs to be registered as usual by providing its source path and by adding a short name as an identifier label. We can add as many files we like to the list under the `resources` key. Its also possible to add arbitrary meta-data under an additional `params` key. This theme can process a bunch of them for the [CommonMark image element](/doc/basic/image#meta-data).
 
-### Resources from other page bundles
+## Resources from other page bundles
 
-There may be also a downside of this approach depending on the specific content structure. In case we want to include a resource more than once, we need to store and register it repeatedly. To overcome this problem at least partially, this theme is also looking for resources in taxonomy and parent pages, when they are not found in the current page. This also allows to use resources in simple pages, which aren’t bundles themselves.
+### Problem & Solution
 
-#### Lookup order
+There may be a downside to this approach depending on our specific content structure. In case we want to include a resource more than once, we need to store and register it repeatedly in different page bundles. To overcome this problem, this theme is also looking for resources in taxonomy and parent pages. This also allows to use already registered resources in simple pages, which aren’t bundles themselves.
+
+### Lookup Order
 
 In case a resource is not found in a given page, the theme tries the next related page and so on in the following order:
 
