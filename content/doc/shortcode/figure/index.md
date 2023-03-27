@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 date: 2021-09-11T00:07:48+02:00
-description: Old shortcode for self-contained images
+description: Shortcode for self-contained images
 subtitle: false
 title: Figure
 weight: 595

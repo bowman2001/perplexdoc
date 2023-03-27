@@ -112,10 +112,12 @@ The following keys and types of values are known to the theme:
 | Caption | caption | Inline Markdown string |
 | Class | class | CSS class names |
 | Link | link | URL |
-| Horiz. position | posh | {{% parameters imaging.embedded.posh %}} |
-| Vert. position | posv | {{% parameters imaging.embedded.posv %}} |
+| Horiz. position | posh | _embedded_: {{% parameters imaging.embedded.posh %}} |
+| | | _figure_: {{% parameters imaging.figure.posh %}} |
+| Vert. position | posv | _embedded_: {{% parameters imaging.embedded.posv %}} |
 | Related | rel | See [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) |
-| Size | size | {{% parameters imaging.embedded.size %}} |
+| Size | size | _embedded_ {{% parameters imaging.embedded.size %}} |
+| | | _figure_: {{% parameters imaging.figure.size %}} |
 | Target | target | {{% parameters link.target %}} |
 
 In case we use the {$alt} parameter, we can leave the first bracket of the img element empty.

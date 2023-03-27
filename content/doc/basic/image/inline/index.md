@@ -40,7 +40,7 @@ The theme embeds an inline Markdown image  **as a float** in the layout.
 
 ## Layout
 
-The most common choice for an embedded image is **at the beginning** of a paragraph. But we may want to place images also **in the middle** of one. In both cases following blocks will flow around the image, too, when the containing one is too short.
+The most common choice for an embedded image is **at the beginning** of a paragraph. But we may want to place images also **in the middle** of one. In both cases also following blocks will flow around the image, when the containing one is too short. To stop this behavior, we have to add the [attribute](/doc/attribute) `.clear` to the **following** block.
 
 ### Default
 

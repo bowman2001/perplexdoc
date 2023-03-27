@@ -9,11 +9,9 @@ categories: [Design]
 tags: [Accessible, Fluid-responsive]
 ---
 
-Websites with a fluid-responsive design behave especially user-friendly and accessible. This site is an example.
+Websites with a fluid-responsive design can behave especially user-friendly and accessible. This site is an example.
 {.p-first}
 <!--more-->
-
-There are still some doubts about the accessibility of fluid typography.
 
 Just give it a try with {%Ctrl} + {%+} and {%Ctrl} + {%-} or the zoom setting of your desktop browser. You can zoom in or out of this layout easily. You only may have to take a few zoom steps, before the layout changes completely.
 {.p-big}
@@ -26,4 +24,4 @@ The CSS function {$clamp} has been introduced to allow a single view-port depend
 
 Fluid fonts are not suitable for every screen width. For various reasons we shouldn’t deviate to much from the default browser font-size on mobile devices. Responsive fluid design is mostly beneficial on larger screens --- tablet sizes and up. Breakpoints depending on the ‘em’-unit allow to fit our fluid text precisely into the variants of our responsive layout. On large desktop screens we need to stop the fluid growth again, because their height is usually more restricted than their width.
 
-This theme does not only change the font sizes but all elements, because they all rely on the same fluid base font-size.Even the images get reloaded in a higher resolution.
+This theme does not only change the font sizes but all elements, because they all rely on the same fluid base font-size. If necessary, images get reloaded in a higher resolution, too.
