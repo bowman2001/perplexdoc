@@ -31,7 +31,7 @@ Page specific
 : We can save them in the folder of a page bundle and access them with a short relative path. We then need to register the resources in the front-matter and add additional meta-data. This Hugo feature has one big advantage: Every content structure is self-sufficient and may be re-used in other sites simply by cloning its folder.
 
 Site specific
-: We can save them in the {$assets} folder and can use them for every page of our project. The [favorite icon]({{< relref "doc/site/favicon" >}}) is an example for this theme.
+: We can save them in the {$assets} folder and can use them for every page of our project. The [favorite icon](/doc/site/favicon) is an example for this theme.
 
 Remote
 : Resources may also be retrieved via URL or API. This feature has been introduced recently and hasn’t been tried with this theme.

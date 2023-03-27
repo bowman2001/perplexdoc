@@ -40,7 +40,7 @@ I am **not** recommending the use of {$farfar}. I’ve intentionally chosen some
 
 ### Named
 
-When we want to offer more parameters, we better name them, because it's tricky to remember many of them and their position. An example is the shortcode for self-contained images. A call of [{$figure}]({{< relref "doc/shortcode/figure" >}}) could include these three parameters and more:
+When we want to offer more parameters, we better name them, because it's tricky to remember many of them and their position. An example is the shortcode for self-contained images. A call of [{$figure}](/doc/shortcode/figure) could include these three parameters and more:
 
 ```md
 {{</* figure src="image.jpg" alt="Description" title="Title" */>}} 

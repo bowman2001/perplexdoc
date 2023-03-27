@@ -7,6 +7,6 @@ Read the [docs](/doc) or get the [complete source]({{< param "docURL" >}}) for t
 
 [Build and serve](/doc/intro/workflow/local-server) the project locally with [Hugo](/doc/intro/workflow/getting-started) --- no further installation required, theme copy included.
 
-Seasoned Hugo folks may like the [short preview]({{< relref "doc/preview" >}}).
+Seasoned Hugo folks may like the [short preview](/doc/preview).
 
 [^Later]: Like to contribute? The theme has its [own repository]({{< param "themeURL" >}}).

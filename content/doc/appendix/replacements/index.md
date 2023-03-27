@@ -39,7 +39,7 @@ There has been a [helpful and clarifying discussion][forum-topic] if this templa
 ```
 
 {{< mnote up=18 >}}
-The [11th line]({{< relref "#11" >}}) actually doesn’t look that crazy. [_Replacements_]({{< relref "doc/replace" >}}) are applied everywhere to the generated HTML (see the small fonts in the 10th line). The replacement for a text float shifts a part of its own regular expression to the right. Until now, I’ve found no way to stop this. But it’s only a problem in this meta-documentation and should be of no concern elsewhere.
+The [11th line](#11) actually doesn’t look that crazy. [_Replacements_](/doc/replace) are applied everywhere to the generated HTML (see the small fonts in the 10th line). The replacement for a text float shifts a part of its own regular expression to the right. Until now, I’ve found no way to stop this. But it’s only a problem in this meta-documentation and should be of no concern elsewhere.
 {{< /mnote >}}
 
-[forum-topic]: https://discourse.gohugo.io/t/get-missing-inline-html-tags-in-markdown-without-enabling-html/40234
+[forum-topic]: https://discourse.gohugo.io/t/get-missing-inline-html-tags-in-markdown-without-enabling-html/40234 

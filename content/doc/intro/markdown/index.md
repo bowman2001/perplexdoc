@@ -58,10 +58,10 @@ Further extensions may join in the future, but probably only a few if any, becau
 
 This documentation includes a short review of every syntax element known to Goldmark and shows examples of their standard layout in Perplex and alternative styling options the theme provides:
 
-[Basic Markdown Layout]({{< relref "basic" >}})
+[Basic Markdown Layout](/doc/basic)
 : covers the elements of the [CommonMark specification][cmark].
 
-[Extended Markdown Layout]({{< relref "extended" >}})
+[Extended Markdown Layout](/doc/extended)
 : discusses the elements adopted from [PHP Markdown Extra][phpmex] and [GFM][gfmspec].
 
 ## Caveats and Opportunities
@@ -119,7 +119,7 @@ With Soft Wraps
 See the page [Line Break][lb] for the configuration and the question of CommonMark-compliance.
 
 ## Special characters
-All available characters—more general _characters_—can be used in Markdown, either directly as Unicode or as HTML entities (like `&para;` for &para;). The markup characters need to be escaped by a preceding backslash `\` to get treated literally by the Markdown renderer. See [Special Characters]({{< relref "specialchar#html-entities" >}}) for more information about this topic.
+All available characters—more general _characters_—can be used in Markdown, either directly as Unicode or as HTML entities (like `&para;` for &para;). The markup characters need to be escaped by a preceding backslash `\` to get treated literally by the Markdown renderer. See [Special Characters](/doc/basic/specialchar#html-entities) for more information about this topic.
 
 {{< mnote up=14 >}}
 You can still get into trouble with characters, which are missing in the fonts of your website. But this is a general issue independent of Markdown rendering.
@@ -145,7 +145,7 @@ Many of the special Markdown editors offer a separate preview window. With Hugo 
 CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing.
 
 {{< mnote up=14 >}}
-For this project the default settings are modified in the configuration file [`.markdownlint.yaml`]({{< relref "markdownlint" >}}) at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.
+For this project the default settings are modified in the configuration file [`.markdownlint.yaml`](/doc/appendix/markdownlint) at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.
 {{< /mnote >}}  
 
 [omd]: https://daringfireball.net/projects/markdown/ "Markdown project site by John Gruber"
@@ -156,10 +156,10 @@ For this project the default settings are modified in the configuration file [`.
 [mlint]: https://github.com/DavidAnson/markdownlint "Markdownlint"
 [lb]: /doc/basic/linebreak
 [img]: /doc/basic/image
-[dl]: {{< relref "doc/extended/definition-list" >}}
-[fig]: {{< relref "doc/shortcode/internal" >}}
-[fnote]: {{< relref "doc/extended/footnotes" >}}
-[typo]: {{< relref "doc/extended/typographer" >}}
-[table]: {{< relref "doc/extended/table" >}}
+[dl]: /doc/extended/definition-list
+[fig]: /doc/shortcode/internal
+[fnote]: /doc/extended/footnotes
+[typo]: /doc/extended/typographer
+[table]: /doc/extended/table
 [task]: {{< relref "doc/extended/task-list">}}
 [strike]: {{< relref "delins">}}

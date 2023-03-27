@@ -21,7 +21,7 @@ resources:
 Two basic steps need to be taken to publish a static website: **Build & Deploy**. There are many ways to realize them.
 {.p-first} <!--more-->
 
-Many workflows for Hugo are mentioned in the section [Hosting & Deployment][hd] of its documentation. In all cases we need to set the parameter `baseURL` to the URL of our site in the main configuration file [{$config.yaml}]({{< relref "configyaml#6" >}}).
+Many workflows for Hugo are mentioned in the section [Hosting & Deployment][hd] of its documentation. In all cases we need to set the parameter `baseURL` to the URL of our site in the main configuration file [{$config.yaml}](/doc/appendix/config/configyaml#6).
 
 The following remarks will give you a first impression of two general ways to build & deploy.
 

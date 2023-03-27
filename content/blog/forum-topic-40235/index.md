@@ -48,7 +48,7 @@ I don’t include the resulting code, you can inspect it as usual with your brow
 > {.dl-loose}
 {{< /playground >}}
 
-Markdown is very sensitive to indentation, when combining various formatting signs and [attributes]({{< relref "/doc/attribute" >}}). We need to align our code perfectly.
+Markdown is very sensitive to indentation, when combining various formatting signs and [attributes](/doc/attribute). We need to align our code perfectly.
 
 The HTML code is the expected one, which markup fits the content in the best way is a matter of taste. The layout of the theme is alright in both cases.
 

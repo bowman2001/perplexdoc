@@ -21,7 +21,7 @@ The CommonMark image syntax is short and the theme distinguishes between two pos
 
 ## Syntax
 
-The CommonMark image element is syntactically very similar to a [link]({{< relref "doc/basic/link" >}}). The sole difference: The image element begins with an exclamation mark `!`.
+The CommonMark image element is syntactically very similar to a [link](/doc/basic/link). The sole difference: The image element begins with an exclamation mark `!`.
 
 And there are also two notations to reference the source: **Inline** or **reference**.
 

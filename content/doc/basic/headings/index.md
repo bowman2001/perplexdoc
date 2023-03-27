@@ -15,7 +15,7 @@ categories: [Markdown]
 tags: [Headings, Block]
 ---
 
-Headings introduce and order the segments on a page. On a website with many pages, each level should have similar importance.
+Headings introduce and order the segments on a page. The theme allows to modify headings visually to allow adhering to a strict HTML hierarchy while enhancing the design.
 {.p-first} <!--more-->
 
 ## Syntax
@@ -68,7 +68,7 @@ Headings are not only recognized by their font styling but also by the white-spa
 If the page already has a title, the first heading **should not** occur in the Markdown content. Like many themes does this one generate titles on all pages.
 
 {{< mnote up=8 >}}
-The entire [title section]({{< relref "doc/page/title" >}}) is generated from parameters in the front-matter.
+The entire [title section](/doc/page/title) is generated from parameters in the front-matter.
 {{< /mnote >}}
 
 The first heading remains reserved for titles. We may want to compose a title in Markdown on special pages. But with this theme we usually don’t need it at all.
@@ -97,5 +97,5 @@ The first heading remains reserved for titles. We may want to compose a title in
 ###### Small Paragraph Heading
 {{< farfar 1 >}}
 
-[anchor]: {{< relref "#title" >}}
-[attr]: {{< relref "doc/attribute" >}}
+[anchor]: /#title
+[attr]: /doc/attribute

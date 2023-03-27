@@ -18,11 +18,11 @@ toc: false
 All element specific attributes should be listed here.
 {.p-first} <!--more-->
 
-To attach the attributes correctly in Markdown, have a look at the short [Howto]({{< relref "howto-attribute" >}}).
+To attach the attributes correctly in Markdown, have a look at the short [Howto](/doc/attribute/howto).
 
 |Element    | Attribute Name | CSS-class |
 |:----------|:--------|-------:|
-| Headings  | [Paragraph heading]({{< relref "doc/basic/headings#h-p" >}}) | {$.h-p} |
+| Headings  | [Paragraph heading](/doc/basic/headings#h-p) | {$.h-p} |
 | | Small paragraph h. | {$.h-p .h-p-s} |
 | | Warning | {$.h-warn} |
 | | Info | {$.h-info} |

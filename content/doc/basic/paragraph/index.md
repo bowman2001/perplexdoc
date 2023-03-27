@@ -21,7 +21,7 @@ resources:
       quality: 90
 ---
 
-Paragraphs are the essential building blocks of text. Comfortable proportions and surrounding whitespace contribute to their legibility.
+Paragraphs are the essential building blocks of text. A comfortable line length and surrounding whitespace contribute to their legibility.
 {.p-first} <!--more-->
 
 ## Syntax
@@ -30,7 +30,7 @@ A paragraph is a sequence of Unicode characters with arbitrary length. It’s fi
 
 In addition to the normal paragraph Perplex offers a **first** paragraph — like the first one on this page. There is also a **big** and a **small** one. We can also assign a topic or some other general category to a following section by adding a **meta** paragraph above it.
 
-These styles are applied with the [attributes]({{< relref "doc/attribute" >}}) `{.p-first}`, `{.p-big}`, `{.p-small}` and `{.p-meta}`.
+These styles are applied with the [attributes](/doc/attribute) `{.p-first}`, `{.p-big}`, `{.p-small}` and `{.p-meta}`.
 
 ## Layout
 

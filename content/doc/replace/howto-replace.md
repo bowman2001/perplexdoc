@@ -33,7 +33,7 @@ Perplex includes the following replacement codes and styles them:
 | Citation    |  {‍=work}     |  {=work}  |
 | Insertion   |  {‍+insert}   |  {+insert}  |
 
-These codes are substituted with the help of short regular expressions in the layout template [{$replacements.html}]({{< relref "doc/appendix/replacements" >}}). It processes the Hugo variable `.Content` which contains the rendered Markdown as HTML string. The procedure is safe, because Goldmark treats the curly braces and their content like any other Markdown and discards any raw HTML to prevent malicious code.
+These codes are substituted with the help of short regular expressions in the layout template [{$replacements.html}](/doc/appendix/replacements). It processes the Hugo variable `.Content` which contains the rendered Markdown as HTML string. The procedure is safe, because Goldmark treats the curly braces and their content like any other Markdown and discards any raw HTML to prevent malicious code.
 
 ## Available as a module {.h-tip}
 A copy of the replacements template gets included from a separate repository: [hugo-mod-replacements](https://github.com/bowman2001/hugo-mod-replacements).

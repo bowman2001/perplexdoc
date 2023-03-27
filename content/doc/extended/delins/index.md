@@ -30,8 +30,8 @@ The extension **strike-through** has been introduced by [GitHub](https://github.
 
 ## Syntax
 
-Strike-through is applied by surrounding text with two swung dashes on every side like `~~deletion~~`. There is no Markdown syntax for an insertion available in Hugo (yet), but you can use the [replacement code]({{< relref "replace" >}}) with the plus sign like `{‍+insertion}` .
+Strike-through is applied by surrounding text with two swung dashes on every side like `~~deletion~~`. There is no Markdown syntax for an insertion available in Hugo (yet), but you can use the [replacement code](/doc/replace) with the plus sign like `{‍+insertion}` .
 
 ## Layout
 
-See the [second paragraph]({{< relref "#layex" >}}).
+See the [second paragraph](#layex).

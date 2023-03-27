@@ -26,7 +26,7 @@ Perplex presents this image at the top of your pages and in reference cards. Its
 
 ## Syntax
 
-To make the image file available inside of a [page bundle]({{< relref "doc/intro/workflow/content#bundles" >}}), it needs to be included in the resources section of the front-matter. The content file of this page for example contains the following section:
+To make the image file available inside of a [page bundle](/doc/intro/workflow/content#bundles), it needs to be included in the resources section of the front-matter. The content file of this page for example contains the following section:
 
 ```yaml
 resources:

@@ -70,7 +70,7 @@ tags: [Shortcode]
 Because no Markdown element corresponds to the complex HTML `<figure>` tag, we need this shortcode for self-contained stand-alone images.
 {.p-first} <!--more-->
 
-Hugo already provides a [`figure`]({{< relref "internal#figure" >}}) shortcode and Perplex overrides this shortcode.
+Hugo already provides a {$figure} shortcode and Perplex overrides this shortcode.
 
 ## Syntax
 
@@ -156,4 +156,4 @@ The size of an extra large image will only show in blog and article pages. It’
 
 ### Layout on blog and article pages
 
-The layout of some figures is different on pages without a sidebar, because they can use the left margin there. (see [figure posting]({{< relref "blog/images/figure" >}})) for example.  
+The layout of some figures is different on pages without a sidebar, because they can use the left margin there. (see [figure posting](/blog/images/figure)) for example.  

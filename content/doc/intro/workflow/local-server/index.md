@@ -34,7 +34,7 @@ Hugo’s server is configurable and can also show your site under a public URL a
 
 The HTML pages are rendered into memory and the site is served under <http://localhost:1313> by default.
 
-- The flag `-D` lets Hugo include **drafted** files. All files created with `hugo new` are usually configured as drafts, using `draft: true` in the front-matter. When a Markdown file is ready for [publishing]({{< relref "doc/intro/workflow/publish" >}}), we need to remove this entry or change it to `draft: false`.
+- The flag `-D` lets Hugo include **drafted** files. All files created with `hugo new` are usually configured as drafts, using `draft: true` in the front-matter. When a Markdown file is ready for [publishing](/doc/intro/workflow/publish), we need to remove this entry or change it to `draft: false`.
 
 - The flag `--minify` tells Hugo to remove unnecessary whitespace from the resulting code.
 

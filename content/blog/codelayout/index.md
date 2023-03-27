@@ -60,7 +60,7 @@ In contrast to other block elements the attributes follow the **first fence** of
 The options suitable for Perplex are:
 
 `linenos`
-: Enables or disables line numbers. They are disabled by default [for this project]({{< relref "markup#40" >}}) --- enable them with `linenos=true`.
+: Enables or disables line numbers. They are disabled by default [for this project](/doc/appendix/config/markup#38) --- enable them with `linenos=true`.
 
 `hl_lines`
 : Especially highlights some code lines. The lines must be given as a set of numbers or ranges enclosed in square brackets. Every range has to be surrounded additionally by quotes: `hl_lines=[2,"5-7"]`.
@@ -156,4 +156,4 @@ Every _blank_ line indicates the beginning of a _new_ paragraph.
 
 [ftn]: {{< relref "doc/extended/footnotes#reference" >}}
 
-[dl]: {{< relref "doc/extended/definition-list" >}}
+[dl]: /doc/extended/definition-list

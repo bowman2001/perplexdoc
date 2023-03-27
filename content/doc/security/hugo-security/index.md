@@ -28,4 +28,4 @@ Depending on our needs and security concerns we can allow Hugo those calls or do
 The Perplex theme doesn’t need any additional programs and this project relies on content of my own. So, this project does’t allow Hugo to call other binaries. Because I can’t think of other security risks at runtime, I did not optimize this project configuration further for security and recommend to read the Hugo documentation if you are confronted with them.
 
 [hugo]: https://gohugo.io/about/security-model "Hugo’s Security Model"
-[secyaml]: {{< relref "securityyaml" >}}
+[secyaml]: /doc/appendix/config/securityyaml

@@ -37,7 +37,7 @@ CommonMark URLs need to be enclosed in angle brackets `<>` like `<http://www.exa
 
 #### Raw URLs {#linkify}
 
-Every URL starting with `http://` or `https://` is automatically transformed into a link by the **linkify** extension. If you want to stop this default behavior, you can set `linkify` to `false` in the [configuration]({{< relref "markup#9" >}}).  
+Every URL starting with `http://` or `https://` is automatically transformed into a link by the **linkify** extension. If you want to stop this default behavior, you can set `linkify` to `false` in the [configuration](/doc/appendix/config/markup#9).  
 
 ### Named links
 

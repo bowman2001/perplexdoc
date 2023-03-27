@@ -18,4 +18,4 @@ tags: [Columns, Shortcode]
 This shortcode is meant for a sequence of content blocks with many short items.
 {.p-first} <!--more-->
 
-We can use [column attributes]({{< relref "doc/attribute/columns" >}}) to separate a single Markdown block into columns.
+We can use [column attributes](/doc/attribute/columns) to separate a single Markdown block into columns.

@@ -51,11 +51,11 @@ The one exception are top level pages, because they only need a single view. We 
 
 ### Single pages {#single}
 
-You may have already created the new demo file `blog/first.md` while following the example in the section [first content]({{< relref "local-server#first" >}}). This is the simplest way to generate a new posting without any additional resources.
+You may have already created the new demo file `blog/first.md` while following the example in the section [first content](/doc/intro/workflow/local-server#first). This is the simplest way to generate a new posting without any additional resources.
 
 #### Leaf Bundles {#leaf}
 
-When we include resources like images into a page, we like to [retrieve them]({{< relref "#resources" >}}) easily. When we need some files only on a specific page, we can create a leaf bundle like this:
+When we include resources like images into a page, we like to [retrieve them](#resources) easily. When we need some files only on a specific page, we can create a leaf bundle like this:
 
 ```sh {.left}
 hugo new blog/second/index.md
@@ -77,7 +77,7 @@ tags: []
 When the number of entries rises, we also need some navigation structure for these types. We best provide it by adding **taxonomies**{^\*}. Hugo’s default taxonomies are the usual **categories** and **tags**. We can use them immediately in Perplex and every new front matter already includes the parameter keys and an empty list `[]`.
 
 {{< mnote up=8 star=1 >}}
-We can also add subfolders and modify the URL structure. To provide an optional separate list view for a subfolder, we also need to create a [branch file `_index.md`]({{< relref "#list" >}}) inside. Because taxonomies are the preferred structure for postings in Perplex, links to these additional sections only show up in the breadcrumbs at the bottom of the pages.
+We can also add subfolders and modify the URL structure. To provide an optional separate list view for a subfolder, we also need to create a [branch file `_index.md`](#list) inside. Because taxonomies are the preferred structure for postings in Perplex, links to these additional sections only show up in the breadcrumbs at the bottom of the pages.
 {{< /mnote >}}
 
 As soon as we add our taxonomies as a comma separated list inside the brackets `[]`, Hugo generates additional list pages for every taxonomy we introduce.
@@ -135,7 +135,7 @@ For example: Our first demo page is already placed inside the subfolder {$demo} 
 hugo new doc/demo/_index.md
 ```
 
-We can distinguish the filename {$\_index.md} for the branch bundle only by the leading underscore from the filename {$index.md} for a [leaf bundle]({{< relref "#leaf" >}})! We need to be careful about this, because they have a very different purpose and function. A branch bundle collects as many pages and may include as many other bundles as we need — there is no technical limit to the directory depth. A branch bundle can act like a chapter, section or subsection depending on its place in the folder hierarchy.
+We can distinguish the filename {$\_index.md} for the branch bundle only by the leading underscore from the filename {$index.md} for a [leaf bundle](#leaf)! We need to be careful about this, because they have a very different purpose and function. A branch bundle collects as many pages and may include as many other bundles as we need — there is no technical limit to the directory depth. A branch bundle can act like a chapter, section or subsection depending on its place in the folder hierarchy.
 
 After the front-matter {\_index.md} may contain general content about its section. Its most important function is to trigger the generation of a specific list view for the content included in this branch.
 
@@ -145,4 +145,4 @@ After the front-matter {\_index.md} may contain general content about its sectio
 
 ### Page Bundles {#bundles}
 
-[Branch bundles]({{< relref "#list" >}}) and [leaf bundles]({{< relref "#leaf" >}}) are both called **page bundles**, which share the possibility to store resource files. Other than the page bundles the branch bundles for list pages can’t retrieve their own resources from subfolders, because these may well contain more page bundles.
+[Branch bundles](#list) and [leaf bundles](#leaf) are both called **page bundles**, which share the possibility to store resource files. Other than the page bundles the branch bundles for list pages can’t retrieve their own resources from subfolders, because these may well contain more page bundles.

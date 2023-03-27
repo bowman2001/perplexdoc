@@ -25,7 +25,7 @@ Footnotes are best suited for (formal) information, which is not essential for t
 Footnotes are indispensable for scientific texts and more rigorous essays. They reference sources or elaborate on details. Because they are placed at the end of the content, the footnote marker contains a link allowing to jump to the note. And the note contains a link back to the marker.
 
 {{< mnote up=5 >}}
-To jump back and forth between text and footnotes is distracting. Perplex offers a [marginal note]({{< relref "note" >}}) like this one as an alternative for more important notes. If possible the note gets placed in the marginal column besides the main text. On smaller screens it appears in a box with a limited height.
+To jump back and forth between text and footnotes is distracting. Perplex offers a [marginal note](/doc/mnote) like this one as an alternative for more important notes. If possible the note gets placed in the marginal column besides the main text. On smaller screens it appears in a box with a limited height.
 {{< /mnote >}}
 
 ## Syntax

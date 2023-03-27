@@ -18,7 +18,7 @@ When a project includes content from unknown sources, we need to worry about con
 The possibility to extend Markdown with raw HTML{^\*} poses no threat as long as we have full control of the content. But as soon as we include external content, we have to consider bad intentions. The following suggestions should help to thwart them.
 
 {{< mnote star=1 up=5 >}}
-Hugo provides the parameter [`unsafe`]({{< relref "markup#24" >}}) for _Goldmark_ to allow this.
+Hugo provides the parameter [`unsafe`](/doc/appendix/config/markup#24) for _Goldmark_ to allow this.
 {{< /mnote >}}
 
 ## Don’t allow raw HTML
@@ -32,7 +32,7 @@ The security concern is also obvious: Raw HTML allows to inject all kinds of mal
 Hugo offers two ways to extend Markdown more securely. By injecting [HTML attributes]({{< relref "doc/attribute">}}) or configurable HTML snippets with [shortcodes](/doc/shortcode). They are provided by theme developers or project maintainers whom you need to trust.
 
 {{< mnote up=11 >}}
-Hugo can also render _inline shortcodes_, so every content editor could introduce its own shortcodes directly in the Markdown. Because they allow basically the same kind of attacks as raw HTML, they are [prohibited by default]({{< relref "securityyaml#5" >}}).
+Hugo can also render _inline shortcodes_, so every content editor could introduce its own shortcodes directly in the Markdown. Because they allow basically the same kind of attacks as raw HTML, they are [prohibited by default](/doc/appendix/config/securityyaml#5).
 {{< /mnote >}}
 
 It’s still possible to inject malicious code via HTML attributes. Hugo discards all event attributes to make it harder. Other more complicated attempts remain possible. But they are easier to spot than attacks hidden in HTML. Correct attributes are constrained to simple syntax – deviations are immediately suspicious.

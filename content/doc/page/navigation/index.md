@@ -76,7 +76,7 @@ weight: 600
 
 ## Table of Contents
 
-Perplex is prepared to style the ToC with entries for the three levels from 2 to 4. You can reduce the depth in the [markup configuration]({{< relref "markup.yaml#28" >}}).
+Perplex is prepared to style the ToC with entries for the three levels from 2 to 4. You can reduce the depth in the [markup configuration](/doc/appendix/config/markup.yaml#28).
 
 {{< mnote up=8 >}}
 Hugo is prepared to generate the HTML for the ToC from all heading levels.

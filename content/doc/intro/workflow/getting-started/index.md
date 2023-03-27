@@ -103,9 +103,9 @@ There are three ways to get a theme from a Git repository:
 
 2. Clone it with [**Git**](https://git-scm.com/) into the {$themes} folder. If you already are using Git for your project, you probably should clone the theme as a submodule. This is also the workflow to contribute to the development of a Hugo theme or module, because now you have the possibility to submit your own changes (**Caution**: Git submodules need some additional care.)
 
-3. Import a theme as a Hugo module. You need a recent [Golang environment](https://go.dev) – Hugo modules rely on Go modules. The Hugo docs provide a [guide to this feature](https://gohugo.io/hugo-modules). Once set up, Hugo modules are the best way to update themes or other external components, content etc. There is a simple example for a theme module in the file [{$module.yaml}]({{< relref "moduleyaml" >}}).
+3. Import a theme as a Hugo module. You need a recent [Golang environment](https://go.dev) – Hugo modules rely on Go modules. The Hugo docs provide a [guide to this feature](https://gohugo.io/hugo-modules). Once set up, Hugo modules are the best way to update themes or other external components, content etc. There is a simple example for a theme module in the file [{$module.yaml}](/doc/appendix/config/moduleyaml).
 
-When you chose option 1. or 2., you need to tell Hugo to use the theme in the [config file]({{< relref "configyaml.md#8" >}}). With 3. (the module) you don’t. Hugo includes modules by default as themes.
+When you chose option 1. or 2., you need to tell Hugo to use the theme in the [config file](/doc/appendix/config/configyaml.md#8). With 3. (the module) you don’t. Hugo includes modules by default as themes.
 
 ## Having trouble with Hugo?
 

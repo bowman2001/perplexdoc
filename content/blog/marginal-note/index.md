@@ -44,4 +44,4 @@ It is impossible to separate a cube into two cubes, or a fourth power into two f
 
 - - -
 
-**Like to use marginal notes? Have a look at the shortcode [{$mnote}]({{< relref "mnote" >}}).**
+**Like to use marginal notes? Have a look at the shortcode [{$mnote}](/doc/shortcode/mnote).**

@@ -6,7 +6,7 @@ id: l5
 Your pages are gonna be pretty fast. &rightarrow; Check the pages here as a reference!
 Build time is minimal (&approx; {$1ms} per page) and local previews are served instantly.
 
-Perplex doesn’t need HTML tags in Markdown. Injection of [malicious code]({{< relref "content-security" >}}) is made as hard as possible.
+Perplex doesn’t need HTML tags in Markdown. Injection of [malicious code](/doc/security/content-security) is made as hard as possible.
 
 Hugo enables strict [security policies](https://gohugo.io/about/security-model/).
 

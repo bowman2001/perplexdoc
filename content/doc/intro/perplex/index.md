@@ -44,7 +44,7 @@ Because Markdown is simple, the resulting HTML also is. Perplex offers many styl
 ## Alternative Styling and additional Elements
 
 [Attributes](/doc/attribute)
-: are HTML attributes in single curly braces placed after Markdown elements. They are introduced on the pages of the specific element, whose appearance they alter, or in the chapter [Attributes]({{< relref "doc/attribute" >}}) if they are of general use.
+: are HTML attributes in single curly braces placed after Markdown elements. They are introduced on the pages of the specific element, whose appearance they alter, or in the chapter [Attributes](/doc/attribute) if they are of general use.
 
 [Replacements](/doc/replace)
 : are shorthands in single curly braces. They refer to the few lesser important inline HTML elements, which have no counterpart in Hugo’s Markdown renderer Goldmark. They are a simple workaround to avoid raw HTML in Markdown.
@@ -86,7 +86,7 @@ Should you stumble upon bad English, typos or wrong phrases, please excuse me. I
 
 [^1]: The concept for a baseline grid has been inspired by [Plumber][plumber]. The vertical alignment is sometimes a few pixels off --- despite precise calculations. This may be noticeable on screens with a low pixel density --- usually desktop screens. All browser engines seem to face an inevitable trade-off between quality of font rendering and precision of line height.
 
-[^2]: The term _fluid typography_ is falling a bit short here. Perplex is using a **responsive fluid design**, the whole layout can adapt to the width of the browser-window (Also see [this posting]({{< relref "accessibility-of-fluid-typography" >}})).
+[^2]: The term _fluid typography_ is falling a bit short here. Perplex is using a **responsive fluid design**, the whole layout can adapt to the width of the browser-window (Also see [this posting](/blog/accessibility-of-fluid-typography)).
 
 [plex]: https://ibm.com/plex
 [rd]: https://alistapart.com/article/responsive-web-design
@@ -100,5 +100,5 @@ Should you stumble upon bad English, typos or wrong phrases, please excuse me. I
 [phpmex]: https://michelf.ca/projects/php-markdown/extra/ "PHP Markdown Extra site"
 [gfmspec]: https://github.github.com/gfm "GitHub Flavored Markdown Specification"
 [plumber]: https://jamonserrano.github.io/plumber-sass
-[conf]: {{< relref "config.md" >}}
-[new]: {{< relref "doc/intro/workflow/getting-started#first" >}}
+[conf]: /doc/appendix/config/config.md
+[new]: /doc/intro/workflow/getting-started#first

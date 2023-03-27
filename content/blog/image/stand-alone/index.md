@@ -133,3 +133,5 @@ Only if we register the source file in the front-matter as a named resource, we 
 ![](xlarge)
 
 {{< farfar 1 >}}
+
+/doc/image/processing 

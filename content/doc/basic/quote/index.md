@@ -19,7 +19,7 @@ To quote someone means to recognize her or his thoughts as part of our own. We m
 
 A single word or short piece of text is usually quoted in the running text and is called an **inline quote**. A longer text segment is usually quoted as separate block and called a **blockquote**.
 
-Some quotes should attract immediate attention while scanning the page. These are **hero quotes** and Perplex provides the [attribute]({{< relref "doc/attribute" >}}) `{.blockquote-hero}` to style them.
+Some quotes should attract immediate attention while scanning the page. These are **hero quotes** and Perplex provides the [attribute](/doc/attribute) `{.blockquote-hero}` to style them.
 
 ## Inline Quotes
 
@@ -32,7 +32,7 @@ But our keyboard usually doesn't show these typographically correct _curly_ quot
 
 ### Substitution of English quotation marks
 
-Hugo replaces the typographically dumb straight quotes with the correct curly ones by default — this is the responsibility of the  [typographer extension]({{< relref "doc/extended/typographer" >}}). We can use {%"} — straight quotes — like this:
+Hugo replaces the typographically dumb straight quotes with the correct curly ones by default — this is the responsibility of the  [typographer extension](/doc/extended/typographer). We can use {%"} — straight quotes — like this:
 
 `"An inline quote"`&emsp;for&emsp;"An inline quote"
 {.p-big}
@@ -54,7 +54,7 @@ In German publishing we usually find guillemets the other way around:
 `>>Zahnstocher<<`&emsp;for&emsp;>>Zahnstocher<<
 {.p-big}
 
-But we get into trouble with these, when we start a line with `>>`, because the `>` is also the sign for a [quotation block]({{< relref "#blockquote" >}}). We can begin the line with an invisible entity like the zero width joiner `&zwj;` for a quick workaround:
+But we get into trouble with these, when we start a line with `>>`, because the `>` is also the sign for a [quotation block](/#blockquote). We can begin the line with an invisible entity like the zero width joiner `&zwj;` for a quick workaround:
 
 &zwj;>>Noch einen Zahnstocher, bitte!<<
 {.p-big}
@@ -66,7 +66,7 @@ Because the typographer can't handle other languages, we need to think about a w
 Keyboard Shortcuts
 : We can learn key combinations to include often needed punctuation. Unfortunately, they depend on the operating system and the keyboard layout. On some systems, they are relatively easy to remember, on others, they are practically useless. But you could give it at least a try and look them up for your configuration.
 
-[HTML entities]({{< relref "specialchar" >}})
+[HTML entities](/doc/basic/specialchar)
 : We get the German _Gänsefüßchen_&ensp;&bdquo;&nbsp;and&nbsp;&ldquo;&nbsp; with `&bdquo;` and `&ldquo;` for example. Entities look weird in text files, but the result is as good as the original Unicode characters.
 {.dl-loose}
 
@@ -104,7 +104,7 @@ But think of nested blockquotes or tables inside of blockquotes in practice. The
 
 ## Hero quote
 
-Because there is only the one possible markup for blockquotes described above, we have to use the [attribute]({{< relref "doc/attribute" >}}) `.blockquote-hero`. The last lines of a hero quote look like this:
+Because there is only the one possible markup for blockquotes described above, we have to use the [attribute](/doc/attribute) `.blockquote-hero`. The last lines of a hero quote look like this:
 
 ```md
 > name of Lorem Ipsum decided to leave for the far World of Grammar.
@@ -117,7 +117,7 @@ This prodces the following layout:
 >  ---  Famous Person
 {.blockquote-hero}
 
-The author of a hero quote --- the "hero" --- is usually cited by name. To move the name to the right, it has to be tagged with the [replacement code]({{< relref "replace" >}}) for a citation.
+The author of a hero quote --- the "hero" --- is usually cited by name. To move the name to the right, it has to be tagged with the [replacement code](/doc/replace) for a citation.
 
 ## Hanging quotes
 
