@@ -22,7 +22,7 @@ Headings introduce and order the segments on a page. The theme allows to modify 
 
 Markdown headings are preceded by number signs `#` and a space. The six available headings are associated with the following meaning in Perplex:
 
-1. `# Page Title`&emsp;{s [**Not needed**][anchor] on standard Perplex pages!}
+1. `# Page Title`&emsp;{s [**Not needed**](#page-title) on standard Perplex pages!}
 
 2. `## Section Heading`
 
@@ -63,7 +63,7 @@ Headings are not only recognized by their font styling but also by the white-spa
 
 ***
 
-# Page Title {.mt3 .mb3 #title}
+# Page Title {.mt3 .mb3}
 
 If the page already has a title, the first heading **should not** occur in the Markdown content. Like many themes does this one generate titles on all pages.
 
@@ -97,5 +97,4 @@ The first heading remains reserved for titles. We may want to compose a title in
 ###### Small Paragraph Heading
 {{< farfar 1 >}}
 
-[anchor]: /#title
 [attr]: /doc/attribute

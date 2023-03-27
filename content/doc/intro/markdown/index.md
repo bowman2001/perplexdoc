@@ -154,12 +154,12 @@ For this project the default settings are modified in the configuration file [`.
 [phpmex]: https://michelf.ca/projects/php-markdown/extra/ "PHP Markdown Extra site"
 [gfmspec]: https://github.github.com/gfm "GitHub Flavored Markdown Specification"
 [mlint]: https://github.com/DavidAnson/markdownlint "Markdownlint"
-[lb]: /doc/basic/linebreak
-[img]: /doc/basic/image
-[dl]: /doc/extended/definition-list
-[fig]: /doc/shortcode/internal
-[fnote]: /doc/extended/footnotes
-[typo]: /doc/extended/typographer
-[table]: /doc/extended/table
-[task]: {{< relref "doc/extended/task-list">}}
-[strike]: {{< relref "delins">}}
+[lb]: /doc/basic/linebreak "Linebreak"
+[img]: /doc/basic/image "Image"
+[dl]: /doc/extended/definition-list "Definition List"
+[fig]: /doc/shortcode/internal "Internal shortcodes"
+[fnote]: /doc/extended/footnotes "Footnotes"
+[typo]: /doc/extended/typographer "Typographer"
+[table]: /doc/extended/table "Table"
+[task]: /doc/extended/task-list "Task list"
+[strike]: /doc/extended/delins "Delete and insert"

@@ -22,7 +22,7 @@ Marginal notes allow to add further information in an elegant and unobtrusive wa
 
 The famous mathematician Fermat wrote his last conjecture around 1637 in the marginal column besides an ancient Greek proof by Diophantus. The “marvelous proof” Fermat mentioned there has never been uncovered and his note kept mathematicians wondering for over 350 years.
 
-{{< figure wiles />}}
+![](wiles)
 
 A proof has been considered generally inaccessible until Sir Andrew John Wiles announced to have found one in 1993 after years of ground-breaking work. A few mathematicians were able to follow him and pointed out some flaws in his first preliminary version. Wiley finally published a completely convincing version in 1995 — a break-through in number theory which won him a few prizes.  
 

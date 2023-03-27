@@ -73,4 +73,4 @@ All pictures
 [katex]: https://katex.org
 [mermaid]: https://mermaid-js.github.io/mermaid
 [cc4]: https://creativecommons.org/licenses/by-sa/4.0/legalcode
-[mylicense]: {{< param themeURL >}}/blob/main/LICENSE
+[mylicense]: https://github.com/bowman2001/perplex/blob/main/LICENSE

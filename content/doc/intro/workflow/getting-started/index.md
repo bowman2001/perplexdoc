@@ -37,7 +37,7 @@ Please follow the specific [installation instructions](https://gohugo.io/getting
 
 ## Get Perplex
 
-When you start to get acquainted with Hugo or need examples of Markdown content for Perplex, you should simply get this documentation project. It’s licensed as Creative Commons ([CC-BY-SA 4.0][cc]), available on [GitHub]({{< param sourceURL >}}) and ships with all the files for the documentation and a few examples the other kinds of content.
+When you start to get acquainted with Hugo or need examples of Markdown content for Perplex, you should simply get this documentation project. It’s licensed as Creative Commons ([CC-BY-SA 4.0][cc]), available on [GitHub](https://github.com/bowman2001/perplexdoc) and ships with all the files for the documentation and a few examples the other kinds of content.
 
 ### The documentation project
 
@@ -63,7 +63,7 @@ The folders for the project site are a subset of the standard Hugo folders.
 : hosts all directories or files without the need for processing. They are copied to the publication folder (default: public) as they are. At the moment this folder only includes one file.
 {.dl-loose}
 
-The reserved {$\_vendor} folder includes a recent copy of the Perplex theme. Its working as a module cache and should never be touched directly. The theme copy gets imported from there as long as we don’t retrieve it otherwise. Because of this cached copy, there is no need to install a Go environment in the beginning. Should you be interested in the the theme, you’re welcome at its own [repository]({{< param themeURL >}}).
+The reserved {$\_vendor} folder includes a recent copy of the Perplex theme. Its working as a module cache and should never be touched directly. The theme copy gets imported from there as long as we don’t retrieve it otherwise. Because of this cached copy, there is no need to install a Go environment in the beginning. Should you be interested in the the theme, you’re welcome at its own [repository](https://github.com/bowman2001/perplex).
 
 #### Project configuration
 
