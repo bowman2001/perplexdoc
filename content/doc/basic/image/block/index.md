@@ -81,7 +81,7 @@ series: [images]
 weight: 154
 ---
 
-The theme allows to resize your stand-alone Markdown images and change their place in the layout.
+The theme offers many different layout options for stand-alone Markdown images.
 {.p-first}
 <!--more-->
 
@@ -91,13 +91,14 @@ The numbers in the following placeholder images are roughly a multiple of the ma
 
 ### Default
 
-The normal size occupies the main text width. This is how stand-alone images are mostly placed in other Hugo themes.
-
-If you register your file in the front-matter as a named resource, you can [add a caption](#normal) etc.
+The normal size occupies the main text width, because this is the way stand-alone images are usually placed in other Hugo themes.
 
 ![Placeholder image](fig/normal.svg)
 
-The body copy in the following sections is just blind text, but the captions are descriptive.
+Only if we register the source file in the front-matter as a named resource, we can add a caption etc. and generate a different layout.
+
+The body copy in the following sections consists of **blind text**, but the captions are descriptive.
+
 ### Tiny
 
 ![](tiny)

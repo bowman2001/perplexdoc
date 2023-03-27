@@ -15,19 +15,19 @@ tags: [image, block]
 series: [images]
 ---
 
-The CommonMark image syntax is short and simple and the theme generates a default layout for both kinds of images. To alter their appearance we need Hugo’s resource feature in the front-matter.
+The CommonMark image syntax is short and the theme distinguishes between two possible image positions: **stand-alone** & **embedded**. To alter the appearance we can pass additional parameters.
 {.p-first}
 <!--more-->
 
 ## Syntax
 
-Embedding an image is syntactically similar to placing a [link]({{< relref "doc/basic/link" >}}). The sole difference: The image element begins with an exclamation mark `!`.
+The CommonMark image element is syntactically very similar to a [link]({{< relref "doc/basic/link" >}}). The sole difference: The image element begins with an exclamation mark `!`.
 
-And there are also two notations to reference the source: **Inline** or **reference** .
+And there are also two notations to reference the source: **Inline** or **reference**.
 
 Additionally the theme distinguishes between the two possible ways to place an image in Markdown: **Stand-alone** or **embedded**.
 
-And the theme can also take in **resource parameters** or **in-place parameters** to alter the layout of an image.
+The theme can also process **resource parameters** or a few **in-place parameters** to change the layout.
 
 ### Notation
 
@@ -42,12 +42,12 @@ The alternative text inside the square brackets `[]` is used by screen readers, 
 The optional title is added as the title attribute to the HTML `<img>`.
 
 {{< mnote up=5 >}}
-**The title attribute** gets displayed, when a mouse pointer hovers over the element. Consider that many touch-screen devices don't have one. The image title shouldn’t contain essential information, its only a convenience for some users.
+**The title attribute** gets displayed, when a pointer hovers over the element. Consider that many touch-screen devices don't have one. The image title shouldn’t contain essential information.
 {{< /mnote >}}
 
-#### Reference 
+#### Reference
 
-We can use a marker in a second pair of squared brackets to separate the image reference:
+We can place a marker in a second pair of **squared brackets** to separate the image reference:
 
 ```md {.left}
 ![Name][imgref]
@@ -73,7 +73,7 @@ Paragraph before…
 Paragraph after…
 ```
 
-We surround our image element with empty lines and it’s a Markdown block element and gets treated as a figure.
+By surrounding an image element with empty lines it becomes a Markdown block element and gets treated as a figure.
 
 #### Embedded {.clear}
 
@@ -82,15 +82,27 @@ We surround our image element with empty lines and it’s a Markdown block eleme
 containing the image
 ```
 
-We write it in line with our paragraph text–usually at the beginning–and it gets embedded as a float.
+When we place an image inside our paragraph text–usually at the beginning–it gets embedded as a float.
 
 ### Passing extra parameters
 
-Markdown can’t handle more image parameters than the ones mentioned above. To offer layout variations, Perplex can handle additional parameters with the help of Hugo. All of them can be given as resource meta-data in the front-matter. Alternatively we can change some layout parameters directly in the Markdown by adding parameters to the image name.
+Markdown can’t handle more image parameters than the ones mentioned above. To generate a caption and change the layout, the theme offers additional parameters. All of them may be inserted as Hugo resource meta-data in the front-matter. We can also change the few layout parameters directly in the Markdown content by adding parameters to the image name.
 
 #### Resource meta-data {#meta-data}
 
-We can specify the following parameters with the given keys and types of values:
+```yaml {.right linenos=true linenostart=10}
+resources:
+- src: image.jpg
+  name: img
+  params:
+    caption: A placeholder image
+    size: tiny
+    posh: left
+```
+
+We register an image in the list of resources with its file name or relative path. Now we **have to** call it by its new (short) name like `![Placeholder](img)`. To pass parameters we add the optional `params` key. This key can contain all the available ones, they need to be indented by two additional spaces relative to `params`.
+
+The following keys and types of values are known to the theme:
 
 | Parameter | Key | Values |
 |:---------|:----------|:---------|
@@ -118,13 +130,13 @@ We can use a special syntax to set the few layout parameters, which tend to chan
 ![Alternative text](image.jpg?s=small&ph=right)
 ```
 
-The start of every name extension is marked by an interrogation mark `?`. Then follows a short parameter key, the equal sign `=` and the parameter value. Consecutive key-value pairs are separated by an ampersand `&`.[^1]
+The start of every image name extension is marked by an interrogation mark `?`. Then follows a short parameter key, the equal sign `=` and the parameter value. Consecutive key-value pairs are separated by an ampersand `&`.[^1]
 
 {{< mnote up=17 >}}
 The idea to use the well established syntax for query strings goes back to a suggestion by Joe Mooring in the Hugo forum.
 {{< /mnote >}}
 
-We can specify a few parameters to a given set of values:
+We can place only these parameters:
 
 | Parameter | Key | Values |
 |:----|:----|:----|
@@ -133,7 +145,7 @@ We can specify a few parameters to a given set of values:
 | Vert. position | posv (pv) | {{% parameters imaging.embedded.posv %}} |
 
 ##### The value `middle`
-for the vertical positioning doesn’t move an embedded image into the middle of the block. Its only an indicator for the layout to add some additional space for images, which are already placed in the middle of a text block.
+for the vertical positioning doesn’t move an embedded image into the middle of the block. It’s only an indicator for the layout to add some additional space on top of images, which are already placed in the middle of a text block.
 
 [^1]: The syntax for **query strings** has been introduced to extend URLs with optional parameters like `https://name.org?id=val&id2=val2`. They are usually generated automatically to specify API requests.
 

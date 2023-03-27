@@ -44,6 +44,7 @@ In case we can’t provide a large enough version of an image, Perplex uses an [
 ## Manipulation
 
 ### TODO
+
 - Improve templates
 - Document resource parameters
 
