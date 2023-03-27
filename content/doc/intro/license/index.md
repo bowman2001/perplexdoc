@@ -9,7 +9,6 @@ menu:
     pre: receipt
 subtitle: false
 title: Licenses
-weight: 55
 resources:
   - name: featured
     src: chris-brignola-X2CxUXFqKcM-unsplash.jpg
@@ -34,6 +33,12 @@ The documentation
 
 [Hugo][hugo]
 : is released by its authors and contributors under the [Apache 2.0 License](https://github.com/gohugoio/hugo/blob/master/LICENSE).
+{.dl-loose}
+
+## External templates
+
+[render-link-hook](https://www.veriphor.com/articles/link-and-image-render-hooks/)
+: has been released by [Veriphor](https://www.veriphor.com) under the Apache 2.0 License included in the template file.
 {.dl-loose}
 
 ## Fonts and icon fonts
