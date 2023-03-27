@@ -3,7 +3,7 @@ publish = "public"
 command = "hugo --gc --minify --environment netlify"
 
 [build.environment]
-HUGO_VERSION = "0.111.2"
+HUGO_VERSION = "0.111.3"
 # GO_VERSION = "1.18"
 HUGO_ENABLEGITINFO = "true"
 
