@@ -22,7 +22,7 @@ resources:
 ---
 
 Paragraphs are the essential building blocks of text. A comfortable line length and surrounding whitespace contribute to their legibility.
-{.p-first} <!--more--> 
+{.p-first} <!--more-->
 
 ## Syntax
 

@@ -1,10 +1,8 @@
 ---
-cascade:
-  headless: true
-  _build: 
-    list: never
-    render: false
-    
+title: site branch bundle
+_build:
+  list: false
+  render: false   
 resources:
   - src: Perplex.svg
     name: featured
