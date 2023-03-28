@@ -11,12 +11,13 @@ favicon:
   svg: icon/favicon.svg
   png: icon/favicon.png
 
-sourceURL: https://github.com/bowman2001/perplexdoc
-sourceEditTree: edit/main/content
-
 imaging:
   sizestep: 25
-  fallbackwidth: 1400
+  fallback_width: 1920
 
 # fathomSiteID: ABCDEFG
 # fathomCustomDomain: https://custom.yourdomain.com
+
+render_hooks:
+    link:
+      errorLevel: ignore
