@@ -7,8 +7,4 @@ cascade:
   _build:
     list: true
     render: false
-  resources:
-    params:
-      container: "footer"
-      svg: "file"
 ---
