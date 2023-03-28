@@ -1,3 +1,0 @@
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, DELETE, HEAD, OPTIONS
-Access-Control-Max-Age: 3600
