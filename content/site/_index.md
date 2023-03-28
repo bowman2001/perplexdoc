@@ -1,10 +1,10 @@
 ---
 cascade:
+  headless: true
   _build: 
     list: never
-  embedImg: full
-_build:
-  render: false
+    render: false
+    
 resources:
   - src: Perplex.svg
     name: featured
