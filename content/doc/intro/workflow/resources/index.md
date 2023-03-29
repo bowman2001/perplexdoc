@@ -34,11 +34,12 @@ Site specific
 : We can save them in the {$assets} folder and can use them for every page of our project. The [favorite icon](/doc/site/favicon) is an example for this theme.
 
 Remote
-: Resources may also be retrieved via URL or API. This feature has been introduced recently and hasn’t been tried with this theme.
+: Resources may also be retrieved via URL or API. The theme can generate [Kroki diagrams](https://kroki.io) via their API.
 {.dl-loose}
 
-Every file in a page bundle can only get registered once and is then not available anymore under its original name in Hugo.
-{.box-info}
+We can register every file in a page bundle **only once**. And then, we can’t reference it anymore under its original name.
+
+Remote resources may slow down the build considerably, when an external service is not available. 
 
 ## Resources for this theme
 

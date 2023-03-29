@@ -1,0 +1,22 @@
+@startuml
+!include C4_Context.puml
+!include C4_Container.puml
+!include users.puml
+
+title Automated Build and Continous Deployment
+
+Person(admin, "Website Editor", "Content editor and website administrator")
+Person(author, "Markdown Authors", $sprite="users" )
+System(local, "Local Hugo Server", "Generates local preview")
+System_Boundary(git, "Git provider") {
+  Container(repository, "Git repository", "Git, GUI", "Allows shared version control" )
+}
+System_Boundary(abcd, "ABCD Provider") {
+Container(build, "Build environment", "Git, Hugo & Theme, GUI", "Builds & Deploys current site")
+}
+
+Rel_R(author, git, "Pushes/Pulls")
+Rel_R(admin, local, "Finalizes")
+Rel_R(admin, git, "Pushes main/Pulls")
+Rel(abcd, git, "Pulls main")
+@enduml
