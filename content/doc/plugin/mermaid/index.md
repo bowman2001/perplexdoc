@@ -1,6 +1,6 @@
 ---
 title: Mermaid
-description: Page description placeholder
+description: Client-side diagram generator
 subtitle: false
 date: 2022-01-22T18:05:56+01:00 
 weight: 730
