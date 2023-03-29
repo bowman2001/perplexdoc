@@ -38,7 +38,7 @@ The documentation
 ## External templates
 
 [render-link-hook](https://www.veriphor.com/articles/link-and-image-render-hooks/)
-: has been released by [Veriphor](https://www.veriphor.com) under the Apache 2.0 License included in the template file.
+: has been released by [Veriphor](https://www.veriphor.com) under the Apache 2.0 License.
 {.dl-loose}
 
 ## Fonts and icon fonts
