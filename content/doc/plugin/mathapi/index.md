@@ -21,7 +21,7 @@ Include Math diagrams as SVG graphics from a remote service.
 
 The [Math API website](https://math.vercel.app/home) offers a the nice service to render LaTeX Equations into SVG diagrams via API request while generating the static site. This approach does’t need client side rendering by a Javascript library.
 
-[Joe Mooring from Veriphor](https://www.veriphor.com/articles/mathematical-expressions/) implemented a hook to generate those SVGs from LaTeX inside a code block and inline.
+[Joe Mooring from Veriphor](https://www.veriphor.com/articles/mathematical-expressions/) implemented a hook to generate those SVGs from LaTeX inside a **code block** and a shortcode for **inline code**. Their options are also documented on the Veriphor site.
 
 ## Code Block
 
