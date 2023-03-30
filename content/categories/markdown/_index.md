@@ -9,4 +9,5 @@ resources:
   params:
     alt: Markdown logo
     container: "no"
+    size: tiny
 ---
