@@ -81,24 +81,21 @@ series: [images]
 weight: 154
 ---
 
-The theme offers many different layout options for stand-alone Markdown images. Here you can see the ones for the documentation pages.
+The theme offers many different layout options for stand-alone Markdown images. Here you can see the results for a documentation page.
 {.p-first}
 <!--more-->
 
-## Layout
+To produce the following layout options besides the default we need to adhere to the theme’s special [image syntax](/doc/basic/image/syntax). The numbers in the following placeholder images are roughly a multiple of the main text width.
 
-We have the following different size options.
-The numbers in the following placeholder images are roughly a multiple of the main text width.
+## Default
 
-### Default
-
-The normal size occupies the main text width, because this is the way stand-alone images are usually placed in other Hugo themes.
+The default for the usual stand-alone CommonnMark image element is the normal size and occupies the main text width as usual in most web layouts.
 
 ![Placeholder image](fig/normal.svg)
 
 Only if we register the source file in the front-matter as a named resource, we can add a caption etc. and generate the different layout options shown in the next sections. The following body copy consists of **blind text**, but the captions are descriptive.
 
-### Tiny
+## Tiny
 
 ![](tiny)
 
@@ -108,7 +105,7 @@ Only if we register the source file in the front-matter as a named resource, we 
 
 {{< farfar 2 >}}
 
-### Small
+## Small
 
 ![](small-portrait)
 
@@ -118,7 +115,7 @@ Only if we register the source file in the front-matter as a named resource, we 
 
 {{< farfar 1 >}}
 
-### Medium
+## Medium
 
 ![](medium)
 
@@ -128,21 +125,21 @@ Only if we register the source file in the front-matter as a named resource, we 
 
 {{< farfar 2 >}}
 
-### Normal
+## Normal
 {{< farfar 1 >}}
 
 ![](normal)
 
 {{< farfar 1 >}}
 
-### Large
+## Large
 {{< farfar 1 >}}
 
 ![](large)
 
 {{< farfar 1 >}}
 
-### Extra Large
+## Extra Large
 
 {{< farfar 1 >}}
 

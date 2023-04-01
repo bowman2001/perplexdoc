@@ -15,7 +15,7 @@ tags: [image, block]
 series: [images]
 ---
 
-The CommonMark image syntax is short and the theme distinguishes between two possible image positions: **stand-alone** & **embedded**. To alter the appearance we can pass additional parameters.
+The CommonMark image syntax is short and the theme distinguishes between two possible image positions: **stand-alone** & **embedded**. To alter the appearance we can pass special additional parameters.
 {.p-first}
 <!--more-->
 
@@ -23,9 +23,9 @@ The CommonMark image syntax is short and the theme distinguishes between two pos
 
 The CommonMark image element is syntactically very similar to a [link](/doc/basic/link). The sole difference: The image element begins with an exclamation mark `!`.
 
-And there are also two notations to reference the source: **Inline** or **reference**.
+There are also two notation options to reference the source: **Inline** or **reference**.
 
-Additionally the theme distinguishes between the two possible ways to place an image in Markdown: **Stand-alone** or **embedded**.
+Additionally the theme relies on Hugo’s feature to distinguish the two possible ways to place an image in Markdown: **Stand-alone** or **embedded**.
 
 The theme can also process **resource parameters** or a few **in-place parameters** to change the layout.
 
@@ -61,7 +61,7 @@ We have to provide the image reference somewhere else in the same file by repeat
 
 ### Placement
 
-CommonMark doesn’t care, where we place an image element. But since version {$0.108} Hugo does! We can use the Markdown image element in two distinctive ways:
+CommonMark doesn’t care, where we place an image element. But since version {$0.108.0} Hugo does! The two distinctive ways lead to a different layout with this theme:
 
 #### Stand-alone
 
@@ -86,7 +86,7 @@ When we place an image inside our paragraph text–usually at the beginning–it
 
 ### Passing extra parameters
 
-Markdown can’t handle more image parameters than the ones mentioned above. To generate a caption and change the layout, the theme offers additional parameters. All of them may be inserted as Hugo resource meta-data in the front-matter. We can also change the few layout parameters directly in the Markdown content by adding parameters to the image name.
+Markdown can’t handle more image parameters than the ones mentioned above. To generate a caption etc., the theme offers additional parameters. All of them may be inserted as Hugo resource meta-data in the front-matter. We can also change the few image layout parameters directly in the Markdown content by adding parameters to the image name with a special syntax.
 
 #### Resource meta-data {#meta-data}
 

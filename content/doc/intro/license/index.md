@@ -36,9 +36,12 @@ The documentation
 : is released by its authors and contributors under the [Apache 2.0 License](https://github.com/gohugoio/hugo/blob/master/LICENSE).
 {.dl-loose}
 
-## External templates
+## Additional Hugo Templates
 
-[render-link-hook](https://www.veriphor.com/articles/link-and-image-render-hooks/)
+[render-link](https://www.veriphor.com/articles/link-and-image-render-hooks/)
+: has been released by [Veriphor](https://www.veriphor.com) under the Apache 2.0 License.
+
+[render-codeblock-kroki](https://www.veriphor.com/articles/diagrams)
 : has been released by [Veriphor](https://www.veriphor.com) under the Apache 2.0 License.
 {.dl-loose}
 

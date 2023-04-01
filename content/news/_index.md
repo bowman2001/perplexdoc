@@ -10,4 +10,5 @@ menu:
     weight: 10
 cascade:
   toc: false
+url: /
 ---

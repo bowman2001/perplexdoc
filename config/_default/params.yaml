@@ -13,7 +13,7 @@ favicon:
 
 imaging:
   sizestep: 50
-  fallback_width: 1400
+  fallback_width: 1920
 
 # fathomSiteID: ABCDEFG
 # fathomCustomDomain: https://custom.yourdomain.com

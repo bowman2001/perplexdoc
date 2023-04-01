@@ -3,13 +3,8 @@ author: Georg Makowski
 title: Open files in VSCode from Hugo’s server preview
 linktitle: Open VSCode from server-mode
 date: 2023-03-31T00:44:36+02:00
-categories: [Module]
+categories: [Tip]
 tags: [vscode]
-resources:
-  - src: 
-    name: featured
-    params:
-      alt: 
 ---
 
 Two short partials create a link to the content file of the current page in Hugo’s server-mode.
@@ -40,3 +35,5 @@ The first one renders the opening anchor-tag with the VSCode link, the second on
 ```
 
 The partials are also available in the small module [hugo-mod-open-in-vscode](https://github.com/bowman2001/hugo-mod-open-in-vscode).
+
+The Perplex theme places the link in the date or the title.

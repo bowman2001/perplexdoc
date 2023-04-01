@@ -1,6 +1,6 @@
 ---
 author: Georg Makowski
-title: New Hugo Module for missing HTML inline tags
+title: Hugo Module for missing HTML inline tags
 linktitle: Module for missing inline tags
 description: Inject inline HTML into rendered Markdown with simple codes
 subtitle: false
