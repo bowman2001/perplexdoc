@@ -16,5 +16,5 @@ resources:
       alt: A plug socket and a nearby plug
 ---
 
-You can place your own lead paragraph here before the attribute _p-lead_ and the _more tag_. If you don't want to use special styling, just remove the attribute.
+The theme offers some layout options which depend either on remote services at build time or on Javascript libraries for client-side rendering.
 {.p-first} <!--more-->

@@ -17,6 +17,7 @@ resources:
     src: emily-goodhart-vu1BlBAZ_RU-unsplash.jpg
     params:
       alt: A woman with a big mono-fin swimming in a pool
+draft: true
 ---
 
 You can place your own lead paragraph here before the attribute _.p-first_ and the _more tag_. If you don't want to use special styling, just remove the attribute.

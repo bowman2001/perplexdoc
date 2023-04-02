@@ -9,7 +9,7 @@ menu:
   doc:
     name: Kroki
     parent: plugin
-    pre: remove
+    pre: account_tree
 categories: [Markdown]
 tags: [diagram]
 ---
@@ -20,7 +20,7 @@ Generate SVG diagrams with the Kroki service by writing textual diagram descript
 
  [Kroki](https://kroki.io) allows to generate a wide variety of diagrams from textual descriptions by calling their API.
 
- Joe Mooring published an article about this service on [Veriphor][veriphor] including a template for Hugo. This theme includes his template with only a few adaptions to generate a fitting style. Please, read his article to learn about its usage.
+ Joe Mooring published an article about this service on Veriphor including a template for Hugo. This theme includes his template with only a few adaptions to generate a fitting style. Please, read [his article][veriphor] to learn about its usage.
 
  Here follow examples of all currently supported diagram types which are taken from the Kroki page.
 

@@ -22,6 +22,8 @@ tags: [Hugo]
 When we are working on our content, we often like to examine the resulting pages immediately. To generate an immediate (local) preview, we can run Hugo in its server mode.
 {.p-first} <!--more-->
 
+## Syntax
+
  A command like the following in the root of a project starts the [Hugo server][server]:
 
 ```sh
@@ -39,9 +41,6 @@ The HTML pages are rendered into memory and the site is served under <http://loc
 - The flag `--minify` tells Hugo to remove unnecessary whitespace from the resulting code.
 
 - The flag `--navigateToChanged` tells the server to relay the page of the last changed file to the browser. As soon as we save a file the corresponding page pops up in the browser.
-
-### Set a reasonable auto-save delay {.h-tip .h-p}
-Some editors are saving our work so fast by default, that nearly every keystroke leads to a new file version and the regeneration of the corresponding page. When we are in the process of changing sensitive content like front-matter parameters this can easily bring down Hugo’s server, because Hugo can’t process inconsistent files. Then we have to restart the server, which is not a big deal, but gets annoying after a while. It’s better to set the auto-save delay to a bigger value, which lets us save consistent file versions manually.
 
 ## Adding your first content {#first}
 
@@ -80,12 +79,20 @@ TODO: Show all the steps described above. The following session is an old test:
 
 [server]: https://gohugo.io/commands/hugo_server
 
-### Editor links {.h-tip}
 
-A few editors offer a protocol to open files with a special link. As of now, Perplex provides a link to open the content file in a local instance of _Visual Studio Code_.
+## Editor usage
 
-{{< mnote up=8 >}}
+Tips for a better editing experience with Hugo and the theme.
+
+### Auto-save delay
+Some editors are saving our work so fast by default, that nearly every keystroke leads to a new file version and the regeneration of the corresponding page. When we are in the process of changing sensitive content like front-matter parameters this can easily bring down Hugo’s server, because Hugo can’t process inconsistent files. Then we have to restart the server, which is not a big deal, but gets annoying after a while. It’s better to set the auto-save delay to a bigger value, which lets us save consistent file versions manually.
+
+### Editor links in the local preview
+
+A few editors offer a protocol to open files with a special link. The theme provides a link to open the content file in a local instance of _Visual Studio Code_. This link is only present if Hugo runs in server-mode. It’s placed in the date at the top or the bottom of regular pages. Because taxonomy pages don’t show a date, the link is placed in the title.
+
+{{< mnote up=14 >}}
 Links to other editors could be provided, too, if they offer this functionality.
 {{< /mnote >}}
 
-This link is only present if Hugo runs in server-mode. Then, its placed in the date at the top or the bottom of regular pages. Because taxonomy pages don’t show a date, the link is placed in the title.
+
