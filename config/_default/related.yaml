@@ -3,13 +3,13 @@
 #
 
 includeNewer: true
-threshold: 80
+threshold: 30
 toLower: false
 
 indices:
   - name: categories
-    weight: 10
+    weight: 30
   - name: tags
     weight: 40
   - name: series
-    weight: 50
+    weight: 30

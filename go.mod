@@ -2,4 +2,4 @@ module perplexdoc
 
 go 1.18
 
-require github.com/bowman2001/perplex v0.0.0-20230401151637-4c33a3d08b38 // indirect
+require github.com/bowman2001/perplex v0.0.0-20230402223028-5e2a555e84c0 // indirect
