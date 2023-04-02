@@ -22,9 +22,7 @@ Generate SVG diagrams with the Kroki service by writing textual diagram descript
 
  Joe Mooring published an article about this service on [Veriphor][veriphor] including a template for Hugo. This theme includes his template with only a few adaptions to generate a fitting style. Please, read his article to learn about its usage.
 
- Here follow examples of all currently supported diagram types which are taken from the Kroki page. Some of them are not perfect, but this service is already astonishing.
-
- **TODO**: The diagrams will get the same layout options as other figures. Especially the ones with a big height could be smaller.  
+ Here follow examples of all currently supported diagram types which are taken from the Kroki page.
 
 ## Block
 

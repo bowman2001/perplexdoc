@@ -59,7 +59,3 @@ $$
 
 An inline {{< math >}}${(x+y)}^2${{< /math >}} expression.
 
-## TODO
-1. The size of a diagram depends on a fixed font-size. Figure out the best way, to make it fluid.
-
-2. The baseline of the latex fonts is way off, which is obvious in the inline formula. Fix it. (Depends on 1.) 

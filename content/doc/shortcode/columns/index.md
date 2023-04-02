@@ -13,6 +13,7 @@ menu:
     pre: view_column
 categories: [Theme]
 tags: [Columns, Shortcode]
+draft: true
 ---
 
 This shortcode is meant for a sequence of content blocks with many short items.

@@ -9,6 +9,7 @@ menu:
     pre: download
 title: Hugo’s built-in remote shortcodes
 weight: 580
+draft: true
 ---
 
 These are Hugo’s remote shortcodes to embed external content from popular service providers.

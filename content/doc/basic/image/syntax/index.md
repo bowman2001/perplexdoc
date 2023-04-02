@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 title: Image Syntax
-description: CommonMarks image syntax plus optional resources and in-place query-string
+description: CommonMarks image syntax with optional resources or an in-place query-string
 subtitle: false
 date: 2023-03-23T10:11:05+01:00 
 weight: 152

@@ -21,12 +21,20 @@ resources:
       alt: fireworks over open water
 ---
 
-Perplex presents this image at the top of your pages and in reference cards. Its also fed to search engines and social networks with the help of meta tags.
+Perplex presents this image at the top of your page and in reference cards. It’s also included in a special format for search engines and social networks.
 {.p-first} <!--more-->
+
+## Prerequisite
+
+The image file needs to be placed in the [page bundle](/doc/intro/workflow/content#bundles). Only one featured image is allowed per page and it should be at least {${{< width/column 2 >}}} wide to display it with double density on high resolution screens.
+
+If no featured image is available for a page, Perplex will search for one in related pages or display a site fallback.
 
 ## Syntax
 
-To make the image file available inside of a [page bundle](/doc/intro/workflow/content#bundles), it needs to be included in the resources section of the front-matter. The content file of this page for example contains the following section:
+To make the image file available to Hugo and the theme, it also needs to be registered in the [resources section](/doc/intro/workflow/resources) of the front-matter. The filename of the image is identified there by its reserved name `featured`. And you can add an alternative text for your image with the `alt` parameter.
+
+The content file of this page for example contains the following section:
 
 ```yaml
 resources:
@@ -35,7 +43,3 @@ resources:
     params:
       alt: fireworks over open water
 ```
-
-The image is identified by its reserved name `featured`. Only one featured image is allowed per page and it should be at least {${{< width/column 2 >}}} wide to display it with double density on high resolution screens.
-
-If no featured image is given for a page, Perplex will search for one: First in its taxonomies (and there the tags have priority), then in its parent folders.

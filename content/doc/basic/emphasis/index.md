@@ -65,6 +65,6 @@ I haven’t checked the specification details for this argument, but the asteris
 
 - In `__H__yper-__T__ext __M__arkup __L__anguage` the underscores are ignored by CommonMark (Goldmark) and even left inside the text: __H__yper-__T__ext __M__arkup __L__anguage.
 
-## Emphasis with sans-serif fonts
+## Emphasis with sans-serif fonts {.h-tip}
 
-Sans-serif fonts usually don’t have a distinctive italic style, even if their font includes an italic specimen. They mostly look like a slightly tilted version of the regular font. When you already know, that your layout will use such an sans-serif font for the body copy, you should prefer bold emphasis.
+Sans-serif fonts usually don’t have a distinctive italic style, even if their font includes an italic specimen. They look like a slightly tilted version of the regular font --- which is not as pretty as a distinct serif style. You should prefer bold emphasis.

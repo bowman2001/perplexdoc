@@ -11,6 +11,7 @@ subtitle: false
 title: Asciinema
 categories: []
 weight: 540
+draft: true
 ---
 
 Record terminal sessions on the command line and share them with a shortcode. The recording software and the server for sharing sessions are open source. The service of the official server is free, and it's also possible to set up your own server instance.

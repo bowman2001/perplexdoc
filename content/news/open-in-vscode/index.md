@@ -3,7 +3,7 @@ author: Georg Makowski
 title: Open files in VSCode from Hugo’s server preview
 linktitle: Open VSCode from server-mode
 date: 2023-03-31T00:44:36+02:00
-categories: [Tip]
+categories: [Tip, Module]
 tags: [vscode]
 ---
 
@@ -23,6 +23,10 @@ The first one renders the opening anchor-tag with the VSCode link, the second on
     {{- end -}}
 {{- end -}}{{- /**/ -}}
 ```
+
+{{< mnote up=11 >}}
+**If and only if** Hugo’s server is configured to deliver the preview to a public IP address, there may be a security concern with `.Filename`, because the link includes the full path to the project files. By default the server only responds on {$localhost}.
+{{< /mnote >}}
 
 **{$vscode_end.html}**
 

@@ -9,6 +9,7 @@ menu:
     pre: source
 title: Hugo’s built-in internal shortcodes
 weight: 590
+draft: true
 ---
 
 Hugo ships with a few shortcodes to handle your own content and configuration.
