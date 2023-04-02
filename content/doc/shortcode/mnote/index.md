@@ -36,7 +36,7 @@ dagger
 : Kind of dagger to show at the beginning of the note. 1 or 2 are possible.
 {.dl-loose}
 
-Optional stars or daggers should be matched by similar signs in the main text. A star is the usual asterisk `*` on the keyboard. A dagger `†` corresponds to the entity `&dagger;` and a double dagger `‡` to `&Dagger;`.
+Optional stars or daggers should be matched by similar signs in the main text. They are used to reference notes which can’t be placed directly beside the text they are referring to. A star is the usual asterisk `*` on the keyboard. A dagger `†` corresponds to the entity `&dagger;` and a double dagger `‡` to `&Dagger;`.
 
 ```md
 {{</* mnote up=11 */>}}
@@ -49,7 +49,7 @@ Village and the subline of her own road, the Line Lane.
 
 ## Layout
 
-There is a **short** and a **long** marginal note. On screens with a right margin their layout is identical. On smaller ones the long notes are partly hidden and can be expanded.
+There is a **short** and a **long** marginal note. On screens with a right margin their layout is identical. On smaller ones the long notes are partly hidden and can be expanded. The star and the dagger wouldn’t be necessary in respect to the layout structure, because the notes are placed right besides the text.
 
 ### Short Note
 

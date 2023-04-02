@@ -28,8 +28,8 @@ When we are working on our content, we often like to examine the resulting pages
 hugo server -D --minify --navigateToChanged 
 ```
 
-{{< mnote up=6 >}}
-Hugo’s server is configurable and can also show your site under a public URL and an arbitrary port. But it's **not** a full-fledged web server and can't handle a lot of traffic. The server is **only** useful for private previews.
+{{< mnote up=5 >}}
+Hugo’s server can be configured to show a site on a public IP address. But it's **not** a full-fledged web server and can't handle a lot of traffic. The server is **only** meant for private previews and templates may include conditional code for the server-mode which should **not show in public**.
 {{< /mnote >}}
 
 The HTML pages are rendered into memory and the site is served under <http://localhost:1313> by default.
