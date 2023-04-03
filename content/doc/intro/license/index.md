@@ -28,22 +28,23 @@ The theme
 
 The documentation
 : is released by Jörg (Georg) Makowski under the [Creative Commons License (CC BY-SA)][cc4] except marked material from other sources.
-{.dl-loose}
+{.dl-loose3}
 
 ## Website generator Hugo
 
 [Hugo][hugo]
 : is released by its authors and contributors under the [Apache 2.0 License](https://github.com/gohugoio/hugo/blob/master/LICENSE).
-{.dl-loose}
+{.dl-loose3}
 
-## Additional Hugo Templates
+## Hugo Templates
 
 [render-link](https://www.veriphor.com/articles/link-and-image-render-hooks/)
-: has been released by [Veriphor](https://www.veriphor.com) under the Apache 2.0 License.
-
 [render-codeblock-kroki](https://www.veriphor.com/articles/diagrams)
-: has been released by [Veriphor](https://www.veriphor.com) under the Apache 2.0 License.
-{.dl-loose}
+[toc-walk-headings](https://www.veriphor.com/articles/tables-of-content/)
+: have been released by [Veriphor](https://www.veriphor.com) under the Apache 2.0 License and their motivation, function and usage are documented there.
+{.dl-loose3}
+
+These templates have all been adapted to fit the style of the theme.
 
 ## Fonts and icon fonts
 
@@ -52,22 +53,22 @@ The documentation
 
 [Material Icons](https://fonts.google.com/icons)
 : have been released by Google to the public under the [Apache 2.0 License](https://github.com/google/material-design-icons/blob/master/LICENSE).
-{.dl-loose}
+{.dl-loose3}
 
 ## Javascript libraries
 
 [Lazysizes](https://github.com/aFarkas/lazysizes)
 : has been released to the public by [Alexander Farkas](https://github.com/aFarkas) under the [MIT License](https://github.com/aFarkas/lazysizes/blob/gh-pages/LICENSE).
-{.dl-loose}
+{.dl-loose3}
 
-## Optional software
+## Optional Javascript libraries
 
 [KaTeX][katex]
 : has been released by [Emily Eisenberg](https://github.com/xymostech), [Sophie Alpert](https://github.com/sophiebits) and contributors under the [MIT License](https://github.com/KaTeX/KaTeX/blob/main/LICENSE).
 
 [Mermaid][mermaid]
 : has been released by [Knut Sveidqvist](https://github.com/knsv) and contributors under the [MIT License](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE).
-{.dl-loose}
+{.dl-loose3}
 
 ## Logos and pictures
 
@@ -76,7 +77,7 @@ All logos
 
 All pictures
 : Remain under the copyright of their respective owners. The image caption usually mentions the author and a link to the source except for images in the public domain.
-{.dl-loose}
+{.dl-loose3}
 
 [hugo]: https://gohugo.io
 [katex]: https://katex.org

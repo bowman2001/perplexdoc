@@ -76,7 +76,7 @@ There are **two** repositories --- one for the theme itself and one for the docu
 
 ### Trouble with the Theme?
 
-When you encounter a bug in the layout or miss some functionality, please visit the [theme repository][theme]. Have a look at the already existing [issues][issue], please. If your problem or proposal is not already listed, I’m grateful for your new issue and happy to discuss it there. Maybe you even like to help to improve Perplex.
+When you encounter a bug in the layout or miss some functionality, please visit the [theme repository][theme]. Have a look at the already existing [issues][issue], please. If your problem or proposal is not already listed, I’m grateful for your new issue and happy to discuss it there. Should you like to improve the functionality of Perplex, you are very welcome.
 
 ### Trouble with the Documentation?
 

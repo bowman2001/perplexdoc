@@ -702,6 +702,9 @@ body {
   color: #000;
 }
 
+.card__hover .card__title h2 a .title-link, .card__hover .card__title h3 a .title-link {
+  text-decoration-color: transparent;
+}
 .card__hover .card__title h2 a:hover, .card__hover .card__title h3 a:hover, .card__hover .card__title h2 a:focus, .card__hover .card__title h3 a:focus, .card__hover .card__title h2 a:active, .card__hover .card__title h3 a:active {
   background-color: rgba(0, 132, 194, 0.15);
 }
@@ -739,10 +742,12 @@ body {
 }
 
 .title-link {
+  display: inline-block;
   text-decoration-color: #006a9c;
 }
 
 .heading-anchor {
+  display: inline-block;
   text-decoration-color: transparent;
 }
 .heading-anchor:before {
@@ -916,10 +921,10 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
 
 .meta__item a, .meta__item span, .meta__item time {
   display: inline-block;
-  font-size: 1.6145833333rem;
+  font-size: 1.453125rem;
   line-height: 1.5rem;
-  padding-top: 0.8953385417rem;
-  padding-bottom: 0.6046614583rem;
+  padding-top: 0.9558046875rem;
+  padding-bottom: 0.5441953125rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -962,6 +967,15 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
   background-color: #eee;
 }
 
+.titlehead--draft {
+  padding: 0;
+  background-color: #111111;
+}
+.titlehead--draft > p, .titlehead--draft > ol, .titlehead--draft > ul {
+  color: white;
+  text-align: center;
+}
+
 .titlehead--deprecated {
   background-color: rgba(238, 238, 0, 0.5333333333);
 }
@@ -979,11 +993,13 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
   max-width: 74rem;
   color: #111111;
 }
-.title h1 {
+.title h1, .title h2 {
   font-size: 2.86rem;
-  line-height: 3rem;
-  padding-top: 0.42893rem;
-  padding-bottom: calc(0.57107rem + var(--es));
+  line-height: 4rem;
+  padding-top: 0.92893rem;
+  margin-bottom: calc(-0.92893rem + var(--es));
+  font-family: 'IBM Plex Serif', Georgia, Times, serif;
+  font-weight: 600;
 }
 @media screen and (min-width: 39em) {
   .title {
@@ -1081,6 +1097,8 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
   height: 1rem;
 }
 .title--taxo h1 {
+  font-family: 'IBM Plex Serif', Georgia, Times, serif;
+  font-weight: 500;
   font-style: italic;
 }
 
@@ -1088,7 +1106,7 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
   padding-top: 1rem;
 }
 .title--first > hr, .title--second > hr, .title--third > hr, .title--taxo > hr {
-  margin-bottom: -1rem;
+  margin-bottom: -2rem;
 }
 
 .title--first > hr {
@@ -1123,16 +1141,6 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
   letter-spacing: 0em;
   word-spacing: 0em;
   font-style: italic;
-}
-
-.title--li h2 {
-  font-size: 2.86rem;
-  line-height: 3rem;
-  padding-top: 0.42893rem;
-  padding-bottom: 0.57107rem;
-  font-family: 'IBM Plex Serif', Georgia, Times, serif;
-  font-weight: 600;
-  color: #111111;
 }
 
 .title--article h1 {
@@ -1232,6 +1240,14 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
 }
 .md .no-hyphens {
   hyphens: none;
+}
+.md .br-title {
+  display: none;
+}
+@media screen and (min-width: 39em) {
+  .md .br-title {
+    display: initial;
+  }
 }
 .md > p, .md > ul, .md > ol, .md > dl, .md > div {
   font-size: 1.93rem;
@@ -2236,10 +2252,10 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
   background-color: rgba(0, 238, 0, 0.5333333333);
 }
 .md .p-meta {
-  font-size: 1.6145833333rem;
+  font-size: 1.453125rem;
   line-height: 1.5rem;
-  padding-top: 1.1453385417rem;
-  padding-bottom: 0.8546614583rem;
+  padding-top: 1.2058046875rem;
+  padding-bottom: 0.2941953125rem;
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
   color: #006a9c;
@@ -2675,10 +2691,10 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
   display: inline-block;
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 450;
-  line-height: 0.9em;
+  line-height: 0.8em;
   min-width: 1.25em;
   margin: 0 0.1em;
-  padding: 0.1em 0.25em;
+  padding: 0.25em;
   text-align: center;
   letter-spacing: 0.05em;
   border: 0.1em solid #aeaeae;
@@ -3042,6 +3058,9 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
     float: right;
     clear: right;
   }
+}
+.md .semi-large {
+  max-width: 92.5rem;
 }
 .md .large {
   max-width: 111rem;
@@ -3449,6 +3468,9 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
   border-top: 0.3rem solid #111111;
   transition: border-color 200ms;
 }
+.card .br-title {
+  display: none;
+}
 
 .card--half {
   width: 50%;
@@ -3630,8 +3652,8 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
 @media screen and (min-width: 39em) {
   .card__fig--1, .card__fig--3halfs {
     width: 37rem;
-    height: 25.00011rem;
-    padding: 2rem 2rem 1rem 2rem;
+    height: 26.00011rem;
+    padding: 2rem;
   }
   .card__fig--1 img, .card__fig--3halfs img, .card__fig--1 svg, .card__fig--3halfs svg {
     width: 33rem;
@@ -3668,15 +3690,18 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
   margin: 0 2rem;
 }
 .card__title h2, .card__title h3, .card__title h4 {
-  font-size: 1.5875rem;
+  font-size: 1.80975rem;
   line-height: 2rem;
-  padding-top: 0.40548125rem;
-  margin-bottom: -0.40548125rem;
+  padding-top: 0.822248625rem;
+  padding-bottom: 0.177751375rem;
   font-family: 'IBM Plex Serif', Georgia, Times, serif;
   font-weight: 700;
   letter-spacing: 0.04em;
   word-spacing: 0.12em;
   text-transform: uppercase;
+}
+.card__title .title-link {
+  text-decoration-color: transparent;
 }
 
 .card__title--top {
@@ -3704,7 +3729,7 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
   font-size: 1.3585rem;
   line-height: 1.5rem;
   padding-top: 0.74124175rem;
-  padding-bottom: 0.75875825rem;
+  padding-bottom: 0.25875825rem;
   letter-spacing: 0.05em;
   word-spacing: 0.15em;
 }
@@ -3948,20 +3973,6 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
   background: #e7e8e9;
 }
 
-.toc__title a {
-  display: inline-block;
-  font-size: 1.43rem;
-  line-height: 2rem;
-  padding-top: 0.464465rem;
-  padding-bottom: 0.535535rem;
-  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  padding-left: 1.7rem;
-  border-left: 0.3rem solid #ccc;
-}
-
 #TableOfContents {
   font-size: 1.675625rem;
   line-height: 2rem;
@@ -4014,6 +4025,76 @@ h1:target .heading-anchor:before, h2:target .heading-anchor:before, h3:target .h
     padding-top: 0.464465rem;
     margin-bottom: -0.464465rem;
   }
+}
+
+.toc__list {
+  font-size: 1.675625rem;
+  line-height: 2rem;
+  padding-top: 0.3724784375rem;
+  margin-bottom: -0.3724784375rem;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  color: #556;
+}
+.toc__list > ul {
+  margin-top: -0.5rem;
+}
+.toc__list .br-title {
+  display: none;
+}
+.toc__list a {
+  display: block;
+  padding: 0.5rem 0 0.5rem 1.7rem;
+  border-left: 0.3rem solid #ccc;
+  transition: color 200ms ease-in-out, text-decoration-color 200ms, border-color 200ms ease-in-out;
+}
+.toc__list a .icon-font, .toc__list a path {
+  transition: color 200ms ease-in-out, fill 200ms ease-in-out;
+}
+.toc__list a .text {
+  transition: background-color 200ms ease-in-out;
+  background-color: transparent;
+}
+.toc__list a:hover, .toc__list a:focus {
+  color: black;
+  border-color: hsl(325deg, 79%, 44%);
+}
+.toc__list a:hover .icon-font, .toc__list a:focus .icon-font {
+  color: hsl(325deg, 79%, 44%);
+}
+.toc__list a:hover path, .toc__list a:focus path {
+  fill: hsl(325deg, 79%, 44%);
+}
+.toc__list a:hover .text, .toc__list a:focus .text {
+  background-color: rgba(201, 24, 127, 0.1);
+  border-radius: 0.25em;
+}
+.toc__list li li > a {
+  padding-left: 3.4rem;
+}
+.toc__list li li li > a {
+  padding-left: 5.1rem;
+}
+@media screen and (min-width: 79em) {
+  .toc__list {
+    font-size: 1.43rem;
+    line-height: 2rem;
+    padding-top: 0.464465rem;
+    margin-bottom: -0.464465rem;
+  }
+}
+
+.toc__title a {
+  font-size: 1.43rem;
+  line-height: 2rem;
+  padding-top: 0.464465rem;
+  padding-bottom: 1.035535rem;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  word-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #111111;
 }
 
 @media screen and (min-width: 79em) {
