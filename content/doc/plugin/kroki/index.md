@@ -14,11 +14,11 @@ categories: [Markdown]
 tags: [diagram]
 ---
 
-Generate SVG diagrams with the Kroki service by writing textual diagram descriptions into Markdown codeblocks.
+Generate SVG diagrams with the Kroki service by writing textual diagram descriptions into Markdown code blocks.
 {.p-first}
 <!--more-->
 
- [Kroki](https://kroki.io) allows to generate a wide variety of diagrams from textual descriptions by calling their API.
+ [Kroki](https://kroki.io) can produce a wide variety of diagrams from textual descriptions by calling their API.
 
  Joe Mooring published an article about this service including a template for Hugo. This theme includes his template with some adaptions to generate a fitting style. Please, read [his article][veriphor] to learn about its usage.
 
