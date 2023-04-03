@@ -105,7 +105,7 @@ When we rely on soft line wrapping everyone can read and edit the Markdown using
 
 How to handle hard line wraps remains your choice without any repercussions. Hugo can handle both ways perfectly, the decision only affects the editing experience.
 
-#### How to break lines?
+### How to break lines?
 
 Our options here are tied to the way we wrap Markdown lines.
 
@@ -119,27 +119,29 @@ With Soft Wraps
 See the page [Line Break][lb] for the configuration and the question of CommonMark-compliance.
 
 ## Special characters
-All available characters—more general _characters_—can be used in Markdown, either directly as Unicode or as HTML entities (like `&para;` for &para;). The markup characters need to be escaped by a preceding backslash `\` to get treated literally by the Markdown renderer. See [Special Characters](/doc/basic/specialchar#html-entities) for more information about this topic.
+All available characters can be used in Markdown, either directly as Unicode or as HTML entities (like `&para;` for &para;). The markup characters need to be escaped by a preceding backslash `\` to get treated literally by the Markdown renderer. See [Special Characters](/doc/basic/specialchar#html-entities) for more information about this topic.
 
 {{< mnote up=14 >}}
-You can still get into trouble with characters, which are missing in the fonts of your website. But this is a general issue independent of Markdown rendering.
+We still get into trouble with characters, which are missing in the fonts used on our website. But this is a general issue completely independent of Markdown.
 {{< /mnote >}}
 
-## File Encoding
+## File encoding
 The Markdown syntax works with every encoding. But almost all modern websites stick to the de facto standard **UTF-8** and Perplex does, too. Your Markdown files should be encoded in UTF-8 and if you never thought about it before, they probably already are. This also holds for other text resources you may fetch data from.
 
 {{< mnote up=17 >}}
 When you import strings from a JSON-file with UTF-16 encoding for example, the encoding outside the common ASCII set has a different meaning and leads to false and probably strange characters, when you use non-ASCII characters.
 {{< /mnote >}}
 
-## Markdown Editors
+## Markdown editors
 Most programming editors and IDEs support Markdown out of the box or provide plugins. There’s no need to search for a new editor, if you are already satisfied with yours.
 
-Some special editors are designed exclusively for authoring Markdown. They usually offer a graphical user interface and other convenient features. But none of them is a perfect match for writing Markdown for Hugo and Perplex, because they don’t support all kinds of attributes and can’t handle Hugo shortcodes — as far as I know (a few of them are progressing fast). They are dealing gracefully with these elements most of the time, but occasionally they don't.
+### Specialized editors
 
-### Consider Hugo’s server mode for local previews {.h-tip}
+Some editors are designed exclusively for authoring Markdown. They usually offer a graphical user interface and other convenient features. As of now, none of them is a perfect match for authoring Markdown for this theme, because they don’t support all kinds of attributes and can’t handle Hugo shortcodes — as far as I know (a few of them are progressing fast). They are dealing gracefully with these elements most of the time, but occasionally they don't.
 
-Many of the special Markdown editors offer a separate preview window. With Hugo you have an even **better option**: When you run Hugo in its web-server mode on the local machine you’re writing your Markdown on, it will render your files and deliver the result to your browser instantly (see [Using Hugo](/doc/intro/workflow/local-server). My preferred solution is either an IDE or a programming editor in conjunction with Hugo’s server mode.
+### Use Hugo’s server mode for local previews {.h-tip}
+
+Hugo offers a very convenient way of looking at your results instantly: When you run Hugo in its server-mode on the local machine you’re writing your Markdown on, it will render your files and deliver the result to your browser (see [Using Hugo](/doc/intro/workflow/local-server). My personal workflow is based on Visual Studio Code as Markdown editor in conjunction with Hugo’s server mode.
 
 ## Markdown Linter
 CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing.

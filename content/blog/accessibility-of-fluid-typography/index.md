@@ -1,8 +1,6 @@
 ---
 author: Georg Makowski
-title: Accessible fluid-responsive Design
-description: Is a view-port-based responsive design user-friendly? 
-subtitle: false
+title: Accessible fluid Design
 date: 2022-07-12T22:38:10+02:00
 weight: 1
 categories: [Design]

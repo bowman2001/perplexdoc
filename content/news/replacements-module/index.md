@@ -2,14 +2,14 @@
 author: Georg Makowski
 title: Hugo Module for missing HTML inline tags
 linktitle: Module for missing inline tags
-description: Inject inline HTML into rendered Markdown with simple codes
-subtitle: false
 date: 2023-02-22T23:55:26+02:00
 categories: [Module]
 tags: [Replacement, Security]
 ---
 
-Replacement codes let us avoid raw HTML in Markdown. A single partial replaces them with the inline tags lacking a syntax element in Goldmark.
+Replacement codes let us avoid raw HTML in Markdown.
+A single partial replaces them with the inline tags
+lacking a syntax element in Goldmark.
 {.p-first} <!--more-->
 
 The codes look like `{*text}`, where `*` is a placeholder for one or more ASCII characters. The superscript tag `<sup>` for example is marked by `^` and fits the following regular expression (Golang syntax):

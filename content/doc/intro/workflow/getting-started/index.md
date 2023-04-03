@@ -65,15 +65,15 @@ The folders for the project site are a subset of the standard Hugo folders.
 
 The reserved {$\_vendor} folder includes a recent copy of the Perplex theme. Its working as a module cache and should never be touched directly. The theme copy gets imported from there as long as we don’t retrieve it otherwise. Because of this cached copy, there is no need to install a Go environment in the beginning. Should you be interested in the the theme, you’re welcome at its own [repository](https://github.com/bowman2001/perplex).
 
-#### Project configuration
+### Project configuration
 
 All configuration options are listed in the [Hugo docs](https://gohugo.io/getting-started/configuration/). The examples therein are given for a **single configuration file** like {$config.yaml} in your project root directory.
 
 The configuration for this project is using the alternative option of a **configuration directory** named {$config} with separate files for the configuration sections. For the growing number of options this arrangement is clearer. The top configuration file is still called {$config.yaml} the other ones are named like the section they contain.
 
-##### Please note {.h-info}
-
-The configuration files for sections don't include the section identifier anymore, because the name of the file already is the section identifier. When you adopt a configuration option from the Hugo docs, you need to remove the section identifier. And should you copy a configuration option from a section in the config folder into a single {$config.yaml} you need to add it again. Same goes for TOML and JSON.
+{{< mnote up=17 >}}
+**The section key** needs to be removed in configuration files for sections, because the name of the file already is the section key. When you adopt a configuration option from the Hugo docs for modular configuration files, you need to remove it. And should you copy a configuration option from a section in a config folder into a single {$config.yaml}, you need to add it again. Same goes for TOML and JSON.
+{{< /mnote >}}
 
 ### Start a project from scratch
 

@@ -12,5 +12,6 @@ title: Shortcodes
 weight: 500
 ---
 
-We need shortcodes to introduce complex layout structures beyond the capabilities of (extended) Markdown.
+We need shortcodes to introduce complex layout structures 
+beyond the capabilities of (extended) Markdown.
 {.p-first} <!--more-->

@@ -17,5 +17,5 @@ resources:
       alt: Scrabble stones forming the word “Substitut” short of an ‘e’
 ---
 
-There are no corresponding elements for some HTML inline tags in Hugo’s Markdown renderer Goldmark. Perplex offers a set of replacements to place them without enabling insecure raw HTML.  
+There are no corresponding elements for some HTML inline tags in Hugo’s Markdown renderer Goldmark. Perplex offers a set of replacements to include them without enabling insecure raw HTML.  
 {.p-first} <!--more-->

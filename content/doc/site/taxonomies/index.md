@@ -12,6 +12,7 @@ menu:
     pre: category
 categories: [Design]
 tags: [Taxonomies]
+draft: true
 ---
 
 TODO

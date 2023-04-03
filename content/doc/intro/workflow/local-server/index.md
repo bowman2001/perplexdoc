@@ -79,7 +79,6 @@ TODO: Show all the steps described above. The following session is an old test:
 
 [server]: https://gohugo.io/commands/hugo_server
 
-
 ## Editor usage
 
 Tips for a better editing experience with Hugo and the theme.
@@ -94,5 +93,3 @@ A few editors offer a protocol to open files with a special link. The theme prov
 {{< mnote up=14 >}}
 Links to other editors could be provided, too, if they offer this functionality.
 {{< /mnote >}}
-
-

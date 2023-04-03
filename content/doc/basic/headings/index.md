@@ -46,16 +46,32 @@ Perplex offers Markdown [attributes][attr] for these style variations.
 
 We can style any heading like a paragraph heading with the attribute `{.h-p}`. For the probably rare occasions we need to style a heading as a small paragraph heading we need an additional attribute: `{.h-p .h-p-s}`.
 
-### Special Headings
+### Highlighted Headings
 
-To highlight some **warning**, an important **information** or **tip**, we have the attributes `{.h-warn}`, `{.h-info}` or `{.h-tip}`.
+To mark a heading as a **warning**, an important **information** or **tip**, we have the attributes `{.h-warn}`, `{.h-info}` or `{.h-tip}`.
 
 A warning paragraph for example starts with a heading like this:
 
-```md
+```text
 ##### Warning Paragraph {.h-warn}
 Far far away, behind the word mountains, far from the countries Vokalia and…
 ```
+
+### Very long heading with a complicated topic stretching over more than one line
+
+CommonMark offers no possibility to break a heading line. Because every new line starting with a `#` is a new one, every heading has to stay on its initial line. 
+
+When a heading exceeds the line length of the layout, it breaks automatically. That may occur at an unfortunate place: Before the last word or between tightly related words. To introduce a break we can put the replacement code `{‍/}` between two words **without any spacing character** like this:
+
+```text
+### Very long heading with a complicated topic{‍/}stretching over more than one line
+```
+
+and we get:
+
+### Very long heading with a complicated topic{/}stretching over more than one line
+
+The line break is displayed only, when the screen allows to show the full width of the main text. Otherwise it’s removed, because additional line breaks make things worse on small screens with arbitrary line breaks.
 
 ## Layout
 

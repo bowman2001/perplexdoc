@@ -72,7 +72,7 @@ Despite its successful efforts to make data-formatting as simple as possible, YA
 
 ## In Case of Problems {#trouble}
 
-There are **two** repositories – one for the theme itself and one for the documentation.
+There are **two** repositories --- one for the theme itself and one for the documentation.
 
 ### Trouble with the Theme?
 

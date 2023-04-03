@@ -1,5 +1,5 @@
 ---
-title: Layout Options for stand-alone Images 
+title: Stand-alone Image Layout 
 date: 2023-03-27T12:02:10+02:00
 categories: [Markdown]
 tags: [image, block]

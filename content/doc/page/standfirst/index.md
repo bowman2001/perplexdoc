@@ -30,4 +30,4 @@ The [attribute](/doc/attribute) `{.p-first}` styles the paragraph. The more-tag 
 Hugo always generates a content summary if anyhow possible. But Hugo can’t analyze content, it just strips the first sentences (≈ 70 words) down to unformatted text. This may lead to badly truncated text and sometimes even to nearly incomprehensible results, when these first lines have been strongly structured by markup.
 
 ## Result
-The [first paragraph](#first) on this page as on most others is styled as stand-first paragraph.
+The [first paragraph](#first) on this page is styled as stand-first.

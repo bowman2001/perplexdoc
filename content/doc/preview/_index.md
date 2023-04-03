@@ -2,7 +2,7 @@
 author: Georg Makowski
 title: Short Preview
 linktitle: Preview
-description: Quick look into the capabilities of this theme
+description: Quick look into the theme
 subtitle: false
 date: 2022-05-11T23:46:08+02:00 
 weight: 2
