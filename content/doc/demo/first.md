@@ -8,13 +8,13 @@ menu:
   doc: 
     name: First
     parent: demo 
-    pre: remove
+    pre: article
 categories: [Demo]
 tags: [first]
 weight: 9999
 draft: true
 ---
 
-This is the first demonstration for a simple documentation page.
+This is the first demonstration of a simple documentation page.
 {.p-first}
 <!--more-->

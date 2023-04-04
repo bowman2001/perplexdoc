@@ -141,7 +141,7 @@ Some editors are designed exclusively for authoring Markdown. They usually offer
 
 ### Use Hugo’s server mode for local previews {.h-tip}
 
-Hugo offers a very convenient way of looking at your results instantly: When you run Hugo in its server-mode on the local machine you’re writing your Markdown on, it will render your files and deliver the result to your browser (see [Using Hugo](/doc/intro/workflow/local-server). My personal workflow is based on Visual Studio Code as Markdown editor in conjunction with Hugo’s server mode.
+Hugo offers a very convenient way of looking at your results instantly: When you run Hugo in its server mode on the local machine you’re writing your Markdown on, it will render your files and deliver the result to your browser (see [Using Hugo](/doc/intro/workflow/local-server). My personal workflow is based on Visual Studio Code as Markdown editor in conjunction with Hugo’s server mode.
 
 ## Markdown Linter
 CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing.

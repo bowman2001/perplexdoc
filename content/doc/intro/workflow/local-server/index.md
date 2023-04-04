@@ -31,7 +31,7 @@ hugo server -D --minify --navigateToChanged
 ```
 
 {{< mnote up=5 >}}
-Hugo’s server can be configured to show a site on a public IP address. But it's **not** a full-fledged web server and can't handle a lot of traffic. The server is **only** meant for private previews and templates may include conditional code for the server-mode which should **not show in public**.
+Hugo’s server can be configured to show a site on a public IP address. But it's **not** a full-fledged web server and can't handle a lot of traffic. The server is **only** meant for private previews and templates may include conditional code for the server mode which should **not show in public**.
 {{< /mnote >}}
 
 The HTML pages are rendered into memory and the site is served under <http://localhost:1313> by default.
@@ -88,7 +88,7 @@ Some editors are saving our work so fast by default, that nearly every keystroke
 
 ### Editor links in the local preview
 
-A few editors offer a protocol to open files with a special link. The theme provides a link to open the content file in a local instance of _Visual Studio Code_. This link is only present if Hugo runs in server-mode. It’s placed in the date at the top or the bottom of regular pages. Because taxonomy pages don’t show a date, the link is placed in the title.
+A few editors offer a protocol to open files with a special link. The theme provides a link to open the content file in a local instance of _Visual Studio Code_. This link is only present if Hugo runs in server mode. It’s placed in the date at the top or the bottom of regular pages. Because taxonomy pages don’t show a date, the link is placed in the title.
 
 {{< mnote up=14 >}}
 Links to other editors could be provided, too, if they offer this functionality.
