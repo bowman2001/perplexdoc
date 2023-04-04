@@ -14,40 +14,39 @@ categories: [Getting started]
 tags: [Hugo]
 ---
 
-The folder structure lays the foundation for the website structure. And for the content Perplex relies heavily on Hugo’s page bundle features.
+The folder structure lays the foundation for the website structure. The theme relies on Hugo’s page bundle features.
 {.p-first} <!--more-->
 
-It may take a little while to get your head around Hugo’s content structure. Its helping me to keep Hugo’s general goal in mind: The folder structure and all the files therein are processed by following the shortest possible logical path. Organizational overhead is hereby avoided but small details can matter. Efficiency is Hugo’s greatest achievement but also a reason for misunderstandings and errors.
+It may take a little while to get your head around Hugo’s content structure. It’s helping me to keep Hugo’s general goal in mind: The folder structure and all the files therein should be interpreted as fast as possible. Organizational overhead is avoided but small details matter. Efficiency is Hugo’s greatest achievement but also the reason for misunderstandings and errors.
 
 {{< mnote up=14 >}}
-Hugo also offers to process data or to include raw HTML files, but this theme doesn’t use this functionality for now.  
+Besides Markdown Hugo also offers to process HTML files, data files, and other formats.  
 {{< /mnote >}}
 
 ## Folder structure
 
 The content of the root {$/} and the folders {$doc}, {$news}, {$blog} and {$article} may contain Markdown files and their resources. The theme provides different layout templates for them. Hugo applies the matching templates automatically to every content file inside these directories and their descendants.
 
-{$/}
-: contains top level pages
+{$/} contains top-level pages
 
 {$doc}
 : contains the documentation and can handle three folder levels deep filled with Markdown files and their resources.
 
 {$news}
-: collects short postings like announcements, which are listed in a continuous stream on the top level news page.
+: collects short postings like announcements, which are listed in a continuous stream on the top-level news page.
 
 {$blog}
-: collects postings, which are accessible through the top level blog list page.
+: collects postings, which are accessible through the top-level blog list page.
 
 {$article}
-: is meant for longer postings and essays, which are listed as cards on the top level list page.
+: is meant for longer postings and essays, which are listed as cards on the top-level list page.
 {.dl-loose}
 
 ## Page structure and organization
 
-Hugo offers **single pages** and **list pages** and Perplex provides templates of these two views for its content types.
+Hugo offers **single pages** and **list pages** and Perplex always provides templates of these two views for its content types.
 
-The one exception are top level pages, because they only need a single view. We can add them to a top level menu or reference them manually.
+Exceptions are top-level pages because they only need a single view. They usually aren’t listed and we need to add them to a top-level menu or reference them manually.
 
 ### Single pages {#single}
 
@@ -55,7 +54,7 @@ You may have already created the new demo file `blog/first.md` while following t
 
 #### Leaf Bundles {#leaf}
 
-When we include resources like images into a page, we like to [retrieve them](#resources) easily. When we need some files only on a specific page, we can create a leaf bundle like this:
+When we include resources like images on a page, we like to [retrieve them](#resources) easily. If we need some files only on a specific page, we create a leaf bundle like this:
 
 ```sh {.left}
 hugo new blog/second/index.md
@@ -74,38 +73,38 @@ categories: []
 tags: []
 ```
 
-When the number of entries rises, we also need some navigation structure for these types. We best provide it by adding **taxonomies**{^\*}. Hugo’s default taxonomies are the usual **categories** and **tags**. We can use them immediately in Perplex and every new front matter already includes the parameter keys and an empty list `[]`.
+When the number of entries rises, we need some navigation structure for these types. We best provide it by adding **taxonomies**{^\*}. Hugo’s default taxonomies are the usual **categories** and **tags**. Every new front-matter already includes the parameter keys and an empty list `[]`.
 
 {{< mnote up=8 star=1 >}}
-We can also add subfolders and modify the URL structure. To provide an optional separate list view for a subfolder, we also need to create a [branch file `_index.md`](#list) inside. Because taxonomies are the preferred structure for postings in Perplex, links to these additional sections only show up in the breadcrumbs at the bottom of the pages.
+We can also add sub-folders and modify the URL structure. To provide an optional separate list view for a sub-folder, we also need to create a [branch file `_index.md`](#list) inside. Because taxonomies are the preferred structure for postings in Perplex, links to these additional sections only show up in the breadcrumbs at the bottom of the pages.
 {{< /mnote >}}
 
-As soon as we add our taxonomies as a comma separated list inside the brackets `[]`, Hugo generates additional list pages for every taxonomy we introduce.
+As soon as we add our taxonomy inside the brackets `[]` or a few of them as a comma-separated list, Hugo generates additional list pages for every taxonomy we introduce. All regular pages on a site with the same taxonomy are shown there.
 
 ##### New Taxonomies
 
-may be defined in the configuration. Please read the [Hugo docs](https://gohugo.io/content-management/taxonomies#configure-taxonomies) about them. To include them into the layout needs additional programming.
+may be defined in the configuration. Please read the [Hugo docs](https://gohugo.io/content-management/taxonomies#configure-taxonomies) about them. Including them in the layout needs additional programming.
 
 ##### Taxonomies {.h-tip}
 
-apply to our whole site and are completely independent of the folder structure. The number of taxonomies tends to grow with the size of projects. We shouldn’t let them get out of hand. It’s better to use only a small set of general categories and apply only one or maybe two to any page. We can add tags marking aspects of the content, but more than a few of them may also get irritating.
+apply to our whole site and are completely independent of the folder structure. The number of taxonomies tends to grow with the size of projects. We shouldn’t let them get out of hand. It’s better to use only a small set of general categories and apply only one or maybe two to any page. We can add tags marking aspects of the content, but more than a few of them also get irritating.
 
 #### Sidebar Menu for Documentation Pages
 
-A larger documentation site needs a sidebar navigation. In Perplex its usually build from parameters in the front matter, because this is easiest way. You may have expected a central menu configuration, but When we create a new documentation page with
+A larger documentation site needs navigation. The theme builds the sidebar from parameters in the front-matter. You may have expected a central menu configuration, but this way is much easier. When we create a new documentation page we usually know, where we like to put it in the hierarchy. We create a new doc page like
 
 ```sh {.left}
 hugo new doc/demo/first.md
 ```
 
-we start with a front matter, which contains a few more entries than a blog post. The first 5 lines, that we already have seen, are left out:
+Now we have a front-matter containing a few more entries than a blog post. The first lines are the same and left out here:
 
 ```yaml {linenos=true linenostart=6 class=col-left}
 TODO
 ---
 ```
 
-The new parameter _weight_ is of general meaning for the order of all pages, the others are menu entries and are lined up under the `menu:` section and are specifically creating the structure of the doc menu `[menu.doc]`.
+The new parameter `weight` is of general meaning for the order of all pages on a site, the others are menu entries and are lined up under the `menu:` section and specifically create the structure of the doc menu `[menu.doc]`. 
 
 `weight`
 : lets a page fall deeper in the hierarchy, the higher it gets. Right now our new doc page has an entry at the bottom of the sidebar navigation, take a look.
@@ -117,7 +116,7 @@ The new parameter _weight_ is of general meaning for the order of all pages, the
 : is an internal name, that lets other pages refer to this one as their `parent`.
 
 `parent`
-: If this parameter contains the identifier of another page, the current page is a level beyond its parent in the menu. If there is no parent, the page gets a top level menu entry.
+: If this parameter contains the identifier of another page, the current page is a level beyond its parent in the menu. If there is no parent, the page gets a top-level menu entry.
 
 `pre`
 : is used very specific by Perplex: It contains the identifier for a **Material Icon** from _Google_. To change it, please visit their [website](http://fonts.google.com/icons). You can pick any icon there and copy the identifier from the icon font embedding section (It's usually the icon name written in lower letters and with underscores `_` instead of spaces).
@@ -129,7 +128,7 @@ To place your new page in the coming menu section, you will need to set `parent:
 
 Besides single pages we obviously need list pages. They show an overview of the sections content and may provide some general introduction. There is only one proper way in Perplex to build them: As a **branch bundle**.
 
-For example: Our first demo page is already placed inside the subfolder {$demo} and now we like to generate the list view for this section. We create it with the following command:
+For example: Our first demo page is already placed inside the sub-folder {$demo} and now we like to generate the list view for this section. We create it with the following command:
 
 ```sh {.left}
 hugo new doc/demo/_index.md
@@ -140,9 +139,9 @@ We can distinguish the filename {$\_index.md} for the branch bundle only by the 
 After the front-matter {\_index.md} may contain general content about its section. Its most important function is to trigger the generation of a specific list view for the content included in this branch.
 
 {{< mnote up=11 >}}
-**No subdirectories** are accessible to retrieve resources in `_index.md`. All resources specific for the list also need to be placed at the root of the _branch bundle_. This limitation avoids confusion about the purpose of possible subfolders.
+**No subdirectories** are accessible to retrieve resources in `_index.md`. All resources specific for the list also need to be placed at the root of the _branch bundle_. This limitation avoids confusion about the purpose of possible sub-folders.
 {{< /mnote >}}
 
 ### Page Bundles {#bundles}
 
-[Branch bundles](#list) and [leaf bundles](#leaf) are both called **page bundles**, which share the possibility to store resource files. Other than the page bundles the branch bundles for list pages can’t retrieve their own resources from subfolders, because these may well contain more page bundles.
+[Branch bundles](#list) and [leaf bundles](#leaf) are both called **page bundles**, which share the possibility to store resource files. Other than the page bundles the branch bundles for list pages can’t retrieve their own resources from sub-folders, because these may well contain more page bundles.
