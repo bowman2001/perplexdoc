@@ -19,7 +19,7 @@ categories: [Page]
 tags: [paragraph]
 ---
 
-When the first paragraph contains a short introduction or summary of the page, the theme can style it notably. With the more-tag we can mark it as the summary of the page.
+When the first paragraph contains a short introduction or summary of the page, the theme can apply a notably different style. And with the {$more} tag, we can mark it as the summary of the page.
 {.p-first #first} <!--more-->
 
 A lead paragraph is optional but strongly recommended. To encourage its use, every regular page file generated with `hugo new` contains a placeholder.
@@ -27,7 +27,7 @@ A lead paragraph is optional but strongly recommended. To encourage its use, eve
 ## Syntax
 The [attribute](/doc/attribute) `{.p-first}` styles the paragraph. The more-tag `<!--more-->` marks the paragraph as the summary of the page which is displayed on cards and in content lists etc.
 
-Hugo always generates a content summary if anyhow possible. But Hugo can’t analyze content, it just strips the first sentences (≈ 70 words) down to unformatted text. This may lead to badly truncated text and sometimes even to nearly incomprehensible results, when these first lines have been strongly structured by markup.
+Hugo always generates a content summary if anyhow possible. But Hugo can’t analyze content, it just strips the first sentences (≈ 70 words) down to unformatted text. This may lead to badly truncated text and sometimes even to nearly incomprehensible results when these first lines have been strongly structured by markup.
 
 ## Result
 The [first paragraph](#first) on this page is styled as stand-first.
