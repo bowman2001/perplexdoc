@@ -1,7 +1,7 @@
 ### Hugo template
 # Generated files by hugo
 /public
-/resources
+/resources/_gen
 
 # Local configuration
 /.idea
