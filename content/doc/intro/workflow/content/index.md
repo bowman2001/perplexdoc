@@ -17,15 +17,15 @@ tags: [Hugo]
 The folder structure lays the foundation for the website structure. The theme relies on Hugo’s page bundle features.
 {.p-first} <!--more-->
 
-It may take a little while to get your head around Hugo’s content structure. It’s helping me to keep Hugo’s general goal in mind: The folder structure and all the files therein should be interpreted as fast as possible. Organizational overhead is avoided but small details matter. Efficiency is Hugo’s greatest achievement but also the reason for misunderstandings and errors.
+It may take a little while to get your head around Hugo’s content structure. It’s helping me to keep Hugo’s general goal in mind: The folder structure and all the files therein are rendered as straightforward and fast as possible. Organizational overhead is avoided — small details matter instead. Efficiency is Hugo’s greatest achievement but also the reason for misunderstandings.
 
 {{< mnote up=14 >}}
-Besides Markdown Hugo also offers to process HTML files, data files, and other formats.  
+Besides Markdown, Hugo also offers to process HTML files, data files, and other formats.  
 {{< /mnote >}}
 
 ## Folder structure
 
-The content of the root {$/} and the folders {$doc}, {$news}, {$blog} and {$article} may contain Markdown files and their resources. The theme provides different layout templates for them. Hugo applies the matching templates automatically to every content file inside these directories and their descendants.
+The content of the root {$/} and the folders {$doc}, {$news}, {$blog}, and {$article} may contain Markdown files and their resources. The theme provides different layout templates for them. Hugo applies the matching templates automatically to every content file inside these directories and their descendants.
 
 {$/} contains top-level pages
 
@@ -44,9 +44,9 @@ The content of the root {$/} and the folders {$doc}, {$news}, {$blog} and {$arti
 
 ## Page structure and organization
 
-Hugo offers **single pages** and **list pages** and Perplex always provides templates of these two views for its content types.
+Hugo offers **single pages** and **list pages** and Perplex always provides at least templates for these two views of its content types.
 
-Exceptions are top-level pages because they only need a single view. They usually aren’t listed and we need to add them to a top-level menu or reference them manually.
+Exceptions are top-level pages because they only need a single view. They usually aren’t listed and we need to add them to a top-level menu or reference them manually otherwise.
 
 ### Single pages {#single}
 
@@ -60,10 +60,10 @@ When we include resources like images on a page, we like to [retrieve them](#res
 hugo new blog/second/index.md
 ```
 
-The file `index.md` is rendered again as a single page, but now we can store page-specific resources in its folder and access them by their filename or relative path.
+The file `index.md` is rendered again as a single page under the relative URL {/blog/second/}, but now we can store page-specific resources in its folder and access them by their filename or short relative path.
 
 {{< mnote up=14 >}}
-**Subdirectories** are possible. We can build only one single page with a leaf bundle, but there is no limit to the folder structure for resources.
+**Subdirectories** are possible. We can build only one single page with a leaf bundle, but there are no constraints for resource folders.
 {{< /mnote >}}
 
 #### News and Blog Postings
