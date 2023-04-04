@@ -4,13 +4,13 @@ title: Features
 description: What can Perplex do for you?
 subtitle: false
 date: 2022-05-12T22:29:06+02:00 
-weight: 3
 menu:
   doc:
     name: Features
     parent: tldr
     pre: featured_play_list
 categories: [Getting started]
+weight: 3
 draft: true
 ---
 

@@ -10,5 +10,10 @@ menu:
     identifier: demo 
     name: Demo
     pre: preview
+resources:
+- name: featured
+  src: shubham-dhage-ykFTt5Dq1RU-unsplash.jpg
+  params: 
+    alt: Complex light dome
 weight: 9999
 ---
