@@ -18,4 +18,4 @@ resources:
 weight: 9999
 ---
 
-This is an empty section in the documentation. Here you can place your first documentation pages to get used to the Workflow with Hugo & Perplex. There are step by step guides for a simple page and a new section in the [content workflow introduction](doc/intro/workflow/content). 
+This is an empty section in the documentation. Here you can place your first documentation pages to get used to the Workflow with Hugo & Perplex. There are step by step guides for a simple page and a new section in the [content workflow introduction](/doc/intro/workflow/content). 
