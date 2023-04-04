@@ -18,10 +18,10 @@ A definition list inside a blockquote with a sub-list in one of its items is an 
 {.p-first}
 <!--more-->
 
-The problem came up in the [Hugo-forum](https://discourse.gohugo.io/t/list-as-a-definition-list-item/40235). At first it was a little unclear, so I created two demos. The original question was not about the layout, only about the resulting HTML code.\*
+The problem came up in the [Hugo-forum](https://discourse.gohugo.io/t/list-as-a-definition-list-item/40235). At first, it was a little unclear, so I created two demos. The original question was not about the layout, only about the resulting HTML code.{^\*}
 
 {{< mnote star=1 down=2 >}}
-I don’t include the resulting code, you can inspect it as usual with your browser-tool.
+I don’t include the resulting code, you can inspect it as usual with your browser tool.
 {{< /mnote >}}
 
 ## Bullet list inside of definition list
@@ -48,33 +48,6 @@ I don’t include the resulting code, you can inspect it as usual with your brow
 > {.dl-loose}
 {{< /playground >}}
 
-Markdown is very sensitive to indentation, when combining various formatting signs and [attributes](/doc/attribute). We need to align our code perfectly.
+Markdown is very sensitive to indentation when combining various formatting signs and [attributes](/doc/attribute). We need to align our code perfectly.
 
-The HTML code is the expected one, which markup fits the content in the best way is a matter of taste. The layout of the theme is alright in both cases.
-
-Nested definition lists are tricky and another request for the opposite problem came up after that.
-
-## Definition list nested inside a bullet list
-
-And there was a follow-up question. This time without a surrounding blockquote.
-
-{{< playground >}}
-- **1980**
-  : blablabl
-- **1988**
-  : blabla
-  : blabla
-{{< /playground >}}
-
-And again the correct indentation leads to correct HTML.
-
-I don’t know the context, but maybe a simpler solution without a definition list instead of a bulleted one would serve the purpose in a better way:
-
-{{< playground >}}
-1980
-: blablabl
-
-1988
-: blabla
-: blabla
-{{< /playground >}}
+The HTML code is the expected one. Which markup fits the content in the best way is a matter of taste.

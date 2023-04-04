@@ -19,7 +19,7 @@ The theme layout adapts responsively and fluidly to modern screens. It’s desig
 
 Perplex is built based on the [IBM Plex][plex] font family{^\*} and is best suited for technical content with mixed sections of text and code. The layout is vertically aligned to a **baseline grid**[^1] to introduce a comfortable reading rhythm. Horizontally it’s divided into evenly spaced columns—their number grows with the screen width.
 
-{{< mnote up=8 star=1 >}}
+{{< mnote down=12 star=1 >}}
 The **Plex** font family includes fonts for oriental languages written from right to left and for Asian sign languages (some still projected). So far, Perplex can't adapt to their needs, because I'm not acquainted with their layout habits.
 {{< /mnote >}}
 

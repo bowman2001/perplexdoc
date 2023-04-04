@@ -7,6 +7,7 @@ date: 2022-11-01T14:54:07+01:00
 categories: [Markdown]
 tags: [Code, Inline, Block]
 series: [Demo]
+draft: true
 ---
 
 The main text column offers space for {$80} characters of code in one line. When we need {$120} to fit in, we can expand code boxes into the marginal column(s).

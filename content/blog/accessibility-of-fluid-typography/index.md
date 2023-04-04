@@ -5,11 +5,18 @@ date: 2022-07-12T22:38:10+02:00
 weight: 1
 categories: [Design]
 tags: [Accessible, Fluid-responsive]
+resources:
+- name: fluid
+  src: resource-database--R7raVu_isU-unsplash.jpg
+  params:
+    alt: Fluid frame
 ---
 
 Websites with a fluid-responsive design can be especially user-friendly and accessible. This site is an example.
 {.p-first}
 <!--more-->
+
+![](fluid?ph=left&s=tiny)
 
 Fluid fonts solely depend on the width of the browser window or the view-port width of the mobile device. When a user changes the zoom factor of his browser or his device, they are not affected at all. That’s the problem with a fixed fluid size. The solution is obvious: We need to change the fluid size accordingly when we change the layout responsively.
 
