@@ -17,3 +17,5 @@ resources:
     alt: Complex light dome
 weight: 9999
 ---
+
+This is an initally an empty section in the documentation. Here you can place your first documentation pages to get used to the Workflow with Hugo & Perplex. There are step by step guides for a simple page and a new section in the [content introduction](doc/intro/workflow/content). 
