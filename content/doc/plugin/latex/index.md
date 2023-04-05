@@ -44,7 +44,7 @@ Single dollars may interfere with other formatting. The only solution for that w
 
 LaTeX formulas need to be surrounded by doubly escaped square brackets `\\[` and `\\]` or two dollar signs `$$`.
 
-The following two formulas represent the reverse Fourier-transformation and an equation with infinite nested fractions, which I can’t comprehend. There are **no line-breaks** allowed.
+The following two formulas represent the reverse Fourier transformation and an equation with infinite nested fractions, which I can’t comprehend. There are **no line breaks** allowed.
 
 ```latex
 \\[f(x) = \int_{-\infty}^\infty\hat f(\xi)\\, e^{2 \pi i \xi x}\\,d\xi\\]
@@ -59,7 +59,6 @@ $$\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-
 Short expressions like \\(\frac{1}{5}\\) or formulas like $E = mc^2$ can be embedded in the text.
 
 ### Block
-
 
 Both examples are looking good, wether we can grasp their meaning or not:
 

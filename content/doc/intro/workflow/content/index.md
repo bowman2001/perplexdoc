@@ -27,7 +27,8 @@ Besides Markdown, Hugo also offers to process HTML files, data files, and other 
 
 The content of the root {$/} and the folders {$doc}, {$news}, {$blog}, and {$article} may contain Markdown files and their resources. The theme provides different layout templates for them. Hugo applies the matching templates automatically to every content file inside these directories and their descendants.
 
-{$/} contains top-level pages
+{$/}
+:contains top-level pages
 
 {$doc}
 : contains the documentation and can handle three folder levels deep filled with Markdown files and their resources.
