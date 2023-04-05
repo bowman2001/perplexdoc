@@ -158,5 +158,5 @@ Press {%CTRL} + {%ALT} + {%Delete} to end the session.
 Most {!salamanders} are nocturnal, and hunt for insects, worms, and other small creatures.
 
 {{< mnote up=23 >}}
-These HTML tags are not present in the Markdown &rightarrow; `unsafe: false`. They are introduced after Goldmark rendering with `replaceRE` of [replacement codes](/doc/replacement). 
+These HTML tags are not present in the Markdown &rightarrow; `unsafe: false`. They are introduced after Goldmark rendering with `replaceRE` of [replacement codes](/doc/replace). 
 {{< /mnote >}}
