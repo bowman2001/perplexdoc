@@ -1,20 +1,20 @@
 ---
 author: Georg Makowski
-title: Short Preview
-linktitle: Preview
+title: TL;DR
+description: Short overview for seasoned Hugo users 
 date: 2022-05-11T23:46:08+02:00 
 weight: 2
 menu:
   doc:
     identifier: tldr
-    name: Preview
+    name: TL;DR
     pre: visibility
 resources: 
-  - src: rebecca-li-JahHqUiXlig-unsplash.jpg
+  - src: johannes-plenio-HcNVBkPYT4w-unsplash.jpg
     name: featured
     params:
-      alt: A hand slides a few cords to the side and opens a view to the beach
+      alt: Overview of a city
 ---
 
-Features and Goals of the Perplex theme, and the usual Markdown single page quality overview.
+Short overviews of features and goals of the Perplex theme, and the usual Markdown single page quality check for Hugo themes.
 {.p-first} <!--more-->

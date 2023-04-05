@@ -11,10 +11,11 @@ menu:
     pre: edit
 resources:
 - src: Markdown.png
-  name: markdown
+  name: featured
   params:
     alt: Markdown logo
     size: tiny
+    container: "no"
 categories: [Getting started, Markdown]
 tags: [Block, Inline]
 weight: 5
@@ -156,3 +157,6 @@ Press {%CTRL} + {%ALT} + {%Delete} to end the session.
 
 Most {!salamanders} are nocturnal, and hunt for insects, worms, and other small creatures.
 
+{{< mnote up=23 >}}
+These HTML tags are not present in the Markdown &rightarrow; `unsafe: false`. They are introduced after Goldmark rendering with `replaceRE` of [replacement codes](/doc/replacement). 
+{{< /mnote >}}
