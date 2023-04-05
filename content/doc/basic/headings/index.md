@@ -44,7 +44,7 @@ Perplex offers Markdown [attributes][attr] for these style variations.
 
 ### Paragraph Headings {#h-p}
 
-We can style any heading like a paragraph heading with the attribute `{.h-p}`. For the probably rare occasions, we need to style a heading as a small paragraph heading we need an additional attribute: `{.h-p .h-p-s}`.
+We can style any heading like a paragraph heading with the attribute `{.h-p}`. For the probably rare occasions, we need to style a heading as a small paragraph heading we need the attribute: `{.h-p-s}`.
 
 ### Highlighted Headings
 
@@ -84,33 +84,36 @@ Headings are not only recognized by their font styling but also by the white spa
 If the page already has a title, the first heading **should not** occur in the Markdown content. Like many themes, this one generates titles on all pages.
 
 {{< mnote up=8 >}}
-The entire [title section](/doc/page/title) is generated from parameters in the front-matter.
+The entire [title section](/doc/page/title) is generated from parameters in the front matter.
 {{< /mnote >}}
 
 The first heading remains reserved for titles. We may want to compose a title in Markdown on special pages. But with this theme, we usually don’t need it at all.
 
-## Section Heading
+## Section
 {{< farfar 1 >}}
 
-### Subsection Heading
+### Subsection 
 {{< farfar 1 >}}
 
-#### Sub-Subsection Heading
+#### Sub-Subsection 
 {{< farfar 1 >}}
 
-#### Styled Paragraph Heading {.h-p}
+##### Paragraph 
 {{< farfar 1 >}}
 
-#### Warning Paragraph {.h-warn .h-p}
+###### Small paragraph
 {{< farfar 1 >}}
 
-##### Info Paragraph {.h-info}
+#### Paragraph attribute {.h-p}
 {{< farfar 1 >}}
 
-##### Tip Paragraph {.h-tip}
+##### Warning paragraph {.h-warn}
 {{< farfar 1 >}}
 
-###### Small Paragraph Heading
+#### Info paragraph {.h-info .h-p}
+{{< farfar 1 >}}
+
+##### Tip paragraph {.h-tip}
 {{< farfar 1 >}}
 
 [attr]: /doc/attribute

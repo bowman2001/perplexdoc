@@ -36,7 +36,7 @@ This command in the root of a project starts the [Hugo server][server]. All the 
 Hugo’s server can be specially configured to show a site on a public IP address. But it's **not** a full-fledged web server. The server is **only** meant for private previews. Theme templates may include conditional code for the server mode which could pose a security risk if shown in public.
 {{< /mnote >}}
 
-- The flag `-D` lets Hugo include **drafted** files. All files created with `hugo new` include `draft: true` in the front-matter. When a Markdown file is ready for [publishing](/doc/intro/workflow/publish), we need to remove this entry or change it to `draft: false`.
+- The flag `-D` lets Hugo include **drafted** files. All files created with `hugo new` include `draft: true` in the front matter. When a Markdown file is ready for [publishing](/doc/intro/workflow/publish), we need to remove this entry or change it to `draft: false`.
 
 - The flag `--navigateToChanged` tells the server to relay the page of the last changed file to the browser. As soon as we save a content file the corresponding page pops up in the browser.
 
@@ -48,7 +48,7 @@ To generate a new blog entry use a command like
 hugo new blog/first.md
 ```
 
-The new file is created in the folder {$content/blog}. It has a front-matter section with some parameter keys for meta-data. They contain auto-generated values, or placeholders, or are empty.[^1] The first lines of the front-matter look like
+The new file is created in the folder {$content/blog}. It has a front matter section with some parameter keys for meta-data. They contain auto-generated values, or placeholders, or are empty.[^1] The first lines of the front matter look like
 
 ```yaml {class="left" linenos=true }
 ---
@@ -68,9 +68,9 @@ draft: true
 ---
 ```
 
-At the end of the front-matter are the taxonomy keys with empty lists (squared brackets) as values. You may want to add one or more comma-separated keywords.
+At the end of the front matter are the taxonomy keys with empty lists (squared brackets) as values. You may want to add one or more comma-separated keywords.
 
-Our Markdown content begins after the front-matter.
+Our Markdown content begins after the front matter.
 
 ```text
 **Placeholder**: Put your own summary paragraph here instead of this one.
@@ -93,7 +93,7 @@ As soon as you save your file, Hugo’s server will update your site in the brow
 The following tips may improve your editing experience.
 
 ### Auto-save delay
-Some editors are saving our work so fast by default, that nearly every keystroke leads to a new file version and the regeneration of the corresponding page. When we are in the process of changing sensitive content like front-matter parameters this can easily bring down Hugo’s server, because Hugo can’t process inconsistent files. 
+Some editors are saving our work so fast by default, that nearly every keystroke leads to a new file version and the regeneration of the corresponding page. When we are in the process of changing sensitive content like front matter parameters this can easily bring down Hugo’s server, because Hugo can’t process inconsistent files. 
 
 Then, we have to restart the server, which is not a big deal but gets annoying after a while. It’s better to set the auto-save delay to a greater value, which lets us save consistent file versions manually.
 

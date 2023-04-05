@@ -18,5 +18,5 @@ resources:
       alt: Double-page of an old magazine with fancy text layout on the left and a picture of the boxer Muhammad Ali on the right
 ---
 
-The theme generates all variable elements around the content from page specific meta-data. We need to provide these parameters in the front-matter.
+The theme generates all variable elements around the content from page specific meta-data. We need to provide these parameters in the front matter.
 {.p-first} <!-- more -->

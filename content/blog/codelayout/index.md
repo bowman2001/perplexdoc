@@ -63,7 +63,7 @@ The options suitable for Perplex are:
 : Enables or disables line numbers. They are disabled by default [for this project](/doc/appendix/config/markup#38) --- enable them with `linenos=true`.
 
 `hl_lines`
-: Especially highlights some code lines. The lines must be given as a set of numbers or ranges enclosed in square brackets. Every range has to be surrounded additionally by quotes: `hl_lines=[2,"5-7"]`.
+: highlights some code lines. The lines must be given as a set of numbers or ranges enclosed in square brackets. Every range has to be surrounded additionally by quotes: `hl_lines=[2,"5-7"]`.
 
 `linenostart`
 : Lets the line numbers begin with a given number, like `linenostart=23`
@@ -76,7 +76,7 @@ The options suitable for Perplex are:
 
 ### Inline
 
-The HTML tag to mark the beginning of code is `<code>`. And to mark the end we use the corresponding closing tag `</code>`. Markdown text surrounded by backticks like `` `text` `` gets enclosed by these tags.
+The HTML tag to mark the beginning of a code snippet or block is `<code>`. And to mark the end we use the corresponding closing tag `</code>`. Markdown text surrounded by backticks like `` `text` `` gets enclosed by these tags.
 
 ### Block
 
@@ -111,8 +111,8 @@ type NodeRendererFunc func(writer util.BufWriter, source []byte, n ast.Node, ent
 
 // A NodeRenderer interface offers NodeRendererFuncs.
 type NodeRenderer interface {
- // RendererFuncs registers NodeRendererFuncs to given NodeRendererFuncRegisterer.
- RegisterFuncs(NodeRendererFuncRegisterer)
+   // RendererFuncs registers NodeRendererFuncs to given NodeRendererFuncRegisterer.
+   RegisterFuncs(NodeRendererFuncRegisterer)
 }
 ```
 
@@ -125,7 +125,7 @@ Every blank line indicates the beginning of a new paragraph.
 > of the quote. It may contain *text formatting* itself.
 ```
 
-An unformatted text segment like this one is transformed by the markdown renderer to a paragraph block.
+An unformatted text segment like this one is transformed by the markdown renderer into a paragraph block.
 
 Every _blank_ line indicates the beginning of a _new_ paragraph.
 > A blockquote is marked by a `>` at the beginning of every line of the quote. It may contain _text formatting_ itself.

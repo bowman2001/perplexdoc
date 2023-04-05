@@ -86,7 +86,7 @@ When we place an image inside our paragraph text–usually at the beginning–it
 
 ### Passing extra parameters
 
-CommonMark can’t handle more image parameters than the ones mentioned above. To generate a caption etc., the theme offers additional parameters. All of them are possible **resource parameters** in the front-matter. A few image layout parameters may also be added directly to the Markdown content by adding **in-place parameters** to the image name.
+CommonMark can’t handle more image parameters than the ones mentioned above. To generate a caption etc., the theme offers additional parameters. All of them are possible **resource parameters** in the front matter. A few image layout parameters may also be added directly to the Markdown content by adding **in-place parameters** to the image name.
 
 #### Resource meta-data {#meta-data}
 
@@ -150,4 +150,4 @@ for the vertical positioning doesn’t move an embedded image into the middle of
 
 ##### Overriding resource parameters {.h-info}
 
-When the given parameters are already defined in the resource section of the front-matter, the in-place parameters will override them.
+When the given parameters are already defined in the resource section of the front matter, the in-place parameters will override them.

@@ -7,7 +7,7 @@ subtitle: true
 date: 2023-04-04T11:51:40+02:00 
 menu:
   doc:
-    identifier: demo 
+    identifier: demo
     name: Demo
     pre: preview
 resources:
@@ -18,4 +18,7 @@ resources:
 weight: 9999
 ---
 
-This is an empty section in the documentation. Here you can place your first documentation pages to get used to the workflow with Hugo & Perplex. There are step-by-step guides for a new page and a new section in the [content workflow introduction](/doc/intro/workflow/content).
+This is an empty section. Here you can place your first documentation pages to get used to the workflow with Hugo & Perplex.
+{.p-first}<--!more-->
+
+There are step-by-step guides for a new documentation page and a new section in the [content workflow introduction](/doc/intro/workflow/content).

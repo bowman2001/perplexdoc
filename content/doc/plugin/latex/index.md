@@ -26,7 +26,7 @@ LaTeX is the most popular typesetting system for the natural sciences, its synta
 
 ## Syntax
 
-You can enable the render engine for LaTeX included in Perplex — called [KaTeX][katex] --- by setting the parameter `latex` to `true`: Either in the main configuration file for all pages or in the front-matter for specific pages.
+You can enable the render engine for LaTeX included in Perplex — called [KaTeX][katex] --- by setting the parameter `latex` to `true`: Either in the main configuration file for all pages or in the front matter for specific pages.
 
 {{< mnote up=11 >}}
 There is another excellent LaTeX render engine for the Web: [MathJax](https://www.mathjax.org/). I chose KaTeX for performance reasons, which may not be the best reason under all circumstances.

@@ -66,54 +66,55 @@ This documentation includes a short review of every syntax element known to Gold
 
 ## Caveats and Opportunities
 
-Two Markdown elements are continuously creating confusion, because they are treated in somewhat ambiguous ways:
+Two CommonMark elements are continuously creating confusion because they are treated in somewhat ambiguous ways:
 
 [Image][img]
 : The CommonMark image element is syntactically meant to be placed inside a block element. But it’s also allowed to be used stand-alone and gets automatically enclosed by a paragraph then.[^1]
 
 [Line Break][lb]
-: CommonMark and GFM are not fully compatible in regard to this one element. There are two different ways to handle line breaks inside of text blocks:
+: CommonMark and GFM are not fully compatible regarding this one element. There are two different ways to handle line breaks inside of text blocks:
     1. Treat hard line wraps in Markdown files as whitespace like CommonMark does.
     2. Treat hard line wraps as hard line wraps like GFM.
 {.dl-loose}
 
-The following suggestions for these elements are short. Their issues are discussed in more detail on their own pages.
+The following suggestions for these elements are short. Their issues are discussed in more detail on their pages.
 
 [^1]: The corresponding  `<img/>` tag is an HTML inline element and demands an enclosing block element in HTML 5.
 
 ### How to include images?
 
-There is one image element in CommonMark for embedding an image into a block element and no genuine element for a stand-alone image, because the appropriate HTML tag `<figure>` is too complicated for simple markup. Thankfully, since version 0.108.0 Hugo can distinguish a stand-alone image from one inside of a text block and allows the theme to generate a figure:
+There is one image element in CommonMark for embedding an image into a block element and no genuine element for a stand-alone image. Thankfully, since version 0.108.0 Hugo can distinguish a stand-alone image from one inside of a text block and allows the theme to generate the appropriate figure:
 
 ![](splash)
 
-Hugo and Perplex used to provide the shortcode [{$figure}][fig] for this purpose. It’s only kept for backwards compatibility, the new solution is much more convenient.
+Hugo and Perplex used to provide the shortcode [{$figure}][fig] for this purpose. It’s only kept for backward compatibility. This solution is much more convenient and fits loads of already existing Markdown.
 
-![splash](splash2) Perplex styles the embedded Markdown image element always as a float. The theme offers layout variations for both kinds of images. For example: We can place embedded images on the left or the right inside the text block. Stand-alone images can be placed in the margin of the following text block. Look into the section about [images](/doc/basic/image) for all the options.
+![splash](splash2) Perplex styles the embedded Markdown image element as a float. The theme offers layout variations for both kinds of images. We can place embedded images on the left or right inside the text block. Small stand-alone images may appear in the margin of the following text block. Large ones stretch from the left margin to the right. Look into the section about [images](/doc/basic/image) for all the options.
+{.clear}
 
-### How to wrap lines? {#wrap .clear}
+### How do we wrap lines? {#wrap}
 
 When we start writing Markdown, this question may not come to mind, because we often decide habitually: But should we still manually wrap the lines after a certain amount of characters — or better not?
 
-Hard line wraps cause us and collaborating authors a lot of unnecessary trouble in the long run --- that’s my impression. Almost all text editor programs are nowadays able to **softly wrap** long lines. Maybe we have to turn on that option for Markdown, but it should definitely be there.
+The hard-line wraps cause us and collaborating authors a lot of unnecessary trouble in the long run --- that’s my impression. Almost all text editor programs are nowadays able to **softly wrap** long lines. Maybe we have to turn on that option for Markdown, but it should definitely be there.
 
-When we rely on soft line wrapping everyone can read and edit the Markdown using a suitable line width. When we place manual wraps, everyone — including ourselves — has to deal with them again and again. They have to be moved or removed every time, when text is added or deleted.
+When we rely on soft line wrapping everyone can read and edit the Markdown using a suitable line width. When we place manual wraps, everyone — including ourselves — has to deal with them again and again. They have to be moved or removed every time when text is added or deleted.
 
 {{< mnote up=14 >}}
 **GitHub** decided to treat all hard wraps as such on their platform a while ago.
 {{< /mnote >}}
 
-How to handle hard line wraps remains your choice without any repercussions. Hugo can handle both ways perfectly, the decision only affects the editing experience.
+How to handle hard-line wraps remains your choice without any repercussions. Hugo can handle both ways perfectly, the decision only affects the editing experience.
 
 ### How to break lines?
 
 Our options here are tied to the way we wrap Markdown lines.
 
 With Hard Wraps
-: When we us hard line wraps, to manually limit the line length, we can’t use them to indicate _intentional_ line breaks inside of text blocks anymore. We need the special syntax CommonMark provides.
+: When we enable hard line wraps, to manually limit the line length, we can’t use them to indicate intentional line breaks anymore. We need the special syntax CommonMark provides.
 
 With Soft Wraps
-: If the lines are not wrapped, a line break is the intuitive way to place an _intentional_ one.
+: If the lines are not wrapped, a line break is the intuitive way to place an intentional one.
 {.dl-loose}
 
 See the page [Line Break][lb] for the configuration and the question of CommonMark-compliance.
@@ -129,11 +130,11 @@ We still get into trouble with characters, which are missing in the fonts used o
 The Markdown syntax works with every encoding. But almost all modern websites stick to the de facto standard **UTF-8** and Perplex does, too. Your Markdown files should be encoded in UTF-8 and if you never thought about it before, they probably already are. This also holds for other text resources you may fetch data from.
 
 {{< mnote up=17 >}}
-When you import strings from a JSON-file with UTF-16 encoding for example, the encoding outside the common ASCII set has a different meaning and leads to false and probably strange characters, when you use non-ASCII characters.
+When you import strings from a JSON file with UTF-16 encoding for example, the encoding outside the common ASCII set has a different meaning and leads to false and probably strange characters, when you use non-ASCII characters.
 {{< /mnote >}}
 
 ## Markdown editors
-Most programming editors and IDEs support Markdown out of the box or provide plugins. There’s no need to search for a new editor, if you are already satisfied with yours.
+Most programming editors and IDEs support Markdown out of the box or provide plugins. There’s no need to search for a new editor if you are already satisfied with yours.
 
 ### Specialized editors
 
@@ -145,13 +146,13 @@ Hugo offers a very convenient way of looking at your results instantly: When you
 
 ### Front-Matter CMS {.h-info}
 
-Front-Matter CMS is an exciting plugin for VSCode which offers many nice features. Unfortunately, I can’t recommend it right now for this theme, because it can make changes to the front-matter which alter the site structure. It’s also not capable of handling Hugo’s front-matter resources out of the box. The plugin probably handles other projects very fine and I hope to use it in the future.
+Front-Matter CMS is an exciting plugin for VSCode which offers many nice features. Unfortunately, I can’t recommend it right now for this theme, because it may change the front matter in a way that alters the site structure. It’s also not capable of handling Hugo’s resource parameters out of the box. The plugin probably handles other projects very fine and I hope to use it in the future.
 
 ## Markdown Linter
-CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing.
+CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins to use it directly while editing.
 
 {{< mnote up=14 >}}
-For this project the default settings are modified in the configuration file [`.markdownlint.yaml`](/doc/appendix/markdownlint) at the content root. Some folders contain special configurations, which allow to use all the markup options of specific elements.
+For this project the default settings are modified in the configuration file [`.markdownlint.yaml`](/doc/appendix/markdownlint) at the content root. Some folders contain special configurations, which allow using all the markup options of specific elements.
 {{< /mnote >}}  
 
 [omd]: https://daringfireball.net/projects/markdown/ "Markdown project site by John Gruber"
