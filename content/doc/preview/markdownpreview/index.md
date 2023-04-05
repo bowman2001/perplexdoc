@@ -9,10 +9,15 @@ menu:
     name: Markdown Layout
     parent: tldr
     pre: edit
+resources:
+- src: Markdown.png
+  name: markdown
+  params:
+    alt: Markdown logo
+    size: tiny
 categories: [Getting started, Markdown]
 tags: [Block, Inline]
 weight: 5
-draft: true
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files and shows whether basic HTML elements are decorated with CSS in a Hugo theme.
@@ -21,7 +26,7 @@ This article offers a sample of basic Markdown syntax that can be used in Hugo c
 
 ## Headings
 
-The following HTML `<h1>`—`<h6>` elements represent the title, three levels of section headings, and two levels of paragraph headings. The paragraph headings are placed inside the usually following paragraphs.
+The following HTML `<h1>`—`<h6>` elements represent the title, three levels of section headings, and two levels of paragraph headings. They are placed before paragraphs and the paragraph headings are even placed inside them.
 
 # Title
 
@@ -58,13 +63,13 @@ The blockquote element represents content that is quoted from another source, op
 ### Blockquote with attribution
 
 > Don't communicate by sharing memory, share memory by communicating.
-> — _Rob Pike_[^1]
+> {=— Rob Pike[^1]}
 
 [^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, on November 18, 2015.
 
 ## Tables
 
-Tables aren't part of the core Markdown spec, but Hugo supports them out of the box.
+Tables aren't part of CommonMark, but Hugo supports them out of the box.
 
    Name | Age
 :--------|:------
@@ -107,7 +112,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports them out of the 
     </body>
     </html>
 
-#### Code block with Hugo's internal highlight shortcode
+### Code block with Hugo's internal highlight shortcode
 {{< highlight html >}}
 <!DOCTYPE html>
 <html lang="en">
@@ -138,9 +143,8 @@ Tables aren't part of the core Markdown spec, but Hugo supports them out of the 
 ### Nested list
 
 * Item
-
-1. First Sub-item
-2. Second Sub-item
+  1. First Sub-item
+  2. Second Sub-item
 
 ## Other Elements — sub, sup, kbd, mark
 
@@ -151,3 +155,4 @@ X{^n} + Y{_n} = Z{^n}
 Press {%CTRL} + {%ALT} + {%Delete} to end the session.
 
 Most {!salamanders} are nocturnal, and hunt for insects, worms, and other small creatures.
+

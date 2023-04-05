@@ -2,8 +2,6 @@
 author: Georg Makowski
 title: Short Preview
 linktitle: Preview
-description: Quick look into the theme
-subtitle: false
 date: 2022-05-11T23:46:08+02:00 
 weight: 2
 menu:
@@ -16,8 +14,7 @@ resources:
     name: featured
     params:
       alt: A hand slides a few cords to the side and opens a view to the beach
-draft: true
 ---
 
-Place your lead paragraph here. If you don't need special styling, remove the attribute `{.p-first}`. The **more**-tag marks this placeholder paragraph as the content summary for this page. It’s an introduction for your readers and provides information to search engines.
+Features and Goals of the Perplex theme, and the usual Markdown single page quality overview.
 {.p-first} <!--more-->
