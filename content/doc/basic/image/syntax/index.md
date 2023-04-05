@@ -21,13 +21,13 @@ The CommonMark image syntax is short and the theme distinguishes between two pos
 
 ## Syntax
 
-The CommonMark image element is syntactically very similar to a [link](/doc/basic/link). The sole difference: The image element begins with an exclamation mark `!`.
+The CommonMark image element is syntactically very similar to a [link](/doc/basic/link). The sole difference: The image element begins with an exclamation mark `!`. There are also two notations to reference the source: **Inline** or **reference**.
 
-There are also two notation options to reference the source: **Inline** or **reference**.
+Additionally, the theme makes further distinctions:
 
-Additionally the theme relies on Hugo’s feature to distinguish the two possible ways to place an image in Markdown: **Stand-alone** or **embedded**.
+- The two possible ways to place an image — **stand-alone** or **embedded** — are handled differently.
 
-The theme can also process **resource parameters** or a few **in-place parameters** to change the layout.
+- **Resource parameters** and a few **in-place parameters** can enhance and change the image layout.
 
 ### Notation
 
@@ -61,7 +61,7 @@ We have to provide the image reference somewhere else in the same file by repeat
 
 ### Placement
 
-CommonMark doesn’t care, where we place an image element. But since version {$0.108.0} Hugo does! The two distinctive ways lead to a different layout with this theme:
+CommonMark doesn’t care, where we place an image element. But since version {$0.108.0} Hugo does! The two distinctive ways lead to a different layout:
 
 #### Stand-alone
 
@@ -82,11 +82,11 @@ By surrounding an image element with empty lines it becomes a Markdown block ele
 containing the image
 ```
 
-When we place an image inside our paragraph text–usually at the beginning–it gets embedded as a float.
+When we place an image inside our paragraph text–usually at the beginning–it’s embedded as a float.
 
 ### Passing extra parameters
 
-Markdown can’t handle more image parameters than the ones mentioned above. To generate a caption etc., the theme offers additional parameters. All of them may be inserted as **resource meta-data** in the front-matter. A few image layout parameters may also be added directly in the Markdown content by adding **in-place parameters** to the image name.
+CommonMark can’t handle more image parameters than the ones mentioned above. To generate a caption etc., the theme offers additional parameters. All of them are possible **resource parameters** in the front-matter. A few image layout parameters may also be added directly to the Markdown content by adding **in-place parameters** to the image name.
 
 #### Resource meta-data {#meta-data}
 
@@ -95,14 +95,15 @@ resources:
 - src: image.jpg
   name: img
   params:
+    alt: Alternative description
     caption: A placeholder image
     size: tiny
     posh: left
 ```
 
-We register an image in the list of resources with its file name or relative path. Now we **have to** call it by its new (short) name like `![Placeholder](img)`. To pass parameters we add the optional `params` key. This key can contain all the available ones, they need to be indented by two additional spaces relative to `params`.
+We register an image in the list of resources with its file name or relative path. Then, we apply a new internal name and **have to** call it by this new (short) name like `![](img)`. To pass parameters we add the optional `params` key to its resource entry. This key can contain all the available parameters, they need to be indented by two additional spaces relative to `params`.
 
-The following keys and types of values are known to the theme:
+The following keys and types of values are available:
 
 | Parameter | Key | Values |
 |:---------|:----------|:---------|
@@ -120,7 +121,7 @@ The following keys and types of values are known to the theme:
 | | | _figure_: {{% parameters imaging.figure.size %}} |
 | Target | target | {{% parameters link.target %}} |
 
-In case we use the {$alt} parameter, we can leave the first bracket of the img element empty.
+In case we use the {$alt} parameter, we can leave the first bracket of the image element empty.
 
 ##### Alternate Text {.h-info}
 in the Markdown image overrides the resource parameter.

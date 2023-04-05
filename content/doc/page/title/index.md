@@ -11,6 +11,7 @@ menu:
     pre: title
 categories: [Theme]
 tags: [title]
+draft: true
 ---
 
 The title section has two different layout styles depending on the function and the place of a page in the site hierarchy.

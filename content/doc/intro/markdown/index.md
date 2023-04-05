@@ -143,9 +143,9 @@ Some editors are designed exclusively for authoring Markdown. They usually offer
 
 Hugo offers a very convenient way of looking at your results instantly: When you run Hugo in its server mode on the local machine you’re writing your Markdown on, it will render your files and deliver the result to your browser (see [Using Hugo](/doc/intro/workflow/local-server). My workflow is like many others based on Visual Studio Code (VSCode) as a Markdown editor in conjunction with Hugo’s server mode.
 
-### Front-Matter CMS {.h-warn}
+### Front-Matter CMS {.h-info}
 
-Front-Matter CMS is an exciting plugin for VSCode which offers many nice features. Unfortunately, I can’t recommend it right now, because it can make changes to your file structure altering the site layout of this theme. It’s also not capable of handling Hugo’s front-matter resources out of the box. But it looks very promising and I would like to use it in the future.
+Front-Matter CMS is an exciting plugin for VSCode which offers many nice features. Unfortunately, I can’t recommend it right now for this theme, because it can make changes to the front-matter which alter the site structure. It’s also not capable of handling Hugo’s front-matter resources out of the box. The plugin probably handles other projects very fine and I hope to use it in the future.
 
 ## Markdown Linter
 CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins for editors, which allow to use it directly while editing.

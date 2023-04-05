@@ -26,13 +26,13 @@ Perplex presents this image at the top of your page and in reference cards. Itâ€
 
 ## Prerequisite
 
-The image file needs to be placed in the [page bundle](/doc/intro/workflow/content#bundles). Only one featured image is allowed per page and it should be at least {${{< width/column 2 >}}} wide to display it with double density on high resolution screens.
+The image file needs to be placed in the [page bundle](/doc/intro/workflow/content#bundles). Only one featured image is allowed per page and it should be at least {${{< width/column 2 >}}} wide to display it with double density on high-resolution screens.
 
-If no featured image is available for a page, Perplex will search for one in related pages or display a site fallback.
+If no featured image is available, Perplex will search for one in related pages or display the site fallback.
 
 ## Syntax
 
-To make the image file available to Hugo and the theme, it also needs to be registered in the [resources section](/doc/intro/workflow/resources) of the front-matter. The filename of the image is identified there by its reserved name `featured`. And you can add an alternative text for your image with the `alt` parameter.
+To make the image file available to Hugo and the theme, it also needs to be registered in the [resources section](/doc/intro/workflow/resources) of the front-matter. The filename of the image is identified by its reserved name `featured`. And you can add an alternative text for your image with the `alt` parameter.
 
 The content file of this page for example contains the following section:
 
