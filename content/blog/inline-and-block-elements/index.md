@@ -4,7 +4,6 @@ title: Two basic layout types
 description: Inline & Block
 subtitle: false
 date: 2022-08-17T20:50:13+02:00
-weight: 1
 resources:
   - src: valery-sysoev-p9OkL4yW3C8-unsplash.jpg
     name: featured

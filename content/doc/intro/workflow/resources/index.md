@@ -10,8 +10,8 @@ menu:
     name: Resources
     parent: workflow 
     pre: collections
-categories: [resources, getting-started]
-tags: [image]
+categories: [Resources, Getting started]
+tags: [Image]
 ---
 
 This theme expects resources like images as local files. We need to place them in page bundles and register them in the front-matter of the Markdown file. Resource files from parent sections or taxonomies may be re-used conveniently.

@@ -1,8 +1,7 @@
 ---
 author: Georg Makowski
-title: Code Layout
-description: Demo for styling options in a blog posting or article
-subtitle: false
+title: Code Layout Demonstration
+linktitle: Code Demo
 date: 2022-11-01T14:54:07+01:00
 categories: [Markdown]
 tags: [Code, Inline, Block]

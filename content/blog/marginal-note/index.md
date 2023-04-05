@@ -2,7 +2,6 @@
 title: The Beauty of Marginal Notes
 description: Demo of the marginal note
 date: 2022-07-04T22:18:04+02:00
-weight: 1
 categories: [Markdown]
 tags: [Marginal Note, Shortcode]
 series: [Demo]
@@ -17,16 +16,16 @@ resources:
     attr: "&copy; C. J. Mozzochi, Princeton&nbsp;N.J"
 ---
 
-Marginal notes allow to add further information in an elegant and unobtrusive way.
+Marginal notes add further information elegantly and unobtrusively.
 {.p-first} <!--more-->
 
 The famous mathematician Fermat wrote his last conjecture around 1637 in the marginal column besides an ancient Greek proof by Diophantus. The “marvelous proof” Fermat mentioned there has never been uncovered and his note kept mathematicians wondering for over 350 years.
 
 ![](wiles)
 
-A proof has been considered generally inaccessible until Sir Andrew John Wiles announced to have found one in 1993 after years of ground-breaking work. A few mathematicians were able to follow him and pointed out some flaws in his first preliminary version. Wiley finally published a completely convincing version in 1995 — a break-through in number theory which won him a few prizes.  
+Proof has been considered generally inaccessible until Sir Andrew John Wiles announced to have found one in 1993 after years of ground-breaking work. A few mathematicians were able to follow him and pointed out some flaws in his first preliminary version. Wiley finally published a completely convincing version in 1995 — a breakthrough in number theory that won him a few prizes.  
 
-Wiley’s proof is still only accessible to mathematical specialists. But the initial mathematical problem — Diophantus’ successful method to split a second power into the sum of two second powers and Fermat’s conjecture about the impossibility to do the same for higher powers — are relatively easy to grasp:  
+Wiley’s proof is still only accessible to mathematical specialists. But the initial mathematical problem — Diophantus’ successful method to split a second power into the sum of two-second powers and Fermat’s conjecture about the impossibility to do the same for higher powers — are relatively easy to grasp:  
 
 - - -
 

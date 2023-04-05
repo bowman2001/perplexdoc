@@ -15,7 +15,7 @@ tags: [image, block]
 series: [images]
 ---
 
-The CommonMark image syntax is short and the theme distinguishes between two possible image positions: **stand-alone** & **embedded**. To alter the appearance we can pass special additional parameters.
+The CommonMark image syntax is short and the theme distinguishes between two possible image positions: **stand-alone** & **embedded**. To alter the appearance we can pass additional parameters to the theme.
 {.p-first}
 <!--more-->
 
@@ -86,7 +86,7 @@ When we place an image inside our paragraph text–usually at the beginning–it
 
 ### Passing extra parameters
 
-Markdown can’t handle more image parameters than the ones mentioned above. To generate a caption etc., the theme offers additional parameters. All of them may be inserted as Hugo resource meta-data in the front-matter. We can also change the few image layout parameters directly in the Markdown content by adding parameters to the image name with a special syntax.
+Markdown can’t handle more image parameters than the ones mentioned above. To generate a caption etc., the theme offers additional parameters. All of them may be inserted as **resource meta-data** in the front-matter. A few image layout parameters may also be added directly in the Markdown content by adding **in-place parameters** to the image name.
 
 #### Resource meta-data {#meta-data}
 
@@ -126,17 +126,13 @@ In case we use the {$alt} parameter, we can leave the first bracket of the img e
 in the Markdown image overrides the resource parameter.
 
 #### In-place parameters
-We can use a special syntax to set the few layout parameters, which tend to change more often in the process of content creation. The size and the position of an image can be specified like:
+We can use a special syntax to set a few layout parameters, which tend to change more often in the process of content creation. The size and the position of an image can be specified like:
 
 ```md
 ![Alternative text](image.jpg?s=small&ph=right)
 ```
 
 The start of every image name extension is marked by an interrogation mark `?`. Then follows a short parameter key, the equal sign `=` and the parameter value. Consecutive key-value pairs are separated by an ampersand `&`.[^1]
-
-{{< mnote up=17 >}}
-The idea to use the well established syntax for query strings goes back to a suggestion by Joe Mooring in the Hugo forum.
-{{< /mnote >}}
 
 We can place only these parameters:
 

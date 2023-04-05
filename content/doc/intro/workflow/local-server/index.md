@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 title: The local Workflow
-description: Show an instant preview in your browser 
+description: Write while watching instant previews 
 subtitle: false
 date: 2022-09-11T14:58:16+02:00 
 weight: 35
@@ -19,10 +19,10 @@ categories: [Getting started]
 tags: [Hugo]
 ---
 
-When we are working on our content, we often like to examine the resulting pages immediately. To generate an immediate local preview, we can run Hugo in server mode.
+While working on our content, we like to examine the result. To generate an immediate local preview, we run Hugo in server mode.
 {.p-first} <!--more-->
 
-The following instructions assume, that you are in the project root of a copy of this documentation project.
+The following instructions assume, that you have opened a terminal and changed to your project root containing a copy of this documentation project.
 
 ## Hugo’s server mode
 
@@ -33,22 +33,22 @@ hugo server -D --navigateToChanged
 This command in the root of a project starts the [Hugo server][server]. All the HTML pages are rendered into memory and the site is served under <http://localhost:1313> by default.
 
 {{< mnote up=14 >}}
-Hugo’s server can be configured to show a site on a public IP address. But it's **not** a full-fledged web server. The server is **only** meant for private previews and templates may include conditional code for the server mode which could pose a security risk if shown in public.
+Hugo’s server can be specially configured to show a site on a public IP address. But it's **not** a full-fledged web server. The server is **only** meant for private previews. Theme templates may include conditional code for the server mode which could pose a security risk if shown in public.
 {{< /mnote >}}
 
-- The flag `-D` lets Hugo include **drafted** files. All files created with `hugo new` are usually configured as drafts by setting `draft: true` in the front-matter. When a Markdown file is ready for [publishing](/doc/intro/workflow/publish), we need to remove this entry or change it to `draft: false`.
+- The flag `-D` lets Hugo include **drafted** files. All files created with `hugo new` include `draft: true` in the front-matter. When a Markdown file is ready for [publishing](/doc/intro/workflow/publish), we need to remove this entry or change it to `draft: false`.
 
 - The flag `--navigateToChanged` tells the server to relay the page of the last changed file to the browser. As soon as we save a content file the corresponding page pops up in the browser.
 
 ## Your first content
 
-To generate a new Markdown file, we go to the root folder of our project and use a command like
+To generate a new blog entry use a command like
 
 ```sh {.left}
 hugo new blog/first.md
 ```
 
-The new file is created in the folder {$content/blog}. It already contains a front-matter section with a few reasonable entries, placeholders, or empty parameter keys.[^1] 
+The new file is created in the folder {$content/blog}. It has a front-matter section with some parameter keys for meta-data. They contain auto-generated values, or placeholders, or are empty.[^1] The first lines of the front-matter look like
 
 ```yaml {class="left" linenos=true }
 ---
@@ -57,9 +57,9 @@ title: First
 date: 2022-07-01T21:22:27+02:00
 ```
 
-The `author` value is optional, the `title` and the `date` are mandatory. The `title` is guessed from the file name and you probably want to change it. The `date` contains in a special format the moment to the second when we ran the `hugo new` command.
+The `author` value is optional, the `title` and the `date` are mandatory. The `title` is just guessed from the file name — you probably want to change it. The `date` contains the moment when we ran the `hugo new` command in a special format. You can also change it but need to be very careful.
 
-At first, we can ignore the following `resources` section and its parameters. We’ll [catch up later](/doc/intro/workflow/resources).
+At first, we ignore the following empty `resources` section and its parameters. We’ll [catch up later](/doc/intro/workflow/resources) with that.
 
 ```yaml {.left linenos=true linenostart=10}
 categories: []
@@ -68,11 +68,21 @@ draft: true
 ---
 ```
 
-At the end of the front-matter we have the taxonomies in squared brackets. We may add one or more keywords as a comma-separated list.
+At the end of the front-matter are the taxonomy keys with empty lists (squared brackets) as values. You may want to add one or more comma-separated keywords.
 
-Our Markdown content begins after the front-matter. New files contain a placeholder with a special [attribute](/doc/attribute/howto) for the [first paragraph](/doc/page/standfirst). It should act as the page summary which is marked by the {$more} tag.
+Our Markdown content begins after the front-matter.
 
-After we add or change some content and save the file again, Hugo’s server will update our site in the browser immediately. When we make mistakes, Hugo will display a descriptive error message on its console or in the browser.
+```text
+**Placeholder**: Put your own summary paragraph here instead of this one.
+{.p-first}
+<!--more-->
+```
+
+All new files contain this placeholder with a special [attribute](/doc/attribute/howto) for the [first paragraph](/doc/page/standfirst) and the {$more} tag to mark this first paragraph as the page summary. You are encouraged to replace this placeholder with your summary now or later. It’s essential for cards and other page previews.
+
+Your following content may be simple text without markup in the beginning.
+
+As soon as you save your file, Hugo’s server will update your site in the browser. Should you make mistakes, Hugo will display a descriptive error message on its console or in the browser.
 
 [^1]: The templates for the file generation with `hugo new` are part of the theme. But like any other theme template, we can override them. See the [Hugo docs](https://gohugo.io/content-management/archetypes/) if you want to create your own.
 
@@ -80,7 +90,7 @@ After we add or change some content and save the file again, Hugo’s server wil
 
 ## Editor usage
 
-The following tips may improve your editing experience with Hugo and the theme.
+The following tips may improve your editing experience.
 
 ### Auto-save delay
 Some editors are saving our work so fast by default, that nearly every keystroke leads to a new file version and the regeneration of the corresponding page. When we are in the process of changing sensitive content like front-matter parameters this can easily bring down Hugo’s server, because Hugo can’t process inconsistent files. 

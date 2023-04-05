@@ -2,7 +2,6 @@
 author: Georg Makowski
 title: Accessible fluid Design
 date: 2022-07-12T22:38:10+02:00
-weight: 1
 categories: [design]
 tags: [accessible, fluid responsive]
 resources:

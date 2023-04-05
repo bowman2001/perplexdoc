@@ -70,7 +70,7 @@ The theme offers many different layout options for stand-alone Markdown images. 
 {.p-first}
 <!--more-->
 
-This page is showing layout demonstrations. The CommonMark syntax and the additional parameter handling by this theme are described on the [image syntax page](/doc/basic/image/syntax).
+This page shows layout demonstrations. The CommonMark syntax and the additional parameter handling by this theme are described on the [image syntax page](/doc/basic/image/syntax).
 
 The numbers in the following placeholder images are roughly a multiple of the main text width.
 
