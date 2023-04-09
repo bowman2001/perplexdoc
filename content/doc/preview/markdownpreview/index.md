@@ -56,15 +56,28 @@ Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptio
 Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
 {.blind}
 
+## Images
+**TODO**
+
+### Stand-alone
+
+### Embedded
+
+## Link
+
+- This is an internal [example link](#blockquotes).
+
+- This is an external [example link](https://example.com "example.com").
+
 ## Blockquotes
 The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
 
-### Blockquote without attribution
+### Without attribution
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.
 > **Note** that you can use _Markdown syntax_ within a blockquote.
 
-### Blockquote with attribution
+### With attribution
 
 > Don't communicate by sharing memory, share memory by communicating.
 > {=— Rob Pike[^1]}
@@ -75,15 +88,17 @@ The blockquote element represents content that is quoted from another source, op
 
 Tables aren't part of CommonMark, but Hugo supports them out of the box.
 
+### Centered table columns
+
 |   Name | Age |
-:--------|:----|
+|:--------:|:----:|
 |    Bob | 27 |
 |  Alice | 23 |
 
 ### Inline Markdown within tables
 
 | Inline     | Markdown  | In                | Table      |
-|:---------- |:--------- |:----------------- |:---------- |
+|:---------- |:---------:|:-----------------:|----------:|
 | _italics_  | **bold**  | ~~strikethrough~~ | `code`     |
 
 ## Code Blocks
@@ -117,6 +132,7 @@ Tables aren't part of CommonMark, but Hugo supports them out of the box.
     </html>
 
 ### Code block with Hugo's internal highlight shortcode
+
 {{< highlight html >}}
 <!DOCTYPE html>
 <html lang="en">
@@ -132,23 +148,37 @@ Tables aren't part of CommonMark, but Hugo supports them out of the box.
 
 ## List Types
 
-### Ordered List
+### Ordered list
 
 1. First item
 2. Second item
 3. Third item
 
-### Unordered List
+### Unordered list
 
 * List item
 * Another item
 * And another item
 
-### Nested list
+### Nested unordered and ordered list
 
-* Item
-  1. First Sub-item
-  2. Second Sub-item
+* Item 1
+  1. First sub-item
+  
+  3. Second sub-item
+
+* Item 2
+  1. First sub-item of second item
+
+  2. Second sub-item of second item
+  
+### Definition list
+
+First term
+: Description of the first term
+
+Second term
+: Description of the second term
 
 ## Other Elements — sub, sup, kbd, mark
 
