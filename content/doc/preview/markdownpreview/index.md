@@ -81,7 +81,7 @@ The blockquote element represents content that is quoted from another source, op
 ### Without attribution
 
 > Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque...
-> {.p-blind}
+> {.blind}
 > 
 > **Note** that you can use _Markdown syntax_ within a blockquote.
 
