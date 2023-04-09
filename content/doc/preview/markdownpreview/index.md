@@ -31,10 +31,16 @@ The theme offers style variations for many of these elements. This page presents
 
 The following HTML `<h1>`—`<h6>` elements represent the title, three levels of section headings, and two levels of paragraph headings. They are placed before paragraphs and the paragraph headings are even placed inside them.
 
+Usually, the title does **not get used** in Markdown content. All theme templates generate title from front-matter meta-data. 
+
+---
+
 # Title
 
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque...
 {.blind}
+
+---
 
 ## Section
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque...
