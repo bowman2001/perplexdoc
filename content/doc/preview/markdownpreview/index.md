@@ -21,7 +21,7 @@ tags: [Block, Inline]
 weight: 5
 ---
 
-This article offers samples of extended CommonMark syntax processed by Goldmark to show how the rendered HTML is decorated with CSS in this theme.
+This article offers samples of extended CommonMark syntax processed by Goldmark to show the CSS-layout of the rendered HTML.
 {.p-first}
 <!--more-->
 
@@ -65,7 +65,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ## Link
 
-- This is an internal [example link](#blockquotes).
+- This is an internal [example link](#images).
 
 - This is an external [example link](https://example.com "example.com").
 
@@ -74,10 +74,11 @@ The blockquote element represents content that is quoted from another source, op
 
 ### Without attribution
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+> Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque...
+> 
 > **Note** that you can use _Markdown syntax_ within a blockquote.
 
-### With attribution
+### With attribution and footnote
 
 > Don't communicate by sharing memory, share memory by communicating.
 > {=— Rob Pike[^1]}
