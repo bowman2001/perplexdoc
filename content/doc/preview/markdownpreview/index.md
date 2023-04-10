@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 title: Markdown Layout
-description: One page Markdown Overview
+description: One-page Markdown overview
 subtitle: false
 date: 2022-05-12T22:30:17+02:00 
 menu:
@@ -21,17 +21,17 @@ tags: [Block, Inline]
 weight: 5
 ---
 
-This article contains samples of the extended CommonMark syntax to show the CSS-layout of the rendered HTML.
+This article contains samples of the extended CommonMark syntax to show the CSS layout of the rendered HTML.
 {.p-first}
 <!--more-->
 
-The theme offers style variations for many of these elements. This page presentss only the default styles.
+The theme offers style variations for many of these elements. Only the defaults are presented here.
 
 ## Headings
 
-The following HTML `<h1>`—`<h6>` elements represent the title, three levels of section headings, and two levels of paragraph headings. They are placed before paragraphs and the paragraph headings are even placed inside them.
+The following HTML elements `<h1>`—`<h6>` represent the title, three levels of section headings, and two levels of paragraph headings. They are placed before paragraphs and the paragraph headings are placed inside them.
 
-Usually, the title does **not get used** in Markdown content. All theme templates generate titles from front-matter meta-data. 
+Usually, the title does **not get used** in Markdown content. All theme templates generate titles from front-matter meta-data.
 
 ---
 
@@ -46,11 +46,11 @@ Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptio
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque...
 {.blind}
 
-### Sub-section
+### Subsection
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque...
 {.blind}
 
-#### Sub-sub-section
+#### Sub-subsection
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque...
 {.blind}
 
@@ -63,11 +63,17 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 {.blind}
 
 ## Images
-**TODO**
+
+Since Hugo version 0.108.0 we an distinguish stand-alone and embedded images.
 
 ### Stand-alone
 
+![](bigsplash)
+
 ### Embedded
+
+![](splash) Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+{.blind}
 
 ## Link
 
@@ -82,7 +88,7 @@ The blockquote element represents content that is quoted from another source, op
 
 > Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque...
 > {.blind}
-> 
+>
 > **Note** that you can use _Markdown syntax_ within a blockquote.
 
 ### With attribution and footnote
@@ -98,16 +104,16 @@ Tables aren't part of CommonMark, but Hugo supports them out of the box.
 
 ### Centered table columns
 
-|   Name | Age |
-|:--------:|:----:|
-|    Bob | 27 |
-|  Alice | 23 |
+| Name  | Age |
+|:-----:|:---:|
+|  Bob  | 27  |
+| Alice | 23  |
 
 ### Inline Markdown within tables
 
-| Inline     | Markdown  | In                | Table      |
-|:---------- |:---------:|:-----------------:|----------:|
-| _italics_  | **bold**  | ~~strikethrough~~ | `code`     |
+| Inline    | Markdown |        In         |  Table |
+|:----------|:--------:|:-----------------:|-------:|
+| _italics_ | **bold** | ~~strikethrough~~ | `code` |
 
 ## Code Blocks
 
@@ -164,21 +170,23 @@ Tables aren't part of CommonMark, but Hugo supports them out of the box.
 
 ### Unordered list
 
-* List item
-* Another item
-* And another item
+- List item
+- Another item
+- And another item
 
 ### Nested unordered and ordered list
 
-* Item 1
-  1. First sub-item
+- Item 1
+
+  1. First sub-item of the first item
   
-  3. Second sub-item
+  2. Second sub-item of the first item
 
-* Item 2
-  1. First sub-item of second item
+- Item 2
 
-  2. Second sub-item of second item
+  1. First sub-item of the second item
+
+  2. Second sub-item of the second item
   
 ### Definition list
 
@@ -199,5 +207,5 @@ Press {%CTRL} + {%ALT} + {%Delete} to end the session.
 Most {!salamanders} are nocturnal, and hunt for insects, worms, and other small creatures.
 
 {{< mnote up=23 >}}
-These HTML tags are not present in the Markdown &Rightarrow; `unsafe: false`. They are introduced after Goldmark rendering with `replaceRE` of [replacement codes](/doc/replace). 
+These HTML tags are not present in the Markdown &rightarrow; `unsafe: false`. They are introduced after Goldmark rendering with `replaceRE` of [replacement codes](/doc/replace).
 {{< /mnote >}}

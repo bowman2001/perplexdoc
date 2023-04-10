@@ -19,13 +19,12 @@ resources:
     container: "no"
     size: tiny
 - src: erda-estremera-eMX1aIAp9Nw-unsplash.jpg
-  name: splash
+  name: bigsplash
   params:
     alt: A splashing drop of water
-    size: normal
-    caption: Stand-alone image
+    caption: Default stand-alone image. To generate a caption like this, we need to register the image as a resource in the front-matter.
 - src: mulyadi-JJMoAiVl9jA-unsplash.jpg
-  name: splash2
+  name: splash
   params:
     caption: Embedded image
     alt: Another splashing water drop
@@ -85,11 +84,11 @@ The following suggestions for these elements are short. Their issues are discuss
 
 There is one image element in CommonMark for embedding an image into a block element and no genuine element for a stand-alone image. Thankfully, since version 0.108.0 Hugo can distinguish a stand-alone image from one inside of a text block and allows the theme to generate the appropriate figure:
 
-![](splash)
+![](bigsplash)
 
 Hugo and Perplex used to provide the shortcode [{$figure}][fig] for this purpose. It’s only kept for backward compatibility. This solution is much more convenient and fits loads of already existing Markdown.
 
-![splash](splash2) Perplex styles the embedded Markdown image element as a float. The theme offers layout variations for both kinds of images. We can place embedded images on the left or right inside the text block. Small stand-alone images may appear in the margin of the following text block. Large ones stretch from the left margin to the right. Look into the section about [images](/doc/basic/image) for all the options.
+![splash](splash) Perplex styles the embedded Markdown image element as a float. The theme offers layout variations for both kinds of images. We can place embedded images on the left or right inside the text block. Small stand-alone images may appear in the margin of the following text block. Large ones stretch from the left margin to the right. Look into the section about [images](/doc/basic/image) for all the options.
 {.clear}
 
 ### How do we wrap lines? {#wrap}

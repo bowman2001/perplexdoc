@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 title: TL;DR
-description: Short overview for seasoned Hugo users 
+description: Overview for seasoned Hugoers 
 date: 2022-05-11T23:46:08+02:00 
 weight: 2
 menu:

@@ -9,21 +9,26 @@ menu:
     name: Processing
     parent: images
     pre: engineering
+resources:
+  - src: usgs-eVcfzGhVpYc-unsplash.jpg
+    name: featured
+    params:
+      alt: Complicated image
 categories: [markdown]
 tags: [image, block]
 series: [images]
 weight: 158
 ---
 
-The theme relies on Hugo’s processing capabilities for image resources in page bundles.
+The theme relies solely on Hugo’s image-processing capabilities.
 {.p-first}
 <!--more-->
 
-Many different sized versions of every image are generated automatically, so every client browser finds an optimal size to display. We only need to supply an original image which is large enough for the intended layout.
+Many different-sized versions of every image are generated automatically, so every client browser finds a near-optimal size to display. We only need to supply an original image which is large enough for the intended layout.
 
 ## Resolution
 
-For crisp images on high density screens we should at least provide images for double density display.
+For crisp images on high-density screens, we should at least provide images for double-density.
 
 | Image type | 2&times;density | 3&times;density |
 |:-----------|:-------:|:-----:|

@@ -4,11 +4,8 @@ date: 2023-03-27T12:02:10+02:00
 categories: [Markdown]
 tags: [image, block]
 series: [demo]
+featured: bigsplash
 resources:
-  - src: markus-spiske--dbOrdtrR1A-unsplash.jpg
-    name: featured
-    params:
-      alt: Some HTML figure tags on a computer screen
   - src: fig/tiny_text.svg
     name: tiny
     params:

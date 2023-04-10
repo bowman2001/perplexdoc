@@ -4,16 +4,13 @@ title: Stand-alone Image (figure)
 description: Layout for image as a single block
 subtitle: false
 date: 2023-03-23T10:10:38+01:00 
+featured: bigsplash
 menu:
   doc:
     name: Stand-alone
     parent: images
     pre: panorama
 resources:
-  - src: markus-spiske--dbOrdtrR1A-unsplash.jpg
-    name: featured
-    params:
-      alt: Some HTML figure tags on a computer screen
   - src: fig/tiny_text.svg
     name: tiny
     params:
