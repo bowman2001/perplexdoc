@@ -196,15 +196,17 @@ First term
 Second term
 : Description of the second term
 
-## Other Elements — sub, sup, kbd, mark
+## Other Elements — sub, sup, kbd, mark, abbr
 
-H{_2}O
-
-X{^n} + Y{_n} = Z{^n}
+H{_2}O, X{^n} + Y{^n} = Z{^n}
 
 Press {%CTRL} + {%ALT} + {%Delete} to end the session.
 
 Most {!salamanders} are nocturnal, and hunt for insects, worms, and other small creatures.
+
+[HTML](abbr "HyperText Markup Language")
+
+[Replacement codes](dfn "replacement") are defined by curly braces and one or more markers.
 
 {{< mnote up=23 >}}
 These HTML tags are not present in the Markdown &rightarrow; `unsafe: false`. They are introduced after Goldmark rendering with `replaceRE` of [replacement codes](/doc/replace).

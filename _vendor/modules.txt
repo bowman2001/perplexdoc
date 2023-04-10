@@ -1,4 +1,4 @@
-# github.com/bowman2001/perplex v0.0.0-20230410161959-3c13b5297de3
+# github.com/bowman2001/perplex v0.0.0-20230410183222-a956c23cd6fe
 # github.com/bowman2001/hugo-mod-replacements v0.3.1
 # github.com/bowman2001/hugo-mod-meta v0.0.0-20230402193142-9f1a0bfe2023
 # github.com/bowman2001/hugo-mod-open-in-vscode v1.1.0
