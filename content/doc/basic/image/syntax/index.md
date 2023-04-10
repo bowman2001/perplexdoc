@@ -22,11 +22,11 @@ The CommonMark image syntax is short and the theme distinguishes between two pos
 
 ## Syntax
 
-The CommonMark image element is syntactically very similar to a [link](/doc/basic/link). The sole difference: The image element begins with an exclamation mark `!`. There are also two notations to reference the source: **Inline** or **reference**.
+The CommonMark image element is syntactically very similar to a [link](/doc/basic/link). The sole difference is, that the image element begins with an exclamation mark: `!`. There are also two notations to reference the source: **Inline** or **reference**.
 
 Additionally, the theme makes further distinctions:
 
-- The two possible ways to place an image — **stand-alone** or **embedded** — are handled differently.
+- The two possible ways to place an image in Markdown — **stand-alone** or **embedded** — are handled differently.
 
 - **Resource parameters** and a few **in-place parameters** can enhance and change the image layout.
 

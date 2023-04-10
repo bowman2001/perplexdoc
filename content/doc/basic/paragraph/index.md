@@ -28,7 +28,7 @@ Paragraphs are the essential building blocks of text. A comfortable line length 
 
 A paragraph is a sequence of Unicode characters with arbitrary length. It’s finished by an empty line.
 
-In addition to the normal paragraph Perplex offers a **first** paragraph — like the first one on this page. There is also a **big** and a **small** one. We can also assign a topic or some other general category to a following section by adding a **meta** paragraph above it.
+In addition to the normal paragraph, the theme offers a **first** paragraph — like the first one on this page. There is also a **big** and a **small** one. We can also assign a topic or some other general category to a following section by adding a **meta** paragraph above it.
 
 These styles are applied with the [attributes](/doc/attribute) `{.p-first}`, `{.p-big}`, `{.p-small}` and `{.p-meta}`.
 

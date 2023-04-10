@@ -38,10 +38,10 @@ For crisp images on high-density screens, we should at least provide images for 
 | embedded (default) \& small block | {{< width/column 2 >}} | {{< width/column 3 >}} |
 | small embedded | {{< width/column 1 >}} | {{< width/column 1.5 >}} |
 
-When we build a project with more than hundred images — like this project — we have to show a little patience on the first Hugo run. Image processing may take a few minutes. The generated images are cached by Hugo and we don’t have to wait again in subsequent runs.
+When we build a project with more than a hundred images — like this project — we have to show a little patience on the first Hugo run. Image processing may take a few minutes. The generated images are cached by Hugo and we don’t have to wait again in subsequent runs.
 
 {{< mnote up=14 >}}
-On **virtual machines** we should enable a caching mechanism. If the provider pulls the content from a repository, we can  include the reserved {$_resources} folder, where processed files are stored.
+On **virtual machines** we should enable a caching mechanism. If the provider pulls the content from a repository, we can include the reserved {$_resources} folder, where processed files are stored.
 {{< /mnote >}}
 
 In case we can’t provide a large enough version of an image, Perplex uses an [excellent interpolation filter][filter] provided by Hugo to enlarge its size smoothly. Those interpolated images may look blurry nonetheless, there is no way to get missing information back. A high resolution of the original is always preferable.
