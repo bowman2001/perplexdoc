@@ -64,16 +64,16 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ## Images
 
-Since Hugo version 0.108.0 we an distinguish stand-alone and embedded images.
+Since version 0.108.0 Hugo allows distinguishing stand-alone and embedded images.
 
 ### Stand-alone
 
-![](bigsplash)
+![A big splash of water](bigsplash)
 
 ### Embedded
 
-![](splash) Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
-{.blind}
+![A smaller splash of water](splash) Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+{.blind .blind-right}
 
 ## Link
 
@@ -100,7 +100,7 @@ The blockquote element represents content that is quoted from another source, op
 
 ## Tables
 
-Tables aren't part of CommonMark, but Hugo supports them out of the box.
+Tables aren't part of CommonMark, but Hugo supports their syntax as an extension by default.
 
 ### Centered table columns
 
@@ -190,13 +190,18 @@ Tables aren't part of CommonMark, but Hugo supports them out of the box.
   
 ### Definition list
 
+The definition list is also an extension for Goldmark supported by Hugo.
+
 First term
 : Description of the first term
 
 Second term
 : Description of the second term
 
-## Other Elements — sub, sup, kbd, mark, abbr
+## Missing Markdown elements
+
+Some inline HTML elements have no corresponding syntax in Goldmark. We can either enable raw HTML in Markdown or use some hacky tricks to generate them with Hugo.
+### Simple inline: sub, sup, kbd, mark, cite
 
 H{_2}O, X{^n} + Y{^n} = Z{^n}
 
@@ -204,10 +209,14 @@ Press {%CTRL} + {%ALT} + {%Delete} to end the session.
 
 Most {!salamanders} are nocturnal, and hunt for insects, worms, and other small creatures.
 
+We can reference a {=book}.
+
+{{< mnote up=23 >}}
+This theme supports safe Markdown &rightarrow; `unsafe: false`. These elements are placed after Goldmark rendering with `replaceRE` of [replacement codes](/doc/replace).
+{{< /mnote >}}
+
+### Inline with attributes: abbr, dfn
+
 [HTML](abbr "HyperText Markup Language")
 
 [Replacement codes](dfn "replacement") are defined by curly braces and one or more markers.
-
-{{< mnote up=23 >}}
-These HTML tags are not present in the Markdown &rightarrow; `unsafe: false`. They are introduced after Goldmark rendering with `replaceRE` of [replacement codes](/doc/replace).
-{{< /mnote >}}

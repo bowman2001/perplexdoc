@@ -23,7 +23,7 @@ To attach the attributes correctly in Markdown, have a look at the short [Howto]
 |Element    | Attribute Name | CSS-class |
 |:----------|:--------|-------:|
 | Headings  | [Paragraph heading](/doc/basic/headings#h-p) | {$.h-p} |
-| | Small paragraph h. | {$.h-p .h-p-s} |
+| | Small paragraph h. | {$.h-p-s} |
 | | Warning | {$.h-warn} |
 | | Info | {$.h-info} |
 | | Tip | {$.h-tip} |
