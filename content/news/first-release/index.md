@@ -4,7 +4,6 @@ title: First Release of the Perplex theme
 date: 2023-04-10T22:04:33+02:00
 categories: [Release]
 tags: [fluid responsive]
-draft: true
 ---
 
 A new fluid-responsive theme for Hugo is available for test runs.
