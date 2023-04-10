@@ -11,6 +11,16 @@ A new fluid-responsive theme for Hugo is available for test runs.
 {.p-first}
 <!--more-->
 
-The next release will include author pages. I’m going to implement them as taxonomy pages. 
+The release is available on [GitHub](https://github.com/bowman2001/perplex/releases/tag/v0.1.0-beta.1) and also included in the repo of [the documentation](https://github.com/bowman2001/perplexdoc).
 
-Before an official announcement in the Hugo-forum about this theme, the overview pages need to get ready.
+This [documentation](/doc) is also a demonstration and a test for the theme.
+
+Before the announcement in the Hugo forum, the overview in the documentation for seasoned Hugo users will be ready:
+
+- The usual [one-page Markdown demonstration](/doc/overview/markdown)
+
+- A few remarks about the concept and the goals of this theme.  
+
+- Current and planned features.
+
+The next beta release will include author pages. I’m planning to implement them as taxonomy pages.
