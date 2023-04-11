@@ -3,7 +3,7 @@ author: Georg Makowski
 title: The local Workflow
 description: Write while watching instant previews 
 subtitle: false
-date: 2022-09-11T14:58:16+02:00 
+date: 2022-09-11T14:58:16+02:00
 weight: 35
 menu:
   doc:
@@ -22,12 +22,12 @@ tags: [Hugo]
 While working on our content, we like to examine the result. To generate an immediate local preview, we run Hugo in server mode.
 {.p-first} <!--more-->
 
-The following instructions assume, that you have opened a terminal and changed to your project root containing a copy of this documentation project.
+The following instructions assume, that you have opened a terminal and are in your project root containing a copy of this documentation project.
 
 ## Hugo’s server mode
 
 ```sh {.left}
-hugo server -D --navigateToChanged 
+hugo server -D --navigateToChanged
 ```
 
 This command in the root of a project starts the [Hugo server][server]. All the HTML pages are rendered into memory and the site is served under <http://localhost:1313> by default.
@@ -38,7 +38,7 @@ Hugo’s server can be specially configured to show a site on a public IP addres
 
 - The flag `-D` lets Hugo include **drafted** files. All files created with `hugo new` include `draft: true` in the front matter. When a Markdown file is ready for [publishing](/doc/intro/workflow/publish), we need to remove this entry or change it to `draft: false`.
 
-- The flag `--navigateToChanged` tells the server to relay the page of the last changed file to the browser. As soon as we save a content file the corresponding page pops up in the browser.
+- The flag `--navigateToChanged` tells the server to relay the page of the last changed file to the browser. When we save a changed content file the corresponding page gets served in the browser.
 
 ## Your first content
 
@@ -57,7 +57,7 @@ title: First
 date: 2022-07-01T21:22:27+02:00
 ```
 
-The `author` value is optional, the `title` and the `date` are mandatory. The `title` is just guessed from the file name — you probably want to change it. The `date` contains the moment when we ran the `hugo new` command in a special format. You can also change it but need to be very careful.
+The `author` value is optional, the `title` and the `date` are mandatory. The `title` is just guessed from the file name — you probably want to change it. The `date` contains the moment when we ran the `hugo new` command in a special format. You can also change it but need to be very careful, because typos may lead to errors.
 
 At first, we ignore the following empty `resources` section and its parameters. We’ll [catch up later](/doc/intro/workflow/resources) with that.
 
