@@ -43,7 +43,7 @@ The suffixes ›{$mdown}‹ and ›{$markdown}‹ also indicate Markdown, but ar
 
 After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors of Markdown emerged.
 
-To resolve their incompatibilities and to create a dependable basic syntax, John Mc&hairsp;Farlane et al. proposed a strict specification in 2011: [CommonMark][cmark]. This specification has been implemented by many Markdown render engines since and important web-software providers thereby adhere to CommonMark as a kind of standard. For a quick look at the syntax you can visit their crisp [one page overview](https://CommonMark.org/help).
+To resolve their incompatibilities and to create a dependable basic syntax, John Mc&hairsp;Farlane et al. proposed a strict specification in 2011: [CommonMark][cmark]. This specification has been implemented by many Markdown render engines since and important web-software providers thereby adhere to CommonMark as a kind of standard. For a quick look at the syntax, you can visit their crisp [one page overview](https://CommonMark.org/help).
 
 ## Markdown for Perplex
 
@@ -72,8 +72,8 @@ Two CommonMark elements are continuously creating confusion because they are tre
 
 [Line Break][lb]
 : CommonMark and GFM are not fully compatible regarding this one element. There are two different ways to handle line breaks inside of text blocks:
-    1. Treat hard line wraps in Markdown files as whitespace like CommonMark does.
-    2. Treat hard line wraps as hard line wraps like GFM.
+    1. Treat hard-line wraps in Markdown files as whitespace as CommonMark does.
+    2. Treat hard-line wraps as hard-line wraps like GFM.
 {.dl-loose}
 
 The following suggestions for these elements are short. Their issues are discussed in more detail on their pages.
@@ -110,7 +110,7 @@ How to handle hard-line wraps remains your choice without any repercussions. Hug
 Our options here are tied to the way we wrap Markdown lines.
 
 With Hard Wraps
-: When we enable hard line wraps, to manually limit the line length, we can’t use them to indicate intentional line breaks anymore. We need the special syntax CommonMark provides.
+: When we enable hard-line wraps, to manually limit the line length, we can’t use them to indicate intentional line breaks anymore. We need the special syntax CommonMark provides.
 
 With Soft Wraps
 : If the lines are not wrapped, a line break is the intuitive way to place an intentional one.

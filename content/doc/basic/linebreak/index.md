@@ -22,18 +22,18 @@ resources:
       ratio: 1.5
 ---
 
-Sometimes we like to begin a new line without starting a whole new text block. To place such a hard line break gets complicated, when **hard line wraps** limit the line length inside our Markdown files.
+Sometimes we like to begin a new line without starting a whole new text block. To place such a hard-line break gets complicated, when **hard-line wraps** limit the line length inside our Markdown files.
 {.p-first} <!--more-->
 
 ## Syntax
 
-There are two ways to place intentional hard line breaks, which depend on the way we handle hard line wraps.
+There are two ways to place intentional hard-line breaks, which depend on the way we handle hard-line wraps.
 
 CommonMark
-: allows **hard wraps** — a.&hairsp;k.&hairsp;a. hard line breaks — to limit the line length. They are treated just like spaces. Therefore, CommonMark needs a special syntax element for an intentional line break.
+: allows **hard wraps** — a.&hairsp;k.&hairsp;a. hard-line breaks — to limit the line length. They are treated just like spaces. Therefore, CommonMark needs a special syntax element for an intentional line break.
 
 GitHub
-: instead, treats hard line breaks simply as such. In this case we probably need to use **soft wraps** in our editor to limit the line length, which may be a good habit anyway. (See also: [Writing Markdown][hwl])
+: instead, treats hard-line breaks simply as such. In this case we probably need to use **soft wraps** in our editor to limit the line length, which may be a good habit anyway. (See also: [Writing Markdown][hwl])
 {.dl-loose}
 
 ### The CommonMark Way
