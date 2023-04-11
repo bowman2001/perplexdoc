@@ -25,6 +25,6 @@ Perplex publishes technical content written in **Markdown**
 with the static site generator **Hugo**.
 {.p-first} <!--more-->
 
-The theme provides templates for documentation with up to three section levels, for news and blog postings, and single pages. Templates for long articles and author pages will follow soon.
+The theme provides templates for documentation with up to three section levels, for news, and blog postings. Templates for author pages and long articles will follow soon.
 
 The main chapters of this documentation assume basic knowledge about Markdown and Hugo. Doesn't sound familiar at all? The following pages about these topics get you started.
