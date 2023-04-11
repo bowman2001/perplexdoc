@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 title: Resource Organization
-description: How to include additional files
+description: How to include files like images
 subtitle: false
 date: 2022-09-11T14:58:46+02:00 
 weight: 45

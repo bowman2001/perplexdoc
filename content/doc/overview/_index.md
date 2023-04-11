@@ -1,7 +1,7 @@
 ---
 author: Georg Makowski
 title: TL;DR
-description: Overview for seasoned Hugoers 
+description: Overview for seasoned Hugo users
 date: 2022-05-11T23:46:08+02:00 
 weight: 2
 menu:
@@ -16,5 +16,5 @@ resources:
       alt: Overview of a city
 ---
 
-Short overviews of features and goals of the Perplex theme, and the usual Markdown single page quality check for Hugo themes.
+Short overview of the Perplex theme.
 {.p-first} <!--more-->
