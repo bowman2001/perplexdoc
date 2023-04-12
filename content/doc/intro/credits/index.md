@@ -30,7 +30,7 @@ Without [Chris Coyier’s][cc] always up-to-date website [CSS-Tricks][cc] I woul
 **CSS-Tricks** has been acquired by [Digital Ocean](https://digitalocean.com) recently. Hopefully, their staff will keep up the good work.
 {{< /mnote >}}
 
-Last but not least: Only thanks to [Hugo](https://gohugo.io) and its active and helpful community I could realize this theme. I owe special thanks to [Steve Francia][sf] for bringing Hugo to life, to [Joe Mooring][jm] for his numerous precise suggestions and examples, and of course to the long-time project leader [Bjørn Erik Pedersen][bep] for his ongoing enhancements and tips.
+Last but not least: Only thanks to [Hugo](https://gohugo.io) and its active and helpful community I could realize this theme. I owe special thanks to [Steve Francia][sf] for bringing Hugo to life, to [Joe Mooring][jm] for his numerous precise suggestions and examples, and of course to the long-time project leader [Bjørn Erik Pedersen][bep] for his ongoing enhancements and insights into this software.
 
 [cc]: https://chriscoyier.net/
 [mb]: https://matthewbutterick.com
