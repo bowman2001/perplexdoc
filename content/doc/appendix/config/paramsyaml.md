@@ -17,6 +17,9 @@ tags: [Parameter, Configuration]
 Parameter configuration file in {$config/_default}
 {.p-first} <!--more-->
 
+&nbsp;
+{.clear}
+
 {{< highlight yaml "linenos=true" >}}
 {{< readfile file="/config/_default/params.yaml" >}}
 {{< /highlight >}}

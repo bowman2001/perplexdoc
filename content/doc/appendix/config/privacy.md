@@ -17,6 +17,9 @@ tags: [Privacy, Configuration]
 Privacy configuration file in {$config/_default}
 {.p-first} <!--more-->
 
+&nbsp;
+{.clear}
+
 {{< highlight yaml "linenos=true" >}}
 {{< readfile file="/config/_default/privacy.yaml" >}}
 {{< /highlight >}}

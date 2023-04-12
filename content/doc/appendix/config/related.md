@@ -16,6 +16,9 @@ tags: [Related, Configuration]
 Related configuration file in {$config/_default}
 {.p-first} <!--more-->
 
+&nbsp;
+{.clear}
+
 {{< highlight yaml "linenos=true" >}}
 {{< readfile file="/config/_default/related.yaml" >}}
 {{< /highlight >}}

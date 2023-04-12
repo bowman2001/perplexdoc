@@ -17,6 +17,7 @@ The security configuration file in {$config/&zwnj;_default} contains the runtime
 {.p-first} <!--more-->
 
 The general concept is to restrict Hugo’s access to its surrounding environment --- a.k.a. sand-boxing.
+{.clear}
 
 
 {{< highlight yaml "linenos=true" >}}
