@@ -107,11 +107,11 @@ We can specify the following parameters with the given key names and types of va
 | Size | size | {{% parameters imaging.embedded.size %}} |
 | Target | target | {{% parameters link.target %}} |
 
-When we need many of these parameters, the figure tag gets very long and therefore prone to typing errors. Perplex also offers the alternative to specify these parameters in the resources section of the front matter.
+When we need many of these parameters, the figure tag gets very long and therefore prone to typing errors. Perplex also offers the alternative to specify these parameters in the resources section of the front-matter.
 
-#### Overriding of front matter meta-data {.h-p .h-info}
+#### Overriding of front-matter meta-data {.h-p .h-info}
 
-When we have set parameters in the front matter and also specify them in named parameters for the shortcode, the latter will override the former. Same goes for the optional caption between the shortcode tags.
+When we have set parameters in the front-matter and also specify them in named parameters for the shortcode, the latter will override the former. Same goes for the optional caption between the shortcode tags.
 
 ## Layout
 

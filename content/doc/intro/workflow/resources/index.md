@@ -14,7 +14,7 @@ categories: [Resources, Getting started]
 tags: [Image]
 ---
 
-This theme expects resources like images as local files. We need to place them in page bundles and register them in the front matter of the Markdown file. Resource files from parent sections or taxonomies may be re-used conveniently.
+This theme expects resources like images as local files. We need to place them in page bundles and register them in the front-matter of the Markdown file. Resource files from parent sections or taxonomies may be re-used conveniently.
 {.p-first} <!--more-->
 
 Hugo allows to handle resources in different ways and this theme supports the one which has a lot of support by Hugo out of the box, offers a lot of flexibility and doesn’t rely on external services{^*}.
@@ -28,7 +28,7 @@ The theme could be extended to work with external providers of course, but this 
 There are three ways to store and retrieve resource files (like images):
 
 Page specific
-: We can save them in the folder of a page bundle and access them with a short relative path. We then need to register the resources in the front matter and add additional meta-data. This Hugo feature has one big advantage: Every content structure is self-sufficient and may be re-used in other sites simply by cloning its folder.
+: We can save them in the folder of a page bundle and access them with a short relative path. We then need to register the resources in the front-matter and add additional meta-data. This Hugo feature has one big advantage: Every content structure is self-sufficient and may be re-used in other sites simply by cloning its folder.
 
 Site specific
 : We can save them in the {$assets} folder and can use them for every page of our project. The [favorite icon](/doc/site/favicon) is an example for this theme.

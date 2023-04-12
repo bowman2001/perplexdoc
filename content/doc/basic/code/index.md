@@ -85,9 +85,7 @@ The HTML tag to mark the beginning of code is `<code>`. And to mark the end we u
 
 ### Block
 
-The first backticks marking a code block may be followed by an abbreviation for the code language. Then Hugo is able to highlight and colorize the source code for better legibility. The abbreviations are usually the same as the common suffix for a code file.
-
-### Fenced
+There are a lot of options.
 
 #### Without line numbers
 
@@ -102,15 +100,11 @@ And to mark the **end** we use the corresponding closing tag `</code>`.
 The *HTML* tag at the **beginning** of code is `<code>`.
 And to mark the **end** we use the corresponding closing tag `</code>`.
 ```
+#### Special sizes
 
-### Indented
+For code examples with long lines, we can expand the block into the margin:
 
-    The _HTML_ tag at the **beginning** of code is `<code>`.
-    And to mark the **end** we use the corresponding closing tag `</code>`.
-
-### Long lines
-
-```go {class=full-width linenos=true}
+```go {class=large linenos=true}
 // NodeRendererFunc is a function that renders a given node.
 type NodeRendererFunc func(writer util.BufWriter, source []byte, n ast.Node, entering bool) (ast.WalkStatus, error)
 
@@ -121,25 +115,9 @@ type NodeRenderer interface {
 }
 ```
 
-```md {linenos=true, linenostart=3, hl_lines=["3-4"]}
-Normal consecutive text is transformed by the markdown renderer to a paragraph
-block.
+When all code lines are no longer than 40 characters, we can place them inside or beside the text:
 
-Every blank line indicates the beginning of a new paragraph.
-> A blockquote is marked by a `>` at the beginning of every line
-> of the quote. It may contain *text formatting* itself.
-```
-
-An unformatted text segment like this one is transformed by the markdown renderer to a paragraph block.
-
-Every _blank_ line indicates the beginning of a _new_ paragraph.
-> A blockquote is marked by a `>` at the beginning of every line of the quote. It may contain _text formatting_ itself.
-
-***
-
-### When all lines are no longer than 40 characters
-
-```json
+```json {.left linenos=true}
 {
   "firstName": "John",
   "lastName": "Smith",
@@ -148,7 +126,9 @@ Every _blank_ line indicates the beginning of a _new_ paragraph.
 }
 ```
 
-```bash {.lh15}
+{{< farfar 1 >}}
+
+```bash {.lh15 .right}
 ├── assets
 ├── config
 ├── package.json
@@ -156,6 +136,14 @@ Every _blank_ line indicates the beginning of a _new_ paragraph.
 ├── resources
 └── themes
 ```
+
+{{< farfar 1 >}}
+
+### Indented
+
+    The _HTML_ tag at the **beginning** of code is `<code>`.
+    And to mark the **end** we use the corresponding closing tag `</code>`.
+
 
 [hugochroma]: https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages
 

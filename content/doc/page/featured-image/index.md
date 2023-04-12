@@ -32,7 +32,7 @@ If no featured image is available, Perplex will search for one in related pages 
 
 ## Syntax
 
-To make the image file available to Hugo and the theme, it also needs to be registered in the [resources section](/doc/intro/workflow/resources) of the front matter. The filename of the image is identified by its reserved name `featured`. And you can add an alternative text for your image with the `alt` parameter.
+To make the image file available to Hugo and the theme, it also needs to be registered in the [resources section](/doc/intro/workflow/resources) of the front-matter. The filename of the image is identified by its reserved name `featured`. And you can add an alternative text for your image with the `alt` parameter.
 
 The content file of this page for example contains the following section:
 

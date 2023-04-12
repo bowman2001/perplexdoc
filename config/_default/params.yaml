@@ -20,4 +20,4 @@ imaging:
 
 render_hooks:
     link:
-      errorLevel: ignore
+      errorLevel: warning

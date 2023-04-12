@@ -69,7 +69,7 @@ When a heading exceeds the line length of the layout, it breaks automatically. T
 
 and we get:
 
-### Very long heading with a complicated topic{/}stretching over more than one line
+### A better very long heading with a complicated topic{/}stretching over more than one line
 
 The line break is displayed only when the screen can show the full width of the main text. Otherwise, it’s removed, because additional line breaks make things worse on small screens with arbitrary line breaks.
 
@@ -84,7 +84,7 @@ Headings are not only recognized by their font styling but also by the white spa
 If the page already has a title, the first heading **should not** occur in the Markdown content. Like many themes, this one generates titles on all pages.
 
 {{< mnote up=8 >}}
-The entire [title section](/doc/page/title) is generated from parameters in the front matter.
+The entire [title section](/doc/page/title) is generated from parameters in the front-matter.
 {{< /mnote >}}
 
 The first heading remains reserved for titles. We may want to compose a title in Markdown on special pages. But with this theme, we usually don’t need it at all.

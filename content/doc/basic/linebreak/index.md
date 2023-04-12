@@ -22,7 +22,7 @@ resources:
       ratio: 1.5
 ---
 
-Sometimes we like to begin a new line without starting a whole new text block. To place such a hard-line break gets complicated, when **hard-line wraps** limit the line length inside our Markdown files.
+Sometimes we like to begin a new line without starting a whole new text block. To place such a hard-line break gets complicated when **hard-line wraps** limit the line length inside our Markdown files.
 {.p-first} <!--more-->
 
 ## Syntax
@@ -33,7 +33,7 @@ CommonMark
 : allows **hard wraps** — a.&hairsp;k.&hairsp;a. hard-line breaks — to limit the line length. They are treated just like spaces. Therefore, CommonMark needs a special syntax element for an intentional line break.
 
 GitHub
-: instead, treats hard-line breaks simply as such. In this case we probably need to use **soft wraps** in our editor to limit the line length, which may be a good habit anyway. (See also: [Writing Markdown][hwl])
+: instead, treats hard-line breaks simply as such. In this case, we probably need to use **soft wraps** in our editor to limit the line length, which may be a good habit anyway. (See also: [Writing Markdown][hwl])
 {.dl-loose}
 
 ### The CommonMark Way
@@ -57,7 +57,7 @@ Hard line breaks
 : break lines hard.
 {.dl-loose}
 
-If we change the line-breaking from CommonMark’s way to GitHub’s, Hugo still recognizes the CommonMark breaks, when `hardWraps` is set to `true`. We don’t need to replace them. But we need to remove all simple breaks, because they are now also treated as intentional line breaks.
+If we change the line-breaking from CommonMark’s way to GitHub’s, Hugo still recognizes the CommonMark breaks. We don’t need to replace them. But we need to remove all simple breaks because they are now also treated as intentional line breaks.
 
 ### What now?
 

@@ -74,7 +74,7 @@ categories: []
 tags: []
 ```
 
-When the number of entries rises, we need some navigation structure for these types. We best provide it by adding **taxonomies**{^\*}. Hugo’s default taxonomies are the usual **categories** and **tags**. Every new front matter already includes the parameter keys and an empty list `[]`.
+When the number of entries rises, we need some navigation structure for these types. We best provide it by adding **taxonomies**{^\*}. Hugo’s default taxonomies are the usual **categories** and **tags**. Every new front-matter already includes the parameter keys and an empty list `[]`.
 
 {{< mnote up=8 star=1 >}}
 We can also add sub-folders and modify the URL structure. To provide an optional separate list view for a sub-folder, we also need to create a [branch file `_index.md`](#list) inside. Because taxonomies are the preferred structure for postings in Perplex, links to these additional sections only show up in the breadcrumbs at the bottom of the pages.
@@ -92,13 +92,13 @@ apply to our whole site and are completely independent of the folder structure. 
 
 #### Sidebar Menu for Documentation Pages
 
-A larger documentation site needs navigation. The theme builds the sidebar from parameters in the front matter. You may have expected a central menu configuration, but this way is much easier. When we create a new documentation page we usually know, where we like to put it in the hierarchy. We create a new doc page like
+A larger documentation site needs navigation. The theme builds the sidebar from parameters in the front-matter. You may have expected a central menu configuration, but this way is much easier. When we create a new documentation page we usually know, where we like to put it in the hierarchy. We create a new doc page like
 
 ```sh {.left}
 hugo new doc/demo/first.md
 ```
 
-Now we have a front matter containing a few more entries than a blog post. The first lines are the same and left out here:
+Now we have a front-matter containing a few more entries than a blog post. The first lines are the same and left out here:
 
 ```yaml {linenos=true linenostart=6 class=col-left}
 TODO
@@ -123,7 +123,7 @@ The new parameter `weight` is of general meaning for the order of all pages on a
 : is used very specific by Perplex: It contains the identifier for a **Material Icon** from _Google_. To change it, please visit their [website](http://fonts.google.com/icons). You can pick any icon there and copy the identifier from the icon font embedding section (It's usually the icon name written in lower letters and with underscores `_` instead of spaces).
 {.dl-loose}
 
-To place your new page in the coming menu section, you will need to set `parent: demo` in the front matter of {$doc/demo/first.md}. But we aren’t there yet, because we need to create the demo section first. And like every kind of section page in Hugo this will be a list page.
+To place your new page in the coming menu section, you will need to set `parent: demo` in the front-matter of {$doc/demo/first.md}. But we aren’t there yet, because we need to create the demo section first. And like every kind of section page in Hugo this will be a list page.
 
 ### List pages (branch bundles) {#list}
 
@@ -137,7 +137,7 @@ hugo new doc/demo/_index.md
 
 We can distinguish the filename {$\_index.md} for the branch bundle only by the leading underscore from the filename {$index.md} for a [leaf bundle](#leaf)! We need to be careful about this, because they have a very different purpose and function. A branch bundle collects as many pages and may include as many other bundles as we need — there is no technical limit to the directory depth. A branch bundle can act like a chapter, section or subsection depending on its place in the folder hierarchy.
 
-After the front matter {\_index.md} may contain general content about its section. Its most important function is to trigger the generation of a specific list view for the content included in this branch.
+After the front-matter {\_index.md} may contain general content about its section. Its most important function is to trigger the generation of a specific list view for the content included in this branch.
 
 {{< mnote up=11 >}}
 **No subdirectories** are accessible to retrieve resources in `_index.md`. All resources specific for the list also need to be placed at the root of the _branch bundle_. This limitation avoids confusion about the purpose of possible sub-folders.

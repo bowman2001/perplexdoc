@@ -9,10 +9,9 @@ menu:
     name: Missing Features
     parent: tldr
     pre: rule
-categories: []
+categories: [Overview]
 tags: [feature]
 weight: 9
-draft: true
 ---
 
 Features, which I consider essential before a public release, and the ones which would be nice to have.
@@ -22,32 +21,32 @@ Features, which I consider essential before a public release, and the ones which
 ## Essential
 
 Author pages
-: an {$authors} taxonomy with a special template looks like the best idea.
+: an {$authors} taxonomy with a special template should do it.
 
 Better SEO
 : This will happen in the module [{$hugo-mod-meta}](https://github.com/bowman2001/hugo-mod-meta)
 
-Site-wide search form
+Site-wide search
 : Javascript library without dependencies called in a modal window --- [this module][search] looks promising.
 
 Social Icons
 : Simple icons are looking like the obvious choice.
 {.dl-loose}
 
-[search]: https://github.com/hugomods/search "Module by Razon Yang"
+[search]: https://github.com/hugomods/search "Search module by Razon Yang"
 
 ## Nice to have
 
 ### Colors
 
-- An easy way to change the four basic colors and their derivatives in the theme --- would probably require the additional installation of postcss.
+- An easy way to change the four basic colors and their derivatives in the theme --- will require the additional installation of PostCss.
 
 - Dark Mode
 
 ### Icons
 
-- SVG Icons (at the moment the only icons available are the web font set of Google Material Icons)
+- SVG Icons (at the moment the web font set of Google Material Icons is available)
 
-- Other icon sets than Material Icons
+- A choice between other icon sets than Material Icons
 
 Suggestions are also welcome as new issues in the [repo](https://github.com/bowman2001/perplex).

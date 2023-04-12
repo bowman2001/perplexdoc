@@ -145,7 +145,7 @@ Hugo offers a very convenient way of looking at your results instantly: When you
 
 ### Front-Matter CMS {.h-info}
 
-Front-Matter CMS is an exciting plugin for VSCode which offers many nice features. Unfortunately, I can’t recommend it right now for this theme, because it may change the front matter in a way that alters the site structure. It’s also not capable of handling Hugo’s resource parameters out of the box. The plugin probably handles other projects very fine and I hope to use it in the future.
+Front-Matter CMS is an exciting plugin for VSCode which offers many nice features. Unfortunately, I can’t recommend it right now for this theme, because it may change the front-matter in a way that alters the site structure. It’s also not capable of handling Hugo’s resource parameters out of the box. The plugin probably handles other projects very fine and I hope to use it in the future.
 
 ## Markdown Linter
 CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins to use it directly while editing.

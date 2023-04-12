@@ -90,7 +90,7 @@ The default for the usual stand-alone CommonnMark image element is the normal si
 
 ![Placeholder image](fig/normal.svg)
 
-Only if we register the source file in the front matter as a named resource, we can add a caption etc. and generate the different layout options shown in the next sections. The following body copy consists of **blind text**, but the captions are descriptive.
+Only if we register the source file in the front-matter as a named resource, we can add a caption etc. and generate the different layout options shown in the next sections. The following body copy consists of **blind text**, but the captions are descriptive.
 
 ## Tiny
 

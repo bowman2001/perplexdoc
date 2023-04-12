@@ -16,7 +16,7 @@ resources:
     alt: Markdown logo
     size: tiny
     container: "no"
-categories: [Getting started, Markdown]
+categories: [Overview, Markdown]
 tags: [Block, Inline]
 weight: 5
 ---
@@ -200,7 +200,7 @@ Second term
 
 ## Missing Markdown elements
 
-Some inline HTML elements have no corresponding syntax in Goldmark. We can either enable raw HTML in Markdown or use some hacky tricks to generate them with Hugo.
+Some inline HTML elements have no corresponding syntax in Goldmark. We can either enable raw HTML in Markdown or use some Hugo features to generate them.
 ### Simple inline: sub, sup, kbd, mark, cite
 
 H{_2}O, X{^n} + Y{^n} = Z{^n}
@@ -220,3 +220,7 @@ This theme supports safe Markdown &rightarrow; `unsafe: false`. These elements a
 [HTML](abbr "HyperText Markup Language")
 
 [Replacement codes](dfn "replacement") are defined by curly braces and one or more markers.
+
+{{< mnote up=10 >}}
+These elements are inserted with the reserved link targets “{$abbr}” and “{$dfn}” and a title for the render-link hook.
+{{< /mnote >}}

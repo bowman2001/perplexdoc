@@ -16,5 +16,5 @@ resources:
       alt: Overview of a city
 ---
 
-Short overview of the Perplex theme.
+Short overview of the Perplex theme for seasoned Hugo users.
 {.p-first} <!--more-->

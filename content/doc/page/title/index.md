@@ -45,12 +45,12 @@ Articles
 {.dl-loose}
 
 ### Day of publishing
-This information is contained in the `date` parameter of the front matter data and ususally set to the date, when the content file has been generated with `hugo new`.
+This information is contained in the `date` parameter of the front-matter data and ususally set to the date, when the content file has been generated with `hugo new`.
 
 ### Page Title
-The page title is taken from the `title` parameter in the front matter and may contain inline Markdown formatting like emphasis.
+The page title is taken from the `title` parameter in the front-matter and may contain inline Markdown formatting like emphasis.
 
 ### Subtitle
-The subtitle is taken from the `description` parameter in the front matter, if the front matter parameter `subtitle` is `true`. It may also contain inline markup.
+The subtitle is taken from the `description` parameter in the front-matter, if the front-matter parameter `subtitle` is `true`. It may also contain inline markup.
 
 The subtitle is an optional element, because there is also the possibility to show a [standfirst paragraph](/doc/page/standfirst) at the beginning of the content. It’s up to the editor, which elements to use.
