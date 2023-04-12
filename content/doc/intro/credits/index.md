@@ -15,14 +15,18 @@ resources:
   - name: featured
     src: rachel-coyne-tImZgkTcCbQ-unsplash.jpg
     params:
-      alt: An open book with a lot of hand-written notes and a nice flower laying on the left page
+      alt: An open book with a lot of hand-written notes and a flower laying on the left page
 ---
+
+The development of an open-source theme is a strange kind of collaborative effort. Even without personally knowing all the people I have benefitted from, I would like to thank them.
+{.p-first}
+<!--more-->
 
 All images in this documentation were made available free of charge by numerous skilled photographers on [Unsplash][unsplash]. Their names and a link to the source are given in the captions.
 
 The concept for a layout geared towards classical typographic principles grew over some years out of many already existing ideas. I can’t even mention every helpful author I read about typography and CSS techniques. Many conceptual parts date back to [Matthew Butterick’s][mb] beautiful online book [{=Practical Typo&shy;graphy}][pt]. It also taught me a lot about typography in general and some about distinctive American-English features.
 
-Perplex is --- as the name says --- based on [IBM’s[[ibm] corporate open-source font family [Plex][plex]. These fonts are made for technical publishing and even offer a serif version.
+Perplex is --- as the name says --- based on [IBM’s][ibm] corporate open-source font family [Plex][plex]. These fonts are made specifically for technical publishing and even offer a nice serif version.
 
 Without [Chris Coyier’s][cc] always up-to-date website [CSS-Tricks][cc] I would have been lost in the CSS specs. He and all his contributors have been clarifying the constantly evolving capabilities of CSS like only a few others.
 
@@ -30,7 +34,7 @@ Without [Chris Coyier’s][cc] always up-to-date website [CSS-Tricks][cc] I woul
 **CSS-Tricks** has been acquired by [Digital Ocean](https://digitalocean.com) recently. Hopefully, their staff will keep up the good work.
 {{< /mnote >}}
 
-Last but not least: Only thanks to [Hugo](https://gohugo.io) and its active and helpful community I could realize this theme. I owe special thanks to [Steve Francia][sf] for bringing Hugo to life, to [Joe Mooring][jm] for his numerous precise suggestions and examples, and of course to the long-time project leader [Bjørn Erik Pedersen][bep] for his ongoing enhancements and insights into this software.
+Last but not least: Only thanks to [Hugo](https://gohugo.io) and its active and helpful community I could realize this theme. I owe special thanks to [Steve Francia][sf] for bringing Hugo to life, to [Joe Mooring][jm] for his numerous precise suggestions and examples, and of course to the long-time project leader [Bjørn Erik Pedersen][bep] for his ongoing enhancements and insights into this marvelous software.
 
 [cc]: https://chriscoyier.net/
 [mb]: https://matthewbutterick.com

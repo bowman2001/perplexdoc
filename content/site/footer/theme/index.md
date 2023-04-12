@@ -16,3 +16,6 @@ weight: 10
 ![](perplex)
 
 Apache 2.0 license
+
+## Credits
+[Thanks to you all!](/doc/intro/credits)

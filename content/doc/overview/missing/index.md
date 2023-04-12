@@ -47,6 +47,6 @@ Social Icons
 
 - SVG Icons (at the moment the web font set of Google Material Icons is available)
 
-- A choice between other icon sets than Material Icons
+- A choice to use other icon sets than Material Icons
 
-Suggestions are also welcome as new issues in the [repo](https://github.com/bowman2001/perplex).
+Suggestions are also welcome as new issues in the [repo](https://github.com/bowman2001/perplex). Please check out the existing ones.

@@ -31,7 +31,7 @@ The layout is **fluid-responsive**. This concept has been around for a while but
 
 - The line length stays the same (beyond mobile).
 
-All text is placed on a **baseline grid** to introduce a comfortable vertical rhythm. Combined with the fluid-responsive design this concept allows placing images and other elements in and around the text with great accuracies [like this](/blog/image/stand-alone) or [this](/doc/image/embedded).
+All text is placed on a **baseline grid** to introduce a comfortable vertical rhythm. Combined with the fluid-responsive design this concept allows placing images and other elements in and around the text with great accuracies [like this](/blog/image/stand-alone) or [this](/doc/basic/image/inline).
 
 ## Usage concept
 
