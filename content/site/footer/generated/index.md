@@ -9,6 +9,7 @@ resources:
     link: https://gohugo.io
     container: "footer"
     svg: "file"
+    size: small
 weight: 30
 ---
 

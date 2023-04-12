@@ -9,6 +9,7 @@ resources:
     link: https://netlify.com
     container: "footer"
     svg: "file"
+    size: small
 - src: GitHub.svg
   name: github
   params:
@@ -16,6 +17,7 @@ resources:
     link: https://github.com
     container: "footer"
     svg: "file"
+    size: small
 weight: 40
 ---
 

@@ -9,6 +9,7 @@ resources:
     link: https://creativecommons.org/licenses/by-sa/4.0/
     container: "footer"
     svg: "file"
+    size: small
 weight: 20
 ---
 
