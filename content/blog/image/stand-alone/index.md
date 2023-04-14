@@ -69,16 +69,6 @@ The theme offers many different layout options for stand-alone Markdown images. 
 
 This page shows layout demonstrations. The CommonMark syntax and the additional parameter handling by this theme are described on the [image syntax page](/doc/basic/image/syntax).
 
-The numbers in the following placeholder images are roughly a multiple of the main text width.
-
-## Default
-
-The normal size occupies the main text width, because this is the way stand-alone images are usually placed in other Hugo themes.
-
-![Placeholder image](fig/normal.svg)
-
-Only if we register the source file in the front-matter as a named resource, we can add a caption etc. and generate the different layout options shown in the next sections. The following body copy consists of **blind text**, but the captions are descriptive.
-
 ## Tiny
 
 ![](tiny)
@@ -130,3 +120,9 @@ Only if we register the source file in the front-matter as a named resource, we 
 ![](xlarge)
 
 {{< farfar 1 >}}
+
+## Default
+
+The normal size occupies the main text width, because this is the way stand-alone images are usually placed in other Hugo themes.
+
+![Placeholder image](fig/normal.svg)
