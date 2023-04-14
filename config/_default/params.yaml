@@ -21,3 +21,5 @@ imaging:
 render_hooks:
     link:
       errorLevel: warning
+    fragments:
+      errorLevel: ignore
