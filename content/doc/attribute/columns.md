@@ -5,7 +5,7 @@ description: Separate a single Markdown block into columns
 menu:
   doc:
     name: Columns
-    parent: attributes
+    parent: attribute
     pre: view_column
 subtitle: false
 title: Columned Text Blocks

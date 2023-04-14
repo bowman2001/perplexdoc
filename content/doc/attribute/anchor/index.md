@@ -5,7 +5,7 @@ description: Identify and refer to block elements
 menu:
   doc:
     name: Anchors
-    parent: attributes
+    parent: attribute
     pre: anchor
 resources: 
   - src: grant-durr-21ztbENjzeI-unsplash.jpg

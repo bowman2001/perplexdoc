@@ -8,7 +8,7 @@ weight: 390
 menu:
   doc:
     name: Register
-    parent: attributes
+    parent: attribute
     pre: app_registration
 categories: [Markdown]
 tags: [Attribute] 
