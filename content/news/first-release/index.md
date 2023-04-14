@@ -16,7 +16,7 @@ A new fluid-responsive theme for Hugo is available for test runs.
 {.p-first}
 <!--more-->
 
-The release is available on [GitHub](https://github.com/bowman2001/perplex/releases/).
+The release is available on [GitHub](https://github.com/bowman2001/perplex/releases/). The extensive (but incomplete) documentation is available as [example project](https://github.com/bowman2001/perplexdoc).
 
 This site and especially the [documentation section](/doc) are a demonstration and a test of the theme.
 
