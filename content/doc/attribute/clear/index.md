@@ -7,7 +7,7 @@ date: 2023-04-14T22:02:51+02:00
 menu:
   doc:
     name: Clear
-    parent: attribute
+    parent: attributes
     pre: layers_clear
 categories: [Attribute]
 weight: 380
