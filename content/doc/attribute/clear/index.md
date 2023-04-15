@@ -19,7 +19,9 @@ Sometimes we don’t want the text to float around an embedded element anymore.
 
 ## The problem
 
-![](splash?size=small) We have an embedded element like this image and the text floats around it. This is what we want initially, but now we would like to start a new subsection with a heading and it doesn’t look good.
+On a mobile device, the following layout problem may be unrecognizable. Please use a device that shows the optimal text width (viewport &ge; {$600px}).
+
+![](splash?size=small) We have an embedded element like this image and the text floats around it. We want this initially, but now we would like to start a new subsection with a heading and that doesn’t look good.
 
 ### New subsection besides the image
 
@@ -27,7 +29,7 @@ This new subsection should start after the embedded image so that the heading re
 
 ## The solution
 
-![](bigsplash?size=small) Again, we have an embedded element and the text floats around it. This is what we want initially, but now we clear the float by adding an attribute to the containing paragraph. And now the floating stops for all the following content.
+![](bigsplash?size=small) Again, we have an embedded element and the text floats around it. Now we clear the float by adding an attribute to the containing paragraph. And the floating stops for all the following content.
 {.clear}
 
 ### Subsection after the image
