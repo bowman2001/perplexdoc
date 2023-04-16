@@ -16,7 +16,7 @@ resources:
     alt: GitHub logo
     link: https://github.com
     container: "footer"
-    svg: "file"
+    svg: inline
     size: small
 weight: 40
 ---

@@ -8,7 +8,7 @@ resources:
     alt: Creative Commons 4.0 logo
     link: https://creativecommons.org/licenses/by-sa/4.0/
     container: "footer"
-    svg: "file"
+    svg: inline
     size: small
 weight: 20
 ---
