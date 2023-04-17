@@ -5,7 +5,7 @@ fathomCustomDomain: https://piano-brilliant.desider.at
 
 # Content-Security-Policy
 cspConfig:
-  reportOnly: true
+  reportOnly: false
   
 csp:
   default:
