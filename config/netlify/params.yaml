@@ -33,5 +33,5 @@ csp:
     -  "https://piano-brilliant.desider.at"
   manifest: 'self'
   media: 'self'
-  report: "https://643aea21f1e3671a291368de.endpoint.csper.io/?v=2"
+  # report: "https://643aea21f1e3671a291368de.endpoint.csper.io/?v=2"
   worker: 'none'
