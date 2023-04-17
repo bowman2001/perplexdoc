@@ -14,10 +14,15 @@ enableGitInfo: true
 
 timeout: 500000 # Milliseconds
 
+outputs:
+  home: [HTML, RSS]
+  section: [HTML, RSS]
+
 taxonomies:
   tag: tags
   category: categories
   series: series
+  author: authors
 
 ignoreErrors:
   - error-missing-instagram-accesstoken

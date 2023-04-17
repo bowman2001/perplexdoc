@@ -19,7 +19,7 @@ imaging:
 # fathomCustomDomain: https://custom.yourdomain.com
 
 render_hooks:
-    link:
-      errorLevel: warning
-    fragments:
-      errorLevel: ignore
+  link:
+    errorLevel: warning
+  fragments:
+    errorLevel: ignore

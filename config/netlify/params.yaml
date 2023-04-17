@@ -1,3 +1,37 @@
 # Fathom Analytics
 fathomSiteID: GJTAEQVE
 fathomCustomDomain: https://piano-brilliant.desider.at
+
+
+# Content-Security-Policy
+cspConfig:
+  reportOnly: true
+  
+csp:
+  default:
+    - "https:"
+    - 'self'
+    - '*.desider.at'
+  script:
+    - 'report-sample'
+    - 'self'
+    - "https://piano-brilliant.desider.at/script.js"
+  style:
+    - 'report-sample'
+    - 'self'
+    - 'unsafe-inline'
+  object: 'none'
+  base: 'self'
+  connect: 'self'
+  font:
+    - 'self'
+    - 'data:'
+  frame: 'self'
+  img:
+    - 'self'
+    - 'data:'
+    -  "https://piano-brilliant.desider.at"
+  manifest: 'self'
+  media: 'self'
+  report: "https://643aea21f1e3671a291368de.endpoint.csper.io/?v=0"
+  worker: 'none'
