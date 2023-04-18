@@ -104,7 +104,7 @@ And to mark the **end** we use the corresponding closing tag `</code>`.
 
 For code examples with long lines, we can expand the block into the margin:
 
-```go {class=large linenos=true}
+```go {.large linenos=true}
 // NodeRendererFunc is a function that renders a given node.
 type NodeRendererFunc func(writer util.BufWriter, source []byte, n ast.Node, entering bool) (ast.WalkStatus, error)
 
@@ -117,7 +117,7 @@ type NodeRenderer interface {
 
 When all code lines are no longer than 40 characters, we can place them inside or beside the text:
 
-```json {.left linenos=true}
+```json {.left}
 {
   "firstName": "John",
   "lastName": "Smith",

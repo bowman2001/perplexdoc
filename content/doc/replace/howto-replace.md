@@ -24,7 +24,7 @@ We enclose a piece of text by curly braces `{` and `}` and add an ASCII sign aft
 Perplex includes the following replacement codes and styles them:
 
 | Element     |     Code     |   Result    |
-|:------------|:------------:|:-----------:|
+|:------------|:------------|:-----------|
 | Superscript |    {‍^3}      |    {^3}     |
 | Subscript   |    {‍_2}      |    {_2}     |
 | Keyboard    |    {‍%K}      |    {%K}     |
@@ -32,7 +32,8 @@ Perplex includes the following replacement codes and styles them:
 | Mark        |   {‍!mark}    |   {!mark}   |
 | Citation    |  {‍=work}     |  {=work}  |
 | Insertion   |  {‍+insert}   |  {+insert}  |
-
+| Conditional break | a{‍/}b |  a{/}b |
+ 
 These codes are substituted with the help of short regular expressions in the layout template [{$replacements.html}](/doc/appendix/replacements). It processes the Hugo variable `.Content` which contains the rendered Markdown as HTML string. The procedure is safe, because Goldmark treats the curly braces and their content like any other Markdown and discards any raw HTML to prevent malicious code.
 
 ## Available as a module {.h-tip}

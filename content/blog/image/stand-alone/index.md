@@ -1,5 +1,6 @@
 ---
 title: Stand-alone Image Layout 
+description: A demonstration of layout options on pages without a sidebar
 date: 2023-03-27T12:02:10+02:00
 categories: [Markdown]
 tags: [image, block]

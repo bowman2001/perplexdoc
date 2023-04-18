@@ -17,6 +17,7 @@ resources:
   params:
     alt: GitHub logo
     link: https://github.com
+    linklabel: GitHub
     container: "footer"
     svg: inline
     size: small

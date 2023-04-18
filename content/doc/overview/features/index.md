@@ -6,7 +6,7 @@ subtitle: false
 date: 2022-05-12T22:29:06+02:00 
 menu:
   doc:
-    name: Concept
+    name: Concept & Features
     parent: tldr
     pre: featured_play_list
 categories: [Overview]
