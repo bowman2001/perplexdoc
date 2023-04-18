@@ -50,7 +50,7 @@ From another page
 This is the text block, we would like to refer to.
 {#our-identifier}
 
-And this is [the reference](#our-identifier). When the anchored block is targeted by a reference, it gets a little background highlighting. Usually the anchored block is far away from the reference. Then, the browser jumps to right place first.
+And this is [the reference](#our-identifier). When the anchored block is targeted by a reference, it gets a little background highlighting. Usually, the anchored block is far away from the reference. Then, the browser jumps to the right place.
 
 ## No link checks for manual anchors {.h-info}
 
