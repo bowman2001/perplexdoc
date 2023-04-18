@@ -80,7 +80,22 @@ This line is never shown, the URL and the title are just used as attributes of t
 [ref]: http://www.example.com "Example page"
 
 ## Validation
+The link render hook of the theme checks the existence of internal links and link fragments that reference automatically generated heading identifiers.
 
-The template rendering the links checks the existence of internal links and link fragments which belong to headings.
+{{< mnote up=8 >}}
+The link hook is based on Joe Mooring’s implementation which you can find in his excellent [article on Veriphor](https://www.veriphor.com/articles/link-and-image-render-hooks/) about link and image render hooks.
+{{< /mnote >}}
 
-TODO: Explain error-levels
+The default configuration throws a warning if either a page or a fragment on a page can’t be found.
+
+```yaml
+render_hooks:
+  link:
+    errorLevel: warning  # ignore, warning, or error
+  fragments:
+    errorLevel: warning  # ignore, warning (no error)
+
+```
+
+## Relref shortcode {.h-warning}
+TODO
