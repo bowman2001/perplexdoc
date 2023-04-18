@@ -12,6 +12,7 @@ menu:
     pre: menu
 categories: [Theme]
 tags: [Navigation, Social]
+draft: true
 ---
 
 The main menu at the top of the site is always directly accessible. Social icons and their links (TODO)
