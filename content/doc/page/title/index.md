@@ -11,7 +11,6 @@ menu:
     pre: title
 categories: [Theme]
 tags: [title]
-draft: true
 ---
 
 The title section is generated from meta-data in the front-matter. There are a few parameters besides the {$title} to produce the desired result.
