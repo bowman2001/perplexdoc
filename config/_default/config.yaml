@@ -24,6 +24,8 @@ taxonomies:
   series: series
   author: authors
 
+refLinksErrorLevel: warning
+
 ignoreErrors:
   - error-missing-instagram-accesstoken
   - error-remote-getjson
