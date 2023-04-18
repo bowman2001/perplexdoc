@@ -54,8 +54,4 @@ And this is [the reference](#our-identifier). When the anchored block is targete
 
 ## No link checks for manual anchors {.h-info}
 
-Unfortunately, the template handling the links can’t check our own anchors. When a link reference to a manual anchor is validated, it appears missing and produces a bogus warning, if the `errorLevel:` for `fragments:` is set to `warning`. This does not affect the result, the links are always rendered as we have typed them. But in case we place a lot of these anchors, the warnings get annoying. Therefore, the default is set to `ignore`. 
-
-{{< mnote up=20 >}}
-The error-level for fragments can’t be set to `error` because of this.
-{{< /mnote >}}
+Unfortunately, the render hook for links can not check a manual anchor. It appears missing and produces a bogus warning, if the `errorLevel:` for `fragments:` is set to `warning`. This does **not** affect the result, the links are always rendered. (See [link validation](/doc/basic/link#validation)).

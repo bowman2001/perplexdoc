@@ -97,5 +97,9 @@ render_hooks:
 
 ```
 
+But when a link references anchors outside of headings --- manual [anchors](anchor) or line numbers in code blocks for example --- the link hook invalidates them falsely. Should you need a lot of these links you may want to set the error level for fragments to {$ignore}.  
+
+There is no possibility to throw an error for missing fragments because not all fragments are recognized. Valid content shouldn’t be able to stop a site from getting rendered (see [Anchor](anchor)).
+
 ## Relref shortcode {.h-warning}
 TODO
