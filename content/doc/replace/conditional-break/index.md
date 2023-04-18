@@ -27,6 +27,6 @@ The code `{‍/}` is placed between the words to break **without additional spac
 
 The layout changes depending on the viewport width. The break is only visible on larger screens.
 
-### A compact heading{/}may look visually appealing
+### A compact heading{/}looks visually appealing
 
 {{< farfarshort 1 >}}

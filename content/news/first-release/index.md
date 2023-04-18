@@ -1,6 +1,6 @@
 ---
 author: Georg Makowski
-title: First Release of the Perplex theme
+title: First Release{/}of the Perplex theme
 description: Sill a beta pre-release
 date: 2023-04-10T22:04:33+02:00
 categories: [Release]
