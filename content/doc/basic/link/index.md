@@ -78,3 +78,9 @@ A reference link is marked by a second set of square brackets with a short refer
 This line is never shown, the URL and the title are just used as attributes of the link element.
 
 [ref]: http://www.example.com "Example page"
+
+## Validation
+
+The template rendering the links checks the existence of internal links and link fragments which belong to headings.
+
+TODO: Explain error-levels

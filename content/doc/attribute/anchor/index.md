@@ -38,7 +38,7 @@ page or from another page on this site.
 
 ### Reference
 
-From same page
+From the same page
 : The reference is a [link](/doc/basic/link) to the anchor `[link to anchor](#our-identifier)`.
 
 From another page
@@ -48,6 +48,14 @@ From another page
 ## Layout
 
 This is the text block, we would like to refer to.
-{id=our-identifier}
+{#our-identifier}
 
 And this is [the reference](#our-identifier). When the anchored block is targeted by a reference, it gets a little background highlighting. Usually the anchored block is far away from the reference. Then, the browser jumps to right place first.
+
+## No link checks for manual anchors {.h-info}
+
+Unfortunately, the template handling the links can’t check our own anchors. When a link reference to a manual anchor is validated, it appears missing and produces a bogus warning, if the `errorLevel:` for `fragments:` is set to `warning`. This does not affect the result, the links are always rendered as we have typed them. But in case we place a lot of these anchors, the warnings get annoying. Therefore, the default is set to `ignore`. 
+
+{{< mnote up=20 >}}
+The error-level for fragments can’t be set to `error` because of this.
+{{< /mnote >}}

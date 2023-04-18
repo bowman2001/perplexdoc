@@ -12,6 +12,7 @@ title: Columned Text Blocks
 weight: 330
 categories: [Markdown]
 tags: [Columns, Attribute]
+draft: true
 ---
 
 Blocks with many short items can be more clearly arranged in columns.
