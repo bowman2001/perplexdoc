@@ -23,7 +23,7 @@ Publishing a static website involves always two basic steps: **Build & Deploy**.
 
 Many workflows for Hugo are listed in the section [Hosting & Deployment][hd] of its documentation. In all cases we need to set the parameter `baseURL` to our domain URL in the main configuration file [{$config.yaml}](/doc/appendix/config/configyaml#6).
 
-The following remarks will give you an impression of two ways to build & deploy.
+The following remarks will give you an impression of two common concepts to build & deploy.
 
 ## Use your own hardware
 
@@ -62,10 +62,10 @@ System_Boundary(abcd, "ABCD Provider") {
 
 Rel(author, repository, "Pushes/Pulls", "draft")
 Rel(author, local1, "Checks", "draft preview")
-Rel(editor, repository, "Pushes/Pulls", "draft/content")
+Rel(editor, repository, "Pushes/Pulls", "draft/finalized")
 Rel_R(editor, local2, "Checks", "draft preview")
-Rel(editor, build, "Checks", "content preview")
-Rel(build, repository, "Pulls", "content")
+Rel(editor, build, "Checks", "finalized preview")
+Rel(build, repository, "Pulls", "finalized content")
 Rel(build, net, "Deploys", "finalized site" )
 @enduml
 ```

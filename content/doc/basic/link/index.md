@@ -86,7 +86,7 @@ The link render hook of this theme checks the existence of internal links and li
 The link hook is based on Joe Mooring’s implementation which you can find in his excellent [article on Veriphor](https://www.veriphor.com/articles/link-and-image-render-hooks/) about link and image render hooks.
 {{< /mnote >}}
 
-The default configuration throws a warning if a page can’t be found and ignores missing fragments.
+Its default configuration throws a warning if a page can’t be found and renders an empty link. Fragments are by default rendered as they come --- even when they can’t be found by the hook.
 
 ```yaml
 render_hooks:
@@ -97,11 +97,11 @@ render_hooks:
 
 ```
 
-The reason for ignoring missing fragments by default is the following: Only headings and their identifiers got an additional data structure in Hugo recently. When a link references other less common identifiers --- manual [anchors](anchor) or line numbers in code blocks for example --- the link hook invalidates them falsely because there is no way to find them in a template. Should you have a lot of these, you may want to leave the error level for fragments set to {$ignore} most of the time. But the warning level of the hook proves to be very valuable for letting it report missing heading links. Now you know which warnings you can just ignore.
+The reason for allowing fragments that are unrecognizable for the template is the following: Only headings and their identifiers got an additional data structure in Hugo recently. When a link references other less common identifiers --- manual [anchors](anchor) or line numbers in code blocks for example --- the link hook invalidates them falsely because there is no way to find them in a Hugo template. Should you have a lot of these, you may want to leave the error level for fragments set to {$ignore} most of the time. But the warning level of the hook proves to be very valuable for reporting missing heading links. Now you know which warnings you can just ignore if they are enabled.
 
-There is no possibility to throw an error for missing fragments because not all fragments are recognizable in Hugo. Valid content shouldn’t be able to stop a site from getting rendered (see [Anchor](anchor)).
+There is no possibility to throw an error for missing fragments just because not all fragments are recognizable in Hugo. Valid content shouldn’t be able to stop a site from getting rendered.
 
-If you want to rigorously check all your links --- even external ones --- you need to install additional software that validates a local build of your site.
+If you want to rigorously check all your links --- even external ones --- you need to install additional software that validates a full local build of your site (see [publish](publish)).
 
 ## Relref shortcode {.h-info}
 
