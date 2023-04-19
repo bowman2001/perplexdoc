@@ -86,7 +86,7 @@ The link render hook of this theme checks the existence of internal links and li
 The link hook is based on Joe Mooring’s implementation which you can find in his excellent [article on Veriphor](https://www.veriphor.com/articles/link-and-image-render-hooks/) about link and image render hooks.
 {{< /mnote >}}
 
-Its default configuration throws a warning if a page can’t be found and renders an empty link. Fragments are by default rendered as they come --- even when they can’t be found by the hook.
+Its default configuration throws a warning if a page can’t be found and leaves the link empty. Fragments are by default rendered as they come --- even when they can’t be found by the hook. They are checked, but the result is not reported by default.
 
 ```yaml
 render_hooks:
@@ -97,14 +97,18 @@ render_hooks:
 
 ```
 
-The reason for allowing fragments that are unrecognizable for the template is the following: Only headings and their identifiers got an additional data structure in Hugo recently. When a link references other less common identifiers --- manual [anchors](anchor) or line numbers in code blocks for example --- the link hook invalidates them falsely because there is no way to find them in a Hugo template. Should you have a lot of these, you may want to leave the error level for fragments set to {$ignore} most of the time. But the warning level of the hook proves to be very valuable for reporting missing heading links. Now you know which warnings you can just ignore if they are enabled.
+The reason for always letting pass fragments that are unrecognizable for the template is the following: Only headings and their identifiers got an additional data structure in Hugo recently. When a link references other less common identifiers --- manual [anchors](anchor) or line numbers in code blocks for example --- the link hook invalidates them falsely because there is no way to find them in a Hugo template. Should you have a lot of these, you may want to leave the error level for fragments set to {$ignore} most of the time. But the warning level of the hook proves to be very valuable for reporting missing heading references at build time. Now you know which warnings you can just ignore if these warnings are enabled.
 
-There is no possibility to throw an error for missing fragments just because not all fragments are recognizable in Hugo. Valid content shouldn’t be able to stop a site from getting rendered.
+There is no possibility to throw an error for missing fragments just because not all fragments can be checked in a Hugo template. Valid content shouldn’t be able to stop a site from getting rendered.
 
-If you want to rigorously check all your links --- even external ones --- you need to install additional software that validates a full local build of your site (see [publish](publish)).
+{{< mnote up=11 >}}
+Please, don’t get me wrong: Hugo renders links to all existing identifiers (fragments) completely fine. It just doesn’t provide a data structure for all of them which is accessible in templates.
+{{< /mnote >}}
 
-## Relref shortcode {.h-info}
+If you want to rigorously check all your links --- even external ones --- you need to install additional software that validates a full local build (see [publish](publish#use-your-own-hardware)) of your site. Reliable tools like [html-proofer](https://github.com/gjtorikian/html-proofer) check all referenced URLs.
 
-Many Hugo users like to use the shortcode {$relref} to generate the full relative path for internal links. With `{{</* relref "unique-page-name" */>}}` Hugo produces the relative path to the unique page from the root as the correct reference. But the render-link hook of this theme can’t process shortcodes and may throw the infamous `HAHAHUGO...` error. So we need to abandon the shortcode for the sake of this advanced hook. But this is not a problem and more of a chance: The render-link hook can also handle links like `[link](unique-page-name)`! If a page cannot be found another way it calls the {$relref} function internally.
+## Obsolete {$relref} shortcode {.h-info}
 
-Because Hugo’s default to throw an error and stop the build if {$relref} can’t find a page is quite harsh, the theme sets the parameter `refLinksErrorLevel: warning` in its configuration file. This leads to the only drawback as far as I can see for now: We get two warnings in case of a non-existing page name in a link reference. One from {$relref} and one from the hook.
+Some long-time Hugo users like to use the shortcode {$relref} to generate the path relative to the root for internal links --- at least I did. With `[link]({{</* relref "unique-page-name" */>}})` Hugo used to produce this relative path to the unique page as the correct reference. But the render-link hook of this theme can’t process shortcodes and may throw the infamous `HAHAHUGO...` error. So we need to abandon the shortcode for the sake of this advanced hook. But this is not a problem and more of a chance: The render-link hook can also handle `[link](unique-page-name)`! If a page cannot be found another way it calls the {$relref} function internally as a last resort. So, we just don’t need the shortcode anymore inside of Markdown links.
+
+Because Hugo’s default to throw an error and stop the build if {$relref} can’t find a page is quite harsh, the theme sets the parameter `refLinksErrorLevel: warning` in its configuration file. This is the only drawback as far as I can see for now: In case of a non-existing page name in a link reference we get the warning from {$relref} and additionally we may get a warning, an error, or nothing from the hook depending on its configuration.
