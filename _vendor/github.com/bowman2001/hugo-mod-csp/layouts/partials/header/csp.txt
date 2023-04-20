@@ -1,3 +1,25 @@
+{{- with site.Params.xHeadersConfig }}
+    {{- $keySrc := .keysSrc }}
+    {{- $foValues := .foValues }}
+    {{- with site.Params.xHeaders }}
+        {{- with .FrameOptions }}
+            {{- if in $foValues . }}
+                {{- print "X-Frame-Options: " . }}
+            {{ end }}
+        {{- end }}
+        {{- with .ContentTypeOptions }}
+            {{- if . }}
+                {{- print "X-Content-Type-Options: " site.Params.xHeadersConfig.ctpDefault }}
+            {{ end }}
+        {{- end }}
+        {{- with .XSSProtection }}
+            {{- if . }}
+                {{- print "X-XSS-Protection: " site.Params.xHeadersConfig.xssDefault }}
+            {{ end }}
+        {{- end }}
+    {{- end }}
+{{- end }}
+
 {{- with site.Params.cspConfig }}
     {{- $keysSrc := .keysSrc }}
     {{- $keysUri := .keysUri }}
@@ -30,13 +52,16 @@
                     {{- with urls.Parse . }}
                         {{- $vals = printf "%s %s" $vals . }}
                     {{- else }}
-                        {{- warnf "Unable to use CSP value. %s is not a valid value." . }}
+                        {{- warnf "Unable to use CSP value. %s is not a valid value or URL." . }}
                     {{- end }}
                 {{- end }}
             {{- end }}
             {{- $csp = printf "%s%s%s; " $csp $key $vals  }}
         {{- end }}
         {{- htmlUnescape $csp | safeHTML }}
-        {{- warnf "%s" $csp }}
+    {{- else }}
+        {{ warnf "The module 'hugo-mod-csp' is present, but not configured for this project. Please follow the README of the module to provide a CSP for your site." }}
     {{- end }}
+    {{- else }}
+    {{ errorf "The module 'hugo-mod-csp' is present, but its own configuration can’t be processed. Please disable the module for now and file an issue in its repository." }}
 {{- end }}

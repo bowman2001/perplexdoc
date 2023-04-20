@@ -36,7 +36,9 @@ params:
   ### Render hook link
   render_hooks:
     link:
-      errorLevel: warning # ignore (default), warning, or error
+      errorLevel: warning # ignore, warning, or error
+    fragments:
+      errorLevel: warning # ignore, or warning
 
   #### Image processing
   
@@ -125,10 +127,6 @@ module  :
       mounts:
         - source: partials
           target: layouts/partials
-    - path: github.com/bowman2001/hugo-mod-csp
-      mounts:
-        - source: layouts
-          target: layouts
   
   mounts :
     - source: archetypes

@@ -20,6 +20,12 @@ outputFormats:
     notAlternative: true
 
 Params:
+  xHeadersConfig:
+    keysSrc: ["Content-Type-Options", "Frame-Options", "XSS-Protection"]
+    foValues: ["deny", "sameorigin"]
+    values: [true, false]
+    ctpDefault: "nosniff"
+    xssDefault: "1; mode=block"
   cspConfig:
     keysSrc: ["default", "script", "style", "object", "connect", "font", "frame", "img", "manifest", "media", "worker"]
     keysUri: [base, report]

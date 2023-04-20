@@ -1,2 +1,2 @@
 /*
-{{ partial "header/csp" . }}
+{{ partial "header/csp.txt" . }}

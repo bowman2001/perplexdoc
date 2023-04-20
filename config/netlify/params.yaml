@@ -3,6 +3,13 @@ fathomSiteID: GJTAEQVE
 fathomCustomDomain: https://piano-brilliant.desider.at
 
 
+# X-Headers
+
+xHeaders:
+  FrameOptions: deny
+  ContentTypeOptions: true
+  XSSProtection: false
+
 # Content-Security-Policy
 cspConfig:
   reportOnly: false
