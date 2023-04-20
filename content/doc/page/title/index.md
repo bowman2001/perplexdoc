@@ -17,21 +17,21 @@ The title section is generated from meta-data in the front-matter. There are a f
 {.p-first}
 <!--more-->
 
-Most parameters for the title section contain strings. Usually, we can just write them into the front-matter. But there is one caveat: In case we’re using characters, which are reserved for formatting front-matter data, we need to enclose these strings explicitly in straight quotes to avoid errors.
+Most parameters for the title section contain strings. Usually, we just write them into the front-matter values. But there is one caveat: In case we’re using characters, which are reserved for formatting front-matter data, we need to enclose these strings in straight quotes to avoid errors.
 
 ## The title itself
 
 `title:` (mandatory)
-: is a string and its value contains the page title. It may include inline markup and the replacement code `{‍/}` for a [conditional break](conditional-break) 
+: is a string and its value contains the page title. It may include inline markup and the replacement code `{‍/}` for a [conditional break](conditional-break). If we use markup or replacements, we **need to** provide a linktitle without them for navigational elements.
 
 `linktitle:` (optional)
-: is a string and contains a short title, if the full title is very long. It’s used in navigational elements.
+: is a text string and contains a short title. It’s used in navigational elements.
 {.dl-loose}
 
 ## Description
 
 `description:` (mandatory)
-: is a string and contains a more thorough explanation of the page’s topic. It should still be relatively short, because it appears in navigational elements like the section overview or small cards.
+: is a text string and contains a more thorough explanation of the page’s topic. It should still be relatively short, because it appears in navigational elements like the section overview or small cards.
 
 `subtitle:` (optional)
 : is a boolean and set to `false` by default. Set it to `true` if you want the short description to appear as a subtitle beneath the page title. Usually, the first paragraph in the content is meant to introduce the reader and you should not use a subtitle and a [standfirst paragraph](standfirst) together on the same page.
