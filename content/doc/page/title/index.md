@@ -22,7 +22,7 @@ Most parameters for the title section contain strings. Usually, we just write th
 ## The title itself
 
 `title:` (mandatory)
-: is a string and its value contains the page title. It may include inline markup and the replacement code `{‍/}` for a [conditional break](conditional-break). If we use markup or replacements, we **need to** provide a linktitle without them for navigational elements.
+: is a string and its value contains the page title. It may include inline markup or replacement codes. But if we use them, we **need to** provide an additional linktitle with pure text for navigational elements.
 
 `linktitle:` (optional)
 : is a text string and contains a short title. It’s used in navigational elements.

@@ -25,7 +25,7 @@ The first one renders the opening anchor tag with the VSCode link, the second on
 ```
 
 {{< mnote up=11 >}}
-**If and only if** Hugo’s server is configured to deliver the preview to a public IP address, there may be a security concern with `.Filename`. The link shows the full path to the content files. But by default, the server only responds on {$localhost}.
+**If and only if** Hugo’s server is configured to deliver the preview to a public IP address, there may be a security concern with `.Filename`. The link shows the full path to the content files. But by default, Hugo’s preview server only responds on {$localhost}. It is **not meant** to act as a public server.
 {{< /mnote >}}
 
 ## {$vscode_end.html}
