@@ -1,4 +1,4 @@
-{{- with site.Params.xHeadersConfig }}
+{{ with site.Params.xHeadersConfig }}
     {{- $keySrc := .keysSrc }}
     {{- $foValues := .foValues }}
     {{- with site.Params.xHeaders }}
@@ -18,4 +18,5 @@
             {{ end }}
         {{- end }}
     {{- end }}
-{{- end }}
+{{- end -}}
+{{/**/}}

@@ -1,4 +1,4 @@
-{{- with site.Params.cspConfig }}
+{{ with site.Params.cspConfig }}
     {{- $keysSrc := .keysSrc }}
     {{- $keysUri := .keysUri }}
     {{- $values := .values }}
