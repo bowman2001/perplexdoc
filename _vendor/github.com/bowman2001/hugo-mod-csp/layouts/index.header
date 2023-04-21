@@ -1,2 +1,3 @@
 /*
-{{ partial "header/csp.txt" . }}
+{{- partial "header/xHeaders.txt" . }}
+{{- partial "header/csp.txt" . }}
