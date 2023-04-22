@@ -47,9 +47,9 @@ LaTeX formulas need to be surrounded by doubly escaped square brackets `\\[` and
 The following two formulas represent the reverse Fourier transformation and an equation with infinite nested fractions, which I can’t comprehend. There are **no line breaks** allowed.
 
 ```latex
-f(x) = \int_{-\infty}^\infty\hat f(\xi)\\, e^{2 \pi i \xi x}\\,d\xi
+$$\begin{equation}f(x) = \int_{-\infty}^\infty\hat f(\xi)\\, e^{2 \pi i \xi x}\\,d\xi\end{equation}$$
 
-\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+$$\begin{equation}\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }\end{equation}$$
 ```
 
 ## Layout
