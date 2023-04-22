@@ -16,7 +16,7 @@ timeout: 500000 # Milliseconds
 
 outputs:
   home: [HTML, RSS]
-  section: [HTML, RSS]
+  section: [HTML]
 
 taxonomies:
   tag: tags

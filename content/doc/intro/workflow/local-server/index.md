@@ -68,7 +68,7 @@ draft: true
 ---
 ```
 
-At the end of the front-matter are the taxonomy keys with empty lists (squared brackets) as values. You may want to add one or more comma-separated keywords.
+At the end of the front-matter are the taxonomy keys with empty lists (squared brackets) as values. Here you can add one or more keywords (comma-separated).
 
 Our Markdown content begins after the front-matter.
 
