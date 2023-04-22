@@ -49,13 +49,13 @@ Hugo offers **single pages** and **list pages** and Perplex always provides at l
 
 Exceptions are top-level pages because they only need a single view. They usually aren’t listed and we need to add them to a top-level menu or reference them manually otherwise.
 
-### Single pages {#single}
+### Single pages
 
-You may have already created the new demo file `blog/first.md` while following the example in the section [first content](/doc/intro/workflow/local-server#first). This is the simplest way to generate a new posting without any additional resources.
+You may have already created the new demo file `blog/first.md` while following the example in the section [first content](/doc/intro/workflow/local-server#your-first-content). This is the simplest way to generate a new posting without any additional resources.
 
-#### Leaf Bundles {#leaf}
+#### Leaf Bundles
 
-When we include resources like images on a page, we like to [retrieve them](#resources) easily. If we need some files only on a specific page, we create a leaf bundle like this:
+When we include resources like images on a page, we like to [retrieve them](resources) easily. If we need some files only on a specific page, we create a leaf bundle like this:
 
 ```sh {.left}
 hugo new blog/second/index.md
@@ -77,7 +77,7 @@ tags: []
 When the number of entries rises, we need some navigation structure for these types. We best provide it by adding **taxonomies**{^\*}. Hugo’s default taxonomies are the usual **categories** and **tags**. Every new front-matter already includes the parameter keys and an empty list `[]`.
 
 {{< mnote up=8 star=1 >}}
-We can also add sub-folders and modify the URL structure. To provide an optional separate list view for a sub-folder, we also need to create a [branch file `_index.md`](#list) inside. Because taxonomies are the preferred structure for postings in Perplex, links to these additional sections only show up in the breadcrumbs at the bottom of the pages.
+We can also add sub-folders and modify the URL structure. To provide an optional separate list view for a sub-folder, we also need to create a [branch file `_index.md`](#branch-bundles) inside. Because taxonomies are the preferred structure for postings in Perplex, links to these additional sections only show up in the breadcrumbs at the bottom of the pages.
 {{< /mnote >}}
 
 As soon as we add our taxonomy inside the brackets `[]` or a few of them as a comma-separated list, Hugo generates additional list pages for every taxonomy we introduce. All regular pages on a site with the same taxonomy are shown there.
@@ -125,7 +125,7 @@ The new parameter `weight` is of general meaning for the order of all pages on a
 
 To place your new page in the coming menu section, you will need to set `parent: demo` in the front-matter of {$doc/demo/first.md}. But we aren’t there yet, because we need to create the demo section first. And like every kind of section page in Hugo this will be a list page.
 
-### List pages (branch bundles) {#list}
+### List pages (branch bundles) {#branch-bundles}
 
 Besides single pages we obviously need list pages. They show an overview of the sections content and may provide some general introduction. There is only one proper way in Perplex to build them: As a **branch bundle**.
 
@@ -135,7 +135,7 @@ For example: Our first demo page is already placed inside the sub-folder {$demo}
 hugo new doc/demo/_index.md
 ```
 
-We can distinguish the filename {$\_index.md} for the branch bundle only by the leading underscore from the filename {$index.md} for a [leaf bundle](#leaf)! We need to be careful about this, because they have a very different purpose and function. A branch bundle collects as many pages and may include as many other bundles as we need — there is no technical limit to the directory depth. A branch bundle can act like a chapter, section or subsection depending on its place in the folder hierarchy.
+We can distinguish the filename {$\_index.md} for the branch bundle only by the leading underscore from the filename {$index.md} for a [leaf bundle](#leaf-bundles)! We need to be careful about this, because they have a very different purpose and function. A branch bundle collects as many pages and may include as many other bundles as we need — there is no technical limit to the directory depth. A branch bundle can act like a chapter, section or subsection depending on its place in the folder hierarchy.
 
 After the front-matter {\_index.md} may contain general content about its section. Its most important function is to trigger the generation of a specific list view for the content included in this branch.
 
@@ -145,4 +145,4 @@ After the front-matter {\_index.md} may contain general content about its sectio
 
 ### Page Bundles {#bundles}
 
-[Branch bundles](#list) and [leaf bundles](#leaf) are both called **page bundles**, which share the possibility to store resource files. Other than the page bundles the branch bundles for list pages can’t retrieve their own resources from sub-folders, because these may well contain more page bundles.
+[Branch bundles](#branch-bundles) and [leaf bundles](#leaf-bundles) are both called **page bundles**, which share the possibility to store resource files. Other than the page bundles the branch bundles for list pages can’t retrieve their own resources from sub-folders, because these may well contain more page bundles.

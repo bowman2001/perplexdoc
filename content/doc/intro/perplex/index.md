@@ -101,4 +101,4 @@ Should you stumble upon bad English, typos, or wrong phrases, please excuse me. 
 [gfmspec]: https://github.github.com/gfm "GitHub Flavored Markdown Specification"
 [plumber]: https://jamonserrano.github.io/plumber-sass
 [conf]: /doc/appendix/config/configyaml
-[new]: /doc/intro/workflow/local-server#first
+[new]: /doc/intro/workflow/local-server#your-first-content

@@ -89,7 +89,7 @@ When we place an image inside our paragraph text–usually at the beginning–it
 
 CommonMark can’t handle more image parameters than the ones mentioned above. To generate a caption etc., the theme offers additional parameters. All of them are possible **resource parameters** in the front-matter. A few image layout parameters may also be added directly to the Markdown content by adding **in-place parameters** to the image name.
 
-#### Resource meta-data {#meta-data}
+#### Resource meta-data
 
 ```yaml {.right linenos=true linenostart=10}
 resources:

@@ -54,7 +54,7 @@ In German publishing we usually find guillemets the other way around:
 `>>Zahnstocher<<`&emsp;for&emsp;>>Zahnstocher<<
 {.p-big}
 
-But we get into trouble with these, when we start a line with `>>`, because the `>` is also the sign for a [quotation block](/#blockquote). We can begin the line with an invisible entity like the zero width joiner `&zwj;` for a quick workaround:
+But we get into trouble with these, when we start a line with `>>`, because the `>` is also the sign for a [quotation block](#blockquote). We can begin the line with an invisible entity like the zero width joiner `&zwj;` for a quick workaround:
 
 &zwj;>>Noch einen Zahnstocher, bitte!<<
 {.p-big}
