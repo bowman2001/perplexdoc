@@ -38,5 +38,5 @@ highlight:
   lineNos: false
   lineNumbersInTable: true
   noClasses: true
-  style: monokai
+  style: github-dark
   tabWidth: 4

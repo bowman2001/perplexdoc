@@ -77,7 +77,7 @@ tags: []
 When the number of entries rises, we need some navigation structure for these types. We best provide it by adding **taxonomies**{^\*}. Hugo’s default taxonomies are the usual **categories** and **tags**. Every new front-matter already includes the parameter keys and an empty list `[]`.
 
 {{< mnote up=8 star=1 >}}
-We can also add sub-folders and modify the URL structure. To provide an optional separate list view for a sub-folder, we also need to create a [branch file `_index.md`](#branch-bundles) inside. Because taxonomies are the preferred structure for postings in Perplex, links to these additional sections only show up in the breadcrumbs at the bottom of the pages.
+We can also add sub-folders and modify the URL structure. To provide an optional separate list view for a sub-folder, we also need to create a [branch file `_index.md`](doc/intro/workflow/content#branch-bundles) inside. Because taxonomies are the preferred structure for postings in Perplex, links to these additional sections only show up in the breadcrumbs at the bottom of the pages.
 {{< /mnote >}}
 
 As soon as we add our taxonomy inside the brackets `[]` or a few of them as a comma-separated list, Hugo generates additional list pages for every taxonomy we introduce. All regular pages on a site with the same taxonomy are shown there.
