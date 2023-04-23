@@ -28,7 +28,7 @@ Perplex presents this image at the top of your page and in reference cards. Itâ€
 
 The image file needs to be placed in the [page bundle](/doc/intro/workflow/content#bundles). Only one featured image is allowed per page and it should be at least {${{< width/column 2 >}}} wide to display it with double density on high-resolution screens.
 
-If no featured image is available, Perplex will search for one in related pages or display the site fallback.
+If no featured image is available, Perplex will search for one in related pages or use the site fallback as last resort.
 
 ## Syntax
 

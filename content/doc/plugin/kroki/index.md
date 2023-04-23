@@ -24,6 +24,21 @@ Generate SVG diagrams with the Kroki service by writing textual diagram descript
 
  Here follow examples of all currently supported diagram types which are taken from the Kroki page.
 
+## Mermaid
+
+This is the same diagram as on the [Mermaid page](/doc/plugin/mermaid). But the rendering may be a little bit different.
+
+```kroki {type=mermaid}
+graph TD
+A[Christmas]  -->|Get money| B(Go shopping)
+B --> C{Let me think}
+C -->|One| D[Laptop]
+C -->|Two| E[iPhone]
+C -->|Three| F[Car ]
+```
+
+If you are pleased with the results from Kroki, you should consider generating your Mermaid diagram like this, because server-side rendered SVGs don’t need client-side processing anymore.
+
 ## Block
 
 ```kroki {type=BlockDiag}
@@ -1846,22 +1861,5 @@ connections:
     - X1: 5
     - W1: s
 ```
-
-## Mermaid
-
-This is the same diagram as on the [Mermaid page](/doc/plugin/mermaid). The rendering is a little bit different.
-
-```kroki {type=mermaid}
-graph TD
-A[Christmas]  -->|Get money| B(Go shopping)
-B --> C{Let me think}
-C -->|One| D[Laptop]
-C -->|Two| E[iPhone]
-C -->|Three| F[Car ]
-```
-
-If your are pleased with the result from Kroki, you should consider to generate your Mermaid diagram like this, because server-side rendered SVGs don’t need no client side processing.
-
-
 
 [veriphor]: https://www.veriphor.com/articles/diagrams/

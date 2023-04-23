@@ -25,10 +25,10 @@ Besides Markdown, Hugo also offers to process HTML files, data files, and other 
 
 ## Folder structure
 
-The content of the root {$/} and the folders {$doc}, {$news}, {$blog}, and {$article} may contain Markdown files and their resources. The theme provides different layout templates for them. Hugo applies the matching templates automatically to every content file inside these directories and their descendants.
+The content of the project root and the folders {$doc}, {$news}, {$blog}, and {$article} may contain Markdown files and their resources, which are rendered accordingly. The theme provides different layout templates for them. Hugo applies the matching templates automatically to every content file inside these directories and their descendants.
 
-{$/}
-:contains top-level pages
+{$/}  {s (project root)}
+: contains top-level pages
 
 {$doc}
 : contains the documentation and can handle three folder levels deep filled with Markdown files and their resources.
@@ -40,7 +40,7 @@ The content of the root {$/} and the folders {$doc}, {$news}, {$blog}, and {$art
 : collects postings, which are accessible through the top-level blog list page.
 
 {$article}
-: is meant for longer postings and essays, which are listed as cards on the top-level list page.
+: is meant for longer postings and essays, which are listed as cards on the top-level article list page.
 {.dl-loose}
 
 ## Page structure and organization
@@ -137,7 +137,7 @@ hugo new doc/demo/_index.md
 
 We can distinguish the filename {$\_index.md} for the branch bundle only by the leading underscore from the filename {$index.md} for a [leaf bundle](#leaf-bundles)! We need to be careful about this, because they have a very different purpose and function. A branch bundle collects as many pages and may include as many other bundles as we need — there is no technical limit to the directory depth. A branch bundle can act like a chapter, section or subsection depending on its place in the folder hierarchy.
 
-After the front-matter {\_index.md} may contain general content about its section. Its most important function is to trigger the generation of a specific list view for the content included in this branch.
+After the front-matter {$\_index.md} may contain general content about its section. Its most important function is to trigger the generation of a specific list view for the content included in this branch.
 
 {{< mnote up=11 >}}
 **No subdirectories** are accessible to retrieve resources in `_index.md`. All resources specific for the list also need to be placed at the root of the _branch bundle_. This limitation avoids confusion about the purpose of possible sub-folders.
