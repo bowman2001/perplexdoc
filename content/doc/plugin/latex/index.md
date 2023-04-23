@@ -21,7 +21,7 @@ categories: [Markdown]
 tags: [latex]
 ---
 
-LaTeX is the most popular typesetting system for the natural sciences, its syntax has been established as a quasi-standard to format complex mathematical formulas for print and web layout.
+LaTeX is the most popular typesetting system for the natural sciences, its syntax has been established as a quasi-standard for complex mathematical formulas in print and web layout.
 {.p-first} <!--more-->
 
 ## Syntax
@@ -34,7 +34,7 @@ There is another excellent LaTeX render engine for the Web: [MathJax](https://ww
 
 ### Inline
 
-Inline LaTeX needs to be surrounded by doubly escaped parens `\\(` and `\\)` like `\\(\frac{1}{5}\\)` or single dollars `$` like `$E = mc^2$`. But because the LaTeX is processed by Hugo’s Markdown renderer before the KateX scripts are applied by browsers, there are two caveats: 
+Inline LaTeX needs to be surrounded by doubly escaped parens like `\\(\frac{1}{5}\\)` or single dollars like `$E = mc^2$`. But because the LaTeX is processed by Hugo’s Markdown renderer before the KateX scripts are applied by browsers, there are two caveats:
 
 - The rendering may falsely interpret some LaTeX markup as Markdown markup. This can distort the equations and we would need to escape every Markdown markup character to prevent this.
 
@@ -43,13 +43,16 @@ Inline LaTeX needs to be surrounded by doubly escaped parens `\\(` and `\\)` lik
 Therefore, we have a simple shortcode to shield inline LaTeX from Markdown rendering:
 
 ```md
-{{</* katex */>}}Z_n = X_n + Y_n{{</* /katex */>}}
+{{</* katex */>}}Z_n = X_n + Y_n\quad X_n,Y_n,Z_n\in\mathbf{R}{{</* /katex */>}}
 ```
 
 ### Block
 
-LaTeX formulas need to be surrounded by doubly escaped square brackets `\\[` and `\\]` or two dollar signs `$$`. The problem with the markup overlap may also occur here and we have the additional problem, that we can’t use new lines in one formula. The solution is to enclose stand-alone LaTeX formulas by a special code block with the identifier `katex`.
-We don’t have to worry about markup overlap and new lines are fine. 
+LaTeX formulas need to be surrounded by doubly escaped square brackets `\\[` and `\\]` or two dollar signs `$$`. The problem with the markup overlap may also occur here and we have the additional problem, that we can’t use new lines inside a formula block. The solution is to enclose stand-alone formulas by a special code block with the identifier `katex`.
+
+{{< mnote up=17 >}}
+Hugo usually highlights code blocks according to the identifier after the first fence. And `latex` is one option. We can easily confuse the identifiers `katex` and `latex` with very different results.
+{{< /mnote >}}
 
 The following two formulas represent the reverse Fourier transformation and an equation with infinite nested fractions, which I can’t comprehend.
 
@@ -61,23 +64,28 @@ f(x) = \int_{-\infty}^\infty\hat f(\xi)\, e^{2 \pi i \xi x}\,d\xi
 ‍```
 ```
 
-```latex
+```latex {.semi-large}
 ```katex
 \begin{equation}
-\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots}}}}
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = \\
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots}}}}
 \end{equation}
 ‍```
 ```
 
 ## Layout
 
+KaTeX rendering happens in the browser. An alternative would be to include pre-rendered SVGs, but I don’t know of a way to align them with the proportions of the surrounding text.
+
+KaTeX is very compact, reliable, and fast --- I see no urgent need to replace the Javascript solution.
+
 ### Inline
 
-Short expressions like \\(\frac{1}{5}\\) or formulas like $E = mc^2$ can be embedded in the text. To get rid of markup distortions we use the {$katex} shortcode: {{< katex >}}X_n + Y_n = Z_n\,\in\mathbf{R}{{< /katex >}}.
+Short expressions like \\(\frac{1}{5}\\) or formulas like $E = mc^2$ can be embedded in the text. To get rid of markup distortions we use the {$katex} shortcode:
+{{< katex >}}X_n + Y_n = Z_n\quad X_n,Y_n,Z_n\in\mathbf{R}{{< /katex >}}.
 
 ### Block
-
-Both examples are looking good, wether we can grasp their meaning or not:
+Both examples are looking good, whether we can grasp their meaning or not:
 
 ```katex
 \begin{equation}
@@ -87,10 +95,9 @@ f(x) = \int_{-\infty}^\infty\hat f(\xi)\, e^{2 \pi i \xi x}\,d\xi
 
 ```katex
 \begin{equation}
-\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots}}}}
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = \\
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots}}}}
 \end{equation}
 ```
-
-$$$$
 
 [katex]: https://katex.org

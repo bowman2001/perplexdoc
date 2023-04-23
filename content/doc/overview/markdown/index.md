@@ -29,7 +29,7 @@ The theme offers style variations for many of these elements. Only the defaults 
 
 ## Headings
 
-The following HTML elements `<h1>`—`<h6>` represent the title, three levels of section headings, and two levels of paragraph headings. They are placed before paragraphs and the paragraph headings are placed inside them.
+The following HTML elements `<h1>`—`<h6>` represent the title, three levels of section headings, and two levels of paragraph headings. The paragraph headings are placed **inside** their paragraphs.
 
 Usually, the title does **not get used** in Markdown content. All theme templates generate titles from front-matter meta-data.
 
