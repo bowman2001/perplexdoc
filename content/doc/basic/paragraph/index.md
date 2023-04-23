@@ -67,9 +67,9 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 Topic
 {.p-meta}
 
-### Meta Paragraph for headings
+### Meta Paragraph
 
-{{< farfarshort 1 >}}
+The meta paragraph is the topic above this heading. And the following example shows the layout for a sub-subsection.
 
 Topic
 {.p-meta}

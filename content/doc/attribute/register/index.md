@@ -12,7 +12,6 @@ menu:
     pre: app_registration
 categories: [Markdown]
 tags: [Attribute] 
-toc: false
 ---
 
 All element specific attributes should be listed here.
@@ -20,16 +19,47 @@ All element specific attributes should be listed here.
 
 To attach the attributes correctly in Markdown, have a look at the short [Howto](/doc/attribute/howto).
 
-|Element    | Attribute Name | CSS-class |
-|:----------|:--------|-------:|
-| Headings  | [Paragraph heading](/doc/basic/headings#h-p) | {$.h-p} |
-| | Small paragraph h. | {$.h-p-s} |
-| | Warning | {$.h-warn} |
-| | Info | {$.h-info} |
-| | Tip | {$.h-tip} |
-| Paragraph | Standfirst paragraph | {$.p-first} |
-| | Big paragraph | {$.p-big} |
-| | Small paragraph | {$.p-small} |
-| | Meta paragraph | {$.p-meta} |
-| Blockquote | Hero quote | {$.blockquote-hero} |
-| Ordered list | continue counting | {$.ol-continue} |
+## Headings
+
+| Attribute Name | CSS-class |
+|:--------|:-------|
+| [Paragraph heading](/doc/basic/headings#h-p) | {$.h-p} |
+| [Small paragraph h.](/doc/basic/headings#h-p) | {$.h-p-s} |
+| [Warning](/doc/basic/headings#highlighted-headings) | {$.h-warn} |
+| [Info](/doc/basic/headings#highlighted-headings) | {$.h-info} |
+| [Tip](/doc/basic/headings#highlighted-headings) | {$.h-tip} |
+
+## Paragraph
+
+| Attribute Name | CSS-class |
+|:--------|:-------|
+| [Standfirst paragraph](standfirst#first) | {$.p-first} |
+| [Big paragraph](/doc/basic/paragraph#big-paragraph) | {$.p-big} |
+| [Small paragraph](/doc/basic/paragraph#small-paragraph) | {$.p-small} |
+| [Meta paragraph](/doc/basic/paragraph#meta-paragraph) | {$.p-meta} |
+
+## Blockquote
+
+| Attribute Name | CSS-class |
+|:--------|:-------|
+| Hero quote | {$.blockquote-hero} |
+
+## Lists
+
+| Attribute Name | CSS-class |
+|:--------|:-------|
+| Small indent (for simple and ordered lists) | {$.small-indent} |
+### Bullet list
+
+### Ordered list
+
+| Attribute Name | CSS-class |
+|:--------|:-------|
+| continue (counting) | {$.ol-continue} |
+
+### Definition list
+
+| Attribute Name | CSS-class |
+|:--------|:-------|
+| [Tight](/doc/extended/definition-list#tight) | {$.dl-tight} |
+| [Loose](/doc/extended/definition-list#loose) | {$.dl-loose} |
