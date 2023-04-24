@@ -14,28 +14,36 @@ The main text column offers space for {$80} characters of code in one line. When
 
 This is a layout demonstration for pages without a sidebar. The docs contain the [syntax options](/doc/basic/code).
 
-## Layout
-
-### Inline
+## Inline
 
 The HTML tag to mark the beginning of code is `<code>`. And to mark the end we use the corresponding closing tag `</code>`. Markdown text surrounded by backticks like `` `text` `` gets enclosed by these tags.
 
-### Block
+## Block
 
-#### Without line numbers
+### Without line numbers
 
 ```md
 The *HTML* tag at the **beginning** of code is `<code>`.
 And to mark the **end** we use the corresponding closing tag `</code>`.
 ```
 
-#### With line numbers (table layout)
+### With line numbers (table layout)
 
 ```md {linenos=true}
 The *HTML* tag at the **beginning** of code is `<code>`.
 And to mark the **end** we use the corresponding closing tag `</code>`.
 ```
-#### Special sizes
+
+### In lists or other indented blocks
+
+- List entries are indented and the code block gets smaller
+  
+  ```md
+  The *HTML* tag at the **beginning** of code is `<code>`.
+  And to mark the **end** we use the corresponding closing tag `</code>`. 
+  ```
+
+### Special sizes
 
 For code examples with long lines, we can expand the block into the margin:
 
@@ -50,6 +58,7 @@ type NodeRenderer interface {
 }
 ```
 
+#### Small blocks
 When all code lines are no longer than 40 characters, we can place them inside or beside the text:
 
 ```json {.left}
@@ -73,3 +82,5 @@ When all code lines are no longer than 40 characters, we can place them inside o
 ```
 
 {{< farfar 1 >}}
+
+
