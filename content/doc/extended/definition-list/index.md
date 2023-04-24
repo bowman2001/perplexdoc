@@ -22,7 +22,7 @@ resources:
 Definition lists consist of **terms** as list markers, which are associated with **details** in the list entries.
 {.p-first} <!--more-->
 
-The definition list is an essential tool to structure textual content on a small scale. There is only one syntax, but Perplex offers many styling options.  
+The definition list is an essential tool to structure textual content on a small scale. There is only one Markdown syntax structure, but Perplex offers some nice styling options.  
 
 ## Syntax
 
@@ -33,17 +33,17 @@ Consonantia, there live the blind texts.
 : Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts.
 
-Second Term or
-Second Term Alternative
+Second Term with
+Term Alternative
 : Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts.
 ```
 
-Every list item begins with one or more _terms_. The lines after them contain the _description(s)_ starting with a colon followed by a space. An empty line between the list items is mandatory.
+Every list item begins with one or more **terms**. The lines after them contain the **details** starting with a colon followed by a space. An **empty line** between the list items is mandatory.
 
 ## Layout
 
-The layout has to consider the length and number of all the components. The _standard_ version is working with every combination of terms and descriptions the additional options are not. The _tight_ style suits single terms with details, which do usually not exceed one line on larger screens. The _loose_ style is intended for terms with extensive details.
+The layout has to consider the length and number of all the components. The default version is working with every combination of terms and descriptions the additional options are not. The **tight** style suits single terms with details, which do usually not exceed one line on larger screens. The **loose** style is intended for terms with extensive details.
 
 ### Standard
 
@@ -53,12 +53,12 @@ First Term
 : {{< farfarshort 1 >}}
 : {{< farfarshort 1 >}}
 
-Second Term or
-Second Term Alternative
+Second Term with
+Term Alternative
 : {{< farfarshort 1 >}}
 {.box}
 
-This style looks especially well for long terms in a literature list:
+This style looks especially well as a literature list for example:
 
 Horkheimer, Max und Theodor W. Adorno
 : _Dialektik der Aufklärung: Philosophische Fragmente_. 18\. Aufl. Frankfurt am Main: Fischer Taschenbuch Verl., 2009.

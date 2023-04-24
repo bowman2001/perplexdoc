@@ -3,14 +3,18 @@ author: Georg Makowski
 title: Image Syntax
 description: CommonMarks image syntax with optional resources or an in-place query-string
 subtitle: false
-date: 2023-03-23T10:11:05+01:00 
-featured: bigsplash
+date: 2023-03-23T10:11:05+01:00
 weight: 152
 menu:
   doc:
     name: Syntax
     parent: images
     pre: tag
+resources:
+  - name: featured
+    src: alain-pham-P_qvsF7Yodw-unsplash.jpg
+    params:
+      alt: bridge structure
 categories: [markdown]
 tags: [image, block]
 series: [images]
