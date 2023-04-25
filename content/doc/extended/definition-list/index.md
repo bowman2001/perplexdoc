@@ -89,3 +89,5 @@ First Term
 Second Term
 : {{< farfarshort 1 >}}
 {.dl-loose, .box}
+
+In the case we need a little more space for the terms, we can apply `.dl-loose3`. The normal loose style reserves a quarter of the full text width for terms, with this attribute we get a third.

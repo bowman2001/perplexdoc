@@ -18,7 +18,7 @@ tags: [license]
 weight: 70
 ---
 
-Perplex is an open source theme for the open source software [Hugo][hugo]. There are no other mandatory software requirements, but theme and documentation ship with external software and content. Their licensers and the licenses of their choosing are listed here, also.
+Perplex is an open-source theme for the open-source software Hugo. There are no other mandatory software requirements, but the theme and the documentation ship with external software and content.
 {.p-first} <!--more-->
 
 ## Perplex and its documentation
@@ -41,7 +41,7 @@ The documentation
 [render-link](https://www.veriphor.com/articles/link-and-image-render-hooks/)
 [render-codeblock-kroki](https://www.veriphor.com/articles/diagrams)
 [toc-walk-headings](https://www.veriphor.com/articles/tables-of-content/)
-: have been released by [Veriphor](https://www.veriphor.com) under the Apache 2.0 License and their motivation, function and usage are documented there.
+: have been released by [Veriphor](https://www.veriphor.com) under the Apache 2.0 License and their motivation, function, and usage are documented there.
 {.dl-loose3}
 
 These templates have all been adapted to fit the style of the theme.
@@ -64,7 +64,7 @@ These templates have all been adapted to fit the style of the theme.
 ## Optional Javascript libraries
 
 [KaTeX][katex]
-: has been released by [Emily Eisenberg](https://github.com/xymostech), [Sophie Alpert](https://github.com/sophiebits) and contributors under the [MIT License](https://github.com/KaTeX/KaTeX/blob/main/LICENSE).
+: has been released by [Emily Eisenberg](https://github.com/xymostech), [Sophie Alpert](https://github.com/sophiebits), and contributors under the [MIT License](https://github.com/KaTeX/KaTeX/blob/main/LICENSE).
 
 [Mermaid][mermaid]
 : has been released by [Knut Sveidqvist](https://github.com/knsv) and contributors under the [MIT License](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE).
