@@ -11,18 +11,13 @@ menu:
     parent: workflow 
     pre: collections
 categories: [Resources, Getting started]
-tags: [Image]
+tags: [file, image]
 ---
 
 This theme expects resources like images as local files. We need to place them in page bundles and register them in the front-matter.
 {.p-first} <!--more-->
 
-Hugo allows to handle resources in different ways and this theme supports the one which has a lot of support by Hugo out of the box, offers a lot of flexibility and doesn’t rely on external services{^*}.
-
-{{< mnote star=1 >}}
-The theme could be extended to work with external providers of course, but this won’t be part of the standard release.
-{{< /mnote >}}
-
+Hugo allows us to handle resources in different ways and this theme supports the one which has a lot of support from Hugo out of the box, offers a lot of flexibility, and doesn’t rely on external services.
 ## Hugo’s general options {#resources}
 
 There are three ways to store and retrieve resource files (like images):
