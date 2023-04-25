@@ -14,7 +14,7 @@ categories: [Resources, Getting started]
 tags: [Image]
 ---
 
-This theme expects resources like images as local files. We need to place them in page bundles and register them in the front-matter of the Markdown file. Resource files from parent sections or taxonomies may be re-used conveniently.
+This theme expects resources like images as local files. We need to place them in page bundles and register them in the front-matter.
 {.p-first} <!--more-->
 
 Hugo allows to handle resources in different ways and this theme supports the one which has a lot of support by Hugo out of the box, offers a lot of flexibility and doesn’t rely on external services{^*}.
