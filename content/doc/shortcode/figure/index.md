@@ -61,11 +61,6 @@ resources:
       alt: Placeholder image, extra large size
       caption: The full size of an extra large image will only show on pages with a left margin. It’s treated here like a large image.
       attr: gm
-  - src: mathias-konrath-JHb-UFfNOhI-unsplash.jpg
-    name: mathias
-    params:
-      alt: Skyline of Frankfurt am Main
-      size: large
   - src: beau-swierstra-Ndz-4phqtlg-unsplash.jpg
     name: beau
 categories: [Markdown]

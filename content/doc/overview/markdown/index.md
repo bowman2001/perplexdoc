@@ -21,7 +21,7 @@ tags: [Block, Inline]
 weight: 5
 ---
 
-This article contains samples of the extended CommonMark syntax to show the CSS layout of the rendered HTML.
+This article contains samples of the extended CommonMark syntax to give a quick impression of the layout.
 {.p-first}
 <!--more-->
 
