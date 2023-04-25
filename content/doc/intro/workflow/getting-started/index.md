@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Local Installation
 description: How to install Hugo and a theme
 subtitle: false

@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-09-17T00:03:28+02:00"
 description: Perplex and Hugo are open source
 menu:

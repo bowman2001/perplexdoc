@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: How to use shortcodes?
 description: Inject arbitrary HTML in Markdown
 subtitle: false

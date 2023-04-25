@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-09-07T21:33:03+02:00"
 description: What's special about this theme?
 menu:

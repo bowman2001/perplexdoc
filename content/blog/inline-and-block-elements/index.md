@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Two basic layout types
 description: Inline & Block
 subtitle: false

@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-10-25T20:58:45+02:00"
 description: Configuration for external menu entries
 menu:

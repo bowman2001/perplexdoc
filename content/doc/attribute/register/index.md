@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Attribute Register
 description: A list of all specific attributes for Perplex
 subtitle: false

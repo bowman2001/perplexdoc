@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: LaTeX
 date: "2021-05-18T10:15:06+02:00"
 description: Render Math inside Markdown

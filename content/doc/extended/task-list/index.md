@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-03-25T10:34:57+01:00"
 description: A feature designed from and for GitHub
 menu:

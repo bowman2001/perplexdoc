@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: 2021-08-18T10:59:52+02:00
 description: Place a note in the right marginal column of the page
 menu:

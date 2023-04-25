@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Markdown Layout
 description: One-page Markdown overview
 subtitle: false

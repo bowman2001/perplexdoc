@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: params.yaml
 description: Parameter configuration
 subtitle: false

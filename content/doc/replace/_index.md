@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-08-19T12:39:30+02:00"
 description: Additional inline HTML elements
 menu:

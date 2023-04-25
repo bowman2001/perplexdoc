@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Content Organization
 description: The structure of the {$content} folder
 subtitle: false

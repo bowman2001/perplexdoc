@@ -1,7 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Accessible fluid Design
 description: Accessibility is one advantage of this type of design
 date: 2022-07-12T22:38:10+02:00

@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-09-16T19:39:31+02:00"
 description: Configuration files for this project
 menu:

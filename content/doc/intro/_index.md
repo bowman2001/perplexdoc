@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-09-06T12:53:19+02:00"
 description: Purpose and use of Perplex
 seo:

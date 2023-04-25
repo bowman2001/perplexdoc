@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-03-25T10:53:07+01:00"
 description: How to use special characters
 menu:

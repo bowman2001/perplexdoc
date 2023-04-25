@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Site Navigation
 description: Constantly visible Menu
 subtitle: false

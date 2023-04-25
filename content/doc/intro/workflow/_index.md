@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-09-07T21:43:30+02:00"
 description: Run Hugo with Perplex 
 menu:

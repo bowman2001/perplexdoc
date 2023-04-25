@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-03-24T21:23:17+01:00"
 description: Editor or command line content
 menu:

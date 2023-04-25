@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Kroki
 description: External SVG diagram generator
 subtitle: false

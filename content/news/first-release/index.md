@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: First Release{/}of the Perplex theme
 linktitle: First Release
 description: Sill a beta pre-release

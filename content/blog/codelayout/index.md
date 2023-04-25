@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Code Layout Demonstration
 description: Code layout without a sidebar
 linktitle: Code Demo

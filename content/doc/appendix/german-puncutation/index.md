@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-07-09T11:18:29+02:00"
 description: "Punctuation Keymap Example"
 menu:

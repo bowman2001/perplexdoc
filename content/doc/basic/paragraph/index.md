@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-03-23T21:38:25+01:00"
 description: Essential building blocks of text
 menu:

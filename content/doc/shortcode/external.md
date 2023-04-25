@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-08-16T10:56:40+02:00"
 description: Embed content from external providers
 menu:

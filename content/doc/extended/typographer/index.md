@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-08-27T09:59:47+02:00"
 description: Substitution of punctuation 
 menu:

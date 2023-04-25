@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Nested Definition List
 description: Demo for topic 40235 in the Hugo-Forum
 subtitle: false

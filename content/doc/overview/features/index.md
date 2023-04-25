@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Concept & Features
 description: About the goals of this theme
 subtitle: false

@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Hugo Module{/}for missing HTML inline tags
 linktitle: Module for missing inline tags
 date: 2023-02-22T23:55:26+02:00

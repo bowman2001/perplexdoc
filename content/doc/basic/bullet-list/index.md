@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-03-24T21:44:41+01:00"
 description: List marked with bullets
 menu:

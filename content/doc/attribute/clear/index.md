@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Clear a floating element
 description: Stop text from floating around an embedded element
 subtitle: false

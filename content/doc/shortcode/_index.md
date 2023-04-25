@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2021-08-15T23:14:50+02:00"
 description: Use arbitrary layout objects in Markdown 
 menu:

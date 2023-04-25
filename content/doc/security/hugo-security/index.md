@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 date: "2022-01-12T14:20:05+01:00"
 description: Security at Runtime
 menu:

@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Layout Columns
 description: Generate longer columns
 subtitle: false

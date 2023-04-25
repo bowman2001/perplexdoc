@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: The local Workflow
 description: Write while watching instant previews 
 subtitle: false

@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: Conditional Break
 description: This line break only shows for full-width text layouts
 subtitle: false

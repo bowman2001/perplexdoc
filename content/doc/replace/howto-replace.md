@@ -1,6 +1,5 @@
 ---
-authors: [gm]
-editors: [gm]
+authors: [Georg Makowski]
 title: How to use replacements
 linktitle: Howto
 description: Curly braces and an identifier in Markdown
