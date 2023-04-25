@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-03-24T21:44:46+01:00"
 description: List marked with ordered natural numbers
 menu:

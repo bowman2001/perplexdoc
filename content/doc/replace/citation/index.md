@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-08-26T20:15:12+02:00"
 description: Mark external sources 
 menu:

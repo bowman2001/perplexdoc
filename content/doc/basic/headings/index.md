@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-03-23T21:46:56+01:00"
 description: Main page structure
 menu:

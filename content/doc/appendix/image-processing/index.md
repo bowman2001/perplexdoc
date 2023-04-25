@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Image Processing
 description: Details of image handling
 subtitle: false

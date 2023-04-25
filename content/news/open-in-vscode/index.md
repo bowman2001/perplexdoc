@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Open files in VSCode{/}from Hugo’s server preview
 linktitle: Open VSCode from server mode
 date: 2023-03-31T00:44:36+02:00
@@ -40,8 +41,8 @@ The first one renders the opening anchor tag with the VSCode link, the second on
 
 ## How to apply these partials
 
-You can copy-paste these small snippets into your project, there is no need for a citation or something. The core functionality stems from VSCode.
+You can copy-paste these small snippets into your project, there is no need for a citation or something. The core functionality stems from [VSCode](https://code.visualstudio.com/docs/editor/command-line#_opening-vs-code-with-urls).
 
-The partials are also available as a module: [{$hugo-mod-open-in-vscode}](https://github.com/bowman2001/hugo-mod-open-in-vscode). This is the better option if you’re interested in possible updates.
+The partials are also available as an Apache-licensed module: [{$hugo-mod-open-in-vscode}](https://github.com/bowman2001/hugo-mod-open-in-vscode). This is the better option if you’re interested in possible updates.
 
 The Perplex theme places them around the publishing date or --- in case there is none --- around the title.

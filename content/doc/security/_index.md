@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Security
 description: Page description placeholder
 subtitle: false

@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: TL;DR
 description: Overview for seasoned Hugo users
 date: 2022-05-11T23:46:08+02:00 

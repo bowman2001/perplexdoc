@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Taxonomies
 description: Categories, Tags & Series
 subtitle: false

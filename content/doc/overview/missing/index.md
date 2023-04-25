@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Missing Features
 description: Functionality to include before public release
 subtitle: false

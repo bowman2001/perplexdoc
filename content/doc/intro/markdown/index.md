@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-09-07T21:02:57+02:00"
 description: Structured Plain Text Files
 menu:

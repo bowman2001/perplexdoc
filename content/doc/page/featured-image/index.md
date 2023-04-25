@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-12-29T17:52:55+01:00"
 description: Decorate your page and grab attention
 menu:

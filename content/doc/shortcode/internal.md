@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-08-16T10:56:35+02:00"
 description: Simplify common tasks
 menu:

@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-03-23T22:21:23+01:00"
 description: Tiny characters above or below the baseline
 menu:

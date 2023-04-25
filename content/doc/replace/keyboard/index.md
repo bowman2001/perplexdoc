@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-08-19T13:35:00+02:00"
 description: Display the keys from a computer keyboard
 subtitle: false

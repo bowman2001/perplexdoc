@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: User Privacy
 description: Secure user data
 subtitle: false

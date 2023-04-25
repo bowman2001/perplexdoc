@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Local Installation
 description: How to install Hugo and a theme
 subtitle: false
@@ -20,7 +21,7 @@ resources:
       caption: Rätikon Mountain-Range
 ---
 
-Hugo, the world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build very fast and secure websites. The Perplex theme is build specifically for this marvelous engine.
+Hugo, the world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and secure websites.
 {.p-first} <!--more-->
 
 [Hugo](https://gohugo.io) is a single command line tool for macOS, Windows, Linux and BSD derivatives. Binaries for most operating systems and some containers are usually available within a day or a few after every minor release.

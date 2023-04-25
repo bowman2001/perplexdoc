@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: .markdownlint.yaml
 description: Configuration file for the Markdown linter
 subtitle: false

@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Site Elements
 linktitle: Site
 description: Constant Layout Elements

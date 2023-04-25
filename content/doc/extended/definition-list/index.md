@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-03-24T21:44:53+01:00"
 description: A series of terms and associated details
 menu:

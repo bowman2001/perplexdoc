@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-12-16T09:21:56+01:00"
 description: Separate a single Markdown block into columns
 menu:

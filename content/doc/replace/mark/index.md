@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Mark
 description: Mark inline text as especially important
 subtitle: false

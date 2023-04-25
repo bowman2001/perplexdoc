@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Stand-alone Image (figure)
 description: Layout for image as a single block
 subtitle: false

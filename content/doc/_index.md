@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: 2021-09-15T11:42:44+02:00
 description: Perplex --- the all purpose technical theme for Hugo
 subtitle: false

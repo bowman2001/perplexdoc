@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Image Processing
 description: The theme generates all necessary versions 
 subtitle: false

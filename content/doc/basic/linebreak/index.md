@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-03-24T13:17:56+01:00"
 description: A break inside a paragraph
 menu:

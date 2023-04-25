@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-12-22T22:29:23+01:00"
 description: Gratitude is due to many people
 menu:

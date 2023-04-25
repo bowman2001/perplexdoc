@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-12-21T22:32:04+01:00"
 description: Partial for inserting inline HTML tags in `.Content`
 menu:

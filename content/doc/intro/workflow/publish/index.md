@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-09-14T12:56:56+02:00"
 description: Build & deploy the static website
 menu:

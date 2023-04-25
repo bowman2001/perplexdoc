@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-03-24T13:21:59+01:00"
 description: Text segments from other sources
 menu:

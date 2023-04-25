@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-09-10T23:05:24+02:00"
 description: Supplements
 menu:

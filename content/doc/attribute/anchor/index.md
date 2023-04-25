@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2022-01-06T14:15:12+01:00"
 description: Identify and refer to block elements
 menu:

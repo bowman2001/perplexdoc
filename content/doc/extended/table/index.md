@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-03-23T22:42:54+01:00"
 description: Lay out tabular data in rows and columns
 menu:

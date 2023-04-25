@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-08-31T20:26:34+02:00"
 description: Inject HTML attributes into Markdown
 menu:

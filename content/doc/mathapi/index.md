@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Math API 
 description: External service for SVG Math
 subtitle: false

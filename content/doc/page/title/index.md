@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Title Section
 description: The first section of content 
 date: 2022-01-17T15:42:24+01:00 

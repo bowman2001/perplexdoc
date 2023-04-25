@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Embedded image (float)
 description: Layout for the inline image element
 subtitle: false

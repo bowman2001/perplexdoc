@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Your First Content
 linktitle: Demo
 description: This is Your Demonstration Section for Try-Outs

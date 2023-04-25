@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2022-01-12T19:09:03+01:00"
 description: Wrapper for additional resources
 menu:

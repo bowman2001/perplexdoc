@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-09-13T22:45:36+02:00"
 description: Explicitly mark changes in the content
 menu: 

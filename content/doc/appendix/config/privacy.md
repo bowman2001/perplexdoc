@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: "2021-09-16T19:41:23+02:00"
 description: Privacy Section of the Configuration
 menu:

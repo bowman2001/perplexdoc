@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 title: Image Syntax
 description: CommonMarks image syntax with optional resources or an in-place query-string
 subtitle: false

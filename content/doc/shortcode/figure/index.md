@@ -1,5 +1,6 @@
 ---
-author: Georg Makowski
+authors: [gm]
+editors: [gm]
 date: 2021-09-11T00:07:48+02:00
 description: Shortcode for self-contained images
 subtitle: false
