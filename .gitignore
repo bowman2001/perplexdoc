@@ -4,6 +4,7 @@
 /resources/_gen
 
 # Local configuration
+/.gitmodules
 /.idea
 /.vscode
 /.run
