@@ -12,7 +12,7 @@ favicon:
   png: icon/favicon.png
 
 imaging:
-  sizestep: 50
+  sizestep: 25
   fallback_width: 1920
 
 # fathomSiteID: ABCDEFG
