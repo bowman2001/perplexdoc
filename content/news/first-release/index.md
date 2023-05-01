@@ -3,7 +3,7 @@ authors: [Georg Makowski]
 lasteditor: Georg Makowski
 title: First Release{/}of the Perplex theme
 linktitle: First Release
-description: Sill a beta pre-release
+description: Beta pre-release
 date: 2023-04-10T22:04:33+02:00
 categories: [Release]
 tags: [fluid responsive]
