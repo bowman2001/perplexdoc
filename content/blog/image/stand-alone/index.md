@@ -13,7 +13,7 @@ The theme offers many different layout options for stand-alone Markdown images. 
 {.p-first}
 <!--more-->
 
-This page shows layout demonstrations. The CommonMark syntax and the additional parameter handling by this theme are described on the [image syntax page](/doc/basic/image/syntax).
+This page is presenting layout options. The CommonMark syntax and the additional parameter handling by this theme are described on the [image syntax page](/doc/basic/image/syntax).
 
 ## Tiny
 
