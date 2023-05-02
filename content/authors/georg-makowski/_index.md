@@ -1,6 +1,6 @@
 ---
 title: Georg Makowski
-description: "Web typographer and developer"
+description: "Web typographer & front-end developer"
 subtitle: true
 date: 2023-04-25T14:53:30+02:00
 resources:

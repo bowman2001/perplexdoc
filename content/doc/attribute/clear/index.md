@@ -17,25 +17,21 @@ Sometimes we don’t want the text to float around an embedded element anymore.
 {.p-first}
 <!--more-->
 
+On a small mobile device, the following layout problem is probably unrecognizable. Please use a device that shows the full-text width (view-port &ge; {$600px}) to study the example.
+
 ## The problem
 
-On a mobile device, the following layout problem may be unrecognizable. Please use a device that shows the optimal text width (viewport &ge; {$600px}).
+![](splash?size=small) When we embed an element like the image here the text floats around it. That’s what we want initially but now we start a new subsection.
 
-![](splash?size=small) We have an embedded element like this image and the text floats around it. We want this initially, but now we would like to start a new subsection with a heading and that doesn’t look good.
+## New section beside the image
 
-### New subsection besides the image
-
-This new subsection should start after the embedded image so that the heading resides on the left as usual.
+This new subsection still floats around the embedded image! Instead, we would like to begin a new block after the embedded element with the heading on the left as usual.
 
 ## The solution
 
-![](bigsplash?size=small) Again, we have an embedded element and the text floats around it. Now we clear the float by adding an attribute to the containing paragraph. And the floating stops for all the following content.
+![](bigsplash?size=small) Again, we have an embedded element and the text floats around it as it should. Now we clear the float by adding the attribute `{.clear}` to the containing paragraph. And the floating stops for all the following content.
 {.clear}
 
-### Subsection after the image
+## The section after the image
 
-That’s it.
-
-## Syntax
-
-The class attribute to clear a float is `{.clear}`.
+That’s it. We got our separate section.

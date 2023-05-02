@@ -21,7 +21,7 @@ categories: [Markdown]
 tags: [latex]
 ---
 
-LaTeX is the most popular typesetting system for the natural sciences, its syntax has been established as a quasi-standard for complex mathematical formulas in print and web layout.
+LaTeX is the most popular typesetting system for the natural sciences. The syntax has been established as a quasi-standard for complex mathematical formulas in print and web layouts.
 {.p-first} <!--more-->
 
 ## Syntax

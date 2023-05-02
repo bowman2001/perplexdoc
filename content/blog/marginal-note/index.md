@@ -1,4 +1,5 @@
 ---
+authors: [Georg Makowski]
 title: The Beauty of Marginal Notes
 description: Demo of the marginal note
 date: 2022-07-04T22:18:04+02:00
