@@ -34,11 +34,11 @@ Remote
 
 We can register every file in a page bundle **only once**. And then, we can’t reference it anymore under its original name.
 
-Remote resources may slow down the build considerably, when an external service is not available. 
+Remote resources may slow down a build considerably when an external service is (temporarily) not available. Hugo always saves retrieved resources 
 
 ## Resources for this theme
 
-The theme relies on [page bundles](/doc/intro/workflow/content#bundles) to store page specific resources.
+The theme relies on [page bundles](/doc/intro/workflow/content#bundles) to store page-specific resources.
 
 ```YAML {.left}
 resources:

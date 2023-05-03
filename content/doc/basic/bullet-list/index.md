@@ -24,11 +24,11 @@ A simple list is unordered and groups a set of related items. Any item may conta
 
 ## Syntax
 
-We can use `-`, `+` or `*` to mark the items of an unordered list. We have to stick to the one we started with in every list. There are two basic kinds of lists, **tight** and **loose**. A list with sub-lists is called **nested**.
+We can use `-`, `+`, or `*` to mark the items of an unordered list. We have to stick to the one we started with in every list. There are two basic kinds of lists, **tight** and **loose**. A list with sub-lists is called **nested**. To reduce the indentation of lists on larger screens, we can use the attribute `{.smallindent}`.
 
 ### Tight
 
-```md {class=left}
+```md {.left .mb2}
 - The minus sign `-`
 - The plus sign `+`
 - The asterisk `*`
@@ -65,7 +65,7 @@ To start a sub-list inside a list item, the markers of the sub-list have to be i
 
 ## Layout
 
-Perplex is styling _tight_, _loose_ and _nested_ lists of both kinds. As additional option, you may enforce a smaller indentation on tight lists with a class attribute.
+Perplex is styling tight, loose, and nested lists of both kinds. As an additional option, you may enforce a smaller indentation on tight lists with a class attribute.
 
 ### Tight
 
@@ -91,9 +91,9 @@ Every block, which is not indented, closes the list.
 
 ### Nested
 
-#### Tight
+#### Tight {.h-p}
 
-Tight lists are vertically spaced like normal paragraphs:
+lists are vertically spaced like normal paragraphs:
 
 - To mark your list items you could also use
   - the asterisk `*`
@@ -104,9 +104,9 @@ Tight lists are vertically spaced like normal paragraphs:
     - the minus sign `-`
 - And back to the first level
 
-As you can see, a tight nested list tends to look a cramped. Maybe we are always better off with loose nested lists, even if the items are short. Or we may try a _smaller indentation_.
+As you can see, a tight nested list tends to look cramped vertically. Maybe we are always better off with loose nested lists, even if the items are short. Or we may try a **smaller indentation**.
 
-On mobile screens the indentation of list items is already smaller. To enforce the smaller indentation on all screens, we add the _attribute_ `{.smallindent}`.
+On mobile screens, the indentation of list items is already smaller. To enforce the smaller indentation on all screens, we have the [attribute](/doc/attribute) `{.smallindent}`.
 
 - To mark your list items you could also use
   - the asterisk `*`
@@ -118,13 +118,13 @@ On mobile screens the indentation of list items is already smaller. To enforce t
 - And back to the first level
 {.smallindent}
 
-#### Loose
+#### Loose {.h-p}
 
-If there is at least one empty line between the items of a list and every sub-list, the result looks like this:
+lists are generated if there is an empty line between the items of a list. This occurs already if there is **only one** subsequent item separated by an empty line. A list is either tight or loose, the layout can’t be changed inside a list. But we can nest tight and loose lists. The result for nested loose lists looks like this:
 
 - A loose list may contain more than one paragraph. You only have to keep the indentation on the same level.
 
-  Like this. Here we have separated paragraph inside the same list item. And we can explain and explain until we don't know what to write anymore. And we can even start a nested list.
+  Like this. Here we have separated paragraphs inside the same list item. And we can explain and explain until we don't know what to write anymore. And we can even start a nested list.
 
   - Here we have the first item of our new loose sub-list. There may be a lot of content inside such an item. A new sub-list for example:
 
