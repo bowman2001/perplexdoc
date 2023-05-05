@@ -20,7 +20,7 @@ tags: [image, block]
 series: [images]
 ---
 
-The CommonMark image syntax is short and the theme distinguishes between two possible image positions: **stand-alone** & **embedded**. To alter the appearance we can pass additional parameters to the theme.
+The CommonMark image syntax is short and the theme distinguishes between two possible image positions: **stand-alone** & **embedded**. To alter the appearance we can pass additional parameters.
 {.p-first}
 <!--more-->
 

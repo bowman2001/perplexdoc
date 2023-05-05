@@ -21,7 +21,11 @@ Sometimes we like to break a title or a line only for those layouts, which show 
 
 ## Syntax
 
-The code `{‍/}` is placed between the words to break **without additional spacing**.
+The code `{‍‍‍‍/}` is placed between the words **without additional spacing** like 
+
+```md
+### A compact heading{‍/}looks visually appealing
+```
 
 ## Layout
 
