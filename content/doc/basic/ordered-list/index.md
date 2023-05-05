@@ -19,7 +19,7 @@ resources:
       alt: An old wooden library database
 ---
 
-Ordered lists group related items and mark them with ascending counters. They provide a very clear structure but are tedious to read when they get too long. Consider to insert a normal paragraph or another block element in between the items of a long list.
+Ordered lists group related items and mark them with ascending counters. They provide a very clear structure but are tedious to read when they get too long. Consider inserting a normal paragraph or another block element in between the items of a long list.
 {.p-first} <!--more-->
 
 ## Syntax
@@ -27,14 +27,14 @@ Ordered lists group related items and mark them with ascending counters. They pr
 List items begin with an integer followed by a period and a space. The order of the numbers has no effect on the result, we even may use always the same number. Markdown treats the numbers as markers and ignores their values. Every list or sub-list will follow 1, 2, 3…, a, b, c… or I, II, III… .
 
 {{< mnote up=14 >}}
-**CommonMark** injects the **first number** of a list as the `start` attribute of the `<ol>`-tag, if this number is not equal to {$1}. Unfortunately this value is only accessible for the browser-internal list counter. This theme declares its own counters in CSS and I’ve found no good way to get hold of the start value.
+**CommonMark** injects the **first number** of a list as the `start` attribute of the `<ol>`-tag if this number is not equal to {$1}. Unfortunately, this value is only accessible for the browser-internal list counter. This theme declares its counters in CSS and I’ve found no good way to get hold of this start value.
 {{< /mnote >}}
 
 It’s possible to manipulate the counters with attributes. The one currently available is `.ol-continue` and lets us continue to start a new list where the last one did end (see [With Interruption](#nested-loose-list-with-interruption)).
 
 ## Layout
 
-Only two layout examples are following here, because the styling options for an ordered list are basically the same as for an unordered [bullet list](/doc/basic/bullet-list).
+Only two layout examples are following here because the styling options for an ordered list are basically the same as for an unordered [bullet list](/doc/basic/bullet-list).
 
 ### Tight List
 
