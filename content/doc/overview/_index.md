@@ -18,3 +18,5 @@ resources:
 
 Short overview of the Perplex theme for seasoned Hugo users.
 {.p-first} <!--more-->
+
+The theme provides a nice default layout for extended CommonMark content. Additional styling through attributes and shortcodes is optional.

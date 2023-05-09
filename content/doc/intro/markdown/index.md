@@ -55,7 +55,7 @@ Hugo’s deprecated **Blackfriday** renderer is not fully CommonMark-compliant. 
 
 Further extensions may join in the future, but probably only a few if any, because simplicity is Markdown’s essential characteristic.
 
-This documentation includes a short review of every syntax element known to Goldmark and shows examples of their standard layout in Perplex and alternative styling options the theme provides:
+This documentation includes a short review of every syntax element of Goldmark and shows their standard layout and alternative styling options:
 
 [Basic Markdown Layout](/doc/basic)
 : covers the elements of the [CommonMark specification][cmark].
@@ -82,11 +82,11 @@ The following suggestions for these elements are short. Their issues are discuss
 
 ### How to include images?
 
-There is one image element in CommonMark for embedding an image into a block element and no genuine element for a stand-alone image. Thankfully, since version 0.108.0 Hugo can distinguish a stand-alone image from one inside of a text block and allows the theme to generate the appropriate figure:
+There is one image element in CommonMark for embedding an image into a block element and no genuine element for a stand-alone image. Thankfully, since version 0.108.0 Hugo can distinguish a stand-alone image from one inside of a text block and allows to generate the appropriate figure:
 
 ![](bigsplash)
 
-Hugo and Perplex used to provide the shortcode [{$figure}][fig] for this purpose. It’s only kept for backward compatibility. This solution is much more convenient and fits loads of already existing Markdown.
+Hugo and Perplex used to provide the shortcode [{$figure}][fig] for this purpose. It’s only kept for backward compatibility. The new solution is much more convenient and fits loads of already existing Markdown.
 
 ![splash](splash) Perplex styles the embedded Markdown image element as a float. The theme offers layout variations for both kinds of images. We can place embedded images on the left or right inside the text block. Small stand-alone images may appear in the margin of the following text block. Large ones stretch from the left margin to the right. Look into the section about [images](/doc/basic/image) for all the options.
 {.clear}

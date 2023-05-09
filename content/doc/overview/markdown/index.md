@@ -16,6 +16,10 @@ resources:
     alt: Markdown logo
     size: tiny
     container: "no"
+- src: bigsplash
+  name: Big splash of water
+  params: 
+    caption: Check
 categories: [Overview, Markdown]
 tags: [Block, Inline]
 weight: 5

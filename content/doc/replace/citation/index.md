@@ -18,10 +18,11 @@ categories: [Markdown]
 tags: [replacement] 
 ---
 
-This replacement code places the HTML `<cite>` tag around the marked content.
-{.p-first}<!--more-->
+This replacement code wraps the HTML `<cite>` tag around the marked content.
+{.p-first}
+<!--more-->
 
-The `<cite>` tag has changed its purpose over time. In the past it has been used to mark the name of authors. Today it marks the names of creative works like books, magazines, newspapers, poems, paintings, songs, movies etc…&thinsp;. For online sources, we may combine the citation with a link.
+The `<cite>` tag has changed its purpose over time. In the past, it has been used to mark the name of authors. Today it marks creative works like books, magazines, newspapers, poems, paintings, songs, movies, etc…&hairsp;. For online sources, we may combine the citation with a link.
 
 ## Syntax
 

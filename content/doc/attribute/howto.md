@@ -40,7 +40,7 @@ Fenced code block
 ### Kinds of Attributes
 
 Class attributes
-: Usually, they style an element and refer to a CSS class. We can use the long form following the HTML syntax --- like `class="name"`. The short alternative is the CSS syntax: `.name`.  
+: Usually, they style an element and refer to a CSS class. We can use the long form following the HTML syntax --- like `class="name"`. Short alternative CSS syntax: `.name`.  
 
 Identification attributes
 : Usually, they serve as anchors and need to be unique. Again, we can use `id="identifier"` or short `#identifier`.

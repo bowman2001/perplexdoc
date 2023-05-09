@@ -20,10 +20,12 @@ resources :
     src    : mulyadi-JJMoAiVl9jA-unsplash.jpg
     params :
       alt    : Splashing ring of water
+      caption: Caption (via resource)
   - src    : erda-estremera-eMX1aIAp9Nw-unsplash.jpg
     name   : bigsplash
     params :
       alt    : A splashing drop of water
+      caption: This caption and the attribution are only available when we register an image as a resource in the front-matter
   - src: fig/tiny_text.svg
     name: tiny
     params:
@@ -78,4 +80,6 @@ resources :
       alt: Placeholder image, extra large size
       caption: The size of an extra large image will only show in blog and article pages. It’s treated here like a large image, because the sidebar occupies the left margin.
       attr: gm
+  - src: portrait.jpg
+    name: portrait
 ---

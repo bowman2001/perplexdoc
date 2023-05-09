@@ -1,7 +1,7 @@
 ---
 authors: [Georg Makowski]
-title: Stand-alone Image (figure)
-description: Layout for image as a single block
+title: Stand-alone Image
+description: Layout demo for block images on a documentation page
 subtitle: false
 date: 2023-03-23T10:10:38+01:00 
 featured: bigsplash

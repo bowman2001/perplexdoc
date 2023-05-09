@@ -1,7 +1,7 @@
 ---
-author:
+authors: []
 title: {{ replace .Name "-" " " | title }}
-description: "**Placeholder** for page description"
+description: "**Placeholder** for short description"
 subtitle: false
 date: {{ .Date }} 
 menu:

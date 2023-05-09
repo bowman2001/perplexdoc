@@ -36,13 +36,17 @@ When we escape a number sign `\#` for example it’s just the number sign ‘**\
 
 **Entities** are ASCII codes for **Unicode characters**. These codes begin with an ampersand `&` and end with a semicolon `;`. For example:
 
-1. `&para;` means the paragraph&ensp;&para;&nbsp;.
+`&para;` 
+: means the paragraph&ensp;&para;&nbsp;.
 
-2. `&sect;` means the section&ensp;&sect;&nbsp;.
+`&sect;` 
+: means the section&ensp;&sect;&nbsp;.
 
-3. `&#8477;` means the set of real numbers&ensp;&#8477;&nbsp;.
+`&#8477;` 
+: means the set of real numbers&ensp;&#8477;&nbsp;.
+{.dl-loose}
 
- For more exotic ones you should check, if they are available in the [**IBM Plex** fonts][plexspec] this theme is shipping with. If a character is missing there, the browsers will first try to use a local font and may display a glyph with a more or less noticeable different shape. And if they can't find a representation for the character anywhere, they will display an ugly placeholder glyph. You may take a good look at the &#8477; in example 3. It’s not included in the Plex fonts but usually available in system fonts and will differ more or less in shape.
+ For more exotic ones you should check, if they are available in the [**IBM Plex** fonts][plexspec] this theme is shipping with. If a character is missing there, the browsers will first try to use a local font and may display a glyph with a more or less noticeable different shape. And if they can't find a representation for the character anywhere, they will display an ugly placeholder glyph. You may take a good look at the &#8477; in the last example. The Plex fonts provide no glyphs for the real set but there is usually one available in system fonts and will differ more or less in shape.
 
 Please remember the often neglected sets of general entities, which are meant to facilitate nice typography — the ones for **spacing** and **(not) breaking**.
 

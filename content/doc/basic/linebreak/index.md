@@ -22,7 +22,7 @@ resources:
       ratio: 1.5
 ---
 
-Sometimes we like to begin a new line without starting a whole new text block. To place such a hard-line break gets complicated when **hard-line wraps** limit the line length inside our Markdown files.
+Sometimes we like to begin a new line without starting a whole new text block. Placing such a hard-line break gets complicated when **hard-line wraps** control the line length inside our Markdown files.
 {.p-first} <!--more-->
 
 ## Syntax
@@ -33,7 +33,7 @@ CommonMark
 : allows **hard wraps** — a.&hairsp;k.&hairsp;a. hard-line breaks — to limit the line length. They are treated just like spaces. Therefore, CommonMark needs a special syntax element for an intentional line break.
 
 GitHub
-: instead, treats hard-line breaks simply as such. In this case, we probably need to use **soft wraps** in our editor to limit the line length, which may be a good habit anyway. (See also: [Writing Markdown][hwl])
+: instead, treats hard-line breaks simply as such. In this case, we should probably enable **soft wraps** in our editor to limit the line length. (See also: [Writing Markdown][hwl])
 {.dl-loose}
 
 ### The CommonMark Way
@@ -47,23 +47,23 @@ One backslash `\`
 : directly after the text and before the end of the line.
 {.dl-loose}
 
-Both options are error-prone. Spaces before the end of the line are usually invisible in text editors and get easily deleted by accident. The backslash is visible, but if there’s only one additional space character between `\` and the also invisible newline character, the `\` is treated literally. We get a visible `\` instead of a newline on the page.
+Both options are error-prone. Spaces before the end of the line are usually invisible in text editors and get easily deleted by accident. The backslash is visible, but if there’s only one additional space character between the backslash and the also invisible newline character, the backslash is treated literally. And we get a visible `\` instead of a newline on the page.
 
 ### The GitHub Way
 
-To format line-breaks like GitHub, we need to set `hardWraps` to `true`, as in the [configuration for this project][hw]. Now, the syntax becomes intuitive:
+To format line breaks like GitHub, we need to set `hardWraps` to `true`, as in the [configuration for this project][hw]. Now, the syntax becomes intuitive:
 
 Hard line breaks
 : break lines hard.
 {.dl-loose}
 
-If we change the line-breaking from CommonMark’s way to GitHub’s, Hugo still recognizes the CommonMark breaks. We don’t need to replace them. But we need to remove all simple breaks because they are now also treated as intentional line breaks.
+If we change the line-breaking from CommonMark’s way to GitHub’s, Hugo still recognizes the CommonMark breaks. We don’t need to replace them. But we need to remove simple breaks because they are now all treated as intentional ones.
 
 ### What now?
 
 When you have to strictly adhere to the CommonMark specification the best option from my point of view is still, to forgo hard wraps and use CommonMark-breaks. This way is compatible with CommonMark **and** GitHub.
 
-When you are allowed to deviate from CommonMark in regard to this one element, I strongly recommend the GitHub way. (See also: [Writing Markdown][hwl])
+When you are allowed to deviate from CommonMark regarding this one element, I strongly recommend the GitHub way. (See also: [Writing Markdown][hwl])
 
 ## Layout
 

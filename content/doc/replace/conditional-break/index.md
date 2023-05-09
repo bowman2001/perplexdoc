@@ -15,7 +15,7 @@ tags: [replacement, fluid-responsive]
 weight: 490
 ---
 
-Sometimes we like to break a title or a line only for those layouts, which show the text in full width.
+Sometimes we like to break a title or a line only for those layout versions, which show the text in full width.
 {.p-first}
 <!--more-->
 

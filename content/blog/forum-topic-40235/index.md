@@ -18,7 +18,7 @@ A definition list inside a blockquote with a sub-list in one of its items is an 
 {.p-first}
 <!--more-->
 
-The problem came up in the [Hugo-forum](https://discourse.gohugo.io/t/list-as-a-definition-list-item/40235). At first, it was a little unclear, so I created two demos. The original question was not about the layout, only about the resulting HTML code.{^\*}
+The problem came up in the [Hugo-forum](https://discourse.gohugo.io/t/list-as-a-definition-list-item/40235). At first, it was a little unclear, so I created two demos. The original question was about the resulting HTML code.{^\*}
 
 {{< mnote star=1 >}}
 I don’t include the resulting code, you can inspect it as usual with your browser tool.
@@ -48,6 +48,4 @@ I don’t include the resulting code, you can inspect it as usual with your brow
 > {.dl-loose}
 {{< /playground >}}
 
-Markdown is very sensitive to indentation when combining various formatting signs and [attributes](/doc/attribute). We need to align our code perfectly.
-
-The HTML code is the expected one. Which markup fits the content in the best way is a matter of taste.
+Markdown is very sensitive to indentation when combining various formatting signs and [attributes](/doc/attribute). We need to align our code correctly. Then, the HTML code is the expected one. Which version fits the content in the best way is a matter of taste.
