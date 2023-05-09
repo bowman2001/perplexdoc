@@ -14,7 +14,6 @@ resources:
   name: portrait
   params:
     alt: Georg Makowski
-draft: true
 ---
 
 Physicist with a diploma in the fields of applied non-linear dynamics, signal processing, and information technology (A-grade). Front-end developer & Hugo specialist.
