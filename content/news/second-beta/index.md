@@ -11,7 +11,6 @@ resources:
       alt: Rendered objects
 categories: [Release]
 tags: [fluid responsive]
-draft: true
 ---
 
 Author pages are now available and some layout elements have been improved.
