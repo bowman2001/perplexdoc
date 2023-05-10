@@ -17,7 +17,7 @@ resources:
     attr: "&copy; C. J. Mozzochi, Princeton&nbsp;N.J"
 ---
 
-Marginal notes add further information elegantly and unobtrusively.
+Marginal notes add further information elegantly and unobtrusively. We can add them with the shortcode {$mnote}.
 {.p-first} <!--more-->
 
 The famous mathematician Fermat wrote his last conjecture around 1637 in the marginal column besides an ancient Greek proof by Diophantus. The “marvelous proof” Fermat mentioned there has never been uncovered and his note kept mathematicians wondering for over 350 years.

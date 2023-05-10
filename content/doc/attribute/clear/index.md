@@ -13,7 +13,7 @@ categories: [Attribute]
 weight: 380
 ---
 
-Sometimes we don’t want the text to float around an embedded element anymore.
+Sometimes we want the text to stop floating around an embedded element. Then we have to place a good ol’ `.clear` attribute.
 {.p-first}
 <!--more-->
 

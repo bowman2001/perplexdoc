@@ -19,5 +19,5 @@ resources:
       container: "no"
 ---
 
-A short guide about working & publishing with Hugo and this theme.
+A short guide about creating & publishing your site with Hugo and this theme.
 {.p-first} <!--more-->

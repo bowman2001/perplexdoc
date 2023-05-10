@@ -10,7 +10,7 @@ featured: bigsplash
 toc: true
 ---
 
-The theme offers many different layout options for stand-alone Markdown images. Here you can see the ones for all the pages without a sidebar.
+The theme offers many different layout options for stand-alone Markdown images. Here you can see their layout on all pages without a sidebar.
 {.p-first}
 <!--more-->
 
