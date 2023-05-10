@@ -20,9 +20,6 @@ Features, which I consider essential before a public release, and the ones which
 
 ## Essential
 
-Author pages
-: an {$authors} taxonomy with a special template should do it.
-
 Better SEO
 : This will happen in the module [{$hugo-mod-meta}](https://github.com/bowman2001/hugo-mod-meta)
 
