@@ -17,5 +17,9 @@
                 {{- printf "%s %s\n" "X-XSS-Protection:" site.Params.xHeadersConfig.xssDefault -}}
             {{- end }}
         {{- end }}
+        {{- else }}
+        {{ warnf "The module 'hugo-mod-csp' is present but the necessary parameters for the X-headers are not configured for this project. Please follow the README of the module to provide X-headers for your site." }}
     {{- end }}
+    {{- else }}
+    {{ errorf "The module 'hugo-mod-csp' is present but its misconfigured. Please disable the module for now and file an issue in its repository." }}
 {{- end -}}{{/**/}}
