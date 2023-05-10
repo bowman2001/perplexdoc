@@ -24,7 +24,7 @@ Physicist with a diploma in the fields of applied non-linear dynamics, signal pr
 {.p-first}
 <!--more-->
 
-I’m engaged in web publishing. My focus lies on a clear and consistent layout structure and optimal legibility on modern screen sizes. I’m specialized in fluid-responsive design because it can integrate many achievements of classic typographic page design into modern websites with several responsive layout variants. A baseline grid for example can bear fruit when we can rely on our layout proportions between at least two breakpoints of our responsive design.
+I’m engaged in web publishing. My focus lies on a consistent layout structure and optimal legibility on modern screens. I’m specialized in fluid-responsive design because it can integrate many achievements of classic typographic page design into modern websites with several responsive layout variants. A baseline grid for example can bear fruit when we can rely on our layout proportions between at least two breakpoints of our responsive design.
 
 **C**ascading **S**tyle **S**heets
 : are my main field of expertise. Style sheets are a collection of mechanisms to add fonts and styling to a web document. They’re not a programming language and every rigorous system reducing their complexity for the sake of technical maintainability tends to diminish their capabilities.
