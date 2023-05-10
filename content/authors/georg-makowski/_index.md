@@ -3,6 +3,10 @@ title: Georg Makowski
 description: "Web typographer & developer"
 subtitle: true
 date: 2023-04-25T14:53:30+02:00
+menu:
+  main:
+    name: About
+    weight: 100
 resources:
 - src: Joerg_Makowski.jpg
   name: featured
