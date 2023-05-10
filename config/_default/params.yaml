@@ -2,9 +2,7 @@
 # Additional parameters
 #
 
-description: Perplex is a typographic theme with advanced layout capabilities. You can publish technical content in a documentation, a blog, as news or long articles.
-embedFull: false
-svg: inline
+description: Perplex is a documentation theme for Hugo with a fluid-responsive design and advanced layout capabilities.
 
 # Site wide favicon for browser and OS display
 favicon:
@@ -23,3 +21,42 @@ render_hooks:
     errorLevel: warning
   fragments:
     errorLevel: ignore
+
+
+# X-Headers
+
+xHeaders:
+  FrameOptions: deny
+  ContentTypeOptions: true
+  XSSProtection: false
+
+# Content-Security-Policy
+cspConfig:
+  reportOnly: false
+  
+csp:
+  default:
+    - "https:"
+    - 'self'
+    - '*.desider.at'
+  script:
+    - 'report-sample'
+    - 'self'
+  style:
+    - 'report-sample'
+    - 'self'
+    - 'unsafe-inline'
+  object: 'none'
+  base: 'self'
+  connect: 'self'
+  font:
+    - 'self'
+    - 'data:'
+  frame: 'self'
+  img:
+    - 'self'
+    - 'data:'
+  manifest: 'self'
+  media: 'self'
+  worker: 'none'
+
