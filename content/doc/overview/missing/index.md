@@ -23,12 +23,15 @@ Features, which I consider essential before a public release, and the ones which
 Better SEO
 : This will happen in the module [{$hugo-mod-meta}](https://github.com/bowman2001/hugo-mod-meta)
 
-Site-wide search
-: Javascript library without dependencies called in a modal window --- [this module][search] looks promising.
-
 Social Icons
 : Simple icons are looking like the obvious choice.
 {.dl-loose}
+
+Site-wide search
+: Javascript library without dependencies called in a modal window --- [this module][search] looks promising.
+
+Dark Mode
+: The dark mode will change the colors of the light parts of the theme. The code elements will stay the same because also changing them looks like way too much work for now.
 
 [search]: https://github.com/hugomods/search "Search module by Razon Yang"
 
@@ -37,8 +40,6 @@ Social Icons
 ### Colors
 
 - An easy way to change the four basic colors and their derivatives in the theme --- will require the additional installation of PostCss.
-
-- Dark Mode
 
 ### Icons
 

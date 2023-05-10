@@ -1,4 +1,5 @@
 ---
+authors: [Georg Makowski]
 title: Page Navigation
 description: Sidebar, Prev/Next and Table of Contents
 subtitle: false
