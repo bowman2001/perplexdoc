@@ -64,8 +64,13 @@ of an ordered list for a general remark should not interrupt the counting. We ne
       1. {{< farfarshort 1 >}}
 
       2. {{< farfarshort 1 >}}
+
+      We can **interrupt every sub-list** with a text block and continue afterward:
+
       3. {{< farfarshort 1 >}}
+      
       4. {{< farfarshort 1 >}}
+      {.ol-continue}
 
    2. {{< farfarshort 3 >}}
 
