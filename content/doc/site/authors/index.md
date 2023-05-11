@@ -14,7 +14,7 @@ resources:
   - src: charles-etoroma-vkc1YLZ50yE-unsplash.jpg
     name: featured
     params:
-      alt: The unknown author
+      alt: 
   - src: portrait.jpg
     name: portrait    
 categories: [author]
