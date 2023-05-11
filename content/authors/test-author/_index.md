@@ -15,6 +15,7 @@ resources:
 draft: true
 ---
 
-This is the page for a test author and there are only placeholder images.
+This is the page of a non-existing author for demonstrational purposes. It only contains placeholders.
 {.p-first}
 <!--more-->
+

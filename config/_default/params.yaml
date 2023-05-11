@@ -57,6 +57,7 @@ csp:
   img:
     - 'self'
     - 'data:'
+    - 'https://cdn.usefathom.com'
   manifest: 'self'
   media: 'self'
   worker: 'none'
