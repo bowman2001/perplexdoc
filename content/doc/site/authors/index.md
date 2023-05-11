@@ -17,6 +17,7 @@ resources:
       alt: Anonymous author
   - src: portrait.jpg
     name: portrait
+    params:
       alt: Anonymous portrait    
 categories: [author]
 weight: 665
