@@ -14,9 +14,10 @@ resources:
   - src: charles-etoroma-vkc1YLZ50yE-unsplash.jpg
     name: featured
     params:
-      alt: 
+      alt: Anonymous author
   - src: portrait.jpg
-    name: portrait    
+    name: portrait
+      alt: Anonymous portrait    
 categories: [author]
 weight: 665
 ---

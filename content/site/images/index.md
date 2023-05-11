@@ -82,4 +82,6 @@ resources :
       attr: gm
   - src: portrait.jpg
     name: portrait
+    params:
+      alt: Anonymous
 ---
