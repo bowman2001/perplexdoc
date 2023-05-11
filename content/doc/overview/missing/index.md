@@ -25,26 +25,25 @@ Better SEO
 
 Social Icons
 : Simple icons are looking like the obvious choice.
-{.dl-loose}
 
 Site-wide search
 : Javascript library without dependencies called in a modal window --- [this module][search] looks promising.
 
 Dark Mode
 : The dark mode will change the colors of the light parts of the theme. The code elements will stay the same because also changing them looks like way too much work for now.
+{.dl-loose}
+
 
 [search]: https://github.com/hugomods/search "Search module by Razon Yang"
 
 ## Nice to have
 
-### Colors
+Configurable colors
+: Option to change the four basic colors and their derivatives in the theme --- will require the additional installation of PostCss.
 
-- An easy way to change the four basic colors and their derivatives in the theme --- will require the additional installation of PostCss.
-
-### Icons
-
-- SVG Icons (at the moment the web font set of Google Material Icons is available)
-
-- A choice to use other icon sets than Material Icons
+Icons
+: - SVG Icons (at the moment the web font set of Google Material Icons is available)
+  - A choice to use other icon sets than Material Icons
+{.dl-loose}
 
 Suggestions are also welcome as new issues in the [repo](https://github.com/bowman2001/perplex). Please check out the existing ones.
