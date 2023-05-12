@@ -24,7 +24,7 @@ Physicist with a diploma in the fields of applied non-linear dynamics, signal pr
 {.p-first}
 <!--more-->
 
-I’m engaged in web publishing. My focus lies on a consistent layout structure and optimal legibility on modern screens. I’m specialized in fluid-responsive design because it can integrate many achievements of classic typographic page design into modern websites with several responsive layout variants. A baseline grid for example can bear fruit when we can rely on our layout proportions between at least two breakpoints of our responsive design.
+I’m engaged in web publishing. My focus lies on a consistent layout structure and optimal legibility on modern screens. I’m specialized in fluid-responsive design because it can integrate many achievements of classic typographic page design into modern websites. The concept of a baseline grid bears fruit because the layout proportions stay fixed between at least two breakpoints of the responsive design. A web page template is now simply a collection of a few layout versions and each of them has conceivable proportions.
 
 **C**ascading **S**tyle **S**heets
 : are my main field of expertise. Style sheets are a collection of mechanisms to add fonts and styling to a web document. They’re not a programming language and every rigorous system reducing their complexity for the sake of technical maintainability tends to diminish their capabilities.
@@ -38,7 +38,7 @@ Hugo
 : I’ve been using this engine since version {$0.18} to build fast and reliable static websites and dove deeper into the JAMstack since version {$0.86} when Markdown attributes became available to provide additional styling options for authors. I have become an experienced Go-HTML-template programmer since then.
 
 Javascript
-: I know my way around vanilla Javascript, Typescript, and Node and like to enhance sites with dynamic capabilities when the result justifies loading additional libraries (on demand).
+: I know my way around vanilla Javascript, Typescript, and Node and like to enhance sites with dynamic capabilities when the result justifies loading additional libraries (preferably on demand).
 {.dl-loose}
 
 I’m also a writer and speaker (in German) with a focus on the epistemology of the natural sciences, and a lecturer at the University of Applied Sciences{/}in Frankfurt.
