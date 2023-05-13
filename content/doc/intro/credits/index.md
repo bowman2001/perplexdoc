@@ -18,15 +18,15 @@ resources:
       alt: An open book with a lot of hand-written notes and a flower laying on the left page
 ---
 
-The development of an open-source theme is a strange kind of collaborative effort. Even without personally knowing all the people I have benefitted from, I would like to thank them.
+The development of an open-source theme is a strange kind of collaborative effort. Without personally knowing all the people I have benefitted from, I would like to thank them.
 {.p-first}
 <!--more-->
 
-All images in this documentation were made available free of charge by numerous skilled photographers on [Unsplash][unsplash]. Their names and a link to the source are given in the captions.
+Most images in this documentation were made available free of charge by numerous skilled photographers on [Unsplash][unsplash]. Their names and a link to the source are given in the captions.
 
 The concept for a layout geared towards classical typographic principles grew over some years out of many already existing ideas. I can’t even mention every helpful author I read about typography and CSS techniques. Many conceptual parts date back to [Matthew Butterick’s][mb] beautiful online book [{=Practical Typo&shy;graphy}][pt]. It also taught me a lot about typography in general and some about distinctive American-English features.
 
-Perplex is --- as the name says --- based on [IBM’s][ibm] corporate open-source font family [Plex][plex]. These fonts are made specifically for technical publishing and even offer a nice serif version.
+Perplex is --- as the name says --- based on [IBM’s][ibm] corporate open-source font family [Plex][plex]. These fonts are made specifically for technical publishing and it shows.
 
 Without [Chris Coyier’s][cc] always up-to-date website [CSS-Tricks][cc] I would have been lost in the CSS specs. He and all his contributors have been clarifying the constantly evolving capabilities of CSS like only a few others.
 
