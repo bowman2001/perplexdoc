@@ -29,12 +29,11 @@ Generate SVG diagrams with the Kroki service by writing textual diagram descript
 This is the same diagram as on the [Mermaid page](/doc/plugin/mermaid). But the rendering may be a little bit different.
 
 ```kroki {type=mermaid}
-graph TD
-A[Christmas]  -->|Get money| B(Go shopping)
-B --> C{Let me think}
-C -->|One| D[Laptop]
-C -->|Two| E[iPhone]
-C -->|Three| F[Car ]
+sequenceDiagram
+    Alice->>+John: Hello John, how are you?
+    Alice->>+John: John, can you hear me?
+    John-->>-Alice: Hi Alice, I can hear you!
+    John-->>-Alice: I feel great!
 ```
 
 If you are pleased with the results from Kroki, you should consider generating your Mermaid diagram like this, because server-side rendered SVGs don’t need client-side processing anymore.

@@ -25,9 +25,9 @@ LaTeX is the most popular typesetting system for the natural sciences. The synta
 
 ## Syntax
 
-The render engine for LaTeX in Perplex is [KaTeX][katex] and gets included on demand into pages with at least one shortcode {$katex} or one code block with the identifier `katex`. If you already have many working LaTeX expressions in your Markdown — maybe with carefully escaped markup — you can also set the parameter `katex: true` in the front-matter.
+Perplex includes the render engine [\\(\KaTeX\\)][katex] on demand into pages with at least one shortcode {$katex} or one code block with the identifier `katex`. If you already have working mathematical or chemical expressions in your Markdown — maybe with carefully escaped markup — you can also set the parameters `math: true` or `chem: true` in the front-matter.
 
-{{< mnote up=11 >}}
+{{< mnote up=17 >}}
 There is another LaTeX render engine for the Web: [MathJax](https://www.mathjax.org/). I chose KaTeX for performance reasons.
 {{< /mnote >}}
 
@@ -39,24 +39,22 @@ Inline LaTeX needs to be surrounded by single dollars like `$E = mc^2$` (or doub
 
 - Single dollars are markup for KateX and this is not always wanted. But we can use the dollar as a currency, of course: `100$` &rarr; 100$. KaTeX expects whitespace before the first delimiter.
 
-Therefore, we have a simple shortcode to mark inline LaTeX and shield it from Markdown rendering. We can and need to omit the KaTeX delimiters, then, they are already included in the shortcode:
+Therefore, we have two simple shortcodes to mark inline LaTeX and shield it from Markdown rendering. We can and **need to omit** the KaTeX delimiters, then, they are already included in the shortcodes:
 
 ```md
-{{</* katex */>}}Z_n = X_n + Y_n\quad X_n,Y_n,Z_n\in\mathbf{R}{{</* /katex */>}}
+{{</* math */>}}Z_n = X_n + Y_n\quad X_n,Y_n,Z_n\in\mathbf{R}{{</* /math */>}}
+and 
+{{</* chem */>}}H_{2}O(l){{</* /chem */>}}
 ```
 
 ### Block
 
-LaTeX formulas need to be surrounded by two dollar signs `$$` or doubly escaped square brackets `\\[` and `\\]`. The problem with the markup overlap may occur here, too. And we have the additional problem, that we can’t use new lines inside a formula block. The solution is to enclose stand-alone formulas by a special code block with the identifier `katex`.
-
-{{< mnote up=17 >}}
-Hugo highlights code blocks according to the identifier after the first fence. The identifier `latex` is one option and prettifies the included LaTeX code. Only `katex` does render the code.
-{{< /mnote >}}
+LaTeX formulas need to be surrounded by two dollar signs `$$` or doubly escaped square brackets `\\[` and `\\]`. The problem with the markup overlap may occur here, too. And we have the additional problem, that we can’t use new lines inside a formula block. The solution is to enclose stand-alone formulas by a special code block with the identifier `math`.
 
 The following three formulas are shown above and represent the discrete Binomial distribution, the reverse Fourier transformation, and an equation for infinite nested fractions, which I can’t comprehend (I’m a physicist and can only suspect a mathematician has carefully proven this. :wink:).
 
 ```latex
-‍```katex
+‍```math
 \begin{equation}
 B_{n,p}(k) = {n \choose k} p^k (1-p)^{n-k}
 \end{equation}
@@ -64,7 +62,7 @@ B_{n,p}(k) = {n \choose k} p^k (1-p)^{n-k}
 ```
 
 ```latex
-`‍‍``katex
+`‍‍``math
 \begin{equation}
 f(x) = \int_{-\infty}^\infty\hat f(\xi)\, e^{2 \pi i \xi x}\,d\xi
 \end{equation}
@@ -72,11 +70,19 @@ f(x) = \int_{-\infty}^\infty\hat f(\xi)\, e^{2 \pi i \xi x}\,d\xi
 ```
 
 ```latex {.semi-large}
-```katex
+```math
 \begin{equation}
 \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = \\
 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots}}}}
 \end{equation}
+‍```
+```
+
+And this is a chemical reaction between mercury and iodine ions:
+
+```latex
+```chem
+\ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}
 ‍```
 ```
 
@@ -88,29 +94,35 @@ KaTeX is very compact, reliable, and fast --- I see no urgent need to replace th
 
 ### Inline
 
-Short expressions like $E = mc^2$ or \\(\frac{1}{5}\\) can be embedded in the text. To get rid of eventual markup distortions we use the {$katex} shortcode:
-{{< katex >}}X_n + Y_n = Z_n\quad X_n,Y_n,Z_n\in\mathbf{R}{{< /katex >}}.
+Short expressions like $E = mc^2$ or \\(\frac{1}{5}\\) can be embedded in the text. To get rid of eventual markup distortions we use the {$math} or the {$chem} shortcode:
+{{< math >}}X_n + Y_n = Z_n\;\text{with}\;X_n,Y_n,Z_n\in\mathbf{R}\quad{{< /math >}} or {{< chem >}}\quad\ce{H_{2}O(l)}{{< /chem >}}.
 
 ### Block
 All examples are looking good, whether we can grasp their meaning or not:
 
-```katex
+```math
 \begin{equation}
 B_{n,p}(k) = {n \choose k} p^k (1-p)^{n-k}
 \end{equation}
 ```
 
-```katex
+```math
 \begin{equation}
 f(x) = \int_{-\infty}^\infty\hat f(\xi)\, e^{2 \pi i \xi x}\,d\xi
 \end{equation}
 ```
 
-```katex
+```math
 \begin{equation}
 \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = \\
 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots}}}}
 \end{equation}
+```
+
+The chemical reaction is also fine:
+
+```chem
+\ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}
 ```
 
 [katex]: https://katex.org
