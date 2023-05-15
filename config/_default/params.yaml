@@ -43,7 +43,7 @@ csp:
     - 'report-sample'
     - 'self'
     - 'https://cdn.usefathom.com/script.js'
-    - 'https://cdn.jsdeliver.net/npm/'
+    - 'https://cdn.jsdelivr.net/npm/'
   style:
     - 'report-sample'
     - 'self'
