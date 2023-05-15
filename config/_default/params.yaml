@@ -55,6 +55,7 @@ csp:
   font:
     - 'self'
     - 'data:'
+    - 'https://cdn.jsdelivr.net/npm/'
   frame: 'self'
   img:
     - 'self'
