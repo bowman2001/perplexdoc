@@ -48,6 +48,7 @@ csp:
     - 'report-sample'
     - 'self'
     - 'unsafe-inline'
+    - 'https://cdn.jsdelivr.net/npm/'
   object: 'none'
   base: 'self'
   connect: 'self'
@@ -58,7 +59,7 @@ csp:
   img:
     - 'self'
     - 'data:'
-    - 'https://cdn.usefathom.com/*'
+    - 'https://cdn.usefathom.com/'
   manifest: 'self'
   media: 'self'
   worker: 'none'
