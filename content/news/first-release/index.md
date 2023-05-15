@@ -22,7 +22,7 @@ The release is available on [GitHub](https://github.com/bowman2001/perplex/relea
 
 This site and especially the [documentation section](/doc) are a demonstration and a test of the theme.
 
-Until I make an announcement in the Hugo forum, the overview in the documentation for seasoned Hugo users will be ready:
+Until I announce the release in the Hugo forum, the overview in the documentation for seasoned Hugo users will be ready:
 
 - The usual [one-page Markdown demonstration](/doc/overview/markdown)
 
