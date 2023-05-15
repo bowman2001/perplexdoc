@@ -43,7 +43,7 @@ csp:
     - 'report-sample'
     - 'self'
     - 'https://cdn.usefathom.com/script.js'
-    - 'https://cdn.jsdeliver.net'
+    - 'https://cdn.jsdeliver.net/npm/'
   style:
     - 'report-sample'
     - 'self'
@@ -58,7 +58,7 @@ csp:
   img:
     - 'self'
     - 'data:'
-    - 'https://cdn.usefathom.com'
+    - 'https://cdn.usefathom.com/*'
   manifest: 'self'
   media: 'self'
   worker: 'none'
