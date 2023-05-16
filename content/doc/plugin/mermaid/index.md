@@ -9,7 +9,6 @@ menu:
     name: Mermaid
     parent: plugin
     pre: account_tree
-mermaid: true
 categories: [Markdown]
 tags: [Diagram]
 resources:
@@ -28,7 +27,6 @@ mindmap
   root((mindmap))
     Origins
       Long history
-      ::icon(fa fa-book)
       Popularisation
         British popular psychology author Tony Buzan
     Research

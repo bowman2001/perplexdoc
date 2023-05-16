@@ -26,7 +26,7 @@ The [Math API website](https://math.vercel.app/home) offers a the nice service t
 ## Code Block
 
 {{< playground "and gets rendered to" >}}
-```math
+```mathsvg
 $$
 \frac{1}{\Gamma(s)}\int_{0}^{\infty}\frac{u^{s-1}}{e^{u}-1}\mathrm{d}u
 $$
@@ -35,7 +35,7 @@ $$
 
 Complicated formulas get also handled:
 
-```math
+```mathsvg
 $$
 \begin{array} {lcl}
   L(p,w_i) &=& \dfrac{1}{N}\Sigma_{i=1}^N(\underbrace{f_r(x_2
@@ -57,5 +57,5 @@ $$
 
 ## Inline
 
-An inline {{< math >}}${(x+y)}^2${{< /math >}} expression.
+An inline {{< mathsvg >}}${(x+y)}^2${{< /mathsvg >}} expression.
 

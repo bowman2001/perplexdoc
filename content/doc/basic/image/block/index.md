@@ -28,7 +28,7 @@ The theme offers many different layout options for stand-alone Markdown images. 
 {.p-first}
 <!--more-->
 
-To produce the following layout options besides the default we need to adhere to the theme’s special [image syntax](/doc/basic/image/syntax). 
+To produce the following layout options besides the default we need to adhere to the theme’s special [image syntax](/doc/basic/image/syntax).
 
 ## Tiny
 
