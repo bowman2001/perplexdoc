@@ -1,9 +1,0 @@
-<div class="l-wrap sidebar-box">
-  <nav class="sidebar">
-      {{/* with .Site.GetPage "/doc" }}
-          {{ partial "nav/sidebar/heading.html" . }}
-      {{ end */}}
-      {{- partial "nav/sidebar/menu-list.html"
-      (dict "context" . "menu" .Site.Menus.doc "menuName" "doc" ) -}}
-  </nav>
-</div>

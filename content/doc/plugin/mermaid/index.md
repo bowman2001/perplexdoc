@@ -1,6 +1,6 @@
 ---
 title: Mermaid
-description: Client-side diagram generator
+description: Show Mermaid diagrams
 subtitle: false
 date: 2022-01-22T18:05:56+01:00 
 weight: 730
@@ -16,7 +16,6 @@ resources:
     src: emily-goodhart-vu1BlBAZ_RU-unsplash.jpg
     params:
       alt: A woman with a big mono-fin swimming in a pool
-draft: true
 ---
 
 Mermaid is a popular Javascript library creating SVG diagrams from text and code descriptions.
