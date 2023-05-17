@@ -1,3 +1,0 @@
-{{ printf "%s\n" "/*" -}}
-{{- partial "header/xHeaders.txt" . -}}
-{{- partial "header/csp.txt" . -}}

@@ -19,10 +19,43 @@ resources:
 draft: true
 ---
 
-You can place your own lead paragraph here before the attribute _.p-first_ and the _more tag_. If you don't want to use special styling, just remove the attribute.
+Mermaid is a popular Javascript library creating SVG diagrams from text and code descriptions.
 {.p-first} <!--more-->
 
-```mermaid
+The [Mermaid site](https://mermaid.js.org) offers Tutorials and good documentation.
+
+## Syntax
+
+```md {.lh15 .left}
+‍```mermaid
+stateDiagram-v2
+    [*] --> Still
+    Still --> [*]
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+‍```
+```
+
+The diagram descriptions are formatted as [code blocks](doc/basic/code) with the language identifier `mermaid`. The example shows the code for a state diagram.
+{.clear}
+
+## Layout
+
+```mermaid {.fig--size-tiny .fig--posh-left}
+stateDiagram-v2
+    [*] --> Still
+    Still --> [*]
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+```
+
+{{< farfar 3 >}}
+
+```mermaid {.fig--size-normal}
 mindmap
   root((mindmap))
     Origins
