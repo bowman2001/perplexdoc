@@ -10,12 +10,6 @@ menu:
     parent: plugin
     pre: functions
 weight: 710
-resources:
-  - src: LaTeX_logo.svg
-    name: featured
-    params:
-      alt: LateX logo
-      container: "no"
 categories: [Markdown]
 tags: [latex]
 ---

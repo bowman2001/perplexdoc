@@ -11,4 +11,5 @@ menu:
 cascade:
   toc: false
 url: /
+math: true
 ---
