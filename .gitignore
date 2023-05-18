@@ -11,3 +11,4 @@
 .hugo_build.lock
 /config/development
 /script
+perplexdoc.code-workspace

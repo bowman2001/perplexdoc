@@ -35,7 +35,7 @@ All text is placed on a **baseline grid** to introduce a comfortable vertical rh
 
 ## Usage concept
 
-The theme will be self-sufficient. All necessary fonts and Javascript libraries will be automatically tested and packed in for self-hosting. Recent copies of all module dependencies are available in {$_vendor}. No other installation than a standard binary of a recent Hugo release is required to get started --- at the moment it needs the latest: {$v0.111.3}.
+The theme will be as self-sufficient as it is reasonably possible. Necessary fonts and Javascript libraries are packed into the theme or retrieved from the CDN <https://jsdelivr.com>. Recent copies of all Hugo module dependencies are available in {$_vendor}. No other installations than the standard binary of a very recent Hugo release and the theme are required to get started.
 
 ## Support
 

@@ -42,7 +42,16 @@ The diagram descriptions are formatted as [code blocks](doc/basic/code) with the
 
 ## Layout
 
+These are only a few examples to give an impression of the layout. More diagram types exist and their number is growing.
+
+### State
 ```mermaid {.fig--size-tiny .fig--posh-left}
+%%{init:
+  { 
+    "theme": "forest",
+    "fontFamily": "ibm plex sans condensed" 
+  }
+}%%
 stateDiagram-v2
     [*] --> Still
     Still --> [*]
@@ -53,6 +62,24 @@ stateDiagram-v2
 ```
 
 {{< farfar 3 >}}
+
+### Flowchart
+
+```mermaid {.fig--size-normal}
+%%{init:
+  { 
+    "theme": "base",
+    "fontFamily": "ibm plex sans" 
+  }
+}%%
+flowchart LR
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
+
+### Mindmap
 
 ```mermaid {.fig--size-normal}
 mindmap
@@ -71,4 +98,24 @@ mindmap
     Tools
       Pen and paper
       Mermaid
+```
+
+### Entity relation
+
+```mermaid {.fig--size-normal}
+%%{init:
+  { 
+    "theme": "base",
+    "fontFamily": "ibm plex sans" 
+  }
+}%%
+erDiagram
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+    CUSTOMER ||--o{ ORDER : places
+    CUSTOMER ||--o{ INVOICE : "liable for"
+    DELIVERY-ADDRESS ||--o{ ORDER : receives
+    INVOICE ||--|{ ORDER : covers
+    ORDER ||--|{ ORDER-ITEM : includes
+    PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+    PRODUCT ||--o{ ORDER-ITEM : "ordered in"
 ```
