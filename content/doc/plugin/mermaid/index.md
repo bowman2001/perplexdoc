@@ -10,23 +10,22 @@ menu:
     parent: plugin
     pre: account_tree
 categories: [Markdown]
-tags: [Diagram]
-resources:
-  - name: featured
-    src: emily-goodhart-vu1BlBAZ_RU-unsplash.jpg
-    params:
-      alt: A woman with a big mono-fin swimming in a pool
+tags: [mermaid, diagram]
 ---
 
 Mermaid is a popular Javascript library creating SVG diagrams from text and code descriptions.
 {.p-first} <!--more-->
 
-The [Mermaid site](https://mermaid.js.org) offers Tutorials and good documentation.
+The [Mermaid site](https://mermaid.js.org) offers Tutorials and good documentation. 
 
 ## Syntax
 
-```md {.lh15 .left}
+```md {.left}
 ‍```mermaid
+%%{init: { 
+    "theme": "forest",
+    "fontFamily": "ibm plex sans" 
+}}%%
 stateDiagram-v2
     [*] --> Still
     Still --> [*]
@@ -37,19 +36,26 @@ stateDiagram-v2
 ‍```
 ```
 
-The diagram descriptions are formatted as [code blocks](doc/basic/code) with the language identifier `mermaid`. The example shows the code for a state diagram.
-{.clear}
+The diagram descriptions are formatted as [code blocks](doc/basic/code) with the language identifier `mermaid`. The example shows the code for the state diagram below.
+
+Mermaid diagrams can change their color theme and also some attributes can be configured in a JSON preamble enclosed by `%%`.
+
+{{< mnote up=11 >}}
+Especially nice and professional is to use a font similar to the body copy.
+{{< /mnote >}}
+
+Not all themes or configurable attributes are available with every type of diagram for now. We have to test our diagrams before we publish them. One good way is the official [Mermaid live editor](https://mermaid.live).
 
 ## Layout
 
-These are only a few examples to give an impression of the layout. More diagram types exist and their number is growing.
+The following diagrams are only a few examples to give an impression of the layout. More diagram types exist and their number is growing. 
 
-### State
+### State diagram
 ```mermaid {.fig--size-tiny .fig--posh-left}
 %%{init:
   { 
     "theme": "forest",
-    "fontFamily": "ibm plex sans condensed" 
+    "fontFamily": "ibm plex sans" 
   }
 }%%
 stateDiagram-v2
@@ -63,9 +69,9 @@ stateDiagram-v2
 
 {{< farfar 3 >}}
 
-### Flowchart
+### Flow chart
 
-```mermaid {.fig--size-normal}
+```mermaid {.fig--size-large}
 %%{init:
   { 
     "theme": "base",
@@ -73,31 +79,11 @@ stateDiagram-v2
   }
 }%%
 flowchart LR
-    A[Hard edge] -->|Link text| B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
-```
-
-### Mindmap
-
-```mermaid {.fig--size-normal}
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectivness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
+    A(Start) -->|Show edges| B[Hard Edge]
+    B -->|Link text| C(Round edge)
+    C -->|Show decision| D{Decision}
+    D -->|One| E[Result one]
+    D -->|Two| F[Result two]
 ```
 
 ### Entity relation

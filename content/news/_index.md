@@ -12,4 +12,5 @@ cascade:
   toc: false
 url: /
 math: true
+mermaid: true
 ---

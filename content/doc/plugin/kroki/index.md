@@ -26,17 +26,27 @@ Generate SVG diagrams with the Kroki service by writing textual diagram descript
 
 ## Mermaid
 
-This is the same diagram as on the [Mermaid page](/doc/plugin/mermaid). But the rendering may be a little bit different.
+This is the same diagram as the last one on the [Mermaid page](/doc/plugin/mermaid).
 
 ```kroki {type=mermaid}
-sequenceDiagram
-    Alice->>+John: Hello John, how are you?
-    Alice->>+John: John, can you hear me?
-    John-->>-Alice: Hi Alice, I can hear you!
-    John-->>-Alice: I feel great!
+%%{init:
+  { 
+    "theme": "base",
+    "fontFamily": "ibm plex sans" 
+  }
+}%%
+erDiagram
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+    CUSTOMER ||--o{ ORDER : places
+    CUSTOMER ||--o{ INVOICE : "liable for"
+    DELIVERY-ADDRESS ||--o{ ORDER : receives
+    INVOICE ||--|{ ORDER : covers
+    ORDER ||--|{ ORDER-ITEM : includes
+    PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+    PRODUCT ||--o{ ORDER-ITEM : "ordered in"
 ```
 
-If you are pleased with the results from Kroki, you should consider generating your Mermaid diagram like this, because server-side rendered SVGs don’t need client-side processing anymore.
+If you are pleased with the results from Kroki for your type of Mermaid diagram, you should seriously consider generating Mermaid diagrams like this. Server-side rendered SVGs don’t need client-side processing anymore and will show up immediately on your page.
 
 ## Block
 
