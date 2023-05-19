@@ -1,6 +1,3 @@
 [submodule "themes/perplex"]
 	path = themes/perplex
 	url = https://github.com/bowman2001/perplex
-[submodule "hugo-mod-open-in-vscode"]
-	path = hugo-mod-open-in-vscode
-	url = https://github.com/bowman2001/hugo-mod-open-in-vscode
