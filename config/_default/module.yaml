@@ -1,8 +1,3 @@
-noProxy: none
-# noVendor: ""
-private: "*.*"
-proxy: direct
-# replacements: ""
-# workspace: ""
 imports:
   - path: github.com/bowman2001/perplex
+  - path: github.com/bowman2001/hugo-mod-csp

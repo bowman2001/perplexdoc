@@ -20,7 +20,7 @@ The Mermaid Javascript module seems to perform some caching. When we play with t
 ```mermaid {.fig--size-tiny .fig--posh-left}
 %%{init: { 
       "theme": "forest",
-      "fontFamily": "ibm plex sans condensed"
+      "fontFamily": "ibm plex sans"
 }}%%
 flowchart TB
   A[Fenced code] -->|render-hook| B[Tagged code] 
@@ -36,7 +36,7 @@ Mermaid diagrams are theme-able and some of their attributes are also configurab
 ```md
 %%{init: { 
       "theme": "forest",
-      "fontFamily": "ibm plex sans condensed"
+      "fontFamily": "ibm plex sans"
 }}%%
 flowchart TB
   A[Fenced code] -->|render-hook| B[Tagged code]

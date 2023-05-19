@@ -24,7 +24,6 @@ render_hooks:
 
 mermaid:
   version: 10
-  theme: base
 
 # X-Headers
 
