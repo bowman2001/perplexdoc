@@ -5,10 +5,10 @@ description: Main configuration file
 subtitle: false
 menu:
   doc:
-    name: config.yaml
+    name: hugo.yaml
     parent: config
     pre: home
-title: 'config.yaml'
+title: 'hugo.yaml'
 weight: 1010
 categories: [Hugo]
 tags: [Configuration]
@@ -21,5 +21,5 @@ Main configuration file in {$config/_default}
 {.clear}
 
 {{< highlight yaml "linenos=true" >}}
-{{< readfile file="/config/_default/config.yaml" >}}
+{{< readfile file="/config/_default/hugo.yaml" >}}
 {{< /highlight >}}

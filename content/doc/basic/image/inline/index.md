@@ -29,8 +29,6 @@ resources:
   src: tiny_text.svg
   params:
     alt: Placeholder image, tiny size
-    caption: Tiny
-    attr: gm
     size: tiny
 categories: [markdown]
 tags: [image, block]
@@ -43,18 +41,11 @@ The theme embeds an inline Markdown image by default **as a float** in the conta
 
 This page contains demonstrations of the layout for embedded images. Their extended syntax is similar to the one for stand-alone images and is explained on the page about the [general image syntax](/doc/basic/image/syntax).
 
-The most common place for an embedded image is **at the beginning** of a paragraph. But we may want to place images also **in the middle** of one or **inside of indented text** blocks.
+Most of the time an embedded image is the first element of a paragraph. By default, it’s half a paragraph wide and placed **at the beginning** on the **left** side. This is the default and similar to the first example.
 
-## Default
-
-The default size is the normal one placed on the left. Images without an entry in the front-matter should be used only at the beginning of text blocks. Registering an image as a [resource](/doc/intro/workflow/resources) opens many options. We can [add a caption](#normal) for example.
-
-![Placeholder image](normal.svg) Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographical life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-{.blind .blind-right}
+Registering an image as a [resource](/doc/intro/workflow/resources) in the front-matter opens many other options. We can add a caption and an attribution for example.
 
 ## At the beginning
-
-This is the most common place for an embedded image. By default its placed on the left, if the screen is wide enough.
 
 ### Normal size {#normal}
 
@@ -129,7 +120,6 @@ Usually, we use a normal-sized stand-alone image to use the full width of the te
 
 2. Far from the countries Vokalia and Consonantia, there live the blind texts:
    ![](normal?size=full)
-{.box}
 
 or this
 
@@ -138,4 +128,4 @@ or this
 
 2. Far from the countries Vokalia and Consonantia, there live the blind texts:
    ![](normal?size=full)
-{.col2 .box}
+{.col2}

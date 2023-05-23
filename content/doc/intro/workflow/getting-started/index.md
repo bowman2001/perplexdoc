@@ -37,7 +37,7 @@ Please follow the specific [installation instructions](https://gohugo.io/getting
 
 ## Get Perplex
 
-When you start to get acquainted with Hugo or need examples of Markdown content for Perplex, you should simply get this documentation project. It’s licensed as Creative Commons ([CC-BY-SA 4.0][cc]), available on [GitHub](https://github.com/bowman2001/perplexdoc) and ships with all the files for the documentation and a few examples the other kinds of content.
+When you start to get acquainted with Hugo or need examples of Markdown content for Perplex, you should simply get this documentation project. It’s licensed as Creative Commons [(CC-BY-SA 4.0)][cc], available on [GitHub](https://github.com/bowman2001/perplexdoc) and ships with all the files for the documentation and a few examples the other kinds of content.
 
 ### The documentation project
 

@@ -82,11 +82,15 @@ The following suggestions for these elements are short. Their issues are discuss
 
 ### How to include images?
 
-There is one image element in CommonMark for embedding an image into a block element and no genuine element for a stand-alone image. Thankfully, since version 0.108.0 Hugo can distinguish a stand-alone image from one inside of a text block and allows to generate the appropriate figure:
+There is one image element in CommonMark for embedding an image into a block element and no genuine element for a stand-alone image. Thankfully, since version 0.108.0 Hugo can distinguish both types and allows to generate the appropriate image containers:
+
+#### Stand-alone image
 
 ![](bigsplash)
 
-Hugo and Perplex used to provide the shortcode [{$figure}][fig] for this purpose. It’s only kept for backward compatibility. The new solution is much more convenient and fits loads of already existing Markdown.
+Hugo and Perplex used to provide the shortcode [{$figure}][fig] for this purpose. It’s kept for backward compatibility in this theme. But the new solution is much more convenient and fits loads of already existing Markdown.
+
+#### Embedded image
 
 ![splash](splash) Perplex styles the embedded Markdown image element as a float. The theme offers layout variations for both kinds of images. We can place embedded images on the left or right inside the text block. Small stand-alone images may appear in the margin of the following text block. Large ones stretch from the left margin to the right. Look into the section about [images](/doc/basic/image) for all the options.
 {.clear}
