@@ -49,6 +49,7 @@ To attach the attributes correctly in Markdown, have a look at the short [Howto]
 | Attribute Name | CSS-class |
 |:--------|:-------|
 | Small indent (for simple and ordered lists) | {$.small-indent} |
+
 ### Bullet list
 
 ### Ordered list
@@ -63,3 +64,4 @@ To attach the attributes correctly in Markdown, have a look at the short [Howto]
 |:--------|:-------|
 | [Tight](/doc/extended/definition-list#tight) | {$.dl-tight} |
 | [Loose](/doc/extended/definition-list#loose) | {$.dl-loose} |
+|| {$.dl-loose3} |

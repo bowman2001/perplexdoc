@@ -26,13 +26,15 @@ The CommonMark image syntax is short and the theme distinguishes between two pos
 
 ## Syntax
 
-The CommonMark image element is syntactically very similar to a [link](/doc/basic/link). The sole difference is, that the image element begins with an exclamation mark: `!`. There are also two notations to reference the source: **Inline** or **reference**.
+The CommonMark image element is syntactically very similar to a [link](/doc/basic/link). The sole difference is, that the image element begins with an exclamation mark: `!`. 
 
-Additionally, the theme makes further distinctions:
+There are also two notations to reference the source: **Inline** or **reference**.
 
-- The two possible ways to place an image in Markdown — **stand-alone** or **embedded** — are handled differently.
+Additionally, this theme offers two great options:
 
-- **Resource parameters** and a few **in-place parameters** can enhance and change the image layout.
+1. The two different ways to place an image in Markdown — **stand-alone** or **embedded** — are styled differently.
+
+2. **Resource parameters** and a few **in-place parameters** can enhance and change the image layout.
 
 ### Notation
 
@@ -128,8 +130,8 @@ The following keys and types of values are available:
 
 In case we use the {$alt} parameter, we can leave the first bracket of the image element empty.
 
-##### Alternate Text {.h-info}
-in the Markdown image overrides the resource parameter.
+Alternative Text in the first square brackets of the Markdown image overrides the resource parameter.
+{.box-info}
 
 #### In-place parameters
 We can use a special syntax to set a few layout parameters, which tend to change more often in the process of content creation. The size and the position of an image can be specified like:

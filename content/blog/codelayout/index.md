@@ -1,6 +1,6 @@
 ---
 authors: [Georg Makowski]
-title: Code Layout Demonstration
+title: Code Block Layout Demonstration
 description: Code layout without a sidebar
 linktitle: Code Demo
 date: 2022-11-01T14:54:07+01:00
@@ -10,45 +10,28 @@ series: [Demo]
 toc: true
 ---
 
-The main text column offers space for {$80} characters of code in one line. When we need {$120} to fit in, we can expand code boxes into the marginal column(s).
+On large screens, code blocks expand into the margins as long as possible and may include up to {$160} characters in one line.
 {.p-first} <!--more-->
 
 This is a layout demonstration for pages without a sidebar. The docs contain the [syntax options](/doc/basic/code).
 
-## Inline
-
-The HTML tag to mark the beginning of code is `<code>`. And to mark the end we use the corresponding closing tag `</code>`. Markdown text surrounded by backticks like `` `text` `` gets enclosed by these tags.
-
-## Block
-
-### Without line numbers
+## Default
 
 ```md
-The *HTML* tag at the **beginning** of code is `<code>`.
+The HTML tag at the **beginning** of code is `<code>`.
 And to mark the **end** we use the corresponding closing tag `</code>`.
 ```
 
-### With line numbers (table layout)
+## With line numbers
 
 ```md {linenos=true}
-The *HTML* tag at the **beginning** of code is `<code>`.
+The HTML tag at the **beginning** of code is `<code>`.
 And to mark the **end** we use the corresponding closing tag `</code>`.
 ```
 
-### In lists or other indented blocks
+## Long lines
 
-- List entries are indented and the code block gets smaller
-  
-  ```md
-  The *HTML* tag at the **beginning** of code is `<code>`.
-  And to mark the **end** we use the corresponding closing tag `</code>`. 
-  ```
-
-### Special sizes
-
-For code examples with long lines, we can expand the block into the margin:
-
-```go {class=large linenos=true}
+```go {linenos=true }
 // NodeRendererFunc is a function that renders a given node.
 type NodeRendererFunc func(writer util.BufWriter, source []byte, n ast.Node, entering bool) (ast.WalkStatus, error)
 
@@ -59,8 +42,8 @@ type NodeRenderer interface {
 }
 ```
 
-#### Small blocks
-When all code lines are no longer than 40 characters, we can place them inside or beside the text:
+## Short lines
+When our code lines never exceed {$40} characters, we can embed them inside or place them beside the text:
 
 ```json {.left}
 {
@@ -84,4 +67,11 @@ When all code lines are no longer than 40 characters, we can place them inside o
 
 {{< farfar 1 >}}
 
+## In lists or other indented blocks
 
+- List entries are indented and the code block gets smaller
+  
+  ```md
+  The HTML tag at the **beginning** of code is `<code>`.
+  And to mark the **end** we use the corresponding closing tag `</code>`. 
+  ```

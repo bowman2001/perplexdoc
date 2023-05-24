@@ -46,6 +46,6 @@ You can place the Fathom-ID for your site like `fathomSiteID: ABCDEFG` in the [p
 
 And should you use their **custom domain** you can provide the full link like `fathomCustomDomain: https://custom.yourdomain.com` beneath.
 
-[gparam]: /doc/appendix/config/configyaml#19
+[gparam]: /doc/appendix/config/hugoyaml#19
 [fathomref]: https://usefathom.com/ref/CENRRH
 [fid]: /doc/appendix/config/paramsyaml#18

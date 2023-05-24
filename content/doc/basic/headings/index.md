@@ -48,28 +48,28 @@ We can style any heading like a paragraph heading with the attribute `{.h-p}`. F
 
 ### Highlighted Headings
 
-To mark a heading as a **warning**, important **information**, or **tip**, we have the attributes `{.h-warn}`, `{.h-info}`, or `{.h-tip}`.
+To indicate a section with a **danger**, **warning**, **information**, or **success**, we have the attributes `{.h-danger}`, `{.h-warn}`, `{.h-info}`, or `{.h-success}`.
 
 A warning paragraph for example starts with a heading like this:
 
-```text
+```text 
 ##### Warning Paragraph {.h-warn}
 Far far away, behind the word mountains, far from the countries Vokalia and…
 ```
 
-### Very long heading with a complicated topic stretching over more than one line
+### Very long headings with complicated topics stretching over more than one line
 
-CommonMark offers no possibility to break a heading line. Because every new line starting with a `#` is a new one, every heading has to stay on its initial line. 
+CommonMark offers no possibility to break a heading line because every line starting with a `#` starts a new heading.
 
 When a heading exceeds the line length of the layout, it breaks automatically. That may occur at an unfortunate place: Before the last word or between tightly related words. To introduce a break we can put the replacement code `{‍/}` between two words **without any spacing character** like this:
 
 ```text {.semi-large}
-### Very long heading with a complicated topic{‍/}stretching over more than one line
+### Nice long heading with a complicated topic{‍/}stretching over more than one line
 ```
 
 and we get:
 
-### A better very long heading with a complicated topic{/}stretching over more than one line
+### Nice long heading with a complicated topic{/}stretching over more than one line
 
 The line break is displayed only when the screen can show the full width of the main text. Otherwise, it’s removed, because additional line breaks make things worse on small screens with arbitrary line breaks.
 

@@ -23,7 +23,7 @@ Sometimes we like to break a title or a line only for those layout versions, whi
 
 The code `{‍‍‍‍/}` is placed between the words **without additional spacing** like 
 
-```md
+```text
 ### A compact heading{‍/}looks visually appealing
 ```
 

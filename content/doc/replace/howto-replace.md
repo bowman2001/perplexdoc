@@ -36,7 +36,7 @@ Perplex includes the following replacement codes and styles them:
  
 These codes are substituted with the help of short regular expressions in the layout template [{$replacements.html}](/doc/appendix/replacements). It processes the Hugo variable `.Content` which contains the rendered Markdown as HTML string. The procedure is safe, because Goldmark treats the curly braces and their content like any other Markdown and discards any raw HTML to prevent malicious code.
 
-## Available as a module {.h-tip}
+## Available as a module
 A copy of the replacements template gets included from a separate repository: [hugo-mod-replacements](https://github.com/bowman2001/hugo-mod-replacements).
 
 To manipulate our generated HTML with simple regular expressions is secure and fast. But these are syntax hacks which can’t be parsed by Markdown renderers. A better solution would be to add [extensions for Goldmark](https://github.com/yuin/goldmark/tree/master/extension) and for many elements there already is a relatively common syntax in other Markdown flavors. If they would be available for Goldmark, we could run a regex parser for the last time on these replacements and change them into regular extended syntax.

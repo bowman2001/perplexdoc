@@ -2,7 +2,7 @@
 authors: [Georg Makowski]
 title: Hugo Module{/}for Mermaid diagrams
 linktitle: hugo-mod-mermaid
-description: Render Mermaid diagrams with this popular Javascript library
+description: Render Mermaid diagrams with the popular Javascript library
 date: 2023-05-18T17:47:34+02:00
 categories: [module]
 tags: [mermaid, diagram]
@@ -19,7 +19,7 @@ The Mermaid Javascript module seems to perform some caching. When we play with t
 
 ```mermaid {.fig--size-tiny .fig--posh-left}
 %%{init: { 
-      "theme": "forest",
+      "theme": "base",
       "fontFamily": "ibm plex sans condensed"
 }}%%
 flowchart TB

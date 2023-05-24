@@ -53,6 +53,6 @@ A simple function f(x) = 3x{^2} + 5x{^5} is looking good.
 
 ### Fractions
 
-Every fraction with small numbers like {^2}⁄{_3} or big ones like {^23}⁄{_747} may be included using super- and subscripts with a fraction line (entity `&frasl;`) in between them.
+Every fraction like {^232}⁄{_747} may be included using super- and subscripts with a fraction line (entity `&frasl;`) in between them.
 
 [latex]: /doc/plugin/latex

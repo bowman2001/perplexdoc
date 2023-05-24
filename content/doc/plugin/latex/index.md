@@ -19,21 +19,21 @@ LaTeX is the most popular typesetting system for the natural sciences. The synta
 
 ## Syntax
 
-Perplex includes the render engine [\\(\KaTeX\\)][katex] on demand into pages with at least one shortcode of {$math} or {$chem} or code blocks with the identifiers `math` or `chem`. If you already have working mathematical or chemical expressions in your Markdown — maybe with carefully escaped markup — you can also set the parameters `math: true` or `chem: true` in the front-matter.
+Perplex includes the render engine [\\(\KaTeX\\)][katex] on demand into pages with at least one of the shortcodes {$math} or {$chem} or code blocks with the identifiers `math` or `chem`. If you already have working mathematical or chemical expressions in your Markdown — maybe with carefully escaped markup — you can also set the parameters `math: true` or `chem: true` in the front-matter.
 
 {{< mnote up=17 >}}
-There is another LaTeX render engine for the Web: [MathJax](https://www.mathjax.org/). I chose KaTeX for performance reasons.
+There is another reliable LaTeX render engine for the Web: [MathJax](https://www.mathjax.org/). I did choose KaTeX for performance reasons.
 {{< /mnote >}}
 
 ### Inline
 
-Inline LaTeX needs to be surrounded by single dollars like `$E = mc^2$` (or doubly escaped parenthesis like `\\(\frac{1}{5}\\)` ). Because the content is processed by Hugo’s Markdown renderer before the KateX scripts are applied, there are two caveats:
+Inline LaTeX in Markdown is usually surrounded by single dollars like `$E = mc^2$` (or doubly escaped parenthesis like `\\(\frac{1}{5}\\)` ). Because the content is processed by Hugo’s Markdown renderer before the KateX scripts are applied, there are two caveats:
 
 - The rendering may falsely interpret some LaTeX markup as Markdown markup. There is unfortunately some syntax overlap. This can distort the equations and we would need to escape every Markdown markup character to prevent this.
 
 - Single dollars are markup for KateX and this is not always wanted. But we can use the dollar as a currency, of course: `100$` &rarr; 100$. KaTeX expects whitespace before the first delimiter.
 
-Therefore, we have two simple shortcodes to mark inline LaTeX and shield it from Markdown rendering. We can and **need to omit** the KaTeX delimiters, then, they are already included in the shortcodes:
+The two shortcodes also mark inline LaTeX and shield it from Markdown rendering. We **need to omit** the KaTeX delimiters, they are already included in the shortcodes:
 
 ```md
 {{</* math */>}}Z_n = X_n + Y_n\quad X_n,Y_n,Z_n\in\mathbf{R}{{</* /math */>}}
@@ -43,9 +43,9 @@ and
 
 ### Block
 
-LaTeX formulas need to be surrounded by two dollar signs `$$` or doubly escaped square brackets `\\[` and `\\]`. The problem with the markup overlap may occur here, too. And we have the additional problem, that we can’t use new lines inside a formula block. The solution is to enclose stand-alone formulas by a special code block with the identifier `math`.
+LaTeX formulas are usually surrounded by two dollar signs `$$` or doubly escaped square brackets `\\[` and `\\]`. The problem with the markup overlap is the same as mentioned before. And we have the additional problem, that we can’t use new lines inside a formula block. Inside of the special code block with the identifier `math` these two problems are gone.
 
-The following three formulas are shown above and represent the discrete Binomial distribution, the reverse Fourier transformation, and an equation for infinite nested fractions, which I can’t comprehend (I’m a physicist and can only suspect a mathematician has carefully proven this. :wink:).
+The following three formulas in code blocks represent the discrete Binomial distribution, the reverse Fourier transformation, and an equation for infinite nested fractions, which I can’t comprehend (I’m only a physicist and suspect mathematicians have proven this. :wink:).
 
 ```latex
 ‍```math

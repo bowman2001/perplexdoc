@@ -39,7 +39,8 @@ Markdown is simple and simply great. It allows authors to structure their conten
 
 Hugo’s default renderer [Goldmark][gmark] translates [CommonMark][cmark] Markdown and some extensions adopted from [PHP Markdown Extra][phpmex] and [**G**itHub **f**lavored **M**arkdown][gfmspec] (GFM).
 
-Because Markdown is simple, the resulting HTML also is. Perplex offers many style attributes to enhance the layout and a few Hugo shortcodes to utilize more complex elements.
+Because Markdown is simple, the resulting HTML also is. Perplex offers many style attributes to enhance the layout and a few Hugo shortcodes to generate more complex elements.
+{.box-tip}
 
 ## Alternative styling and additional elements
 
@@ -100,5 +101,5 @@ Should you stumble upon bad English, typos, or wrong phrases, please excuse me. 
 [phpmex]: https://michelf.ca/projects/php-markdown/extra/ "PHP Markdown Extra site"
 [gfmspec]: https://github.github.com/gfm "GitHub Flavored Markdown Specification"
 [plumber]: https://jamonserrano.github.io/plumber-sass
-[conf]: /doc/appendix/config/configyaml
+[conf]: /doc/appendix/config/hugoyaml
 [new]: /doc/intro/workflow/local-server#your-first-content
