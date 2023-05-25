@@ -219,12 +219,15 @@ We can reference a {=book}.
 This theme supports safe Markdown &rightarrow; `unsafe: false`. These elements are placed after Goldmark rendering with `replaceRE` of [replacement codes](/doc/replace).
 {{< /mnote >}}
 
-### Inline with attributes: abbr, dfn
+### Inline with attributes
 
-[HTML](abbr "HyperText Markup Language")
+abbr
+: A link with this reference and a title `[HTML](abbr "HyperText Markup Language")` generates [HTML](abbr "HyperText Markup Language")
 
-[Replacement codes](dfn "replacement") are defined by curly braces and one or more markers.
+dfn
+: A link with this reference and a title `[Replacement codes](dfn "replacement")` generates the definition tag: [Replacement codes](dfn "replacement") codes are defined by curly braces and one or more markers.
+{.dl-loose .inline}
 
-{{< mnote up=10 >}}
-These elements are inserted with the reserved link targets “{$abbr}” and “{$dfn}” and a title for the render-link hook.
+{{< mnote >}}
+The render-link hook recognizes and processes these special links.
 {{< /mnote >}}

@@ -12,13 +12,14 @@ Replacement codes let us avoid raw HTML in Markdown.{/}A single partial replaces
 
 The codes look like `{*text}`, where `*` is a placeholder for one or more ASCII characters. The superscript tag `<sup>` for example is marked by `^` and fits the following regular expression (Golang syntax):
 
-```go-html-template
+```go-html-template {.block} 
 replaceRE `\{\^([^}]*)\}` "<sup>$1</sup>"
 ```
 
 This syntax does not collide with any other elements --- as far as I know. And it’s safe, because the replacements are applied after the Markdown rendering. Hugo discards all HTML in Markdown by default and also checks these codes before the regular expressions are applied.
+{.inline}
 
-{{< mnote up=14 >}}
+{{< mnote >}}
 [**Markdown attributes**](/doc/attribute) have a similar syntax, but they usually aren’t present in the rendered HTML code anymore. Except for Markdown code examples including attributes. Therefore, the `#` and `.` signs are avoided.
 {{< /mnote >}}
 

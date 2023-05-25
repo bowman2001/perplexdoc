@@ -36,8 +36,9 @@ Markdown has become the favored markup language to structure text files. With go
 {.p-first} <!--more-->
 
 Markdown files consist of plain text marked up with a small set of ASCII signs. We can read and change them with any text editor. They usually end with the suffix ›{$md}‹.
+{.inline}
 
-{{< mnote up=11 >}}
+{{< mnote >}}
 The suffixes ›{$mdown}‹ and ›{$markdown}‹ also indicate Markdown, but are rarely used nowadays.
 {{< /mnote >}}
 
@@ -48,8 +49,9 @@ To resolve their incompatibilities and to create a dependable basic syntax, John
 ## Markdown for Perplex
 
 Perplex styles HTML, which is generated from extended [CommonMark][cmark] by Hugo’s default renderer [Goldmark][gmark]. Three extensions — the [definition list][dl], the [footnote][fnote] and the [typographer][typo] — have been adopted from [PHP Markdown Extra][phpmex]. Based on CommonMark, [GitHub](https://github.com) introduced **G**itHub **F**lavored **M**arkdown (GFM) with the four extensions [table][table], the [task-list][task], [strikethrough][strike] and linkify. They are defined in a [new specification][gfmspec].
+{.inline}
 
-{{< mnote up=20 >}}
+{{< mnote >}}
 Hugo’s deprecated **Blackfriday** renderer is not fully CommonMark-compliant. Black&shy;fri&shy;day generated HTML may be styled correctly most of the time. But if you want to rely on Perplex or any other recent theme, I strongly suggest switching to Goldmark and a recent Hugo version.
 {{< /mnote >}}
 
@@ -102,8 +104,9 @@ When we start writing Markdown, this question may not come to mind, because we o
 The hard-line wraps cause us and collaborating authors a lot of unnecessary trouble in the long run --- that’s my impression. Almost all text editor programs are nowadays able to **softly wrap** long lines. Maybe we have to turn on that option for Markdown, but it should definitely be there.
 
 When we rely on soft line wrapping everyone can read and edit the Markdown using a suitable line width. When we place manual wraps, everyone — including ourselves — has to deal with them again and again. They have to be moved or removed every time when text is added or deleted.
+{.inline}
 
-{{< mnote up=14 >}}
+{{< mnote >}}
 **GitHub** decided to treat all hard wraps as such on their platform a while ago.
 {{< /mnote >}}
 
@@ -124,15 +127,17 @@ See the page [Line Break][lb] for the configuration and the question of CommonMa
 
 ## Special characters
 All available characters can be used in Markdown, either directly as Unicode or as HTML entities (like `&para;` for &para;). The markup characters need to be escaped by a preceding backslash `\` to get treated literally by the Markdown renderer. See [Special Characters](/doc/basic/specialchar#html-entities) for more information about this topic.
+{.inline}
 
-{{< mnote up=14 >}}
+{{< mnote >}}
 We still get into trouble with characters, which are missing in the fonts used on our website. But this is a general issue completely independent of Markdown.
 {{< /mnote >}}
 
 ## File encoding
 The Markdown syntax works with every encoding. But almost all modern websites stick to the de facto standard **UTF-8** and Perplex does, too. Your Markdown files should be encoded in UTF-8 and if you never thought about it before, they probably already are. This also holds for other text resources you may fetch data from.
+{.inline}
 
-{{< mnote up=17 >}}
+{{< mnote >}}
 When you import strings from a JSON file with UTF-16 encoding for example, the encoding outside the common ASCII set has a different meaning and leads to false and probably strange characters, when you use non-ASCII characters.
 {{< /mnote >}}
 
@@ -153,9 +158,10 @@ Front-Matter CMS is an exciting plugin for VSCode which offers many nice feature
 
 ## Markdown Linter
 CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins to use it directly while editing.
+{.inline}
 
-{{< mnote up=14 >}}
-For this project the default settings are modified in the configuration file [`.markdownlint.yaml`](/doc/appendix/markdownlint) at the content root. Some folders contain special configurations, which allow using all the markup options of specific elements.
+{{< mnote >}}
+This project has a configuration file [{$.markdownlint.yaml}](/doc/appendix/markdownlint) at the content root. Some folders contain additional configurations, which allow using all the markup options of specific elements.
 {{< /mnote >}}  
 
 [omd]: https://daringfireball.net/projects/markdown/ "Markdown project site by John Gruber"
