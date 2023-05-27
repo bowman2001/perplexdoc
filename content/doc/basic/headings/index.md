@@ -107,13 +107,16 @@ The first heading remains reserved for titles. We may want to compose a title in
 #### Paragraph attribute {.h-p}
 {{< farfar 1 >}}
 
-##### Warning paragraph {.h-warn}
+#### Danger {.h-danger .h-p}
 {{< farfar 1 >}}
 
-#### Info paragraph {.h-info .h-p}
+#### Warning {.h-warn .h-p}
 {{< farfar 1 >}}
 
-##### Tip paragraph {.h-tip}
+#### Info {.h-info .h-p}
+{{< farfar 1 >}}
+
+##### Success {.h-success}
 {{< farfar 1 >}}
 
 [attr]: /doc/attribute

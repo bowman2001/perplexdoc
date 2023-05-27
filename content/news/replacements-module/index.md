@@ -16,14 +16,14 @@ The codes look like `{*text}`, where `*` is a placeholder for one or more ASCII 
 replaceRE `\{\^([^}]*)\}` "<sup>$1</sup>"
 ```
 
-This syntax does not collide with any other elements --- as far as I know. And it’s safe, because the replacements are applied after the Markdown rendering. Hugo discards all HTML in Markdown by default and also checks these codes before the regular expressions are applied.
+This syntax does not collide with any other elements --- as far as I know. And it’s safe because the replacements are applied after the Markdown rendering. Hugo discards all HTML in Markdown by default and also checks these codes before the regular expressions are applied.
 {.inline}
 
 {{< mnote >}}
 [**Markdown attributes**](/doc/attribute) have a similar syntax, but they usually aren’t present in the rendered HTML code anymore. Except for Markdown code examples including attributes. Therefore, the `#` and `.` signs are avoided.
 {{< /mnote >}}
 
-All replacements are chained together in one Hugo partial, which can process every piece of rendered Markdown content in the templates (usually `.Content`).
+All replacements are chained together in one Hugo partial, which can process every piece of rendered Markdown content in the templates.
 
 **These replacements are published as a tiny [Hugo module on GitHub][module]**.
 

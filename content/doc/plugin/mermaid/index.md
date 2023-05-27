@@ -1,4 +1,5 @@
 ---
+authors: [Georg Makowski]
 title: Mermaid
 description: Show Mermaid diagrams
 subtitle: false

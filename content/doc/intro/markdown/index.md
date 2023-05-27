@@ -148,11 +148,11 @@ Most programming editors and IDEs support Markdown out of the box or provide plu
 
 Some editors are designed exclusively for authoring Markdown. They usually offer a graphical user interface and other convenient features. As of now, none of them is a perfect match for authoring Markdown for this theme, because they don’t support all kinds of attributes and can’t handle Hugo shortcodes — as far as I know (a few of them are progressing fast). They are dealing gracefully with these elements most of the time, but occasionally they don't.
 
-### Use Hugo’s server mode for local previews {.h-tip}
+### Using Hugo’s server mode for local previews {.h-tip}
 
-Hugo offers a very convenient way of looking at your results instantly: When you run Hugo in its server mode on the local machine you’re writing your Markdown on, it will render your files and deliver the result to your browser (see [Using Hugo](/doc/intro/workflow/local-server). My workflow is like many others based on Visual Studio Code (VSCode) as a Markdown editor in conjunction with Hugo’s server mode.
+Hugo offers a very convenient way of looking at your results instantly: When you run Hugo in its server mode on the local machine you’re writing your Markdown on, it will render your files and deliver the result to your browser (see [Using Hugo](/doc/intro/workflow/local-server)). My workflow is like that of many others based on Visual Studio Code (VSCode) as a Markdown editor in conjunction with Hugo’s server mode.
 
-### Front-Matter CMS {.h-info}
+### Front-Matter CMS {.h-warn}
 
 Front-Matter CMS is an exciting plugin for VSCode which offers many nice features. Unfortunately, I can’t recommend it right now for this theme, because it may change the front-matter in a way that alters the site structure. It’s also not capable of handling Hugo’s resource parameters out of the box. The plugin probably handles other projects very fine and I hope to use it in the future.
 

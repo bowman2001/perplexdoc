@@ -15,7 +15,7 @@ The first one renders the opening anchor tag with the VSCode link, the second on
 
 ## {$vscode_start.html}
 
-```go-html-template
+```go-html-template {.inline}
 {{- if .Site.IsServer -}}
     {{- with .File -}}
         {{- $path := print "vscode://file" .Filename  -}}

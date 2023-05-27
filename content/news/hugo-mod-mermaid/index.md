@@ -27,9 +27,9 @@ flowchart TB
   B -->|Mermaid| C(Diagram)
 ```
 
-The module processes fenced code blocks with the identifier `mermaid`. The diagram code inside the fences gets first wrapped by a `<figure>` tag and a `<pre>` tag as a container. Both tags include globally configured attributes. The `figure` tag also accepts optional code block attributes.
+The module allows Hugo to process fenced code blocks with the identifier `mermaid`. The diagram code inside the fences gets wrapped by a `<figure>` tag and a `<pre>` tag as inner container. Both tags include globally configured attributes. The code block also accepts Markdown attributes for the `<figure>`.
 
-The code inside the container is rendered by Mermaid into an SVG diagram.
+The code inside the container is then rendered on the client side by Mermaid JS into an SVG diagram.
 
 Mermaid diagrams are theme-able and some of their attributes are also configurable. We can have a site-wide configuration and local modifications. The code for the diagram in this posting includes a local JSON preamble for a specific configuration and the flowchart instructions:
 
@@ -43,4 +43,4 @@ flowchart TB
   B -->|Mermaid| C(Diagram)
 ```
 
-The module is [available on GitHub](https://github.com/bowman2001/hugo-mod-mermaid) and includes a small Hugo example site with more demos.
+**The module is [available on GitHub](https://github.com/bowman2001/hugo-mod-mermaid) with an example site.**

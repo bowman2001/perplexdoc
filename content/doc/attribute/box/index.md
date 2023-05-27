@@ -8,7 +8,7 @@ menu:
   doc:
     name: Box
     parent: attribute
-    pre: remove
+    pre: check_box_outline_blank
 resources: 
   - src:
     name: featured
@@ -29,11 +29,14 @@ draft: true
 The normal box allows framing content like a figure.
 {.box}
 
-**The tip box**
-{.box-tip}
+**Danger**
+{.box-danger}
 
-**Info box**
+**Warning**
+{.box-warn} 
+
+**Info**
 {.box-info}
 
-**Warning box**
-{.box-warn}
+**Success**
+{.box-success}

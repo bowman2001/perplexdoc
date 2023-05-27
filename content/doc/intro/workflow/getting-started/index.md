@@ -67,12 +67,18 @@ The reserved {$\_vendor} folder includes a recent copy of the Perplex theme. Its
 
 ### Project configuration
 
-All configuration options are listed in the [Hugo docs](https://gohugo.io/getting-started/configuration/). The examples therein are given for a **single configuration file** like {$config.yaml} in your project root directory.
+All configuration options are listed in the [Hugo docs](https://gohugo.io/getting-started/configuration/). The examples therein are given for a **single configuration file** like {$hugo.yaml} in your project root directory.
+{.inline}
 
-The configuration for this project is using the alternative option of a **configuration directory** named {$config} with separate files for the configuration sections. For the growing number of options this arrangement is clearer. The top configuration file is still called {$config.yaml} the other ones are named like the section they contain.
+{{< mnote >}}
+Hugo changed the name for the main configuration file recently to {$hugo.\*}. It has formerly been called {$config.\*} and the old name remains valid.
+{{< /mnote >}}
 
-{{< mnote up=17 >}}
-**The section key** needs to be removed in configuration files for sections, because the name of the file already is the section key. When you adopt a configuration option from the Hugo docs for modular configuration files, you need to remove it. And should you copy a configuration option from a section in a config folder into a single {$config.yaml}, you need to add it again. Same goes for TOML and JSON.
+The configuration for this project is using the alternative option of a **configuration directory** named {$config} with separate files for the configuration sections. For the growing number of options this arrangement is clearer. The top configuration file is still called {$hugo.yaml} the other ones are named like the section they contain.
+{.inline}
+
+{{< mnote >}}
+**The section key** is obsolete in separate section configuration files. The name of such a file is the key. Consider this, when you adopt a configuration option from the Hugo docs, where examples a usually given for a single config file.
 {{< /mnote >}}
 
 ### Start a project from scratch

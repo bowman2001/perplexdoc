@@ -1,9 +1,9 @@
 ---
 authors: [Georg Makowski]
-title: Your First Content
+title: Your First Documentation Content
 linktitle: Demo
-description: This is Your Demonstration Section for Try-Outs
-subtitle: true
+description: Demonstration section for practicing 
+subtitle: false
 date: 2023-04-04T11:51:40+02:00 
 menu:
   doc:
@@ -15,10 +15,14 @@ resources:
   src: shubham-dhage-ykFTt5Dq1RU-unsplash.jpg
   params: 
     alt: Complex light dome
+    size: tiny
 weight: 9999
 ---
 
-This is an empty section. Here you can place your first documentation pages to get used to the workflow with Hugo & Perplex.
+This is an empty section for practicing. Here you can place your first documentation pages to get used to the workflow with Hugo & Perplex.
 {.p-first}<--!more-->
 
-There are step-by-step guides for a new documentation page and a new section in the [content workflow introduction](/doc/intro/workflow/content).
+There is a step-by-step guide on how to create a new documentation page in the [content workflow introduction](/doc/intro/workflow/content).
+
+
+and a new (sub-)section in the .

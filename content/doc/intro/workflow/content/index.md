@@ -18,8 +18,9 @@ The folder structure lays the foundation for the website structure. The theme re
 {.p-first} <!--more-->
 
 It may take a little while to get your head around Hugo’s content structure. It’s helping me to keep Hugo’s general goal in mind: The folder structure and all the files therein are rendered as straightforward and fast as possible. Organizational overhead is avoided — small details matter instead. Efficiency is Hugo’s greatest achievement but also the reason for misunderstandings.
+{.inline}
 
-{{< mnote up=14 >}}
+{{< mnote >}}
 Besides Markdown, Hugo also offers to process HTML files, data files, and other formats.  
 {{< /mnote >}}
 
@@ -61,7 +62,7 @@ When we include resources like images on a page, we like to [retrieve them](reso
 hugo new blog/second/index.md
 ```
 
-The file `index.md` is rendered again as a single page under the relative URL {/blog/second/}, but now we can store page-specific resources in its folder and access them by their filename or short relative path.
+The file `index.md` is rendered again as a single page under the relative URL {$/blog/second/}, but now we can store page-specific resources in its folder and access them by their filename or short relative path.
 
 {{< mnote up=14 >}}
 **Subdirectories** are possible. We can build only one single page with a leaf bundle, but there are no constraints for resource folders.

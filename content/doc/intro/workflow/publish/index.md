@@ -72,8 +72,7 @@ Rel(build, net, "Deploys", "finalized site" )
 
 This setup may also be convenient for non-commercial projects and in a simplified form for private sites with only one author/editor. Some commercial providers offer a free tier for personal or open-source use. Hugo is building sites so fast, your project may well stay in their often generous limits with several builds per day.
 
-### Caching resources {.h-p .h-warn}
-
- between builds in a container is essential if we don’t want to waste energy and money on repeated image processing. This theme generates many different versions of every image for optimal resolutions on every device. These files are always cached by Hugo. We need to make sure that the caching folder is stored in our repository or enable another caching mechanism between Hugo runs in a container. There is no general solution to this problem, it depends on the provider.
+**Caching resources** between builds in a container is mandatory if we include many images and don’t want to waste energy and money on their repeated processing. Processed resources are always cached by Hugo. But we need to make sure that the caching folder is stored in our repository or enable another caching mechanism between runs in a container.
+{.box-danger}
 
 [hd]: https://gohugo.io/hosting-and-deployment/

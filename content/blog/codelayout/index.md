@@ -31,7 +31,7 @@ And to mark the **end** we use the corresponding closing tag `</code>`.
 
 ## Long lines
 
-```go {linenos=true }
+```go {.expand}
 // NodeRendererFunc is a function that renders a given node.
 type NodeRendererFunc func(writer util.BufWriter, source []byte, n ast.Node, entering bool) (ast.WalkStatus, error)
 

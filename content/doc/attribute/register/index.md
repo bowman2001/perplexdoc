@@ -25,9 +25,10 @@ To attach the attributes correctly in Markdown, have a look at the short [Howto]
 |:--------|:-------|
 | [Paragraph heading](/doc/basic/headings#h-p) | {$.h-p} |
 | [Small paragraph h.](/doc/basic/headings#h-p) | {$.h-p-s} |
+| [Danger](/doc/basic/headings#highlighted-headings) | {$.h-danger} |
 | [Warning](/doc/basic/headings#highlighted-headings) | {$.h-warn} |
 | [Info](/doc/basic/headings#highlighted-headings) | {$.h-info} |
-| [Tip](/doc/basic/headings#highlighted-headings) | {$.h-tip} |
+| [Success](/doc/basic/headings#highlighted-headings) | {$.h-success} |
 
 ## Paragraph
 
@@ -36,7 +37,6 @@ To attach the attributes correctly in Markdown, have a look at the short [Howto]
 | [Standfirst paragraph](standfirst#first) | {$.p-first} |
 | [Big paragraph](/doc/basic/paragraph#big-paragraph) | {$.p-big} |
 | [Small paragraph](/doc/basic/paragraph#small-paragraph) | {$.p-small} |
-| [Meta paragraph](/doc/basic/paragraph#meta-paragraph) | {$.p-meta} |
 
 ## Blockquote
 

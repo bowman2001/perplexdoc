@@ -49,7 +49,12 @@ Village and the subline of her own road, the Line Lane.
 
 ## Layout
 
-There is a **short** and a **long** marginal note. On screens with a right margin their layout is identical. On smaller ones the long notes are partly hidden and can be expanded. The star and the dagger wouldn’t be necessary in respect to the layout structure, because the notes are placed right besides the text.
+The theme distinguishes between **short** and **long** marginal notes. On screens with a right margin, their layout is identical. On smaller ones, the long notes are partly hidden and can be expanded.
+{.inline}
+
+{{< mnote >}}
+The star and the dagger in the following examples aren’t necessary for the layout structure, because the notes are placed right beside the text. They’re just for show.
+{{< /mnote >}}
 
 ### Short Note
 
