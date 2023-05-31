@@ -24,5 +24,4 @@ This is an empty section for practicing. Here you can place your first documenta
 
 There is a step-by-step guide on how to create a new documentation page in the [content workflow introduction](/doc/intro/workflow/content).
 
-
-and a new (sub-)section in the .
+On the same page, there is also a guide about new (sub-)sections for your pages.

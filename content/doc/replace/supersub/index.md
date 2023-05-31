@@ -49,7 +49,7 @@ Ethanol, the alcohol with the structural formula C{_2}H{_5}OH is better known as
 
 ### Mathematical Formula
 
-A simple function f(x) = 3x{^2} + 5x{^5} is looking good.
+Simple formulas like E = mc{^2} or functions like f(x) = 3x{^2} + 5x{^5}.
 
 ### Fractions
 

@@ -16,10 +16,14 @@ resources:
     alt: Markdown logo
     size: tiny
     container: "no"
-- src: bigsplash
-  name: Big splash of water
+- src: erda-estremera-eMX1aIAp9Nw-unsplash.jpg
+  name: bigsplash
   params: 
-    caption: Check
+    caption: This caption and attribution are only available when we register an image as a resource in the front-matter
+- src: mulyadi-JJMoAiVl9jA-unsplash.jpg
+  name: splash
+  params:
+    caption: Caption (via resource)
 categories: [Overview, Markdown]
 tags: [Block, Inline]
 weight: 5

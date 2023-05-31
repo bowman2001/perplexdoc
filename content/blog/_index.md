@@ -8,6 +8,4 @@ menu:
     name: Blog
     identifier: blog
     weight: 30
-cascade:
-  toc: false
 ---

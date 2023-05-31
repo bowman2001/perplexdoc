@@ -36,4 +36,4 @@ Strike-through is applied by surrounding text with two swung dashes on every sid
 See the [second paragraph](#layex).
 
 Consider that these markings tend to look unprofessional on a finalized page if it's not some kind of draft or change log.
-{.box-warn}
+{.box-info}

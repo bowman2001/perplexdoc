@@ -7,7 +7,6 @@ categories: [Markdown]
 tags: [image, block]
 series: [demo]
 featured: bigsplash
-toc: true
 ---
 
 The theme offers many different layout options for stand-alone Markdown images. Here you can see their layout on all pages without a sidebar.

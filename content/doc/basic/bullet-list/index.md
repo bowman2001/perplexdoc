@@ -38,7 +38,7 @@ When there is not a single blank line between the items, we get a tight list. Ev
 
 ### Loose
 
-```md {.large}
+```md {.expand}
 - A loose list may contain more than one paragraph. You only have to keep the indentation on the same level.
 
   Like this. Here we have separated paragraph inside of the same list item.

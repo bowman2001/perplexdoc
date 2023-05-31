@@ -63,7 +63,7 @@ CommonMark offers no possibility to break a heading line because every line star
 
 When a heading exceeds the line length of the layout, it breaks automatically. That may occur at an unfortunate place: Before the last word or between tightly related words. To introduce a break we can put the replacement code `{‍/}` between two words **without any spacing character** like this:
 
-```text {.semi-large}
+```text {.expand}
 ### Nice long heading with a complicated topic{‍/}stretching over more than one line
 ```
 

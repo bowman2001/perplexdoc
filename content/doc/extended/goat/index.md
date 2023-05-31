@@ -1,4 +1,5 @@
 ---
+author: [Georg Makowski]
 title: GoAT
 description: Go ASCII Tool
 subtitle: false

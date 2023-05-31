@@ -1,0 +1,4 @@
+{{- with .Pre | default "arrow_right" -}}
+    {{ partial "icon/material-icon.html" . }}
+  {{/*- partial "icon/material-symbol.html" (dict "icon" . "weight" "400") -*/}}
+{{- end -}}

@@ -82,12 +82,20 @@ Second
 
 Short terms with long descriptions will look better with a loose style, that is applied by the [attribute](/doc/attribute) `{.dl-loose}`
 
-First Term
+First term
 : {{< farfarshort 1 >}}
 : {{< farfarshort 1 >}}
 
-Second Term
+Second term
 : {{< farfarshort 1 >}}
 {.dl-loose, .box}
 
-In the case we need a little more space for the terms, we can apply `.dl-loose3`. The normal loose style reserves a quarter of the full text width for terms, with this attribute we get a third.
+In the case we need a little more space for the terms, we can apply `.dl-loose3`. The normal loose style reserves a quarter of the full text width for terms — with this attribute we get one third:
+
+First very long term
+: {{< farfarshort 1 >}}
+: {{< farfarshort 1 >}}
+
+Second very long term
+: {{< farfarshort 1 >}}
+{.dl-loose3, .box}

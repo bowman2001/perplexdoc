@@ -43,6 +43,7 @@ Our personal keymap depends on the keyboard layout and the operating system. The
 | Ellipsis                    |  …   |            {%Alt Gr} + {%.} |
 | Dash | – |{%Alt Gr} + {%-} |
 | Long dash                   |  —   |            {%Alt Gr} + {%Shift} + {%-} |
+{.normal}
 
 {{< mnote up=48 >}}
 **Guillemets** are usually placed the other way around in Germany compared to French and Swiss typography.

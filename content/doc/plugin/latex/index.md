@@ -63,7 +63,7 @@ f(x) = \int_{-\infty}^\infty\hat f(\xi)\, e^{2 \pi i \xi x}\,d\xi
 ‍```
 ```
 
-```latex {.semi-large}
+```latex {.expand}
 ```math
 \begin{equation}
 \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = \\

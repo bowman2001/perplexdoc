@@ -20,12 +20,10 @@ resources :
     src    : mulyadi-JJMoAiVl9jA-unsplash.jpg
     params :
       alt    : Splashing ring of water
-      caption: Caption (via resource)
   - src    : erda-estremera-eMX1aIAp9Nw-unsplash.jpg
     name   : bigsplash
     params :
       alt    : A splashing drop of water
-      caption: This caption and the attribution are only available when we register an image as a resource in the front-matter
   - src: fig/tiny_text.svg
     name: tiny
     params:
