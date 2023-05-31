@@ -1,7 +1,7 @@
 baseURL: 'https://perplex.desider.at'
 
-outputs:
-  home: [HTML, RSS, HEADER]
+# outputs:
+#  home: [HTML, RSS, HEADER]
 
 ignoreFiles:
   - doc/draft/.*
