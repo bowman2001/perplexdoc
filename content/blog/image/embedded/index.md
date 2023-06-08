@@ -1,16 +1,9 @@
 ---
 authors: [Georg Makowski]
 title: Embedded image (float)
-description: Layout for the inline image element
+description: Layout options for inline images
 subtitle: false
 date: 2023-03-23T10:10:51+01:00 
-weight: 156
-menu:
-  doc:
-    name: Embedded
-    parent: images
-    pre: image
-resources:
 categories: [markdown]
 tags: [image, block]
 series: [images]
@@ -20,11 +13,11 @@ The theme embeds an inline Markdown image by default **as a float** in the conta
 {.p-first}
 <!--more-->
 
-This page contains demonstrations of the layout for embedded images. Their extended syntax is similar to the one for stand-alone images and is explained on the page about the [general image syntax](https://perplex.desider.at/doc/basic/image/syntax).
+This page shows the layout options for embedded images. Their extended syntax is similar to the one for stand-alone images and is explained on the page for the [general image syntax](https://perplex.desider.at/doc/basic/image/syntax).
 
-Most of the time an embedded image is the first element of a paragraph. By default, it’s half a paragraph wide and placed **at the beginning** on the **left** side. This is the default and similar to the first example.
+An embedded image is often the first element of a paragraph. By **default**, it’s resized to half the width of a paragraph and placed at the beginning on the left. This is also the normal size and the first example.
 
-Registering an image as a [resource](/doc/intro/workflow/resources) in the front-matter opens many other options. We can add a caption and an attribution for example.
+All the other following options are only available for images that are registered as a [resource](https://perplex.desider.at/doc/intro/workflow/resources) in the front-matter. Then, we can change the size and the position with parameters, add a caption or attribution, etc…
 
 ## At the beginning
 

@@ -20,7 +20,7 @@ This syntax does not collide with any other elements --- as far as I know. And i
 {.inline}
 
 {{< mnote >}}
-[**Markdown attributes**](/doc/attribute) have a similar syntax, but they usually aren’t present in the rendered HTML code anymore. Except for Markdown code examples including attributes. Therefore, the `#` and `.` signs are avoided.
+**Markdown attributes** have a similar syntax, but they usually aren’t present in the rendered HTML code anymore. Except for Markdown code examples including attributes. Therefore, the `#` and `.` signs are avoided.
 {{< /mnote >}}
 
 All replacements are chained together in one Hugo partial, which can process every piece of rendered Markdown content in the templates.

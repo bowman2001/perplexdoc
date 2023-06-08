@@ -1,7 +1,0 @@
-keysSrc: ["default", "script", "style", "object", "connect", "font", "frame", "img", "manifest", "media", "worker"]
-keysUri: [base, report]
-values: ['none', 'self', 'strict-dynamic', 'report-sample', 'unsafe-inline', 'unsafe-hashes']
-experimental:
-  allow: false
-  keys: []
-reportOnly: false

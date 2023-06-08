@@ -9,7 +9,6 @@ menu:
     pre: source
 title: Hugo’s built-in internal shortcodes
 weight: 590
-draft: true
 ---
 
 Hugo ships with a few shortcodes to handle your own content and configuration.
@@ -39,12 +38,6 @@ To replace unique names with URLs, Hugo provides `relref` or `ref`. Internal lin
 : returns always the absolute URL of the page, which may be necessary under special circumstances.
 {.dl-loose}
 
-## Show a figure {#figure}
-
-Markdown contains no element, that gets rendered into a figure, because this is a task beyond simple markup. Therefore, Hugo includes the `figure` shortcode with many options and the possibility to add styling classes. The resulting HTML includes just the original image, because the internal shortcode is a minimal default and meant to be overridden by theme developers with their specific version.
-
-Perplex does override the built-in `figure` shortcode with its own, but the variables are kept in place. There are no adjustments necessary. Additional options are presented on the page for the theme [`figure`](/doc/shortcode/figure)
-
 ## `highlight` Code {#highlight}
 
 The highlight shortcode is complex and may use some additional CSS files.
@@ -70,4 +63,3 @@ We can show a configuration parameter in the content with this shortcode. Their 
 
 - The description with `{{</* param description  */>}}` as “{{< param description >}}”.
 
-[hugofigure]: https://gohugo.io/content-management/shortcodes/#figure

@@ -32,45 +32,45 @@ To produce the following layout options besides the default we need to adhere to
 
 ## Tiny
 
-![](tiny)
+![](fig-tiny)
 
 {{< farfar 1 >}}
 
-![](tiny?posh=right)
+![](fig-tiny?posh=right)
 
 {{< farfar 2 >}}
 
 ## Small
 
-![](small-portrait)
+![](fig-small-portrait)
 
 {{< farfar 2 >}}
 
-![](small)
+![](fig-small)
 
 {{< farfar 1 >}}
 
 ## Medium
 
-![](medium)
+![](fig-medium)
 
 {{< farfar 2 >}}
 
-![](medium?posh=left)
+![](fig-medium?posh=left)
 
 {{< farfar 2 >}}
 
 ## Normal
 {{< farfar 1 >}}
 
-![](normal)
+![](fig-normal)
 
 {{< farfar 1 >}}
 
 ## Large
 {{< farfar 1 >}}
 
-![](large)
+![](fig-large)
 
 {{< farfar 1 >}}
 
@@ -78,7 +78,7 @@ To produce the following layout options besides the default we need to adhere to
 
 {{< farfar 1 >}}
 
-![](xlarge)
+![](fig-xlarge)
 
 {{< farfar 1 >}}
 

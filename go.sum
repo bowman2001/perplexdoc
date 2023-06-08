@@ -2,3 +2,5 @@ github.com/bowman2001/hugo-mod-csp v0.1.2 h1:DJS0v6Ht/zidhUF+LakMm9AQo2ICwoqr2IS
 github.com/bowman2001/hugo-mod-csp v0.1.2/go.mod h1:XuKTqGkSb+Ntff/r+cA/Hb6RQRjtApnHvrI1/A4jk0g=
 github.com/bowman2001/perplex v0.3.7 h1:5K9mIEoL6q8fGCJomtLgkWcuVO0tjITwOadX8Rs2wyA=
 github.com/bowman2001/perplex v0.3.7/go.mod h1:feWV7XyKFFxRxJWSJQLLQ1gLCnE5dITfeoF4tRZqqlE=
+github.com/bowman2001/perplex v0.4.0 h1:NVaTzUtNoY3LmUY8ZBgK6zPOrrVQbSusG4kWDXjHp/Y=
+github.com/bowman2001/perplex v0.4.0/go.mod h1:Ns4wFFE879+OvRbeeMNZmoyPEQ7t697oNgS4z9pSJuQ=

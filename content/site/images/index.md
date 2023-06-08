@@ -25,7 +25,7 @@ resources :
     params :
       alt    : A splashing drop of water
   - src: fig/tiny_text.svg
-    name: tiny
+    name: fig-tiny
     params:
       alt: Placeholder image, tiny size
       size: tiny
@@ -33,14 +33,14 @@ resources :
       caption: Tiny figure
       attr: gm
   - src: fig/small_text.svg
-    name: small
+    name: fig-small
     params:
       alt: Placeholder image, small size
       size: small 
       posh: left
       caption: Small figure
       attr: gm
-  - name: small-portrait
+  - name: fig-small-portrait
     src: fig/small_portrait_text.svg
     params:
       alt: Placeholder image, small portrait size
@@ -49,7 +49,7 @@ resources :
       posh: right
       attr: gm
   - src: fig/medium_text.svg
-    name: medium
+    name: fig-medium
     params:
       alt: Placeholder image, medium size
       caption: Medium figure – this size is a good choice for a landscape ratio. 
@@ -57,7 +57,7 @@ resources :
       posh: right
       attr: gm
   - src: fig/normal_text.svg
-    name: normal
+    name: fig-normal
     params:
       alt: Placeholder image, normal size
       caption: The **default** normal size occupies the full text width. If the margin is available, the caption is placed there.
@@ -65,19 +65,38 @@ resources :
       posh: left
       attr: gm
   - src: fig/large_text.svg
-    name: large
+    name: fig-large
     params:
       alt: Placeholder image, large size
       caption: The large size fills the text width and the right margin on documenation pages. The text of the caption is constrained to the text width. The attribution is placed in the right margin an on the right as usual.
       size: large
       attr: gm
   - src: fig/extra-large_text.svg
-    name: xlarge
+    name: fig-xlarge
     params:
       size: xlarge
       alt: Placeholder image, extra large size
       caption: The size of an extra large image will only show in blog and article pages. It’s treated here like a large image, because the sidebar occupies the left margin.
       attr: gm
+  - name: img-normal
+    src: img/normal_text.svg
+    params:
+      alt: Placeholder image, normal size
+      caption: Normal size
+      attr: gm
+      size: normal
+  - name: img-small
+    src: img/small_text.svg
+    params:
+      alt: Placeholder image, small size
+      caption: A small embedded image
+      attr: gm
+      size: small
+  - name: img-tiny
+    src: img/tiny_text.svg
+    params:
+      alt: Placeholder image, tiny size
+      size: tiny
   - src: portrait.jpg
     name: portrait
     params:

@@ -14,6 +14,7 @@ resources:
     name: favicon
     params:
       size: tiny 
+      alt: Favorite icon
 categories: [Theme]
 tags: [Favicon]
 ---

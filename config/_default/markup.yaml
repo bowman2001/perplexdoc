@@ -34,5 +34,5 @@ highlight:
   lineNos: false
   lineNumbersInTable: true
   noClasses: true
-  style: github-dark
+  style: github
   tabWidth: 4

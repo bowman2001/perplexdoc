@@ -48,4 +48,4 @@ I don’t include the resulting code, you can inspect it as usual with your brow
 > {.dl-loose}
 {{< /playground >}}
 
-Markdown is very sensitive to indentation when combining various formatting signs and [attributes](/doc/attribute). We need to align our code correctly. Then, the HTML code is the expected one. Which version fits the content in the best way is a matter of taste.
+Markdown is very sensitive to indentation when combining various formatting signs and [attributes](https://perplex.desider.at/doc/attribute). We need to align our code correctly. Then, the HTML code is the expected one. Which version fits the content in the best way is a matter of taste.

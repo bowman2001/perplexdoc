@@ -31,11 +31,11 @@ The layout is **fluid-responsive**. This concept has been around for a while but
 
 - The line length stays the same when the width of the screen is not as constrained as on small mobile devices.
 
-All text is placed on a **baseline grid** to introduce a comfortable vertical rhythm. Combined with the fluid-responsive design this allows placing images and other elements in and around the text with great accuracies [like this](/blog/image/stand-alone) or [this](/doc/basic/image/inline).
+All text is placed on a **baseline grid** to introduce a comfortable vertical rhythm. Combined with the fluid-responsive design this allows placing images (and other block elements) in and around the text accurately. The blog contains examples of all layout options for [stand-alone](/blog/image/stand-alone) and [embedded](/blog/image/embedded) images. 
 
 ## Usage concept
 
-The theme will be as self-sufficient as it is reasonably possible. Necessary fonts and Javascript libraries are packed into the theme or retrieved from the secure CDN <https://jsdelivr.com>. Recent copies of all Hugo module dependencies are available in {$_vendor}. No other installations than the standard binary of a very recent Hugo release and the theme are required.
+The theme will be as self-sufficient as it is reasonably possible. Fonts and libraries are packed into the theme or retrieved from the secure CDN <https://jsdelivr.com>. Recent copies of all Hugo module dependencies are available in {$_vendor}. No other installations than the standard binary of a very recent Hugo release and the theme are required. To stay up to date in the long run, the installation of the GoLang environment is more convenient than updating the theme manually.
 
 ## Support
 

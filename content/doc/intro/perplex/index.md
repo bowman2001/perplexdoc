@@ -57,9 +57,10 @@ Because Markdown is simple, the resulting HTML also is. Perplex offers many styl
 ## Structured by YAML
 
 The complete navigation and all other page layout elements besides the content are controlled by meta-data parameters consisting of key-value pairs. This documentation relies on [**Y**AML **A**in’t **M**arkup **L**anguage (**YAML**)](https://yaml.org) to format the data, because it’s well-known and has the widest support.
+{.inline}
 
-{{< mnote up=14 >}}
-Hugo also processes meta-data formatted by TOML and JSON and converts front-matter data between these formats. Because all data processing is done by Hugo, the theme works with all of them. But the included archetypes – the skeleton templates for new files – are written in YAML.
+{{< mnote >}}
+Hugo also processes meta-data formatted by **TOML** and **JSON** and converts front-matter data between these formats. Because all data processing is done by Hugo, the theme works with all of them. The included  skeleton templates for new content files – the archetypes – are written in YAML.
 {{< /mnote >}}
 
 Site parameters
