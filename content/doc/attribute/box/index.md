@@ -19,10 +19,9 @@ resources:
 categories: [attribute]
 tags: [box]
 weight: 380
-draft: true
 ---
 
-**Placeholder**: Put your own summary paragraph here. It may contain inline markup but links are impossible.
+There is one box for framing content like a figure. And there are four kinds of annotation boxes for important messages: **Danger**, **warning**, **info**, and **success**.
 {.p-first}
 <!--more-->
 
@@ -40,3 +39,5 @@ The normal box allows framing content like a figure.
 
 **Success**
 {.box-success}
+
+Another more subtle approach for important messages is to [highlight headings](/doc/basic/headings#highlighted-headings) with similar attributes.

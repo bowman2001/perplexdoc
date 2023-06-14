@@ -17,7 +17,7 @@ resources:
     attr: "&copy; C. J. Mozzochi, Princeton&nbsp;N.J"
 ---
 
-Marginal notes add further information elegantly and unobtrusively. We can add them with the shortcode {$mnote}.
+Marginal notes add further information elegantly and unobtrusively. We can add them with the shortcode **{$mnote}**.
 {.p-first} <!--more-->
 
 The famous mathematician Fermat wrote his last conjecture around 1637 in the marginal column besides an ancient Greek proof by Diophantus. The “marvelous proof” Fermat mentioned there has never been uncovered and his note kept mathematicians wondering for over 350 years.
@@ -39,7 +39,7 @@ Wiley’s proof is still only accessible to mathematical specialists. But the in
 > Thus one number is {^256}&frasl;{_25} and the other {^144}&frasl;{_25}. The sum of these numbers is 16 and each summand is a square.
 {.inline}
 
-{{< mnote >}}
+{{< mnote down=9 >}}
 It is impossible to separate a cube into two cubes, or a fourth power into two fourth powers, or in general, any power higher than the second, into two like powers. I have discovered a truly marvelous proof of this, which this margin is too narrow to contain.
 {{< /mnote >}}
 

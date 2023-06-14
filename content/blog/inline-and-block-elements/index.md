@@ -36,6 +36,6 @@ Block elements
 
 ## Confusing image element
 
-The CommonMark Markdown [image element](/doc/basic/image) is creating some confusion, because it’s an inline element. Because images appear visually as blocks, we falsely tend to infer they are HTML block elements. But a CommonMark image is always inline and embedded in an enclosing block. When its placed stand-alone on a separated line, its not only an image but enclosed in a paragraph block of its own.
+The CommonMark Markdown [image element](https://perplex.desider.at/doc/basic/image) is creating some confusion, because it’s an inline element. Because images appear visually as blocks, we falsely tend to infer they are HTML block elements. But a CommonMark image is always inline and embedded in an enclosing block. When its placed stand-alone on a separated line, its not only an image but enclosed in a paragraph block of its own.
 
 To generate a stand-alone image resulting in semantically correct HTML, we need an alternative. Since version 0.108 Hugo distinguishes between Markdown images placed **inline** or separated as a **block**.
