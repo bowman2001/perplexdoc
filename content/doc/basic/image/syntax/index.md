@@ -130,7 +130,7 @@ The following keys and types of values are available:
 
 In case we use the {$alt} parameter, we can leave the first bracket of the image element empty.
 
-Alternative Text in the first square brackets of the Markdown image overrides the resource parameter.
+Alternative Text in the first **square brackets** of the Markdown image **overrides** the resource parameter.
 {.box-info}
 
 #### In-place parameters
@@ -155,6 +155,5 @@ for the vertical positioning doesn’t move an embedded image into the middle of
 
 [^1]: The syntax for **query strings** has been introduced to extend URLs with optional parameters like `https://name.org?id=val&id2=val2`. They are usually generated automatically to specify API requests.
 
-##### Overriding resource parameters {.h-info}
-
-When the given parameters are already defined in the resource section of the front-matter, the in-place parameters will override them.
+Parameters defined in the front-matter are **overridden** by the **in-place parameters** will override them.
+{.box-info}

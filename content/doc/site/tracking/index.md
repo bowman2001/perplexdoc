@@ -1,5 +1,5 @@
 ---
-author:
+authors: [Georg Makowski]
 title: Tracking
 description: Page description placeholder
 subtitle: false

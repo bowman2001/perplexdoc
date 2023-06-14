@@ -1,4 +1,5 @@
 ---
+authors: [Georg Makowski]
 title: Favicon
 description: The site icon
 subtitle: false
