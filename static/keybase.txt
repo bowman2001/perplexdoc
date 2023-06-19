@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/bowman2001
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://perplex.desider.at
+  * I am bowman2001 (https://keybase.io/bowman2001) on keybase.
+  * I have a public key ASDkFSb9_3o1n0o8gxQxSwvGKP30Z9IUXkQ0gYz9KV0CeAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e41526fdff7a359f4a3c8314314b0bc628fdf467d2145e4434818cfd295d02780a",
+      "host": "keybase.io",
+      "kid": "0120e41526fdff7a359f4a3c8314314b0bc628fdf467d2145e4434818cfd295d02780a",
+      "uid": "54283355ff51e5b4849811e03a40cf19",
+      "username": "bowman2001"
+    },
+    "merkle_root": {
+      "ctime": 1687192726,
+      "hash": "da58df0471c986f377274474425a6e4b2660015f3a808b60e71d043bcc8af98f9269c10d2a084f217ea7ccd112470bb62cb21bd141ad21117aefc8d8411eb9d5",
+      "hash_meta": "8ec2e7998c1b113223b4fbdbe596d4018f5a0854f320fdb8d5ebcf0a2eaf1eaa",
+      "seqno": 24584488
+    },
+    "service": {
+      "entropy": "rbFdr24WORE9hAfo9P5DQku2",
+      "hostname": "perplex.desider.at",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.2"
+  },
+  "ctime": 1687192734,
+  "expire_in": 504576000,
+  "prev": "cad8c9adf8dd1daa800510f57a320af3b41d5b1ccba57ba827c0c33e5a505059",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg5BUm/f96NZ9KPIMUMUsLxij99GfSFF5ENIGM/SldAngKp3BheWxvYWTESpcCFMQgytjJrfjdHaqABRD1ejIK87QdWxzLpXuoJ8DDPlpQUFnEIMAcxfRTHh4ZjcG8lOca69qPnmcnoqSrC2wik2x4TH51AgHCo3NpZ8RAgG9Qxz0v6k9qQ7KhNEmmA000IJzgnhManVsSITKAoYoVlFSIVRWMO4bkkFnMVM14SI299cap8Wad6GnurITuCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDTENpqX0Zd8eYvolio4XFBRXJBWTpLEt8fAkjQOPziCo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bowman2001
+
+==================================================================

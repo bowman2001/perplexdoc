@@ -13,11 +13,11 @@ categories: [Theme]
 tags: [title]
 ---
 
-The title section is generated from meta-data in the front-matter. There are a few parameters besides the {$title} to produce the desired result.
+The title section is generated from meta-data in the front-matter.
 {.p-first}
 <!--more-->
 
-Most parameters for the title section contain strings. Usually, we just write them into the front-matter values. But there is one caveat: In case we’re using characters, which are reserved for formatting front-matter data, we need to enclose these strings in straight quotes to avoid errors.
+Most parameters for the title section contain strings. Often, we can just write them conveniently into the YAML front-matter values. But there is one caveat with YAML: In case we’re using characters, which are reserved for YAML itself, we need to enclose these strings in straight quotes to avoid parsing errors.
 
 ## The title itself
 
