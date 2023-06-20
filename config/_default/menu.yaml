@@ -3,11 +3,7 @@ main_social:
     pre: github
     url: "https://github.com/bowman2001/perplex"
     weight: 1
-  - name: Twitter
-    pre: twitter
-    url: "https://twitter.com/GeorgMakowski"
-    weight: 2
   - name: KeyBase
     pre: keybase
     url: "https://keybase.io/bowman2001"
-    weight: 3
+    weight: 10

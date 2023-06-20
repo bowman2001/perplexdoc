@@ -25,11 +25,11 @@ Most images in this documentation were made available free of charge by numerous
 
 The concept for a layout geared towards classical typographic principles grew over some years out of many already existing ideas. I can’t even mention every helpful author I read about typography and CSS techniques. Many conceptual parts date back to [Matthew Butterick’s][mb] beautiful online book [{=Practical Typo&shy;graphy}][pt]. It also taught me a lot about typography in general and some about distinctive American-English features.
 
-Perplex is based on [IBM’s][ibm] corporate font family [Plex][plex] because these fonts have been designed specifically for technical writing and publishing. Thankfully, IBM is improving and releasing them as open source.
+Perplex includes [IBM’s][ibm] font family [Plex][plex] because these fonts have been designed specifically for technical writing and publishing. Thankfully, IBM is improving and releasing them as open source.
 {.inline}
 
 {{< mnote >}}
-This theme does **not** resemble IBM’s corporate layout system _carbon_.
+This theme does **not try to** follow IBM’s corporate layout system [{=Carbon}](https://carbondesignsystem.com/).
 {{< /mnote >}}
 
 Without [Chris Coyier’s][cc] always up-to-date website [CSS-Tricks][cc] I would have been lost in the CSS specs. He and all his contributors have been clarifying the constantly evolving capabilities of CSS like only a few others.
