@@ -18,7 +18,7 @@ This template file from the module {$hugo-mod-replacements} contains the regular
 
 There has been a [clarifying discussion][forum-topic] if this template may open a loophole for script attacks. I couldn’t see it myself at first, but the bottom line is simply: No, not at all. Goldmark discards all HTML in the Markdown and also in the replacement codes with the default setting `unsafe: false`. These regular expressions are applied to the rendered Markdown, which gets cleared of all HTML tags before it’s transformed into HTML itself.
 
-{{< highlight go-html-template "linenos=true, class=expand" >}}
+{{< highlight go-html-template "linenos=true" >}}
 {{< readfile file="_vendor/github.com/bowman2001/hugo-mod-replacements/layouts/partials/replacements.html" >}}
 {{< /highlight >}}
 
