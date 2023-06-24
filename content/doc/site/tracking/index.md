@@ -44,8 +44,6 @@ This advantage comes at a (reasonable) price after a short tryout period. Fathom
 
 You can place the Fathom-ID for your site like `fathomSiteID: ABCDEFG` in the [parameter section][fid] of your configuration.
 
-And should you use their **custom domain** you can provide the full link like `fathomCustomDomain: https://custom.yourdomain.com` beneath.
-
 [gparam]: /doc/appendix/config/hugoyaml#19
 [fathomref]: https://usefathom.com/ref/CENRRH
 [fid]: /doc/appendix/config/paramsyaml#18

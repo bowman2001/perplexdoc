@@ -1,6 +1,7 @@
 ---
 authors: [Georg Makowski]
 title: Clear a floating element
+linktitle: Clear
 description: Stop text from floating around an embedded element
 subtitle: false
 date: 2023-04-14T22:02:51+02:00 
