@@ -3,7 +3,6 @@
 #
 
 description: Perplex is a typographic theme with advanced layout capabilities. You can publish technical content in a documentation, a blog, as news or long articles.
-embedFull: false
 svg: inline
 
 # Site wide favicon for browser and OS display
@@ -16,7 +15,6 @@ imaging:
   fallback_width: 1920
 
 # fathomSiteID: ABCDEFG
-# fathomCustomDomain: https://custom.yourdomain.com
 
 render_hooks:
   link:

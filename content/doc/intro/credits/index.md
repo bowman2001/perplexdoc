@@ -29,13 +29,14 @@ Perplex includes [IBM’s][ibm] font family [Plex][plex] because these fonts hav
 {.inline}
 
 {{< mnote >}}
-This theme does **not try to** follow IBM’s corporate layout system [{=Carbon}](https://carbondesignsystem.com/).
+This theme does **not** implement IBM’s corporate layout system [{=Carbon}](https://carbondesignsystem.com/).
 {{< /mnote >}}
 
 Without [Chris Coyier’s][cc] always up-to-date website [CSS-Tricks][cc] I would have been lost in the CSS specs. He and all his contributors have been clarifying the constantly evolving capabilities of CSS like only a few others.
+{.inline}
 
-{{< mnote up=11 >}}
-**CSS-Tricks** has been acquired by [Digital Ocean](https://digitalocean.com) recently. Hopefully, their staff will keep up the good work.
+{{< mnote >}}
+**CSS-Tricks** has been acquired by [Digital Ocean](https://digitalocean.com) recently.
 {{< /mnote >}}
 
 Last but not least: Only thanks to [Hugo](https://gohugo.io) and its active and helpful community I could realize this theme. I owe special thanks to [Steve Francia][sf] for bringing Hugo to life, to [Joe Mooring][jm] for his numerous precise suggestions and examples, and of course to the long-time project leader [Bjørn Erik Pedersen][bep] for his ongoing enhancements and insights into this marvelous software.
