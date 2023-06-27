@@ -8,6 +8,5 @@ resources:
   name: featured
   params:
     alt: Markdown logo
-    container: "no"
-    size: tiny
+    container: trans
 ---

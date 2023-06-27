@@ -8,5 +8,5 @@ resources:
     name: featured
     params:
       alt: LateX logo
-      container: "no"
+      container: trans
 ---

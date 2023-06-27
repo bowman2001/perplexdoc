@@ -1,14 +1,7 @@
 <svg width="200" height="200" version="1.1" viewBox="0 0 52.9 52.9" xmlns="http://www.w3.org/2000/svg">
-  <g transform="translate(0 -244)" opacity=".94">
-    <rect y="244" width="52.9" height="52.9" fill="#c0c0c0" stroke-width=".265"/>
-    <g stroke-width=".265" >
-      <path d="m20.638 258.44v5.1244h-0.89782v-5.1244h-1.567v-0.78771h4.0317v0.78771z"/>
-      <path d="m23.424 258.32q-0.52514 0-0.52514-0.44891v-0.15246q0-0.44891 0.52514-0.44891t0.52514 0.44891v0.15246q0 0.44891-0.52514 0.44891zm-0.43197 0.83853h0.87241v4.4044h-0.87241z"/>
-      <path d="m25.05 263.56v-4.4044h0.87241v0.72842h0.10164q0.26257-0.83006 1.0842-0.83006 0.5929 0 0.91476 0.40656 0.33033 0.39809 0.33033 1.1773v2.9222h-0.87241v-2.8036q0-0.46585-0.17787-0.71148t-0.55902-0.24563q-0.34727 0-0.58443 0.21175-0.23716 0.20328-0.23716 0.57596v2.973z"/>
-      <path d="m31.818 259.16h0.86394l-1.7025 5.4039q-0.06776 0.20328-0.15246 0.3388-0.07623 0.13552-0.19481 0.21175-0.11011 0.0847-0.27104 0.11011-0.16093 0.0339-0.37268 0.0339h-0.60984v-0.71995h0.79618l0.20328-0.73689-1.4653-4.6416h0.88935l0.66066 2.3123 0.30492 1.3383h0.09317l0.30492-1.3383z"/>
-    </g>
-    <g stroke-width=".265" >
-      <path d="m23.55 281.18v-0.5082h0.77077v-2.0497l-0.70301 0.40656-0.23716-0.44044 0.89782-0.53361h0.66913v2.6172h0.6776v0.5082zm2.8713-0.88935 1.4568-2.2361h0.66066l-1.4568 2.2361zm-2.4224 3.676 1.423-2.1514h0.66913l-1.4314 2.1514zm4.2265 0v-0.60137h-1.3721v-0.52514l1.1519-1.9989h0.81312v2.0497h0.38962v0.47432h-0.38962v0.60137zm0-2.4986h-0.06776l-0.79618 1.423h0.86394z"/>
-    </g>
+  <g transform="translate(0 -244)" stroke-width=".265">
+    <rect y="244" width="52.9" height="52.9" fill="#bfbfbf"/>
+    <text x="25.389259" y="263.56433" fill="#000000" font-family="'IBM Plex Sans Condensed'" font-size="8.47px" font-stretch="condensed" font-weight="500" letter-spacing="0px" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="25.389259" y="263.56433" stroke-width=".265">Tiny</tspan></text>
+    <text x="26.26935" y="283.96671" fill="#000000" font-family="'IBM Plex Sans Condensed'" font-size="8.47px" font-stretch="condensed" font-weight="500" letter-spacing="0px" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="26.26935" y="283.96671" stroke-width=".265">¼</tspan></text>
   </g>
 </svg>
