@@ -24,7 +24,7 @@ It's easy to manually add anchors to any block element with an identifier attrib
 
 ## Syntax
 
-When we manually add an **anchor** attribute, we usually want to place on or more **references** somewhere else.  
+When we manually add an **anchor** attribute, we usually want to place one or more **references** somewhere else.  
 
 ### Anchor
 
