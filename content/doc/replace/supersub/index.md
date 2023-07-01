@@ -18,34 +18,32 @@ categories: [Markdown]
 tags: [replacement]
 ---
 
-When you need a few shifted tiny characters in your Markdown, these replacement codes are there for you.
+For occasional vertically shifted characters, these replacement codes are sufficient.
 {.p-first} <!--more-->
 
-Should you plan to include complex mathematical or chemical formulas you are probably better off with [LaTeX notation][latex].
+For complex mathematical or chemical formulas, [LaTeX notation][latex] is probably the better choice.
 
 ## Syntax
 
 ```md {.left}
-x{‍_4} x{‍^4}  {‍^3}&frasl;{‍_4}
+x{‍_4} x{‍^4} {‍^3}&frasl;{‍_4}
 ```
 
-The additional HTML entity `&frasl;` places a fraction line.
+The HTML entity `&frasl;` corresponds to a fraction line.
 
 ## Layout
 
-I’m showing are a few more examples for comparison: 
-
 x{_4} x{^4} X{_4} X{^4}   x{_3} x{^3} X{_3} X{^3}&emsp;{^3}&frasl;{_4}
 
-Compare the Perplex styling to the one the Plex fonts provide directly — unfortunately only for numbers. We can use them as Unicode characters:
+Compare the theme styling to the one the Plex fonts provide as special Unicode numbers:
 
 x₄ x⁴   X₄ X⁴ x₃ x³   X₃ X³&emsp;³&frasl;₄
 
-The numbers are very small and the subscripts are not on the same line (this may be due to a missing CSS configuration parameter). Therefore, the following examples demonstrate the theme replacements.
+These glyphs are very small and the subscripts are not placed consistently. Therefore, I recommend replacements that also work for other characters like alphabetical indices.
 
 ### Chemical Formula
 
-Ethanol, the alcohol with the structural formula C{_2}H{_5}OH is better known as _the_ alcohol.
+Ethanol with the structural formula C{_2}H{_5}OH is better known as _the_ alcohol.
 
 ### Mathematical Formula
 

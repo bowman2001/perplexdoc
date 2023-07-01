@@ -71,7 +71,7 @@ All configuration options are listed in the [Hugo docs](https://gohugo.io/gettin
 {.inline}
 
 {{< mnote >}}
-Hugo changed the name for the main configuration file recently to {$hugo.\*}. It has formerly been called {$config.\*} and the old name remains valid.
+Hugo changed the name for the main configuration file recently. {$config.\*} remains valid.
 {{< /mnote >}}
 
 The configuration for this project is using the alternative option of a **configuration directory** named {$config} with separate files for the configuration sections. For the growing number of options this arrangement is clearer. The top configuration file is still called {$hugo.yaml} the other ones are named like the section they contain.
