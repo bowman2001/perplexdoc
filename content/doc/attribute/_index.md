@@ -12,7 +12,7 @@ tags: [attribute]
 weight: 300
 ---
 
-Markdown attributes are the key to style variations and other improvements of the rendered result. Perplex offers many of them.
+Markdown attributes are the key to style variations and other layout improvements. Perplex offers many of them.
 {.p-first} <!--more-->
 
-Attributes are an extension of the Markdown syntax which is implemented by [Goldmark](https://github.com/yuin/goldmark) and many others but not all Markdown render engines.
+Attributes are an extension of the Markdown syntax which is implemented by [Goldmark](https://github.com/yuin/goldmark) and many other Markdown render engines.
