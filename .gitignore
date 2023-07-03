@@ -1,9 +1,10 @@
 ### Hugo template
 # Generated files by hugo
-/public
-/resources/_gen
+public
+resources/_gen
 
 # Local configuration
+node_modules
 /.gitmodules
 /.idea
 /.vscode
