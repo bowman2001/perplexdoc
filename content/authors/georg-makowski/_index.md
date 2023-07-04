@@ -15,6 +15,10 @@ contact_icons:
 - name: Email
   icon: gmail
   url: "mailto:gm@desider.at"
+- name: KeyBase
+  pre: keybase
+  url: "https://keybase.io/bowman2001"
+  weight: 10
 resources:
 - src: Joerg_Makowski.jpg
   name: featured

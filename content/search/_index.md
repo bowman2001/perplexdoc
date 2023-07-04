@@ -10,6 +10,6 @@ resources:
       attrlink:
 ---
 
-Full site search
+Search the full content of this site. Excluded from the search are code blocks, tables, and formulas because their pure text excerpts are unreadable.
 {.p-first}
 <!--more-->
