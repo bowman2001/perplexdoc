@@ -33,6 +33,6 @@ highlight:
   lineNoStart: 1
   lineNos: false
   lineNumbersInTable: true
-  noClasses: true
+  noClasses: false
   style: github
   tabWidth: 4

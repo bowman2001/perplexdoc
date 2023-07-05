@@ -10,7 +10,7 @@ menu:
     parent: plugin
     pre: functions
 weight: 710
-categories: [Markdown]
+categories: [markdown, external]
 tags: [latex]
 ---
 

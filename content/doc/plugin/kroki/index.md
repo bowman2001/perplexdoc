@@ -10,7 +10,7 @@ menu:
     name: Kroki
     parent: plugin
     pre: account_tree
-categories: [Markdown]
+categories: [markdown, external]
 tags: [diagram]
 ---
 
