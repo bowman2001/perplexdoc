@@ -15,6 +15,6 @@ The theme includes a dark mode now. It follows the dark/light mode setting of th
 {.p-first}
 <!--more-->
 
-The dark mode includes a dark page background and light text colors as usual. It also reduces the overall brightness of text and images.
+The dark mode includes a dark page background and light text colors as usual. It also reduces the overall brightness and changes the color theme of the code highlighting.
 
-Unfortunately, it’s not easy to change the colors of Hugo’s chroma highlighter. I left the code highlighting untouched for now.
+
