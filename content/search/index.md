@@ -1,6 +1,7 @@
 ---
 title: Search
-description: Full-text site-wide search interface
+description: Powered by CloudCannon’s [Pagefind](https://pagefind.app)
+subtitle: true
 date: 2023-07-03T11:10:29+02:00
 type: search
 ---
