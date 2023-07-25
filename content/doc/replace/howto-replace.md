@@ -11,7 +11,7 @@ menu:
     name: Howto
     identifier: howto-replace
     parent: replace
-    pre: help_outline
+    pre: help
 categories: [Markdown]
 tags: [replacement]
 ---

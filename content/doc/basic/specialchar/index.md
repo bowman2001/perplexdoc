@@ -6,7 +6,7 @@ menu:
   doc:
     name: Special Characters
     parent: basic
-    pre: emoji_symbols
+    pre: glyphs
 title: Special Characters
 weight: 190
 categories: [markdown]
@@ -79,7 +79,9 @@ The non-breaking entities are meant for situations where characters or words sho
 
 ## Emojis
 
-Hugo supports emojis in Markdown content, if we set the global parameter [`enableEmoji`][he] to `true`.
+Hugo supports emojis :woozy_face: (`:‍woozy_face:`) in Markdown content, if we set the global parameter [`enableEmoji`][he] to `true`. 
+
+There are a lot of them according to this [cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/). Have fun!
 
 [plexspec]: https://ibm.com/plex/specs
 

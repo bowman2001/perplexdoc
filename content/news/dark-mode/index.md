@@ -11,10 +11,8 @@ categories: [Design]
 tags: [color]
 ---
 
-The theme includes a dark mode now. It follows the dark/light mode setting of the operating system.
+The theme includes an additional dark mode now. The color mode follows the setting of the operating system.
 {.p-first}
 <!--more-->
 
 The dark mode includes a dark page background and light text colors as usual. It also reduces the overall brightness and changes the color theme of the code highlighting.
-
-

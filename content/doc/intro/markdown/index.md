@@ -38,20 +38,20 @@ Markdown files consist of plain text marked up with a small set of ASCII signs. 
 {.inline}
 
 {{< mnote >}}
-The suffixes ›{$mdown}‹ and ›{$markdown}‹ also indicate Markdown, but are rarely used nowadays.
+The suffixes ›{$mdown}‹ and ›{$markdown}‹ also indicate Markdown but rarely get used.
 {{< /mnote >}}
 
 After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors of Markdown emerged.
 
-To resolve their incompatibilities and to create a dependable basic syntax, John Mc&hairsp;Farlane et al. proposed a strict specification in 2011: [CommonMark][cmark]. This specification has been implemented by many Markdown render engines since and important web-software providers thereby adhere to CommonMark as a kind of standard. For a quick look at the syntax, you can visit their crisp [one page overview](https://CommonMark.org/help).
+To resolve their incompatibilities and to create a dependable basic syntax, John Mc&hairsp;Farlane et al. proposed a strict specification in 2011: [CommonMark][cmark]. This specification has been implemented by many Markdown render engines since and important web-software providers thereby adhere to CommonMark as a minimal standard. For a quick look at the syntax, you can visit their crisp [one page overview](https://CommonMark.org/help).
 
 ## Markdown for Perplex
 
-Perplex styles HTML, which is generated from extended [CommonMark][cmark] by Hugo’s default renderer [Goldmark][gmark]. Three extensions — the [definition list][dl], the [footnote][fnote] and the [typographer][typo] — have been adopted from [PHP Markdown Extra][phpmex]. Based on CommonMark, [GitHub](https://github.com) introduced **G**itHub **F**lavored **M**arkdown (GFM) with the four extensions [table][table], the [task-list][task], [strikethrough][strike] and linkify. They are defined in a [new specification][gfmspec].
+Perplex styles HTML, which is generated from extended CommonMark by Hugo’s default renderer [Goldmark][gmark]. Three extensions — the [definition list][dl], the [footnote][fnote] and the [typographer][typo] — have been adopted from [PHP Markdown Extra][phpmex]. Based on CommonMark, [GitHub](https://github.com) introduced **G**itHub **F**lavored **M**arkdown (GFM) with the four extensions [table][table], the [task-list][task], [strikethrough][strike], and linkify. They are defined in their [new specification][gfmspec].
 {.inline}
 
 {{< mnote >}}
-Hugo’s deprecated **Blackfriday** renderer is not fully CommonMark-compliant. Black&shy;fri&shy;day generated HTML may be styled correctly most of the time. But if you want to rely on Perplex or any other recent theme, I strongly suggest switching to Goldmark and a recent Hugo version.
+Hugo’s deprecated **Blackfriday** renderer is not fully CommonMark-compliant. Black&shy;fri&shy;day generated HTML may still be styled correctly most of the time. But if you want to rely on Perplex or any other recent theme, I strongly suggest switching to Goldmark and a recent Hugo version.
 {{< /mnote >}}
 
 Further extensions may join in the future, but probably only a few if any, because simplicity is Markdown’s essential characteristic.
@@ -83,7 +83,7 @@ The following suggestions for these elements are short. Their issues are discuss
 
 ### How to include images?
 
-There is one image element in CommonMark for embedding an image into a block element and no genuine element for a stand-alone image. Thankfully, since version 0.108.0 Hugo can distinguish both types and allows to generate the appropriate image containers:
+There is only one image element in CommonMark for embedding an image into a block element and no genuine element for a stand-alone image. Thankfully, since version 0.108.0 Hugo can distinguish both types and allows to generate the appropriate image containers:
 
 #### Stand-alone image
 
@@ -156,7 +156,7 @@ Hugo offers a very convenient way of looking at your results instantly: When you
 Front-Matter CMS is an exciting plugin for VSCode which offers many nice features. Unfortunately, I can’t recommend it right now for this theme, because it may change the front-matter in a way that alters the site structure. It’s also not capable of handling Hugo’s resource parameters out of the box. The plugin probably handles other projects very fine and I hope to use it in the future.
 
 ## Markdown Linter
-CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules for a team or a bigger project, we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins to use it directly while editing.
+CommonMark is permissive to small variations in the markup rules. To enforce a certain set of rules we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins to check our Markdown directly in the editor.
 {.inline}
 
 {{< mnote >}}

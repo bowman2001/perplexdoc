@@ -9,7 +9,7 @@ menu:
   doc:
     name: Favicon
     parent: siteelem
-    pre: emoji_symbols
+    pre: glyphs
 resources:
   - src: favicon.svg
     name: favicon

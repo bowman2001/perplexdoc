@@ -10,7 +10,7 @@ menu:
     name: Howto
     identifier: shortcodehowto
     parent: shortcode 
-    pre: help_outline
+    pre: help
 categories: [Markdown]
 tags: [Shortcode]
 ---

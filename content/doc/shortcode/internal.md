@@ -6,7 +6,7 @@ menu:
   doc:
     name: Hugo in-house
     parent: shortcode
-    pre: source
+    pre: topic
 title: Hugo’s built-in internal shortcodes
 weight: 590
 ---

@@ -76,7 +76,7 @@ Hugo already provides a {$figure} shortcode and Perplex overrides this shortcode
 
 The original syntax remains valid with **two exceptions**.
 
-1. The Perplex shortcode allows to write the caption between the starting and closing shortcode tag. When there is no shortcode closing tag, we need to add a slash to the last angled bracket, to mark the shortcode as self-closing like `{{</* figure src="image" /*/>}}`.
+1. The Perplex shortcode allows to write the caption between the starting and closing shortcode tag. When there is no shortcode closing tag, we need to add a slash to the last angled bracket, to mark the shortcode as self-closing like `{{</* figure src="image" */>}}`.
 
     Should we miss the self-closing slash, Hugo can’t recognize the mistake and expects a closing tag. It will treat all the following Markdown as the caption and produce a probably very garbled page.
 

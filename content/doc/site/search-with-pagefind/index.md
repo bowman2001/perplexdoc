@@ -15,7 +15,7 @@ tags: [search]
 weight: 680
 ---
 
-The theme is prepared for indexing with {=Pagefind} and offers a search page. For a demo click on the search button in the top menu.
+The theme is prepared for getting indexed by {=Pagefind} and offering its UI on a search page.
 {.p-first}
 <!--more-->
 

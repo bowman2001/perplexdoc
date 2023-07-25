@@ -7,7 +7,7 @@ menu:
     name: Howto
     identifier: howtoattribute
     parent: attribute
-    pre: help_outline
+    pre: help
 subtitle: false
 title: How to use Attributes?
 weight: 310

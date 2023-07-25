@@ -14,14 +14,14 @@ categories: [Getting started]
 tags: [Hugo]
 ---
 
-The folder structure lays the foundation for the website structure. The theme relies on Hugo’s page bundle features.
+The folder structure lays the foundation for the website structure.
 {.p-first} <!--more-->
 
-It may take a little while to get your head around Hugo’s content structure. It’s helping me to keep Hugo’s general goal in mind: The folder structure and all the files therein are rendered as straightforward and fast as possible. Organizational overhead is avoided — small details matter instead. Efficiency is Hugo’s greatest achievement but also the reason for misunderstandings.
+It may take a little while to get your head around Hugo’s content structure. It’s helping me to keep Hugo’s general goal in mind: The folder structure and all the files therein are rendered as straightforwardly as possible. Organizational overhead is avoided — small details matter instead.
 {.inline}
 
 {{< mnote >}}
-Besides Markdown, Hugo also offers to process HTML files, data files, and other formats.  
+This theme focuses on Markdown content. But Hugo also offers to process HTML files, data, and many other content formats.  
 {{< /mnote >}}
 
 ## Folder structure
@@ -47,8 +47,11 @@ The content of the project root and the folders {$doc}, {$news}, {$blog}, and {$
 ## Page structure and organization
 
 Hugo offers **single pages** and **list pages** and Perplex always provides at least templates for these two views of its content types.
+{.inline}
 
-Exceptions are top-level pages because they only need a single view. They usually aren’t listed and we need to add them to a top-level menu or reference them manually otherwise.
+{{< mnote >}}
+Top-level pages are an exception because they aren’t listed automatically. We need to add them to a top-level menu or reference them manually otherwise.
+{{< /mnote >}}
 
 ### Single pages
 
@@ -77,7 +80,7 @@ tags: []
 
 When the number of entries rises, we need some navigation structure for these types. We best provide it by adding **taxonomies**{^\*}. Hugo’s default taxonomies are the usual **categories** and **tags**. Every new front-matter already includes the parameter keys and an empty list `[]`.
 
-{{< mnote up=8 star=1 >}}
+{{< mnote up=5 star=1 >}}
 We can also add sub-folders and modify the URL structure. To provide an optional separate list view for a sub-folder, we also need to create a [branch file `_index.md`](doc/intro/workflow/content#branch-bundles) inside. Because taxonomies are the preferred structure for postings in Perplex, links to these additional sections only show up in the breadcrumbs at the bottom of the pages.
 {{< /mnote >}}
 

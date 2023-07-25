@@ -9,7 +9,7 @@ menu:
   doc:
     name: Resources
     parent: workflow 
-    pre: collections
+    pre: photo_library
 categories: [Resources, Getting started]
 tags: [file, image]
 ---
