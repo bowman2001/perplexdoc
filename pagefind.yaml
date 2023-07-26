@@ -1,3 +1,6 @@
+source: public
+bundle_dir: pagefind
+
 exclude_selectors:
 - ".md table"
 - ".md pre"
