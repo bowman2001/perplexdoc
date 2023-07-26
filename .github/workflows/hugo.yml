@@ -30,7 +30,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.111.3
+      HUGO_VERSION: 0.115.4
     steps:
       - name: Install Hugo CLI
         run: |
@@ -52,6 +52,8 @@ jobs:
           hugo \
             --minify \
             --baseURL ${{ steps.pages.outputs.base_url }}
+      - name: Run Pagefind
+        run: npm_config_yes=true npx pagefind --source "public"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
