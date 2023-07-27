@@ -99,3 +99,26 @@ First very long term
 Second very long term
 : {{< farfarshort 1 >}}
 {.dl-loose3, .box}
+
+### Icon list
+
+When can also use icons to define the aspects of our structured information. The attribute `{.dl-icon}` provides a fitting layout. Often the corresponding details are short, so we can combine the attribute with a column layout. Therefor, the attribute set here is `{.dl-icon .col2}`:
+
+{{< material-symbol hd big >}}
+: {{< farfarshort 1 >}}
+
+{{< material-symbol preview big >}}
+: {{< farfarshort 1 >}}
+
+{{< material-symbol volcano big >}}
+: {{< farfarshort 1 >}}
+
+{{< material-symbol person big >}}
+: {{< farfarshort 1 >}}
+
+{{< material-symbol rocket big >}}
+: {{< farfarshort 1 >}}
+
+{{< material-symbol water big >}}
+: {{< farfarshort 1 >}}
+{.dl-icon .col3}

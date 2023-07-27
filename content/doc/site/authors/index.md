@@ -60,5 +60,3 @@ You can add your name as the `title` and a short description of your profession 
 The author page needs a portrait of you as a quadratic image file for the source named `portrait`. This image is also used on all your pages and cards referencing them. It should have a side length of at least {${{< width/column 2 >}}}.
 
 You can add a bigger image to your author page as the featured image.
-
-**In the next beta release**: Social icons and parameters with links to social networks 

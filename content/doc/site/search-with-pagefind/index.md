@@ -1,7 +1,7 @@
 ---
 authors: [Georg Makowski]
 title: Search with Pagefind
-description: Index and search your page with this fast search engine
+description: Index and search your **full** text with this fast search library
 subtitle: false
 date: 2023-07-04T18:47:09+02:00 
 menu:
