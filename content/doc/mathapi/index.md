@@ -25,13 +25,13 @@ The [Math API website](https://math.vercel.app/home) offers a the nice service t
 
 ## Code Block
 
-{{< playground "and gets rendered to" >}}
+{{< demo "and gets rendered to" >}}
 ```mathsvg
 $$
 \frac{1}{\Gamma(s)}\int_{0}^{\infty}\frac{u^{s-1}}{e^{u}-1}\mathrm{d}u
 $$
 ```
-{{< /playground >}}
+{{< /demo >}}
 
 Complicated formulas get also handled:
 

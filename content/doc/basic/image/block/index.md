@@ -82,7 +82,6 @@ To produce the following layout options besides the default we need to adhere to
 
 {{< farfar 1 >}}
 
-
 ## Default
 
 The default for the usual stand-alone CommonnMark image element is the normal size and occupies the main text width as usual in most web layouts.
