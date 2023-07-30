@@ -110,16 +110,16 @@ Because there is only one possible markup for blockquotes described above, we ha
 
 ```md
 > name of Lorem Ipsum decided to leave for the far World of Grammar.
->  ---  Famous Person
+>  ---  {=Famous Person}
 {.blockquote-hero}
 ```
 
 This produces the following layout:
 > It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
->  ---  Famous Person
+>  ---  {=Famous Person}
 {.blockquote-hero}
 
-The author of a hero quote --- the "hero" --- is usually cited by name. To move the name to the right, it has to be tagged with the [replacement code](/doc/replace) for a citation.
+The author of a hero quote --- the "hero" --- is usually cited by name.
 
 ## Hanging quotes
 
