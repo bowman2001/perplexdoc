@@ -39,40 +39,42 @@ Only two layout examples are following here because the styling options for an o
 
 ### Tight List
 
-1. First item
-2. Second item
-3. Third item
+1. {{% pangram %}}
+2. {{% pangram %}}
+3. {{% pangram %}}
+{.layout-box}
 
 ### Nested Loose List with interruption 
 
-1. {{< farfar 1 >}}
+1. {{% pangram 2 %}}
 
-    1. {{< farfarshort 1 >}}
+    1. {{% pangram 2 %}}
 
-    2. {{< farfarshort 1 >}}
+    2. {{% pangram 2 %}}
 
-2. {{< farfarshort 2 >}}
+2. {{% pangram 2 %}}
+{.layout-box}
 
 #### The interruption {.h-p .up-1}
 of an ordered list for a general remark should not interrupt the counting. We need to proceed where we left off. The [class attribute](/doc/attribute/howto) `{.ol-continue}` lets a list continue counting, where the previous did stop.
 {.up-1}
 
-1. {{< farfarshort 1 >}}
+1. {{% pangram 3 %}}
 
-   1. {{< farfarshort 1 >}}
+   1. {{% pangram 2 %}}
 
-      1. {{< farfarshort 1 >}}
+      1. {{% pangram 2 %}}
 
-      2. {{< farfarshort 1 >}}
+      2. {{% pangram 2 %}}
 
-      We can **interrupt every sub-list** with a text block and continue afterward:
+      **We can interrupt every sub-list with a text block and continue afterward:**
 
-      3. {{< farfarshort 1 >}}
+      3. {{% pangram 2 %}}
       
-      4. {{< farfarshort 1 >}}
+      4. {{% pangram 2 %}}
       {.ol-continue}
 
-   2. {{< farfarshort 3 >}}
+   2. {{% pangram 3 %}}
 
-2. {{< farfarshort 1 >}}
-{.ol-continue}
+2. {{% pangram 1 %}}
+{.ol-continue .layout-box}

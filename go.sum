@@ -46,3 +46,5 @@ github.com/bowman2001/perplex v0.7.5 h1:uygK7lvCOC4207EqO1DImYV1cHSn0ullFfUtk+R1
 github.com/bowman2001/perplex v0.7.5/go.mod h1:QCitXaQHwSN8+nlost0UmDJe/mKtMZ6e5Wwca3GAOQo=
 github.com/bowman2001/perplex v0.7.6 h1:WcLXgND0z/KwSZPNmZljnzyx5uasLlyIDPpu1gv0FlA=
 github.com/bowman2001/perplex v0.7.6/go.mod h1:QCitXaQHwSN8+nlost0UmDJe/mKtMZ6e5Wwca3GAOQo=
+github.com/bowman2001/perplex v0.7.8 h1:+c79B8z1E//lN5z4ooQiJ9UA93oJ21oNGeuKnsXw2Ro=
+github.com/bowman2001/perplex v0.7.8/go.mod h1:0vggOY+7GIKN2d6TOPP/vncokzwwT9npsdh2CAiangQ=

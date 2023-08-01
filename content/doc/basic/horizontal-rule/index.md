@@ -33,8 +33,8 @@ The horizontal rule is depicted by three asterisks or three hyphens at the begin
 
 ## Layout
 
-{{< farfarshort 1 >}}  
+{{% pangram 1 %}}  
 
 - - -
 
-{{< farfarshort 1 >}}
+{{% pangram 1 %}}

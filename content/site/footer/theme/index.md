@@ -18,4 +18,4 @@ weight: 10
 Apache 2.0 license
 
 ## Credits
-[Thanks to you all!](/doc/intro/credits)
+{{< material-symbol favorite tiny >}} [Thanks to you all!](/doc/intro/credits)

@@ -68,7 +68,7 @@ stateDiagram-v2
     Crash --> [*]
 ```
 
-{{< farfar 3 >}}
+{{% pangram 3 %}}
 
 ### Flow chart
 

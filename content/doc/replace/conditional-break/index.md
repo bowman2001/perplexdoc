@@ -33,4 +33,4 @@ The layout changes depending on the viewport width. The break is only visible on
 
 ### A compact heading{/}looks visually appealing
 
-{{< farfarshort 1 >}}
+{{% pangram 1 %}}

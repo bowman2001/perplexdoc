@@ -50,12 +50,12 @@ The layout has to consider the length and number of all the components. The defa
 The standard layout resembles the default style of common browsers:
 
 First Term
-: {{< farfarshort 1 >}}
-: {{< farfarshort 1 >}}
+: {{% pangram 1 %}}
+: {{% pangram 1 %}}
 
 Second Term with
 Term Alternative
-: {{< farfarshort 1 >}}
+: {{% pangram 1 %}}
 {.box}
 
 This style looks especially well as a literature list for example:
@@ -83,21 +83,21 @@ Second
 Short terms with long descriptions will look better with a loose style, that is applied by the [attribute](/doc/attribute) `{.dl-loose}`
 
 First term
-: {{< farfarshort 1 >}}
-: {{< farfarshort 1 >}}
+: {{% pangram 1 %}}
+: {{% pangram 1 %}}
 
 Second term
-: {{< farfarshort 1 >}}
+: {{% pangram 1 %}}
 {.dl-loose, .box}
 
 In the case we need a little more space for the terms, we can apply `.dl-loose3`. The normal loose style reserves a quarter of the full text width for terms — with this attribute we get one third:
 
 First very long term
-: {{< farfarshort 1 >}}
-: {{< farfarshort 1 >}}
+: {{% pangram 1 %}}
+: {{% pangram 1 %}}
 
 Second very long term
-: {{< farfarshort 1 >}}
+: {{% pangram 1 %}}
 {.dl-loose3, .box}
 
 ### Icon list
@@ -105,20 +105,20 @@ Second very long term
 When can also use icons to define the aspects of our structured information. The attribute `{.dl-icon}` provides a fitting layout. Often the corresponding details are short, so we can combine the attribute with a column layout. Therefor, the attribute set here is `{.dl-icon .col2}`:
 
 {{< material-symbol hd big >}}
-: {{< farfarshort 1 >}}
+: {{% pangram 1 %}}
 
 {{< material-symbol preview big >}}
-: {{< farfarshort 1 >}}
+: {{% pangram 1 %}}
 
 {{< material-symbol volcano big >}}
-: {{< farfarshort 1 >}}
+: {{% pangram 1 %}}
 
 {{< material-symbol person big >}}
-: {{< farfarshort 1 >}}
+: {{% pangram 1 %}}
 
 {{< material-symbol rocket big >}}
-: {{< farfarshort 1 >}}
+: {{% pangram 1 %}}
 
 {{< material-symbol water big >}}
-: {{< farfarshort 1 >}}
+: {{% pangram 1 %}}
 {.dl-icon .col3}

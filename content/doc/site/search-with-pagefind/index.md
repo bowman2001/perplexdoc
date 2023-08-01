@@ -15,12 +15,12 @@ tags: [search]
 weight: 680
 ---
 
-The theme is prepared for getting indexed by {=Pagefind} and offering its UI on a search page.
+The theme is prepared to get indexed by {=Pagefind} and offers its UI on a search page.
 {.p-first}
 <!--more-->
 
 [Pagefind](https://pagefind.app) is a static search library that scales for large sites and requires no additional hosting. The search indices for self-hosting are generated directly from the HTML content.
 
-The library is available as a node package (install with `npm i pagefind`). We run the indexer every time after Hugo has generated our current site in the project root with `npx pagefind --source "public"`. This call generates the indices and adds a {$_pagefind} directory to our site in the {$public} folder. This folder contains the indices, the Javascript API, and the user interface.
+The library is available as a node package (install with `npm i pagefind`). The indexer needs to run every time after Hugo has generated the site. In the project root run `npx pagefind` with options or a configuration file. This call generates the indices and adds a {$pagefind} directory to our site in the {$public} folder. This folder contains the indices, the Javascript API, and the user interface.
 
 The theme template in the folder {$layouts/search} calls this user interface.

@@ -12,7 +12,7 @@ pluralizeListTitles: false
 enableEmoji: true
 enableGitInfo: true
 
-timeout: 500000 # Milliseconds
+timeout: "600s"
 
 outputs:
   home: [HTML, RSS]
@@ -24,7 +24,7 @@ taxonomies:
   series: series
   author: authors
 
-refLinksErrorLevel: warning
+refLinksErrorLevel: WARNING
 
 ignoreErrors:
   - error-missing-instagram-accesstoken

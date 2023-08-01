@@ -72,6 +72,7 @@ Perplex is styling tight, loose, and nested lists of both kinds. As an additiona
 - The minus sign `-`
 - The plus sign `+`
 - The asterisk `*`
+{.layout-box}
 
 ### Loose
 
@@ -86,6 +87,8 @@ The loose items from above look like this:
 - **By the way**: It is not possible to mix tight and loose lists. Even if there is only one blank line between the items, the list is treated by _Goldmark_ as a loose list.
 
 - If you changed the marking symbol inside a list, _Goldmark_ will begin a new list, even if there are no blank lines. To use this intentionally to separate lists would be confusing.
+{.layout-box}
+
 
 Every block, which is not indented, closes the list.
 
@@ -103,6 +106,7 @@ lists are vertically spaced like normal paragraphs:
     - the plus sign `+` or
     - the minus sign `-`
 - And back to the first level
+{.layout-box}
 
 As you can see, a tight nested list tends to look cramped vertically. Maybe we are always better off with loose nested lists, even if the items are short. Or we may try a **smaller indentation**.
 
@@ -116,7 +120,7 @@ On mobile screens, the indentation of list items is already smaller. To enforce 
     - the plus sign `+` or
     - the minus sign `-`
 - And back to the first level
-{.smallindent}
+{.smallindent .layout-box}
 
 #### Loose {.h-p}
 
@@ -139,3 +143,5 @@ lists are generated if there is an empty line between the items of a list. This 
 
 - If you change the marking symbol, _Goldmark_ starts a new list even if the
   markdown items are tight. But it may be a bad idea to use this as a way of separating two lists.
+{.layout-box}
+

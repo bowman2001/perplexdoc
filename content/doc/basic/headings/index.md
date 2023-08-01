@@ -81,42 +81,43 @@ Headings are not only recognized by their font styling but also by the white spa
 
 # Page Title {.mt3 .mb3}
 
-If the page already has a title, the first heading **should not** occur in the Markdown content. Like many themes, this one generates titles on all pages.
+The first heading remains reserved for titles. We may want to compose a title in Markdown on special pages.
 
-{{< mnote up=8 >}}
+If the page already has a title, as it does in all templates of this theme, the first heading **should not** occur in the Markdown content.
+{.box-warn .inline}
+
+{{< mnote down=1 >}}
 The entire [title section](/doc/page/title) is generated from parameters in the front-matter.
 {{< /mnote >}}
 
-The first heading remains reserved for titles. We may want to compose a title in Markdown on special pages. But with this theme, we usually don’t need it at all.
-
 ## Section
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 ### Subsection 
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 #### Sub-Subsection 
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 ##### Paragraph 
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 ###### Small paragraph
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 #### Paragraph attribute {.h-p}
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 #### Danger {.h-danger .h-p}
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 #### Warning {.h-warn .h-p}
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 #### Info {.h-info .h-p}
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 ##### Success {.h-success}
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 [attr]: /doc/attribute

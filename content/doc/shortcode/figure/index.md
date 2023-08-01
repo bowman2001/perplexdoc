@@ -116,17 +116,17 @@ The numbers in the following placeholder images are roughly a multiple of the ma
 
 {{< figure src="small-portrait" posh="right" >}}
 
-{{< farfar 2 >}}
+{{% pangram 2 %}}
 
 {{< figure small >}}
 
-{{< farfar 1 >}}
+{{% pangram 1 %}}
 
 ### Medium
 
 {{< figure medium >}}
 
-{{< farfar 2 >}}
+{{% pangram 2 %}}
 
 ### Normal
 

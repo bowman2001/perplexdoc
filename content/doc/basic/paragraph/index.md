@@ -44,22 +44,24 @@ The technique is mostly used for prose, but also appropriate for notes like this
 
 ### Two normal paragraphs
 
-{{< farfar 2 >}}
+{{% pangram 3 %}}
+
+{{% pangram 3 %}}
 
 ### Big paragraph
 
-{{< farfarshort 1 >}}
+{{% pangram 3 %}}
 
-Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-{.p-big .blind}
+{{% pangram 2 %}}
+{.p-big}
 
-{{< farfarshort 1 >}}
+{{% pangram 3 %}}
 
 ### Small paragraph
 
-{{< farfarshort 1 >}}
+{{% pangram 3 %}}
 
-Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
-{.p-small .blind}
+{{% pangram 4 %}}
+{.p-small}
 
-{{< farfarshort 1 >}}
+{{% pangram 3 %}}

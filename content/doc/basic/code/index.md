@@ -81,7 +81,7 @@ The options suitable for Perplex are:
 
 ### Inline
 
-The HTML tag to mark the beginning of code is `<code>`. And to mark the end we use the corresponding closing tag `</code>`. Markdown text surrounded by backticks like `` `text` `` gets enclosed by these tags.
+The HTML tag to mark the beginning of the code is `<code>`. And to mark the end we use the corresponding closing tag `</code>`. Markdown text surrounded by backticks like `` `text` `` gets enclosed by these tags.
 
 ### Block
 
@@ -90,14 +90,14 @@ There are a lot of options.
 #### Without line numbers
 
 ```md
-The *HTML* tag at the **beginning** of code is `<code>`.
+The *HTML* tag at the **beginning** of the code is `<code>`.
 And to mark the **end** we use the corresponding closing tag `</code>`.
 ```
 
 #### With line numbers (table layout)
 
 ```md {linenos=true}
-The *HTML* tag at the **beginning** of code is `<code>`.
+The *HTML* tag at the **beginning** of the code is `<code>`.
 And to mark the **end** we use the corresponding closing tag `</code>`.
 ```
 #### Special sizes
@@ -115,7 +115,9 @@ type NodeRenderer interface {
 }
 ```
 
-When all code lines are no longer than 40 characters, we can place them inside or beside the text:
+When all code lines are no longer than 40 characters, we can place them inside or beside the text with the attributes `{.left}` or `{.right}`.
+
+---
 
 ```json {.left}
 {
@@ -126,7 +128,7 @@ When all code lines are no longer than 40 characters, we can place them inside o
 }
 ```
 
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 ```bash {.lh15 .right}
 ├── assets
@@ -137,7 +139,11 @@ When all code lines are no longer than 40 characters, we can place them inside o
 └── themes
 ```
 
-{{< farfar 1 >}}
+{{% pangram 5 %}}
+
+---
+
+The last example includes the output of the `tree` command in a project directory. Because the folders are all lowercase we can further reduce the line height with the attribute `{.lh15}` &rightarrow; the tree has no gaps.
 
 ### Indented
 

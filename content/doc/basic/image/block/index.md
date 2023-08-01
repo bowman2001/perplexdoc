@@ -34,53 +34,53 @@ To produce the following layout options besides the default we need to adhere to
 
 ![](fig-tiny)
 
-{{< farfar 1 >}}
+{{% pangram 4 %}}
 
 ![](fig-tiny?posh=right)
 
-{{< farfar 2 >}}
+{{% pangram 9 %}}
 
 ## Small
 
-![](fig-small-portrait)
+![](fig-small-portrait?posh=left)
 
-{{< farfar 2 >}}
+{{% pangram 11 %}}
 
-![](fig-small)
+![](fig-small?posh=right)
 
-{{< farfar 1 >}}
+{{% pangram 15 %}}
 
 ## Medium
 
 ![](fig-medium)
 
-{{< farfar 2 >}}
+{{% pangram 9 %}}
 
 ![](fig-medium?posh=left)
 
-{{< farfar 2 >}}
+{{% pangram 17 %}}
 
 ## Normal
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 ![](fig-normal)
 
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 ## Large
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 ![](fig-large)
 
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 ## Extra Large
 
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 ![](fig-xlarge)
 
-{{< farfar 1 >}}
+{{% pangram 3 %}}
 
 ## Default
 

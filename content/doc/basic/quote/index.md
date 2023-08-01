@@ -81,49 +81,44 @@ It’s possible to replace them with Unicode characters and maybe your editor ha
 Every line of a block quotation has to start with a **right angled bracket**, empty lines included:
 
 ```md
-> It is a paradisematic country, in which roasted parts of sentences fly into
-> your mouth. Even the all-powerful Pointing has no control about the blind
-> texts it is an almost unorthographic life.
+> Sphinx of black quartz, judge my vow! The quick brown fox jumps over 
+> the lazy dog. Waltz job vexed quick frog nymphs.
 >
-> One day however a small line of blind text by the name of Lorem Ipsum decided
-> to leave for the far World of Grammar.[^1]
+> A very big box sailed up then whizzed quickly from Japan. My faxed joke
+> won a pager in the cable TV quiz show.
 ```
 
 The result is an indented block with a slightly smaller font size and two paragraphs:
 
-{{< mnote up=8 >}}
-It should approximately match the number of characters in a normal line of text.
-{{< /mnote >}}
-
-> It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.
+> Sphinx of black quartz, judge my vow! The quick brown fox jumps over the lazy dog. Waltz job vexed quick frog nymphs.
 >
-> One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.[^1]
-{.blind}
+> A very big box sailed up then whizzed quickly from Japan. My faxed joke won a pager in the cable TV quiz show.
 
-Blockquotes may include additional markup because we need emphasis, inline quotes, links, footnotes and other inline markup and maybe even lists inside quotations. The CommonMark specification allows to use all elements of Markdown inside of a blockquote — theoretically.
+Blockquotes may include additional markup because we need emphasis, inline quotes, links, footnotes, and other inline markup and maybe even lists inside quotations. The CommonMark specification allows using all elements of Markdown inside of a blockquote.
 
-But think of nested blockquotes or tables inside of blockquotes in practice. They can become an aesthetic nightmare. This theme does not support every possibility. Feel free to file an issue in the theme repository, if some important option has no suitable layout.
+**But consider this in practice:** Nested block quotes or tables inside of block quotes? They would become an aesthetic nightmare! This theme does not support every possibility. Feel free to file an issue in the theme repository, if an essential option has no suitable layout.
 
 ## Hero quote
 
-Because there is only one possible markup for blockquotes described above, we have to use the [attribute](/doc/attribute) `.blockquote-hero`. The last lines of a hero quote look like this:
+Because there is only one possible markup for blockquotes described above, we have to use the [attribute](/doc/attribute) `.blockquote-hero`: 
 
 ```md
-> name of Lorem Ipsum decided to leave for the far World of Grammar.
->  ---  {=Famous Person}
+> BlewJ’s computer quiz favored proxy hacking. Big July earthquakes confound
+> zany experimental vow. Bawds jog, flick quartz, vex nymphs. Show mangled
+> quartz flip vibe exactly. Public junk dwarves quiz mighty fox.
+> --- _Famous Person_
 {.blockquote-hero}
 ```
 
-This produces the following layout:
-> It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
->  ---  {=Famous Person}
-{.blockquote-hero}
+to produce this layout:
 
-The author of a hero quote --- the "hero" --- is usually cited by name.
+> BlewJ’s computer quiz favored proxy hacking. Big July earthquakes confound zany experimental vow. Bawds jog, flick quartz, vex nymphs. Show mangled quartz flip vibe exactly. Public junk dwarves quiz mighty fox.
+> --- _Famous Person_
+{.blockquote-hero}
 
 ## Hanging quotes
 
-Micro-typography is usually missing on the web, but it's possible to generate hanging quotes at the beginning of a paragraph for Unicode quotes. They are applied to English “quotes”, French «guillemets», »German guillemets«, and German „Gänsefüßchen“.
+Micro-typography is usually missing on the web because browsers don’t support it. But hanging quotes at the beginning of a paragraph are possible! They are applied to English “quotes”, French «guillemets», »German guillemets«, and German „Gänsefüßchen“.
 
 “This is a quote surrounded by English double quotes”
 
@@ -134,5 +129,3 @@ Micro-typography is usually missing on the web, but it's possible to generate ha
 
 „Könnte ich bitte noch einen Zahnstocher bekommen?”
 {lang=de}
-
-[^1]: https://www.blindtextgenerator.com/lorem-ipsum
