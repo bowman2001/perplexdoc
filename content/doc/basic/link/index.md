@@ -109,7 +109,11 @@ If you want to rigorously check all your links --- even external ones --- you ne
 
 ## Obsolete {$relref} shortcode
 
-Many Hugo users like Hugo’s built-in shortcode {$relref} to generate the path relative to the project root for internal links --- at least I do especially at the start of a new project when I’m not completely sure about the content folder structure. The shortcode expects a unique page name and then `[link]({{</* relref "unique-page-name" */>}})` produces this relative path to the unique page as the correct reference in the Markdown link. But the render-link hook can’t process the shortcode and may throw the infamous `HAHAHUGO...` error. So we need to abandon the shortcode once and for all for the sake of this advanced hook. And this is not a problem and more of a chance: The render-link hook can also handle `[link](unique-page-name)`! If a page cannot be found another way it calls the {$relref} function internally as a last resort. So, we just don’t need the shortcode anymore inside of Markdown links.[^1] And that’s a relief because the combined syntax was a mess to type.
+Some Hugo users like Hugo’s built-in shortcode {$relref} to automatically generate the path relative to the project root for internal links --- at least I do especially at the start of a new project when I’m not completely sure about the content folder structure. 
+
+The shortcode expects a unique page name and then `[link]({{</* relref "unique-page-name" */>}})` produces this relative path to the unique page as the correct reference in the Markdown link. But the render-link hook can’t process the shortcode and may throw the infamous `HAHAHUGO...` error. So we need to abandon the shortcode once and for all for the sake of this advanced hook. 
+
+This is not a problem and more of a chance: The render-link hook can also handle `[link](unique-page-name)`! If a page cannot be found another way it calls the {$relref} function internally as a last resort. So, we just don’t need the shortcode anymore inside of Markdown links.[^1] And that’s a relief because the combined syntax was a mess to type.
 
 Because Hugo’s default to throw an error and stop the build if {$relref} can’t find a page is quite harsh, the theme sets the parameter `refLinksErrorLevel: warning` in its configuration file. You can set it back to `error` in your project configuration of course.
 

@@ -16,6 +16,7 @@ resources:
   name: featured
   params:
     alt: Markdown logo
+    size: tiny
     container: trans
 - src: erda-estremera-eMX1aIAp9Nw-unsplash.jpg
   name: bigsplash
@@ -31,23 +32,23 @@ categories: [Getting started, Markdown]
 tags: [Linebreak, Image]  
 ---
 
-Markdown has become the favored markup language to structure text files. With good cause: Markdown syntax is relatively intuitive and can be rendered into several layout formats.
+Markdown has become the favored markup language to structure text files. With good cause: Markdown syntax is simple.
 {.p-first} <!--more-->
 
 Markdown files consist of plain text marked up with a small set of ASCII signs. We can read and change them with any text editor. They usually end with the suffix ›{$md}‹.
 {.inline}
 
 {{< mnote >}}
-The suffixes ›{$mdown}‹ and ›{$markdown}‹ also indicate Markdown but rarely get used.
+The suffixes ›{$mdown}‹ and ›{$markdown}‹ also indicate Markdown but get rarely used.
 {{< /mnote >}}
 
 After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors of Markdown emerged.
 
-To resolve their incompatibilities and to create a dependable basic syntax, John Mc&hairsp;Farlane et al. proposed a strict specification in 2011: [CommonMark][cmark]. This specification has been implemented by many Markdown render engines since and important web-software providers thereby adhere to CommonMark as a minimal standard. For a quick look at the syntax, you can visit their crisp [one page overview](https://CommonMark.org/help).
+To resolve their incompatibilities and to create a dependable basic syntax, John Mc&hairsp;Farlane et al. proposed a strict specification in 2011: [CommonMark][cmark]. This specification has been implemented by many Markdown render engines since and important web-software providers thereby adhere to CommonMark as a minimal standard. For a quick introduction, you can visit their crisp [one page overview](https://CommonMark.org/help).
 
 ## Markdown for Perplex
 
-Perplex styles HTML, which is generated from extended CommonMark by Hugo’s default renderer [Goldmark][gmark]. Three extensions — the [definition list][dl], the [footnote][fnote] and the [typographer][typo] — have been adopted from [PHP Markdown Extra][phpmex]. Based on CommonMark, [GitHub](https://github.com) introduced **G**itHub **F**lavored **M**arkdown (GFM) with the four extensions [table][table], the [task-list][task], [strikethrough][strike], and linkify. They are defined in their [new specification][gfmspec].
+Perplex styles HTML, which is generated from extended CommonMark by Hugo’s default renderer [Goldmark][gmark]. Three extensions — the [definition list][dl], the [footnote][fnote], and the [typographer][typo] — have been adopted from [PHP Markdown Extra][phpmex]. Based on CommonMark, [GitHub](https://github.com) introduced **G**itHub **F**lavored **M**arkdown (GFM) with the four extensions [table][table], the [task-list][task], [strikethrough][strike], and linkify. They are defined in their [new specification][gfmspec] (based on CommonMark).
 {.inline}
 
 {{< mnote >}}
@@ -149,14 +150,14 @@ Some editors are designed exclusively for authoring Markdown. They usually offer
 
 ### Using Hugo’s server mode for local previews {.h-tip}
 
-Hugo offers a very convenient way of looking at your results instantly: When you run Hugo in its server mode on the local machine you’re writing your Markdown on, it will render your files and deliver the result to your browser (see [Using Hugo](/doc/intro/workflow/local-server)). My workflow is like that of many others based on Visual Studio Code (VSCode) as a Markdown editor in conjunction with Hugo’s server mode.
+Hugo offers a very convenient way of looking at your results instantly: When you run Hugo in server mode on your local machine, it renders your files and delivers the result instantly to your browser (see [Using Hugo](/doc/intro/workflow/local-server)). My workflow is like that of many others based on Visual Studio Code (VSCode) as a Markdown editor in conjunction with Hugo’s fabulous server mode.
 
 ### Front-Matter CMS {.h-warn}
 
 Front-Matter CMS is an exciting plugin for VSCode which offers many nice features. Unfortunately, I can’t recommend it right now for this theme, because it may change the front-matter in a way that alters the site structure. It’s also not capable of handling Hugo’s resource parameters out of the box. The plugin probably handles other projects very fine and I hope to use it in the future.
 
 ## Markdown Linter
-CommonMark is permissive to small variations in the markup rules. To enforce a certain set of rules we may use a linter. The node package [Markdownlint][mlint] for example is reliable and there are plugins to check our Markdown directly in the editor.
+CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules we may use a linter. The node package [Markdownlint][mlint] for example is very reliable and easy to configure. There are plugins to automatically scan your Markdown directly in the editor .
 {.inline}
 
 {{< mnote >}}

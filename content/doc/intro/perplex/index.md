@@ -58,12 +58,18 @@ Because Markdown is simple, the resulting HTML also is. Perplex offers many styl
 
 ## Structured by YAML
 
-The complete navigation and all other page layout elements besides the content are controlled by meta-data parameters consisting of key-value pairs. This documentation relies on [**Y**AML **A**in’t **M**arkup **L**anguage (**YAML**)](https://yaml.org) to format the data, because it’s well-known and has the widest support.
-{.inline}
+```yaml {.left}
+---
+YAML: YAML Ain't Markup Language™
 
-{{< mnote >}}
-Hugo also processes meta-data formatted by **TOML** and **JSON** and converts front-matter data between these formats. Because all data processing is done by Hugo, the theme works with all of them. The included  skeleton templates for new content files – the archetypes – are written in YAML.
-{{< /mnote >}}
+What It Is:
+  YAML is a human-friendly data 
+  serialization language for 
+  all programming languages.
+---
+```
+
+The complete navigation and all other page layout elements besides the content are controlled by meta-data parameters consisting of key-value pairs. The theme relies on [**YAML**](https://yaml.org) to format the data, because it has the widest support. The included skeleton templates for new content files – the [archetypes](doc/appendix/archetypes) – are written in YAML. But Hugo also processes meta-data formatted by **TOML** and **JSON** and can convert front-matter data between these formats.
 
 Site parameters
 : for every Hugo project are contained in the site-wide [configuration][conf].
@@ -72,7 +78,11 @@ Page parameters
 : are set directly in the front-matter of the Markdown files. Every file starts with a YAML block, which is enclosed by three dashes `---`.
 {.dl-loose}
 
-Despite its successful efforts to make data formatting as simple as possible, YAML still needs to adhere to strict grammar. It sometimes depends on the indentation of the keys and this can be a source of frustrating errors. Perplex provides templates for Hugo’s [`new` command][new] to help with that. Every type of content file can start with a working front-matter block. All essential keys are present and many of their values are filled with reasonable auto-generated values or placeholders. Front-matter for a documentation page for example contains usually around 15--20 entries, and we have to change or add only a few of them in the beginning.
+Despite its successful efforts to make data formatting as simple as possible, YAML still needs to adhere to strict grammar. It’s sensitive to the correct indentation of the keys.
+
+Perplex provides templates for Hugo’s [`new` command][new] for an easy start. Every new content file includes a working front-matter block. All essential keys are present and many of their values are filled with reasonable auto-generated values or placeholders.
+
+Front-matter for a documentation page for example contains usually around 15--20 entries, and we have to change or add only a few of them in the beginning.
 
 ## In case of problems {#trouble}
 

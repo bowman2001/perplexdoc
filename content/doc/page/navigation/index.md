@@ -54,7 +54,7 @@ There is no direct page navigation between pages of different sections. We estab
 
 ## Documentation
 
-```yaml {.left, linenos=true}
+```yaml {.left-inside, linenos=true}
 menu:
   doc:
     name: Navigation
@@ -65,7 +65,7 @@ tags: [Navigation]
 weight: 640
 ```
 
-```yaml {.left, linenos=true}
+```yaml {.left-inside, linenos=true}
 menu:
   doc:
     identifier: page

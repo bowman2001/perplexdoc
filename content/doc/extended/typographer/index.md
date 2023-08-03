@@ -35,6 +35,7 @@ The Typographer provides nearly the same functionality as the [Smartypants](http
 | Em Dash       |    `---`    |    ---    |
 | En Dash       |    `--`     |    --     |
 | Ellipses      |    `...`    |    ...    |
+{.normal}
 
 ## Unicode characters {.h-tip}
 

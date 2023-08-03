@@ -56,7 +56,7 @@ First Term
 Second Term with
 Term Alternative
 : {{% pangram 1 %}}
-{.box}
+{.layout-box}
 
 This style looks especially well as a literature list for example:
 
@@ -65,7 +65,7 @@ Horkheimer, Max und Theodor W. Adorno
 
 Wiener, Norbert
 : _Kybernetik: Regelung und Nachrichtenübertragung im Lebewesen und in der Maschine_. Econ classics. Düsseldorf: ECON-Verl., 1992.
-{lang="de", .box}
+{lang="de", .layout-box}
 
 ### Tight
 
@@ -76,7 +76,7 @@ First
 
 Second
 : There live the blind texts.
-{.dl-tight, .box}
+{.dl-tight, .layout-box}
 
 ### Loose
 
@@ -88,7 +88,7 @@ First term
 
 Second term
 : {{% pangram 1 %}}
-{.dl-loose, .box}
+{.dl-loose, .layout-box}
 
 In the case we need a little more space for the terms, we can apply `.dl-loose3`. The normal loose style reserves a quarter of the full text width for terms — with this attribute we get one third:
 
@@ -98,7 +98,7 @@ First very long term
 
 Second very long term
 : {{% pangram 1 %}}
-{.dl-loose3, .box}
+{.dl-loose3, .layout-box}
 
 ### Icon list
 

@@ -25,7 +25,7 @@ Sometimes the separation of page segments by space is not clear enough. Then we 
 
 ## Syntax
 
-```md {.left}
+```md {.left-inside}
 *** or ---
 ```
 

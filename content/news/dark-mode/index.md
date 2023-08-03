@@ -11,7 +11,7 @@ categories: [Design]
 tags: [color]
 ---
 
-The theme includes an additional dark mode now. The color mode follows the setting of the operating system.
+The theme offers a dark mode now. The color theme follows the setting of the operating system.
 {.p-first}
 <!--more-->
 

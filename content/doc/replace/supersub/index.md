@@ -25,7 +25,7 @@ For complex mathematical or chemical formulas, [LaTeX notation][latex] is probab
 
 ## Syntax
 
-```md {.left}
+```md {.left-inside}
 x{‍_4} x{‍^4} {‍^3}&frasl;{‍_4}
 ```
 

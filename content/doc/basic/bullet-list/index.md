@@ -28,7 +28,7 @@ We can use `-`, `+`, or `*` to mark the items of an unordered list. We have to s
 
 ### Tight
 
-```md {.left .mb2}
+```md {.left-inside .mb2}
 - The minus sign `-`
 - The plus sign `+`
 - The asterisk `*`
@@ -50,7 +50,7 @@ The items of a loose list are separated by a blank line. The items may span acro
 
 ### Nested
 
-```md {.left}
+```md {.left-inside}
 - To start a sub-list
   - we have to indent the item
     - By two spaces

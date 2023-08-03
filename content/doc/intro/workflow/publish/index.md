@@ -29,7 +29,7 @@ The following remarks will give you an impression of two common concepts to buil
 
 As long as you are the only one finalizing the content, it’s easy to stick to your own computer. To generate a complete version of the site, we use Hugo’s default **build mode** in the project root for example like this:
 
-```md {.left}
+```md {.left-inside}
 hugo --minify
 ```
 

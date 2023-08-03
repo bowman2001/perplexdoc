@@ -61,7 +61,7 @@ You may have already created the new demo file `blog/first.md` while following t
 
 When we include resources like images on a page, we like to [retrieve them](resources) easily. If we need some files only on a specific page, we create a leaf bundle like this:
 
-```sh {.left}
+```sh {.left-inside}
 hugo new blog/second/index.md
 ```
 
@@ -98,7 +98,7 @@ apply to our whole site and are completely independent of the folder structure. 
 
 A larger documentation site needs navigation. The theme builds the sidebar from parameters in the front-matter. You may have expected a central menu configuration, but this way is much easier. When we create a new documentation page we usually know, where we like to put it in the hierarchy. We create a new doc page like
 
-```sh {.left}
+```sh {.left-inside}
 hugo new doc/demo/first.md
 ```
 
@@ -135,7 +135,7 @@ Besides single pages we obviously need list pages. They show an overview of the 
 
 For example: Our first demo page is already placed inside the sub-folder {$demo} and now we like to generate the list view for this section. We create it with the following command:
 
-```sh {.left}
+```sh {.left-inside}
 hugo new doc/demo/_index.md
 ```
 

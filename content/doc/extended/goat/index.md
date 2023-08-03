@@ -13,18 +13,16 @@ menu:
     parent: extended
     pre: schema
 toc: false
-draft: true
 ---
 
 GoAT renders ASCII diagrams as SVG and is a Golang implementation of Markdeep’s ASCII renderer.
 {.p-first} <!--more-->
 
-GoAt is not directly an extension of the Markdown renderer, but a new option for rendering code blocks with Hugo.
+GoAt is not directly an extension of the Markdown renderer, but a special code block format within Hugo.
 
 [Markdeep](http://casual-effects.com/markdeep/) provides the documentation to create ASCII diagrams for GoAT. We need to surround them with a [fenced code block](/doc/basic/code#code-block) and the language identifier `goat` like this:
 
-{{< demo "And the ASCII gets transformed into a nice SVG-diagram:" >}} 
-
+{{< demo "And the ASCII gets transformed into a nice SVG-diagram:" >}}
 ```goat
                   _______
 .---------.      /      /    .-----.
@@ -33,7 +31,6 @@ GoAt is not directly an extension of the Markdown renderer, but a new option for
             |            |
              '----------'
 ```
-
 {{< /demo >}}
 
 {{< mnote up=22 >}}

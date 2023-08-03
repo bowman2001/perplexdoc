@@ -46,7 +46,7 @@ To mark the reference, we have to repeat the marker somewhere in the file on a s
 
 The order of the references in the file is irrelevant, the generated footnotes are always sorted in the same order as the markers.
 
-```md
+```md {.expand}
 This sentence includes a footnote after a word[^10] and one 
 at the end.[^footnotephrase] We can refer more than once[^10] to a footnote.
 
@@ -65,7 +65,7 @@ many footnotes and is no problem.
 The markers on a page are always numbered in the order of their appearance and placed at the bottom of the page below a horizontal rule. The syntax example from above is styled like this:
 
 This sentence includes a footnote after a word[^10]  and one at the end.[^footnotephrase] We can refer more than once[^10] to a footnote.
-{.box}
+{.layout-box}
 
 [^footnotephrase]: This footnote reference is placed above the other reference from the footnote marker before. This may happen easily with many footnotes and is no problem.
 

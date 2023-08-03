@@ -17,6 +17,7 @@ resources:
     params:
       alt: Markdown logo
       container: trans
+      size: tiny
 ---
 
 PHP Markdown Extra and GitHub-flavored Markdown (GFM) introduced some widely used extensions to the CommonMark syntax. The following pages briefly recap the syntax for these elements and show their standard layout and alternative options.

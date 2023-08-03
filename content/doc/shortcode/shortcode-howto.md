@@ -28,7 +28,7 @@ To deliver parameters there are two options: _positional_ or _named_ parameters.
 
 The shortcode  `{{</* farfar */>}}` is sometimes used on these pages. It has only one _unnamed_ parameter and returns up to five paragraphs of blind text.
 
-```md {.left}
+```md {.left-inside}
 {{</* farfar 3 */>}}  
 ```
 

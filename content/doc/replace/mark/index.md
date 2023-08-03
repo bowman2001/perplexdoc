@@ -25,7 +25,7 @@ Mark and highlight inline text as especially important.
 
 ## Syntax
 
-```md {.left}
+```md {.left-inside}
 {‍!Marked text} 
 ```
 

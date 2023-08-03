@@ -21,7 +21,7 @@ The [Mermaid site](https://mermaid.js.org) offers Tutorials and good documentati
 
 ## Syntax
 
-```md {.left}
+```md {.left-inside}
 ‍```mermaid
 %%{init: { 
     "theme": "forest",
@@ -41,10 +41,6 @@ The diagram descriptions are formatted as [code blocks](doc/basic/code) with the
 
 Mermaid diagrams can change their color theme and also some attributes can be configured in a JSON preamble enclosed by `%%`.
 
-{{< mnote up=11 >}}
-Especially nice and professional is to use a font similar to the body copy.
-{{< /mnote >}}
-
 Not all themes or configurable attributes are available with every type of diagram for now. We have to test our diagrams before we publish them. One good way is the official [Mermaid live editor](https://mermaid.live).
 
 ## Layout
@@ -52,7 +48,7 @@ Not all themes or configurable attributes are available with every type of diagr
 The following diagrams are only a few examples to give an impression of the layout. More diagram types exist and their number is growing. 
 
 ### State diagram
-```mermaid {.fig--size-tiny .fig--posh-left}
+```mermaid {.fig--size-tiny .fig--posh-left-inside}
 %%{init:
   { 
     "theme": "forest",
@@ -68,7 +64,11 @@ stateDiagram-v2
     Crash --> [*]
 ```
 
-{{% pangram 3 %}}
+{{% pangram 5 %}}
+
+{{% pangram 7 %}}
+
+{{% pangram 6 %}}
 
 ### Flow chart
 

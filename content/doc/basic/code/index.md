@@ -115,11 +115,11 @@ type NodeRenderer interface {
 }
 ```
 
-When all code lines are no longer than 40 characters, we can place them inside or beside the text with the attributes `{.left}` or `{.right}`.
+When all code lines are no longer than 40 characters, we can place them inside or beside the text with the attributes `{.left-inside}` or `{.right}`.
 
 ---
 
-```json {.left}
+```json {.left-inside}
 {
   "firstName": "John",
   "lastName": "Smith",

@@ -26,7 +26,7 @@ The `<cite>` tag has changed its purpose over time. In the past, it has been use
 
 ## Syntax
 
-```md {.left}
+```md {.left-inside}
 {‍=Name of work} 
 ```
 
