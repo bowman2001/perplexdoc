@@ -17,9 +17,9 @@ tags: [Code, Inline, Block]
 The main text column offers space for {$80} characters of code in one line. When we need {$120} to fit in one line, we can choose to additionally use the marginal column.
 {.p-first} <!--more-->
 
-Short snippets of code are usually placed **in line** with the normal text. Longer pieces of code or entire files should be embedded as **code blocks**.
+Short snippets of code are usually placed **in line** with the normal text. Longer pieces of code or entire files should be marked as (fenced) **code blocks**. Hugo can style and colorize fenced code blocks with the built-in **Chroma highlighter**. 
 
-Hugo can style and colorize code blocks according to their content with the built-in _Chroma highlighter_ and offers some options to style these blocks.
+The theme offers additional layout styles with the attributes `{.expand}` and the general positioning attributes.
 
 ## Syntax
 
@@ -80,29 +80,23 @@ The options suitable for Perplex are:
 ## Layout
 
 ### Inline
-
-The HTML tag to mark the beginning of the code is `<code>`. And to mark the end we use the corresponding closing tag `</code>`. Markdown text surrounded by backticks like `` `text` `` gets enclosed by these tags.
-
-### Block
-
-There are a lot of options.
-
-#### Without line numbers
+The HTML tag to mark the beginning of the code is `<code>`. And to mark the end we use the corresponding closing tag `</code>`. Markdown text surrounded by backticks like `` `text` `` gets enclosed by these tags. And that’s all about **inline code**.
+### Block (default)
 
 ```md
 The *HTML* tag at the **beginning** of the code is `<code>`.
 And to mark the **end** we use the corresponding closing tag `</code>`.
 ```
 
-#### With line numbers (table layout)
+### Block with line numbers (table layout)
 
 ```md {linenos=true}
 The *HTML* tag at the **beginning** of the code is `<code>`.
 And to mark the **end** we use the corresponding closing tag `</code>`.
 ```
-#### Special sizes
+### Long blocks
 
-For code examples with long lines, we can expand the block into the margin:
+We can expand the block into the margin:
 
 ```go {.expand linenos=true}
 // NodeRendererFunc is a function that renders a given node.
@@ -148,7 +142,7 @@ The last example includes the output of the `tree` command in a project director
 ### Indented
 
     The _HTML_ tag at the **beginning** of code is `<code>`.
-    And to mark the **end** we use the corresponding closing tag `</code>`.
+    And to mark the **end** we use the corresponding closing tag `</code>`. 
 
 
 [hugochroma]: https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages

@@ -7,7 +7,7 @@ menu:
     name: Anchors
     parent: attribute
     pre: anchor
-resources: 
+resources:
   - src: grant-durr-21ztbENjzeI-unsplash.jpg
     name: featured
     params:
