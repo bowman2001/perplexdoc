@@ -35,4 +35,4 @@ The first curly brace is followed by an equation sign.
 ## Layout
 
 {=Name of work}
-{.box}
+{.layout-box}

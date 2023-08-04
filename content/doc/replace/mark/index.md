@@ -34,4 +34,4 @@ The first curly brace is followed by an exclamation mark.
 ## Layout
 
 {!Marked text}
-{.box}
+{.layout-box}
