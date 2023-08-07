@@ -29,7 +29,7 @@ To visually record important changes in our text, we can expressively cancel a p
 
 ## Syntax
 
-Strike-through is applied by surrounding text with two swung dashes on every side like `~~deletion~~`. There is no Markdown syntax for an insertion available for Hugo, but you can use the [replacement code](/doc/replace) with the plus sign like `{‍+insertion}`.
+Strike-through is applied by surrounding text with two swung dashes on every side like `~~deletion~~`. There is no Markdown syntax for an insertion available for Hugo, but you can use the [replacement code](/doc/improved/replace) with the plus sign like `{‍+insertion}`.
 
 ## Layout
 

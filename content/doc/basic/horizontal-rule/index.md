@@ -25,7 +25,7 @@ Sometimes the separation of page segments by space is not clear enough. Then we 
 
 ## Syntax
 
-```md {.left-inside}
+```md {.left-in}
 *** or ---
 ```
 
@@ -33,8 +33,10 @@ The horizontal rule is depicted by three asterisks or three hyphens at the begin
 
 ## Layout
 
-{{% pangram 1 %}}  
+{{% pangram 4 %}}
+{.placeholder data-pagefind-ignore="all"}  
 
 - - -
 
-{{% pangram 1 %}}
+{{% pangram 4 %}}
+{.placeholder data-pagefind-ignore="all"}

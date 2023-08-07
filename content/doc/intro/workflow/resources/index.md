@@ -40,7 +40,7 @@ Remote resources may slow down a build considerably when an external service is 
 
 The theme relies on [page bundles](/doc/intro/workflow/content#bundles) to store page-specific resources.
 
-```YAML {.left-inside}
+```YAML {.left-in}
 resources:
   - src: original_image_filename.jpg
     name: image

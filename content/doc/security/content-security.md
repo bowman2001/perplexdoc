@@ -29,7 +29,7 @@ The security concern is also obvious: Raw HTML allows to inject all kinds of mal
 
 ## Alternatives
 
-Hugo offers two ways to extend Markdown more securely. By injecting [HTML attributes](/doc/attribute) or configurable HTML snippets with [shortcodes](/doc/shortcode). They are provided by theme developers or project maintainers whom you need to trust.
+Hugo offers two ways to extend Markdown more securely. By injecting [HTML attributes](/doc/improved/attribute) or configurable HTML snippets with [shortcodes](/doc/improved/shortcode). They are provided by theme developers or project maintainers whom you need to trust.
 
 {{< mnote up=11 >}}
 Hugo can also render _inline shortcodes_, so every content editor could introduce its own shortcodes directly in the Markdown. Because they allow basically the same kind of attacks as raw HTML, they are [prohibited by default](/doc/appendix/config/securityyaml#5).

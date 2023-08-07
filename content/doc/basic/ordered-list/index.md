@@ -42,39 +42,51 @@ Only two layout examples are following here because the styling options for an o
 1. {{% pangram %}}
 2. {{% pangram %}}
 3. {{% pangram %}}
-{.layout-box}
+{.placeholder data-pagefind-ignore="all"}
 
 ### Nested Loose List with interruption 
 
 1. {{% pangram 2 %}}
+   {.placeholder}
 
     1. {{% pangram 2 %}}
+       {.placeholder}
 
     2. {{% pangram 2 %}}
+       {.placeholder}
 
 2. {{% pangram 2 %}}
-{.layout-box}
+   {.placeholder}
+{data-pagefind-ignore="all"}
 
 #### The interruption {.h-p .up-1}
-of an ordered list for a general remark should not interrupt the counting. We need to proceed where we left off. The [class attribute](/doc/attribute/howto) `{.ol-continue}` lets a list continue counting, where the previous did stop.
+of an ordered list for a general remark should not interrupt the counting. We need to proceed where we left off. The [class attribute](/doc/improved/attribute/howto) `{.ol-continue}` lets a list continue counting, where the previous did stop.
 {.up-1}
 
 1. {{% pangram 3 %}}
+   {.placeholder}
 
    1. {{% pangram 2 %}}
+      {.placeholder}
 
       1. {{% pangram 2 %}}
+         {.placeholder}
 
       2. {{% pangram 2 %}}
+         {.placeholder}
 
-      **We can interrupt every sub-list with a text block and continue afterward:**
+      We can **interrupt every sub-list** with a text block and continue afterward:
 
       3. {{% pangram 2 %}}
+         {.placeholder}
       
       4. {{% pangram 2 %}}
+         {.placeholder}
       {.ol-continue}
 
    2. {{% pangram 3 %}}
+      {.placeholder}
 
 2. {{% pangram 1 %}}
-{.ol-continue .layout-box}
+   {.placeholder}
+{.ol-continue data-pagefind-ignore="all"}

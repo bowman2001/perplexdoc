@@ -91,33 +91,43 @@ The entire [title section](/doc/page/title) is generated from parameters in the 
 {{< /mnote >}}
 
 ## Section
-{{% pangram 3 %}}
+{{% pangram 4 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ### Subsection 
-{{% pangram 3 %}}
+{{% pangram 4 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 #### Sub-Subsection 
-{{% pangram 3 %}}
+{{% pangram 4 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ##### Paragraph 
-{{% pangram 3 %}}
+{{% pangram 4 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ###### Small paragraph
-{{% pangram 3 %}}
+{{% pangram 4 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 #### Paragraph attribute {.h-p}
-{{% pangram 3 %}}
+{{% pangram 4 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 #### Danger {.h-danger .h-p}
-{{% pangram 3 %}}
+{{% pangram 4 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 #### Warning {.h-warn .h-p}
-{{% pangram 3 %}}
+{{% pangram 4 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 #### Info {.h-info .h-p}
-{{% pangram 3 %}}
+{{% pangram 4 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ##### Success {.h-success}
-{{% pangram 3 %}}
+{{% pangram 4 %}}
+{.placeholder data-pagefind-ignore="all"}
 
-[attr]: /doc/attribute
+[attr]: /doc/improved/attribute

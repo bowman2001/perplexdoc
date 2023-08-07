@@ -28,7 +28,7 @@ We can use `-`, `+`, or `*` to mark the items of an unordered list. We have to s
 
 ### Tight
 
-```md {.left-inside .mb2}
+```md {.left-in .mb2}
 - The minus sign `-`
 - The plus sign `+`
 - The asterisk `*`
@@ -50,7 +50,7 @@ The items of a loose list are separated by a blank line. The items may span acro
 
 ### Nested
 
-```md {.left-inside}
+```md {.left-in}
 - To start a sub-list
   - we have to indent the item
     - By two spaces
@@ -110,7 +110,7 @@ lists are vertically spaced like normal paragraphs:
 
 As you can see, a tight nested list tends to look cramped vertically. Maybe we are always better off with loose nested lists, even if the items are short. Or we may try a **smaller indentation**.
 
-On mobile screens, the indentation of list items is already smaller. To enforce the smaller indentation on all screens, we have the [attribute](/doc/attribute) `{.smallindent}`.
+On mobile screens, the indentation of list items is already smaller. To enforce the smaller indentation on all screens, we have the [attribute](/doc/improved/attribute) `{.smallindent}`.
 
 - To mark your list items you could also use
   - the asterisk `*`

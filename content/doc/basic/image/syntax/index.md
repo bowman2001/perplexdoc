@@ -56,7 +56,7 @@ The optional title is added as the title attribute to the HTML `<img>`.
 
 We can place a marker in a second pair of **squared brackets** to separate the image reference:
 
-```md {.left-inside}
+```md {.left-in}
 ![Name][imgref]
 ```
 
@@ -72,7 +72,7 @@ CommonMark doesn’t care, where we place an image element. But since version {$
 
 #### Stand-alone
 
-```md {.left-inside}
+```md {.left-in}
 Paragraph before…
 
 ![Name][imgref]
@@ -84,7 +84,7 @@ By surrounding an image element with empty lines it becomes a Markdown block ele
 
 #### Embedded {.clear}
 
-```md {.left-inside}
+```md {.left-in}
 ![Name][imgref] The paragraph 
 containing the image
 ```

@@ -25,11 +25,11 @@ Irrespective of the way which type of link syntax we use, their layout looks the
 
 ## Syntax
 
-The easiest way to create a link is to write an URL (**U**niform **R**esource **L**ocator) directly into the text and let it be handled **automatically**. Sometimes we may want to explicitly show an URL like this, but often we prefer to **name** them. To achieve this, we need to connect the name with the reference.
+The easiest way to create a link is to write an URL directly into the text and let it be handled **automatically**. But most of the time we prefer to **name** them by connecting the name with the reference.
 
-### Automatic links from URLs
+### Links from URLs
 
-CommonMark transforms **marked** URLs into full HTML references. With the **linkify** extension we can even omit the marks and write raw URLs.
+CommonMark transforms marked URLs into full HTML references. With the **linkify** extension we can omit the marks and write raw URLs.
 
 #### Marked links
 
@@ -61,9 +61,9 @@ And the resulting links look like this:
 1. This is an [inline-style link](https://www.google.com)
 
 2. This is an [inline-style link](https://www.google.com "Google's Homepage") with a title. Hover your mouse over it.
-{.col2 .box}
+{.col2 .inline}
 
-{{< mnote up=10 >}}
+{{< mnote up=1 >}}
 The tooltip from the title is a nice feature. Because we can’t hover with the mouse over elements on a touch screen they won’t be available there.
 {{< /mnote >}}
 
@@ -81,8 +81,9 @@ This reference is never shown. Its URL and the title are just used as attributes
 
 ## Validation
 The link render hook of this theme checks the existence of internal links and link fragments that reference automatically generated heading identifiers.
+{.inline}
 
-{{< mnote up=8 >}}
+{{< mnote >}}
 The link hook is based on {=Joe Mooring’s implementation} which you can find in his excellent [article on Veriphor](https://www.veriphor.com/articles/link-and-image-render-hooks/) about link and image render hooks.
 {{< /mnote >}}
 
@@ -97,24 +98,30 @@ render_hooks:
 
 ```
 
-The reason for not reporting missing fragments by default is the following: Only headings and their identifiers got an additional data structure in Hugo recently. When a link references other less common identifiers --- manual [anchors](anchor) or line numbers in code blocks for example --- the link hook invalidates them falsely because there is no way to find them in a Hugo template. Should you have a lot of these, you may want to leave the error level for fragments set to {$ignore} most of the time. But the warning level may still prove to be very valuable for reporting missing heading references at build time. Now you know which warnings you can just ignore if these warnings are enabled.
+Missing fragments are **not** reported by default, because only headings and their identifiers got an additional data structure in Hugo recently. When a link references other less common identifiers --- manual [anchors](anchor) or line numbers in code blocks for example --- the link hook invalidates them falsely because there is no way to find them in a Hugo template.[^1] Should you have a lot of these, you may want to leave the error level for fragments set to {$ignore} most of the time. But the {$warning} level may still prove to be very valuable for reporting missing heading references at build time.
+{.inline}
 
-There is no possibility to throw an error for missing fragments just because not all fragments can be checked in a Hugo template. Valid content shouldn’t be able to stop a site from getting rendered.
-
-{{< mnote up=11 >}}
-Please, don’t get me wrong: Hugo renders links to all existing identifiers (fragments) completely fine. It just doesn’t provide a data structure for all of them which is accessible in templates.
+{{< mnote >}}
+Hugo renders links to all existing identifiers (fragments) **completely fine**. It just doesn’t provide a data structure for all of them which is accessible in templates.
 {{< /mnote >}}
 
-If you want to rigorously check all your links --- even external ones --- you need to install additional software that validates a full local build (see [publish](publish#use-your-own-hardware)) of your site. Reliable tools like [html-proofer](https://github.com/gjtorikian/html-proofer) check all referenced URLs.
+[^1]: That’s also why there is no possibility to throw an error for missing fragments. Valid content shouldn’t be able to stop a site from getting rendered.
 
-## Obsolete {$relref} shortcode
+If you want to rigorously check all your links --- even external ones --- you need to install additional software that validates a full local build (see [publish](publish#use-your-own-hardware)) of your site. Tools like [html-proofer](https://github.com/gjtorikian/html-proofer) check all referenced URLs.
 
-Some Hugo users like Hugo’s built-in shortcode {$relref} to automatically generate the path relative to the project root for internal links --- at least I do especially at the start of a new project when I’m not completely sure about the content folder structure. 
+## No need for the {$relref} shortcode
 
-The shortcode expects a unique page name and then `[link]({{</* relref "unique-page-name" */>}})` produces this relative path to the unique page as the correct reference in the Markdown link. But the render-link hook can’t process the shortcode and may throw the infamous `HAHAHUGO...` error. So we need to abandon the shortcode once and for all for the sake of this advanced hook. 
+Hugo’s built-in shortcode {$relref} automatically generates the relative path for pages with a unique page name. We could type `[relative link]({{</* relref "unique-page-name" */>}})` in the standard CommonMark link element and get the relative link without even knowing the actual path.
+{.inline}
 
-This is not a problem and more of a chance: The render-link hook can also handle `[link](unique-page-name)`! If a page cannot be found another way it calls the {$relref} function internally as a last resort. So, we just don’t need the shortcode anymore inside of Markdown links.[^1] And that’s a relief because the combined syntax was a mess to type.
+{{< mnote >}}
+{$relref} is a convenience only as long as projects are small. As soon as the content grows more and more duplicate filenames will exist (taxonomy pages are always included!).
+{{< /mnote >}}
 
-Because Hugo’s default to throw an error and stop the build if {$relref} can’t find a page is quite harsh, the theme sets the parameter `refLinksErrorLevel: warning` in its configuration file. You can set it back to `error` in your project configuration of course.
+But the render-link hook of this theme can’t process the shortcode and may throw the infamous `HAHAHUGO...` error. We need to abandon the shortcode once and for all for the sake of the advanced hook.
 
-[^1]: The only drawback of this render-hook I can see for now is: In case of a non-existing page name in a link reference we get the warning from {$relref} and additionally we may get a warning, an error, or nothing from the hook depending on its configuration.
+This is not a problem and more of a chance: The render-link hook can also handle `[link](unique-page-name)`! If a page cannot be found in any other way it calls the {$relref} function as a last resort. We don’t need the shortcode anymore.[^2]
+
+Because Hugo’s default to throw an error and stop the build if {$relref} can’t find a page is quite harsh, the theme sets the parameter `refLinksErrorLevel: warning` in its configuration file. You can change it in your project configuration.
+
+[^2]: There is one drawback: In case of a non-existing page we get a warning from {$relref} and we may get an additional warning, an error, or nothing from the hook depending on its configuration.

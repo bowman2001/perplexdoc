@@ -8,4 +8,4 @@ Realize the possibilities of this layout! Let your content flow onto a baseline 
 
 Screens with a view-port width &ge; {$592px} show text and code always with the optimal line-length.  
 
-Move and resize images and code boxes with [Markdown attributes](/doc/attribute).
+Move and resize images and code boxes with [Markdown attributes](/doc/improved/attribute).

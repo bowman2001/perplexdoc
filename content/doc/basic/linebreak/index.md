@@ -70,16 +70,19 @@ When you are allowed to deviate from CommonMark regarding this one element, I st
 ### Line Break {.h-p}
 {{% pangram %}}
 {{% pangram 2 %}}
+{.placeholder data-pagefind-ignore="all"}
 {.layout-box}
 
 ### Two spaces {.h-p}
 {{% pangram %}}  
 {{% pangram 2 %}}
+{.placeholder data-pagefind-ignore="all"}
 {.layout-box}
 
 ### Backslash {.h-p}
 {{% pangram %}}\
 {{% pangram 2 %}}
+{.placeholder data-pagefind-ignore="all"}
 {.layout-box}
 
 [hw]: /doc/appendix/config/markup#24

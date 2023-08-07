@@ -30,7 +30,7 @@ A paragraph is a sequence of Unicode characters with arbitrary length and finish
 
 The theme also styles a **first** paragraph — like the first one on this page — and a **big** and a **small** one.
 
-These styles are applied with the [attributes](/doc/attribute) `{.p-first}`, `{.p-big}`, and `{.p-small}`.
+These styles are applied with the [attributes](/doc/improved/attribute) `{.p-first}`, `{.p-big}`, and `{.p-small}`.
 
 ## Layout
 
@@ -45,23 +45,31 @@ The technique is mostly used for prose, but also appropriate for notes like this
 ### Two normal paragraphs
 
 {{% pangram 3 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 {{% pangram 3 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ### Big paragraph
 
 {{% pangram 3 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 {{% pangram 2 %}}
+{.placeholder data-pagefind-ignore="all"}
 {.p-big}
 
 {{% pangram 3 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ### Small paragraph
 
 {{% pangram 3 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 {{% pangram 4 %}}
+{.placeholder data-pagefind-ignore="all"}
 {.p-small}
 
 {{% pangram 3 %}}
+{.placeholder data-pagefind-ignore="all"}

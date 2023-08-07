@@ -1,11 +1,10 @@
 ---
 authors: [Georg Makowski]
 date: "2021-03-25T10:41:36+01:00"
-description: Photos, Graphics etc.
+description: Include photos, graphics etc.
 menu:
   doc:
-    identifier: images
-    name: Images
+    name: Image
     parent: basic
     pre: photo_library
 subtitle: false

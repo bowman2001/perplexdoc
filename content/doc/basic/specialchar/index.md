@@ -63,6 +63,7 @@ Good typography needs the right amount of space between type. For the most part 
 | en space (wide as an n) |  `&ensp;`   |  x&ensp;x  |
 | em space (wide as an m) |  `&emsp;`   |  x&emsp;x  |
 | num space               |  `&numsp;`  | 1&numsp;3  |
+{.normal}
 
 ### Breaking Words — or not
 
@@ -76,6 +77,7 @@ The non-breaking entities are meant for situations where characters or words sho
 | Non breaking space        |  `&nbsp;`  |  x&nbsp;x  |
 | Narrow non breaking space | `&#x202f;` | x&#x202f;x |
 | Zero width joiner         | `&zwj;`    | x&zwj;x    |
+{.normal}
 
 ## Emojis
 

@@ -35,10 +35,12 @@ To produce the following layout options besides the default we need to adhere to
 ![](fig-tiny)
 
 {{% pangram 4 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ![](fig-tiny?posh=right)
 
 {{% pangram 9 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ## Small
 
@@ -55,6 +57,7 @@ To produce the following layout options besides the default we need to adhere to
 ![](fig-medium)
 
 {{% pangram 9 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ![](fig-medium?posh=left)
 
@@ -62,25 +65,31 @@ To produce the following layout options besides the default we need to adhere to
 
 ## Normal
 {{% pangram 3 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ![](fig-normal)
 
 {{% pangram 3 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ## Large
 {{% pangram 3 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ![](fig-large)
 
 {{% pangram 3 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ## Extra Large
 
 {{% pangram 3 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ![](fig-xlarge)
 
 {{% pangram 3 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ## Default
 

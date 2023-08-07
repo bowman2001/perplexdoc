@@ -26,7 +26,7 @@ The following instructions assume, that you have opened a terminal and are in yo
 
 ## Hugo’s server mode
 
-```sh {.left-inside}
+```sh {.left-in}
 hugo server -D --navigateToChanged
 ```
 
@@ -44,13 +44,13 @@ Hugo’s server can be specially configured to show a site on a public IP addres
 
 To generate a new blog entry use a command like
 
-```sh {.left-inside}
+```sh {.left-in}
 hugo new blog/first.md
 ```
 
 The new file is created in the folder {$content/blog}. It has a front-matter section with some parameter keys for meta-data. They contain auto-generated values, or placeholders, or are empty.[^1] The first lines of the front-matter look like
 
-```yaml {.left-inside linenos=true }
+```yaml {.left-in linenos=true }
 ---
 author: 
 title: First
@@ -61,7 +61,7 @@ The `author` value is optional, the `title` and the `date` are mandatory. The `t
 
 At first, we ignore the following empty `resources` section and its parameters. We’ll [catch up later](/doc/intro/workflow/resources) with that.
 
-```yaml {.left-inside linenos=true linenostart=10}
+```yaml {.left-in linenos=true linenostart=10}
 categories: []
 tags: []
 draft: true
@@ -78,7 +78,7 @@ Our Markdown content begins after the front-matter.
 <!--more-->
 ```
 
-All new files contain this placeholder with a special [attribute](/doc/attribute/howto) for the [first paragraph](/doc/page/standfirst) and the {$more} tag to mark this first paragraph as the page summary. You are encouraged to replace this placeholder with your summary now or later. It’s essential for cards and other page previews.
+All new files contain this placeholder with a special [attribute](/doc/improved/attribute/howto) for the [first paragraph](/doc/page/standfirst) and the {$more} tag to mark this first paragraph as the page summary. You are encouraged to replace this placeholder with your summary now or later. It’s essential for cards and other page previews.
 
 Your following content may be simple text without markup in the beginning.
 

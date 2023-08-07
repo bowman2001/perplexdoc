@@ -19,7 +19,7 @@ To quote someone means to recognize her or his thoughts as part of our own. We m
 
 A single word or short piece of text is usually quoted in the running text and is called an **inline quote**. A longer text segment is usually quoted as separate block and called a **blockquote**.
 
-Some quotes should attract immediate attention while scanning the page. These are **hero quotes** and Perplex provides the [attribute](/doc/attribute) `{.blockquote-hero}` to style them.
+Some quotes should attract immediate attention while scanning the page. These are **hero quotes** and Perplex provides the [attribute](/doc/improved/attribute) `{.blockquote-hero}` to style them.
 
 ## Inline Quotes
 
@@ -100,7 +100,7 @@ Blockquotes may include additional markup because we need emphasis, inline quote
 
 ## Hero quote
 
-Because there is only one possible markup for blockquotes described above, we have to use the [attribute](/doc/attribute) `.blockquote-hero`: 
+Because there is only one possible markup for blockquotes described above, we have to use the [attribute](/doc/improved/attribute) `.blockquote-hero`: 
 
 ```md
 > BlewJ’s computer quiz favored proxy hacking. Big July earthquakes confound
@@ -109,12 +109,17 @@ Because there is only one possible markup for blockquotes described above, we ha
 > --- _Famous Person_
 {.blockquote-hero}
 ```
+{data-pagefind-ignore="all"}
 
 to produce this layout:
 
 > BlewJ’s computer quiz favored proxy hacking. Big July earthquakes confound zany experimental vow. Bawds jog, flick quartz, vex nymphs. Show mangled quartz flip vibe exactly. Public junk dwarves quiz mighty fox.
 > --- _Famous Person_
-{.blockquote-hero}
+{.blockquote-hero data-pagefind-ignore="all" .inline}
+
+{{< mnote down=1 >}}
+To emphasize the hero quote even more in the layout, we can add [rules](/doc/basic/horizontal-rule) at the top and the bottom.
+{{< /mnote >}}
 
 ## Hanging quotes
 

@@ -173,7 +173,7 @@ This project has a configuration file [{$.markdownlint.yaml}](/doc/appendix/mark
 [lb]: /doc/basic/linebreak "Linebreak"
 [img]: /doc/basic/image "Image"
 [dl]: /doc/extended/definition-list "Definition List"
-[fig]: /doc/shortcode/internal "Internal shortcodes"
+[fig]: /doc/improved/shortcode/internal "Internal shortcodes"
 [fnote]: /doc/extended/footnotes "Footnotes"
 [typo]: /doc/extended/typographer "Typographer"
 [table]: /doc/extended/table "Table"

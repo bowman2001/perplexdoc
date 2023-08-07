@@ -85,7 +85,7 @@ The configuration for this project is using the alternative option of a **config
 
 We create an empty new project with a command like
 
-```sh {.left-inside}
+```sh {.left-in}
 hugo new site mysite
 ```
 

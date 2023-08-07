@@ -20,8 +20,9 @@ LaTeX is the most popular typesetting system for the natural sciences. The synta
 ## Syntax
 
 Perplex includes the render engine [\\(\KaTeX\\)][katex] on demand into pages with at least one of the shortcodes {$math} or {$chem} or code blocks with the identifiers `math` or `chem`. If you already have working mathematical or chemical expressions in your Markdown — maybe with carefully escaped markup — you can also set the parameters `math: true` or `chem: true` in the front-matter.
+{.inline}
 
-{{< mnote up=17 >}}
+{{< mnote >}}
 There is another reliable LaTeX render engine for the Web: [MathJax](https://www.mathjax.org/). I did choose KaTeX for performance reasons.
 {{< /mnote >}}
 
@@ -119,4 +120,4 @@ The chemical reaction is also fine:
 \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}
 ```
 
-[katex]: https://katex.org
+[katex]: https://katex.org "KaTeX"

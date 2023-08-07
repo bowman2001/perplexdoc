@@ -21,7 +21,7 @@ The [Mermaid site](https://mermaid.js.org) offers Tutorials and good documentati
 
 ## Syntax
 
-```md {.left-inside}
+```md {.left-in}
 ‍```mermaid
 %%{init: { 
     "theme": "forest",
@@ -65,10 +65,13 @@ stateDiagram-v2
 ```
 
 {{% pangram 5 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 {{% pangram 7 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 {{% pangram 6 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ### Flow chart
 
