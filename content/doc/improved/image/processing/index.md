@@ -7,7 +7,7 @@ date: 2023-03-23T11:51:34+01:00
 menu:
   doc:
     name: Processing
-    parent: images
+    parent: image
     pre: engineering
 resources:
   - src: usgs-eVcfzGhVpYc-unsplash.jpg
@@ -17,14 +17,14 @@ resources:
 categories: [markdown]
 tags: [image, block]
 series: [images]
-weight: 158
+weight: 320
 ---
 
 The theme relies solely on Hugo’s image-processing capabilities.
 {.p-first}
 <!--more-->
 
-Many different-sized versions of every image are generated automatically, so every client browser finds a near-optimal size to display. We only need to supply an original image which is large enough for the intended layout.
+Many different-sized versions of every image are generated automatically, so every browser client can load a near-optimal size. We only need to supply an original image that is large enough.
 
 ## Resolution
 
@@ -44,7 +44,7 @@ When we build a project with more than a hundred images — like this project �
 On **virtual machines** we should enable a caching mechanism. If the provider pulls the content from a repository, we can include the reserved {$_resources} folder, where processed files are stored.
 {{< /mnote >}}
 
-In case we can’t provide a large enough version of an image, Perplex uses an [excellent interpolation filter][filter] provided by Hugo to enlarge its size smoothly. Those interpolated images may look blurry nonetheless, there is no way to get missing information back. A high resolution of the original is always preferable.
+In case we can’t provide a large enough version of an image, Perplex applies an [excellent interpolation filter][filter] (provided by Hugo) to enlarge its size smoothly. Those interpolated images may look blurry nonetheless, there is no way to get the missing information back. A high resolution of the original is always preferable.
 
 ## Manipulation
 

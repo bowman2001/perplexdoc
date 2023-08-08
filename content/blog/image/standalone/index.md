@@ -10,11 +10,11 @@ series: [demo]
 featured: bigsplash
 ---
 
-The theme offers many different layout options for stand-alone Markdown images. Here you can see their layout for all pages without a sidebar.
+This page demonstrates the layout for advanced stand-alone images.
 {.p-first}
 <!--more-->
 
-The CommonMark syntax and the additional parameter handling by this theme are described on the [image syntax page](https://perplex.desider.at/doc/basic/image/syntax).
+For the Markdown syntax see [basic image](https://perplex.desider.at/doc/basic/image) and [extended image](https://perplex.desider.at/doc/improved/image/syntax).
 
 ## Tiny
 

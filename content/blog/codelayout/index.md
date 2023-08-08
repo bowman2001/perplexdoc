@@ -77,7 +77,7 @@ Or we can embed them in the text:
 ---
 
 
-```json {.left-in}
+```json {.left-inside}
 {
   "firstName": "John",
   "lastName": "Smith",
@@ -89,7 +89,7 @@ Or we can embed them in the text:
 {{% pangram 4 %}}
 {.placeholder data-pagefind-ignore="all"}
 
-```bash {.lh15 .right-in}
+```bash {.lh15 .right-inside}
 ├── assets
 ├── config
 ├── package.json

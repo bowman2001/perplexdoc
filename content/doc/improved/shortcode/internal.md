@@ -9,6 +9,7 @@ menu:
     pre: topic
 title: Hugo’s built-in internal shortcodes
 weight: 590
+draft: true
 ---
 
 Hugo ships with a few shortcodes to handle your content and configuration.

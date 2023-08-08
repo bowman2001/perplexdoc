@@ -1,12 +1,13 @@
 ---
 authors: [Georg Makowski]
 title: Advanced Image Layout
-description: The theme offers a few ways to improve & enhance the layout of the image element
+linktitle: Advanced Image
+description: The theme offers two ways to change & enhance the layout of the image element
 subtitle: false
 date: 2023-08-07T16:31:37+02:00 
 menu:
   doc:
-    identifier: image 
+    identifier: image
     name: Image
     parent: improved
     pre: add_photo_alternate

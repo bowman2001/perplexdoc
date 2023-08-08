@@ -1,14 +1,15 @@
 ---
 authors: [Georg Makowski]
-title: Image Syntax
-description: CommonMarks image syntax with optional resources or an in-place query-string
+title: Extended Image Syntax
+linktitle: Extended Syntax
+description: Images can be improved in two ways
 subtitle: false
 date: 2023-03-23T10:11:05+01:00
-weight: 152
+weight: 303
 menu:
   doc:
     name: Syntax
-    parent: images
+    parent: image
     pre: tag
 resources:
   - name: featured
@@ -20,15 +21,11 @@ tags: [image, block]
 series: [images]
 ---
 
-The CommonMark image syntax is short and the theme distinguishes between two possible image positions: **stand-alone** & **embedded**. To alter the appearance we can pass additional parameters.
+To alter the appearance we can pass additional parameters.
 {.p-first}
 <!--more-->
 
 ## Syntax
-
-The CommonMark image element is syntactically very similar to a [link](/doc/basic/link). The sole difference is, that the image element begins with an exclamation mark: `!`. 
-
-There are also two notations to reference the source: **Inline** or **reference**.
 
 Additionally, this theme offers two great options:
 
@@ -36,60 +33,6 @@ Additionally, this theme offers two great options:
 
 2. **Resource parameters** and a few **in-place parameters** can enhance and change the image layout.
 
-### Notation
-
-#### Inline
-
- ```md
- ![Alternative Text](image.jpg "Optional Title")
- ```
-
-The alternative text inside the square brackets `[]` is used by screen readers, pure text browsers and all kinds of data scrapers.
-
-The optional title is added as the title attribute to the HTML `<img>`.
-
-{{< mnote up=5 >}}
-**The title attribute** gets displayed, when a pointer hovers over the element. Consider that many touch-screen devices don't have one. The image title shouldn’t contain essential information.
-{{< /mnote >}}
-
-#### Reference
-
-We can place a marker in a second pair of **squared brackets** to separate the image reference:
-
-```md {.left-in}
-![Name][imgref]
-```
-
-We have to provide the image reference somewhere else in the same file by repeating the marker followed by a colon and a space before the path:
-
-```md
-[imgref]: long/path/to/image.jpg "Optional Title"
-```
-
-### Placement
-
-CommonMark doesn’t care, where we place an image element. But since version {$0.108.0} Hugo does! The two distinctive ways lead to a different layout:
-
-#### Stand-alone
-
-```md {.left-in}
-Paragraph before…
-
-![Name][imgref]
-
-Paragraph after…
-```
-
-By surrounding an image element with empty lines it becomes a Markdown block element and gets treated as a figure.
-
-#### Embedded {.clear}
-
-```md {.left-in}
-![Name][imgref] The paragraph 
-containing the image
-```
-
-When we place an image inside our paragraph text–usually at the beginning–it’s embedded as a float.
 
 ### Passing extra parameters
 
@@ -108,7 +51,7 @@ resources:
     posh: left
 ```
 
-We register an image in the list of resources with its file name or relative path. Then, we apply a new internal name and **have to** call it by this new (short) name like `![](img)`. To pass parameters we add the optional `params` key to its resource entry. This key can contain all the available parameters, they need to be indented by two additional spaces relative to `params`.
+We register an image in the list of resources with its file name or relative path. Then, we apply a new internal name and **have to** call it by this new name like `![](img)`. To pass parameters we add the optional `params` key to its resource entry. This key can contain all the available parameters, they need to be indented by two additional spaces relative to `params`.
 
 The following keys and types of values are available:
 
@@ -127,6 +70,7 @@ The following keys and types of values are available:
 | Size | size | _embedded_ {{% parameters imaging.embedded.size %}} |
 | | | _figure_: {{% parameters imaging.figure.size %}} |
 | Target | target | {{% parameters link.target %}} |
+{.normal}
 
 In case we use the {$alt} parameter, we can leave the first bracket of the image element empty.
 

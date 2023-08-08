@@ -21,16 +21,7 @@ The development of an open-source theme is a strange kind of collaborative effor
 {.p-first}
 <!--more-->
 
-Most images in this documentation were made available free of charge by numerous skilled photographers on [Unsplash][unsplash]. Their names and a link to the source are given in the captions.
-
 The concept for a layout geared towards classical typographic principles grew over some years out of many already existing ideas. I can’t even mention every helpful author I read about typography and CSS techniques. Many conceptual parts date back to [Matthew Butterick’s][mb] beautiful online book [{=Practical Typo&shy;graphy}][pt]. It also taught me a lot about typography in general and some about distinctive American-English features.
-
-Perplex includes [IBM’s][ibm] font family [Plex][plex] because these fonts have been designed specifically for technical writing and publishing. Thankfully, IBM is improving and releasing them as open source.
-{.inline}
-
-{{< mnote >}}
-This theme does **not** implement IBM’s corporate layout system [{=Carbon}](https://carbondesignsystem.com/).
-{{< /mnote >}}
 
 Without [Chris Coyier’s][cc] always up-to-date website [CSS-Tricks][cc] I would have been lost in the CSS specs. He and all his contributors have been clarifying the constantly evolving capabilities of CSS like only a few others.
 {.inline}
@@ -39,7 +30,18 @@ Without [Chris Coyier’s][cc] always up-to-date website [CSS-Tricks][cc] I woul
 **CSS-Tricks** has been acquired by [Digital Ocean](https://digitalocean.com) recently.
 {{< /mnote >}}
 
-Last but not least: Only thanks to [Hugo](https://gohugo.io) and its active and helpful community I could realize this theme. I owe special thanks to [Steve Francia][sf] for bringing Hugo to life, to [Joe Mooring][jm] for his numerous precise suggestions and examples, and of course to the long-time project leader [Bjørn Erik Pedersen][bep] for his ongoing enhancements and insights into this marvelous software.
+Perplex includes [IBM’s][ibm] font family [Plex][plex] because these fonts have been designed specifically for technical writing and publishing. Thankfully, IBM is improving and releasing them as open source.
+{.inline}
+
+{{< mnote >}}
+This theme does **not** implement IBM’s corporate layout system [{=Carbon}](https://carbondesignsystem.com/).
+{{< /mnote >}}
+
+Perplex ships with slightly altered SVG sets of Google’s [Material Symbols](https://fonts.google.com/icons). There are thousands of them and they come in various shapes which makes them one of the most versatile open-source icon sets available.
+
+Most images in this documentation were made available free of charge by numerous skilled photographers on [Unsplash][unsplash]. Their names and a link to the source are given in the captions.
+
+Last but not least: Only thanks to [Hugo](https://gohugo.io) and its active and incredibly helpful community I could realize this theme. I owe special thanks to [Steve Francia][sf] for bringing Hugo to life, to [Joe Mooring][jm] for his numerous precise suggestions and examples, and of course to the long-time project leader [Bjørn Erik Pedersen][bep] for his ongoing enhancements and insights into this marvelous software.
 
 [cc]: https://chriscoyier.net/
 [mb]: https://matthewbutterick.com

@@ -9,41 +9,39 @@ tags: [image, block]
 series: [images]
 ---
 
-The theme embeds an inline Markdown image by default **as a float** in the containing block.
+This page demonstrates the layout for advanced embedded images.
 {.p-first}
 <!--more-->
 
-This page shows the layout options for embedded images. Their extended syntax is similar to the one for stand-alone images and is explained on the page for the [general image syntax](https://perplex.desider.at/doc/basic/image/syntax).
-
-An embedded image is often the first element of a paragraph. By **default**, it’s resized to half the width of a paragraph and placed at the beginning on the left. This is also the normal size and the first example.
-
-All the other following options are only available for images that are registered as a [resource](https://perplex.desider.at/doc/intro/workflow/resources) in the front-matter. Then, we can change the size and the position with parameters, add a caption or attribution, etc…
+For the Markdown syntax see [basic image](https://perplex.desider.at/doc/basic/image) and [extended image](https://perplex.desider.at/doc/improved/image/syntax).
 
 ## At the beginning
 
 ### Normal size {#normal}
 
-![](img-normal) {{% pangram 10 %}}
+![](img-normal) {{% pangram 15 %}}
 {.placeholder data-pagefind-ignore="all"}
 
-![](img-normal?posh=right) {{% pangram 10 %}}
-{.placeholder data-pagefind-ignore="all" .clear}
+![](img-normal?posh=right) {{% pangram 15 %}}
+{.placeholder data-pagefind-ignore="all"}
 
 ### Small size
 
-![](img-small?size=small) {{% pangram 4 %}}
+![](img-small?size=small) {{% pangram 13 %}}
 {.placeholder data-pagefind-ignore="all"}
 
-![](img-small?posh=right&size=small) {{% pangram 7 %}}
+![](img-small?posh=right&size=small) {{% pangram 13 %}}
 {.placeholder data-pagefind-ignore="all"}
 
 ### Tiny size
 
-![](img-tiny?s=tiny) {{% pangram 5 %}}
+![](img-tiny?s=tiny) {{% pangram 9 %}}
 {.placeholder data-pagefind-ignore="all"}
 
-![](img-tiny?s=tiny&ph=right) {{% pangram 5 %}}
+![](img-tiny?s=tiny&ph=right) {{% pangram 9 %}}
 {.placeholder data-pagefind-ignore="all"}
+
+## In the middle
 
 ## In the middle
 
@@ -61,9 +59,11 @@ Only normal-sized embedded images need some additional spacing when they are pla
 {{% pangram 8 %}}
 {.placeholder data-pagefind-ignore="all"}
 
-## Indented text blocks
+## In lists
 
-Embedded images take a fixed percentage of the width of the containing block: 
+Embedded images always scale to a fixed percentage of the containing text width.
+
+### Tiny
 
 1. ![](img-tiny) {{% pangram 4 %}}
 
@@ -74,18 +74,40 @@ Embedded images take a fixed percentage of the width of the containing block:
 2. {{% pangram 2 %}} ![](img-tiny?posh=right) {{% pangram 3 %}}
 {.placeholder data-pagefind-ignore="all"}
 
-### Full size {.clear}
+### Small
 
-Usually, we use a normal-sized stand-alone image to use the full width of the text. But they don’t fit inside indented text blocks. Then, we can also place embedded images with the full width of the containing block like this:
+1. ![](img-small) {{% pangram 7 %}}
+
+   - ![](img-small?posh=right) {{% pangram 7 %}}
+
+   - ![](img-small) {{% pangram 7 %}}
+
+2. {{% pangram 4 %}} ![](img-small?posh=right&posv=middle) {{% pangram 5 %}}
+{.placeholder data-pagefind-ignore="all"}
+
+### Full size
+
+Because stand-alone images do not fit in the indented text blocks of lists, we need embedded ones to fill up the width of the containing text block.
+
+#### Normal list
 
 1. {{% pangram 2 %}} ![](img-full?size=full)
 
 2. {{% pangram 2 %}} ![](img-full?size=full)
 {.placeholder data-pagefind-ignore="all"}
 
-or this
+#### Columned list
 
 1. {{% pangram 1 %}} ![](img-full?size=full)
 
 2. {{% pangram 1 %}} ![](img-full?size=full)
 {.col2 .placeholder data-pagefind-ignore="all"}
+
+#### Loose definition list
+
+First term
+: {{% pangram 3 %}} ![](img-full?size=full)
+
+Second term
+: {{% pangram 3 %}} ![](img-full?size=full)
+{.dl-loose .placeholder data-pagefind-ignore="all"}

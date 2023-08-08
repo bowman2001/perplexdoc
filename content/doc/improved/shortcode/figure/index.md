@@ -67,7 +67,7 @@ categories: [Markdown]
 tags: [Shortcode]
 ---
 
-Because no Markdown element corresponds to the complex HTML `<figure>` tag, we need this shortcode for self-contained stand-alone images.
+Because no Markdown element corresponds to the complex HTML `<figure>` tag, this shortcode **was** the solution for stand-alone images.
 {.p-first} <!--more-->
 
 Hugo already provides a {$figure} shortcode and Perplex overrides this shortcode.
@@ -76,13 +76,13 @@ Hugo already provides a {$figure} shortcode and Perplex overrides this shortcode
 
 The original syntax remains valid with **two exceptions**.
 
-1. The Perplex shortcode allows to write the caption between the starting and closing shortcode tag. When there is no shortcode closing tag, we need to add a slash to the last angled bracket, to mark the shortcode as self-closing like `{{</* figure src="image" */>}}`.
+1. The Perplex shortcode allows writing the caption between the starting and closing shortcode. When there is no shortcode closing tag, we need to add a slash to the last angled bracket, to mark the shortcode as self-closing like `{{</* figure src="image" */>}}`.
 
-    Should we miss the self-closing slash, Hugo can’t recognize the mistake and expects a closing tag. It will treat all the following Markdown as the caption and produce a probably very garbled page.
+    Should we miss the self-closing slash, Hugo can’t recognize the mistake and expects a closing tag. It may treat all the following Markdown as the caption and produce a very garbled page.
 
-2. The {$title} parameter has a different meaning in Perplex. The Hugo shortcode treats it as a title for the caption and generates a `<h4>` tag. The Perplex {$figure} instead uses the {$title} parameter as title attribute and adds it to the resulting figure tag, because captions should contain only inline Markdown in the Perplex layout.  
+2. The {$title} parameter has a different meaning in Perplex. The Hugo shortcode treats it as a title for the caption and generates a `<h4>` tag. The Perplex {$figure} uses the {$title} parameter as attribute and adds it to the resulting figure because captions should contain only inline Markdown in the Perplex layout.  
 
-The Perplex version offers the same set of named parameters as Hugo’s built-in shortcode and a few more to specify size and position of a figure.
+The Perplex version offers the same set of named parameters as Hugo’s built-in shortcode and a few more to specify the size and position of a figure.
 
 ### Named parameters
 
@@ -101,6 +101,7 @@ We can specify the following parameters with the given key names and types of va
 | Related | rel | See [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) |
 | Size | size | {{% parameters imaging.embedded.size %}} |
 | Target | target | {{% parameters link.target %}} |
+{.normal}
 
 When we need many of these parameters, the figure tag gets very long and therefore prone to typing errors. Perplex also offers the alternative to specify these parameters in the resources section of the front-matter.
 
@@ -112,28 +113,33 @@ When we have set parameters in the front-matter and also specify them in named p
 
 The numbers in the following placeholder images are roughly a multiple of the main text width.
 
-### Small
-
-{{< figure src="small-portrait" posh="right" >}}
+### Normal (default)
 
 {{% pangram 2 %}}
 {.placeholder data-pagefind-ignore="all"}
 
+{{< figure normal >}}
+
+{{% pangram 2 %}}
+{.placeholder data-pagefind-ignore="all"}
+### Small
+
+{{< figure src="small-portrait" posh="right" >}}
+
+{{% pangram 15 %}}
+{.placeholder data-pagefind-ignore="all"}
+
 {{< figure small >}}
 
-{{% pangram 1 %}}
+{{% pangram 10 %}}
 {.placeholder data-pagefind-ignore="all"}
 
 ### Medium
 
 {{< figure medium >}}
 
-{{% pangram 2 %}}
+{{% pangram 15 %}}
 {.placeholder data-pagefind-ignore="all"}
-
-### Normal
-
-{{< figure normal >}}
 
 ### Large
 

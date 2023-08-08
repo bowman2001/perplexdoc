@@ -84,7 +84,7 @@ Perplex provides templates for Hugo’s [`new` command][new] for an easy start. 
 
 Front-matter for a documentation page for example contains usually around 15--20 entries, and we have to change or add only a few of them in the beginning.
 
-## In case of problems {#trouble}
+## In case of problems
 
 There are **two** repositories --- one for the theme itself and one for the documentation.
 

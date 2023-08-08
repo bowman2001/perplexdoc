@@ -46,13 +46,16 @@ The documentation
 
 These templates have all been adapted to fit the style of the theme.
 
-## Fonts and icon fonts
+## Fonts
 
 [IBM Plex fonts](https://www.ibm.com/plex/)
 : have been released by IBM to the public under the [Open Font License (OFL)](https://github.com/IBM/plex/blob/master/LICENSE.txt).
+{.dl-loose3}
 
-[Material Icons](https://fonts.google.com/icons)
-: have been released by Google to the public under the [Apache 2.0 License](https://github.com/google/material-design-icons/blob/master/LICENSE).
+## Icons
+
+[Material Symbols](https://fonts.google.com/icons)
+: have been released by Google to the public under the [Apache 2.0 License](https://github.com/google/material-design-icons/blob/master/LICENSE). They have been stripped of their fixed width and height to let them adapt to the fluid layout of this theme.
 {.dl-loose3}
 
 ## Javascript libraries

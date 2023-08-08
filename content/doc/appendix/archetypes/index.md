@@ -1,34 +1,26 @@
 ---
-authors: []
+authors: [Georg Makowski]
 title: Archetypes
-description: "**Placeholder** for short description"
+description: "Create Markdown files with pre-configured front-matter"
 subtitle: false
 date: 2023-08-03T12:37:43+02:00 
 menu:
   doc:
     identifier: archetypes 
+    parent: appendix
     name: Archetypes
-    parent: 
-    pre: remove
+    pre: post_add
 resources: 
-  - src:
+  - src: joshua-sortino-LqKhnDzSF-8-unsplash.jpg
     name: featured
     params:
-      alt:
-      attr:
-      attrlink:
-  - src: 
-    name: 
-    params:
-      alt:
-      attr: 
-      attrlink:
-categories: []
-tags: []
-weight: 9999
+      alt: surrealistic glowing digital image
+categories: [getting started, markdown]
+tags: [archetype]
+weight: 1003
 draft: true
 ---
 
-**Placeholder**: Put your own summary paragraph here. It may contain inline markup but links are impossible.
+Create all kinds of Markdown files with pre-configured frontmatter for an easy start.
 {.p-first}
 <!--more-->
