@@ -16,6 +16,7 @@ resources:
   - src: Perplex.svg
     name: featured
     params:
+      alt: Perplex logo
       container: "no"
 ---
 

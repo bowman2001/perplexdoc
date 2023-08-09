@@ -1,8 +1,8 @@
 ---
 authors: [Georg Makowski]
 title: Extended Image Syntax
-linktitle: Extended Syntax
-description: Images can be improved in two ways
+linktitle: Syntax
+description: Move & resize images and add a caption
 subtitle: false
 date: 2023-03-23T10:11:05+01:00
 weight: 303

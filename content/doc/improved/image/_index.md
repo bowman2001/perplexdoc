@@ -1,7 +1,7 @@
 ---
 authors: [Georg Makowski]
 title: Advanced Image Layout
-linktitle: Advanced Image
+linktitle: Image
 description: The theme offers two ways to change & enhance the layout of the image element
 subtitle: false
 date: 2023-08-07T16:31:37+02:00 
