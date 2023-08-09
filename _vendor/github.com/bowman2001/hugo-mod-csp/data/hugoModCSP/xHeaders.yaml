@@ -1,0 +1,5 @@
+keysSrc: ["Content-Type-Options", "Frame-Options", "XSS-Protection"]
+foValues: ["deny", "sameorigin"]
+values: [true, false]
+ctpDefault: "nosniff"
+xssDefault: "1; mode=block"

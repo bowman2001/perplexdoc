@@ -1,0 +1,25 @@
+{{- with site.Data.hugoModCSP.xHeaders }}
+    {{- $keySrc := .keysSrc }}
+    {{- $foValues := .foValues }}
+    {{- with site.Params.xHeaders }}
+        {{- with .FrameOptions }}
+            {{- if in $foValues . }}
+                {{- printf "%s %s\n" "X-Frame-Options:" . -}}
+            {{- end }}
+        {{- end }}
+        {{- with .ContentTypeOptions }}
+            {{- if . }}
+                {{- printf "%s %s\n" "X-Content-Type-Options:" site.Data.hugoModCSP.xHeaders.ctpDefault -}}
+            {{- end }}
+        {{- end }}
+        {{- with .XSSProtection }}
+            {{- if . }}
+                {{- printf "%s %s\n" "X-XSS-Protection:" site.Data.hugoModCSP.xHeaders.xssDefault -}}
+            {{- end }}
+        {{- end }}
+        {{- else }}
+        {{ warnf "The module 'hugo-mod-csp' is present but the necessary parameters for the X-headers are not configured for this project. Please follow the README of the module to provide X-headers for your site." }}
+    {{- end }}
+    {{- else }}
+    {{ errorf "The module 'hugo-mod-csp' is present but misconfigured. Please disable the module for now and file an issue in its repository." }}
+{{- end -}}{{/**/}}

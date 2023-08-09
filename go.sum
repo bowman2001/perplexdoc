@@ -1,12 +1,4 @@
 github.com/bowman2001/hugo-mod-csp v0.1.2 h1:DJS0v6Ht/zidhUF+LakMm9AQo2ICwoqr2ISJyvfVm+o=
 github.com/bowman2001/hugo-mod-csp v0.1.2/go.mod h1:XuKTqGkSb+Ntff/r+cA/Hb6RQRjtApnHvrI1/A4jk0g=
-github.com/bowman2001/perplex v0.8.1 h1:X14JStHZtDeZxF4As2fY8aoSs2sppo960hFn7ssGJ4Q=
-github.com/bowman2001/perplex v0.8.1/go.mod h1:qo8HesjONAj9ATHhRkn+v+Cl6L+ZH0iZSRiWQwX/Hks=
-github.com/bowman2001/perplex v0.8.2 h1:8TkV95g6xs2YuQvohXk67ILNv3o+Fqyyjkeei2WWDOU=
-github.com/bowman2001/perplex v0.8.2/go.mod h1:qo8HesjONAj9ATHhRkn+v+Cl6L+ZH0iZSRiWQwX/Hks=
-github.com/bowman2001/perplex v0.8.3 h1:jWvT8T//ktTRbJWUtp9gUSdvKHV9LIND1QCxAZKOz3M=
-github.com/bowman2001/perplex v0.8.3/go.mod h1:qo8HesjONAj9ATHhRkn+v+Cl6L+ZH0iZSRiWQwX/Hks=
-github.com/bowman2001/perplex v0.8.4 h1:ImgKHt3HvfT1x1/iiuwke2Kj5vFuhkp5qjYYQxh0IYs=
-github.com/bowman2001/perplex v0.8.4/go.mod h1:qo8HesjONAj9ATHhRkn+v+Cl6L+ZH0iZSRiWQwX/Hks=
-github.com/bowman2001/perplex v0.8.5 h1:Od1CNiuidhbBhvouRFGO8JXBXJv4m0qJ6vgDWIc6v4U=
-github.com/bowman2001/perplex v0.8.5/go.mod h1:HNIgs6B2excofBc04uAuMsw1/Iyi4wmwFtcFEAYyYTg=
+github.com/bowman2001/perplex v0.8.6 h1:C2RgRoyaJWLLS2UhSUk9nvu86yxcDpKEcA+ERSwx6HI=
+github.com/bowman2001/perplex v0.8.6/go.mod h1:HNIgs6B2excofBc04uAuMsw1/Iyi4wmwFtcFEAYyYTg=

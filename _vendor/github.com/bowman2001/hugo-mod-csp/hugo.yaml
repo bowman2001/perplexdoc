@@ -1,0 +1,16 @@
+module:
+  hugoVersion:
+    min: v0.110.0
+    extended: false
+
+mediaTypes:
+  text/netlify:
+    suffixes: [""]
+    delimiter: ""
+
+outputFormats:
+  HEADER:
+    mediaType: "text/netlify"
+    basename: "_headers"
+    isPlainText: true
+    notAlternative: true

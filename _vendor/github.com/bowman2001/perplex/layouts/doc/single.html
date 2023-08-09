@@ -1,0 +1,36 @@
+{{ define "main" }}
+    <div id="l-content-box" class="l-box l-box--doc">
+        <div data-pagefind-body>
+            <header class="page-header margin-doc">
+                <div class="meta meta--head" data-pagefind-ignore>
+                    {{ partial "nav/breadcrumbs/header.html" . }}
+                    {{ partial "date/published_date.html" . }}
+                </div>
+                {{ partial "title/titlehead.html" . }}
+                <div class="title title--sans">
+                    {{ partial "title/title.html" . }}
+                    {{ partial "title/subtitle.html" . }}
+                </div>
+                <aside class="featured-image">{{ partial "img/featured.html" . }}</aside>
+            </header>
+            {{ with .Content }}
+                <div class="md md--sans md--h-sans md--margin-doc">
+                    {{ partial "replacements.html" . }}
+                </div>
+            {{ end }}
+            <div class="margin-doc">
+                {{ partial "nav/related/small-cards.html" . }}
+            </div>
+        </div>
+        <footer class="page-footer margin-doc">
+            <div class="meta meta--foot">
+                {{ partial "nav/taxo_and_breadcrumbs.html" . }}
+                {{ partial "date/updated.html" . }}
+            </div>
+            <hr>
+            {{ partial "doc/nav/pages.html" . }}
+        </footer>
+    </div>
+{{ end }}
+
+{{ define "sidebar" }}{{ partial "doc/nav/sidebar.html" . }}{{ end }}
