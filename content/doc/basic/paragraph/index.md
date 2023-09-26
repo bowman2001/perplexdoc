@@ -30,7 +30,7 @@ A paragraph is a sequence of Unicode characters with arbitrary length and finish
 
 The theme also styles a **first** paragraph — like the first one on this page — and a **big** and a **small** one.
 
-These styles are applied with the [attributes](/doc/improved/attribute) `{.p-first}`, `{.p-big}`, and `{.p-small}`.
+These styles are applied with the [attributes](/doc/enhancing/attribute) `{.p-first}`, `{.p-big}`, and `{.p-small}`.
 
 ## Layout
 

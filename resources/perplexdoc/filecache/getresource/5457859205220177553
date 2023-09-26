@@ -2,18 +2,18 @@ HTTP/2.0 200 OK
 Alt-Svc: h3=":443"; ma=86400
 Cache-Control: public, max-age=432000
 Cf-Cache-Status: DYNAMIC
-Cf-Ray: 7f3f4aa04cd58fd1-FRA
+Cf-Ray: 80104c40dffe35e6-FRA
 Content-Type: image/svg+xml
-Date: Wed, 09 Aug 2023 10:24:48 GMT
-Expires: Mon, 14 Aug 2023 10:24:48 GMT
-Last-Modified: Sat, 27 May 2023 10:27:40 GMT
+Date: Sun, 03 Sep 2023 19:11:20 GMT
+Expires: Fri, 08 Sep 2023 19:11:20 GMT
+Last-Modified: Wed, 16 Aug 2023 12:24:15 GMT
 Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Kjmaw3e6L%2F0PYa9MYPtN7uIl4fjwEI2GhTFEq5juC3IERrAG7uPhupEiSymKeC9iw3FQ2QsbFjwwBF3sqUrjuM2cMkzfyxJZmng2Fw%2BEX31tSqF27YHJ9xKO1XWgGYVyM6Q2lvIvZA%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=be%2FSYx0L4aantCz1F4uMM6L6J5BJo6mV8ivRjU0NJPtQF6UNEgl78beP8OdvT3joWxKGlGGtDLFKz98PH%2FXu97xVl%2FBE9yQkoapMgMpzy7gawC7FUOirra2axWJpHEdevfzV97s2%2Bw%3D%3D"}],"group":"cf-nel","max_age":604800}
 Server: cloudflare
 
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg viewBox="0 0 760 444" xmlns="http://www.w3.org/2000/svg" xmlns:inkspace="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" width="760px" height="444px">
+<svg viewBox="0 0 760 444" xmlns="http://www.w3.org/2000/svg" xmlns:inkspace="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs id="defs_block">
     <filter height="1.504" id="filter_blur" inkspace:collect="always" width="1.1575" x="-0.07875" y="-0.252">
       <feGaussianBlur id="feGaussianBlur3780" inkspace:collect="always" stdDeviation="4.2" />
@@ -50,19 +50,19 @@ Server: cloudflare
   <path d="M 736 252 A2,4 0 0 1 736 244" fill="none" stroke="rgb(0,0,0)" />
   <path d="M 128 244 L 736 244" fill="none" stroke="none" />
   <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="23" x="108.5" y="103">dmz</text>
-  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="69" x="85.5" y="117">210.x.x.x/24</text>
-  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="45" x="97.5" y="247">internal</text>
-  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="69" x="85.5" y="261">172.x.x.x/24</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="68" x="86.0" y="117">210.x.x.x/24</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="44" x="98.0" y="247">internal</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="68" x="86.0" y="261">172.x.x.x/24</text>
   <path d="M 204 108 L 204 156" fill="none" stroke="rgb(0,0,0)" />
-  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="52" x="242.0" y="136">210.x.x.1</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="51" x="241.5" y="136">210.x.x.1</text>
   <path d="M 204 196 L 204 244" fill="none" stroke="rgb(0,0,0)" />
-  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="52" x="242.0" y="224">172.x.x.1</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="51" x="241.5" y="224">172.x.x.1</text>
   <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="104" x="152" y="156" />
   <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="37" x="204.5" y="182">web01</text>
   <path d="M 356 108 L 356 156" fill="none" stroke="rgb(0,0,0)" />
-  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="52" x="394.0" y="136">210.x.x.2</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="51" x="393.5" y="136">210.x.x.2</text>
   <path d="M 356 196 L 356 244" fill="none" stroke="rgb(0,0,0)" />
-  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="52" x="394.0" y="224">172.x.x.2</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="51" x="393.5" y="224">172.x.x.2</text>
   <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="104" x="304" y="156" />
   <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="37" x="356.5" y="182">web02</text>
   <path d="M 508 252 L 508 300" fill="none" stroke="rgb(0,0,0)" />

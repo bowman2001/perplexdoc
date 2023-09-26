@@ -2,18 +2,18 @@ HTTP/2.0 200 OK
 Alt-Svc: h3=":443"; ma=86400
 Cache-Control: public, max-age=432000
 Cf-Cache-Status: DYNAMIC
-Cf-Ray: 7f3f4aa01c978fd1-FRA
+Cf-Ray: 80104c3a7e5435e6-FRA
 Content-Type: image/svg+xml
-Date: Wed, 09 Aug 2023 10:24:48 GMT
-Expires: Mon, 14 Aug 2023 10:24:48 GMT
-Last-Modified: Sat, 27 May 2023 10:27:40 GMT
+Date: Sun, 03 Sep 2023 19:11:19 GMT
+Expires: Fri, 08 Sep 2023 19:11:19 GMT
+Last-Modified: Wed, 16 Aug 2023 12:24:15 GMT
 Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=G1TxAqm6wgA0l8xDwDOrL3b%2BgPMqNvMqZubOvabw8AXOH7k6vv6puAeyouu%2BAJgf6oluUxqh44YYBG2oKCyIrKroUL6hHitor16YjDV%2B49nKJERPz9YIzF%2F08RbAbO%2F3KmjQLMaQHA%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nwaI9rXvfpYGe3SrNSuMU1iAXoxqKb0kNNSJS0rbclpdVB0ldrITSDTfvLwk%2FrEo%2BBHkH7bNauOnvr1OYzSICvKxylgZQ8T3r4b7LgQetNMQtWbxlisciBgtkIHPu0lIMcQ959PifA%3D%3D"}],"group":"cf-nel","max_age":604800}
 Server: cloudflare
 
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg viewBox="0 0 448 360" xmlns="http://www.w3.org/2000/svg" xmlns:inkspace="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" width="448px" height="360px">
+<svg viewBox="0 0 448 360" xmlns="http://www.w3.org/2000/svg" xmlns:inkspace="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs id="defs_block">
     <filter height="1.504" id="filter_blur" inkspace:collect="always" width="1.1575" x="-0.07875" y="-0.252">
       <feGaussianBlur id="feGaussianBlur3780" inkspace:collect="always" stdDeviation="4.2" />
@@ -36,18 +36,18 @@ Server: cloudflare
   <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="259" y="206" />
   <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="67" y="286" />
   <rect fill="#ffff99" height="62" stroke="#ffff99" width="192" x="32" y="38" />
-  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="28" x="128.0" y="75">User</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="27" x="128.5" y="75">User</text>
   <rect fill="#ffff99" height="62" stroke="#ffff99" width="192" x="224" y="38" />
   <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="31" x="320.5" y="75">Kroki</text>
   <rect fill="none" height="302" stroke="gray" width="384" x="32" y="38" />
   <path d="M 32 100 L 416 100" fill="none" stroke="gray" />
   <path d="M 224 38 L 224 340" fill="none" stroke="gray" />
   <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="64" y="120" />
-  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="68" x="128.0" y="147">Writing text</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="67" x="128.5" y="147">Writing text</text>
   <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="256" y="200" />
-  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="123" x="320.5" y="227">Convert text to image</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="122" x="320.0" y="227">Convert text to image</text>
   <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="64" y="280" />
-  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="110" x="128.0" y="307">Get diagram image</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="107" x="128.5" y="307">Get diagram image</text>
   <path d="M 128 160 L 128 180" fill="none" stroke="rgb(0,0,0)" />
   <path d="M 128 180 L 320 180" fill="none" stroke="rgb(0,0,0)" />
   <path d="M 320 180 L 320 192" fill="none" stroke="rgb(0,0,0)" />

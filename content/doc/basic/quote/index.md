@@ -19,7 +19,7 @@ To quote someone means to recognize her or his thoughts as part of our own. We m
 
 A single word or short piece of text is usually quoted in the running text and is called an **inline quote**. A longer text segment is usually quoted as separate block and called a **blockquote**.
 
-Some quotes should attract immediate attention while scanning the page. These are **hero quotes** and Perplex provides the [attribute](/doc/improved/attribute) `{.blockquote-hero}` to style them.
+Some quotes should attract immediate attention while scanning the page. These are **hero quotes** and Perplex provides the [attribute](/doc/enhancing/attribute) `{.blockquote-hero}` to style them.
 
 ## Inline Quotes
 
@@ -32,19 +32,19 @@ But our keyboard usually doesn't show these typographically correct _curly_ quot
 
 ### Substitution of English quotation marks
 
-Hugo replaces the typographically dumb straight quotes with the correct curly ones by default — this is the responsibility of the  [typographer extension](/doc/extended/typographer). We can use {&"} — straight quotes — like this:
+Hugo replaces the typographically dumb straight quotes with the correct curly ones by default — this is the responsibility of the  [typographer extension](/doc/extended/typographer). We can use {~"} — straight quotes — like this:
 
 `"An inline quote"`&emsp;for&emsp;"An inline quote"
 {.p-big}
 
-And a single word or a quote inside a quote is marked with {&\'} — single straight quotes:
+And a single word or a quote inside a quote is marked with {~\'} — single straight quotes:
 
 `"A quote 'inside'"`&emsp;for&emsp;"A quote 'inside'"
 {.p-big}
 
 ### In French, Swiss. and German (partially)
 
-We can open French and Swiss quotes with two {&<} angled brackets and close them with two {&>} in the other direction. They get replaced with nice guillemets (not guillemots!).
+We can open French and Swiss quotes with two {~<} angled brackets and close them with two {~>} in the other direction. They get replaced with nice guillemets (not guillemots!).
 
 `<<Pardon my French>>`&emsp;for&emsp;<<Pardon my French>>
 {.p-big}
@@ -100,7 +100,7 @@ Blockquotes may include additional markup because we need emphasis, inline quote
 
 ## Hero quote
 
-Because there is only one possible markup for blockquotes described above, we have to use the [attribute](/doc/improved/attribute) `.blockquote-hero`: 
+Because there is only one possible markup for blockquotes described above, we have to use the [attribute](/doc/enhancing/attribute) `.blockquote-hero`: 
 
 ```md
 > BlewJ’s computer quiz favored proxy hacking. Big July earthquakes confound

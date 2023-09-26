@@ -14,8 +14,7 @@ resources:
   - src: favicon.svg
     name: favicon
     params:
-      size: tiny 
-      alt: Favorite icon
+      width: micro 
 categories: [Theme]
 tags: [Favicon]
 ---
@@ -27,4 +26,4 @@ The **Favorite Icon** is placed in the HTML `<head>` of every page. Browsers usu
 
 The [real favicon generator](https://realfavicongenerator.net/) for example generates these icon sets from raster and from vector image files for free. This theme is expecting the two files {$favicon.svg} and {$favicon.png} in the folder {$assets/icon}. That should be it.
 
-To use a bunch of already existing raster versions, you need to create the template file `layouts/partials/head/favicon.html` in your project root. It will override the template from the theme, and you can place the HTML referencing your icon images in the traditional way there. The icon folder needs to be placed in the `static` directory. It will be copied by Hugo without further processing to the root of the published folder structure. So it should be easy to get the path right.
+To use a bunch of already existing raster versions, you need to create the template file {$layouts/partials/head/favicon.html} in your project root. It will override the template from the theme, and you can place the HTML referencing your icon images in the traditional way there. The icon folder needs to be placed in the {$static} directory. It gets copied by Hugo directly to the root of the published folder structure and referencing files there is straightforward.

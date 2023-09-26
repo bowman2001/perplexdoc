@@ -16,5 +16,5 @@ resources:
       alt: A plug socket and a nearby plug
 ---
 
-The theme offers some layout options which depend either on remote services at build time or on Javascript libraries for client-side rendering.
+The theme offers some layout options that depend either on remote services at build time or on Javascript libraries for client-side rendering.
 {.p-first} <!--more-->

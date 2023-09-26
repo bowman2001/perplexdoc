@@ -25,9 +25,9 @@ When the first paragraph contains a short introduction or summary of the page, t
 A lead paragraph is optional but strongly recommended. To encourage its use, every regular page file generated with `hugo new` contains a placeholder.
 
 ## Syntax
-The [attribute](/doc/improved/attribute) `{.p-first}` styles the paragraph. The more-tag `<!--more-->` marks the paragraph as the summary of the page which is displayed on cards and in content lists etc.
+The [attribute](/doc/enhancing/attribute) `{.p-first}` styles the paragraph. The more-tag `<!--more-->` marks the paragraph as the summary of the page which is displayed on cards and in content lists etc.
 
-Hugo always generates a content summary if anyhow possible. But Hugo can’t analyze content, it just strips the first sentences (≈ 70 words) down to unformatted text. This may lead to badly truncated text and sometimes even to nearly incomprehensible results when these first lines have been strongly structured by markup.
+Hugo always generates a content summary if anyhow possible. But Hugo can’t analyze content, it just strips the first sentences (≈ 70 words) down to unformatted text when there is no marked summary. This may lead to badly truncated text and sometimes even to nearly incomprehensible results when these first lines have been strongly structured by markup.
 
 ## Result
 The [first paragraph](#first) on this page is styled as stand-first.

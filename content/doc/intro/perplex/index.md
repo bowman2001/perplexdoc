@@ -46,13 +46,13 @@ Because Markdown is simple, the resulting HTML also is. Perplex offers many styl
 
 ## Alternative styling and additional elements
 
-[Attributes](/doc/improved/attribute)
-: are HTML attributes in single curly braces placed after Markdown elements. They are introduced on the pages of the specific element, whose appearance they alter, or in the chapter [Attributes](/doc/improved/attribute) if they are of general use.
+[Attributes](/doc/enhancing/attribute)
+: are HTML attributes in single curly braces placed after Markdown elements. They are introduced on the pages of the specific element, whose appearance they alter, or in the chapter [Attributes](/doc/enhancing/attribute) if they are of general use.
 
-[Replacements](/doc/improved/replace)
+[Replacements](/doc/enhancing/replace)
 : are shorthands in single curly braces. They refer to the few lesser important inline HTML elements, which have no counterpart in Hugo’s Markdown renderer Goldmark. They are a simple workaround to avoid raw HTML in Markdown.
 
-[Shortcodes](/doc/improved/shortcode)
+[Shortcodes](/doc/enhancing/shortcode)
 : are enclosed in two curly braces and angle brackets — like `{{</* shortcode */>}}`. They can take input parameters and allow to extend Markdown with arbitrary HTML structures. They are powerful but tend to get complicated quickly. Perplex ships with some shortcodes, but only for those cases, where a replacement or an attribute can’t do the job. If Hugo already provides a built-in shortcode, its established syntax is preserved as good as possible.
 {.dl-loose}
 

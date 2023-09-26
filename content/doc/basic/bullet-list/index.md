@@ -110,7 +110,7 @@ lists are vertically spaced like normal paragraphs:
 
 As you can see, a tight nested list tends to look cramped vertically. Maybe we are always better off with loose nested lists, even if the items are short. Or we may try a **smaller indentation**.
 
-On mobile screens, the indentation of list items is already smaller. To enforce the smaller indentation on all screens, we have the [attribute](/doc/improved/attribute) `{.smallindent}`.
+On mobile screens, the indentation of list items is already smaller. To enforce the smaller indentation on all screens, we have the [attribute](/doc/enhancing/attribute) `{.smallindent}`.
 
 - To mark your list items you could also use
   - the asterisk `*`

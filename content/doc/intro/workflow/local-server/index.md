@@ -78,7 +78,7 @@ Our Markdown content begins after the front-matter.
 <!--more-->
 ```
 
-All new files contain this placeholder with a special [attribute](/doc/improved/attribute/howto) for the [first paragraph](/doc/page/standfirst) and the {$more} tag to mark this first paragraph as the page summary. You are encouraged to replace this placeholder with your summary now or later. It’s essential for cards and other page previews.
+All new files contain this placeholder with a special [attribute](/doc/enhancing/attribute/howto) for the [first paragraph](/doc/page/standfirst) and the {$more} tag to mark this first paragraph as the page summary. You are encouraged to replace this placeholder with your summary now or later. It’s essential for cards and other page previews.
 
 Your following content may be simple text without markup in the beginning.
 

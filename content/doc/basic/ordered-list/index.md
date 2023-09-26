@@ -60,7 +60,7 @@ Only two layout examples are following here because the styling options for an o
 {data-pagefind-ignore="all"}
 
 #### The interruption {.h-p .up-1}
-of an ordered list for a general remark should not interrupt the counting. We need to proceed where we left off. The [class attribute](/doc/improved/attribute/howto) `{.ol-continue}` lets a list continue counting, where the previous did stop.
+of an ordered list for a general remark should not interrupt the counting. We need to proceed where we left off. The [class attribute](/doc/enhancing/attribute/howto) `{.ol-continue}` lets a list continue counting, where the previous did stop.
 {.up-1}
 
 1. {{% pangram 3 %}}

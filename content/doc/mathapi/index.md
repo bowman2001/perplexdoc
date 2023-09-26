@@ -1,14 +1,14 @@
 ---
 authors: [Georg Makowski]
 title: Math API 
-description: External service for SVG Math
+description: External service rendering LaTeX to SVG formulas
 subtitle: false
 date: 2023-03-29T11:56:16+02:00 
 weight: 750
 menu:
   doc:
     name: Mathapi
-    parent: plugin 
+    parent: plugin
     pre: functions
 categories: [Markdown]
 tags: [diagram]

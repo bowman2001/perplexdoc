@@ -130,4 +130,4 @@ The entire [title section](/doc/page/title) is generated from parameters in the 
 {{% pangram 4 %}}
 {.placeholder data-pagefind-ignore="all"}
 
-[attr]: /doc/improved/attribute
+[attr]: /doc/enhancing/attribute

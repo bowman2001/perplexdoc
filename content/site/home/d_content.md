@@ -9,10 +9,10 @@ Write text files containing
 [Markdown](/doc/intro/markdown)
 : for basic layout
 
-[Attributes](/doc/improved/attribute)
+[Attributes](/doc/enhancing/attribute)
 : for style variations
 
-[Shortcodes](/doc/improved/shortcode)
+[Shortcodes](/doc/enhancing/shortcode)
 : for complex layout
 
 [YAML](https://yaml.org)

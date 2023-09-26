@@ -69,7 +69,7 @@ Wiener, Norbert
 
 ### Tight
 
-For a list with short single terms and only one short definition, a tighter is probably more suitable. We apply it with the [attribute](/doc/improved/attribute) `{.dl-tight}`:
+For a list with short single terms and only one short definition, a tighter is probably more suitable. We apply it with the [attribute](/doc/enhancing/attribute) `{.dl-tight}`:
 
 First
 : {{% pangram 1 %}}
@@ -80,7 +80,7 @@ Second
 
 ### Loose
 
-Short terms with long descriptions will look better with a loose style, that is applied by the [attribute](/doc/improved/attribute) `{.dl-loose}`
+Short terms with long descriptions will look better with a loose style, that is applied by the [attribute](/doc/enhancing/attribute) `{.dl-loose}`
 
 First term
 : {{% pangram 3 %}}

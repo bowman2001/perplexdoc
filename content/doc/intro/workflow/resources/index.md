@@ -46,7 +46,7 @@ resources:
     name: image
 ```
 
-A resource needs to be registered as usual by providing its source path and by adding a short name as an identifier label. We can add as many files we like to the list under the `resources` key. Its also possible to add arbitrary meta-data under an additional `params` key. This theme can process a bunch of them for the [CommonMark image element](doc/improved/image/syntax#resource-meta-data).
+A resource needs to be registered as usual by providing its source path and by adding a short name as an identifier label. We can add as many files we like to the list under the `resources` key. Its also possible to add arbitrary meta-data under an additional `params` key. This theme can process a bunch of them for the [CommonMark image element](doc/enhancing/image/syntax#resource-meta-data).
 
 ## Resources from other page bundles
 
