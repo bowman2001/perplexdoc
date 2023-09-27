@@ -38,7 +38,7 @@ Remote resources may slow down a build considerably when an external service is 
 
 ## Resources for this theme
 
-The theme relies on [page bundles](/doc/intro/workflow/content#bundles) to store page-specific resources.
+The theme relies on [page bundles](/doc/intro/workflow/content#bundles) to store page-specific (local) resources.
 
 ```YAML {.left-in}
 resources:
@@ -50,18 +50,18 @@ A resource needs to be registered as usual by providing its source path and by a
 
 ## Resources from other page bundles
 
+There may be a downside to local resources depending on our specific content structure.
+
 ### Problem & Solution
 
-There may be a downside to this approach depending on our specific content structure. In case we want to include a resource more than once, we need to store and register it repeatedly in different page bundles. To overcome this problem, this theme is also looking for resources in taxonomy and parent pages. This also allows to use already registered resources in simple pages, which aren’t bundles themselves.
+In case we want to include a resource more than once, we need to store and register it repeatedly in different page bundles. To overcome this problem, this theme is also looking for resources in taxonomy and parent pages. This also allows to use already registered resources in simple pages, which aren’t bundles themselves.
 
 ### Lookup Order
 
-In case a resource is not found in a given page, the theme tries the next related page and so on in the following order:
+In case a resource is not found in the current page, the theme searches related pages in the following order:
 
-1. Page
-2. First tag of the page
-3. First category of the page
-4. Parent of the page
-5. Parents parent
-6. Next parent and so on …
+1. Tags of the page
+2. Category of the page
+3. Parent of the page
+4. Parents parent …
 {.col2}

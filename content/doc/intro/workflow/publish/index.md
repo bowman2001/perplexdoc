@@ -33,7 +33,7 @@ As long as you are the only one finalizing the content, it’s easy to stick to 
 hugo --minify
 ```
 
-Hugo renders the site, minifies the HTML and writes the files by default into the folder `public`. Now, you can upload its content to your provider. That’s it. You may also transfer the files to a big provider with a **C**ontent **D**elivery **N**etwork (CDN) for worldwide minimal latency.
+Hugo renders the site, minifies the HTML and writes the files by default into the folder {$public}. Now, you can upload its content to your provider. That’s it. You may also transfer the files to a big provider with a **C**ontent **D**elivery **N**etwork (CDN) for worldwide minimal latency.
 
 ## Automated Build and Continuous Deployment
 
