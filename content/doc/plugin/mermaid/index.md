@@ -48,7 +48,7 @@ Not all themes or configurable attributes are available with every type of diagr
 The following diagrams are only a few examples to give an impression of the layout. More diagram types exist and their number is growing. 
 
 ### State diagram
-```mermaid {.fig--size-tiny .fig--posh-left-inside}
+```mermaid {.fig--w-tiny .fig--posh-left-inside}
 %%{init:
   { 
     "theme": "forest",
@@ -75,7 +75,7 @@ stateDiagram-v2
 
 ### Flow chart
 
-```mermaid {.fig--size-large}
+```mermaid {.fig--w-large}
 %%{init:
   { 
     "theme": "base",
@@ -92,7 +92,7 @@ flowchart LR
 
 ### Entity relation
 
-```mermaid {.fig--size-normal}
+```mermaid {.fig--w-text}
 %%{init:
   { 
     "theme": "base",

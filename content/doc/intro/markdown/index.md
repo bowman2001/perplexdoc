@@ -16,7 +16,7 @@ resources:
   name: featured
   params:
     alt: Markdown logo
-    size: tiny
+    width: tiny
     container: trans
 - src: erda-estremera-eMX1aIAp9Nw-unsplash.jpg
   name: bigsplash
@@ -24,7 +24,7 @@ resources:
     alt: A splashing drop of water
     caption: Default stand-alone image. To generate a caption like this, we need to register the image as a resource in the front-matter.
 - src: mulyadi-JJMoAiVl9jA-unsplash.jpg
-  name: splash
+  name: smallsplash
   params:
     caption: Embedded image
     alt: Another splashing water drop
@@ -94,7 +94,7 @@ Hugo and Perplex used to provide the shortcode [{$figure}][fig] for this purpose
 
 #### Embedded image
 
-![splash](splash) Perplex styles the embedded Markdown image element as a float. The theme offers layout variations for both kinds of images. We can place embedded images on the left or right inside the text block. Small stand-alone images may appear in the margin of the following text block. Large ones stretch from the left margin to the right. Look into the section about [images](/doc/basic/image) for all the options.
+![splash](smallsplash) Perplex styles the embedded Markdown image element as a float. The theme offers layout variations for both kinds of images. We can place embedded images on the left or right inside the text block. Small stand-alone images may appear in the margin of the following text block. Large ones stretch from the left margin to the right. Look into the section about [images](/doc/basic/image) for all the options.
 {.clear}
 
 ### How do we wrap lines? {#wrap}

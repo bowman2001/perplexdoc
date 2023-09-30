@@ -1,5 +1,12 @@
 {
   "dependencies": {
-    "pagefind": "^0.12.0"
-  }
+    "pagefind": "^1.0.3"
+  },
+  "name": "perplexdoc",
+  "version": "0.1.0",
+  "description": "Documentation and examples for the Hugo theme perplex",
+  "main": "index.js",
+  "repository": "https://github.com/bowman2001/perplexdoc",
+  "author": "Georg Makowski <gm@desider.at>",
+  "license": "Apache 2.0"
 }

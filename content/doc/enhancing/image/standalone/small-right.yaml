@@ -1,0 +1,5 @@
+src: svg/small.svg
+width: small
+posh: right
+caption: The small width fits neatly into a marginal column.
+attr: gm
