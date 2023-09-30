@@ -45,10 +45,10 @@ The technique is mostly used for prose, but also appropriate for notes like this
 ### Two normal paragraphs
 
 {{% pangram 3 %}}
-{.placeholder data-pagefind-ignore="all"}
+{data-pagefind-ignore="all"}
 
 {{% pangram 3 %}}
-{.placeholder data-pagefind-ignore="all"}
+{data-pagefind-ignore="all"}
 
 ### Big paragraph
 
@@ -56,8 +56,7 @@ The technique is mostly used for prose, but also appropriate for notes like this
 {.placeholder data-pagefind-ignore="all"}
 
 {{% pangram 2 %}}
-{.placeholder data-pagefind-ignore="all"}
-{.p-big}
+{.p-big data-pagefind-ignore="all"}
 
 {{% pangram 3 %}}
 {.placeholder data-pagefind-ignore="all"}
@@ -68,8 +67,7 @@ The technique is mostly used for prose, but also appropriate for notes like this
 {.placeholder data-pagefind-ignore="all"}
 
 {{% pangram 4 %}}
-{.placeholder data-pagefind-ignore="all"}
-{.p-small}
+{.p-small data-pagefind-ignore="all"}
 
 {{% pangram 3 %}}
 {.placeholder data-pagefind-ignore="all"}

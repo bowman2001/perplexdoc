@@ -53,7 +53,7 @@ If you prefer the asterisk `*` for emphasizing, the underscores come in handy wh
 - `**one and _two_**` for **one and _two_**.
 - `_one and *two*_` for _one and *two*_.
 
-The nesting possibilities of the *CommonMark specification* are endless, but only a few combinations are meaningful in practice.
+The nesting possibilities of the CommonMark specification are endless, but only a few combinations are meaningful in practice.
 
 ## Which formatting characters are the best choice?
 
@@ -67,4 +67,4 @@ I haven’t checked the specification details for this argument, but the asteris
 
 ## Emphasis with sans-serif fonts {.h-tip}
 
-Sans-serif fonts usually don’t have a distinctive italic style, even if their font includes an italic specimen. They look like a slightly tilted version of the regular font --- which is not as pretty as a distinct serif style. You should prefer bold emphasis.
+Sans-serif fonts usually don’t have a distinctive italic style, even if their font includes an italic specimen. They look like a slightly tilted version of the regular font --- which is a little awkward. You should prefer bold emphasis with those sans-serifs.

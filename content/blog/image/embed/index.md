@@ -3,6 +3,7 @@ authors: [Georg Makowski]
 title: Embedded images
 description: Demo for enhanced inline images
 subtitle: false
+featured: micro
 date: 2023-03-23T10:10:51+01:00 
 categories: [markdown]
 tags: [image, inline]
@@ -33,7 +34,7 @@ For the Markdown syntax see [basic image](https://perplex.desider.at/doc/basic/i
 ![](tiny-right) {{% pangram 13 %}}
 {.placeholder data-pagefind-ignore="all"}
 
-### Micro size
+### Micro width
 
 ![](micro) {{% pangram 9 %}}
 {.placeholder data-pagefind-ignore="all"} 

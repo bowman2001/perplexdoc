@@ -1,4 +1,5 @@
 src: svg/small.svg
 width: small
+posh: right
 caption: A small image occupies half of the text width.
 attr: gm

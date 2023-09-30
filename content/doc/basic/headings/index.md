@@ -34,19 +34,19 @@ Markdown headings are preceded by number signs `#` and a space. The six availabl
 
 6. `###### Small Paragraph Heading`
 
-Usually, we don’t want to apply the full hierarchy on moderate-sized pages, because too much structure is confusing. For an appropriate layout, it may be desirable to skip one or two levels and use paragraph headings inside of sections for example.
-
-But this is against recommended HTML guidelines. Headings should be used strictly in their descending order because screen readers and other automatic interpreters get confused otherwise. To follow this recommendation we need to skip headings only visually.
-
-Another variation of their style is to highlight them. It’s an easy way to inform readers about especially important text segments.
-
-Perplex offers Markdown [attributes][attr] for these style variations.
+To alter the style of these heading, Perplex offers Markdown [attributes][attr].
 
 ### Paragraph Headings {#h-p}
 
-We can style any heading like a paragraph heading with the attribute `{.h-p}`. For the probably rare occasions, we need to style a heading as a small paragraph heading we need the attribute: `{.h-p-s}`.
+Usually, we don’t want to apply the full hierarchy on moderate-sized pages, because too much structure is confusing. For an appropriate layout, it may be desirable to skip one or two levels and use paragraph headings inside of sections for example.
+
+But this is against HTML guidelines. Headings need to be applied strictly in their descending order because screen readers and other automatic interpreters get confused otherwise. To follow this rule we can skip headings only visually.
+
+We can style any heading like a paragraph heading with the attribute `{.h-p}`. For the rare occasions, when we need to style a heading as a small paragraph heading there is the attribute: `{.h-p-s}`.
 
 ### Highlighted Headings
+
+Another variation of the heading style is highlighting. It’s an easy way to inform readers about especially important text segments.
 
 To indicate a section with a **danger**, **warning**, **information**, or **success**, we have the attributes `{.h-danger}`, `{.h-warn}`, `{.h-info}`, or `{.h-success}`.
 
@@ -61,7 +61,7 @@ Far far away, behind the word mountains, far from the countries Vokalia and…
 
 CommonMark offers no possibility to break a heading line because every line starting with a `#` starts a new heading.
 
-When a heading exceeds the line length of the layout, it breaks automatically. That may occur at an unfortunate place: Before the last word or between tightly related words. To introduce a break we can put the replacement code `{‍/}` between two words **without any spacing character** like this:
+When a heading exceeds the line length of the layout, it breaks automatically. That may occur at an unfortunate place: Before the last word or between tightly related words. To introduce a manual break we can put the replacement code `{‍/}` between two words **without any spacing character** like this:
 
 ```text {.expand}
 ### Nice long heading with a complicated topic{‍/}stretching over more than one line
@@ -71,7 +71,7 @@ and we get:
 
 ### Nice long heading with a complicated topic{/}stretching over more than one line
 
-The line break is displayed only when the screen can show the full width of the main text. Otherwise, it’s removed, because additional line breaks make things worse on small screens with arbitrary line breaks.
+This line break is displayed only when the screen can show the full width of the main text. On small screens, it’s invisible, because the line breaks would look even worse.
 
 ## Layout
 
