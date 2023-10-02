@@ -19,12 +19,8 @@ resources:
     src: mulyadi-JJMoAiVl9jA-unsplash.jpg
     params: 
       alt: splash of water
-      attr: "no"
-  - name: bigsplash
-    src: erda-estremera-eMX1aIAp9Nw-unsplash.jpg
-    params: 
-      alt: big splash of water
-      attr: "no"
+      width: tiny
+      caption: none
 categories: [markdown]
 tags: [attribute]
 weight: 347
@@ -38,7 +34,7 @@ On a small mobile device, the following layout problem is probably unrecognizabl
 
 ## The problem
 
-![](splash?size=small) When we embed an element like the image here the text floats around it. That’s what we want initially but now we start a new subsection.
+![](splash) When we embed an element like the image here the text floats around it. That’s what we want initially but now we start a new subsection.
 
 ## New section beside the image
 
@@ -46,7 +42,7 @@ This new subsection still floats around the embedded image! Instead, we would li
 
 ## The solution
 
-![](bigsplash?size=small) Again, we have an embedded element and the text floats around it as it should. Now we clear the float by adding the attribute `{.clear}` to the containing paragraph. And the floating stops for all the following content.
+![](splash) Again, we have an embedded element and the text floats around it as it should. Now we clear the float by adding the attribute `{.clear}` to the containing paragraph. And the floating stops for all the following content.
 {.clear}
 
 ## The section after the image

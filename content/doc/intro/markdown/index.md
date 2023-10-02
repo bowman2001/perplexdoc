@@ -12,12 +12,6 @@ title: Markdown
 weight: 15
 resources:
 resources:
-- src: Markdown.svg
-  name: featured
-  params:
-    alt: Markdown logo
-    width: tiny
-    container: trans
 - src: erda-estremera-eMX1aIAp9Nw-unsplash.jpg
   name: bigsplash
   params:

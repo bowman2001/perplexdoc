@@ -27,7 +27,7 @@ For the Markdown syntax see [basic image](https://perplex.desider.at/doc/basic/i
 
 ### Small width (default)
 
-![](small-portrait) {{% pangram 15 %}}
+![](small-left) {{% pangram 15 %}}
 {.placeholder data-pagefind-ignore="all"}
 
 ![](small-right) {{% pangram 15 %}}
@@ -97,24 +97,24 @@ Because stand-alone images do not fit in lists or other structured text blocks, 
 
 #### Normal list
 
-1. {{% pangram 2 %}} ![](textvar1)
+1. {{% pangram 2 %}} ![](textvar)
 
-2. {{% pangram 2 %}} ![](textvar2)
+2. {{% pangram 2 %}} ![](textvar)
 {.placeholder data-pagefind-ignore="all"}
 
 #### Columned list
 
-1. {{% pangram 1 %}} ![](textvar1)
+1. {{% pangram 1 %}} ![](textvar)
 
-2. {{% pangram 1 %}} ![](textvar2)
+2. {{% pangram 1 %}} ![](textvar)
 {.col2 .placeholder data-pagefind-ignore="all"}
 
 #### Loose definition list
 
 First term
-: {{% pangram 3 %}} ![](textvar1)
+: {{% pangram 3 %}} ![](textvar)
 
 Second term
-: {{% pangram 3 %}} ![](textvar2)
+: {{% pangram 3 %}} ![](textvar)
 {.dl-loose .placeholder data-pagefind-ignore="all"}
 

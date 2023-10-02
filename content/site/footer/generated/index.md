@@ -2,17 +2,16 @@
 title: Generated with
 date: 2022-06-15T14:21:29+02:00
 resources:
-- src: Hugo.svg
-  name: hugo
+- src: Hugo.png
+  name: hugologo
   params:
     alt: Hugo logo
     link: https://gohugo.io
-    container: "footer"
-    svg: "file"
-    size: small
+    background: light
+    svg: inline
 weight: 30
 ---
 
-![](hugo)
+![Hugo logo](hugologo)
 
 Apache 2.0 license

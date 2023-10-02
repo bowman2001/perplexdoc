@@ -8,6 +8,7 @@ resources:
   name: featured
   params:
     alt: Logo of Visual Studio Code
-    container: "no"
-    size: tiny
+    box: none
+    width: tiny
+    type: logo
 ---

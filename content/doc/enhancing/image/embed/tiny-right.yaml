@@ -1,3 +1,4 @@
 src: svg/tiny.svg
 width: tiny
+posh: right
 attr: gm

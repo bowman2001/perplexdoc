@@ -8,5 +8,7 @@ resources:
     name: featured
     params:
       alt: LateX logo
-      container: trans
+      padding: two
+      background: light
+      svg: inline
 ---

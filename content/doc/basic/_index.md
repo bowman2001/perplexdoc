@@ -16,8 +16,10 @@ resources:
     name: featured
     params:
       alt: Markdown logo
-      container: trans
-      size: tiny
+      width: tiny
+      background: light
+      padding: one
+      type: logo
 ---
 
 The [CommonMark specification][cmark] has laid a stable ground for Markdown. The following pages briefly recap the syntax for its elements, show their standard layout and alternative options.  

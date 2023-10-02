@@ -8,5 +8,7 @@ resources:
     src: Hugo.png
     params:
       alt: The Hugo logo
-      container: "no"
+      box: none
+      preprocess: never
+      type: logo
 ---

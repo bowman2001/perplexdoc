@@ -1,4 +1,5 @@
 src: svg/textvar.svg
 width: text
+attr: gm
 alt: Placeholder image
 caption: Variable size image

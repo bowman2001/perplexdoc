@@ -2,14 +2,14 @@
 title: Theme
 date: 2022-06-15T14:21:18+02:00
 resources:
-- src: Perplex.png
+- src: Perplex.svg
   name: perplex
   params:
     alt: Perplex logo
     link: https://github.com/bowman2001/perplex
-    container: "footer"
-    svg: "file"
-    width: small
+    svg: inline
+    padding: half
+    background: light
 weight: 10
 ---
 

@@ -7,25 +7,21 @@ resources:
   title: Netlify logo
   params:
     alt: Netlify logo
-    link: https://netlify.com
-    container: "footer"
-    svg: "file"
-    size: small
+    link: 
+    background: light
+    padding: half
+    svg: inline
 - src: GitHub.svg
   name: github
   title: GitHub logo
   params:
     alt: GitHub logo
     link: https://github.com
-    linklabel: GitHub
-    container: "footer"
+    background: light
+    padding: half
     svg: inline
-    size: small
 weight: 40
 ---
 
-![](netlify)
-
-and
-
-![](github)
+- [Netlify](https://netlify.com)
+- [GitHub](https://github.com)

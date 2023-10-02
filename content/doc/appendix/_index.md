@@ -12,12 +12,6 @@ title: Appendix
 weight: 1000
 cascade:
   toc: false
-resources: 
-  - src: Perplex.svg
-    name: featured
-    params:
-      alt: Perplex logo
-      container: "no"
 ---
 
 This chapter presents files and other additional material.

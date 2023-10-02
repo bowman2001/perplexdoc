@@ -1,3 +1,4 @@
 src: svg/tiny_portrait.svg
 width: tiny
+posh: left
 attr: gm

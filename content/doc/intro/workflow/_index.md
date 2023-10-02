@@ -11,12 +11,7 @@ menu:
 subtitle: false
 title: Workflow
 weight: 20
-resources:
-  - src: Hugo.png
-    name: featured
-    params:
-      alt: Hugo logo
-      container: "no"
+tags: [hugo]
 ---
 
 A short guide about creating & publishing your site with Hugo and this theme.
