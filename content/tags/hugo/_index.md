@@ -9,6 +9,5 @@ resources:
     params:
       alt: The Hugo logo
       box: none
-      preprocess: never
       type: logo
 ---

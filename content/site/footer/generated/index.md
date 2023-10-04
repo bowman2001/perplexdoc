@@ -9,6 +9,7 @@ resources:
     link: https://gohugo.io
     background: light
     svg: inline
+    padding: half
 weight: 30
 ---
 

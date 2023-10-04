@@ -4,7 +4,7 @@ command = "hugo --gc --minify --environment netlify && npx pagefind"
 
 [build.environment]
 HUGO_VERSION = "0.119.0"
-GO_VERSION = "1.20"
+GO_VERSION = "1.21"
 HUGO_ENABLEGITINFO = "true"
 
 [context.develop]

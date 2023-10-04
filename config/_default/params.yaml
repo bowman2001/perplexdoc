@@ -16,7 +16,6 @@ imaging:
   fallback_width: 660
 
 # fathomSiteID: ABCDEFG
-# fathomCustomDomain: https://custom.yourdomain.com
 
 render_hooks:
   link:

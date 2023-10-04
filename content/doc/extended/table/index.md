@@ -9,13 +9,8 @@ menu:
     pre: table_chart
 title: Tables
 weight: 230
-categories: [Markdown]
-tags: [Block, Table]
-resources:
-  - name: featured
-    src: mika-baumeister-Wpnoqo2plFA-unsplash.jpg
-    params:
-      alt: A detail from a large data list
+categories: [markdown]
+tags: [table, block]
 ---
 
 Markdown tables need some care, because their layout breaks, when the content of one row exceeds the available width.

@@ -26,7 +26,7 @@ tags: [attribute]
 weight: 347
 ---
 
-Sometimes we want the text to stop floating around an embedded element. Then we have to place a good ol’ `.clear` attribute.
+Sometimes we want the text to stop floating around an embedded element. We need a good ol’ `.clear` attribute, then.
 {.p-first}
 <!--more-->
 

@@ -5,9 +5,7 @@
 # Options for bitmap files
 
 quality       : 80
-anchor        : smart
-hint          : photo
-resampleFilter: mitchellnetravali
+resampleFilter: box
 
 exif:
   includeFields: ""

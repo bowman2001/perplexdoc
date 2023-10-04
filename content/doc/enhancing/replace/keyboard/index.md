@@ -14,7 +14,7 @@ resources:
     params:
       alt: An old typewriter with cactuses growing inside
       ratio: 0.95
-      quality: 0.5
+      anchor: Center
 title: Keyboard Legend
 weight: 430
 categories: [Markdown]

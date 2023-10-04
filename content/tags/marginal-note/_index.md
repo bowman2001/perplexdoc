@@ -8,8 +8,7 @@ resources:
   - src: Diophantus-II-8-Fermat_cut.jpg
     name: featured
     params:
-      alt: Old reprint of a classic proof by Diophantus followed by Fermat’s famous last conjecture 
-      hint: text
+      alt: Old reprint of a classic proof by Diophantus followed by Fermat’s famous last conjecture
       attr: PD
       caption: Reprint of Diophantus arithmetica including Fermat’s theorem
 ---
