@@ -1,0 +1,51 @@
+{{/* 
+  Context:
+    - img
+    - params 
+*/ -}}
+
+{{- $img := .img }}
+{{- $maxLqip := site.Data.modImg.srcset.maxLqip | default 2048 }}
+
+{{- $params := merge .params (dict (slice "imgAttrs" "src") $img.RelPermalink ) }} 
+{{- $placeholder := "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" }}
+
+{{- if $params.process.run }}
+    {{- with (partial "mod-img/func/raster/srcset" (dict "img" $img "params" $params) ) }}
+        {{- $params = merge $params (dict (slice "imgAttrs" "src") .fallback.RelPermalink ) }} 
+        {{- $params = merge $params (dict (slice "imgAttrs" "width") (string .fallback.Width)) (dict (slice "imgAttrs" "height") (string .fallback.Height)) }}
+        {{- $lqip := partial "mod-img/func/raster/lqip" (dict "img" .fallback "params" $params "divider" 4) -}}        
+        {{- $lqipBase64 := printf "data:image/webp;base64,%s" (base64Encode $lqip.Content) }}
+        {{- if lt (len $lqipBase64) $maxLqip }}
+            {{- $params = merge $params (dict (slice "imgAttrs" "srcset") $lqipBase64 ) }}
+        {{ else }}
+            {{- $params = merge $params (dict (slice "imgAttrs" "srcset") $placeholder) }}
+            {{- $params = merge $params (dict (slice "imgAttrs" "data-lowsrc") $lqip.RelPermalink ) }}
+        {{- end }}
+        
+        {{- with .srcset }}
+            {{- $params = merge $params (dict (slice "imgAttrs" "data-srcset") . ) }}
+        {{- end }}
+    {{- end }}
+
+    {{- $lsClass := site.Data.modImg.lsImgClass | default "img--ls" }}
+    {{ with $params.imgAttrs.class }}
+        {{- $params = merge $params (dict (slice "imgAttrs" "class") (printf "%s lazyload %s" . $lsClass)) }}
+    {{- else }}
+        {{- $params = merge $params (dict (slice "imgAttrs" "class") (printf "lazyload %s" $lsClass)) }}
+    {{- end }}
+    {{- $params = merge $params (dict (slice "imgAttrs" "data-sizes") "auto" ) }}
+    {{- $params = merge $params (dict (slice "imgAttrs" "data-parentfit") "cover" ) }}
+{{- else }}
+    {{- $params = merge $params (dict (slice "imgAttrs" "loading") "lazy" ) }}
+{{- end }}
+
+{{- if .params.index }}
+    {{- $params = merge $params (dict (slice "imgAttrs" "data-pagefind-meta") "image[src], image_alt[alt]" ) }} 
+{{- end }}
+<img
+  {{- range $k, $v := $params.imgAttrs }}
+      {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+  {{- end -}}
+>
+{{- /**/ -}}       

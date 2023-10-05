@@ -1,0 +1,86 @@
+debug: false
+unsplash: true
+
+figure:
+  class:
+    base: "fig"
+    width:
+      name: Width
+      prefix: w-
+      options: [tiny, small, medium, text, large, xlarge]
+      intOpts: [pt1, pt2]
+    posh:
+      name: Horizontal position
+      prefix: ph-
+      options: [left, right]
+  type: featured
+
+embed:
+  class:
+    base: "emb"
+    width:
+      name: Width
+      prefix: w-
+      options: [micro, tiny, small, text]
+    posh:
+      name: Horizontal position
+      prefix: ph-
+      options: [left, right]
+    posv:
+      name: Vertical position
+      prefix: pv-
+      options: [top, middle]
+
+frame:
+  class:
+    base: "img__frame"
+    background:
+      name: "Background"
+      prefix: bg-
+      options: [ dark, light ]
+    box:
+      name: "Box"
+      prefix: box-
+      options: [ shadow, light, none ]
+    padding:
+      name: "Padding"
+      prefix: pad-
+      options: [ half, one, two, logo, none ]
+
+
+container:
+  class:
+    base: "img__c"
+    type:
+      name: Type
+      prefix: t-
+      options: [ logo ]
+
+width:
+  pt1: [24,30]
+  pt2: [36,45]
+  micro: [40,85]
+  tiny: [80,165]
+  small: [160,330]
+  medium: [160,515]
+  text: [320,700]
+  large: [320,1070]
+  xlarge: [320,1440]
+
+default:
+  frame:
+    class:
+      box: shadow
+  figure:
+    class:
+      width: text
+  embed:
+    class:
+      width: small
+      posh: left
+
+srcset:
+  sizeStep: 100
+  maxDensityFactor: 2
+  quality: 90
+  qualityReductionFactor: 15
