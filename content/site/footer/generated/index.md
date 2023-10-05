@@ -10,6 +10,7 @@ resources:
     background: light
     svg: inline
     padding: half
+    width: tiny
 weight: 30
 ---
 
