@@ -1,6 +1,9 @@
 {
   "dependencies": {
-    "pagefind": "^1.0.3"
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "pagefind": "^1.0.3",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0"
   },
   "name": "perplexdoc",
   "version": "0.1.0",

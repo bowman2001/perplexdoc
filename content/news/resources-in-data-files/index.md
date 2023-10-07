@@ -10,31 +10,44 @@ The theme offers a new possibility to store local parameters for resources. Data
 {.p-first}
 <!--more-->
 
-Hugo allows to append arbitrary meta-data parameters to page resources. They are available for [local resources](https://gohugo.io/content-management/page-resources/#page-resources-metadata) in page bundles as an arbitrary list under `params:`. We can retrieve an image and its meta-data for example with Hugo’s `.Resources.GetMatch` already like this:
+Hugo offers to process arbitrary meta-data parameters associated with page resources. We can add a parameter list to [local resources](https://gohugo.io/content-management/page-resources/#page-resources-metadata) in the front-matter of page bundles under `params`:
 
 ```yaml
 resources:
   - src: hebert-kostan-y6UEUCq2RHw-unsplash.jpg
     name: tiger
     params: 
-      caption: none
+      caption: Local image resource
       width: small
       posh: left
 ```
 
-Depending on the content structure of your project, you may want to store some resources in the global {$assets} folder or on a remote server. Hugo can retrieve these resources, but there is (currently) no native mechanism to associate them also with meta-data parameters. This is where this module comes in handy.
+![global tiger](global.yaml)
 
-![global tiger](global)
+Depending on the content structure of your project, you may want to store some resources in the global {$assets} folder or on a remote server. Hugo also can retrieve these resources, but there is (currently) no native mechanism to associate them with meta-data parameters. And this is where this module comes in handy.
 
-This image is stored in the {$assets} folder and gets referenced in a local data file. This way, we can re-use global assets repeatedly and store meta-data relevant for the local content in a file like {$global.yaml}: 
+The tiger here is stored in the {$assets} folder and gets referenced in a local data file. This way, we can re-use global assets repeatedly and store meta-data in a file like {$global.yaml}:
 
 ```yaml
 src: img/tiger/hebert-kostan-y6UEUCq2RHw-unsplash.jpg
-caption: none
+caption: Image file from {$assets}
 width: small
 posh: left
 ```
 
-The extra parameter keys are the same as the ones above. There is no new name for the resource, we use it with `![global tiger](global.yaml)`. We can also use TOML or JSON files and enter a remote URL as source.
+![Remote image](remote.json)
+
+The extra parameter keys are the same as the ones above. There is no new name for the resource, we use the data file inside the usual Markdown image syntax like `![global tiger](global.yaml)`. 
+
+We can also use TOML or JSON files, enter a remote URL as source, and call every image service with an HTTP API. The second image here is generated with this data file for example:
+
+```json
+{
+    "src": "https://picsum.photos/300/300",
+    "caption": "Random image",
+    "posh": "right",
+    "width": "tiny"
+}
+```
 
 The module is available on [GitHub](https://github.com/bowman2001/hugo-mod-resource) and still under development.

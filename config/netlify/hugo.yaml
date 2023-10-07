@@ -5,3 +5,7 @@ baseURL: 'https://perplex.desider.at'
 
 ignoreFiles:
   - doc/draft/.*
+
+build:
+  buildStats:
+    enable: true
