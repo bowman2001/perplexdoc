@@ -10,8 +10,7 @@ menu:
     identifier: enhancing
     name: Enhancing Markdown
     pre: edit_note
-categories: [markdown]
-tags: []
+featured: markdownlogo
 weight: 300
 ---
 

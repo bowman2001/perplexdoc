@@ -1,7 +1,7 @@
 ---
 authors: [Georg Makowski]
 title: Resource Organization
-description: How to include files like images
+description: How to provide files for your content
 subtitle: false
 date: 2022-09-11T14:58:46+02:00 
 weight: 45
@@ -10,8 +10,8 @@ menu:
     name: Resources
     parent: workflow 
     pre: photo_library
-categories: [Resources, Getting started]
-tags: [file, image]
+categories: [getting started]
+tags: [resources, file, image]
 ---
 
 This theme expects resources like images as local files. We need to place them in page bundles and register them in the front-matter.
@@ -42,7 +42,7 @@ The theme relies on [page bundles](/doc/intro/workflow/content#bundles) to store
 
 ```YAML {.left-in}
 resources:
-  - src: original_image_filename.jpg
+  - src: image_filename.jpg
     name: image
 ```
 

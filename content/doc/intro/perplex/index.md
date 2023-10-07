@@ -38,6 +38,8 @@ The deprecated Internet Explorer and Opera Mini are not supported.
 
 ## Based on Standardized Markdown
 
+![](markdownlogo?ph=left&w=tiny)
+
 Markdown is simple and simply great. It allows authors to structure their content with a few intuitive markup characters in plain text files. These structured files can be rendered into reliable and clean code.
 
 Hugo’s default renderer [Goldmark][gmark] translates [CommonMark][cmark] Markdown and some extensions adopted from [PHP Markdown Extra][phpmex] and [**G**itHub **f**lavored **M**arkdown][gfmspec] (GFM).

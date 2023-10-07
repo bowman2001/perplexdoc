@@ -10,18 +10,7 @@ menu:
 subtitle: false
 title: Markdown
 weight: 15
-resources:
-resources:
-- src: erda-estremera-eMX1aIAp9Nw-unsplash.jpg
-  name: bigsplash
-  params:
-    alt: A splashing drop of water
-    caption: Default stand-alone image. To generate a caption like this, we need to register the image as a resource in the front-matter.
-- src: mulyadi-JJMoAiVl9jA-unsplash.jpg
-  name: smallsplash
-  params:
-    caption: Embedded image
-    alt: Another splashing water drop
+featured: markdownlogo
 categories: [Getting started, Markdown]
 tags: [Linebreak, Image]  
 ---

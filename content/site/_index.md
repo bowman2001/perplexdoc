@@ -18,7 +18,15 @@ resources :
       alt: Hugo logo
       type: logo
       box: none
-  - name: splash
+  - src: Markdown.svg
+    name: markdownlogo
+    params: 
+      alt: Markdown logo
+      type: logo
+      background: light
+      padding: one
+      width: tiny
+  - name: smallsplash
     src: mulyadi-JJMoAiVl9jA-unsplash.jpg
     params:
       alt: Splashing ring of water
@@ -26,8 +34,4 @@ resources :
     name: bigsplash
     params:
       alt: A splashing drop of water
-  - src: mulyadi-JJMoAiVl9jA-unsplash.jpg
-    name: splash
-    params:
-      alt: Splashing water drop
 ---

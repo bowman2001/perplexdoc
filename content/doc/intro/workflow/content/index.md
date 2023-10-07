@@ -10,8 +10,8 @@ menu:
     name: Contents
     parent: workflow
     pre: create_new_folder
-categories: [Getting started]
-tags: [Hugo]
+categories: [getting started]
+tags: [hugo]
 ---
 
 The folder structure lays the foundation for the website structure.

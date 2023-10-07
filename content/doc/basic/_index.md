@@ -11,15 +11,7 @@ subtitle: false
 title: Basic Markdown
 linktitle: Basic
 weight: 100
-resources:
-  - src: Markdown.svg
-    name: featured
-    params:
-      alt: Markdown logo
-      width: tiny
-      background: light
-      padding: one
-      type: logo
+featured: markdownlogo
 ---
 
 The [CommonMark specification][cmark] has laid a stable ground for Markdown. The following pages briefly recap the syntax for its elements, show their standard layout and alternative options.  
