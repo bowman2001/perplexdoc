@@ -4,7 +4,6 @@ title: Resources in Data Files
 date: 2023-09-05T00:02:59+02:00
 categories: [module]
 tags: [resources]
-draft: true
 ---
 
 The theme offers a new possibility to store local parameters for resources. Data files allow to associate local meta-data with global or remote resources.  
