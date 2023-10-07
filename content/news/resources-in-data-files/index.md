@@ -17,7 +17,7 @@ resources:
   - src: hebert-kostan-y6UEUCq2RHw-unsplash.jpg
     name: tiger
     params: 
-      caption: Image as a page resource
+      caption: none
       width: small
       posh: left
 ```
@@ -30,7 +30,7 @@ This image is stored in the {$assets} folder and gets referenced in a local data
 
 ```yaml
 src: img/tiger/hebert-kostan-y6UEUCq2RHw-unsplash.jpg
-caption: Image file from {$assets}
+caption: none
 width: small
 posh: left
 ```

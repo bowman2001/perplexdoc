@@ -1,5 +1,5 @@
-source: public
-bundle_dir: pagefind
+site: public
+output_subdir: "static/pagefind"
 
 exclude_selectors:
 - ".md table"
