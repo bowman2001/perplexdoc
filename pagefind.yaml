@@ -1,5 +1,4 @@
 site: public
-output_subdir: "static/pagefind"
 
 exclude_selectors:
 - ".md table"
