@@ -11,4 +11,5 @@ resources:
     box: none
     width: tiny
     type: logo
+    background: transparent
 ---

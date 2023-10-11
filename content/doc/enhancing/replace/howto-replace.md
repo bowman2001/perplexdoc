@@ -27,7 +27,7 @@ Perplex includes the following replacement codes and styles them:
 |:------------|:------------|:-----------|
 | Superscript |    {‍^3}      |    {^3}     |
 | Subscript   |    {‍_2}      |    {_2}     |
-| Keyboard    |    {‍%K}      |    {&K}     |
+| Keyboard    |    {‍%K}      |    {~K}     |
 | Variable    | {‍$variable}  | {$variable} |
 | Mark        |   {‍!mark}    |   {!mark}   |
 | Citation    |  {‍=work}     |  {=work}  |

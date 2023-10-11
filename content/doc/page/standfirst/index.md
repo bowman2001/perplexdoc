@@ -13,14 +13,14 @@ menu:
     pre: short_text
 resources:
   - name: featured
-    src: alevision-co-45sDm4wCOWc-unsplash.jpg
+    src: belinda-fewings-6wAGwpsXHE0-unsplash.jpg
     params:
-      alt: A natural opening towards the sky from the sea
-categories: [Page]
-tags: [paragraph]
+      alt: Colored welcome
+categories: [Design]
+tags: [paragraph, page]
 ---
 
-When the first paragraph contains a short introduction or summary of the page, the theme can apply a notably different style. And with the {$more} tag, we can mark it as the summary of the page.
+When the first paragraph contains a short introduction or summary of the page, the theme can apply a notably different style. We mark this paragraph with the {$more} tag as the summary of the page.
 {.p-first #first} <!--more-->
 
 A lead paragraph is optional but strongly recommended. To encourage its use, every regular page file generated with `hugo new` contains a placeholder.
@@ -31,4 +31,4 @@ The [attribute](/doc/enhancing/attribute) `{.p-first}` styles the paragraph. The
 Hugo always generates a content summary if anyhow possible. But Hugo can’t analyze content, it just strips the first sentences (≈ 70 words) down to unformatted text when there is no marked summary. This may lead to badly truncated text and sometimes even to nearly incomprehensible results when these first lines have been strongly structured by markup.
 
 ## Result
-The [first paragraph](#first) on this page is styled as stand-first.
+The [first paragraph](#first) on this page is styled as stand-first like on most other pages of this documentation.

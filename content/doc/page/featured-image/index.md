@@ -10,8 +10,8 @@ menu:
 subtitle: false
 title: Featured Image
 linktitle: Featured
-categories: [Page]
-tags: [image]
+categories: [Design]
+tags: [feature, image, page]
 series: [images]
 weight: 630
 resources:
@@ -21,25 +21,25 @@ resources:
       alt: fireworks over open water
 ---
 
-Perplex presents this image at the top of your page and in reference cards. It’s also included in a special format for search engines and social networks.
+The theme presents the featured image at the top of your page and in reference cards. It’s also prepared as a preview-image for links in search engines and social networks.
 {.p-first} <!--more-->
 
-## Prerequisite
+The featured image needs to be placed either as a [page resource](/doc/intro/workflow/resources/) with the name {$featured} or as a data file (YAML, TOML, or JSON) with this base name. In case you want to use an image already registered in the page resources under a different name, you can mark it with the parameter `featured: image-name`. If no specific featured image is given for a page, the theme will search in [related ones](doc/intro/workflow/resources/#resources-from-related-page-bundles).
 
-The image file needs to be placed in the [page bundle](/doc/intro/workflow/content#bundles). Only one featured image is allowed per page and it should be at least {${{< width/column 2 >}}} wide to display it with double density on high-resolution screens.
+The image should be at least {${{< width/column 2 >}}} wide for high density, a good width for high resolution preview-images is often {$1200px}.
+{.inline}
 
-If no featured image is available, Perplex will search for one in related pages or use the site fallback as last resort.
+{{< mnote >}}This depends on the layout of the social networks and search engines you would like to serve.{{< /mnote >}}
 
-## Syntax
+All the parameters available for [enhancing images](doc/enhancing/image/syntax) are available except the ones for the width, which depends on the page layout.
 
-To make the image file available to Hugo and the theme, it also needs to be registered in the [resources section](/doc/intro/workflow/resources) of the front-matter. The filename of the image is identified by its reserved name `featured`. And you can add an alternative text for your image with the `alt` parameter.
+News, Blog, Docs
+: The {$small} width is the default and we can only use {$tiny} as alternative.
 
-The content file of this page for example contains the following section:
+Articles [TODO] 
+: The default width for articles is large and we can only use the alternatives {$text} or {$xlarge}.
+{.dl-loose}
 
-```yaml
-resources:
-  - src: ray-hennessy-gdTxVSAE5sk-unsplash.jpg
-    name: featured
-    params:
-      alt: fireworks over open water
-```
+### TODO
+
+There is another option for documentation pages. We can generate a featured image with the icon from the menu entry in the front-matter by setting the parameter `featured: icon`.

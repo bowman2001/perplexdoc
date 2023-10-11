@@ -10,7 +10,7 @@ menu:
     parent: page
     pre: title
 categories: [Theme]
-tags: [title]
+tags: [title, page]
 ---
 
 The title section is generated from meta-data in the front-matter.

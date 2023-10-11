@@ -14,8 +14,10 @@ tags: [image]
 weight: 150
 ---
 
-The CommonMark image syntax is simple and the theme additionally distinguishes between two possible image positions: **stand-alone** & **embedded**.
+The CommonMark image syntax is simple and the theme distinguishes between two possible image positions: **stand-alone** & **embedded**.
 {.p-first} <!--more-->
+
+You can [enhance the image layout](doc/enhancing/image) in many ways. This page introduces only the basic syntax and its layout.
 
 ## Syntax
 
@@ -82,12 +84,17 @@ When we place an image inside our paragraph text–usually at the beginning–it
 
 ### Stand-alone
 
-The default for the usual stand-alone CommonnMark image element is the normal size and occupies the main text width as usual in most web layouts.
+The default width for the stand-alone CommonMark image element is the main text width:
 
-![Placeholder image](fig/normal.svg)
+![Placeholder image](svg/text.svg)
 
 {{% pangram 3 %}}
 {.placeholder data-pagefind-ignore="all"}
 
 ### Embedded
+
+The default for images embedded in a text block is the small width:
+
+![Placeholder image](svg/small.svg) {{% pangram 11 %}}
+{.placeholder data-pagefind-ignore="all"}
 

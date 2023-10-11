@@ -59,7 +59,7 @@ Good typography needs the right amount of space between type. For the most part 
 | No space (for comparison) |             |     xx     |
 | Hair space              | `&hairsp;`  | x&hairsp;x |
 | Thin space              | `&thinsp;`  | x&thinsp;x |
-| Normal space            |  {&Space}   |    x x     |
+| Normal space            |  {~Space}   |    x x     |
 | en space (wide as an n) |  `&ensp;`   |  x&ensp;x  |
 | em space (wide as an m) |  `&emsp;`   |  x&emsp;x  |
 | num space               |  `&numsp;`  | 1&numsp;3  |

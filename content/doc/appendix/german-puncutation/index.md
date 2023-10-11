@@ -27,22 +27,22 @@ Our personal keymap depends on the keyboard layout and the operating system. The
 
 | Punctuation name                |  Unicode |      Key combination                       |
 | :-------------------------- | :--: | --------------------------: |
-| Double quotes left  |  “   |            {&Alt Gr} + {&B} |
-| Double quotes right |  ”   |            {&Alt Gr} + {&N} |
-| Single quote left   |  ‘   | {&Alt Gr} + {&Shift} + {&B} |
-| Single quote right  |  ’   | {&Alt Gr} + {&Shift} + {&N} |
-| Guillemets left      |  »   |            {&Alt Gr} + {&Y} |
-| Guillemets right     |  «   |            {&Alt Gr} + {&X} |
-| Guillemet left  |  ›   | {&Alt Gr} + {&Shift} + {&Y} |
-| Guillemet right |  ‹   | {&Alt Gr} + {&Shift} + {&X} |
-| „Gänsefüßchen“ left          |  „   |            {&Alt Gr} + {&V} |
-| „Gänsefüßchen“ right           |  “   |            {&Alt Gr} + {&B} |
-| „Anführung“ left         |  ‚   | {&Alt Gr} + {&Shift} + {&V} |
-| „Anführung” right          |  ‘   | {&Alt Gr} + {&Shift} + {&B} |
-| Apostrophe                   |  ’   |            {&Alt Gr} + {&#} |
-| Ellipsis                    |  …   |            {&Alt Gr} + {&.} |
-| Dash | – |{%Alt Gr} + {&-} |
-| Long dash                   |  —   |            {&Alt Gr} + {&Shift} + {&-} |
+| Double quotes left  |  “   |            {~Alt Gr} + {~B} |
+| Double quotes right |  ”   |            {~Alt Gr} + {~N} |
+| Single quote left   |  ‘   | {~Alt Gr} + {~Shift} + {~B} |
+| Single quote right  |  ’   | {~Alt Gr} + {~Shift} + {~N} |
+| Guillemets left      |  »   |            {~Alt Gr} + {~Y} |
+| Guillemets right     |  «   |            {~Alt Gr} + {~X} |
+| Guillemet left  |  ›   | {~Alt Gr} + {~Shift} + {~Y} |
+| Guillemet right |  ‹   | {~Alt Gr} + {~Shift} + {~X} |
+| „Gänsefüßchen“ left          |  „   |            {~Alt Gr} + {~V} |
+| „Gänsefüßchen“ right           |  “   |            {~Alt Gr} + {~B} |
+| „Anführung“ left         |  ‚   | {~Alt Gr} + {~Shift} + {~V} |
+| „Anführung” right          |  ‘   | {~Alt Gr} + {~Shift} + {~B} |
+| Apostrophe                   |  ’   |            {~Alt Gr} + {~#} |
+| Ellipsis                    |  …   |            {~Alt Gr} + {~.} |
+| Dash | – |{~Alt Gr} + {~-} |
+| Long dash                   |  —   |            {~Alt Gr} + {~Shift} + {~-} |
 {.normal}
 
 {{< mnote up=48 >}}

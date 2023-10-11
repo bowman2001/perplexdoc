@@ -10,8 +10,8 @@ menu:
     name: Local installation
     parent: workflow
     pre: start
-categories: [Getting started]
-tags: [Hugo]
+categories: [getting started, hugo]
+tags: [installation]
 resources: 
   - src: damian-markutt-Dhmn6ete6g8-unsplash.jpg
     name: featured

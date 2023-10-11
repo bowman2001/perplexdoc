@@ -11,7 +11,7 @@ menu:
     parent: config
     pre: view_module
 categories: [Theme]
-tags: [Parameter, Configuration]
+tags: [Configuration]
 ---
 
 Parameter configuration file in {$config/_default}
