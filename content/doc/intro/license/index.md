@@ -9,11 +9,7 @@ menu:
     pre: receipt
 subtitle: false
 title: Licenses
-resources:
-  - name: featured
-    src: chris-brignola-X2CxUXFqKcM-unsplash.jpg
-    params:
-      alt: Two long rows of white stone columns
+categories: []
 tags: [license]
 weight: 70
 ---

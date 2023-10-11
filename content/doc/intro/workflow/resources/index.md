@@ -11,7 +11,7 @@ menu:
     parent: workflow 
     pre: photo_library
 categories: [getting started]
-tags: [resources, file, image]
+tags: [resources, image]
 ---
 
 This theme expects resources like images as local files. We need to place them in page bundles and register them in the front-matter.

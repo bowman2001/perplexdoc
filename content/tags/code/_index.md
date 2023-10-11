@@ -9,5 +9,5 @@ resources:
   params:
     alt: Code on a screen
     ratio: 1.5
-    hint: picture
+    zoom: 1.5
 ---

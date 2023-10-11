@@ -10,13 +10,8 @@ menu:
 subtitle: false
 title: Simple List
 weight: 125
-categories: [Markdown]
-tags: [List, Block]
-resources:
-  - name: featured
-    src: torbjorn-helgesen-dz35efCT3ZA-unsplash.jpg
-    params:
-      alt: A small notebook with a list
+categories: [markdown]
+tags: [list, block]
 ---
 
 A simple list is unordered and groups a set of related items. Any item may contain a sub-list.

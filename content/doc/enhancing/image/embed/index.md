@@ -12,16 +12,16 @@ menu:
     pre: format_image_left
 resources:
 categories: [markdown]
-tags: [image, embedded]
+tags: [embedded, image]
 series: [images]
 weight: 310
 ---
 
-Demo for the layout options of enhanced embedded images.
+Layout options of enhanced embedded images.
 {.p-first}
 <!--more-->
 
-For the Markdown syntax see [basic image](https://perplex.desider.at/doc/basic/image) and [enhanced image](https://perplex.desider.at/doc/improved/image/syntax).
+For a description of the Markdown syntax see [basic image](https://perplex.desider.at/doc/basic/image) and [enhanced image](https://perplex.desider.at/doc/improved/image/syntax). There is also a [demo with real images](/blog/image/embed)
 
 ## At the beginning
 

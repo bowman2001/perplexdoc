@@ -8,4 +8,5 @@ resources:
     name: featured
     params:
       alt: Four empty paper labels on strings
+      zoom: 1.4
 --- 

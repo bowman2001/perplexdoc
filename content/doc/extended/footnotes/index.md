@@ -17,6 +17,8 @@ resources:
     src: kelly-sikkema-et5mfj1eB94-unsplash.jpg
     params:
       alt: A book with a lot of hand-written notes 
+      zoom: 1.6
+      anchor: BottomLeft
 ---
 
 Footnotes are best suited for (formal) information, which is not essential for the meaning of the text.

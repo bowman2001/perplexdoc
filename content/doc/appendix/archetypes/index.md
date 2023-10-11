@@ -10,17 +10,12 @@ menu:
     parent: appendix
     name: Archetypes
     pre: post_add
-resources: 
-  - src: joshua-sortino-LqKhnDzSF-8-unsplash.jpg
-    name: featured
-    params:
-      alt: surrealistic glowing digital image
 categories: [getting started, markdown]
 tags: [archetype]
 weight: 1003
 draft: true
 ---
 
-Create all kinds of Markdown files with pre-configured frontmatter for an easy start.
+Create all kinds of Markdown files with pre-configured front-matter for an easy start.
 {.p-first}
 <!--more-->

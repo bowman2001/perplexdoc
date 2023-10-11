@@ -8,4 +8,6 @@ resources:
   name: featured
   params: 
     alt: Four columns made of stone
+    zoom: 1.25
+    anchor: Center
 ---

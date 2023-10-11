@@ -11,15 +11,7 @@ subtitle: false
 title: Line Break
 weight: 111
 categories: [Markdown]
-tags: [Inline, Linebreak]
-resources:
-  - name: featured
-    src: annie-spratt-askpr0s66Rg-unsplash.jpg
-    params:
-      alt: A page in a book with a lot of line breaks
-      anchor: Center
-      hint: text
-      ratio: 1.5
+tags: [linebreak, inline]
 ---
 
 Sometimes we like to begin a new line without starting a whole new text block. Placing such a hard-line break gets complicated when **hard-line wraps** control the line length inside our Markdown files.

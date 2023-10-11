@@ -1,4 +1,5 @@
 ---
+authors: [Georg Makowski]
 title: Standfirst Paragraph
 linktitle: Standfirst
 description: Introduces or summarizes the page

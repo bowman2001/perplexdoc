@@ -11,14 +11,10 @@ menu:
     parent: siteelem
     pre: person
 resources:
-  - src: charles-etoroma-vkc1YLZ50yE-unsplash.jpg
-    name: featured
-    params:
-      alt: Anonymous author
   - src: portrait.jpg
     name: portrait
     params:
-      alt: Anonymous portrait    
+      alt: Anonymous portrait
 categories: [design]
 tags: [author]
 weight: 665
