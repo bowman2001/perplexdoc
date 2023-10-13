@@ -9,6 +9,13 @@ menu:
     pre: dashboard
 subtitle: false
 title: Perplex
+resources:
+  - src: IBM_Plex_Sans.svg
+    name: plex_sample
+    params:
+      background: light
+      posh: left
+      width: tiny
 weight: 11
 categories: [design, getting started]
 tags: [fluid responsive]
@@ -17,9 +24,11 @@ tags: [fluid responsive]
 The theme layout adapts responsively and fluidly to modern screens. It’s designed for optimal legibility down to a view-port of {$360px} width. 
 {.p-first} <!--more-->
 
+![Plex Sample](plex_sample)
+
 Perplex is built based on the [IBM Plex][plex] font family{^\*} and is best suited for technical content with mixed sections of text, figures, and code. The layout is vertically aligned to a **baseline grid**[^1] to introduce a comfortable reading rhythm. Horizontally it’s divided into evenly spaced columns—their number grows with the screen width.
 
-{{< mnote down=6 star=1 >}}
+{{< mnote down=9 star=1 >}}
 The **Plex** font family includes fonts for oriental languages written from right to left and for Asian sign languages (some still projected). So far, Perplex can't adapt to their needs, because I'm not acquainted with their layout habits.
 {{< /mnote >}}
 

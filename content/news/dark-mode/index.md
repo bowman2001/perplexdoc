@@ -12,8 +12,8 @@ categories: [Design]
 tags: [color]
 ---
 
-The theme offers a dark mode now. The mode follows the setting of the browser or operating system.
+The theme offers a dark mode now. The colors follow the setting of the browser or operating system.
 {.p-first}
 <!--more-->
 
-The dark mode switches to a dark page background and light text colors as usual. It also reduces the contrast of text and images and changes the color theme of the code highlighting.
+The dark mode includes a dark page background and light text colors as usual. It also reduces the overall brightness and changes the color theme of the code highlighting.

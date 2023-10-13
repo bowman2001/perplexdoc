@@ -14,14 +14,14 @@ categories: [getting started]
 tags: [hugo]
 ---
 
-The folder structure lays the foundation for the website structure.
+The {$content} folder structure of our Hugo project lays the foundation for the website structure.
 {.p-first} <!--more-->
 
 It may take a little while to get your head around Hugo’s content structure. It’s helping me to keep Hugo’s general goal in mind: The folder structure and all the files therein are rendered as straightforwardly as possible. Organizational overhead is avoided — small details matter instead.
 {.inline}
 
 {{< mnote >}}
-This theme focuses on Markdown content. But Hugo also offers to process HTML files, data, and many other content formats.  
+**By the way:** This theme is focused on Markdown content. But Hugo also offers to process HTML files, data, and some other content formats.  
 {{< /mnote >}}
 
 ## Folder structure
@@ -50,7 +50,7 @@ Hugo offers **single pages** and **list pages** and Perplex always provides at l
 {.inline}
 
 {{< mnote >}}
-Top-level pages are an exception because they aren’t listed automatically. We need to add them to a top-level menu or reference them manually otherwise.
+**Top-level pages** are an exception because they aren’t listed automatically. We need to add them to a top-level menu or reference them in a link.
 {{< /mnote >}}
 
 ### Single pages

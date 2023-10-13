@@ -19,11 +19,9 @@ Paragraphs are the essential building blocks of text. A comfortable line length 
 
 ## Syntax
 
-A paragraph is a sequence of Unicode characters with arbitrary length and finished by an empty line.
+A paragraph is a sequence of Unicode characters with arbitrary length. It gets closed by one empty line.
 
-The theme also styles a **first** paragraph — like the first one on this page — and a **big** and a **small** one.
-
-These styles are applied with the [attributes](/doc/enhancing/attribute) `{.p-first}`, `{.p-big}`, and `{.p-small}`.
+The theme offers to style a **first** paragraph — like the first one on this page — and a **big** and a **small** one. These styles are applied with the [attributes](/doc/enhancing/attribute) `{.p-first}`, `{.p-big}`, and `{.p-small}`.
 
 ## Layout
 

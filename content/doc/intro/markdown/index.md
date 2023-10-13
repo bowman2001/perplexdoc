@@ -29,7 +29,7 @@ After the [original specification][omd] had been released by John Gruber in 2004
 
 To resolve their incompatibilities and to create a dependable basic syntax, John Mc&hairsp;Farlane et al. proposed a strict specification in 2011: [CommonMark][cmark]. This specification has been implemented by many Markdown render engines since and important web-software providers thereby adhere to CommonMark as a minimal standard. For a quick introduction, you can visit their crisp [one page overview](https://CommonMark.org/help).
 
-## Markdown for Perplex
+## Markdown for Hugo & this theme
 
 Perplex styles HTML, which is generated from extended CommonMark by Hugo’s default renderer [Goldmark][gmark]. Three extensions — the [definition list][dl], the [footnote][fnote], and the [typographer][typo] — have been adopted from [PHP Markdown Extra][phpmex]. Based on CommonMark, [GitHub](https://github.com) introduced **G**itHub **F**lavored **M**arkdown (GFM) with the four extensions [table][table], the [task-list][task], [strikethrough][strike], and linkify. They are defined in their [new specification][gfmspec] (based on CommonMark).
 {.inline}
@@ -40,13 +40,18 @@ Hugo’s deprecated **Blackfriday** renderer is not fully CommonMark-compliant. 
 
 Further extensions may join in the future, but probably only a few if any, because simplicity is Markdown’s essential characteristic.
 
-This documentation includes a short review of every syntax element of Goldmark and shows their standard layout and alternative styling options:
+This theme offers some ways to enhance    
 
-[Basic Markdown Layout](/doc/basic)
+This documentation includes a short review of every syntax element of Goldmark and shows their standard layout and enhanced styling options:
+
+[Basic Markdown](/doc/basic)
 : covers the elements of the [CommonMark specification][cmark].
 
-[Extended Markdown Layout](/doc/extended)
+[Extended Markdown](/doc/extended)
 : discusses the elements adopted from [PHP Markdown Extra][phpmex] and [GFM][gfmspec].
+
+[Enhancing Markdown](/doc/enhancing)
+: shows techniques to improve Markdown with enhanced layout elements.
 
 ## Caveats and Opportunities
 

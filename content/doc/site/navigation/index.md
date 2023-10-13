@@ -1,7 +1,7 @@
 ---
 authors: [Georg Makowski]
-title: Site Navigation
-description: Constantly visible Menu
+title: Navigation
+description: The primary & the sidebar menu
 subtitle: false
 date: 2022-09-07T15:24:13+02:00 
 weight: 660
@@ -15,7 +15,7 @@ tags: [Navigation, Social]
 draft: true
 ---
 
-The main menu at the top of the site is always directly accessible. Social icons and their links (TODO)
+The main menu at the top of the site is always accessible. Social icons and their links (TODO)
 {.p-first} <!--more-->
 
 ## Main Menu
