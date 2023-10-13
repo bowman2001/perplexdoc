@@ -8,4 +8,5 @@ resources:
     name: featured
     params:
       alt: Two security cameras mounted on the walls of a building
+      anchor: Center
 ---
