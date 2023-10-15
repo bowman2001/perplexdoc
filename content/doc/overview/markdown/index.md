@@ -30,7 +30,7 @@ resources:
     alt: Splash of water
 categories: [Overview, Markdown]
 tags: [Block, Inline]
-weight: 5
+weight: 6
 ---
 
 Samples of Hugo’s extended CommonMark syntax to give a quick impression of the layout capabilities.

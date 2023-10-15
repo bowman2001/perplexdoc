@@ -10,7 +10,7 @@ menu:
     name: Mermaid
     parent: plugin
     pre: account_tree
-categories: [markdown, external]
+categories: [module]
 tags: [mermaid, diagram]
 ---
 
