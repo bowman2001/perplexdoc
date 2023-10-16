@@ -9,42 +9,56 @@ tags: [image]
 draft: true
 ---
 
-Hugo offers powerful image processing methods. This module offers theme developers and their users a way to apply them consistently.
+Hugo includes many powerful image processing methods. This module offers theme developers and their users a way to apply them more consistently.
 {.p-first}
 <!--more-->
 
-The modules makes heavy use of nested parameter maps to collect and process image parameters. It includes a render image hook to offer users a simple way to manipulate images inside the given layout and add a rich caption.
+The module processes many parameters which allow to control all stages of Hugo’s imaging pipeline. The possible values of these parameters need to be configured by template developers. Given a proper configuration the module offers their users very versatile render hooks to retrieve (or create) all kinds of images, preprocess them, and apply all configured layout classes.
 
-## Retrieval
+## Retrieving images
 
-Image sources may be stored locally (in page bundles), globally (in the {$assets} folder), or on a remote server accessible via HTTP. We can associate meta-data not only with local files but also with global and remote ones in local data files (This module depends on the [resources module](/news/resources-in-data-files)).
+Image resources for Hugo may be stored locally (in page bundles), globally (in the {$assets} folder), or on a remote server accessible via HTTP. We can associate meta-data not only with local files (as Hugo already offers natively) but also with global and remote ones in local data files (See the [introduction for resources](/doc/intro/workflow/resources)).
 
 ## Preprocessing
 
-We can resize, zoom in, and rotate raster images with the three resource parameters {$ratio}, {$zoom}, and {$rotate}.
+We can resize, zoom in, and rotate raster images with the three resource parameters {$ratio}, {$zoom}, and {$rotate} before they are transformed into source sets.
 
-## Including layout classes
+## Including and offering layout classes
 
-Developers can incorporate all their available classes for images. Width classes for figures are obviously always necessary. Possible are shadows, frames, backgrounds ...
+Developers may incorporate all their available classes for images to be applied with this module. Specified width classes for figures and embedded images are the minimum configuration this module needs to function. Optional are shadows, frames, backgrounds ... you name it.
 
-## Render Optimize bandwidth
+{{< mnote up=8 >}}Suggestions for missing layout parameters developers would like to include are welcome.{{< /mnote >}}
+
+## Transforming into optimal formats
 
 Raster images
-: JPEG, PNG, and BMP are usually converted to WEBP source sets, optionally preserving the alpha channel of PNG. When you site gets rendered in the browser, [Lazysizes]() calculates and requests a near-optimal image size and repeats this process in case the viewport changes. All images come with minimized placeholders to avoid empty space at the initial page rendering.
-
-    The specific sizes of your source sets, fallback images and placeholders are calculated by the module. To know the possible minimal and maximal width for every available image class is enough. One single configuration parameter for the size factor between subsequent sizes in your image sets determines your desired balance between saving storage and reducing bandwidth.
+: The formats JPEG, PNG, and BMP are converted to WEBP source sets by default, optionally preserving the alpha channel of PNG. The specific sizes of your source sets, fallback images and placeholders are calculated by the module. It is sufficient to configure the possible minimal and maximal width for every available image class. One single configuration parameter for the size factor between subsequent images in your sets determines your desired balance between saving server storage space and reducing the amount of necessary bandwidth to view your pages.
 
 Vector graphics
-: Small SVG images are automatically embedded inline.
+: Small SVG images are automatically embedded inline into HTML pages. The maximum size for inline embedding is configurable.
 
 GIF
-: 
+: Images in this format are not transformed and are included as they come by default. GIFs may contain an animated image set and Hugo can not discriminate between simple GIFs and animated ones. If you want to transform a simple GIF into a WEBP source set like the usual formats you need to set the parameter `process: run`. Animations do **not survive** the transformation, only the first image of an animation sequence is used.  
 
 ## Avoiding layout shifts
 
-All raster images and their optional placeholders are loaded into container tags with a fixed size.
+All raster images and their optional placeholders are placed in matching containers with a pre-calculated fixed size. When developers need a specific image ratio (in cards for example) they can apply forced ratios in their own templates to trigger the suitable resizing.
 
-## Ret
+## Delivering optimal sizes to viewers
 
+[Lazysizes]() calculates the near-optimal image size for every browser viewport width and repeats this process automatically in case it changes (when a viewer changes the zoom setting of its browser for example).
 
+## Smooth loading 
 
+### Source sets of raster images
+
+Very small images like author portraits or avatars may be embedded into the generated HTML with the parameter `base64: run`. The maximum size for these embedded base64-encoded strings is configurable. When the encoded string is too long the image is loaded in the default way.
+
+The loading process for the starts by default with an automatically calculated CSS-gradient between the two primary colors of an image. The alternative is a small **L**ow **Q**uality **I**mage **P**laceholder (LQIP) which is generated when the parameter `lqip: run` is set for specific images. Lazysizes replaces both placeholders with a near-optimal version of the original image as soon as the image tag comes into view. In case the LQIP itself is too large for embedding (max size configurable) a three stage loading process is applied. At first the image container shows the mentioned gradient, then Lazysizes loads the small LQIP as soon as the image comes into view and switches again to the optimal large image the moment it’s available.
+{.inline}
+
+{{< mnote >}}To study the loading processes with more detail you can throttle your network in the developer-environment of your desktop-browser.{{< /mnote >}}
+
+### Original images or SVGs
+
+Images which haven’t been transformed are loaded lazily with the usual browser-native attribute.
