@@ -5,10 +5,8 @@ resources:
 - src: Hugo.png
   name: hugologo
   params:
-    alt: Hugo logo
     link: https://gohugo.io
     background: light
-    svg: inline
     padding: half
     width: tiny
 weight: 30
