@@ -8,7 +8,7 @@
 {{ with .hint }}{{ $params = merge $params (dict (slice "preprocess" "hint") . ) }}{{ end }}
 {{ with .anchor }}{{ $params = merge $params (dict (slice "preprocess" "anchor")  . ) }}{{ end }}
 
-{{ with .lqip }}{{ $run := false }}{{ if or (eq . "run") (eq . "yes") }}{{ $run = true }}{{ end }}
+{{ with .lqip }}{{ $run := false }}{{ if (eq . "run") }}{{ $run = true }}{{ end }}
     {{ $params = merge $params (dict (slice "lqip" "run") $run) }}
 {{ end }}
 

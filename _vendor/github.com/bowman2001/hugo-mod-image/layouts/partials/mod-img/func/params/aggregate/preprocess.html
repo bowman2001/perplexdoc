@@ -35,7 +35,7 @@
         {{ $max := (float site.Data.modImg.preprocess.zoomMax) | default 5 }}
         {{ if (or (lt . 1.0) (gt . $max)) }}
             {{ $params = merge $params (dict (slice "preprocess" "zoom") "" ) }}
-            {{ warnf "Unable to zoom with factor %f. Not in [1, %f] " . $max }}
+            {{ warnf "Unable to zoom in with factor %f. Not in [1, %f] " . $max }}
         {{ end }}
     {{ end }}
 

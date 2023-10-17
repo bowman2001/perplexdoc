@@ -28,7 +28,7 @@ Generate SVG diagrams with the Kroki service by writing textual diagram descript
 
 This is the same diagram as the last one on the [Mermaid page](/doc/plugin/mermaid).
 
-```kroki {type=mermaid}
+```kroki {diagram=mermaid background=light caption="If you are pleased with the results from Kroki for your type of Mermaid diagram, you should seriously consider generating Mermaid diagrams like this. Server-side rendered SVGs don’t need client-side processing anymore and will show up immediately on your page."}
 %%{init:
   { 
     "theme": "base",
@@ -46,11 +46,9 @@ erDiagram
     PRODUCT ||--o{ ORDER-ITEM : "ordered in"
 ```
 
-If you are pleased with the results from Kroki for your type of Mermaid diagram, you should seriously consider generating Mermaid diagrams like this. Server-side rendered SVGs don’t need client-side processing anymore and will show up immediately on your page.
-
 ## Block
 
-```kroki {type=BlockDiag}
+```kroki {diagram=BlockDiag background=light}
 blockdiag {
   Kroki -> generates -> "Block diagrams";
   Kroki -> is -> "very easy!";
@@ -63,7 +61,7 @@ blockdiag {
 
 ## BPMN
 
-```kroki {type=BPMN}
+```kroki {diagram=BPMN width=large background=light}
 <?xml version="1.0" encoding="UTF-8"?>
 <semantic:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:semantic="http://www.omg.org/spec/BPMN/20100524/MODEL" id="_1275940932088" targetNamespace="http://www.trisotech.com/definitions/_1275940932088" exporter="Camunda Modeler" exporterVersion="1.16.0">
   <semantic:message id="_1275940932310" />
@@ -452,7 +450,7 @@ blockdiag {
 
 ## Bytefield
 
-```kroki {type=bytefield}
+```kroki {diagram=bytefield padding=one background=light}
 (defattrs :bg-green {:fill "#a0ffa0"})
 (defattrs :bg-yellow {:fill "#ffffa0"})
 (defattrs :bg-pink {:fill "#ffb0a0"})
@@ -522,7 +520,7 @@ blockdiag {
 
 ## Sequential
 
-```kroki {type=seqDiag}
+```kroki {diagram=seqDiag background=white}
 seqdiag {
   browser  -> webserver [label = "GET /seqdiag/svg/base64"];
   webserver  -> processor [label = "Convert text to image"];
@@ -533,7 +531,7 @@ seqdiag {
 
 ## Action
 
-```kroki {type=actdiag}
+```kroki {diagram=actdiag background=white}
 actdiag {
   write -> convert -> image
 
@@ -550,7 +548,7 @@ actdiag {
 
 ## Network
 
-```kroki {type=nwdiag}
+```kroki {diagram=nwdiag background=white}
 nwdiag {
   network dmz {
     address = "210.x.x.x/24"
@@ -571,7 +569,7 @@ nwdiag {
 
 ## Packet
 
-```kroki {type=packetdiag}
+```kroki {diagram=packetdiag background=white}
 packetdiag {
   colwidth = 32;
   node_height = 72;
@@ -598,7 +596,7 @@ packetdiag {
 
 ## Rack
 
-```kroki {type=rackdiag}
+```kroki {diagram=rackdiag background=white posh=right width=small}
 rackdiag {
   8U;
   1: UPS [2U];
@@ -611,9 +609,13 @@ rackdiag {
 }
 ```
 
+{{% pangram 13 %}}
+
+{{% pangram 11 %}}
+
 ## DitAA
 
-```kroki {type=ditaa}
+```kroki {diagram=ditaa}
       +--------+
       |        |
       |  User  |
@@ -642,7 +644,7 @@ rackdiag {
 
 ## Erd
 
-```kroki {type=erd}
+```kroki {diagram=erd background=light}
 [Person]
 *name
 height
@@ -660,7 +662,7 @@ Person *--1 Location
 
 ## Excalidraw
 
-```kroki {type=excalidraw}
+```kroki {diagram=excalidraw}
 {
   "type": "excalidraw",
   "version": 2,
@@ -1360,7 +1362,7 @@ Person *--1 Location
 
 ## D2
 
-```kroki {type=d2}
+```kroki {diagram=d2 background=light}
 D2 Parser: {
   shape: class
 
@@ -1387,7 +1389,7 @@ D2 Parser: {
 
 ## DBML
 
-```kroki {type=dbml}
+```kroki {diagram=dbml background=light}
 Table users {
   id integer
   username varchar
@@ -1415,7 +1417,7 @@ Ref: posts.user_id > users.id // many-to-one
 
 ## GraphViz
 
-```kroki {type=graphviz}
+```kroki {diagram=graphviz}
 digraph D {
   subgraph cluster_p {
     label = "Kroki";
@@ -1443,7 +1445,7 @@ digraph D {
 
 ## NOMNOML
 
-```kroki {type=nomnoml}
+```kroki {diagram=nomnoml background=light}
 [Pirate|eyeCount: Int|raid();pillage()|
   [beard]--[parrot]
   [beard]-:>[foul mouth]
@@ -1461,7 +1463,7 @@ digraph D {
 
 ## Pikchr
 
-```kroki {type=pikchr}
+```kroki {diagram=pikchr background=light padding=two}
 $r = 0.2in
 linerad = 0.75*$r
 linewid = 0.25
@@ -1522,7 +1524,7 @@ line right until even with X9 - ($r,0) \
 
 ## PlantUML
 
-```kroki {type=plantuml}
+```kroki {diagram=plantuml background=white padding=two}
 @startmindmap
 skinparam monochrome true
 + OS
@@ -1545,7 +1547,7 @@ skinparam monochrome true
 
 ## C4 with PlantUML
 
-```kroki {type=plantuml}
+```kroki {diagram=plantuml background=light padding=two}
 @startuml
 !include C4_Context.puml
 
@@ -1566,7 +1568,7 @@ Rel(banking_system, mainframe, "Uses")
 
 ## Structurizr
 
-```kroki {type=structurizr}
+```kroki {diagram=structurizr background=white padding=two}
 workspace {
     model { 
         user = person "User" 
@@ -1595,7 +1597,7 @@ workspace {
 
 ## Vega
 
-```kroki {type=vega}
+```kroki {diagram=vega background=light}
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "width": 400,
@@ -1695,7 +1697,7 @@ workspace {
 
 ## Vega Lite
 
-```kroki {type=vegalite}
+```kroki {diagram=vegalite}
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Horizontally concatenated charts that show different types of discretizing scales.",
@@ -1830,7 +1832,7 @@ workspace {
 
 ## Wavedrom
 
-```kroki {type=wavedrom}
+```kroki {diagram=wavedrom background=light padding=two}
 { signal: [
   { name: "clk",         wave: "p.....|..." },
   { name: "Data",        wave: "x.345x|=.x", data: ["head", "body", "tail", "data"] },
@@ -1842,7 +1844,7 @@ workspace {
 
 ## Wireviz
 
-```kroki {type=wireviz}
+```kroki {diagram=wireviz padding=two background=white}
 connectors:
   X1:
     type: D-Sub

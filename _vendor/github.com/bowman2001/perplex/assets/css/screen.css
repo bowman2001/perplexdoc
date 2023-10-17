@@ -435,6 +435,7 @@ q:after {
 }
 
 .link--nav, .link--nav-ext {
+  color: var(--c-nav-link);
   fill: var(--c-icon-link);
 }
 .link--nav:hover, .link--nav:focus, .link--nav:active, .link--nav-ext:hover, .link--nav-ext:focus, .link--nav-ext:active {
@@ -442,10 +443,12 @@ q:after {
 }
 
 .link--nav:hover, .link--nav:focus, .link--nav:active, .link--nav.is-active {
+  color: var(--c-nav-link-hover);
   fill: var(--c-icon-link-hover);
 }
 
 .link--nav-ext:hover, .link--nav-ext:focus, .link--nav-ext:active {
+  color: var(--c-nav-link-ext-hover);
   fill: var(--c-icon-link-ext-hover);
 }
 
@@ -454,6 +457,7 @@ q:after {
 }
 
 .link--frame {
+  color: var(--c-frame-link);
   fill: var(--c-frame-link);
 }
 .link--frame:hover, .link--frame:focus, .link--frame:active {
@@ -462,6 +466,7 @@ q:after {
 }
 
 .link--frame-ext {
+  color: var(--c-frame-link-ext);
   fill: var(--c-frame-link-ext);
 }
 .link--frame-ext:hover, .link--frame-ext:focus, .link--frame-ext:active {
@@ -564,6 +569,10 @@ h1:target .h-a:before, h2:target .h-a:before, h3:target .h-a:before, h4:target .
   overflow: hidden;
 }
 
+.img__frame--bg-white {
+  background: #fff;
+}
+
 .img__frame--bg-light {
   background: var(--c-frame-bg-1);
 }
@@ -600,22 +609,18 @@ h1:target .h-a:before, h2:target .h-a:before, h3:target .h-a:before, h4:target .
   filter: var(--f-img);
 }
 .img__c svg {
-  height: 100%;
-  width: 100%;
-}
-
-.img__c--t-logo img {
-  object-fit: contain !important;
-}
-
-.img__c svg {
   width: 100%;
   height: 100%;
+  margin: 0 auto;
 }
 
 .img--svg {
   width: 100%;
-  height: 100%;
+  height: auto;
+}
+
+.img__c--t-logo img {
+  object-fit: contain !important;
 }
 
 #l-footer .img__c {
@@ -696,7 +701,7 @@ h1:target .h-a:before, h2:target .h-a:before, h3:target .h-a:before, h4:target .
   transition: opacity 150ms ease;
 }
 
-.img--ph.lazyloaded, .img--lqip.lazyloaded {
+.img--ph.lazyloaded {
   opacity: 1;
 }
 
@@ -4659,7 +4664,8 @@ body {
 #author__title {
   grid-area: title;
 }
-#author__title h1 {
+
+.h1--author {
   font-size: 2.86rem;
   line-height: 3rem;
   padding-top: 0.42893rem;

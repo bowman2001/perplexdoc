@@ -23,7 +23,7 @@ Publishing a static website involves always two basic steps: **Build & Deploy**.
 
 Many workflows for Hugo are listed in the section [Hosting & Deployment][hd] of its documentation. In all cases we need to set the parameter `baseURL` to our domain URL in the main configuration file [{$config.yaml}](/doc/appendix/config/hugoyaml#6).
 
-The following remarks will give you an impression of two common concepts to build & deploy.
+The following remarks should give you a first impression of two common concepts.
 
 ## Use your own hardware
 
@@ -33,15 +33,13 @@ As long as you are the only one finalizing the content, it’s easy to stick to 
 hugo --minify
 ```
 
-Hugo renders the site, minifies the HTML and writes the files by default into the folder {$public}. Now, you can upload its content to your provider. That’s it. You may also transfer the files to a big provider with a **C**ontent **D**elivery **N**etwork (CDN) for worldwide minimal latency.
+Hugo renders the site, minifies the HTML and writes the files by default into the folder {$public}. You can upload its content directly to your provider. That’s it. You may also transfer the files to a big provider with a **C**ontent **D**elivery **N**etwork (CDN) for worldwide minimal latency.
 
 ## Automated Build and Continuous Deployment
 
 Special providers automate the build process with configurable virtual containers. This is especially useful for teams in need of a reliable shared build environment. The provider gets access to the teams repository (usually Git based), automatically pulls new content and (re)builds the site or just a preview. Some of them also own a CDN, which they can populate immediately after every build.
 
-A workflow for a bunch of authors and a few editors could look like this:
-
-```kroki {type=plantuml}
+```kroki {diagram=plantuml padding=two background=white caption="Workflow for some authors and a few editors on a Hugo project" attr=gm}
 @startuml
 !include C4_Context.puml
 !include C4_Container.puml
@@ -70,7 +68,7 @@ Rel(build, net, "Deploys", "finalized site" )
 @enduml
 ```
 
-This setup may also be convenient for non-commercial projects and in a simplified form for private sites with only one author/editor. Some commercial providers offer a free tier for personal or open-source use. Hugo is building sites so fast, your project may well stay in their often generous limits with several builds per day.
+This kind of setup may also be convenient for non-commercial projects and in a simplified form for private sites with only one author/editor. Some commercial providers offer a free tier for personal or open-source use. Hugo is building sites so fast, your project may well stay in their sometimes generous limits with several builds per day.
 
 **Caching resources** between builds in a container is mandatory if we include many images and don’t want to waste energy and money on their repeated processing. Processed resources are always cached by Hugo. But we need to make sure that the caching folder is stored in our repository or enable another caching mechanism between runs in a container.
 {.box-danger}

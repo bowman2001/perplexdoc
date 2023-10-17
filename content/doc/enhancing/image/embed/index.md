@@ -21,7 +21,7 @@ Layout options of enhanced embedded images.
 {.p-first}
 <!--more-->
 
-For a description of the Markdown syntax see [basic image](https://perplex.desider.at/doc/basic/image) and [enhanced image](https://perplex.desider.at/doc/improved/image/syntax). There is also a [demo with real images](/blog/image/embed)
+For a description of the Markdown syntax see [basic image](https://perplex.desider.at/doc/basic/image) and [enhanced image](https://perplex.desider.at/doc/enhancing/image/syntax). There is also a [demo with real images](/blog/image/embed)
 
 ## At the beginning
 
