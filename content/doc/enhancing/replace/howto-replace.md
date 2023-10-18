@@ -27,7 +27,7 @@ Perplex includes the following replacement codes and styles them:
 |:------------|:------------|:-----------|
 | Superscript |    {‍^3}      |    {^3}     |
 | Subscript   |    {‍_2}      |    {_2}     |
-| Keyboard    |    {‍%K}      |    {~K}     |
+| Keyboard    |    {‍~K}      |    {~K}     |
 | Variable    | {‍$variable}  | {$variable} |
 | Mark        |   {‍!mark}    |   {!mark}   |
 | Citation    |  {‍=work}     |  {=work}  |
@@ -35,11 +35,13 @@ Perplex includes the following replacement codes and styles them:
 | Conditional break | a{‍/}b |  a{/}b |
 {.normal}
  
-These codes are substituted with the help of short regular expressions in the layout template [{$replacements.html}](/doc/appendix/replacements). It processes the Hugo variable `.Content` that contains the rendered Markdown as an HTML string. The procedure is safe because Goldmark treats these codes like any other Markdown and discards any raw HTML before they are replaced.
+These codes are substituted with the help of short regular expressions in the layout template [{$replacements.html}](/doc/appendix/replacements). It processes the Hugo variable `.Content` that contains the rendered Markdown as an HTML string. 
+
+The substitutions are safe because Goldmark checks these codes like any other Markdown and discards any raw HTML before they are replaced.
 
 ## Available as a module
 
 The replacement template is available in a separate repository: [hugo-mod-replacements](https://github.com/bowman2001/hugo-mod-replacements).
 
-**The method is reliable but a hack**. These codes can’t be parsed by Markdown renderers. A better solution would be to add [extensions for Goldmark](https://github.com/yuin/goldmark/tree/master/extension) and for many elements there already is a relatively common syntax in other Markdown flavors. If they would be available for Goldmark, we could run a regex parser for the last time on these replacements and change them into regular extended syntax.
+**These substitutions are reliable but a hack**. The codes can’t be parsed by Markdown renderers. A better solution would be to add [extensions for Goldmark](https://github.com/yuin/goldmark/tree/master/extension) and for many elements there already is a relatively common syntax in other Markdown flavors. If they would be available for Goldmark, we could run a regex parser for the last time on these replacements and change them into regular extended syntax.
 {.box-info}

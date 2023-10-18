@@ -11,7 +11,7 @@ menu:
     parent: replace
     pre: drag_handle
 categories: [markdown]
-tags: [replacement]
+tags: [linebreak, replacement]
 weight: 490
 ---
 
