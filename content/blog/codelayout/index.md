@@ -53,7 +53,7 @@ type NodeRenderer interface {
 ```
 
 {{% pangram 7 %}}
-{.inline .placeholder data-pagefind-ignore="all"}
+{.placeholder data-pagefind-ignore="all"}
 
 ```bash {.lh15 .right}
 ├── archetypes
@@ -115,7 +115,7 @@ type NodeRenderer interface {
 
 ## In lists 
 
-- List entries are indented and the code block gets smaller
+- List entries are indented and code blocks fit inside.
   
   ```md
   The HTML tag at the **beginning** of code is `<code>`.

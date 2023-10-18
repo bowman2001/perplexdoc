@@ -74,7 +74,16 @@ Because Markdown is simple, the resulting HTML also is. Perplex offers many styl
 : are enclosed in two curly braces and angle brackets — like `{{</* shortcode */>}}`. They can take input parameters and allow to extend Markdown with arbitrary HTML structures. They are powerful but tend to get complicated quickly. Perplex ships with some shortcodes, but only for those cases, where a replacement or an attribute can’t do the job. If Hugo already provides a built-in shortcode, its established syntax is preserved as good as possible.
 {.dl-loose}
 
-## Structured by YAML
+## Structured by flat file data parameters
+
+The complete navigation and all other page layout elements besides the content are controlled by meta-data parameters:
+
+Site configuration
+: Parameters for the usual site administration are contained in Hugo’s site-wide [configuration][conf] files. Parameters for the fine-grained configuration of modules reside in their own configuration files, which may be overridden by project files with the same name.
+
+Page parameters
+: are set directly in the front-matter of the Markdown files. Every file starts with a data block, which is enclosed by three dashes `---`.
+{.dl-loose}
 
 ```yaml {.left-in-half}
 ---
@@ -87,16 +96,7 @@ What It Is:
 ---
 ```
 
-The complete navigation and all other page layout elements besides the content are controlled by meta-data parameters.
-
 The theme relies on [**YAML**](https://yaml.org) to format the data, because it has the widest support. The included skeleton templates for new content files – the [archetypes](doc/appendix/archetypes) – are written in YAML. But Hugo also processes meta-data formatted by **TOML** and **JSON** and can convert front-matter data between these three formats.
-
-Site configuration
-: Parameters for the usual site administration are contained in Hugo’s site-wide [configuration][conf] files. Parameters for the fine-grained configuration of modules are 
-
-Page parameters
-: are set directly in the front-matter of the Markdown files. Every file starts with a YAML block, which is enclosed by three dashes `---`.
-{.dl-loose}
 
 Despite its successful efforts to make data formatting as simple as possible, YAML still needs to adhere to strict grammar. It’s sensitive to the correct indentation of the keys.
 
@@ -106,11 +106,16 @@ Front-matter for a documentation page for example contains usually around 15--20
 
 ## In case of problems
 
-There are **two** repositories --- one for the theme itself and one for the documentation.
+There are **two** main repositories --- one for the theme itself and one for the documentation.
+{.inline}
+
+{{< mnote >}}The theme includes a bunch of modules with their own repositories, but they don’t need to concern everyone working with this theme.{{< /mnote >}}
 
 ### Having trouble with the Theme?
 
-When you encounter a bug in the templates or miss some functionality, the [repository for the theme][theme] is the place to report the problem. Have a look at the already existing [issues][issue], please. If your problem or proposal is not already listed, I’m grateful for a new issue and happy to discuss it there. Should you like to improve the functionality of Perplex, you are very welcome.
+When you encounter a bug in the templates or miss some functionality, the [repository for the theme][theme] is the place to report the problem. Have a look at the already existing [issues][issue], please. If your problem or proposal is not already listed, I’m grateful for a new issue and happy to discuss it there.
+
+Should you like to improve the functionality of Perplex yourself, you are very welcome!
 
 ### Having trouble with the Documentation?
 
