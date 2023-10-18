@@ -14,10 +14,10 @@ tags: [image]
 weight: 150
 ---
 
-The CommonMark image syntax is simple and the theme distinguishes between two possible image positions: **stand-alone** & **embedded**.
+The theme distinguishes between two possible image positions: **stand-alone** & **embedded**.
 {.p-first} <!--more-->
 
-You can [enhance the image layout](doc/enhancing/image) in many ways. This page introduces only the basic syntax and its layout.
+You can [enhance the image layout](doc/enhancing/image) in many ways. This page introduces only the basic syntax and the default layout.
 
 ## Syntax
 
@@ -78,7 +78,7 @@ By surrounding an image element with empty lines it becomes a Markdown block ele
 containing the image
 ```
 
-When we place an image inside our paragraph text–usually at the beginning–it’s embedded as a float.
+When we place an image inside our paragraph text it gets embedded as a float.
 
 ## Layout
 

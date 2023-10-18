@@ -2,7 +2,7 @@
 authors: [Georg Makowski]
 title: Search
 date: 2023-07-04T18:18:12+02:00
-categories: [External]
+categories: [Design]
 tags: [search]
 ---
 

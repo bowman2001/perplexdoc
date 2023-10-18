@@ -40,3 +40,11 @@ The horizontal rule is depicted by three asterisks or three hyphens at the begin
 
 {{% pangram 4 %}}
 {.placeholder data-pagefind-ignore="all"}
+
+We can also emphasize a hero quote with surrounding rules:
+
+- - - 
+> {{% pangram 5 %}}
+> --- Z. Bubblebrox
+{.blockquote-hero data-pagefind-ignore="all"}
+- - -

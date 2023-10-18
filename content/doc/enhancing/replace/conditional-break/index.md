@@ -10,8 +10,8 @@ menu:
     name: Conditional Break
     parent: replace
     pre: drag_handle
-categories: [design]
-tags: [replacement, fluid-responsive]
+categories: [markdown]
+tags: [replacement]
 weight: 490
 ---
 

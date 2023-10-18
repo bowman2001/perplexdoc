@@ -21,7 +21,7 @@ A single word or short piece of text is usually quoted in the running text and i
 
 Some quotes should attract immediate attention while scanning the page. These are **hero quotes** and Perplex provides the [attribute](/doc/enhancing/attribute) `{.blockquote-hero}` to style them.
 
-## Inline Quotes
+## Inline Quote
 
 Quotes in the running text just need to be enclosed by quotation marks.
 
@@ -32,7 +32,9 @@ But our keyboard usually doesn't show these typographically correct _curly_ quot
 
 ### Substitution of English quotation marks
 
-Hugo replaces the typographically dumb straight quotes with the correct curly ones by default — this is the responsibility of the  [typographer extension](/doc/extended/typographer). We can use {~"} — straight quotes — like this:
+Hugo replaces the typographically dumb straight quotes by default with the correct curly ones of the English language. This is the responsibility of the [typographer extension](/doc/extended/typographer). 
+
+We can simply use {~"} — straight quotes — like this:
 
 `"An inline quote"`&emsp;for&emsp;"An inline quote"
 {.p-big}
@@ -42,38 +44,55 @@ And a single word or a quote inside a quote is marked with {~\'} — single stra
 `"A quote 'inside'"`&emsp;for&emsp;"A quote 'inside'"
 {.p-big}
 
-### In French, Swiss. and German (partially)
+### Substitution for other languages
+
+The substitutions of the typographer can be specifically determined in the markup section for the Goldmark renderer. (See [Hugo docs](https://gohugo.io/getting-started/configuration-markup/#goldmark))
+
+#### Angled quotes in French, Swiss, and German (partially)
 
 We can open French and Swiss quotes with two {~<} angled brackets and close them with two {~>} in the other direction. They get replaced with nice guillemets (not guillemots!).
 
 `<<Pardon my French>>`&emsp;for&emsp;<<Pardon my French>>
 {.p-big}
 
-In German publishing we usually find guillemets the other way around:
+In German publishing we sometimes use guillemets the other way around:
 
 `>>Zahnstocher<<`&emsp;for&emsp;>>Zahnstocher<<
 {.p-big}
 
-We get into trouble with these, when we start a line with `>>`, because the `>` is also the sign for a [quotation block](#blockquote). We can begin the line with an invisible entity like the zero width joiner `&zwj;` for a quick workaround:
+We get into trouble with these, when we start a line with `>>`, because the `>` is also the sign for a [quotation block](#blockquote).
+
+A good solution for a site with only angled quotes is to configure the normal quote replacements of the typographer as angled quotes.
+{.box-info}
+
+In case we need the reversed angled quotes only in a few cases, we can begin the line with an invisible entity like the zero width joiner `&zwj;` before two angles as a workaround:
 
 &zwj;>>Noch einen Zahnstocher, bitte!<<
 {.p-big}
 
 But now we miss out on the micro-typographic feature of [hanging quotes](#hanging-quotes).
 
-### General Solutions
+### General but maybe complicated solution
 
-Because the typographer can't handle other languages, we need to think about a way to include them directly
+There are some reasons not to rely (always) on typographic substitution. They aren’t compelling for every project, but may be considerable for yours.
 
-Keyboard Shortcuts
-: We can learn key combinations to include often needed punctuation. Unfortunately, they depend on the operating system and the keyboard layout. On some systems, they are relatively easy to remember, on others, they are practically useless. But you could give it at least a try and look them up for your configuration.
+1. If we want to transform our Markdown content with the help of other rendering software, we may not find a substitution engine working in the same way as Hugo’s typographer.
+
+2. The substitution of punctuation like the apostrophe is unreliable for rare edge cases, where the correct substitution does not only depend on the place of the quotation mark in the content, but also on its meaning.
+
+The only alternative then, is to write the correct punctuation yourself or to use a Markdown editor capable of transforming straight quotes on the fly like some word processors do.
+
+There are two ways to write correct punctuation and other special characters manually:
+
+[Keyboard Shortcuts](/doc/appendix/german-punctuation)
+: These are key combinations for special characters which depend unfortunately on the operating system and the keyboard layout. On some systems, they are relatively easy to remember. On others, they are very weird and practically useless.
 
 [HTML entities](/doc/basic/specialchar)
 : We get the German _Gänsefüßchen_&ensp;&bdquo;&nbsp;and&nbsp;&ldquo;&nbsp; with `&bdquo;` and `&ldquo;` for example. Entities look weird in text files, but the result is as good as the original Unicode characters.
 {.dl-loose}
 
 {{< mnote up=12 >}}
-It’s possible to replace them with Unicode characters and maybe your editor has a plugin for that.
+It’s possible to replace entities with Unicode characters and maybe your editor has a plugin for that.
 {{< /mnote >}}
 
 ## Blockquote
@@ -94,9 +113,9 @@ The result is an indented block with a slightly smaller font size and two paragr
 >
 > A very big box sailed up then whizzed quickly from Japan. My faxed joke won a pager in the cable TV quiz show.
 
-Blockquotes may include additional markup because we need emphasis, inline quotes, links, footnotes, and other inline markup and maybe even lists inside quotations. The CommonMark specification allows using all elements of Markdown inside of a blockquote.
+Blockquotes may include additional markup like emphasis, inline quotes, links, footnotes, and other inline markup and maybe even lists. The CommonMark specification allows using all elements of Markdown inside of a blockquote.
 
-**But consider this in practice:** Nested block quotes or tables inside of block quotes? They would become an aesthetic nightmare! This theme does not support every possibility. Feel free to file an issue in the theme repository, if an essential option has no suitable layout.
+**But consider this in practice:** Nested block quotes or tables inside of block quotes? This theme does not support every possibility. Feel free to file an issue in the theme repository, if an important option has no suitable layout.
 
 ## Hero quote
 
