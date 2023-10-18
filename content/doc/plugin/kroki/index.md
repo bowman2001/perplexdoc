@@ -1547,7 +1547,7 @@ skinparam monochrome true
 
 ## C4 with PlantUML
 
-```kroki {diagram=plantuml background=light padding=two}
+```kroki {diagram=plantuml background=white padding=two}
 @startuml
 !include C4_Context.puml
 

@@ -1,0 +1,2 @@
+src: img/erda-estremera-eMX1aIAp9Nw-unsplash.jpg
+caption: "Hugo also provides the shortcode {$figure} for this purpose and the theme had its own corresponding version. Because the new solution is much more convenient and fits loads of already existing Markdown, I have abandoned it. Should you still need the shortcode, please file an issue describing your use case."

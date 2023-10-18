@@ -1,7 +1,7 @@
 ---
 authors: [Georg Makowski]
 title: The local Workflow
-description: Write while watching instant previews 
+description: Write and watch instant local previews
 subtitle: false
 date: 2022-09-11T14:58:16+02:00
 weight: 35
@@ -22,7 +22,7 @@ tags: [workflow]
 While working on our content, we like to examine the result. To generate an immediate local preview, we run Hugo in server mode.
 {.p-first} <!--more-->
 
-The following instructions assume, that you have opened a terminal and are in your project root containing a copy of this documentation project.
+The following short tutorial assumes, that you have opened a terminal and are in your project root containing a copy of this documentation project.
 
 ## Hugo’s server mode
 
@@ -80,7 +80,7 @@ Our Markdown content begins after the front-matter.
 
 All new files contain this placeholder with a special [attribute](/doc/enhancing/attribute/howto) for the [first paragraph](/doc/page/standfirst) and the {$more} tag to mark this first paragraph as the page summary. You are encouraged to replace this placeholder with your summary now or later. It’s essential for cards and other page previews.
 
-Your following content may be simple text without markup in the beginning.
+Your content may be simple text without any markup in the beginning.
 
 As soon as you save your file, Hugo’s server will update your site in the browser. Should you make mistakes, Hugo will display a descriptive error message on its console or in the browser.
 
