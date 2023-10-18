@@ -15,6 +15,7 @@ resources:
     name: favicon
     params:
       width: micro 
+      box: none
 categories: [Theme]
 tags: [Favicon]
 ---

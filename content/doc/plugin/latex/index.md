@@ -23,7 +23,7 @@ Perplex includes the render engine [\\(\KaTeX\\)][katex] on demand into pages wi
 {.inline}
 
 {{< mnote >}}
-There is another reliable LaTeX render engine for the Web: [MathJax](https://www.mathjax.org/). I did choose KaTeX for performance reasons.
+There is another reliable LaTeX render engine for the Web: [MathJax](https://www.mathjax.org/). I chose KaTeX for performance reasons.
 {{< /mnote >}}
 
 ### Inline

@@ -27,7 +27,7 @@ We can preprocess images (rotate, change ratio, and zoom) and have several optio
 
 There are two different ways to place an image in Markdown — **stand-alone** or **embedded**. The theme styles them differently by default (see [basic syntax](/doc/basic/image)).
 
-CommonMark can handle only 3 parameters. To generate a caption and change the layout etc., the theme offers many additional parameters. There are three ways to associate them with your images:
+CommonMark can handle only 3 parameters. To generate a caption and change the layout etc., the theme offers many additional parameters. There are three ways to associate them with your usual images:
 
 1. Resource parameters
 
@@ -35,6 +35,11 @@ CommonMark can handle only 3 parameters. To generate a caption and change the la
 
 3. Query string parameters attached to the file name
 {.col2}
+
+Additionally there are diagrams generated from textual descriptions:
+
+4. Codeblock attributes
+{.ol-continue}
 
 ## Additional parameters
 
