@@ -7,5 +7,6 @@ resources:
 - src: erik-mclean-PiVlGQLbbYo-unsplash.jpg
   name: featured
   params: 
-    alt: A proverbial menu 
+    alt: A proverbial menu
+    zoom: 1.3
 ---

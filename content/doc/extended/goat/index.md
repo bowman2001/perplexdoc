@@ -22,17 +22,25 @@ GoAt is not directly an extension of the Markdown renderer, but a special code b
 
 [Markdeep](http://casual-effects.com/markdeep/) provides the documentation to create ASCII diagrams for GoAT. We need to surround them with a [fenced code block](/doc/basic/code#code-block) and the language identifier `goat` like this:
 
-{{< demo "And the ASCII gets transformed into a nice SVG-diagram:" >}}
+```md
 ```goat
-                  _______
-.---------.      /      /    .-----.
-|  Write  +-+-->/ Edit +-+->| Share |
-'---------' ^  /______/  |   '-----'
-            |            |
-             '----------'
+                     _________
+.---------.         /        /        .-------.
+|  Write  +---+--->/  Edit  +---+--->|  Share  |
+'---------'   ^   /________/    |     '-------'
+              |                 |
+               '---------------'
 ```
-{{< /demo >}}
 
-{{< mnote up=22 >}}
-The font layout of GoAT is hard-coded into the resulting SVG. The typography should get adapted to the theme. But this looks complicated to me.
-{{< /mnote >}}
+Then, the ASCII-diagram gets rendered into a nice SVG diagram:
+
+```goat
+                     _________
+.---------.         /        /        .-------.
+|  Write  +---+--->/  Edit  +---+--->|  Share  |
+'---------'   ^   /________/    |     '-------'
+              |                 |
+               '---------------'
+```
+
+These diagrams are always displayed with the full text width, there is currently no way to change their layout as for other diagrams in this theme.

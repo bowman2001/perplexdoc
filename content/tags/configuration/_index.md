@@ -8,4 +8,6 @@ resources:
   name: featured
   params: 
     alt: Person configuring his car on a touchscreen
+    zoom: 1.6
+    anchor: TopRight
 ---

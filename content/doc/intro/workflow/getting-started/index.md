@@ -16,7 +16,7 @@ resources:
   - src: damian-markutt-Dhmn6ete6g8-unsplash.jpg
     name: featured
     params:
-      alt: Colorful sunrise in the amazing Rätikon Mountain-Range, Switzerland
+      alt: Colorful sunrise in the Rätikon Mountain-Range, Switzerland
       caption: Rätikon Mountain-Range
 ---
 

@@ -21,7 +21,7 @@ It may take a little while to get your head around Hugo’s content structure. I
 {.inline}
 
 {{< mnote >}}
-**By the way:** This theme is focused on Markdown content. But Hugo also offers to process HTML files, data, and some other content formats.  
+**By the way:** This theme is primarily focused on Markdown content but Hugo also offers to process some other markup formats, hand-crafted HTML content, and data structures. 
 {{< /mnote >}}
 
 ## Folder structure
@@ -78,7 +78,7 @@ categories: []
 tags: []
 ```
 
-When the number of entries rises, we need some navigation structure for these types. We best provide it by adding **taxonomies**{^\*}. Hugo’s default taxonomies are the usual **categories** and **tags**. Every new front-matter already includes the parameter keys and an empty list `[]`.
+When the number of entries rises, we need some navigation structure for these types. We best provide it by adding **taxonomies**{^\*}. Hugo’s default taxonomies are the usual **categories** and **tags**. Every new front-matter already includes these keys and an empty list `[]`.
 
 {{< mnote up=5 star=1 >}}
 We can also add sub-folders and modify the URL structure. To provide an optional separate list view for a sub-folder, we also need to create a [branch file `_index.md`](doc/intro/workflow/content#branch-bundles) inside. Because taxonomies are the preferred structure for postings in Perplex, links to these additional sections only show up in the breadcrumbs at the bottom of the pages.
@@ -149,4 +149,4 @@ After the front-matter {$\_index.md} may contain general content about its secti
 
 ### Page Bundles {#bundles}
 
-[Branch bundles](#branch-bundles) and [leaf bundles](#leaf-bundles) are both called **page bundles**, which share the possibility to store resource files. Other than the page bundles the branch bundles for list pages can’t retrieve their own resources from sub-folders, because these may well contain more page bundles.
+[Branch bundles](#branch-bundles) and [leaf bundles](#leaf-bundles) are both called **page bundles**, which share the possibility to store resource files. Besides that, they are very different (see above).

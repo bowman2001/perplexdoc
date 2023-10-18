@@ -72,29 +72,6 @@ In case we need the reversed angled quotes only in a few cases, we can begin the
 
 But now we miss out on the micro-typographic feature of [hanging quotes](#hanging-quotes).
 
-### General but maybe complicated solution
-
-There are some reasons not to rely (always) on typographic substitution. They aren’t compelling for every project, but may be considerable for yours.
-
-1. If we want to transform our Markdown content with the help of other rendering software, we may not find a substitution engine working in the same way as Hugo’s typographer.
-
-2. The substitution of punctuation like the apostrophe is unreliable for rare edge cases, where the correct substitution does not only depend on the place of the quotation mark in the content, but also on its meaning.
-
-The only alternative then, is to write the correct punctuation yourself or to use a Markdown editor capable of transforming straight quotes on the fly like some word processors do.
-
-There are two ways to write correct punctuation and other special characters manually:
-
-[Keyboard Shortcuts](/doc/appendix/german-punctuation)
-: These are key combinations for special characters which depend unfortunately on the operating system and the keyboard layout. On some systems, they are relatively easy to remember. On others, they are very weird and practically useless.
-
-[HTML entities](/doc/basic/specialchar)
-: We get the German _Gänsefüßchen_&ensp;&bdquo;&nbsp;and&nbsp;&ldquo;&nbsp; with `&bdquo;` and `&ldquo;` for example. Entities look weird in text files, but the result is as good as the original Unicode characters.
-{.dl-loose}
-
-{{< mnote up=12 >}}
-It’s possible to replace entities with Unicode characters and maybe your editor has a plugin for that.
-{{< /mnote >}}
-
 ## Blockquote
 
 Every line of a block quotation has to start with a **right angled bracket**, empty lines included:

@@ -86,7 +86,7 @@ Thankfully, since version {$0.108.0} Hugo can distinguish both situations and al
 
 The theme offers many layout variations for both kinds of images: We can place embedded images on the left or right inside the text block and make them smaller than the default width you see here. Small stand-alone images may appear in the margin of the following text block. And large ones may be stretched completely from the left margin to the right.
 
-You can find all options in the section for [enhancing images](/doc/enhancing/images).
+You can find all options in the section for [enhancing images](/doc/enhancing/image).
 {.clear}
 
 ### How do we wrap lines? {#wrap}

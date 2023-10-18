@@ -36,12 +36,8 @@ Without that, we can still use the Markdown task list, but we can change it only
 ```
 
 ## Layout
-The task list gets rendered into a static list with inactive input elements. By the time of this writing the resulting HTML is not properly styled:
+The task list gets rendered into a static list with inactive input elements:
 
 - [x] First entry of a task list, which has already been completed.
 - [ ]  Second entry
 - [ ]  Third entry
-
-{{< mnote up=11 >}}
-With the coming CSS parent selector {$:has} it should be easy to use the checkboxes as list markers and style the task list in a better way.
-{{< /mnote >}}
