@@ -10,19 +10,22 @@ menu:
     name: Kroki
     parent: plugin
     pre: account_tree
-categories: [markdown, external]
-tags: [diagram]
+categories: [module, markdown]
+tags: [diagram, mermaid]
 ---
 
-Generate SVG diagrams with the Kroki service by writing textual diagram descriptions into Markdown code blocks.
+Generate SVG diagrams with the Kroki service by placing textual diagram descriptions into Markdown code blocks.
 {.p-first}
 <!--more-->
 
- [Kroki](https://kroki.io) can produce a wide variety of diagrams from textual descriptions by calling their API.
+ [Kroki](https://kroki.io) produces a growing number of diagram types from textual descriptions. Their public server is free of charge and its software gets published as open-source. You can run our own instance in case you don’t want to rely on theirs.
 
- Joe Mooring published an article about this service including a template for Hugo. This theme includes his template with some adaptions to generate a fitting style. Please, read [his article][veriphor] to learn about its usage.
+ This theme includes a codeblock render hook which allows to enhance the diagrams in a similar way as images.
+ {.inline}
 
- Here follow examples of all currently supported diagram types which are taken from the Kroki page.
+ {{< mnote >}}Joe Mooring published [an article about diagrams](https://www.veriphor.com/articles/diagrams/) including a codeblock render hook which inspired this one.{{< /mnote >}}
+
+ The following examples of supported diagram types are taken from the Kroki page.
 
 ## Mermaid
 
@@ -1872,5 +1875,3 @@ connections:
     - X1: 5
     - W1: s
 ```
-
-[veriphor]: https://www.veriphor.com/articles/diagrams/

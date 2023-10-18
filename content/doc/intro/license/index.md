@@ -35,7 +35,6 @@ The documentation
 ## Adopted Hugo Templates
 
 [render-link](https://www.veriphor.com/articles/link-and-image-render-hooks/)
-[render-codeblock-kroki](https://www.veriphor.com/articles/diagrams)
 [toc-walk-headings](https://www.veriphor.com/articles/tables-of-content/)
 : have been released by [Veriphor](https://www.veriphor.com) under the Apache 2.0 License and their motivation, function, and usage are documented there.
 {.dl-loose3}

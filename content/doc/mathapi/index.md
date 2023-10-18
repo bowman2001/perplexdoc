@@ -10,8 +10,8 @@ menu:
     name: Mathapi
     parent: plugin
     pre: functions
-categories: [Markdown]
-tags: [diagram]
+categories: [module, markdown]
+tags: [diagram, latex]
 draft: true
 ---
 
