@@ -1,8 +1,6 @@
 site: public
 
 exclude_selectors:
-- ".md table"
-- ".md pre"
 - ".katex"
 - "[id^='fnref']"
 - "[class='footnote-backref']"

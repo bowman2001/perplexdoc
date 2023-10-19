@@ -11,5 +11,5 @@
   "main": "index.js",
   "repository": "https://github.com/bowman2001/perplexdoc",
   "author": "Georg Makowski <gm@desider.at>",
-  "license": "Apache 2.0"
+  "license": "Apache-2.0"
 }

@@ -2,13 +2,13 @@ HTTP/2.0 200 OK
 Alt-Svc: h3=":443"; ma=86400
 Cache-Control: public, max-age=432000
 Cf-Cache-Status: DYNAMIC
-Cf-Ray: 80104c5d7c5735e6-FRA
+Cf-Ray: 818a38f51efc373f-FRA
 Content-Type: image/svg+xml
-Date: Sun, 03 Sep 2023 19:11:23 GMT
-Expires: Fri, 08 Sep 2023 19:11:23 GMT
-Last-Modified: Wed, 16 Aug 2023 12:24:15 GMT
+Date: Thu, 19 Oct 2023 15:58:26 GMT
+Expires: Tue, 24 Oct 2023 15:58:26 GMT
+Last-Modified: Sat, 23 Sep 2023 16:57:28 GMT
 Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=jJEGb21hxQGq69Rpo3VCXq2n9sfc6SuWNc9Vq3fWlj81GOeDZunhBfb9EhIrWqvXC9tC9UqsYDY2cScDjAD6soI0BcitXvM4vSy%2BX50XgcSxQUJWlB5Rt1Fj2skLYin5aISsg%2BJ8JA%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=H2aMDDzYl6x3mC3LQCyDusecR04x6wQTYXch32Gvi9un6U1XsxrhmNFjNFG6KME%2BCPZV0dSL%2BEJEOtQyWF7yvQDfSAlwI4qrWmfTkUIuCvz1dDQO%2Flg%2BzI9DZT4B6J8D%2F2UwXXhFUA%3D%3D"}],"group":"cf-nel","max_age":604800}
 Server: cloudflare
 
 <svg xmlns='http://www.w3.org/2000/svg' class="pikchr" viewBox="0 0 619.92 193.68">

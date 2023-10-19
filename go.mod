@@ -6,5 +6,5 @@ toolchain go1.21.1
 
 require (
 	github.com/bowman2001/hugo-mod-csp v0.1.2 // indirect
-	github.com/bowman2001/perplex v0.11.1 // indirect
+	github.com/bowman2001/perplex v0.12.0 // indirect
 )

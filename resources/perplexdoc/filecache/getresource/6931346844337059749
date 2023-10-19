@@ -2,13 +2,13 @@ HTTP/2.0 200 OK
 Alt-Svc: h3=":443"; ma=86400
 Cache-Control: public, max-age=432000
 Cf-Cache-Status: DYNAMIC
-Cf-Ray: 80104c559f9d35e6-FRA
+Cf-Ray: 818a38ee5e15373f-FRA
 Content-Type: image/svg+xml
-Date: Sun, 03 Sep 2023 19:11:23 GMT
-Expires: Fri, 08 Sep 2023 19:11:23 GMT
-Last-Modified: Wed, 16 Aug 2023 12:24:15 GMT
+Date: Thu, 19 Oct 2023 15:58:25 GMT
+Expires: Tue, 24 Oct 2023 15:58:25 GMT
+Last-Modified: Sat, 23 Sep 2023 16:57:28 GMT
 Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CMsrrmkIQ235AvGvFpPsRnmycjcUz8nvn5tBlRStCsvPGkNUQEi23QZEEmlyy%2BohePnKQVt%2FcWmA6p4QyB%2FAmyLM8oafaxD8g6V1%2BnvKQkKudjzQrNp3FjAi1uVgCVAd%2FrRgcfsjBg%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2xvCkIoPI7Thx3o9%2B%2BwlCg5w7KYUqIyXq24xe6wiSVMk1NGW%2BUy3KEXC9lNH949O2cGVulz7HEw4NFDLz%2FtvJ6pPv6vttkzI3evDXat%2BjMrjXraoveIMpFp7cgzP1H8EUK3VCBgFSw%3D%3D"}],"group":"cf-nel","max_age":604800}
 Server: cloudflare
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 560" width="840" height="560">
@@ -18,11 +18,11 @@ Server: cloudflare
     <style class="style-fonts">
       @font-face {
         font-family: "Virgil";
-        src: url("https://unpkg.com/@excalidraw/excalidraw@0.15.2/dist/excalidraw-assets/Virgil.woff2");
+        src: url("https://unpkg.com/@excalidraw/excalidraw@0.15.3/dist/excalidraw-assets/Virgil.woff2");
       }
       @font-face {
         font-family: "Cascadia";
-        src: url("https://unpkg.com/@excalidraw/excalidraw@0.15.2/dist/excalidraw-assets/Cascadia.woff2");
+        src: url("https://unpkg.com/@excalidraw/excalidraw@0.15.3/dist/excalidraw-assets/Cascadia.woff2");
       }
     </style>
   </defs>
