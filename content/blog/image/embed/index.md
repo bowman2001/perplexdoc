@@ -4,7 +4,7 @@ title: Embedded images
 description: Demo for enhanced inline images
 subtitle: false
 featured: micro
-date: 2023-03-23T10:10:51+01:00 
+date: 2023-03-23T10:10:51+01:00
 categories: [markdown]
 tags: [image, embedded]
 series: [images]

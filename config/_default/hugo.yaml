@@ -49,3 +49,7 @@ caches:
   modules:
     dir: :cacheDir/modules
     maxAge: -1
+
+build:
+  buildStats:
+    enable: true
