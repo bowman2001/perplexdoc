@@ -10,7 +10,6 @@ node_modules
 /.vscode
 /.run
 .hugo_build.lock
-hugo_stats.json
 /config/development
 /script
 perplexdoc.code-workspace
