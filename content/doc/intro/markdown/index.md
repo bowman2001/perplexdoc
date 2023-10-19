@@ -12,14 +12,23 @@ title: Markdown
 weight: 15
 featured: markdownlogo
 categories: [Getting started, Markdown]
-tags: [Linebreak, Image]  
+tags: [Linebreak, Image]
 ---
 
 Markdown has become the favored markup language to structure text files. With good cause: The Markdown syntax is very intuitive.
 {.p-first} <!--more-->
 
-Markdown files consist of plain text marked up with a small set of ASCII signs. We can read and change them with any text editor. They usually end with the suffix ›{$md}‹.
-{.inline}
+```markdown {.left}
+Welcome to Markdown formatting!
+-------------------------------
+
+CommonMark is **easy** to 
+[learn](http://CommonMark.org/help). 
+```
+
+Markdown files contain plain text marked up with a small set of ASCII signs. We can read and change them with any text editor. 
+
+Markdown files get the suffix ›{$md}‹.
 
 {{< mnote >}}
 The suffixes ›{$mdown}‹ and ›{$markdown}‹ also indicate Markdown but they are rarely used.

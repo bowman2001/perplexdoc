@@ -54,15 +54,16 @@ Please remember the often neglected sets of general entities, which are meant to
 
 Good typography needs the right amount of space between type. For the most part this is the job of the web designer. But the horizontal spacing between words and characters remain the responsibility of the editor. The following HTML entities are available in Plex and many other good fonts:
 
-| Name                    | Entity Code |  Example   |
-|:------------------------|:-----------:|:----------:|
+| Name                      | Entity Code |  Example   |
+| :------------------------ | :---------: | :--------: |
 | No space (for comparison) |             |     xx     |
-| Hair space              | `&hairsp;`  | x&hairsp;x |
-| Thin space              | `&thinsp;`  | x&thinsp;x |
-| Normal space            |  {~Space}   |    x x     |
-| en space (wide as an n) |  `&ensp;`   |  x&ensp;x  |
-| em space (wide as an m) |  `&emsp;`   |  x&emsp;x  |
-| num space               |  `&numsp;`  | 1&numsp;3  |
+| Hair space                | `&hairsp;`  | x&hairsp;x |
+| Thin space                | `&thinsp;`  | x&thinsp;x |
+| Normal space              |  {~Space}   |    x x     |
+| Punctuation space         | `&puncsp;`  | x&puncsp;x |
+| en space (wide as an n)   |  `&ensp;`   |  x&ensp;x  |
+| numeric space             |  `&numsp;`  | x&numsp;x  |
+| em space (wide as an m)   |  `&emsp;`   |  x&emsp;x  |
 {.normal}
 
 ### Breaking Words — or not
@@ -71,19 +72,19 @@ The major browsers do support hyphenation for a few languages, Perplex includes 
 
 The non-breaking entities are meant for situations where characters or words should never be separated by a new line.
 
-| Name                      |    Code    |  Example   |
-|:--------------------------|:----------:|:----------:|
-| Soft hyphen               |   `&shy;`  |  x&shy;x   |
-| Non breaking space        |  `&nbsp;`  |  x&nbsp;x  |
-| Narrow non breaking space | `&#x202f;` | x&#x202f;x |
-| Zero width joiner         | `&zwj;`    | x&zwj;x    |
+| Name                         |    Code    |  Example   |
+| :--------------------------- | :--------: | :--------: |
+| Soft hyphen (optional break) |  `&shy;`   |  x&shy;x   |
+| Zero width joiner            |  `&zwj;`   |  x&zwj;x   |
+| Narrow non breaking space    | `&#x202f;` | x&#x202f;x |
+| Non breaking space           |  `&nbsp;`  |  x&nbsp;x  |
 {.normal}
 
 ## Emojis
 
-Hugo supports emojis :woozy_face: (`:‍woozy_face:`) in Markdown content, if we set the global parameter [`enableEmoji`][he] to `true`. 
+Hugo supports emojis :face_with_tears_of_joy: (`:‍‍face_with_tears_of_joy:`) in Markdown content, if we set the global parameter [`enableEmoji`][he] to `true`. 
 
-There are a lot of them according to this [cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/). Have fun!
+There are quite a lot of them according to this [cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/). Have fun!
 
 [plexspec]: https://ibm.com/plex/specs
 

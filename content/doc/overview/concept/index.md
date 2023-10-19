@@ -63,8 +63,8 @@ Recent copies of all module dependencies are available in the {$_vendor} folder 
 
 ## Support & development
 
-There will be no public support channel in the foreseeable future because I won’t be able to maintain it. Improving this theme takes all my spare time. Support and collaborative development will only work bidirectional. I will not answer private questions for help.
+There is no public support channel because I can’t maintain it. Improving this theme takes all my spare time. Support and collaborative development will only work bidirectional. I will not answer private questions.
 
-Should you miss some information in the docs, find a bug in the theme templates, or have a suggestion for an improvement or a feature you may please file an official issue in the repositories (&rightarrow; [Introduction](doc/intro/perplex#in-case-of-problems)).
+Should you miss some information in the docs, find a bug in the templates, or have a suggestion, please file an official issue in the repositories (&rightarrow; [Introduction](doc/intro/perplex#in-case-of-problems)).
 
-In case there are essential contributions to the theme or the modules it depends on, I would love to turn this effort into a community project and change the license holder accordingly to assure, that no contribution is in vain.
+Should you make bigger contributions, I would love to turn this effort into a community project and change the license holder accordingly to assure, that they are not in vain.

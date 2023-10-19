@@ -1,6 +1,6 @@
 ---
-title: Getting-Started
-description: "**Placeholder**: Short category description"
+title: Getting Started
+description: "Introductory material"
 subtitle: true
 date: 2023-10-18T21:26:59+02:00
 resources: 

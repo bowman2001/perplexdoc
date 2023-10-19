@@ -14,10 +14,10 @@ tags: [image]
 weight: 150
 ---
 
-The theme distinguishes between two possible image positions: **stand-alone** & **embedded**.
+There is only one Markdown image element but the theme distinguishes between two possible positions: **stand-alone** & **embedded**.
 {.p-first} <!--more-->
 
-You can [enhance the image layout](doc/enhancing/image) in many ways. This page introduces only the basic syntax and the default layout.
+You can [enhance the image layout](doc/enhancing/image) in many ways with this theme. This is only the introduction to the basic syntax and its default layout.
 
 ## Syntax
 
@@ -36,9 +36,10 @@ There are also two notations to reference the source: Directly **inline** or wit
 The alternative text inside the square brackets `[]` is used by screen readers, pure text browsers, and all kinds of data scrapers.
 
 The optional title becomes the title attribute in the `<img>` tag.
+{.inline}
 
-{{< mnote up=5 >}}
-**The title **attribute** gets displayed only when a pointer hovers over the element. Many touch-screen devices don't have one. An image title shouldn’t contain essential information.
+{{< mnote >}}
+**The title attribute** only shows up when a pointer hovers over the element. Many touch-screen devices don't have one. An image title shouldn’t contain essential information.
 {{< /mnote >}}
 
 #### Reference
@@ -46,7 +47,7 @@ The optional title becomes the title attribute in the `<img>` tag.
 We can place a marker in a second pair of **squared brackets** to separate the image reference:
 
 ```md {.left-in}
-![Name][imgref]
+![Description][imgref]
 ```
 
 We have to provide the image reference somewhere else in the same file by repeating the marker followed by a colon and a space before the path:
@@ -55,16 +56,16 @@ We have to provide the image reference somewhere else in the same file by repeat
 [imgref]: long/path/to/image.jpg "Optional Title"
 ```
 
-### Placement
+### Two possible positions
 
-CommonMark doesn’t care, where we place an image element. But since version {$0.108.0} Hugo does! The two distinctive ways lead to a different layout:
+These two distinctive ways to place an image inside Markdown lead to a different layout:
 
 #### Stand-alone
 
 ```md {.left-in}
 Paragraph before…
 
-![Name][imgref]
+![Description](image.jpg)
 
 Paragraph after…
 ```
@@ -74,8 +75,8 @@ By surrounding an image element with empty lines it becomes a Markdown block ele
 #### Embedded {.clear}
 
 ```md {.left-in}
-![Name][imgref] The paragraph 
-containing the image
+![Description](image.jpg) The 
+paragraph containing the image
 ```
 
 When we place an image inside our paragraph text it gets embedded as a float.
@@ -84,7 +85,7 @@ When we place an image inside our paragraph text it gets embedded as a float.
 
 ### Stand-alone
 
-The default width for the stand-alone CommonMark image element is the main text width:
+The default for stand-alone images is the text width:
 
 ![Placeholder image](svg/text.svg)
 
@@ -93,8 +94,8 @@ The default width for the stand-alone CommonMark image element is the main text 
 
 ### Embedded
 
-The default for images embedded in a text block is the small width:
+The default for embedded images is the small width:
 
-![Placeholder image](svg/small.svg) {{% pangram 11 %}}
+![Placeholder image](svg/small.svg) {{% pangram 13 %}}
 {.placeholder data-pagefind-ignore="all"}
 
