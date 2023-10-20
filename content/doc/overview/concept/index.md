@@ -26,10 +26,10 @@ tags: [feature]
 weight: 5
 ---
 
-A coherent site structure for different publishing formats and a versatile typographic layout for enriched Markdown content with good legibility on all screen sizes are the essential goal of this theme.
+A coherent site structure for different publishing formats, a typographic layout for enhanced Markdown content, and good legibility on all screen sizes are the essential goals of this theme.
 {.p-first} <!--more-->
 
-Perplex is an all-purpose theme for technical content. There are templates for three levels of documentation, a news stream, blog postings, author pages, and taxonomy pages. Templates for a distinct start page and articles will follow. 
+Perplex is an all-purpose theme for technical content. There are templates for three levels of documentation, a news stream, blog postings, author pages, and taxonomy pages. Templates for a distinct start page and articles will follow.
 
 At the moment, the example site included in the theme shows the news section as a start page the same way this documentation does.
 {.inline}
@@ -40,9 +40,11 @@ At the moment, the example site included in the theme shows the news section as 
 
 ![Sample of IBM Plex Sans](plex_sample)
 
-The theme includes the open-source font family [Plex](https://www.ibm.com/plex/) and the design process took their proportions into account from the start. But the design does **not** follow [IBM’s corporate design system](https://carbondesignsystem.com/).
+The theme ships with the open-source font family [Plex](https://www.ibm.com/plex/) for optimized self-hosting. The design has taken their proportions into account from the beginning to provide a good line length for text and code examples and consistent spacing.
 
-The layout adapts to all screen sizes in a **fluid-responsive** way. This concept has been around for a while but doesn’t get realized often despite its [many advantages](/blog/accessibility-of-fluid-typography).
+{{< mnote up=11 >}}But the design does **not** follow [IBM’s corporate design system](https://carbondesignsystem.com/).{{< /mnote >}} 
+
+The layout adapts to all screen sizes in a **fluid-responsive** way. This concept has been around for a while but doesn’t get realized often despite its [advantages](/blog/accessibility-of-fluid-typography).
 
 Many proportions can stay fixed between breakpoints beyond mobile and this means:
 
@@ -63,8 +65,8 @@ Recent copies of all module dependencies are available in the {$_vendor} folder 
 
 ## Support & development
 
-There is no public support channel because I can’t maintain it. Improving this theme takes all my spare time. Support and collaborative development will only work bidirectional. I will not answer private questions.
-
 Should you miss some information in the docs, find a bug in the templates, or have a suggestion, please file an official issue in the repositories (&rightarrow; [Introduction](doc/intro/perplex#in-case-of-problems)).
 
-Should you make bigger contributions, I would love to turn this effort into a community project and change the license holder accordingly to assure, that they are not in vain.
+There will be no public support channel in the foreseeable future because improving this theme takes all my spare time. Support and collaborative development will only work bidirectional. I will not answer private questions.
+
+In case the theme or its modules will benefit from larger contributions, I’d love to turn this effort into a community project and change the license holder accordingly to assure contributors, that their work is not in vain.
