@@ -6,6 +6,7 @@ description: Render Mermaid diagrams with the popular Javascript library
 date: 2023-05-18T17:47:34+02:00
 categories: [module]
 tags: [mermaid, diagram]
+draft: true
 ---
 
 Mermaid is a Javascript library creating SVG diagrams from text and code descriptions. This Hugo module retrieves the library from the public CDN {$jsdelivr.com}.
