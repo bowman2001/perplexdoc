@@ -11,7 +11,7 @@ subtitle: false
 title: Featured Image
 linktitle: Featured
 categories: [Design]
-tags: [feature, image, page]
+tags: [image, page]
 series: [images]
 weight: 630
 resources:
@@ -19,6 +19,7 @@ resources:
     name: featured
     params:
       alt: fireworks over open water
+      zoom: 2
 ---
 
 The theme presents the featured image at the top of your page and in reference cards. It’s also prepared as a preview-image for links in search engines and social networks.

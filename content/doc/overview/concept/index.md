@@ -42,7 +42,7 @@ At the moment, the example site included in the theme shows the news section as 
 
 The theme ships with the open-source font family [Plex](https://www.ibm.com/plex/) for optimized self-hosting. The design has taken their proportions into account from the beginning to provide a good line length for text and code examples and consistent spacing.
 
-{{< mnote up=11 >}}But the design does **not** follow [IBM’s corporate design system](https://carbondesignsystem.com/).{{< /mnote >}} 
+{{< mnote up=11 >}}**The design** does **not** implement IBM’s corporate design system [Carbon](https://carbondesignsystem.com/).{{< /mnote >}}
 
 The layout adapts to all screen sizes in a **fluid-responsive** way. This concept has been around for a while but doesn’t get realized often despite its [advantages](/blog/accessibility-of-fluid-typography).
 
@@ -55,7 +55,7 @@ Many proportions can stay fixed between breakpoints beyond mobile and this means
 - adjacent columns stay in sync on all larger view-ports, we can place Markdown elements besides each other instead of letting them just flow from top to bottom like a stream.
 {.col2}
 
-All text is placed on a **baseline grid** to introduce a comfortable vertical rhythm and coherence between adjacent text elements. Combined with the fluid-responsive design this allows placing images (and other block elements) in and around the text with high accuracy. The blog contains layout demos for [stand-alone](/blog/image/standalone) & [embedded](/blog/image/embed) images, or [code blocks](/blog/codelayout).
+All text is placed on a **baseline grid** to introduce a comfortable vertical rhythm and coherence between adjacent text elements. Combined with the fluid-responsive design this allows placing images (and other block elements) in and around the text with high accuracy. There are demos for [stand-alone](/blog/image/standalone) & [embedded](/blog/image/embed) images, or [code blocks](/blog/codelayout).
 
 ## Usage concept
 
