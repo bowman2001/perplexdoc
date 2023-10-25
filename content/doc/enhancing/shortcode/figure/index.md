@@ -65,6 +65,7 @@ resources:
     name: beau
 categories: [Markdown]
 tags: [Shortcode]
+draft: true
 ---
 
 Because no Markdown element corresponds to the complex HTML `<figure>` tag, this shortcode **was** the solution for stand-alone images.

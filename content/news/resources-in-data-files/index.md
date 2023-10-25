@@ -50,4 +50,4 @@ We can also use TOML or JSON files, enter a remote URL as source, and call every
 }
 ```
 
-The module is available on [GitHub](https://github.com/bowman2001/hugo-mod-resource) and still under development.
+The module is available on [GitHub](https://github.com/bowman2001/hugo-mod-resource).

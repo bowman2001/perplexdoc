@@ -15,14 +15,14 @@ categories: [Markdown]
 tags: [Headings, Block]
 ---
 
-Headings introduce and order the segments on a page. We can modify headings only visually to adhere to a strict HTML hierarchy while enhancing the design.
+Headings introduce and order content segments on a page. Heading levels need to descend without interruption. We can modify headings only visually when we want to skip some levels.
 {.p-first} <!--more-->
 
 ## Syntax
 
 Markdown headings are preceded by number signs `#` and a space. The six available headings are associated with the following meaning in Perplex:
 
-1. `# Page Title`&emsp;{s [**Not needed**](#page-title) on standard Perplex pages!}
+1. `# Page Title`&emsp;{s [Usually **not available**](#page-title)!}
 
 2. `## Section Heading`
 
@@ -38,17 +38,17 @@ To alter the style of these heading, Perplex offers Markdown [attributes][attr].
 
 ### Paragraph Headings {#h-p}
 
-Usually, we don’t want to apply the full hierarchy on moderate-sized pages, because too much structure is confusing. For an appropriate layout, it may be desirable to skip one or two levels and use paragraph headings inside of sections for example.
+On moderately sized pages, we often don’t want to apply the full hierarchy headings, because too much structure gets also confusing. We may like to skip one or two levels and use paragraph headings in normal sections, for example.
 
-But this is against HTML guidelines. Headings need to be applied strictly in their descending order because screen readers and other automatic interpreters get confused otherwise. To follow this rule we can skip headings only visually.
+But this would violate the HTML guidelines. Headings need to follow strictly in their descending order because screen readers and other automatic interpreters get confused otherwise.
 
-We can style any heading like a paragraph heading with the attribute `{.h-p}`. For the rare occasions, when we need to style a heading as a small paragraph heading there is the attribute: `{.h-p-s}`.
+To abide to this rule, we skip headings only visually. Any heading looks like a paragraph heading with the attribute `{.h-p}` or `{.h-p-s}` for a small paragraph heading.
 
 ### Highlighted Headings
 
-Another variation of the heading style is highlighting. It’s an easy way to inform readers about especially important text segments.
+To emphasize especially important text segments, we can begin them with a highlighted heading. This is a more subtle form than  [annotation boxes](/doc/enhancing/attribute/box).
 
-To indicate a section with a **danger**, **warning**, **information**, or **success**, we have the attributes `{.h-danger}`, `{.h-warn}`, `{.h-info}`, or `{.h-success}`.
+To indicate a section about some **danger**, **warning**, **information**, or **success**, we apply the attributes `{.h-danger}`, `{.h-warn}`, `{.h-info}`, or `{.h-success}`.
 
 A warning paragraph for example starts with a heading like this:
 
@@ -71,24 +71,20 @@ and we get:
 
 ### Nice long heading with a complicated topic{/}stretching over more than one line
 
-This line break is displayed only when the screen can show the full width of the main text. On small screens, it’s invisible, because the line breaks would look even worse.
+This line break is displayed only when the full-text width fits the viewport. On small screens, it’s invisible, because manual line breaks could come out even worse.
 
 ## Layout
 
-Headings are not only recognized by their font styling but also by the white space surrounding them. That's why the following examples are shown in the way they usually appear: In front and in between some text.
+Headings are not only recognized by their font styling but also by the space surrounding them. That's why the following examples are shown in the way they usually appear: In front and in between some text.
 
 ***
 
 # Page Title {.mt3 .mb3}
 
-The first heading remains reserved for titles. We may want to compose a title in Markdown on special pages.
+The first heading is reserved for titles, only one `<h1>` tag should occur on any webpage. We may want to compose a title in Markdown on special pages, but usually the [title section](/doc/page/title) is rendered from meta-data in the front-matter.
 
-If the page already has a title, as it does in all templates of this theme, the first heading **should not** occur in the Markdown content.
-{.box-warn .inline}
-
-{{< mnote down=1 >}}
-The entire [title section](/doc/page/title) is generated from parameters in the front-matter.
-{{< /mnote >}}
+If the page already gets a title through its template, as it does in all templates of this theme, the first heading **should not** occur in the Markdown.
+{.box-warn}
 
 ## Section
 {{% pangram 4 %}}
@@ -98,7 +94,7 @@ The entire [title section](/doc/page/title) is generated from parameters in the 
 {{% pangram 4 %}}
 {.placeholder data-pagefind-ignore="all"}
 
-#### Sub-Subsection 
+#### Sub-Subsection
 {{% pangram 4 %}}
 {.placeholder data-pagefind-ignore="all"}
 

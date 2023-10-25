@@ -11,7 +11,7 @@ resources:
       alt: HTML code on a computer screen
       zoom: 1.5
 categories: [Markdown]
-tags: [Layout, Block, Inline, Image]
+tags: [Block, Inline, Image]
 series: [Images]
 draft: true
 ---

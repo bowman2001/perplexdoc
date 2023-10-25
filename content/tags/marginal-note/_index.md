@@ -4,7 +4,6 @@ description: A note in the right marginal page column
 subtitle: true
 date: 2023-03-10T13:38:10+01:00
 resources:
-resources:
   - src: Diophantus-II-8-Fermat_cut.jpg
     name: featured
     params:

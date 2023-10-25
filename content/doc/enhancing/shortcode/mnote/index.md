@@ -16,36 +16,46 @@ tags: [Marginal Note, Shortcode]
 A marginal note contains additional important but nonessential information. It explains some context, sheds light on a detail or speculates on a given topic etc.
 {.p-first} <!--more-->
 
-A marginal note should accompany the main text without interrupting it. If the screen is big enough, it’s placed in the right margin. Usually we need to move the note up to match the line in the main text which the note is referring to.
-
-On small screens is no space for marginal notes. It’s placed inside a box with limited height, then.
+A marginal note should accompany the main text without interrupting it. If the view-port is big enough, it’s placed in the right margin. On mobile view-ports it appears in a box of limited height.
 
 ## Syntax
 
-The shortcode is called `mnote` and is placed with an opening and closing tag around the note. The note can contain only paragraphs and no headings etc.
+The marginal note follows after the content block it belongs to and this is the usual layout order on mobile view-ports. But the note will also be placed besides the next block on large view-ports and that is usually not intended.
 
-The shortcode can also take three named parameters:
+To let it float besides the block before, we need to change the layout of this block with the attribute [`.inline`](/doc/enhancing/attribute/inline) to make room in the right margin.
 
-up
-: Number of units (1rem) to push the note up. Paragraph blocks have a line height of three units in this theme.
+```md
+Longer Paragraph …
+{.inline}
+
+{{</* mnote */>}}
+**Public junk dwarves** hug my quartz fox. Zack Gappow saved the job requirement
+list for the six boys. Bored? Craving a pub quiz fix? Why, just come to the
+Royal Oak! Cozy sphinx waves quart jug of bad milk. Quads of blowzy fjord 
+ignite map vex’d chicks.
+{{</* /mnote */>}}
+```
+
+The shortcode is called `mnote` and needs an opening and closing tag around the note. The note can contain only inline styling and no headings etc.
+
+The shortcode has four named parameters:
 
 star
 : Number of stars to show at the beginning of the note. 1 or 2 are possible.
 
 dagger
-: Kind of dagger to show at the beginning of the note. 1 or 2 are possible.
+: Kind of dagger to show at the beginning of the note. 1 or 2 crossings are possible.
+
+up
+: Number of units (1rem) to push the note up. The default line height for this theme is **three units**. We can move the note up in case we can’t use `{.inline}`.
+
+down
+: Number of units (1rem) to push the note down. This is the way to make room for other layout elements.
 {.dl-loose}
 
-Optional stars or daggers should be matched by similar signs in the main text. They are used to reference notes which can’t be placed directly beside the text they are referring to. A star is the usual asterisk `*` on the keyboard. A dagger `†` corresponds to the entity `&dagger;` and a double dagger `‡` to `&Dagger;`.
+Optional stars or daggers should be matched by similar signs in the main text. They are used to reference notes which can’t be placed in the vincinity of the text they are referring to because other layout elements got in the way.
 
-```md
-{{</* mnote up=11 */>}}
-When she reached the first hills of the Italic Mountains, she had a last view 
-back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet 
-Village and the subline of her own road, the Line Lane. 
-{.p-blind}
-{{</* /mnote */>}}
-```
+A star is the usual asterisk `*` on the keyboard. A dagger `†` corresponds to the entity `&dagger;` and a double dagger `‡` to `&Dagger;`.
 
 ## Layout
 
@@ -58,23 +68,20 @@ The star and the dagger in the following examples aren’t necessary for the lay
 
 ### Short Note
 
-Far far away, behind the word mountains{^\*}, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
-{.blind}
+{{% pangram 3 %}}{^\*} {{% pangram 5 %}}
+{.placeholder data-pagefind-ignore=all .inline}
 
-{{< mnote up=14 star=1 >}}
-When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.
+{{< mnote star=1 >}}
+Public junk dwarves hug my quartz fox. Zack Gappow saved the job requirement list for the six boys. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Cozy sphinx waves quart jug of bad milk. Quads of blowzy fjord ignite map vex’d chicks.
 {{< /mnote >}}
 
 ### Long Note
 
-Far far away{^&dagger;}, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
-{.blind}
+{{% pangram 7 %}}{^&dagger;} {{% pangram 9 %}}
+{.placeholder data-pagefind-ignore=all .inline}
 
-It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-{.blind}
+{{< mnote dagger=1 >}}
+Quizzical twins proved my hijack-bug fix. Waltz job vexed quick frog nymphs. Back in June we delivered oxygen equipment of the same size. Cozy sphinx waves quart jug of bad milk. Fake bugs put in wax jonquils drive him crazy. Five hexing wizard bots jump quickly.
 
-{{< mnote up=28 dagger=1 >}}
-When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
-
-On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.
+When zombies arrive, quickly fax judge Pat. Zack Gappow saved the job requirement list for the six boys. Quilt frenzy jackdaw gave them best pox. Pack my red box with five dozen quality jugs.
 {{< /mnote >}}

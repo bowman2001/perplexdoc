@@ -21,7 +21,7 @@ weight: 145
 Internet references or short “links” are the binding fabric of the web. Markdown encourages their use by providing a few{/}simple markup options.
 {.p-first} <!--more-->
 
-Irrespective of the way which type of link syntax we use, their layout looks the same. Perplex distinguishes only between **internal links** to our own website and **external links** to others by applying a different color for their decoration.
+Irrespective of the way which type of link syntax we use, their layout looks the same. Perplex distinguishes between **internal links** to our own website and **external links** to others.
 
 ## Syntax
 
@@ -87,7 +87,7 @@ The link render hook of this theme checks the existence of internal links and li
 The link hook is based on {=Joe Mooring’s implementation} which you can find in his excellent [article on Veriphor](https://www.veriphor.com/articles/link-and-image-render-hooks/) about link and image render hooks.
 {{< /mnote >}}
 
-Its default configuration throws a warning if a page can’t be found, but does not complain about missing fragments. Both --- pages and fragments --- are always rendered as they come if an error doesn’t stop the build. 
+Its default configuration throws a warning if a page can’t be found, but does not complain about missing fragments. Both --- pages and fragments --- are rendered as they come if an error is not configured to stop the build.
 
 ```yaml
 render_hooks:

@@ -1,5 +1,5 @@
 ---
-author:
+authors: [Georg Makowski]
 title: Content
 description: How to prevent injection of malicious code
 subtitle: false
