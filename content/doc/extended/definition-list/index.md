@@ -121,4 +121,4 @@ When can also use icons to define the aspects of our structured information. The
 
 {{< material-symbol water big >}}
 : {{% pangram 2 %}}
-{.dl-icon .col2 data-pagefind-ignore="all"}
+{.dl-icon .col2 .layout-box data-pagefind-ignore="all"}

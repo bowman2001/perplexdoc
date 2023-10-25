@@ -20,7 +20,7 @@ series: [images]
 weight: 320
 ---
 
-The theme relies solely on Hugo’s image-processing capabilities.
+The theme relies on the image-processing methods integrated into Hugo.
 {.p-first}
 <!--more-->
 
@@ -28,15 +28,16 @@ Many different-sized versions of every image are generated automatically, so eve
 
 ## Resolution
 
-For crisp images on high-density screens, we should at least provide images for double-density.
+For crisp images on high-density screens, we need to provide images with double-density.
 
-| Image type | 2&times;density | 3&times;density |
+| Image type | max width | 2&times;density |
 |:-----------|:-------:|:-----:|
-| block (default) | {{< width/measure 2 >}} | {{< width/measure 3 >}} |
-| large block | {{< width/measure 3 >}} | {{< width/measure 4.5 >}} |
-| extra-large block | {{< width/measure 4 >}} | {{< width/measure 6 >}} |
-| embedded (default) \& small block | {{< width/column 2 >}} | {{< width/column 3 >}} |
-| small embedded | {{< width/column 1 >}} | {{< width/column 1.5 >}} |
+| block (default) | {{< width/measure 1 >}} | {{< width/measure 2 >}} |
+| large block | {{< width/measure 1.5 >}} | {{< width/measure 3 >}} |
+| extra-large block | {{< width/measure 2 >}} | {{< width/measure 4 >}} |
+| embedded (default) \& small block | {{< width/column 1 >}} | {{< width/column 2 >}} |
+| small embedded | {{< width/column 0.5 >}} | {{< width/column 1 >}} |
+{.normal}
 
 When we build a project with more than a hundred images — like this project — we have to show a little patience on the first Hugo run. Image processing may take a few minutes. The generated images are cached by Hugo and we don’t have to wait again in subsequent runs.
 

@@ -22,3 +22,4 @@ Markdown tables need some care, because their layout breaks, when the content of
 {.normal}
 
 {{% pangram-list 10 %}}
+{.normal}
