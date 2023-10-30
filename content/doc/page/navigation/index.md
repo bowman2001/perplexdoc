@@ -9,7 +9,7 @@ menu:
     name: Navigation
     parent: page
     pre: switch_right
-categories: [Design]
+categories: [template]
 tags: [navigation, page]
 weight: 640
 draft: true

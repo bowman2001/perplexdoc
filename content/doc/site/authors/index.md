@@ -15,8 +15,8 @@ resources:
     name: portrait
     params:
       alt: Anonymous portrait
-categories: [design]
-tags: [author]
+categories: [template]
+tags: [author, site]
 weight: 665
 ---
 

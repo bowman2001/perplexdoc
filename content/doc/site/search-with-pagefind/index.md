@@ -10,8 +10,8 @@ menu:
     name: Search
     parent: siteelem
     pre: search
-categories: [design]
-tags: [search]
+categories: [template]
+tags: [search, site]
 weight: 680
 ---
 

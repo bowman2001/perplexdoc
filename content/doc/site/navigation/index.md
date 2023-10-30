@@ -10,8 +10,8 @@ menu:
     name: Site Navigation
     parent: siteelem
     pre: menu
-categories: [Theme]
-tags: [Navigation, Social]
+categories: [template]
+tags: [navigation, site]
 draft: true
 ---
 

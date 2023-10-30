@@ -16,8 +16,8 @@ resources:
     params:
       width: micro 
       box: none
-categories: [Theme]
-tags: [Favicon]
+categories: [template]
+tags: [favicon, site]
 ---
 
 The **Favorite Icon** is placed in the HTML `<head>` of every page. Browsers usually show the icon in the tab, the address bar and before bookmarks. It may also get used as an application icon, when the website implements the necessary functionality.

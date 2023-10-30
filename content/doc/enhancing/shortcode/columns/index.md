@@ -11,7 +11,7 @@ menu:
     name: Columns
     parent: shortcode
     pre: view_column
-categories: [Theme]
+categories: [Markdown]
 tags: [Columns, Shortcode]
 draft: true
 ---

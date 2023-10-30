@@ -10,8 +10,8 @@ menu:
     name: Taxonomies
     parent: siteelem
     pre: category
-categories: [Design]
-tags: [Taxonomies]
+categories: [template]
+tags: [taxonomies, site]
 draft: true
 ---
 

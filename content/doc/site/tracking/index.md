@@ -10,8 +10,8 @@ menu:
     name: Tracking
     parent: siteelem
     pre: analytics
-categories: [Theme]
-tags: [Tracking]
+categories: [template]
+tags: [tracking]
 resources:
   - src: kobu-agency-ggrbi6quXQU-unsplash.jpg
     name: featured
@@ -19,7 +19,7 @@ resources:
       alt: Numbers on a geographical map
 ---
 
-Perplex offers configuration parameters to easily include scripts for a tracking service. Currently **Fathom** and **Google** Analytics (GA4) are directly supported.
+Perplex offers configuration parameters to include site-wide scripts for a tracking service. Currently **Fathom** and **Google** Analytics (GA4) are directly supported.
 {.p-first} <!--more-->
 
 As a website creator, you like to get an impression of your audience and want to know how much attention your pages get. And when you start some kind of campaign, you may want to measure its success.

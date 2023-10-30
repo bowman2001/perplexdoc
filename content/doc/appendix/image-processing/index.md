@@ -10,11 +10,8 @@ menu:
     name: Image Processing
     parent: appendix
     pre: image
-categories: [Theme]
-tags: [image]
-resources:
-  - src: 
-    name: featured
+categories: [module]
+tags: [image, configuration]
 draft: true
 ---
 

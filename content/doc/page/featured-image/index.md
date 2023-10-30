@@ -10,7 +10,7 @@ menu:
 subtitle: false
 title: Featured Image
 linktitle: Featured
-categories: [Design]
+categories: [template]
 tags: [image, page]
 series: [images]
 weight: 630

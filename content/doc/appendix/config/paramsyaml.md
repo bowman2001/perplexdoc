@@ -10,8 +10,8 @@ menu:
     name: params.yaml
     parent: config
     pre: view_module
-categories: [Theme]
-tags: [Configuration]
+categories: [hugo]
+tags: [configuration]
 ---
 
 Parameter configuration file in {$config/_default}
