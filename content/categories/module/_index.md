@@ -1,6 +1,6 @@
 ---
 title: Module
-description: Tag description placeholder
+description: Public Hugo modules used by this theme
 subtitle: true
 date: 2022-09-06T06:46:35+02:00
 resources:

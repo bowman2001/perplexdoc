@@ -8,4 +8,6 @@ resources:
     src: roman-skrypnyk-fFW_xTie9Ik-unsplash.jpg
     params:
       alt: Double-page of an old magazine with fancy text layout on the left and a picture of the boxer Muhammad Ali on the right
+      zoom: 1.4
+      anchor: Center
 ---

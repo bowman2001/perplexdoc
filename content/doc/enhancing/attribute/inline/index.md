@@ -14,7 +14,7 @@ tags: [inline]
 weight: 345
 ---
 
-We can change the default layout behaviour of a Markdown block as a full-width layout block to inline, in case we want to place an element besides this block.
+We can change the default layout behaviour of a Markdown block from a full-width layout block to an inline block, in case we want to place another element besides this block.
 {.p-first}
 <!--more-->
 
@@ -26,5 +26,7 @@ Text block of any kind …
 ```
 
 ## Layout
+
+The attribute can change the order of surrounding layout elements but does not affect the style.
 
 See [Marginal note ](/doc/enhancing/shortcode/mnote).
