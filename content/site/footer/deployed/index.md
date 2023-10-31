@@ -1,5 +1,5 @@
 ---
-title: Deployed with
+title: Deployed by
 date: 2022-06-15T14:21:33+02:00
 resources:
 - src: Netlify_logo.svg
