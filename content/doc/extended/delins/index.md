@@ -18,6 +18,7 @@ resources:
     src: engin-akyurt-GqJUczrwIG4-unsplash.jpg
     params:
       alt: A few colored pencils
+      anchor: Top
 ---
 
 Correction marks highlight changes while working on a draft. Lately, strike-through has also become a hip visual style.

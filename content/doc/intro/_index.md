@@ -21,7 +21,7 @@ resources:
       alt: "Red glowing neon letters: “Ready or Not”"  
 ---
 
-Perplex publishes technical content written in **Markdown**{/}with the static site generator **Hugo**.
+Perplex publishes technical content written in extended (and enhanced) **Markdown** with the static site generator **Hugo**.
 {.p-first} <!--more-->
 
 The theme provides templates for documentation with up to three section levels, for news, blog postings, and author pages. Templates for long articles and a simple start page will follow.

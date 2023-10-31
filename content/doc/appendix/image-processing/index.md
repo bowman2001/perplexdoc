@@ -1,7 +1,7 @@
 ---
 authors: [Georg Makowski]
-title: Image Processing
-description: Details of image handling
+title: Image processing details
+description: Some configurable details of image processing
 subtitle: false
 date: 2022-10-16T17:04:04+02:00 
 weight: 1060
@@ -15,5 +15,5 @@ tags: [image, configuration]
 draft: true
 ---
 
-Image processing in larger projects needs to find a compromise between the speed of the resulting pages and the amount of processing time and storage space.
+Larger websites with a lot of traffic need a good compromise between the loading speed of their pages and the amount of storage space for the delivered image variants.
 {.p-first} <!--more-->
