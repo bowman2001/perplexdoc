@@ -13,23 +13,24 @@ menu:
     pre: help
 categories: [Markdown]
 tags: [Shortcode]
-draft: true
 ---
 
-Shortcodes can inject arbitrary and configurable HTML or Markdown from within Markdown files --- “Hugo’s shortcodes are Markdown’s hidden superpower”.
+Shortcodes can inject arbitrary and configurable HTML (or automated Markdown) in Markdown content --- Hugo offers them as "Markdown’s hidden superpower".
 {.p-first} <!--more-->
 
 ## Syntax
 
-A shortcode without variables looks like `{{</* simple */>}}` or `{{%/* simple */%}}`. The name of the shortcode is enclosed into two curly braces and angled brackets. Both shortcodes would call a file in the folder `layout/shortcodes/simple.html` of our project root or the theme directory and execute the templates therein.
+A shortcode without variables looks like `{{</* simple */>}}` or `{{%/* simple */%}}`. Both shortcodes would call a file in the folder `layout/shortcodes/simple.html` of our project root or the theme directory and execute their template code.
 
-Shortcodes with angled brackets `< >` directly generate HTML and the ones with percentage signs `% %` generate Markdown.  
+Shortcodes with angled brackets `< >` directly generate HTML and the ones with percentage signs `% %` generate Markdown which is then processed as usual.  
 
-There are two options to pass parameters: **positional** or **named** parameters. Both possibilities may exist for the same shortcode, but they can't be mixed for one call.
+There are two options to pass parameters: **positional** or **named**. Both options may exist for the same shortcode, but they can't be mixed in one call.
+
+Shortcodes may also process Markdown content which is enclosed by the first shortcode and its closing counterpart.
 
 ### Positional
 
-The shortcode  `{{%/* pangram */%}}` is often used on this site to generate placeholder text. It expects only one _unnamed_ parameter and returns the specified amount of sentences.
+The shortcode  `{{%/* pangram */%}}` is often used on this site to generate placeholder text. It expects only one **unnamed** parameter and returns the specified amount of pangram sentences.
 
 ```md {.left-in}
 {{%/* pangram 3 */%}}  
@@ -44,12 +45,17 @@ The shortcode is available in the module [hugo-mod-pangram](https://github.com/b
 
 ### Named
 
-When we want to offer more parameters, we better name them to avoid confusion. An example is the shortcode {$mnote} for marginal notes:
+More parameters are usually named to avoid confusion about their order and function. An example is the shortcode {$mnote} for marginal notes:
 
 ```md
-{{</* mnote src="image.jpg" alt="Description" title="Title" */>}} 
+{{</* mnote up=11 dagger=2 */>}}
+This note gets placed in the marginal column.
+{{</* /mnote */>}} 
 ```
 
-{{< mnote up=5 >}}
-This shortcode you could and maybe even should use for all your stand-alone images.
-{{< /mnote >}}
+### Shortcodes with content
+
+The last example is also meant to demonstrate the usage of a closing shortcode. 
+
+**Notice the slash** `/` in the closing shortcode repetition!
+{.box-info}
