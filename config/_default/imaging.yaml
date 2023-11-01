@@ -4,7 +4,7 @@
 
 # Options for bitmap files
 
-quality       : 85
+quality       : 80
 resampleFilter: box
 
 exif:

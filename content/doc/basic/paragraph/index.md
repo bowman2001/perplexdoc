@@ -19,7 +19,7 @@ Paragraphs are the essential building blocks of text. A comfortable line length 
 
 ## Syntax
 
-A paragraph is a sequence of Unicode characters with arbitrary length. It gets closed by one empty line.
+A paragraph is a sequence of Unicode characters with arbitrary length. An empty line marks the end of a paragraph as it does for all other Markdown blocks.
 
 The theme offers to style a **first** paragraph — like the first one on this page — and a **big** and a **small** one. These styles are applied with the [attributes](/doc/enhancing/attribute) `{.p-first}`, `{.p-big}`, and `{.p-small}`.
 

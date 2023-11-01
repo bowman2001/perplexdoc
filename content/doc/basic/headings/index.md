@@ -22,7 +22,7 @@ Headings introduce and order content segments on a page. Heading levels need to 
 
 Markdown headings are preceded by number signs `#` and a space. The six available headings are associated with the following meaning in Perplex:
 
-1. `# Page Title`&emsp;{s [Usually **not available**](#page-title)!}
+1. `# Page Title`&emsp;**{s [Usually not available](#page-title)!**}
 
 2. `## Section Heading`
 
@@ -81,9 +81,7 @@ Headings are not only recognized by their font styling but also by the space sur
 
 # Page Title {.mt3 .mb3}
 
-The first heading is reserved for titles, only one `<h1>` tag should occur on any webpage. We may want to compose a title in Markdown on special pages, but usually the [title section](/doc/page/title) is rendered from meta-data in the front-matter.
-
-If the page already gets a title through its template, as it does in all templates of this theme, the first heading **should not** occur in the Markdown.
+The first heading is reserved for titles. Only one `<h1>` tag should occur on any webpage. We may want to compose a title in Markdown on special pages but in all theme templates the [title section](/doc/page/title) is rendered from meta-data in the front-matter.
 {.box-warn}
 
 ## Section
