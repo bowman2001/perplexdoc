@@ -1,7 +1,7 @@
 ---
 authors: [Georg Makowski]
 title: Tracking
-description: Page description placeholder
+description: Let tracking services generate detailed usage statistics 
 subtitle: false
 date: 2022-11-17T10:23:41+01:00 
 weight: 690
@@ -12,17 +12,12 @@ menu:
     pre: analytics
 categories: [template]
 tags: [tracking]
-resources:
-  - src: kobu-agency-ggrbi6quXQU-unsplash.jpg
-    name: featured
-    params:
-      alt: Numbers on a geographical map
 ---
 
-Perplex offers configuration parameters to include site-wide scripts for a tracking service. Currently **Fathom** and **Google** Analytics (GA4) are directly supported.
+Perplex offers configuration parameters to include site-wide scripts for tracking services. Currently **Fathom** and **Google** Analytics (GA4) are directly supported.
 {.p-first} <!--more-->
 
-As a website creator, you like to get an impression of your audience and want to know how much attention your pages get. And when you start some kind of campaign, you may want to measure its success.
+As a website creator, you generally like to get an impression of your audience and want to know what kind of and how much attention your pages get. And when you start some kind of campaign, you often want to measure its success.
 
 ## Google Analytics 4
 
@@ -32,12 +27,12 @@ When you place your **Google Measurement ID** in the [main configuration file][g
 {.inline}
 
 {{< mnote >}}
-Because Google collects specific data from website visitors with this software, many sites are obligated to inform their visitors about their service and need to ask them for explicit permission.
+Because Google collects specific data from website visitors with this software, many sites are obligated to inform their visitors about their services and need to ask them for explicit permission in a pop-up window.
 {{< /mnote >}}
 
 ## Fathom Analytics
 
-[Fathom Analytics][fathomref]{^\*} is privacy-focused and needs to be paid because it doesn’t monetize data from visitors. It doesn’t collect any individual data at all and is a merely statistical service for website operators. With Fathom you don’t need to force your visitors to decide about data they would like to share. 
+[Fathom Analytics][fathomref]{^\*} is privacy-focused and needs to be paid because it doesn’t monetize data from visitors. It doesn’t collect any individual data at all and is a merely statistical service for website operators. With Fathom you don’t need to force your visitors to decide about data they would like to share.
 {.inline}
 
 {{< mnote star=1 >}}

@@ -9,7 +9,7 @@ tags: [image]
 draft: true
 ---
 
-Hugo includes many powerful image processing methods. This module offers theme developers and their users a way to apply them more consistently.
+Hugo includes many powerful image processing methods. This module offers theme developers and their users a way to apply them consistently.
 {.p-first}
 <!--more-->
 
