@@ -18,7 +18,7 @@ resources:
       alt: Movable type for printing letters
 ---
 
-All available characters are valid Markdown. The following sections are about the special ones we can’t use directly.
+All available characters are valid Markdown. Here we talk about the special ones we can not use directly: ASCII markup characters & HTML entities.
 {.p-first} <!--more-->
 
 
@@ -46,7 +46,12 @@ When we escape a number sign `\#` for example it’s just the number sign ‘**\
 : means the set of real numbers&ensp;&#8477;&nbsp;.
 {.dl-loose}
 
- For more exotic ones you should check, if they are available in the [**IBM Plex** fonts][plexspec] this theme is shipping with. If a character is missing there, the browsers will first try to use a local font and may display a glyph with a more or less noticeable different shape. And if they can't find a representation for the character anywhere, they will display an ugly placeholder glyph. You may take a good look at the &#8477; in the last example. The Plex fonts provide no glyphs for the real set but there is usually one available in system fonts and will differ more or less in shape.
+ For more exotic ones you should check, if they are available in the [**IBM Plex** fonts][plexspec] this theme is shipping with.
+ {.inline}
+
+ {{< mnote >}}[Beautifulwebtype.com](https://beautifulwebtype.com) may not be completely up to date, but it is the only source on the web I could find which also references the HTML entities for the available glyphs. And its a truly beautiful site anyway.{{< /mnote >}}
+ 
+ If a character is missing there, the browsers will first try to use a local font and may display a glyph with a more or less noticeable different shape. And if they can't find a representation for the character anywhere, they will display an ugly placeholder glyph. You may take a good look at the &#8477; in the last example. The Plex fonts provide no glyphs for the real set but there is usually one available in system fonts and will differ more or less in shape.
 
 Please remember the often neglected sets of general entities, which are meant to facilitate nice typography — the ones for **spacing** and **(not) breaking**.
 
@@ -68,7 +73,10 @@ Good typography needs the right amount of space between type. For the most part 
 
 ### Breaking Words — or not
 
-The major browsers do support hyphenation for a few languages, Perplex includes a [polyfill][hy] for the missing ones. That’s why we usually don’t need to place soft hyphens.
+The major browsers do support hyphenation for a few important languages and we usually don’t need to place soft hyphens.
+{.inline}
+
+{{< mnote >}}The theme does **not** include the well-tried [polyfill](https://github.com/mnater/Hyphenopoly) for missing hyphenation engines. Please file an issue if you need it.{{< /mnote >}}
 
 The non-breaking entities are meant for situations where characters or words should never be separated by a new line.
 
@@ -82,12 +90,10 @@ The non-breaking entities are meant for situations where characters or words sho
 
 ## Emojis
 
-Hugo supports emojis :face_with_tears_of_joy: (`:‍‍face_with_tears_of_joy:`) in Markdown content, if we set the global parameter [`enableEmoji`][he] to `true`. 
+Hugo supports emojis via codes like :woozy_face: (`:woozy_face:`) in Markdown content, if we set the global parameter [`enableEmoji`][he] to `true`. We can also copy them as UTF-8 characters into the content without this configuration.
 
-There are quite a lot of them according to this [cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/). Have fun!
+There are quite a lot of them according to this [cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/). Have fun --- but don’t forget that serious web pages are not a personal chat.🙏
 
-[plexspec]: https://ibm.com/plex/specs
-
-[hy]: https://github.com/mnater/Hyphenopoly
+[plexspec]: https://beautifulwebtype.com/ibm-plex-sans/glyphs/?i=4
 
 [he]: https://gohugo.io/getting-started/configuration/#enableemoji

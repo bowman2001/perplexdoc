@@ -1,9 +1,9 @@
 ---
 authors: [Georg Makowski]
 title: Local Installation
-description: How to install Hugo and a theme
+description: How to install Hugo and the theme
 subtitle: false
-date: 2022-09-11T14:57:26+02:00 
+date: 2022-09-11T14:57:26+02:00
 weight: 30
 menu:
   doc:
@@ -18,6 +18,7 @@ resources:
     params:
       alt: Colorful sunrise in the Rätikon Mountain-Range, Switzerland
       caption: Rätikon Mountain-Range
+      anchor: Center
 ---
 
 Hugo, the world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and secure websites.
@@ -107,7 +108,7 @@ There are three ways to get a theme from a Git repository:
 
 1. Download and unzip its compressed file package in the {$themes} folder. This is the fastest way and the best option for a try-out.
 
-2. Clone it with [**Git**](https://git-scm.com/) into the {$themes} folder. If you already are using Git for your project, you probably should clone the theme as a submodule. This is also the workflow to contribute to the development of a Hugo theme or module, because now you have the possibility to submit your own changes (**Caution**: Git submodules need some additional care.)
+2. Clone it with [**Git**](https://git-scm.com/) into the {$themes} folder. If you are already using Git for your project, you probably should clone the theme as a submodule. This is also the only workflow to contribute directly to the development of a Hugo theme or module.
 
 3. Import a theme as a Hugo module. You need a recent [Golang environment](https://go.dev) – Hugo modules rely on Go modules. The Hugo docs provide a [guide to this feature](https://gohugo.io/hugo-modules). Once set up, Hugo modules are the best way to update themes or other external components, content etc. There is a simple example for a theme module in the file [{$module.yaml}](/doc/appendix/config/moduleyaml).
 

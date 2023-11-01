@@ -1,6 +1,6 @@
 ---
 title: Template
-description: Elements of the theme templates
+description: About the layout elements of theme templates
 subtitle: true
 date: 2023-11-01T12:37:51+01:00
 resources:

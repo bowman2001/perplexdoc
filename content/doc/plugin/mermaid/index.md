@@ -11,7 +11,7 @@ menu:
     parent: plugin
     pre: account_tree
 categories: [module, markdown]
-tags: [diagram, mermaid]
+tags: [mermaid, diagram]
 ---
 
 Mermaid is a popular Javascript library creating SVG diagrams from text and code descriptions.

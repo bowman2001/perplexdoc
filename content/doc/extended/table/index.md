@@ -21,5 +21,4 @@ Markdown tables need some care, because their layout breaks, when the content of
 | left  |    centered    | centered |   centered   |    right |
 {.normal}
 
-{{% pangram-list 10 %}}
-{.normal}
+{{% pangram-list 5 %}}
