@@ -28,21 +28,23 @@ Many different-sized versions of every image are generated automatically, so eve
 
 ## Resolution
 
-For crisp images on high-density screens, we need to provide images with double-density.
+The following table contains the necessary original width for all possible image sizes. For crisp images on high-density screens, we should provide images with double-density if anyhow possible.
 
-| Image type | max width | 2&times;density |
-|:-----------|:-------:|:-----:|
-| block (default) | {{< width/measure 1 >}} | {{< width/measure 2 >}} |
-| large block | {{< width/measure 1.5 >}} | {{< width/measure 3 >}} |
-| extra-large block | {{< width/measure 2 >}} | {{< width/measure 4 >}} |
-| embedded (default) \& small block | {{< width/column 1 >}} | {{< width/column 2 >}} |
-| small embedded | {{< width/column 0.5 >}} | {{< width/column 1 >}} |
+| Image type                        |            Minimum width             |        2&times;density         |
+| :-------------------------------- | :------------------------------: | :----------------------------: |
+| extra-large block                 | {{% mod-img/width "xlarge" 1 %}} | {{% mod-img/width "xlarge" %}} |
+| large block                       | {{% mod-img/width "large" 1 %}}  | {{% mod-img/width "large" %}}  |
+| text (figure default)                   |  {{% mod-img/width "text" 1 %}}  |  {{< mod-img/width "text" >}}  |
+| small (embed default) |      {{% mod-img/width "small" 1 %}}      |     {{% mod-img/width "small" %}}     |
+| tiny                    |     {{% mod-img/width "tiny" 1 %}}     |     {{% mod-img/width "tiny" %}}     |
+| micro                |     {{% mod-img/width "micro" 1 %}}     |     {{% mod-img/width "micro" %}}     |
 {.normal}
 
-When we build a project with more than a hundred images — like this project — we have to show a little patience on the first Hugo run. Image processing may take a few minutes. The generated images are cached by Hugo and we don’t have to wait again in subsequent runs.
+When we build a project with lots of images — more than hundred like this project — we have to show a little patience on the first Hugo run. Image processing may take a few minutes. The generated images are cached by Hugo and we don’t have to wait again in subsequent runs.
+{.inline}
 
-{{< mnote up=14 >}}
-On **virtual machines** we should enable a caching mechanism. If the provider pulls the content from a repository, we can include the reserved {$_resources} folder, where processed files are stored.
+{{< mnote >}}
+When we publish our site with the help of a service provider we need to make sure caching works. (&rightarrow; [Publish](/doc/intro/workflow/publish))
 {{< /mnote >}}
 
 In case we can’t provide a large enough version of an image, Perplex applies an [excellent interpolation filter][filter] (provided by Hugo) to enlarge its size smoothly. Those interpolated images may look blurry nonetheless, there is no way to get the missing information back. A high resolution of the original is always preferable.

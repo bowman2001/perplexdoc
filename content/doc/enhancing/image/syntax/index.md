@@ -51,12 +51,13 @@ Additionally there are diagrams generated from textual descriptions:
 | Caption | **caption** | Inline Markdown string |
 | Class | **class** | Additional CSS classes |
 | Link | **link** | URL for a linked image |
-| Horiz. position | **posh** | _embedded_: {{% parameters imaging.embedded.posh %}} |
-| | | _figure_: {{% parameters imaging.figure.posh %}} |
-| Vert. position | **posv** | _embedded_: {{% parameters imaging.embedded.posv %}} |
+| Horiz. position | **posh** | _embedded_: {{% mod-img/value "embed" "posh" "options" %}} |
+| | | _figure_: {{% mod-img/value "figure" "posh" "options" %}} |
+| Vert. position | **posv** | _embedded_: {{% mod-img/value "embed" "posv" "options" %}} |
+| | | _figure_: {{% mod-img/value "figure" "posv" "options" %}} |
 | Link related | **rel** | See [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) |
-| Size | size | _embedded_ {{% parameters imaging.embedded.size %}} |
-| | | _figure_: {{% parameters imaging.figure.size %}} |
+| Width | **width** | _embedded_ {{% mod-img/value "embed" "width" "options" %}} |
+| | | _figure_: {{% mod-img/value "figure" "width" "options" %}} |
 | Link target | **target** | {{% parameters link.target %}} |
 | Rotate | **rotate** | |
 | Ratio | **ratio** | |

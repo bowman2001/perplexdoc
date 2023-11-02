@@ -27,19 +27,17 @@ When you place your **Google Measurement ID** in the [main configuration file][g
 {.inline}
 
 {{< mnote >}}
-Because Google collects specific data from website visitors with this software, many sites are obligated to inform their visitors about their services and need to ask them for explicit permission in a pop-up window.
+Because Google collects user specific data from website visitors with this software, many sites have to inform their visitors about their services and need to ask for explicit permission if they have to comply with the **G**eneral **D**ata **P**rotection **R**egulation.
 {{< /mnote >}}
 
 ## Fathom Analytics
 
-[Fathom Analytics][fathomref]{^\*} is privacy-focused and needs to be paid because it doesn’t monetize data from visitors. It doesn’t collect any individual data at all and is a merely statistical service for website operators. With Fathom you don’t need to force your visitors to decide about data they would like to share.
+[Fathom Analytics][fathomref]{^\*} is privacy-focused and wants to get paid because it doesn’t monetize data from visitors. It doesn’t collect any individual data at all and is a merely statistical service for website operators. With Fathom your vistors don’t need to know about the service and don’t need to decide what kind of data they would like to share. &Rightarrow; No need for a pop-up window!
 {.inline}
 
 {{< mnote star=1 >}}
 This is an affiliate link. Should you subscribe to Fathom’s service, I would appreciate it if you could do so by following [this link](https://usefathom.com/ref/CENRRH). You can save 10 bucks this way.
 {{< /mnote >}}
-
-**In short**: With this service, there is no need for another annoying pop-up!
 
 This advantage comes at a (reasonable) price after a short tryout period. Fathom doesn’t offer as much information and as many tools as Google. But if you don’t need all this anyway, you will probably like their clear and simple backend.
 
