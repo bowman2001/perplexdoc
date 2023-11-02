@@ -40,17 +40,17 @@ The shortcode is called `mnote` and needs an opening and closing tag around the 
 
 The shortcode has four named parameters:
 
-star
+`star`
 : Number of stars to show at the beginning of the note. 1 or 2 are possible.
 
-dagger
+`dagger`
 : Kind of dagger to show at the beginning of the note. 1 or 2 crossings are possible.
 
-up
+`up`
 : Number of units (1rem) to push the note up. The default line height for this theme is **three units**. We can move the note up in case we can’t use `{.inline}`.
 
-down
-: Number of units (1rem) to push the note down. This is the way to make room for other layout elements.
+`down`
+: Number of units (1rem) to push the note down. This is the way to make room for absolute positionend layout elements (like the featured image) in the margin before the current note.
 {.dl-loose}
 
 Optional stars or daggers should be matched by similar signs in the main text. They are used to reference notes which can’t be placed in the vincinity of the text they are referring to because other layout elements got in the way.

@@ -4,16 +4,23 @@ title: Hugo Module{/}for rendering images
 linktitle: Image module
 description: Retrieve, preprocess and render all kinds of images
 date: 2023-10-11T15:57:57+02:00
+resources:
+  - src: alvin-lenin-gy0IAx6KXSg-unsplash.jpg
+    name: featured
+    params: 
+      alt: long pier leading to a house in the sea    
 categories: [module]
 tags: [image]
 draft: true
 ---
 
-Hugo includes many powerful image processing methods. This module offers theme developers and their users a way to apply them consistently.
+Hugo includes many powerful methods for the image processing pipeline. This module offers theme developers and their users a way to apply them consistently.
 {.p-first}
 <!--more-->
 
-The module processes many parameters which allow to control all stages of Hugo’s imaging pipeline. The possible values of these parameters need to be configured by template developers. Given a proper configuration the module offers their users very versatile render hooks to retrieve (or create) all kinds of images, preprocess them, and apply all configured layout classes.
+The module can process many parameters to control all stages of Hugo’s imaging pipeline. The possible values for some of these parameters need to be configured by template developers. Given a proper configuration the module offers their users very versatile render hooks to retrieve (or create) all kinds of images, preprocess them, and apply all configured layout classes.
+
+Theme developers can also use the partials for the different processing steps to assemble their own layout elements.
 
 ## Retrieving images
 
