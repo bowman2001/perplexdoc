@@ -6,6 +6,6 @@ date: 2023-07-03T11:10:29+02:00
 type: search
 ---
 
-Search the full-text content of this site. Excluded from the search indices are code segments, tables, and formula blocks.
+Search the full-text content of this site. Excluded from the search are latex code blocks.
 {.p-first}
 <!--more-->
