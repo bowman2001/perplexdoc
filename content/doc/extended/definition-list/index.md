@@ -22,7 +22,7 @@ resources:
 Definition lists consist of **terms** as list markers, which are associated with **details** in the list entries.
 {.p-first} <!--more-->
 
-The definition list is an essential tool to structure textual content on a small scale. There is only one Markdown syntax structure, but Perplex offers some nice styling options.  
+The definition list is an essential tool to structure textual content on a small scale. We only have one Markdown syntax structure, but the theme offers styling options that make a big difference.  
 
 ## Syntax
 
