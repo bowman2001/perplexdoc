@@ -5,4 +5,4 @@ weight: 60
 ---
 
 - [Licenses](/doc/intro/license)
-- [Impressum](/impressum) (German)
+- [Impressum](/impressum)

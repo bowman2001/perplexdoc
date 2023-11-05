@@ -14,4 +14,4 @@ toc: false
 You have called a URL, which is not here (anymore). There is no way to determine how this happened, but we’re sorry for any inconvenience.
 {.p-first} <!--more-->
 
-You may want to begin a search for the content on the [start page](/).
+You may want to [search the full content](/search) of this site.

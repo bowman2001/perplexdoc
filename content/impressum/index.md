@@ -1,5 +1,8 @@
 ---
+authors: [Georg Makowski]
 title: Impressum
+description: Contact data
+subtitle: false
 date: 2022-06-16T22:54:46+02:00
 toc: false
 resources:
@@ -9,5 +12,7 @@ resources:
       alt: A big office
 ---
 
-Place your lead paragraph here. If you don't need special styling, remove the attribute. The _more-tag_ marks the paragraph as the content _summary_ for this page.
-{.p-first} <!--more-->
+**Jörg Makowski
+Mörfelder Landstraße 100
+60598 Frankfurt am Main
+Germany**
