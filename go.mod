@@ -16,5 +16,5 @@ require (
 	github.com/bowman2001/hugo-mod-resource v0.1.2 // indirect
 	github.com/bowman2001/hugo-mod-simple-icons v0.0.0-20230716191508-4c68a81e5385 // indirect
 	github.com/bowman2001/hugo-mod-wrap v0.0.0-20230803072025-a10a9f082aac // indirect
-	github.com/bowman2001/perplex v0.13.6 // indirect
+	github.com/bowman2001/perplex v0.13.7 // indirect
 )
