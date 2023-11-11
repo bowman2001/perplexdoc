@@ -90,7 +90,9 @@ The non-breaking entities are meant for situations where characters or words sho
 
 ## Emojis
 
-Hugo supports emojis via codes like :woozy_face: (`:woozy_face:`) in Markdown content, if we set the global parameter [`enableEmoji`][he] to `true`. We can also copy them as UTF-8 characters into the content without this configuration.
+We can always place them directly as UTF-8 characters into the content without any configuration.
+
+Hugo supports emojis via codes like :woozy_face: (`:woozy_face:`) in Markdown content, if we set the global parameter [`enableEmoji`][he] to `true`. 
 
 There are quite a lot of them according to this [cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/). Have fun --- but don’t forget that serious web pages are not a personal chat.🙏
 

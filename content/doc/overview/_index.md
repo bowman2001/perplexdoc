@@ -16,7 +16,7 @@ resources:
       alt: Overview of a mountain range
 ---
 
-Short overview of the Perplex theme for seasoned Hugo users.
+Short overview of for seasoned Hugo users.
 {.p-first} <!--more-->
 
-The theme provides a nice default layout for extended CommonMark content. Styling with attributes or shortcodes offers layout variants familiar from print design.
+The theme provides a nice default layout for extended CommonMark content. Styling with attributes or shortcodes offers layout variants that are often familiar from print design.

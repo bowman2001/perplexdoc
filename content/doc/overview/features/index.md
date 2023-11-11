@@ -15,36 +15,30 @@ tags: [feature]
 weight: 7
 ---
 
-A page layout based on classic typographical principles without compromise.
+A site layout based on classic typographical principles and techniques — without the usual compromises.
 {.p-first}
 <!--more-->
 
 Layout
-: Advanced user-friendly design for technical publishing. Different kinds of pages all reside on the same layout grid and you can publish everything with Markdown: 
+: Advanced user-friendly design to publish technical Markdown content. All different kinds of pages reside on the same layout grid: 
 
-  - Large documentation
+  - large documentation
   
   - news stream
   
-  - blog postings 
+  - blog postings
 
   - author pages
   
   - in-depth articles (coming)
   {.col2}
 
-Improved styling
-: Many Markdown attributes and a few custom shortcodes to enhance the style on your pages.
+Enhanced styling
+: Many Markdown attributes and a few custom shortcodes to improve and variate the styling and the layout.
 : Light and dark modes follow your OS settings.
 
-Icons
-: Google’s [Material Symbols](https://fonts.google.com/icons) and [Simple Icons](https://simpleicons.org) for brands can be included simply by name. Material Symbols show automatically in all navigational elements of the documentation. All icon sets can also be used as Markdown content with shortcodes.
-
-Images
-: Provide only one large original image and let Hugo & Perplex handle the generation of all the various sizes for optimized web display and meta tags.
-
 Navigation
-: All elements needed to sift through your information as quickly as possible are auto-generated:
+: All elements needed to sift through the content are generated from data in the front-matter:
   
   - Site navigation
   
@@ -56,10 +50,15 @@ Navigation
   {.col2}
 
 Full-text search
-: The theme is ready for [Pagefind](https://pagefind.app), a very fast search library for self-hosting.
+: The theme is ready for [Pagefind](https://pagefind.app), a very fast and bandwidth-efficient search library for self-hosting.
+
+Icons
+: Google’s [Material Symbols](https://fonts.google.com/icons) and [Simple Icons](https://simpleicons.org) for brands can be included by their identifiers. Material Symbols show automatically in all navigational elements of the documentation. All icon sets can also be used as Markdown content (using shortcodes).
+
+Images
+: Users need to provide only one large original image, the theme handles the generation of all the needed sizes.
 
 Efficiency
-: Sites built with this theme are extremely fast (check Lighthouse). Images are optimized and get loaded lazily, fonts are split into small packages, and icons are embedded inline.
-: The build process is also as fast, cost-effective, and energy-efficient as it gets --- thanks to Hugo.
+: Sites built with this theme are very fast. Image sets are optimized to minimize the needed bandwidth and loaded lazily, fonts are split into small packages, and icons are embedded inline.
+: The build process is also fast, cost-effective, and energy-efficient --- thanks to Hugo.
 {.dl-loose}
- 
