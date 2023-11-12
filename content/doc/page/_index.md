@@ -14,5 +14,5 @@ weight: 600
 tags: [page]
 ---
 
-The theme generates all variable elements around the content from page specific meta-data. We need to provide these parameters in the front-matter.
+The theme generates all variable elements around the content from page specific meta-data. We need to provide these parameters in the frontmatter.
 {.p-first} <!-- more -->

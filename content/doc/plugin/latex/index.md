@@ -19,7 +19,7 @@ LaTeX is the most popular typesetting system for the natural sciences. The synta
 
 ## Syntax
 
-Perplex includes the render engine [\\(\KaTeX\\)][katex] on demand into pages with at least one of the shortcodes {$math} or {$chem} or code blocks with the identifiers `math` or `chem`. If you already have working mathematical or chemical expressions in your Markdown — maybe with carefully escaped markup — you can also set the parameters `math: true` or `chem: true` in the front-matter.
+Perplex includes the render engine [\\(\KaTeX\\)][katex] on demand into pages with at least one of the shortcodes {$math} or {$chem} or code blocks with the identifiers `math` or `chem`. If you already have working mathematical or chemical expressions in your Markdown — maybe with carefully escaped markup — you can also set the parameters `math: true` or `chem: true` in the frontmatter.
 {.inline}
 
 {{< mnote >}}

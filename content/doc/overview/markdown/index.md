@@ -43,7 +43,7 @@ This page shows the default style the theme applies to Markdown elements. Image 
 
 The following HTML elements `<h1>`—`<h6>` represent the title, three levels of section headings, and two levels of paragraph headings.
 
-Because the templates generate the title section from front-matter meta-data the Markdown **should not** contain a title. As usual, the theme processes front-matter parameters for the [title section](https://perplex.desider.at/doc/page/title).
+Because the templates generate the title section from frontmatter meta-data the Markdown **should not** contain a title. As usual, the theme processes frontmatter parameters for the [title section](https://perplex.desider.at/doc/page/title).
 {.box-info}
 
 ---

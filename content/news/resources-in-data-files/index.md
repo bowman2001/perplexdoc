@@ -10,7 +10,7 @@ The theme offers a new possibility to store local parameters for resources. Data
 {.p-first}
 <!--more-->
 
-Hugo offers to process arbitrary meta-data parameters associated with page resources. We can add a parameter list to [local resources](https://gohugo.io/content-management/page-resources/#page-resources-metadata) in the front-matter of page bundles under `params`:
+Hugo offers to process arbitrary meta-data parameters associated with page resources. We can add a parameter list to [local resources](https://gohugo.io/content-management/page-resources/#page-resources-metadata) in the frontmatter of page bundles under `params`:
 
 ```yaml
 resources:

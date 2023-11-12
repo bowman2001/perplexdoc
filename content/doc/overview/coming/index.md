@@ -21,7 +21,7 @@ Features, which I consider essential, and the ones which would be nice to have.
 ## Essential
 
 Documentation
-: The documentation should be up to date :grinning_face_with_sweat:.
+: The documentation should be up to date.
 {.dl-loose}
 
 ## Nice to have

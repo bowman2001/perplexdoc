@@ -38,7 +38,7 @@ Enhanced styling
 : Light and dark modes follow your OS settings.
 
 Navigation
-: All elements needed to sift through the content are generated from data in the front-matter:
+: All elements needed to sift through the content are generated from data in the frontmatter:
   
   - Site navigation
   

@@ -81,7 +81,7 @@ resources:
     posh: left
 ```
 
-We register an image in the front-matter list of resources with its file name or relative path. We add a new internal name and **need to** call it by this new name only `![Placeholder](newname)`. To pass additional parameters we add the optional `params` key. They need to be indented by two additional spaces (or a short tab) relative to `params`.
+We register an image in the frontmatter list of resources with its file name or relative path. We add a new internal name and **need to** call it by this new name only `![Placeholder](newname)`. To pass additional parameters we add the optional `params` key. They need to be indented by two additional spaces (or a short tab) relative to `params`.
 
 ### Data file parameters
 
@@ -115,5 +115,5 @@ for the vertical positioning doesn’t move an embedded image into the middle of
 
 [^1]: The syntax for **query strings** has been introduced to extend URLs with optional parameters like `https://name.org?id=val&id2=val2`. They are usually generated automatically to specify API requests.
 
-Parameters defined in the front-matter are **overridden** by the **in-place parameters** will override them.
+Parameters defined in the frontmatter are **overridden** by the **in-place parameters** will override them.
 {.box-info}

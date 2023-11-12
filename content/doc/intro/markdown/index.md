@@ -26,9 +26,7 @@ CommonMark is **easy** to
 [learn](http://CommonMark.org/help). 
 ```
 
-Markdown files contain plain text marked up with a small set of ASCII signs. We can read and change them with any text editor. 
-
-Markdown files get the suffix ›{$md}‹.
+Markdown files contain plain text marked up with a small set of ASCII signs. We can read and change these files with the suffix ›{$md}‹ with any text editor.
 
 {{< mnote >}}
 The suffixes ›{$mdown}‹ and ›{$markdown}‹ also indicate Markdown but they are rarely used.
@@ -151,9 +149,9 @@ Some editors are designed exclusively for authoring Markdown. They usually offer
 ### Using Hugo’s server mode for local previews {.h-tip}
 Hugo offers a very convenient way of looking at your results instantly: When you run Hugo in server mode on your local machine, it renders your files and delivers the result instantly to your browser (see [Using Hugo](/doc/intro/workflow/local-server)). My workflow is like that of many others based on Visual Studio Code (VSCode) as a Markdown editor in conjunction with Hugo’s fabulous server mode.
 
-### Front-Matter CMS {.h-warn}
+### frontmatter CMS {.h-warn}
 
-Front-Matter CMS is an exciting plugin for VSCode which offers many nice features. Unfortunately, I can’t recommend it right now for this theme, because it may change the front-matter in a way that alters the site structure. It’s also not capable of handling Hugo’s resource parameters and local data files for resources. The plugin handles other projects very fine and I hope to use it in the future.
+frontmatter CMS is an exciting plugin for VSCode which offers many nice features. Unfortunately, I can’t recommend it right now for this theme, because it may change the frontmatter in a way that alters the site structure. It’s also not capable of handling Hugo’s resource parameters and local data files for resources. The plugin handles other projects very fine and I hope to use it in the future.
 
 ## Markdown Linter
 CommonMark is permissive to small variations in the markup rules. To ensure a certain set of rules we may use a linter. The node package [Markdownlint][mlint] for example is very reliable and easy to configure. There are plugins to automatically scan your Markdown directly in the editor.

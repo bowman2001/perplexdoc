@@ -34,7 +34,7 @@ Perplex is an all-purpose theme for technical content. There are templates for t
 At the moment, the example site included in the theme shows the news section as a start page the same way this documentation does.
 {.inline}
 
-{{< mnote >}}The entry `url: /` in the front-matter of the section’s list page does accomplish this.{{< /mnote >}}
+{{< mnote >}}The entry `url: /` in the frontmatter of the section’s list page does accomplish this.{{< /mnote >}}
 
 ## Design & Layout
 

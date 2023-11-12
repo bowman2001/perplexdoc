@@ -43,4 +43,4 @@ Articles [TODO]
 
 ### TODO
 
-There is another option for documentation pages. We can generate a featured image with the icon from the menu entry in the front-matter by setting the parameter `featured: icon`.
+There is another option for documentation pages. We can generate a featured image with the icon from the menu entry in the frontmatter by setting the parameter `featured: icon`.

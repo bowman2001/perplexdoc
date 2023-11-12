@@ -13,11 +13,11 @@ categories: [template]
 tags: [title, page]
 ---
 
-The title section is generated from meta-data in the front-matter.
+The title section is generated from meta-data in the frontmatter.
 {.p-first}
 <!--more-->
 
-Most parameters for the title section contain strings. Often, we can just type them directly into the YAML front-matter block.
+Most parameters for the title section contain strings. Often, we can just type them directly into the YAML frontmatter block.
 
 There is **one caveat for YAML strings**: In case we’re using characters, which are reserved for YAML formatting, we need to enclose strings in (straight) quotes to avoid parsing errors.
 {.box-info}
