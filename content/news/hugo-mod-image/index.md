@@ -20,7 +20,7 @@ Hugo includes many powerful methods for the image processing pipeline. This modu
 
 The module can process many parameters to control all stages of Hugo’s imaging pipeline. The possible values for some of these parameters need to be configured by template developers. Given a proper configuration the module offers their users very versatile render hooks to retrieve (or create) all kinds of images, preprocess them, and apply all configured layout classes.
 
-Theme developers can also use the partials for the different processing steps to assemble their own layout elements.
+Theme developers can also use the partials for the different processing steps to assemble their layout elements.
 
 ## Retrieving images
 
@@ -49,7 +49,7 @@ GIF
 
 ## Avoiding layout shifts
 
-All raster images and their optional placeholders are placed in matching containers with a pre-calculated fixed size. When developers need a specific image ratio (in cards for example) they can apply forced ratios in their own templates to trigger the suitable resizing.
+All raster images and their optional placeholders are placed in matching containers with a pre-calculated fixed size. When developers need a specific image ratio (in cards for example) they can apply forced ratios in their templates to trigger the suitable resizing.
 
 ## Delivering optimal sizes to viewers
 
@@ -61,7 +61,7 @@ All raster images and their optional placeholders are placed in matching contain
 
 Very small images like author portraits or avatars may be embedded into the generated HTML with the parameter `base64: run`. The maximum size for these embedded base64-encoded strings is configurable. When the encoded string is too long the image is loaded in the default way.
 
-The loading process for the starts by default with an automatically calculated CSS-gradient between the two primary colors of an image. The alternative is a small **L**ow **Q**uality **I**mage **P**laceholder (LQIP) which is generated when the parameter `lqip: run` is set for specific images. Lazysizes replaces both placeholders with a near-optimal version of the original image as soon as the image tag comes into view. In case the LQIP itself is too large for embedding (max size configurable) a three stage loading process is applied. At first the image container shows the mentioned gradient, then Lazysizes loads the small LQIP as soon as the image comes into view and switches again to the optimal large image the moment it’s available.
+The loading process starts by default with an CSS-gradient between the two primary colors of an image. The alternative is a small **L**ow **Q**uality **I**mage **P**laceholder (LQIP) which is generated when the parameter `lqip: run` is set for specific images. Lazysizes replaces both placeholders with a near-optimal version of the original image as soon as the image tag comes into view. In case the LQIP itself is too large for embedding (max size configurable) a three stage loading process is applied. At first the image container shows the mentioned gradient, then Lazysizes loads the small LQIP as soon as the image comes into view and switches again to the optimal large image the moment it’s available.
 {.inline}
 
 {{< mnote >}}To study the loading processes with more detail you can throttle your network in the developer-environment of your desktop-browser.{{< /mnote >}}
