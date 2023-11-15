@@ -62,7 +62,9 @@ This is an example of a minimal entry in the resources list. The dash marks the 
 2. We cannot include a resource file under its original name anymore.
 {.col2}
 
-The only advantage we get from this simple entry is the short identifier instead of the long filename. The true power of registered resources lies in the optional `params` for additional parameters:
+The advantage we get from this simple entry is the short identifier instead of the long filename. This is the usual way to specify a **featured image**: Copy the file into the page bundle and name it `featured`. 
+
+Registered resources offer much more possibilities with their optional `params` section for additional parameters:
 
 ```YAML {.inline linenos=true}
 resources:

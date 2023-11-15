@@ -55,17 +55,17 @@ Hugo offers **single pages** and **list pages** and Perplex always provides temp
 
 ### Single pages
 
-You may have already created the new demo file `blog/first.md` while following the example in the section [first content](/doc/intro/workflow/local-server#your-first-content). This is the simplest way to generate a new posting without any additional resources.
+You may have already created the new demo file {$content/blog/first.md} while following the example in the section [first content](/doc/intro/workflow/local-server#your-first-content). This is the simplest way to generate a new posting without any additional resources.
 
 #### Leaf Bundles
 
 When we include resources like images on a page, we like to [retrieve them](resources) easily. If we need some files only on a specific page, we create a leaf bundle like this:
 
 ```sh {.left-in}
-hugo new blog/second/index.md
+hugo new blog/second
 ```
 
-The file `index.md` is rendered again as a single page under the relative URL {$/blog/second/}, but now we can store page-specific resources in its folder and access them by their filename or short relative path.
+We now have created the file {$content/blog/second/index.md} which is rendered again as a single page under the relative URL {$/blog/second/}. Now we can store page-specific resources in its folder and access them by their filename or short relative path.
 
 {{< mnote up=14 >}}
 **Subdirectories** are possible. We can build only one single page with a leaf bundle, but there are no constraints for resource folders.
@@ -102,7 +102,11 @@ We create a new documentation page with a command like
 hugo new doc/demo/first.md
 ```
 
-Now we have the new file in {$content/doc/demo/first.md} with a frontmatter containing a few more entries than a simple posting. These are the new lines:
+Now we have the new file in {$content/doc/demo/first.md} with a frontmatter containing a few more entries than a simple posting.
+
+{{< mnote up=5 >}}We can also create a documentation leaf bundle with something like `hugo new doc/demo/second`.{{< /mnote >}}
+
+These are the new lines:
 
 ```yaml {linenos=true linenostart=6 .left-in}
 menu:
@@ -171,7 +175,7 @@ hugo new tags/demo
 
 We get {$tags/demo/_index.md} with a short frontmatter section.
 
-Now we can add a special featured image and a taxonomy description for the title. And we can reuse the featured image of a taxonomy for all pages with this taxonomy if we are too lazy to give these pages their own featured image.
+Now we can add a special featured image (&rightarrow; [see resources](doc/intro/workflow/resources)) and a taxonomy description for the title. And we can reuse the featured image of a taxonomy for all pages with this taxonomy if we are too lazy to give these pages their own featured image.
 
 #### Author pages
 
