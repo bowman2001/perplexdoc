@@ -48,29 +48,24 @@ To generate a new blog entry use a command like
 hugo new blog/first.md
 ```
 
-The new file is created in the folder {$content/blog}. It has a frontmatter section with some parameter keys for meta-data. They contain auto-generated values, or placeholders, or are empty.[^1] The first lines of the frontmatter look like
+The new file is created in the folder {$content/blog}. It has a frontmatter section with some parameter keys for meta-data. They contain auto-generated values, or placeholders, or are empty.[^1] For our example we get:
 
 ```yaml {.left-in linenos=true }
 ---
-author: 
+authors: []
 title: First
-date: 2022-07-01T21:22:27+02:00
-```
-
-The `author` value is optional, the `title` and the `date` are mandatory. The `title` is just guessed from the file name — you probably want to change it. The `date` contains the moment when we ran the `hugo new` command in a special format. You can also change it but need to be very careful, because typos may lead to errors.
-
-At first, we ignore the following empty `resources` section and its parameters. We’ll [catch up later](/doc/intro/workflow/resources) with that.
-
-```yaml {.left-in linenos=true linenostart=10}
+description: "**Placeholder**"
+subtitle: false
+date: 2023-11-15T14:05:45+01:00
 categories: []
 tags: []
 draft: true
 ---
 ```
 
-At the end of the frontmatter are the taxonomy keys with empty lists (squared brackets) as values. Here you can add one or more keywords (comma-separated).
+The `authors` value can be filled with one author or a comma-separated list of more people. The `title`, `date`, and `description` are mandatory entries. The auto-generated `title` is derived from the file name — you probably want to change it. The `date` contains the moment you ran the `hugo new` command. In case you change it, be very careful about preserving the special format. At last we have the taxonomy keys with their (empty) lists. You can add one or more keywords as (comma-separated) list into the squared brackets.
 
-Our Markdown content begins after the frontmatter.
+Our Markdown content begins after the frontmatter. All new files of this theme contain the following placeholder with a special [attribute](/doc/enhancing/attribute/howto) for the [first paragraph](/doc/page/standfirst) and the {$more} tag to mark this first paragraph as the page summary.
 
 ```text
 **Placeholder**: Put your own summary paragraph here instead of this one.
@@ -78,13 +73,13 @@ Our Markdown content begins after the frontmatter.
 <!--more-->
 ```
 
-All new files contain this placeholder with a special [attribute](/doc/enhancing/attribute/howto) for the [first paragraph](/doc/page/standfirst) and the {$more} tag to mark this first paragraph as the page summary. You are encouraged to replace this placeholder with your summary now or later. It’s essential for cards and other page previews.
+This placeholder encourages you to always write a summary paragraph before publishing. It’s essential for cards and other page previews.
 
-Your content may be simple text without any markup in the beginning.
+Other than this first paragraph, your normal content may be simple text without any markup or attributes.
 
 As soon as you save your file, Hugo’s server will update your site in the browser. Should you make mistakes, Hugo will display a descriptive error message on its console or in the browser.
 
-[^1]: The templates for the file generation with `hugo new` are part of the theme. But like any other theme template, we can override them. See the [Hugo docs](https://gohugo.io/content-management/archetypes/) if you want to create your own.
+[^1]: The templates for the file generation with `hugo new` are called **archetypes** and part of the theme. But like any other theme template, we can override them. See the [Hugo docs](https://gohugo.io/content-management/archetypes/) if you want to create your own.
 
 [server]: https://gohugo.io/commands/hugo_server
 
@@ -92,15 +87,15 @@ As soon as you save your file, Hugo’s server will update your site in the brow
 
 The following tips may improve your editing experience.
 
-### Auto-save delay
-Some editors are saving our work so fast by default, that nearly every keystroke leads to a new file version and the regeneration of the corresponding page. When we are in the process of changing sensitive content like frontmatter parameters, this can easily cause Hugo’s server to throw an error, because Hugo can’t render inconsistent files.
-
-This is not a big deal but gets annoying after a while. It’s better to set the auto-save delay to a bigger value, which lets us save consistent file versions manually.
-
 ### Editor links in the local preview
 
-A few editors offer protocols to open files with a special link. For now, the theme provides a link to open the content file in a local instance of Visual Studio Code. This link is only present if Hugo runs in server mode and a local file exists. It’s placed in the date at the top or the bottom of regular pages. Because taxonomy pages don’t show a date, the link is placed in the title.
+A few editors offer protocols to open files with a special link. For now, the theme provides a link to open the content file in a local instance of Visual Studio Code. This link is only present if Hugo runs in server mode and a local file exists. It’s placed in the date at the top or the bottom of regular pages. On pages without a date, the link is placed in the title.
 
 {{< mnote up=11 >}}
 Hugo allows importing **remote content** as a module. In that case, there are no local files to open.
 {{< /mnote >}}
+
+### Auto-save delay
+Some editors are auto-saving our work so fast by default, that nearly every keystroke leads to a new file version and the regeneration of the corresponding page. When we are in the process of changing sensitive content like frontmatter parameters, this can easily cause Hugo’s server to throw an error, because Hugo can’t render inconsistent files.
+
+This may not be a big deal at first but will get annoying after a while. It’s better to set the auto-save delay to a bigger value, which lets us save consistent file versions manually.

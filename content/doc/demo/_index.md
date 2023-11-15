@@ -15,13 +15,11 @@ resources:
   src: shubham-dhage-ykFTt5Dq1RU-unsplash.jpg
   params: 
     alt: Complex light dome
-    size: tiny
+    width: tiny
 weight: 9999
 ---
 
-This is an empty section for practicing. Here you can place your first documentation pages to get used to the workflow with Hugo & Perplex.
+This is the demo section for practicing. Here you can get used to create documentation pages.
 {.p-first}<--!more-->
 
-There is a step-by-step guide on how to create a new documentation page in the [content workflow introduction](/doc/intro/workflow/content).
-
-On the same page, there is also a guide about new (sub-)sections for your pages.
+There is a step-by-step guide on how to create a new documentation page or section in the [content workflow introduction](/doc/intro/workflow/content).

@@ -34,9 +34,14 @@ The [Hugo documentation site][hugodoc] addresses developers mostly and offers de
 
 ## Install Hugo
 
-Please follow the specific [installation instructions](https://gohugo.io/getting-started/installing/) for your operating system on the Hugo documentation site (the docs). Because Hugo is still evolving and Perplex may use recent features you should choose an installation, which is easy to update frequently.
+Please follow the specific [installation instructions](https://gohugo.io/getting-started/installing/) for your operating system on the Hugo documentation site (the docs).
 
-## Get Perplex
+Hugo is still evolving and newer versions of this theme may rely on its recent features. If you are interested in following them, you should choose an installation, which is easy to update frequently.
+
+In case you are satisfied with the current feature set of Hugo you can rely on this functionality. That is one of the great advantages of its monolithic binary. All Hugo releases are still available and if you want to stick to a certain setup you can do so indefinitely. Because there are no dynamic dependencies, there is also no need to update if you don’t want to.
+{.box-info}
+
+## Get the theme
 
 When you start to get acquainted with Hugo or need examples of Markdown content for Perplex, you should simply get this documentation project. It’s licensed as Creative Commons [(CC-BY-SA 4.0)][cc], available on [GitHub](https://github.com/bowman2001/perplexdoc) and ships with all the files for the documentation and a few examples the other kinds of content.
 
@@ -116,7 +121,9 @@ When you chose option 1. or 2., you need to tell Hugo to use the theme in the [c
 
 ## Having trouble with Hugo?
 
-When you encounter problems specifically with Hugo and can’t find an answer in its [documentation][hugodoc], the [Hugo community](https://discourse.gohugo.io) will support you. Please search the forum archive, because most likely your problem has already been answered there. If you are confronted with a new problem, please read the guidelines **How to Request Help** at the top of the site first, before you submit your request. You may need to provide a (temporary) public repository to let people inspect your code in detail.
+When you encounter problems specifically with Hugo and can’t find an answer in its [documentation][hugodoc], the [Hugo community](https://discourse.gohugo.io) will support you. Please search the forum archive, because most likely your problem has already been answered there. 
+
+If you are confronted with a new problem, please read the guidelines **How to Request Help** at the top of the forum site first, before you submit your request. You may need to provide a (temporary) public repository to let people inspect your code in detail.
 
 All problems with this theme or this documentation should be addressed in [their repositories](/doc/intro/perplex#trouble)!
 

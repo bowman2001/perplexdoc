@@ -17,7 +17,7 @@ weight: 150
 There is only one Markdown image element but the theme distinguishes between two possible positions: **stand-alone** & **embedded**.
 {.p-first} <!--more-->
 
-You can [enhance the image layout](doc/enhancing/image) in many ways with this theme. This is only the introduction to the basic syntax and its default layout.
+This is the introduction to the basic syntax and its default layout. You can [enhance the image layout](doc/enhancing/image) in many ways with this theme. 
 
 ## Syntax
 
