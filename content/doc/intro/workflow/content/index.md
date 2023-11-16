@@ -1,6 +1,7 @@
 ---
 authors: [Georg Makowski]
 title: Content Organization & Navigation
+linktitle: Content & Nav
 description: The structure of the {$content} folder
 subtitle: false
 date: 2022-09-11T14:58:36+02:00 
@@ -187,7 +188,7 @@ hugo new authors/demo-author
 
 to create {$/authors/demo-author/_index.md}.
 
-
+The frontmatter offers authors additional parameters to fill their portrait page which are documented on the [page about the author template](/doc/site/authors).
 
 ### Page Bundles {#bundles}
 
