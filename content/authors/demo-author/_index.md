@@ -1,31 +1,17 @@
 ---
-title: {{ replace .Name "-" " " | title }}
+title: Demo Author
 description: Short description placeholder
 subtitle: true
-date: {{ .Date }}
+date: 2023-11-16T07:35:42+01:00
 resources:
 - src: 
   name: featured
   params:
-    alt: {{ replace .Name "-" " " | title }}
+    alt: Demo Author
 - src: 
   name: portrait
   params:
-    alt: {{ replace .Name "-" " " | title }}
-follow_icons:
-- name: 
-  icon: 
-  url: 
-- name: 
-  icon: 
-  url: 
-contact_icons:
-- name: 
-  icon: 
-  url: 
-- name: 
-  icon: 
-  url: 
+    alt: Demo Author
 draft: true
 ---
 

@@ -48,7 +48,7 @@ Baseline grids and evenly spaced columns bear many fruits when the layout propor
 **C**ascading **S**tyle **S**heets
 : are my main field of expertise. Style sheets are a collection of mechanisms to add fonts and styling to a web document. They’re not a consistent programming language and every rigorous system reducing their complexity for the sake of technical maintainability tends to diminish their capabilities.
 
-    I don’t follow one CSS methodology on my projects and combine particular achievements of {=SMACSS}, {=BEM}, and {=OOCSS}. Similarly, I use {=SASS} and {=PostCSS} to simplify and optimize the style sheet generation.
+    I don’t follow one CSS methodology on my own projects and combine particular achievements of {=SMACSS}, {=BEM}, and {=OOCSS}. Similarly, I use {=SASS} and {=PostCSS} to simplify and optimize the style sheet generation.
 
 Markdown
 : is a very popular heuristic markup system to structure text files. Because Markdown has been derived from intuitive markup habits in early text forums and emails it's overly simplistic. I’m an expert in enriching and styling the resulting HTML.

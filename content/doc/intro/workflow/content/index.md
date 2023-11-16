@@ -165,21 +165,29 @@ We can distinguish the content filename {$\_index.md} for the branch bundle only
 
 #### Taxonomy pages
 
-Taxonomy pages are generated automatically for every category and tag we write into frontmatter. These pages are always list pages and contain cards with a preview of all the pages of a given taxonomy.
+Taxonomy pages are generated automatically for every category and tag in our frontmatter. These pages are always list pages and contain cards with a preview of all the pages of the given taxonomy.
 
-It’s possible and may be especially useful with this theme to create an explicit branch bundle for your taxonomies with the hugo new command like 
+It’s possible and can be especially useful with this theme to create an explicit branch bundle for your taxonomies with a command like
 
 ```sh {.left-in}
 hugo new tags/demo
 ```
 
-We get {$tags/demo/_index.md} with a short frontmatter section.
+and get {$tags/demo/_index.md} with a short frontmatter section.
 
-Now we can add a special featured image (&rightarrow; [see resources](doc/intro/workflow/resources)) and a taxonomy description for the title. And we can reuse the featured image of a taxonomy for all pages with this taxonomy if we are too lazy to give these pages their own featured image.
+Now we can add a special featured image (&rightarrow; [see resources](doc/intro/workflow/resources)) and a taxonomy description for the title. We can reuse this featured image on all pages with this taxonomy if we are too lazy to give them their own featured image. Special Markdown content for taxonomies is unnecessary and probably confusing. We don’t expect further explanations on a taxonomy page.
 
 #### Author pages
 
-TODO
+Author pages are handled like taxonomies (and technically they simply are taxonomies). Every author in the frontmatter gets her or his own page automatically. To fill it with personal information we use a command like 
+
+```sh {.left-in}
+hugo new authors/demo-author
+```
+
+to create {$/authors/demo-author/_index.md}.
+
+
 
 ### Page Bundles {#bundles}
 
