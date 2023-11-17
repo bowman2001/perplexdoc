@@ -40,9 +40,12 @@ To alter the style of these heading, Perplex offers Markdown [attributes][attr].
 
 On moderately sized pages, we often don’t want to apply the full hierarchy headings, because too much structure gets also confusing. We may like to skip one or two levels and use paragraph headings in normal sections, for example.
 
-But this would violate the HTML guidelines. Headings need to follow strictly in their descending order because screen readers and other automatic interpreters get confused otherwise.
+However, this would violate the HTML guidelines and mess up the table of contents (TOC). Headings also need to descend strictly because screen readers and other automatic interpreters get confused otherwise.
 
-To abide to this rule, we skip headings only visually. Any heading looks like a paragraph heading with the attribute `{.h-p}` or `{.h-p-s}` for a small paragraph heading.
+To abide by this rule, we skip headings only visually. Any heading looks like a paragraph heading with the attribute `{.h-p}` or `{.h-p-s}` for a small paragraph heading.
+{.inline}
+
+{{< mnote >}}The partial "toc-walk-headings" is responsible for the generation of the TOC and checks the validity of the heading sequence.{{< /mnote >}}
 
 ### Highlighted Headings
 

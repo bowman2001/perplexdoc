@@ -20,18 +20,22 @@ categories: [Markdown]
 tags: [paragraph, page]
 ---
 
-When the first paragraph contains a short introduction or summary, the theme can use it. We can mark this first paragraph with an attribute and a special tag.
+The first paragraph of every normal content page should contain a short introduction or summary. Usually, it’s also a good idea to mark this first paragraph with a styling attribute.
 {.p-first #first} <!--more-->
 
-A lead paragraph is optional but strongly recommended. Every regular page file generated with `hugo new` contains a placeholder.
+A lead paragraph with a summary is mandatory for this theme because it’s needed as the content for large cards etc. Every regular content file generated with `hugo new` contains a placeholder to remind authors of its necessity.
+
+Because list pages like documentation sections never appear in previews, they don’t have to contain such a summary. An introduction also for sections is nonetheless often a good idea.
 
 ## Syntax
-The [attribute](/doc/enhancing/attribute) `{.p-first}` styles the paragraph differently. The more-tag `<!--more-->` marks the paragraph as the summary of the page which is displayed on cards and in content lists etc.
+The more-tag `<!--more-->` at the end of a paragraph marks it as the summary of the page.
 
 Hugo always generates a content summary if anyhow possible. But Hugo cannot analyze content. If there is no tagged first paragraph it strips the first sentences (≈ 70 words) down to unformatted text.
 {.inline}
 
 {{< mnote >}}This may lead to badly truncated text and sometimes even to nearly incomprehensible results when these first lines have been strongly structured by markup.{{< /mnote >}}
+
+The additional [attribute](/doc/enhancing/attribute) `{.p-first}` **before the more-tag** styles the first paragraph differently. This is a purely optional layout feature.
 
 ## Result
 The [first paragraph](#first) on this page is styled as stand-first like on most other pages of this documentation.

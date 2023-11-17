@@ -39,5 +39,5 @@ Then follows the title and an optional subtitle which is generated from a short 
 : is a boolean and set to `false` by default. Set it to `true` if you want the short description to appear as a subtitle beneath the page title. Usually, the [first paragraph](standfirst) in the content is meant to introduce the reader and they usually don’t mix well.
 {.dl-loose}
 
-There is **one caveat for YAML strings**: In case we’re using characters, that are reserved for YAML formatting, we need to enclose strings in (straight) quotes to avoid parsing errors.
+There is **one caveat for YAML strings**: In case we’re using characters, that are reserved for YAML formatting (like `:` or `-`), we need to enclose strings in (straight) quotes to avoid parsing errors.
 {.box-warn}
