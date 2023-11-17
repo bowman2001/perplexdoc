@@ -124,19 +124,20 @@ We have a new `menu` section that specifically targets the menu called `doc` wit
 {{< mnote up=5 >}}You may have expected a central menu configuration, but this way is much easier. When we create a new documentation page we usually know, where we like to put in the menu order.{{< /mnote >}}
 
 There is this one other new parameter called `weight` which controls the place of the page in the section hierarchy.
-More specifically:
 
-`name`
-: is the title of the menu entry. If the page title is very long, we can provide a short version to avoid a messy menu.
+Let’s look at their detailed functions:
 
 `identifier`
-: is an internal name, that lets other pages refer to this one as their `parent`. It is only relevant for sections (list pages) and we should simply delete it for ordinary content pages.
+: is an internal name, that lets other pages refer to this one as their `parent`. It is only relevant for sections (list pages) and we can just delete it for ordinary pages.
+
+`name`
+: is the title of the menu entry. Especially when the page title is very long, we should provide a short entry to avoid a messy menu.
 
 `parent`
 : If this parameter contains the identifier of another page, the current page is placed a level beyond its parent in the sidebar menu. If there is no parent, the page gets a top-level menu entry.
 
 `pre`
-: is used very specific by this theme: It contains the identifier for a **Material Icon** from _Google_. Visit their [website](http://fonts.google.com/icons) to find a suitable one. You can pick any icon there and copy the identifier from the icon font embedding section (It's usually the icon name written in lower letters and with underscores `_` instead of spaces).
+: is used very specifically by this theme: It contains the identifier for a **Material Icon** from _Google_. Visit their [website](http://fonts.google.com/icons) to find a suitable one. You can pick any icon there and copy the identifier from the icon font embedding section (It's usually the icon name written in lower letters and with underscores `_` instead of spaces).
 
 `weight`
 : lets a page fall deeper in the hierarchy of the section, the higher it gets. Right now our new doc page has an entry at the bottom of the sidebar navigation because its weight is very high — take a look.
