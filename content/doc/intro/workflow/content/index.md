@@ -147,7 +147,7 @@ To place this new page under the demo section in the menu, you will need to set 
 
 ##### Taxonomies
 
-To connect our documentation site-wide with other sections (news, blog, or articles) we can also add taxonomies to our doc pages. This allows to reference them there as related content. 
+To connect our documentation site-wide with other sections (news, blog, or articles) we can also add taxonomies to our doc pages. This allows us to reference them there as related content.
 
 ### List pages (branch bundles) {#branch-bundles}
 
