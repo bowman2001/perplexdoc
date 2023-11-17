@@ -144,9 +144,13 @@ More specifically:
 
 To place this new page under the demo section in the menu, you will need to set `parent: demo` in the frontmatter.
 
-In the next step, we create a page for a new sub-section in the demo section. And like every kind of section page in Hugo this is a list page.
+##### Taxonomies
+
+To connect our documentation site-wide with other sections (news, blog, or articles) we can also add taxonomies to our doc pages. This allows to reference them there as related content. 
 
 ### List pages (branch bundles) {#branch-bundles}
+
+In this step, we create a page for a new sub-section in the demo section. And like every kind of section page in Hugo this is a list page.
 
 List pages present an overview of the section's content and provide some general introduction as their own content. Their templates are used for **branch bundles**.
 
@@ -180,7 +184,7 @@ Now we can add a special featured image (&rightarrow; [see resources](doc/intro/
 
 #### Author pages
 
-Author pages are handled like taxonomies (and technically they simply are taxonomies). Every author in the frontmatter gets her or his own page automatically. To fill it with personal information we use a command like 
+Author pages are handled like taxonomies (and technically they simply are taxonomies). Every author in the frontmatter gets her or his own page automatically. To fill it with personal information we use a command like
 
 ```sh {.left-in}
 hugo new authors/demo-author
@@ -188,7 +192,7 @@ hugo new authors/demo-author
 
 to create {$/authors/demo-author/_index.md}.
 
-The frontmatter offers authors additional parameters to fill their portrait page which are documented on the [page about the author template](/doc/site/authors).
+The frontmatter offers authors a few additional parameters which are documented on the [page about the author template](/doc/site/authors).
 
 ### Page Bundles {#bundles}
 

@@ -120,7 +120,7 @@ The first heading is reserved for titles. Only one `<h1>` tag should occur on an
 {{% pangram 4 %}}
 {.placeholder data-pagefind-ignore="all"}
 
-##### Success {.h-success}
+#### Success {.h-success .h-p}
 {{% pangram 4 %}}
 {.placeholder data-pagefind-ignore="all"}
 

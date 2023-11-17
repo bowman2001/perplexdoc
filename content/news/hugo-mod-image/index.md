@@ -49,7 +49,7 @@ GIF
 
 ## Avoiding layout shifts
 
-All raster images and their optional placeholders are placed in matching containers with a pre-calculated fixed size. When developers need a specific image ratio (in cards for example) they can apply forced ratios in their templates to trigger the suitable resizing.
+All raster images and their optional placeholders are placed in matching containers with a pre-calculated fixed ratio. When developers need a specific ratio (in cards for example) they can enforce a suitable resizing in their templates.
 
 ## Delivering optimal sizes to viewers
 

@@ -1,7 +1,7 @@
 ---
-title: Authors
-description: "**Placeholder**: Short description for small cards"
-subtitle: false
+title: "Authors & Editors"
+description: All content contributors
+subtitle: true
 date: 2023-11-16T07:38:49+01:00
 resources:
   - src: charles-etoroma-vkc1YLZ50yE-unsplash.jpg
