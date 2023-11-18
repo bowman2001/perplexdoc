@@ -1,0 +1,2 @@
+src: img/tiger/alicia-chong-jYM-AV5RRag-unsplash.jpg
+caption: This tiger is stored in the {$assets} folder. The attribution here is extracted from the filename, but we can also add one manually.

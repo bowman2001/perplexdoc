@@ -74,31 +74,52 @@ resources:
       alt: A pile of files
       ratio: 1.5
       zoom: 1.75
-      caption: This is the same image as the featured one. 
-      But the image has been cropped to the ratio of 3:2 
-      and zoomed in with a factor of 1.75.
+      caption: This is the same image as the featured one. But the image has 
+been cropped to the ratio of 3:2 and zoomed in with a factor of 1.75.
 ```
 
-The theme can process a bunch of them for the [CommonMark image element](doc/enhancing/image/syntax#resource-meta-data). 
+The theme can process a bunch of them for all [Markdown images](doc/enhancing/image/syntax#resource-meta-data).
 
 ![](files)
 
+## Site-wide (global) resources
 
+We can include these files directly with their path relative to the {$assets} folder.
+
+In case we need to store them elsewhere in folders (local or remote), we can let [Hugo mount](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts) these into {$assets}.
+
+## Remote resources
+
+We can include a remote resource directly with their absolute URL.
+
+## Global and remote resources with additional parameters
+
+To associate global files with extra parameters we need to create a local data file (YAML, TOML, or JSON) with our global or remote resource as `src` and add the other parameters. Then we reference this data file as if it would be the resource.
+
+`![Global image](global.yaml)` for example generates an image referenced in the data file {$global.yaml}:
+
+```yaml
+src: img/tiger/alicia-chong-jYM-AV5RRag-unsplash.jpg
+caption: This tiger is stored in the {$assets} folder. The attribution here is 
+extracted from the filename, but we can also add one manually.
+```
+
+![Global tiger](global.yaml)
 
 ## Resources from related page bundles
 
-There may be a downside to local resources depending on our specific content structure.
+There is also the option to reuse local page resources from related pages as a fallback.
 
-### Problem & Solution
-
-In case we want to include a resource more than once, we need to store and register it repeatedly in different page bundles. To overcome this problem, this theme is also looking for resources in taxonomy and parent pages. This also allows to use of already registered resources in simple pages, which aren’t bundles themselves.
+If a resource can’t be found elsewhere this theme is also looking for resources in related taxonomy and parent pages. This also allows to use of already registered resources in simple pages, which aren’t bundles themselves.
 
 ### Lookup Order
 
-In case a resource is not found for the current page, the theme searches related pages in the following order:
+This fallback search happens in the following order:
 
 1. Tags of the page
-2. Category of the page
+2. Categories of the page
 3. Parent of the page
 4. Parents parent …
 {.col2}
+
+If there are more resources with the same name (like "featured") in a related type of page, then the first match always wins.

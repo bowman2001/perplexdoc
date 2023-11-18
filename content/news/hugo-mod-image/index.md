@@ -18,7 +18,7 @@ Hugo includes many powerful methods for the image processing pipeline. This modu
 {.p-first}
 <!--more-->
 
-The module can process many parameters to control all stages of Hugo’s imaging pipeline. The possible values for some of these parameters need to be configured by template developers. Given a proper configuration the module offers their users very versatile render hooks to retrieve (or create) all kinds of images, preprocess them, and apply all configured layout classes.
+The module can process many parameters to control all stages of Hugo’s imaging pipeline. The possible values for some of these parameters need to be configured by template developers. Given a proper configuration, the module offers its users very versatile render hooks to retrieve (or create) all kinds of images, preprocess them, and apply all configured layout classes.
 
 Theme developers can also use the partials for the different processing steps to assemble their layout elements.
 
@@ -32,7 +32,7 @@ We can resize, zoom in, and rotate raster images with the three resource paramet
 
 ## Including and offering layout classes
 
-Developers may incorporate all their available classes for images to be applied with this module. Specified width classes for figures and embedded images are the minimum configuration this module needs to function. Optional are shadows, frames, backgrounds ... you name it.
+Developers may incorporate all their available classes for images to be applied with this module. Specified width classes for figures and embedded images are the minimum configurations this module needs to function. Optional are shadows, frames, backgrounds ... you name it.
 
 {{< mnote up=8 >}}Suggestions for missing layout parameters developers would like to include are welcome.{{< /mnote >}}
 

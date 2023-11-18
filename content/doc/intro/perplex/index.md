@@ -129,9 +129,9 @@ Should you stumble upon bad English, typos, or wrong phrases, please excuse me. 
 
 [^1]: The concept for a baseline grid has been inspired by [Plumber][plumber]. The vertical alignment may sometimes get shifted by a few pixels --- despite precise calculations. This may be noticeable on screens with a low pixel density --- usually desktop screens. All browser engines seem to face an inevitable trade-off between the quality of font rendering and the precision of line height.
 
-[^2]: The term _fluid typography_ is falling a bit short here. The theme applies a **fluid-responsive design**, the whole layout adapts to the width of the browser window (Also see [this posting](/blog/accessibility-of-fluid-typography)).
+[^2]: The term _fluid typography_ is falling a bit short here. The theme applies a **fluid-responsive design**, the whole layout adapts to the width of the browser window (&rightarrow; [accessibility](/blog/accessibility-of-fluid-typography)).
 
-[^3]: The theme relies on the Javascript library [Lazysizes][ls] for fast and smooth handling of image requests.
+[^3]: The theme relies on the Javascript library [Lazysizes][ls] for fast, adaptive, and smooth handling of image requests.
 
 [plex]: https://ibm.com/plex
 [rd]: https://alistapart.com/article/responsive-web-design
