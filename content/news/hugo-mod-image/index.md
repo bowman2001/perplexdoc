@@ -45,7 +45,7 @@ Vector graphics
 : Small SVG images are automatically embedded inline into HTML pages. The maximum size for inline embedding is configurable.
 
 GIF
-: Images in this format are not transformed and are included as they come by default. GIFs may contain an animated image set and Hugo can not discriminate between simple GIFs and animated ones. If you want to transform a simple GIF into a WEBP source set like the usual formats you need to set the parameter `process: run`. Animations do **not survive** the transformation, only the first image of an animation sequence is used.  
+: Images in this format are not transformed and are included as they come by default. GIFs may contain an animated image set and Hugo can’t tell simple GIFs from animated ones. If you want to transform a GIF into the WEBP format like the usual raster images you need to set the parameter `process: run` explicitly. Animations do **not survive** this transformation, only the first image of an animation sequence is used.  
 
 ## Avoiding layout shifts
 
@@ -55,7 +55,7 @@ All raster images and their optional placeholders are placed in matching contain
 
 [Lazysizes]() calculates the near-optimal image size for every browser viewport width and repeats this process automatically in case it changes (when a viewer changes the zoom setting of its browser for example).
 
-## Smooth loading 
+## Smooth loading
 
 ### Source sets of raster images
 

@@ -34,37 +34,35 @@ Markdown headings are preceded by number signs `#` and a space. The six availabl
 
 6. `###### Small Paragraph Heading`
 
-To alter the style of these heading, Perplex offers Markdown [attributes][attr].
+To alter the style of these headings, Perplex offers a few special Markdown [attributes][attr].
 
-### Paragraph Headings {#h-p}
+### Visual paragraph headings {#h-p}
 
-On moderately sized pages, we often don’t want to apply the full hierarchy headings, because too much structure gets also confusing. We may like to skip one or two levels and use paragraph headings in normal sections, for example.
+On moderately sized pages, we usually don’t want to apply the full heading hierarchy because too much structure is as confusing as too little. We may like to skip one or two levels and use paragraph headings in normal sections for example.
 
-However, this would violate the HTML guidelines and mess up the table of contents (TOC). Headings also need to descend strictly because screen readers and other automatic interpreters get confused otherwise.
+However, this would violate official HTML guidelines and mess up the table of contents (TOC). Heading tags always need to descend strictly also because screen readers and other automatic interpreters get confused otherwise.
 
-To abide by this rule, we skip headings only visually. Any heading looks like a paragraph heading with the attribute `{.h-p}` or `{.h-p-s}` for a small paragraph heading.
+To abide by this rule, we can skip headings only visually. Any heading does look like a paragraph heading with the attribute `{.h-p}` or `{.h-p-s}` for a small paragraph heading.
 {.inline}
 
-{{< mnote >}}The partial "toc-walk-headings" is responsible for the generation of the TOC and checks the validity of the heading sequence.{{< /mnote >}}
+### Highlighted headings
 
-### Highlighted Headings
+To emphasize especially important text segments, we can start them with a highlighted heading. This is a more subtle option than [annotation boxes](/doc/enhancing/attribute/box).
 
-To emphasize especially important text segments, we can begin them with a highlighted heading. This is a more subtle form than  [annotation boxes](/doc/enhancing/attribute/box).
-
-To indicate a section about some **danger**, **warning**, **information**, or **success**, we apply the attributes `{.h-danger}`, `{.h-warn}`, `{.h-info}`, or `{.h-success}`.
+To mark a section about some **danger**, **warning**, **information**, or **success**, we apply the attributes `{.h-danger}`, `{.h-warn}`, `{.h-info}`, or `{.h-success}`.
 
 A warning paragraph for example starts with a heading like this:
 
 ```text 
 ##### Warning Paragraph {.h-warn}
-Far far away, behind the word mountains, far from the countries Vokalia and…
+{{% pangram 1 %}}
 ```
 
 ### Very long headings with complicated topics stretching over more than one line
 
-CommonMark offers no possibility to break a heading line because every line starting with a `#` starts a new heading.
+CommonMark offers no possibility to break a heading line because every line starting with the number sign `#` starts a new heading.
 
-When a heading exceeds the line length of the layout, it breaks automatically. That may occur at an unfortunate place: Before the last word or between tightly related words. To introduce a manual break we can put the replacement code `{‍/}` between two words **without any spacing character** like this:
+When a heading exceeds the line length of the layout, it automatically reflows into the next line. That may occur at an unfortunate place: Before the last word or between tightly related words. To introduce a manual break of our own choosing we can put the replacement code `{‍/}` between two words **without any spacing character** like this:
 
 ```text {.expand}
 ### Nice long heading with a complicated topic{‍/}stretching over more than one line
@@ -74,7 +72,7 @@ and we get:
 
 ### Nice long heading with a complicated topic{/}stretching over more than one line
 
-This line break is displayed only when the full-text width fits the viewport. On small screens, it’s invisible, because manual line breaks could come out even worse.
+This line break is displayed only when the viewport allows for the full-text width. On small screens, the manual break is hidden, because manual line breaks tend to come out even worse on small viewports with additional automatic breaks.
 
 ## Layout
 

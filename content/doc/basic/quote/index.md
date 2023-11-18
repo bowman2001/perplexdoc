@@ -84,7 +84,7 @@ Every line of a block quotation has to start with a **right angled bracket**, em
 > won a pager in the cable TV quiz show.
 ```
 
-The result is an indented block with a slightly smaller font size and two paragraphs:
+The result is an indented block with a slightly smaller font size with serifs:
 
 > Sphinx of black quartz, judge my vow! The quick brown fox jumps over the lazy dog. Waltz job vexed quick frog nymphs.
 >

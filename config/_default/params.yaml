@@ -9,10 +9,6 @@ favicon:
   svg: favicon/favicon.svg
   png: favicon/favicon.png
 
-imaging:
-  sizestep: 25
-  fallback_width: 660
-
 modOpenIn:
   name: VSCodium
   protocol: vscodium
