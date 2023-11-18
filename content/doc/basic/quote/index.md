@@ -17,7 +17,7 @@ tags: [Quote, punctuation, Block, Inline]
 To quote someone means to recognize her or his thoughts as part of our own. We may agree or disagree, but we should refer to them correctly.
 {.p-first} <!--more-->
 
-A single word or short piece of text is usually quoted in the running text and is called an **inline quote**. A longer text segment is usually quoted as separate block and called a **blockquote**.
+A single word or short piece of text is usually quoted in the running text and is called an **inline quote**. A longer text segment is usually quoted as a separate block and called a **blockquote**.
 
 Some quotes should attract immediate attention while scanning the page. These are **hero quotes** and Perplex provides the [attribute](/doc/enhancing/attribute) `{.blockquote-hero}` to style them.
 
@@ -60,7 +60,7 @@ In German publishing we sometimes use guillemets the other way around:
 `>>Zahnstocher<<`&emsp;for&emsp;>>Zahnstocher<<
 {.p-big}
 
-We get into trouble with these, when we start a line with `>>`, because the `>` is also the sign for a [quotation block](#blockquote).
+We get into trouble with these, when we start a line with `>>` because the `>` is also the sign for a [quotation block](#blockquote).
 
 A good solution for a site with only angled quotes is to configure the normal quote replacements of the typographer as angled quotes.
 {.box-info}
@@ -74,7 +74,7 @@ But now we miss out on the micro-typographic feature of [hanging quotes](#hangin
 
 ## Blockquote
 
-Every line of a block quotation has to start with a **right angled bracket**, empty lines included:
+Every line of a block quotation has to start with a **right-angled bracket**, empty lines included:
 
 ```md
 > Sphinx of black quartz, judge my vow! The quick brown fox jumps over 
@@ -90,7 +90,7 @@ The result is an indented block with a slightly smaller font size with serifs:
 >
 > A very big box sailed up then whizzed quickly from Japan. My faxed joke won a pager in the cable TV quiz show.
 
-Blockquotes may include additional markup like emphasis, inline quotes, links, footnotes, and other inline markup and maybe even lists. The CommonMark specification allows using all elements of Markdown inside of a blockquote.
+Blockquotes may include additional markup like emphasis, inline quotes, links, footnotes, and other inline markup and maybe even lists. The CommonMark specification allows the use of all elements of Markdown inside of a blockquote.
 
 **But consider this in practice:** Nested block quotes or tables inside of block quotes? This theme does not support every possibility. Feel free to file an issue in the theme repository, if an important option has no suitable layout.
 

@@ -19,6 +19,8 @@ MD033: false
 # provide it in the resources and issues a warning in case its missing, there is
 # no need to throw this warning
 MD045: false
+# Codeblock style
+MD046: "fenced"
 # Emphasis style
 MD049:
   style: "underscore"

@@ -62,7 +62,7 @@ This is an example of a minimal entry in the resources list. The dash marks the 
 2. We cannot include a resource file under its original name anymore.
 {.col2}
 
-The advantage we get from this simple entry is the short identifier instead of the long filename. This is the usual way to specify a **featured image**: Copy the file into the page bundle and name it `featured`. 
+The advantage we get from this simple entry is the short identifier instead of the long filename. This is the usual way to specify a **featured image**: Copy the file into the page bundle and name it `featured`.
 
 Registered resources offer much more possibilities with their optional `params` section for additional parameters:
 
@@ -122,4 +122,4 @@ This fallback search happens in the following order:
 4. Parents parent …
 {.col2}
 
-If there are more resources with the same name (like "featured") in a related type of page, then the first match always wins.
+If there are more resources with the same name (like "featured") on a related type of page, then the first match always wins.

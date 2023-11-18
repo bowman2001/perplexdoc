@@ -53,7 +53,7 @@ To mark a section about some **danger**, **warning**, **information**, or **succ
 
 A warning paragraph for example starts with a heading like this:
 
-```text 
+```text
 ##### Warning Paragraph {.h-warn}
 {{% pangram 1 %}}
 ```
@@ -82,14 +82,14 @@ Headings are not only recognized by their font styling but also by the space sur
 
 # Page Title {.mt3 .mb3}
 
-The first heading is reserved for titles. Only one `<h1>` tag should occur on any webpage. We may want to compose a title in Markdown on special pages but in all theme templates the [title section](/doc/page/title) is rendered from meta-data in the frontmatter.
+The first heading is reserved for titles. Only one `<h1>` tag should occur on any webpage. We may want to compose a title in Markdown on special pages but in all theme templates, the [title](/doc/page/title) section](/doc/page/title) is rendered from meta-data in the frontmatter.
 {.box-warn}
 
 ## Section
 {{% pangram 4 %}}
 {.placeholder data-pagefind-ignore="all"}
 
-### Subsection 
+### Subsection
 {{% pangram 4 %}}
 {.placeholder data-pagefind-ignore="all"}
 
@@ -97,7 +97,7 @@ The first heading is reserved for titles. Only one `<h1>` tag should occur on an
 {{% pangram 4 %}}
 {.placeholder data-pagefind-ignore="all"}
 
-##### Paragraph 
+##### Paragraph
 {{% pangram 4 %}}
 {.placeholder data-pagefind-ignore="all"}
 
