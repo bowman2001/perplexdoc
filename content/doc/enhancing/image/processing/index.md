@@ -1,6 +1,7 @@
 ---
 authors: [Georg Makowski]
 title: Image Processing
+linktitle: Processing
 description: The theme generates all necessary versions 
 subtitle: false
 date: 2023-03-23T11:51:34+01:00 
@@ -20,7 +21,7 @@ series: [images]
 weight: 320
 ---
 
-The theme relies on the image-processing methods integrated into Hugo.
+The theme relies on the powerful integrated Hugo methods.
 {.p-first}
 <!--more-->
 
@@ -40,21 +41,17 @@ The following table contains the necessary original width for all possible image
 | micro                |     {{% mod-img/width "micro" 1 %}}     |     {{% mod-img/width "micro" %}}     |
 {.normal}
 
-When we build a project with lots of images — more than hundred like this project — we have to show a little patience on the first Hugo run. Image processing may take a few minutes. The generated images are cached by Hugo and we don’t have to wait again in subsequent runs.
+When we build a project with lots of images — more than a hundred like this project — we have to show a little patience on the first Hugo run. Image processing may take a few minutes. The generated images are cached by Hugo and we only have to wait for the processing of new images in subsequent runs.
 {.inline}
 
 {{< mnote >}}
 When we publish our site with the help of a service provider we need to make sure caching works. (&rightarrow; [Publish](/doc/intro/workflow/publish))
 {{< /mnote >}}
 
-In case we can’t provide a large enough version of an image, Perplex applies an [excellent interpolation filter][filter] (provided by Hugo) to enlarge its size smoothly. Those interpolated images may look blurry nonetheless, there is no way to get the missing information back. A high resolution of the original is always preferable.
+## Interpolation
 
-## Manipulation
+In case we can’t provide a large enough version of an image, Perplex applies an [excellent interpolation filter][filter] to enlarge its size smoothly without visible ringing artifacts. Those interpolated images may look blurry nonetheless, there is no way to get the missing information back. A high resolution of the original is always preferable.
 
-### TODO
-
-- Improve templates
-- Document resource parameters
 
 
 [filter]: https://gohugo.io/content-management/image-processing/#resampling-filter
