@@ -29,4 +29,7 @@ Text block of any kind …
 
 The attribute can change the order of surrounding layout elements but does not affect the style.
 
-See [Marginal note ](/doc/enhancing/shortcode/mnote).
+See the [Marginal note ](/doc/enhancing/shortcode/mnote) for an example, where this attribute allows placing the note easily beside the preceding text block.
+
+This attribute may have unintended side effects. You better check all versions of your layout if you are not already familiar with them.
+{.box-warn}

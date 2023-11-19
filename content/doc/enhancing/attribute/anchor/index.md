@@ -28,7 +28,7 @@ When we manually add an **anchor** attribute, we usually want to place one or mo
 
 ### Anchor
 
-We add the anchor as an identification attribute like any other attribute. We can use the long form `id=our-identifier` or the short form `#our-identifier`. It’s more consistent to use the short version because we **have** to use this one in the reference:
+We add the anchor as an identification attribute like any other attribute. We can use the long form `id=our-identifier` or the short form `#our-identifier`. It’s more consistent to use the short version because we **have** to use this one in the reference anyway:
 
 ```md
 This is the text block, we would like to refer to from another place on this 
@@ -54,4 +54,4 @@ And this is [the reference](#our-identifier). When the anchored block is targete
 
 ## No link checks for manual anchors {.h-info}
 
-Unfortunately, the render hook for links can not check a manual anchor. It appears missing and produces a bogus warning, if the `errorLevel:` for `fragments:` is set to `warning`. This does **not** affect the result, the links are always rendered. (See [link validation](/doc/basic/link#validation)).
+Unfortunately, the render hook for links cannot check a manual anchor. It appears missing and produces a bogus warning, if the `errorLevel:` for `fragments:` is set to `warning`. This does **not** affect the result, the links are always rendered fine. (&rightarrow; [link validation](/doc/basic/link#validation)).

@@ -20,7 +20,8 @@ MD033: false
 # no need to throw this warning
 MD045: false
 # Codeblock style
-MD046: "fenced"
+MD046:
+  style: "fenced"
 # Emphasis style
 MD049:
   style: "underscore"

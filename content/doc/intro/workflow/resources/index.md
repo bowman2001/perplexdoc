@@ -22,7 +22,7 @@ categories: [getting started]
 tags: [resources, image]
 ---
 
-This theme processes resources (like images) from all kinds of places: Local, global, or remote. However, associated meta-data specifying the processing and layout options usually need to be set locally.
+This theme processes resources (like images) from all kinds of places: Local, global, or remote. However, associated meta-data specifying the processing and layout options usually need to be set locally. 
 {.p-first} <!--more-->
 
 Hugo offers three general ways to access resources:
@@ -64,7 +64,7 @@ This is an example of a minimal entry in the resources list. The dash marks the 
 
 The advantage we get from this simple entry is the short identifier instead of the long filename. This is the usual way to specify a **featured image**: Copy the file into the page bundle and name it `featured`.
 
-Registered resources offer much more possibilities with their optional `params` section for additional parameters:
+Registered resources offer many more possibilities with their optional `params` section for additional parameters:
 
 ```YAML {.inline linenos=true}
 resources:
@@ -90,7 +90,7 @@ In case we need to store them elsewhere in folders (local or remote), we can let
 
 ## Remote resources
 
-We can include a remote resource directly with their absolute URL.
+We can include a remote resource directly with its absolute URL.
 
 ## Global and remote resources with additional parameters
 

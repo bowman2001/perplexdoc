@@ -25,49 +25,85 @@ We can preprocess images (rotate, change ratio, and zoom) and have several optio
 {.p-first}
 <!--more-->
 
-There are two different ways to place an image in Markdown — **stand-alone** or **embedded**. The theme styles them differently by default (see [basic syntax](/doc/basic/image)).
+There are two different ways to place an image in Markdown — **stand-alone** or **embedded**. The theme styles them differently by default (&rightarrow; [basic syntax](/doc/basic/image)).
 
 CommonMark can handle only 3 parameters. To generate a caption and change the layout etc., the theme offers many additional parameters. There are three ways to associate them with your usual images:
 
-1. Resource parameters
+1. Page resource parameters
 
 2. Parameters in a data file
 
-3. Query string parameters attached to the file name
+3. Query string parameters attached to the name in the Markdown image element
 {.col2}
 
-Additionally there are diagrams generated from textual descriptions:
+Additionally, there are diagrams generated from textual descriptions:
 
-4. Codeblock attributes
+4. Parameters as additional code block attributes
 {.ol-continue}
+
+How to add parameters to page resources in the frontmatter or to global and remote resources in a data file is described in the [introduction to the workflow](/doc/intro/workflow/resources).
+
+Query string parameters are a specialty for the in-place manipulation of images [described below](#query-string-parameters).
+
+Code block parameters are placed in line with its attributes with one exception: They are not separated by a comma (&rightarrow; [code page](/doc/basic/code)).
 
 ## Additional parameters
 
+Preprocessing
+`anchor`, `rotate`, `ratio`, `zoom`
+: We can manipulate images to some extent:
+  
+  - Zooming and rotating are self-explanatory. 
+  
+  - The desired ratio of an image is given as the decimal fraction between the width and the height proportions. For example: {$3:2 = 1.5} .
+  
+  - When we zoom in or change the ratio the image gets cropped. The selected area of the image is usually determined by a "smart" algorithm (the default setting). To manually choose the area we set the anchor to one of the nine available areas.
+
+Layout 
+`attr`, `attrlink`, `caption`, `class`, `posh`, `posv`, `width`
+: We can change the size and the place of an image and add a rich caption:
+
+  - The size of an image is determined by its width parameter.
+
+  - The horizontal position can be changed with `posh`. The vertical position parameter `posv` only adds some space for embedded images in the middle of a text block.
+
+  - Besides the caption text, we can also place an attribution with a link in the image caption.
+
+  - In case we want to apply a special styling to an image, we can add a CSS class.
+
+Other properties
+`alt`, `link`, `rel`
+: We can add alternative text and a link to the image:
+  
+  - We can use the `alt` parameter to add the mandatory alternative description for an image.
+    
+    Alternative text in the **first square bracket** of the image element **overrides** this resource parameter.
+    {.box-info}
+  
+  - We can place a link around the image and determine its relation.
+{.dl-loose}
+
+The following table lists the possible values for all image parameters:  
+
 | Parameter | Key | Values |
 |:---------|:----------|:---------|
+| Anchor | **anchor** | {{% mod-img/value "preprocess" "anchor" %}} |
 | Alternative text | **alt** | Plain string |
 | Attribution | **attr** | Inline Markdown string |
 | Attribution link | **attrlink** | URL |
 | Caption | **caption** | Inline Markdown string |
-| Class | **class** | Additional CSS classes |
+| Class | **class** | CSS class |
 | Link | **link** | URL for a linked image |
-| Horiz. position | **posh** | _embedded_: {{% mod-img/value "embed" "posh" "options" %}} |
-| | | _figure_: {{% mod-img/value "figure" "posh" "options" %}} |
+| Horiz. position | **posh** | {{% mod-img/value "embed" "posh" "options" %}} |
 | Vert. position | **posv** | _embedded_: {{% mod-img/value "embed" "posv" "options" %}} |
-| | | _figure_: {{% mod-img/value "figure" "posv" "options" %}} |
 | Link related | **rel** | See [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) |
-| Width | **width** | _embedded_ {{% mod-img/value "embed" "width" "options" %}} |
+| Width | **width** | _embedded_: {{% mod-img/value "embed" "width" "options" %}} |
 | | | _figure_: {{% mod-img/value "figure" "width" "options" %}} |
-| Link target | **target** | {{% parameters link.target %}} |
-| Rotate | **rotate** | |
-| Ratio | **ratio** | |
-| Zoom | **zoom** | |
+| Rotate | **rotate** | {{% mod-img/value "preprocess" "rotate" %}} |
+| Ratio | **ratio** | Real number in [0.2, 5.0] |
+| Zoom | **zoom** | Real number in [1.0, {{% mod-img/value "preprocess" "zoomMax" %}}] |
 {.normal}
 
-In case we use the {$alt} parameter, we can leave the first bracket of the image element empty.
-
-Alternative Text in the first **square brackets** of the Markdown image **overrides** the resource parameter.
-{.box-info}
 
 ### Resource parameters
 
@@ -92,7 +128,7 @@ width: tiny
 posh: left
 ```
 
-### In-place query string parameters
+### Query string parameters
 
 We can use a special syntax to set a few layout parameters, which tend to change more often in the process of content creation. The size and the position of an image can be specified like:
 
@@ -104,16 +140,18 @@ The start of every image name extension is marked by an interrogation mark `?`. 
 
 We can place only these parameters:
 
-| Parameter | Key | Values |
+| Parameter | Key (short) | Values |
 |:----|:----|:----|
-| Size | size (s) | {{% parameters imaging.embedded.size %}} |
-| Horiz. position | posh (ph) | {{% parameters imaging.embedded.posh %}} |
-| Vert. position | posv (pv) | {{% parameters imaging.embedded.posv %}} |
+| Width | **width (w)** |  _embedded_: {{% mod-img/value "embed" "width" "options" %}} |
+| | | _figure_: {{% mod-img/value "figure" "width" "options" %}} |
+| Horiz. position | **posh (ph)** | {{% mod-img/value "embed" "posh" "options" %}} |
+| Vert. position | **posv (pv)** | {{% mod-img/value "embed" "posv" "options" %}} |
+{.normal}
 
 ### The value `middle` {.h-p}
 for the vertical positioning doesn’t move an embedded image into the middle of the block. It’s only an indicator for the layout to add some additional space on top of images, which are already placed in the middle of a text block.
 
-[^1]: The syntax for **query strings** has been introduced to extend URLs with optional parameters like `https://name.org?id=val&id2=val2`. They are usually generated automatically to specify API requests.
+[^1]: The syntax for **query strings** has been originally introduced to extend URLs with optional parameters like `https://name.org?id=val&id2=val2` to pass parameters to an HTML API.
 
 Parameters defined in the frontmatter are **overridden** by the **in-place parameters** will override them.
 {.box-info}
