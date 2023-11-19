@@ -72,12 +72,6 @@ Start with these basic CSS rules to style the table of contents:
 {{- /* Initialize. */}}
 {{- $partialName := "toc-walk-headings" }}
 
-{{- /* Verify minimum required version. */}}
-{{- $minHugoVersion := "0.111.3" }}
-{{- if lt hugo.Version $minHugoVersion }}
-    {{- errorf "The %q partial requires Hugo v%s or later." $partialName $minHugoVersion }}
-{{- end }}
-
 {{- /* Determine content path for warning and error messages. */}}
 {{- $contentPath := "" }}
 {{- with .File }}
@@ -98,9 +92,8 @@ Start with these basic CSS rules to style the table of contents:
 {{- end }}
 
 {{- /* Render. */}}
-{{ if (partial "nav/func/show-toc.html" . ) }}
-    {{- with .Fragments.Headings }}
-        {{- $startLevel := or ($.Param "toc.startLevel" | int) 2 }}
+{{- with and (partialCached "nav/func/show-toc.html" . . ) .Fragments.Headings }}
+    {{- $startLevel := or ($.Param "toc.startLevel" | int) 2 }}
         {{- $endLevel := or ($.Param "toc.endLevel" | int) 3 }}
         <aside class="is-closed" id="toc">
           <div class="toc__box">
@@ -126,16 +119,17 @@ Start with these basic CSS rules to style the table of contents:
           </div>
         </aside>
     {{- end }}
-{{- end }}
 
 {{- /* Recursively walk the headings. */}}
 {{- define "partials/inline/toc/walk.html" }}
     {{- $ctx := . }}
     {{- $level := .level }}
     {{- range $ctx.headings }}
-        {{- if and (ge $level $ctx.startLevel) (le $level $ctx.endLevel)  }}
-          {{- if not .ID }}
-            {{- errorf "Can’t build TOC. The %q partial detected that the %q heading has an empty ID attribute. See %s" $ctx.partialName .Title $ctx.contentPath }}
+      {{- if and (ge $level $ctx.startLevel) (le $level $ctx.endLevel)  }}
+          {{- if not .Title }}
+            {{- errorf "Can’t build TOC. The %q partial detected a missing heading on level %d. See %s." $ctx.partialName $level $ctx.contentPath }}
+          {{- else if not .ID }}
+            {{- errorf "Can’t build TOC. The %q partial detected an empty ID attribute in the %q heading. See %s." $ctx.partialName .Title $ctx.contentPath }}
           {{- end }}
           <li class="nav__item nav__item--{{ $level }}">
             <a href="{{ printf "%s#%s" $ctx.page.RelPermalink .ID }}">{{ partial "replacements" .Title  }}</a>
@@ -146,9 +140,9 @@ Start with these basic CSS rules to style the table of contents:
                   </ul>
                 {{- end }}
           </li>
-        {{- else }}
-            {{- $ctx = merge $ctx (dict "headings" .Headings "level" (add $level 1)) }}
-            {{- partial "inline/toc/walk.html" $ctx }}
-        {{- end }}
+      {{- else }}
+        {{- $ctx = merge $ctx (dict "headings" .Headings "level" (add $level 1)) }}
+        {{- partial "inline/toc/walk.html" $ctx }}
+      {{- end }}
     {{- end }}
 {{- end }}

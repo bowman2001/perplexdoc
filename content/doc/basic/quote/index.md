@@ -62,15 +62,13 @@ In German publishing we sometimes use guillemets the other way around:
 
 We get into trouble with these, when we start a line with `>>` because the `>` is also the sign for a [quotation block](#blockquote).
 
-A good solution for a site with only angled quotes is to configure the normal quote replacements of the typographer as angled quotes.
-{.box-info}
-
 In case we need the reversed angled quotes only in a few cases, we can begin the line with an invisible entity like the zero width joiner `&zwj;` before two angles as a workaround:
 
 &zwj;>>Noch einen Zahnstocher, bitte!<<
 {.p-big}
 
-But now we miss out on the micro-typographic feature of [hanging quotes](#hanging-quotes).
+A good solution for a site with angled quotes only is to configure the normal quote replacements of the typographer as angled quotes.
+{.box-info}
 
 ## Blockquote
 
@@ -93,6 +91,7 @@ The result is an indented block with a slightly smaller font size with serifs:
 Blockquotes may include additional markup like emphasis, inline quotes, links, footnotes, and other inline markup and maybe even lists. The CommonMark specification allows the use of all elements of Markdown inside of a blockquote.
 
 **But consider this in practice:** Nested block quotes or tables inside of block quotes? This theme does not support every possibility. Feel free to file an issue in the theme repository, if an important option has no suitable layout.
+{.box-info}
 
 ## Hero quote
 
