@@ -52,7 +52,7 @@ Many proportions can stay fixed between breakpoints beyond mobile and this means
 
 - The optimal line length stays fixed on all wider screens beyond mobile.
 
-- adjacent columns stay in sync on all larger view-ports, we can place Markdown elements besides each other instead of letting them just flow from top to bottom like a stream.
+- adjacent columns stay in sync on all larger view-ports. We can order Markdown elements beside each other instead of letting them always flow from top to bottom like a stream.
 {.col2}
 
 All text is placed on a **baseline grid** to introduce a comfortable vertical rhythm and coherence between adjacent text elements. Combined with the fluid-responsive design this allows placing images (and other block elements) in and around the text with high accuracy. There are demos for [stand-alone](/blog/image/standalone) & [embedded](/blog/image/embed) images, or [code blocks](/blog/codelayout).

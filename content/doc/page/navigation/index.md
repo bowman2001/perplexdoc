@@ -29,10 +29,10 @@ News, blog, and article postings
 
 ### Documentation
 
-The parameter to order the documentation pages is the _page {$weight}_. Hugo also accepts weights for menu entries, but this theme relies only on the general page weight. The first page gets the smallest decimal weight number, the second page a bigger one and so on.
+The order of documentation pages depends **only on the general page weight**. The first page gets the smallest decimal weight number, the second page a bigger one and so on. Every new page contains a placeholder (&rightarrow; [Content introduction](/doc/intro/workflow/content#documentation-pages)).
 {.inline}
 
-{{< mnote >}}And there is also a special section weight (undocumented afaik).{{< /mnote >}}
+{{< mnote >}}There is also a menu weight which is only needed to sort entries in the primary (top) menu.{{< /mnote >}}
 
 The idea is simple but there is **one big caveat**: We should never use continuous decimal numbers in a growing project because we probably add new pages and sections later or reorder existing ones. With continuous numbering, we would need to change all numbers again and again. Better to leave ample space (lots of missing numbers) right from the start.
 

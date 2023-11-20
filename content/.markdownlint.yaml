@@ -1,4 +1,4 @@
-# Line length should not be limited, because we use soft wrapping
+# Line length should not be limited because we use soft wrapping
 MD013: false  
 # Empty lines above and below headings
 MD022:

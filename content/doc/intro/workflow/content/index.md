@@ -22,7 +22,7 @@ It may take a little while to get your head around Hugo’s content structure. I
 {.inline}
 
 {{< mnote >}}
-**By the way:** This theme is primarily focused on Markdown content but Hugo also offers to process some other markup formats, hand-crafted HTML content, and static data structures.
+**By the way:** Besides Markdown rendering, Hugo also offers to process some other markup formats, hand-crafted HTML content, and static data structures.
 {{< /mnote >}}
 
 ## Folder structure
@@ -105,7 +105,7 @@ hugo new doc/demo/first.md
 
 Now we have the new file in {$content/doc/demo/first.md} with a frontmatter containing a few more entries than a simple posting.
 
-{{< mnote up=5 >}}We can also create a documentation leaf bundle with something like `hugo new doc/demo/second`.{{< /mnote >}}
+{{< mnote up=5 >}}We can also create a documentation leaf bundle with a command like `hugo new doc/demo/second`.{{< /mnote >}}
 
 These are the new lines:
 
