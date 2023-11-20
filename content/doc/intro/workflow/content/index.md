@@ -128,7 +128,10 @@ There is this one other new parameter called `weight` which controls the place o
 Let’s look at their detailed functions:
 
 `identifier`
-: is an internal name, that lets other pages refer to this one as their `parent`. It is only relevant for sections (list pages) and we can just delete it for ordinary pages.
+: is an internal name, that lets other pages refer to this one as their `parent`. It is only relevant for sections (list pages) and we can usually delete it for ordinary pages.
+  
+    **One exception:** When we use the same name in submenu entries of different menu sections, we need to add different identifiers to distinguish them.
+    {.box-info}
 
 `name`
 : is the title of the menu entry. Especially when the page title is very long, we should provide a short entry to avoid a messy menu.
@@ -137,7 +140,7 @@ Let’s look at their detailed functions:
 : If this parameter contains the identifier of another page, the current page is placed a level beyond its parent in the sidebar menu. If there is no parent, the page gets a top-level menu entry.
 
 `pre`
-: is used very specifically by this theme: It contains the identifier for a **Material Icon** from _Google_. Visit their [website](http://fonts.google.com/icons) to find a suitable one. You can pick any icon there and copy the identifier from the icon font embedding section (It's usually the icon name written in lower letters and with underscores `_` instead of spaces).
+: is used very specifically by this theme: It contains the identifier for a **material symbol** from _Google_. Visit their [website](http://fonts.google.com/icons) to find a suitable one. You can pick any icon there and copy the identifier from the icon font embedding section (It's usually the icon name written in lower letters and with underscores `_` instead of spaces).
 
 `weight`
 : lets a page fall deeper in the hierarchy of the section, the higher it gets. Right now our new doc page has an entry at the bottom of the sidebar navigation because its weight is very high — take a look.
@@ -153,7 +156,7 @@ To connect our documentation site-wide with other sections (news, blog, or artic
 
 In this step, we create a page for a new sub-section in the demo section. And like every kind of section page in Hugo this is a list page.
 
-List pages present an overview of the section's content and provide some general introduction as their own content. Their templates are used for **branch bundles**.
+List pages present an overview of the section's content and may provide some general introduction as their general content. Their templates are used only for **branch bundles**.
 
 We create a new sub-section in the demo section with the following command:
 
