@@ -164,13 +164,22 @@ We create a new sub-section in the demo section with the following command:
 hugo new doc/demo/subsec/_index.md
 ```
 
-We can distinguish the content filename {$\_index.md} for the branch bundle only by the leading underscore from the content filename {$index.md} for a [leaf bundle](#leaf-bundles)! We need to be especially careful about this because they have a very different purpose and function. A branch bundle contains as many pages and may include as many other bundles as we need — and there is also no technical limit to the depth of the folder levels. A branch bundle can act like a chapter, section or subsection depending on its place in the folder hierarchy.
+We can distinguish the content filename {$\_index.md} for the branch bundle only by the leading underscore from the filename {$index.md} for a [leaf bundle](#leaf-bundles)! We need to be very careful about this underscore because these files have a completely different purpose. A branch bundle contains as many pages and may include as many other bundles as we need — there is no technical limit to the depth of the folder levels.
 
-{$\_index.md} may contain general content about its section as an introduction but its essential function is to generate a specific list view for the content included in its branch.
+The branch bundle content file {$\_index.md} acts like the beginning of a chapter, section or subsection depending on its place in the folder hierarchy. It should only contain general content about its section or an introduction.
+{.inline}
 
-{{< mnote up=11 >}}
+{{< mnote >}}
 **Subdirectories** are accessible to retrieve resources for `_index.md`. Because any subdirectory could contain another bundle we should use distinguishable names for pure resource directories to avoid confusion.
 {{< /mnote >}}
+
+In case we need to add further general content **after the list of section contents** we can create the special page bundle `after` as a subfolder in this section with the command:
+
+```sh {.left-in}
+hugo new doc/demo/subsec/after
+```
+
+The file {$index.md} gets rendered as usual after the section list.
 
 #### Taxonomy pages
 
@@ -184,7 +193,7 @@ hugo new tags/demo
 
 and get {$tags/demo/_index.md} with a short frontmatter section.
 
-Now we can add a special featured image (&rightarrow; [see resources](doc/intro/workflow/resources)) and a taxonomy description for the title. We can reuse this featured image on all pages with this taxonomy if we are too lazy to give them their own featured image. Special Markdown content for taxonomies is unnecessary and probably confusing. We don’t expect further explanations on a taxonomy page.
+Now we can add a special featured image (&rightarrow; [see resources](doc/intro/workflow/resources)) and a taxonomy description for the title. We can reuse this featured image on all pages with this taxonomy if we are too lazy to give them their own featured image. Special Markdown content for taxonomies is unnecessary and probably confusing. Most of the time, there is no further content on a taxonomy page.
 
 #### Author pages
 
