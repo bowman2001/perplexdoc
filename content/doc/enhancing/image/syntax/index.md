@@ -45,9 +45,9 @@ How to add parameters to page resources in the frontmatter or to global and remo
 
 Query string parameters are a specialty for the in-place manipulation of images [described below](#query-string-parameters).
 
-Code block parameters are placed in line with its attributes with one exception: They are not separated by a comma (&rightarrow; [code page](/doc/basic/code)).
+Parameters for fenced code blocks are added together with their special attributes (&rightarrow; [code page](/doc/basic/code)).
 
-## Additional parameters
+## Additional image parameters
 
 Preprocessing
 `anchor`, `rotate`, `ratio`, `zoom`
@@ -133,25 +133,27 @@ posh: left
 We can use a special syntax to set a few layout parameters, which tend to change more often in the process of content creation. The size and the position of an image can be specified like:
 
 ```md
-![Alternative text](image.jpg?s=small&ph=right)
+![Alternative text](image.jpg?width=small&posh=right)
 ```
 
 The start of every image name extension is marked by an interrogation mark `?`. Then follows a short parameter key, the equal sign `=` and the parameter value. Consecutive key-value pairs are separated by an ampersand `&`.[^1]
 
-We can place only these parameters:
+We can use these parameters:
 
-| Parameter | Key (short) | Values |
+| Parameter | Key | Values |
 |:----|:----|:----|
-| Width | **width (w)** |  _embedded_: {{% mod-img/value "embed" "width" "options" %}} |
+| Width | **width** |  _embedded_: {{% mod-img/value "embed" "width" "options" %}} |
 | | | _figure_: {{% mod-img/value "figure" "width" "options" %}} |
-| Horiz. position | **posh (ph)** | {{% mod-img/value "embed" "posh" "options" %}} |
-| Vert. position | **posv (pv)** | {{% mod-img/value "embed" "posv" "options" %}} |
+| Horiz. position | **posh** | {{% mod-img/value "embed" "posh" "options" %}} |
+| Vert. position | **posv** | {{% mod-img/value "embed" "posv" "options" %}} |
+| Anchor | **anchor** | {{% mod-img/value "preprocess" "anchor" %}} |
+| Rotate | **rotate** | {{% mod-img/value "preprocess" "rotate" %}} |
+| Ratio | **ratio** | Real number in [0.2, 5.0] |
+| Zoom | **zoom** | Real number in [1.0, {{% mod-img/value "preprocess" "zoomMax" %}}] |
+
 {.normal}
 
-### The value `middle` {.h-p}
-for the vertical positioning doesn’t move an embedded image into the middle of the block. It’s only an indicator for the layout to add some additional space on top of images, which are already placed in the middle of a text block.
-
-[^1]: The syntax for **query strings** has been originally introduced to extend URLs with optional parameters like `https://name.org?id=val&id2=val2` to pass parameters to an HTML API.
+[^1]: The syntax for **query strings** has been originally introduced to extend URLs like `https://name.org?id=val&id2=val2` with parameters for an HTML API.
 
 Parameters defined in the frontmatter are **overridden** by the **in-place parameters** will override them.
 {.box-info}
