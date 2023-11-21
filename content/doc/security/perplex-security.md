@@ -10,6 +10,7 @@ menu:
     name: Theme
     parent: security
     pre: dashboard
+draft: true
 ---
 
 Place your first paragraph here. If you don't need special styling, remove the attribute `{.p-first}`. The **more**-tag marks this placeholder paragraph as the content summary for this page.
