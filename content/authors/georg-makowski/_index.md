@@ -11,8 +11,8 @@ follow_icons:
 - name: GitHub
   icon: github
   url: "https://github.com/bowman2001"
-- name: Twitter
-  icon: twitter
+- name: X (ex-twitter)
+  icon: x
   url: "https://twitter.com/GeorgMakowski"
 contact_icons:
 - name: KeyBase
