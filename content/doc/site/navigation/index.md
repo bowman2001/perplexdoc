@@ -55,8 +55,8 @@ main_social:
     weight: 1
 ```
 
-List entries start with a dash that contain the `name` of the entry, a `url` to the social network, the name of an icon in the `pre` parameter, and a `weight` to determine the order of the entries from left to right.
+List entries start with a dash and contain the `name` of the entry, the `url` to the social network, the icon name as the `pre` value, and a `weight` to determine the order of the entries from left to right.
 
 This example has only one entry, but you may add as many as you can reasonably fit into the layout.
 
-You can use any icon name from [Simple Icons](https://simpleicons.org) for `pre`.
+You can use any icon from [Simple Icons](https://simpleicons.org) for `pre`.
