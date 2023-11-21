@@ -18,6 +18,7 @@ resources:
 categories: [template]
 tags: [author, site]
 weight: 665
+draft: true
 ---
 
 Every author listed in the frontmatter field `authors` gets a personal page that lists her or his latest contributions.
