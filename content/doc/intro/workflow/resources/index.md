@@ -106,15 +106,13 @@ extracted from the filename, but we can also add one manually.
 
 ![Global tiger](global.yaml)
 
-## Resources from related page bundles
+## Fallback: resources from related page bundles
 
 There is also the option to reuse local page resources from related pages as a fallback.
 
 If a resource can’t be found elsewhere this theme is also looking for resources in related taxonomy and parent pages. This also allows to use of already registered resources in simple pages, which aren’t bundles themselves.
 
-### Lookup Order
-
-This fallback search happens in the following order:
+The fallback search happens in the following **lookup order**:
 
 1. Tags of the page
 2. Categories of the page
@@ -122,4 +120,6 @@ This fallback search happens in the following order:
 4. Parents parent …
 {.col2}
 
-If there are more resources with the same name (like "featured") on a related type of page, then the first match always wins.
+If there are more resources with the same name (like "featured") on a related type of page, then the first match in a relation wins.
+
+This approach is convenient for this project and the theme default. But in case you want to use some other kind of fallback or none at all, you can overwrite the partial {$mod-resource/func/helper/page-fallback.html} in your project folder {$layouts/partials}.
