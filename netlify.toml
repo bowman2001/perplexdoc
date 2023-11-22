@@ -4,7 +4,7 @@ command = "hugo --gc --minify && npx pagefind"
 
 [build.environment]
 HUGO_VERSION = "0.120.4"
-GO_VERSION = "1.21"
+GO_VERSION = "1.21.4"
 HUGO_ENABLEGITINFO = "true"
 
 [context.develop]
