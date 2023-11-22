@@ -474,10 +474,10 @@ mark {
 }
 .h-a:before {
   position: absolute;
-  left: -1.75rem;
-  content: "#";
+  left: -1.5rem;
+  content: "§";
+  font-size: 80%;
   opacity: 0;
-  transition: opacity 150ms ease-out;
   color: var(--c-nav-link);
 }
 .h-a:hover, .h-a:focus {
@@ -2551,20 +2551,23 @@ body {
   font-weight: 700;
 }
 
-.md sup[id^=fnref] .footnote-ref {
-  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 400;
-  text-decoration: none;
+sup:target {
+  background-color: var(--c-bg-3);
+  scroll-margin-top: calc(var(--tnh) + var(--tg));
 }
-.md sup[id^=fnref] .footnote-ref:before {
+
+.footnote-ref {
+  color: var(--c-text-link);
+}
+.footnote-ref:before {
   content: " [";
 }
-.md sup[id^=fnref] .footnote-ref:after {
+.footnote-ref:after {
   content: "]";
 }
-.md sup[id^=fnref]:target {
-  background-color: var(--c-bg-2);
-  scroll-margin-top: calc(var(--tnh) + var(--tg));
+.footnote-ref:hover, .footnote-ref:focus, .footnote-ref:active {
+  color: var(--c-text-link-hover);
+  background-color: var(--c-text-link-hover-bg);
 }
 
 .footnotes {
