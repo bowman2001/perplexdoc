@@ -12,6 +12,8 @@ github.com/bowman2001/hugo-mod-image v0.4.4 h1:zxotkiYBpC+ex8Z+jAfGMGl0rBkDAgAn6
 github.com/bowman2001/hugo-mod-image v0.4.4/go.mod h1:xitMnd4vhSfq2xX3PAE3R8aLuJL1VXKM/pYivXAKPxY=
 github.com/bowman2001/hugo-mod-image v0.4.5 h1:fuBZV5WUb0wILeE1V0BnjRNIVeYiped9ZrXTdUUI+mY=
 github.com/bowman2001/hugo-mod-image v0.4.5/go.mod h1:xitMnd4vhSfq2xX3PAE3R8aLuJL1VXKM/pYivXAKPxY=
+github.com/bowman2001/hugo-mod-image v0.4.6 h1:G3NLUdYyMdYlq9hEwYf/AT2DrxB0QzwbLDBUNv4N2EI=
+github.com/bowman2001/hugo-mod-image v0.4.6/go.mod h1:xitMnd4vhSfq2xX3PAE3R8aLuJL1VXKM/pYivXAKPxY=
 github.com/bowman2001/hugo-mod-katex v0.2.3 h1:wYVxLRurgtDaPpkVj1YR/0tjzM7byNJXeFkZaCX6eMs=
 github.com/bowman2001/hugo-mod-katex v0.2.3/go.mod h1:3E5XXqk4Mn5Pll6skKVOcNRwRzzCvayNXCeyXgEx4W0=
 github.com/bowman2001/hugo-mod-material-symbols v0.0.0-20231018135441-af08cbeb0896 h1:LFaRV1qyCBN6K18zix8X6G/+RsnZMfQ5eKKrtLNa/fc=
@@ -195,3 +197,5 @@ github.com/bowman2001/perplex v0.13.16 h1:PXCwEzasgXOArKfXS9/CUeyUH0cHxrpzKliHew
 github.com/bowman2001/perplex v0.13.16/go.mod h1:VRsApY/PetRLblPEzAGviWBJXKxSbp5zy4F7UDDiP2g=
 github.com/bowman2001/perplex v0.13.17 h1:mCC1llFfaNYCS8jIVFmRBPhhXEKOTOGTx6NhQJ4+ZOE=
 github.com/bowman2001/perplex v0.13.17/go.mod h1:VRsApY/PetRLblPEzAGviWBJXKxSbp5zy4F7UDDiP2g=
+github.com/bowman2001/perplex v0.13.18 h1:33Gxwiymo3Ib8Y7ZmMhH4zoCjRN+afGGbGVTbmXGlJM=
+github.com/bowman2001/perplex v0.13.18/go.mod h1:K8FKD1T4qRBNyeoqhboefqqqgws84t5yCxFdy233SU8=
