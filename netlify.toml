@@ -3,7 +3,7 @@ publish = "public"
 command = "hugo --gc --minify && npx pagefind"
 
 [build.environment]
-HUGO_VERSION = "0.119.0"
+HUGO_VERSION = "0.120.4"
 GO_VERSION = "1.21"
 HUGO_ENABLEGITINFO = "true"
 
