@@ -29,9 +29,9 @@ Many different-sized versions of every image are generated automatically, so eve
 
 ## Resolution
 
-The highest **d**ensity **p**ixel **r**atio (DPR) that screens may provide in the future is **5**, and the highest DPR in widespread use today is **3**.
+The highest **d**evice **p**ixel **r**atio (DPR) that screens may provide in the future is **5**, and the highest DPR in widespread use today is **3**.
 
-The following table contains the necessary original width for all image sizes.
+The following table contains the original image width we need to provide for those devices and all image sizes.
 **Rule of thumb:** For crisp images on high-density screens, we should provide images with double the size of their layout width.
 
 Because the perceived resolution does grow more logarithmically than linearly, the optimal image size is strongly reduced. The actual delivered DPR is shown in parentheses.  
