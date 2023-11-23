@@ -53,6 +53,10 @@ When we build a project with lots of images — more than a hundred like this pr
 When we publish our site with the help of a service provider we need to make sure caching works. (&rightarrow; [Publish](/doc/intro/workflow/publish))
 {{< /mnote >}}
 
+## Format & Quality
+
+All raster images are transformed into source sets with the WEBP format because images are smaller than for all its predecessors like JPEP & PNG. The initial qualitiy is by default 85 and gets gradually reduced for higher resolutions.
+
 ## Interpolation
 
 In case we can’t provide a large enough version of an image, Perplex applies an [excellent interpolation filter][filter] to enlarge its size smoothly without visible ringing artifacts. Those interpolated images may look blurry nonetheless, there is no way to get the missing information back. A high resolution of the original is always preferable.
