@@ -29,16 +29,21 @@ Many different-sized versions of every image are generated automatically, so eve
 
 ## Resolution
 
-The following table contains the necessary original width for all possible image sizes. For crisp images on high-density screens, we should provide images with double-density if anyhow possible.
+The highest **d**ensity **p**ixel **r**atio (DPR) that screens may provide in the future is **5**, and the highest DPR in widespread use today is **3**.
 
-| Image type                        |            Minimum width             |        2&times;density         |
-| :-------------------------------- | :------------------------------: | :----------------------------: |
-| extra-large block                 | {{% mod-img/width "xlarge" 1 %}} | {{% mod-img/width "xlarge" %}} |
-| large block                       | {{% mod-img/width "large" 1 %}}  | {{% mod-img/width "large" %}}  |
-| text (figure default)                   |  {{% mod-img/width "text" 1 %}}  |  {{< mod-img/width "text" >}}  |
-| small (embed default) |      {{% mod-img/width "small" 1 %}}      |     {{% mod-img/width "small" %}}     |
-| tiny                    |     {{% mod-img/width "tiny" 1 %}}     |     {{% mod-img/width "tiny" %}}     |
-| micro                |     {{% mod-img/width "micro" 1 %}}     |     {{% mod-img/width "micro" %}}     |
+The following table contains the necessary original width for all image sizes.
+**Rule of thumb:** For crisp images on high-density screens, we should provide images with double the size of their layout width.
+
+Because the perceived resolution does grow more logarithmically than linearly, the optimal image size is strongly reduced. The actual delivered DPR is shown in parentheses.  
+
+| Image type                        |            1&times;density (1)            | 3&times;density (2.1) |    5&times;density (2.6)         |
+| :-------------------------------- | :------------------------------: |:----: | :----------------------------: |
+| extra-large block                 | {{% mod-img/width "xlarge" 1 %}} | {{% mod-img/width "xlarge" 2.1 %}} | {{% mod-img/width "xlarge" %}} |
+| large block                       | {{% mod-img/width "large" 1 %}}  | {{% mod-img/width "large" 2.1 %}} |{{% mod-img/width "large" %}}  |
+| text (figure default)                   |  {{% mod-img/width "text" 1 %}}  | {{% mod-img/width "text" 2.1 %}} |  {{< mod-img/width "text" >}}  |
+| small (embed default) |      {{% mod-img/width "small" 1 %}}      | {{% mod-img/width "small" 2.1 %}}  |  {{% mod-img/width "small" %}}     |
+| tiny                    |     {{% mod-img/width "tiny" 1 %}}     | {{% mod-img/width "tiny" 2.1 %}}  |  {{% mod-img/width "tiny" %}}     |
+| micro                |     {{% mod-img/width "micro" 1 %}}     |   {{% mod-img/width "micro" 2.1 %}} | {{% mod-img/width "micro" %}}     |
 {.normal}
 
 When we build a project with lots of images — more than a hundred like this project — we have to show a little patience on the first Hugo run. Image processing may take a few minutes. The generated images are cached by Hugo and we only have to wait for the processing of new images in subsequent runs.
