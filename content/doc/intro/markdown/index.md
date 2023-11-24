@@ -29,7 +29,7 @@ CommonMark is **easy** to
 Markdown files contain plain text marked up with a small set of ASCII signs. We can read and change these files with the suffix ›{$md}‹ with any text editor.
 
 {{< mnote >}}
-The suffixes ›{$mdown}‹ and ›{$markdown}‹ also indicate Markdown but they are rarely used.
+The suffices ›{$mdown}‹ and ›{$markdown}‹ also indicate Markdown but they are rarely used.
 {{< /mnote >}}
 
 After the [original specification][omd] had been released by John Gruber in 2004, many slightly different flavors of Markdown emerged.
