@@ -56,13 +56,27 @@ contact_icons:
 - name: 
   icon: 
   url: 
-draft: true
 ---
 ```
 
 You add your name as the `title` and a short description of your role or profession to the parameter `description`.
 
-The author page needs two images: 
+The author page needs two images:
 A quadratic `portrait` or avatar with a side length of at least {${{< width/column 1 >}}}. This image appears in all your postings and cards referencing them.
 A `featured` image as usual.
 
+You have the option to add links to other sites or services which are symbolized by icons. The section `follow_icons` is meant for social networks with the option to follow your postings. The section `contact_icons` is meant for services which allow to reach you directly.
+
+Every list entry starts with a dash and expects three parameters:
+
+`name`
+: The name of the service.
+
+`icon`
+: The name for an icon of the open-source project [Simple Icons](https://simpleicons.org). You can find and pick every available icon on their page.
+
+  The icons are open-source but you have to consider possible legal restrictions of their use from the corporations or organizations they represent!
+  {.box-danger}
+
+`url`
+: The link to the service.
