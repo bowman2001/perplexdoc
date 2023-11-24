@@ -120,6 +120,6 @@ The fallback search happens in the following **lookup order**:
 4. Parents parent …
 {.col2}
 
-If there are more resources with the same name (like "featured") on a related type of page, then the first match in a relation wins.
+If there are more resources with the same name (like "featured") on a related type of page, then the first match wins.
 
 This approach is convenient for this project and the theme default. But in case you want to use some other kind of fallback or none at all, you can overwrite the partial {$mod-resource/func/helper/page-fallback.html} in your project folder {$layouts/partials}.
