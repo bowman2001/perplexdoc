@@ -30,9 +30,13 @@ contact_icons:
     url: noone@example.com
 ---
 
-This is the page of an imaginary editor to demonstrate the layout of pages with more than one author.
+This is the page of an imaginary editor for demonstrational purposes.
 {.p-first}
 <!--more-->
+
+I’m contributing to a few pages to show the author portrait layout for two authors.
+
+And I’ve generated this short personal introduction to test the functionality of the author template.
 
 Education
 : Because I am only a placeholder I don’t need any knowledge at all.
