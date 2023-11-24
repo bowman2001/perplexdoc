@@ -14,23 +14,20 @@ tags: [feature]
 weight: 9
 ---
 
-Features, which I consider essential, and the ones which would be nice to have.
+Features with a top priority and the ones which would be nice to have.
 {.p-first}
 <!--more-->
 
-## Essential
-
-Documentation
-: The documentation should be up to date.
-{.dl-loose}
-
-## Nice to have
+## Important
 
 Start page
-: A distinct starting page always depends on the project. But the theme should include a template that can be filled easily with Markdown and images.
+: A distinct starting page always depends on the project but the theme should include a simple template as a starting point.
 
 Article pages
 : For long texts a big title, a hero image, and a more centered layout would be more appropriate.
+{.dl-loose}
+
+## Nice to have
 
 Media shortcodes
 : The difficulty with media is to find self-reliant solutions.
@@ -47,10 +44,10 @@ Archive pages
 : Archive pages are not essential for a documentation site. But depending on the content of the other sections, they might come in handy.
 
 Icons
-: Allow to use other icon sets than Material Symbols in the menus.
+: Allow to use other icon sets than Material Symbols for the documentation pages.
 
 New elements
 : Many ideas ...
 {.dl-loose}
 
-Suggestions are welcome as new issues in the [repo](https://github.com/bowman2001/perplex). Please check out the existing ones before filing a new one.
+Suggestions are very welcome as new issues in the [repo](https://github.com/bowman2001/perplex). Please check out the existing ones before filing a new one.
