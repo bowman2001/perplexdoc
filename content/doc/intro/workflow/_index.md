@@ -11,7 +11,7 @@ menu:
 subtitle: false
 title: Workflow
 weight: 20
-tags: [hugo]
+tags: [workflow, hugo]
 ---
 
 A short guide about creating & publishing your site with Hugo and this theme.

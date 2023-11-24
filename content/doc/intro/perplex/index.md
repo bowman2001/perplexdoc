@@ -98,7 +98,7 @@ What It Is:
 ---
 ```
 
-The theme relies on [**YAML**](https://yaml.org) to format the data, because it has the widest support. The included skeleton templates for new content files – the [archetypes](doc/appendix/archetypes) – are written in YAML. 
+The theme relies on [**YAML**](https://yaml.org) to format the data, because it has the widest support. The included skeleton templates for new content files – the archetypes in the project folder with the same name – are written in YAML.
 
 But Hugo also processes meta-data formatted by **TOML** and **JSON** and can convert frontmatter data between these three formats.
 

@@ -19,7 +19,7 @@ resources:
       zoom: 1.75
       caption: This is the same image as the featured one. But the image has been cropped to the ratio of 3:2 and zoomed in with a factor of 1.75.
 categories: [getting started]
-tags: [resources, image]
+tags: [resources, image, workflow]
 ---
 
 This theme processes resources (like images) from all kinds of places: Local, global, or remote. However, associated meta-data specifying the processing and layout options usually need to be set locally. 

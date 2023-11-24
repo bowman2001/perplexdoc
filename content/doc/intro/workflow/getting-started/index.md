@@ -11,7 +11,7 @@ menu:
     parent: workflow
     pre: start
 categories: [getting started, hugo]
-tags: [installation]
+tags: [installation, workflow]
 resources: 
   - src: damian-markutt-Dhmn6ete6g8-unsplash.jpg
     name: featured

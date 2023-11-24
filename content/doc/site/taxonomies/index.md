@@ -11,33 +11,35 @@ menu:
     parent: siteelem
     pre: category
 categories: [template]
-tags: [taxonomies, site]
+tags: [taxonomies, site, related, author]
 ---
 
-Taxonomies allow the creation of site-wide arbitrary groups of content with taxonomy terms.
+Taxonomies allow the creation of site-wide arbitrary groups of content with joint taxonomy terms.
 {.p-first} <!--more-->
 
-## What are taxonomy terms?
+## What are taxonomies and their terms?
 
 Technically, taxonomy terms are the third type of content structure after [single pages](/doc/intro/workflow/content#single-pages) and [list pages](/doc/intro/workflow/content#branch-bundles).
 
-List pages present an overview of the contents that are grouped together in their folder. Taxonomy terms don’t have a folder (in the beginning) and are instead added to the frontmatter of pages. Every set of pages with the same taxonomy term then belongs to a new arbitrarily formed group. There is no technical limit to the number of taxonomy terms a page may belong to. And the taxonomy term pages present an overview of all pages belonging to their groups.
-{.inline}
+List pages present an overview of the contents that are grouped together in their folder. Taxonomy terms don’t have a folder (in the beginning) and are instead added to the frontmatter of pages. Every set of pages with the same taxonomy term then belongs to a new arbitrarily formed group. There is no technical limit to the number of taxonomy terms a page may belong to. The taxonomy term pages present an overview of all pages belonging to their groups. (&rightarrow; [Hugo documentation for taxonomies][hugotaxo]) 
 
-{{< mnote >}}**Author pages** are usually not understood as taxonomy terms but technically they form the same type of structure. The author templates for this theme are taxonomy templates and `authors` are a taxonomy.{{< /mnote >}}
-
-As regards content, taxonomy terms are a **relation between their pages**. And there are a few well-established taxonomies to create specific types of content relations as taxonomy terms:
+As regards content, taxonomy terms should describe an actual **relation between their pages**. There are a few well-established taxonomies to create specific types of content relations as their terms:
 
 Categories
-: form a general classification of the contents. They aim to be mutually exclusive to separate the contents into distinguishable parts &rightarrow; every page should get only one category. These category groups should be of a roughly similar size. In practice these goals are often not so easy to reach.
+: form a general classification of the contents. They aim to be mutually exclusive to separate the contents into distinguishable parts &rightarrow; every page should get only one category. These category groups should be of a roughly similar size. In practice, these goals are often not so easy to reach.
 
 Tags
 : are labels describing one aspect or property of the content &rightarrow; every page may have a few tags. As the content grows we should check for tags that contain only one page. This often happens in the beginning but is a good reason to remove tags in the long run.
-And when we end up adding a tag to the majority of our pages, we should consider to use more fine-grained labels instead.
+And when we end up adding a tag to the majority of our pages, we should consider using more fine-grained labels instead.
 
 Series:
 : are pages that are tied directly together – postings about the exactly same topic for example or a long article split into a few parts.
 {.dl-loose}
+
+We can define new taxonomies to establish other types of relations (&rightarrow; [Hugo documentation for taxonomies][hugotaxo]).
+{.inline}
+
+{{< mnote >}}**Author pages** are usually not understood as taxonomy terms but to be an author is a relation. The author templates for this theme are taxonomy templates and `authors` is defined as taxonomy.{{< /mnote >}}
 
 ## Related content
 
@@ -79,4 +81,7 @@ hugo new tags/_index.md
 
 As for the single taxonomy terms, there is usually not much content to add. We can provide the `description` as a subtitle and a featured image as usual which may be used as a fallback for taxonomy terms without one.
 
-Every taxonomy overview also includes automatically a list of all taxonomies and their terms at the bottom or the side.
+Every taxonomy overview also includes automatically a conveniently small list of all taxonomies and their terms at the bottom or the side.
+
+[hugotaxo]: https://gohugo.io/content-management/taxonomies/
+[hugotaxonew]: https://gohugo.io/content-management/taxonomies#configure-taxonomies

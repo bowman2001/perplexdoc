@@ -10,7 +10,7 @@ menu:
     parent: page
     pre: switch_right
 categories: [template]
-tags: [navigation, page]
+tags: [navigation, page, menu]
 weight: 640
 ---
 

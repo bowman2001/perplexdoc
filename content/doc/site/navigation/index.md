@@ -12,7 +12,7 @@ menu:
     parent: siteelem
     pre: menu
 categories: [template]
-tags: [navigation, site]
+tags: [navigation, site, menu]
 ---
 
 The general navigation includes a main menu and a social menu.

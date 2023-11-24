@@ -10,7 +10,7 @@ menu:
     parent: page
     pre: title
 categories: [template]
-tags: [title, page]
+tags: [title, headings, page]
 ---
 
 The title section of all templates is generated from parameters in the frontmatter of our content files.

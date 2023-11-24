@@ -11,6 +11,7 @@ subtitle: false
 title: Publish
 weight: 50
 categories: [Getting-Started]
+tags: [workflow]
 resources: 
   - name: featured
     src: nasa-Q1p7bh3SHj8-unsplash.jpg

@@ -12,7 +12,7 @@ menu:
     parent: workflow
     pre: create_new_folder
 categories: [getting started]
-tags: [hugo]
+tags: [hugo, workflow, menu]
 ---
 
 The {$content} folder structure of our Hugo project lays the foundation for the website (URL) structure. Taxonomies and menu entries in the frontmatter allow the theme to systematically create navigational links.

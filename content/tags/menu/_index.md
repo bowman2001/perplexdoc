@@ -1,6 +1,6 @@
 ---
 title: Menu
-description: Site Navigation Element 
+description: Navigation list 
 subtitle: true
 date: 2022-09-06T13:26:08+02:00
 resources:
