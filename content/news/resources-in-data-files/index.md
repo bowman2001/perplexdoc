@@ -24,9 +24,9 @@ resources:
 
 ![global tiger](global.yaml)
 
-Depending on the content structure of your project, you may want to store some resources in the global {$assets} folder or on a remote server. Hugo also can retrieve these resources, but there is (currently) no native mechanism to associate them with meta-data parameters. And this is where this module comes in handy.
+Depending on the content structure of your project, you may want to store some resources in the global {$assets} folder or on a remote server. Hugo also can retrieve these resources, but there is (currently) no native mechanism to associate them with meta-data parameters. 
 
-The tiger here is stored in the {$assets} folder and gets referenced in a local data file. This way, we can re-use global assets repeatedly and store meta-data in a file like {$global.yaml}:
+And this is where this module comes in handy. The tiger here is stored in the {$assets} folder and gets referenced in a local data file. This way, we can re-use global assets repeatedly and store meta-data in a local file like {$global.yaml}:
 
 ```yaml
 src: img/tiger/hebert-kostan-y6UEUCq2RHw-unsplash.jpg

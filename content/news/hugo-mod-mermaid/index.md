@@ -2,7 +2,7 @@
 authors: [Georg Makowski]
 title: Hugo Module{/}for Mermaid diagrams
 linktitle: hugo-mod-mermaid
-description: Render Mermaid diagrams with the popular Javascript library
+description: Diagrams for the popular Javascript library
 date: 2023-05-18T17:47:34+02:00
 categories: [module]
 tags: [mermaid, diagram]
