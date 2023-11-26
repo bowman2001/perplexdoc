@@ -4,25 +4,19 @@ description: Short description placeholder
 subtitle: true
 date: {{ .Date }}
 resources:
-- src: 
-  name: featured
+- src:
+  name: portrait
   params:
     alt: {{ replace .Name "-" " " | title }}
 - src: 
-  name: portrait
+  name: featured
   params:
     alt: {{ replace .Name "-" " " | title }}
 follow_icons:
 - name: 
   icon: 
   url: 
-- name: 
-  icon: 
-  url: 
 contact_icons:
-- name: 
-  icon: 
-  url: 
 - name: 
   icon: 
   url: 

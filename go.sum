@@ -37,6 +37,8 @@ github.com/bowman2001/hugo-mod-replacements v0.3.5 h1:cjHirG6+GLkC07rfA4cHIFhWt3
 github.com/bowman2001/hugo-mod-replacements v0.3.5/go.mod h1:Vg5hGRv/wKkyGAd06BM4sXbNXNZl9PKnpVCYLhYcTWc=
 github.com/bowman2001/hugo-mod-replacements v0.3.6 h1:LzjyWx56b3CMBCO3iE5SCJspPn1jA5iUr3Av1QTOMag=
 github.com/bowman2001/hugo-mod-replacements v0.3.6/go.mod h1:Vg5hGRv/wKkyGAd06BM4sXbNXNZl9PKnpVCYLhYcTWc=
+github.com/bowman2001/hugo-mod-replacements v0.3.9 h1:7A2VTixBoB1TGu/8iFe/Q5uqGR6mWRimKjTD5mJtEe0=
+github.com/bowman2001/hugo-mod-replacements v0.3.9/go.mod h1:Vg5hGRv/wKkyGAd06BM4sXbNXNZl9PKnpVCYLhYcTWc=
 github.com/bowman2001/hugo-mod-resource v0.1.2 h1:+6thJesmW8Q6FQgCawW39JqJB7Kg35oaxsdzyQgmkiA=
 github.com/bowman2001/hugo-mod-resource v0.1.2/go.mod h1:XaqBpwviNkKXnCArAwk2jQAysLJxWbJxRbtniDIJwd0=
 github.com/bowman2001/hugo-mod-simple-icons v0.0.0-20230716191508-4c68a81e5385 h1:xFO6QtIwdBRH2sTq4g/r80s5sU28vge1U+CRqSgHbEQ=
@@ -207,3 +209,5 @@ github.com/bowman2001/perplex v0.14.0 h1:XAf8aikG/FkrtomUjWug+Cehcmnv6lgDR2Y8Vp4
 github.com/bowman2001/perplex v0.14.0/go.mod h1:BrUJpGY3oZ+NM4VQpXdbRDEo7PIgq59i5pVwmlk3qoo=
 github.com/bowman2001/perplex v0.14.1 h1:03yQotrSCjfBYuBF2pPy3TYmsAJQOfwSjs/6M7IjfYk=
 github.com/bowman2001/perplex v0.14.1/go.mod h1:BrUJpGY3oZ+NM4VQpXdbRDEo7PIgq59i5pVwmlk3qoo=
+github.com/bowman2001/perplex v0.14.2 h1:WT6AbzkYk+OJ47LwlUVdB7sSt+gN5iScwBdsBC1j2ZY=
+github.com/bowman2001/perplex v0.14.2/go.mod h1:PgehLiZL5GCBLfPAARJ1TT8QtT97KgCZwJ784DtSPvk=
