@@ -22,8 +22,9 @@ Markdown has become the favored markup language to structure text files. With go
 Welcome to Markdown formatting!
 -------------------------------
 
-CommonMark is **easy** to 
-[learn](http://CommonMark.org/help). 
+For a **quick introduction**, 
+take a look at this one page
+[intro](https://CommonMark.org/help).
 ```
 
 Markdown files contain plain text marked up with a small set of ASCII signs. We can read and change these files with the suffix ›{$md}‹ with any text editor.
@@ -42,14 +43,12 @@ Perplex styles HTML, which is generated from extended CommonMark by Hugo’s def
 {.inline}
 
 {{< mnote >}}
-Hugo’s deprecated **Blackfriday** renderer is not fully CommonMark-compliant. Black&shy;fri&shy;day generated HTML may still be styled correctly most of the time. But if you want to rely on Perplex or any other recent theme, I strongly suggest switching to Goldmark and a recent Hugo version.
+Hugo’s deprecated **Blackfriday** renderer is not fully CommonMark-compliant. Black&shy;fri&shy;day generated HTML may still be styled correctly most of the time. But if you want to rely on Perplex or any other recent theme, you need to switch to Goldmark and a recent Hugo version.
 {{< /mnote >}}
 
 Further extensions may join in the future, but probably only a few if any, because simplicity is Markdown’s essential characteristic.
 
-This theme offers some ways to enhance    
-
-This documentation includes a short review of every syntax element of Goldmark and shows their standard layout and enhanced styling options:
+This documentation includes a short review of every syntax element for Goldmark and shows their standard layout and many enhanced styling options:
 
 [Basic Markdown](/doc/basic)
 : covers the elements of the [CommonMark specification][cmark].
