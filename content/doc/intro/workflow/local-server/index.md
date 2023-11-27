@@ -1,6 +1,6 @@
 ---
 authors: [Georg Makowski]
-title: The local Workflow
+title: The Local Workflow
 description: Write and watch instant local previews
 subtitle: false
 date: 2022-09-11T14:58:16+02:00
@@ -22,7 +22,7 @@ tags: [workflow]
 While working on our content, we like to examine the result. To generate an immediate local preview, we run Hugo in server mode.
 {.p-first} <!--more-->
 
-The following short tutorial assumes, that you have opened a terminal and are in your project root containing a copy of this documentation project.
+The following short tutorial assumes, that you have opened a terminal and are either in the folder {$exampleSite} subfolder of your local theme copy or the project root of this documentation project.
 
 ## Hugo’s server mode
 

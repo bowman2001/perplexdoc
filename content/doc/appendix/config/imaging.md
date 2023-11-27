@@ -9,14 +9,14 @@ menu:
     pre: image
 title: 'imaging.yaml'
 weight: 1030
-categories: [Hugo]
-tags: [Image, Configuration]
+categories: [hugo]
+tags: [image, configuration]
 ---
 
 The image processing configuration for Hugo in the folder {$config/_default}.
 {.p-first}<!--more-->
 
-The theme needs additional parameters for the image processing. These are predefined in the theme config and may be overwritten under the `imaging:` key of the params key section.
+The image processing by this theme depends on many additional parameters for the module [{$hugo-mod-image}](https://github.com/bowman2001/hugo-mod-image). They are predefined in the module configuration in {$data/modImg.yaml} and partially overwritten and extended in the same folder of the theme.
 {.clear}
 
 {{< highlight yaml "linenos=true" >}}
