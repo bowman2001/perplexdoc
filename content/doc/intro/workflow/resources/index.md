@@ -22,10 +22,10 @@ categories: [getting started]
 tags: [resources, image, workflow]
 ---
 
-This theme processes resources (like images) from all kinds of places: Local, global, or remote. However, associated meta-data specifying the processing and layout options usually need to be set locally. 
+This theme processes resources (like images) from all kinds of places: Local, global, or remote. Associated parameters to specify processing and layout options always need to be set locally.
 {.p-first} <!--more-->
 
-Hugo offers three general ways to access resources:
+Hugo offers three direct ways to access resources:
 
 Page specific (local)
 : We can store files in the same folder as the Markdown content and include them with a minimal relative path. We have to register these resources in the frontmatter if we need additional parameters to manipulate them.
@@ -34,14 +34,14 @@ Page specific (local)
     {.box-info}
 
 Site-wide (global)
-: We can store them in the {$assets} folder and use them everywhere. The [favorite icon](/doc/site/favicon) in the base template of a site is an example of this use case. Global storage can also be a good choice for repeatedly needed material in our Markdown content.
+: We can store them in the {$assets} folder and use them everywhere. The [favorite icon](/doc/site/favicon) in the base template of a site is an example of this use case. Global storage can also be a good choice for repeatedly needed material in our Markdown content. 
 
 Remote
 : Resources may be retrieved via URL or API. The provider could be a separate image server or a more complex service. Hugo stores the data from a remote server in a local cache to avoid repeated requests.
 
     Remote resources may slow down a build considerably when an external service is (temporarily) not available. 
     {.box-warn}
-{.dl-loose}
+{.dl-loose} 
 
 ## Page-specific local resources
 
@@ -90,7 +90,7 @@ In case we need to store them elsewhere in folders (local or remote), we can let
 
 ## Remote resources
 
-We can include a remote resource directly with its absolute URL.
+We can include remote resources directly with their absolute **u**niform **r**esource **l**ocators (URLs) including optional query parameters.
 
 ## Global and remote resources with additional parameters
 
@@ -122,4 +122,4 @@ The fallback search happens in the following **lookup order**:
 
 If there are more resources with the same name (like "featured") on a related type of page, then the first match wins.
 
-This approach is convenient for this project and the theme default. But in case you want to use some other kind of fallback or none at all, you can overwrite the partial {$mod-resource/func/helper/page-fallback.html} in your project folder {$layouts/partials}.
+This approach is convenient for this project and also the theme default. But in case we want to use some other kind of fallback or none at all, we can overwrite the partial {$mod-resource/func/helper/page-fallback.html} in your project folder {$layouts/partials}.
