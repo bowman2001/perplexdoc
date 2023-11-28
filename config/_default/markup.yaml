@@ -13,5 +13,5 @@ goldmark:
 
 highlight:
   anchorLineNos: true
-  lineNumbersInTable: false
+  lineNumbersInTable: true
   noClasses: false
