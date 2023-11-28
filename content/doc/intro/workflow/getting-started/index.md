@@ -38,7 +38,7 @@ Please follow the specific [installation instructions](https://gohugo.io/getting
 
 Hugo is still evolving and newer versions of this theme may rely on its recent features. If you are interested in following them, you should choose an installation, which is easy to update frequently.
 
-In case you are satisfied with the current feature set of Hugo you can rely on this functionality. That is one of the great advantages of its monolithic binary. All Hugo releases are still available and if you want to stick to a certain setup you can do so indefinitely. Because there are no dynamic dependencies, there is also no need to update if you don’t want to.
+In case you are satisfied with a given setup you don’t need to upgrade. One of the great advantages of Hugo is reliability. All Hugo releases are still available and if you want to stick to a certain configuration you simply can.
 {.box-info}
 
 ## Get the theme
@@ -135,7 +135,7 @@ When you encounter problems specifically with Hugo and can’t find an answer in
 
 If you are confronted with a new problem, please read the guidelines **How to Request Help** at the top of the forum site first, before you submit your request. You may need to provide a (temporary) public repository to let people inspect your code in detail.
 
-All problems with this theme or this documentation should be addressed in [their repositories](/doc/intro/perplex#trouble)!
+All problems with this theme or this documentation should be addressed in [their repositories](/doc/intro/perplex#in-case-of-problems)!
 
 [hugodoc]: https://gohugo.io/documentation
 [cc]: https://creativecommons.org/licenses/by-sa/4.0/

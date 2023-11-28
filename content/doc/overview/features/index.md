@@ -15,7 +15,7 @@ tags: [feature]
 weight: 7
 ---
 
-A site layout based on classic typographical principles and techniques — without the usual compromises.
+A site layout based on classic typographical principles and techniques.
 {.p-first}
 <!--more-->
 
@@ -38,27 +38,29 @@ Enhanced styling
 : Light and dark modes follow your OS settings.
 
 Navigation
-: All elements needed to sift through the content are generated from data in the frontmatter:
+: All navigational elements to sift through the content as fast as possible are generated from data in the frontmatter:
   
-  - Site navigation
-  
-  - Page-to-page
-  
-  - Breadcrumbs
-  
+  - Site menu
+
+  - Sidebar menu (documentation)
+
   - Taxonomies
+  
+  - Page-to-page links
+  
+  - Breadcrumbs  
   {.col2}
+
+Icons
+: Google’s [Material Symbols](https://fonts.google.com/icons) and [Simple Icons](https://simpleicons.org) for brands can be included by their identifiers. Material Symbols automatically show in all navigational elements of the documentation. All icon sets can also be used as Markdown content (using shortcodes).
+
+Images
+: Their appearance can be controlled to a large extent. The theme handles their preprocessing and the generation of all the needed variants. They are delivered smoothly and without layout shifts.
 
 Full-text search
 : The theme is ready for [Pagefind](https://pagefind.app), a very fast and bandwidth-efficient search library for self-hosting.
 
-Icons
-: Google’s [Material Symbols](https://fonts.google.com/icons) and [Simple Icons](https://simpleicons.org) for brands can be included by their identifiers. Material Symbols show automatically in all navigational elements of the documentation. All icon sets can also be used as Markdown content (using shortcodes).
-
-Images
-: Users need to provide only one large original image, the theme handles the generation of all the needed sizes.
-
 Efficiency
-: Sites built with this theme are very fast. Image sets are optimized to minimize the needed bandwidth and loaded lazily, fonts are split into small packages, and icons are embedded inline.
+: Sites built with this theme are very fast and cost-effective. Image sets are highly optimized to minimize the needed bandwidth (and loaded lazily), fonts are split into small packages, and icons are embedded inline.
 : The build process is also fast, cost-effective, and energy-efficient --- thanks to Hugo.
 {.dl-loose}
