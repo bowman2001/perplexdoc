@@ -11,7 +11,6 @@ resources:
       ratio: 0.9
 categories: [release]
 tags: [fluid responsive]
-draft: true
 ---
 
 The theme has been officially released to the public.
