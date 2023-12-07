@@ -5,5 +5,3 @@
 **[Perplex](https://github.com/bowman2001/perplex) is a typographic theme for technical publishing with [Hugo](https://gohugo.io).**
 
 The theme is included in this documentation project as a module from <https://github.com/bowman2001/perplex>. You don’t need a Golang environment to build because there is always a recent copy available in the `_vendor` path. 
-
-
