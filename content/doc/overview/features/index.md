@@ -10,6 +10,7 @@ menu:
     name: Features
     parent: tldr
     pre: star
+featured: icon
 categories: [Overview]
 tags: [feature]
 weight: 7

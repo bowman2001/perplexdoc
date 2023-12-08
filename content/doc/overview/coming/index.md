@@ -9,6 +9,7 @@ menu:
     name: Coming Features
     parent: tldr
     pre: rule
+featured: icon
 categories: [Overview]
 tags: [feature]
 weight: 9
