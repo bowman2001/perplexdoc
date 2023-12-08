@@ -14,4 +14,4 @@ We can use the menu icon also as the featured image on documentation pages.
 
 The theme supports a featured image on all regular pages to help readers recognize content quickly. However, fitting images may not be easy to find especially for loads of technical documentation content and we may run out of ideas.
 
-When there already is a menu icon in the frontmatter, we can now simply re-use it by setting the parameter `featured: icon`.
+When there already is a menu icon in the frontmatter, we can now simply re-use it by setting the parameter `featured: icon`. The page for [coming features](/doc/overview/coming) includes an example.
