@@ -57,7 +57,7 @@ Hugo
 : I’ve been using this reliable engine since version {$0.18} to build fast static websites that require minimal maintenance. When Markdown attributes became available in version {$0.86} I started to dive deep into Markdown styling. I’ve been constantly following Hugo’s growing capabilities and have become a proficient template programmer.
 
 Javascript
-: I have experience with vanilla Javascript, Typescript, and Node. I like to progressively enhance static sites following the JAMStack concept.  
+: I have experience with vanilla Javascript, Typescript, and Node. I like to enhance static sites with dynamic capabilities when there is a clear benefit. (See the [search](/search) and [optimized image delivery](/blog/image/standalone) for example)
 {.dl-loose}
 
 I’m also a writer and speaker (in German) with a focus on the epistemology of the natural sciences, and a lecturer at the University of Applied Sciences{/}in Frankfurt.
