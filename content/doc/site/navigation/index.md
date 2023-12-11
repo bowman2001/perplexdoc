@@ -41,9 +41,9 @@ We may use pages that are ordered by the general page weight inside their sectio
 
 It’s also possible to add menu entries in the menu section of the site configuration. This is the central menu configuration but I would recommend this option only for entries without a page: Usually external absolute URLs.
 
-The next menu is solely determined in the site configuration, because it's meant only for external links.
-
 ## Main social menu (with icons)
+
+This menu is solely determined by the site configuration because it's meant only for external links represented by icons.
 
 The `main_social` menu in the `menu` section of the site configuration may look like this:
 
