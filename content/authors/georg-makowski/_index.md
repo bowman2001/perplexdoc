@@ -7,6 +7,8 @@ menu:
   main:
     name: About
     weight: 100
+aliases: 
+  - /about
 follow_icons:
 - name: GitHub
   icon: github
