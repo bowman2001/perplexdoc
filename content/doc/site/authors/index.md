@@ -64,7 +64,7 @@ The author page needs two images:
 A quadratic `portrait` or avatar with a side length of at least {${{< width/column 1 >}}}. This image appears in all your postings and cards referencing them.
 A `featured` image as usual.
 
-You have the option to add links to other sites or services which are symbolized by icons. The section `follow_icons` is meant for social networks with the option to follow your postings. The section `contact_icons` is meant for services which allow to reach you directly.
+You have the option to add links to other sites or services which are symbolized by icons. The section `follow_icons` is meant for social networks with the option to follow your postings. The section `contact_icons` is meant for services that allow to reach you directly.
 
 Every list entry starts with a dash and expects three parameters:
 

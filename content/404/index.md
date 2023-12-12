@@ -9,6 +9,8 @@ resources:
     params:
       alt: An airliner parked in the middle of the woods
 toc: false
+_build:
+  list: never
 ---
 
 You have called a URL, which is not here (anymore). There is no way to determine how this happened, but we’re sorry for any inconvenience.
