@@ -9,6 +9,7 @@ resources:
     background: light
     padding: half
     width: tiny
+    id: hugo
 weight: 30
 ---
 

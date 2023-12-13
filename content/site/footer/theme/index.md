@@ -10,6 +10,7 @@ resources:
     svg: inline
     padding: half
     background: light
+    id: perplex
 weight: 10
 ---
 

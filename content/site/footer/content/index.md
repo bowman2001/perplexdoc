@@ -9,6 +9,7 @@ resources:
     padding: half
     background: light
     width: tiny
+    id: cc
 weight: 20
 ---
 
