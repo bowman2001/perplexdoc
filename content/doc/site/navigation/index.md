@@ -59,4 +59,13 @@ List entries start with a dash and contain the `name` of the entry, the `url` to
 
 This example has only one entry, but you may add as many as you can reasonably fit into the layout.
 
-You can use any icon from [Simple Icons](https://simpleicons.org) for `pre`.
+You can use any icon name from [Simple Icons](https://simpleicons.org) as a value for the `pre` parameter. You can place additional icons in the new folder `assets/svg/simple-icons` in your project root. They are included with their base filename as a value for `pre`.
+
+### Icon design {.h-p .h-info}
+The Simple Icons project follows specific layout principles which additional icons should also adhere to:
+
+- They are always quadratic (`viewBox="0 0 24 24"`).
+
+- They don’t have a default padding and may fill their view box.
+
+- They are silhouettes without any implicit color for easy styling.
