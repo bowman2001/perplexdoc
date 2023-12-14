@@ -16,7 +16,7 @@ categories: [Markdown]
 tags: [replacement]
 ---
 
-Text enclosed by curly braces `{` and `}` and special ASCII signs is replaced with missing Markdown tags after rendering. `x{‍^3}` for example gets turned into x{^3}.
+Text enclosed by curly braces `{` and `}` and special ASCII signs is replaced with missing Markdown tags after rendering.
 {.p-first} <!--more-->
 
 ## Quick Overview
@@ -33,6 +33,7 @@ Perplex includes the following replacement codes and styles them:
 | Citation    |  {‍=work}     |  {=work}  |
 | Insertion   |  {‍+insert}   |  {+insert}  |
 | Conditional break | a{‍/}b |  a{/}b |
+| Optional word break | long{‍w}word | long{w}word | 
 {.normal}
  
 These codes are substituted with the help of short regular expressions in the layout template [{$replacements.html}](/doc/appendix/replacements). It processes the Hugo variable `.Content` that contains the rendered Markdown as an HTML string. 

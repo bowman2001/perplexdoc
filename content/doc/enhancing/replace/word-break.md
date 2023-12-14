@@ -13,13 +13,23 @@ menu:
 categories: [markdown]
 tags: [linebreak, replacement]
 weight: 492
-draft: true
 ---
 
-Very long strings that are not hyphenated automatically may need an optional line break. We can generate the HTML tag `<wbr>` with this replacement code.
+Very long strings that are not hyphenated automatically may need an optional line break without a hyphen. We can generate the HTML tag `<wbr>` with this replacement code.
 {.p-first}
 <!--more-->
 
+## Syntax
+
+Place one or more `{‍w}` in the middle of the long word where a line break without a hyphen should be applied if necessary:
+
+```md {.expand}
+Super{‍w}califragilisticexpialidociousissuper{‍w}califragilisticexpialidociousissuper{‍w}califragilisticexpialidocious.
+```
+
 ## Layout
 
-Supercalifragilisticexpialidocious is supercalifragilisticexpialidocious is super{w}califragilisticexpialidocious.
+Super{w}califragilisticexpialidociousissuper{w}califragilisticexpialidociousissuper{w}califragilisticexpialidocious.
+
+As you may see, the browser may not follow our suggestion for the word break. The version 120.0.6099.109 the Chrome browser breaks the word **with a hyphen at another place** for example.
+{.box-warn} 
