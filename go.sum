@@ -24,6 +24,8 @@ github.com/bowman2001/hugo-mod-image v0.6.2 h1:EQd6tadB7OFyJPh5jz2QZX2ehLvH2LOVR
 github.com/bowman2001/hugo-mod-image v0.6.2/go.mod h1:xitMnd4vhSfq2xX3PAE3R8aLuJL1VXKM/pYivXAKPxY=
 github.com/bowman2001/hugo-mod-image v0.6.3 h1:g4NDMCukyI4ecaav8WGgUzMtGsfT2cAaSXiQUFnO0jA=
 github.com/bowman2001/hugo-mod-image v0.6.3/go.mod h1:xitMnd4vhSfq2xX3PAE3R8aLuJL1VXKM/pYivXAKPxY=
+github.com/bowman2001/hugo-mod-image v0.6.4 h1:f+zW5C3cvK6vp7CUwL7Loa8zIJwdkOoKiRvH8jlqmIc=
+github.com/bowman2001/hugo-mod-image v0.6.4/go.mod h1:xitMnd4vhSfq2xX3PAE3R8aLuJL1VXKM/pYivXAKPxY=
 github.com/bowman2001/hugo-mod-katex v0.2.3 h1:wYVxLRurgtDaPpkVj1YR/0tjzM7byNJXeFkZaCX6eMs=
 github.com/bowman2001/hugo-mod-katex v0.2.3/go.mod h1:3E5XXqk4Mn5Pll6skKVOcNRwRzzCvayNXCeyXgEx4W0=
 github.com/bowman2001/hugo-mod-katex v0.2.4 h1:ahvjoEVVIVC/kURc7AFS0+zJCGPBPj/y3gxDkFIXbXs=
@@ -243,3 +245,5 @@ github.com/bowman2001/perplex v0.16.0 h1:AvZE2+6+nQDpjGHZYvdLZJxPNRgFF68wsc7kTbx
 github.com/bowman2001/perplex v0.16.0/go.mod h1:v7h874YsE4HGMvtqzXsue7Ri9B1SQc0DM8xea/OnVMg=
 github.com/bowman2001/perplex v0.16.1 h1:s3wMUHp9bgvEg8+xHZDJpDiFjZpeKp9jU9gQEUtwYqM=
 github.com/bowman2001/perplex v0.16.1/go.mod h1:ZX3ls3fWZWmgoAnCJZfLGIEy8PdVq5kzxtapZAqNMWk=
+github.com/bowman2001/perplex v0.16.2 h1:qiEfo9P8cFSN9pFUM2xqkrOEaq7hB9s80Pz16NHK52s=
+github.com/bowman2001/perplex v0.16.2/go.mod h1:f1EplEtB3UD7zLgEbCbl/LWcfxm5PMIYtlSLHRhTAOA=
