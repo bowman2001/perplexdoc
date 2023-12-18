@@ -38,7 +38,7 @@ Please follow the specific [installation instructions](https://gohugo.io/install
 
 Hugo is still evolving and getting better all the time. Newer versions of this theme may rely on recent features. If you are interested in them, you should choose an installation, which is easy to update frequently.
 
-In case you are satisfied with a given setup you don’t need to upgrade. One of the great advantages of Hugo is reliability. All Hugo releases are still available and if you want to stick to a certain configuration you simply can.
+In case you are satisfied with a given setup you don’t need to upgrade. One of the great advantages of Hugo is reliability. All Hugo releases are still available and if you want to stick to a certain version you simply can.
 {.box-info}
 
 ## Get the theme
@@ -128,6 +128,9 @@ There are three ways to get a theme from a Git repository:
 3. Import a theme as a Hugo module. You need a recent [Golang environment](https://go.dev) – Hugo modules rely on Go modules. The Hugo docs provide a [guide to this feature](https://gohugo.io/hugo-modules). Once set up, Hugo modules are the best way to update themes or other external components, content etc. There is a simple example for a theme module in the file [{$module.yaml}](/doc/appendix/config/moduleyaml).
 
 When you choose option 1. or 2., you need to tell Hugo to use the theme in the main config file. When you choose option 3. (the module) you don’t. Hugo includes modules by default as themes. But you need to initialize your project as a Hugo module itself with a command like `hugo mod init path-to-your-repo.git` to let it keep track of the dependencies.
+{.inline}
+
+{{< mnote down=6 >}}Your project doesn’t need to have an actual repository to be initialized as a module for dependency tracking. If you don’t intend to share it you can use a fictional name.{{< /mnote >}}
 
 ## Having trouble with Hugo?
 

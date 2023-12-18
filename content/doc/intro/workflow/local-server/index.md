@@ -79,7 +79,7 @@ Other than this first paragraph, your normal content may be simple text without 
 
 As soon as you save your file, Hugo’s server will update your site in the browser. Should you make mistakes, Hugo will display a descriptive error message on its console or in the browser.
 
-[^1]: The templates for the file generation with `hugo new` are called **archetypes** and part of the theme. But like any other theme template, we can override them. See the [Hugo docs](https://gohugo.io/content-management/archetypes/) if you want to create your own.
+[^1]: The templates for the file generation with `hugo new` are called **archetypes**. But like any other theme template, we can override them. See the [Hugo docs](https://gohugo.io/content-management/archetypes/) if you want to create your own.
 
 [server]: https://gohugo.io/commands/hugo_server
 
