@@ -10,8 +10,8 @@ menu:
     pre: home
 title: 'hugo.yaml'
 weight: 1010
-categories: [hugo]
-tags: [configuration]
+categories: [configuration]
+tags: [hugo]
 ---
 
 Main configuration file in {$config/_default}

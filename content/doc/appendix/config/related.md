@@ -9,8 +9,8 @@ menu:
     pre: open_in_new
 title: related.yaml
 weight: 1025
-categories: [hugo]
-tags: [related, configuration]
+categories: [configuration]
+tags: [related]
 ---
 
 Related configuration file in {$config/_default}

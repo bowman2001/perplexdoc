@@ -10,8 +10,8 @@ menu:
     parent: config
     pre: view_module
 weight: 1025
-categories: [hugo, module]
-tags: [configuration]
+categories: [module, configuration]
+tags: []
 ---
 
 Module configuration file in {$config/_default}

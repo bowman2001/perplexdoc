@@ -9,8 +9,8 @@ menu:
     pre: image
 title: 'imaging.yaml'
 weight: 1030
-categories: [hugo]
-tags: [image, configuration]
+categories: [configuration]
+tags: [image]
 ---
 
 The image processing configuration for Hugo in the folder {$config/_default}.

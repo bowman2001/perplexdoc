@@ -10,8 +10,8 @@ menu:
 subtitle: false
 title: privacy.yaml
 weight: 1035
-categories: [Hugo]
-tags: [Privacy, Configuration]
+categories: [configuration]
+tags: [Privacy]
 ---
 
 Privacy configuration file in {$config/_default}

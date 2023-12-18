@@ -11,7 +11,7 @@ menu:
     parent: appendix
     pre: image
 categories: [module]
-tags: [image, configuration]
+tags: [image]
 draft: true
 ---
 

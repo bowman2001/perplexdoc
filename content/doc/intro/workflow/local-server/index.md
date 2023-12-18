@@ -15,8 +15,8 @@ resources:
     name: featured
     params:
       alt: A half-open glowing computer notebook
-categories: [getting started, hugo]
-tags: [workflow]
+categories: [getting started]
+tags: [workflow, hugo]
 ---
 
 While working on our content, we like to examine the result. To generate an immediate local preview, we run Hugo in server mode.

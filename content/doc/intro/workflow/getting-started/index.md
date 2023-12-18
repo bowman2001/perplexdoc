@@ -10,8 +10,8 @@ menu:
     name: Install & configure
     parent: workflow
     pre: start
-categories: [getting started, hugo]
-tags: [installation, configuration, workflow]
+categories: [getting started, configuration]
+tags: [hugo, installation, workflow]
 resources: 
   - src: damian-markutt-Dhmn6ete6g8-unsplash.jpg
     name: featured

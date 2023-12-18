@@ -9,8 +9,8 @@ menu:
     name: security.yaml
     parent: config
     pre: security
-categories: [Hugo]
-tags: [Security, Configuration]
+categories: [configuration]
+tags: [security]
 ---
 
 The security configuration file in {$config/&zwnj;_default} contains the runtime security settings for Hugo.

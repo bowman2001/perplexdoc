@@ -10,8 +10,8 @@ menu:
 subtitle: false
 title: menu.yaml
 weight: 1020
-categories: [Hugo]
-tags: [Menu, Configuration]
+categories: [configuration]
+tags: [menu]
 ---
 
 Menu configuration file in {$config/_default}. Contains mostly menus for external links.
