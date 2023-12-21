@@ -28,7 +28,7 @@ resources:
   name: featured
   params:
     alt: Georg Makowski
-    attr: Elisa Makowski
+    attr: Elisa Makowski/private
     attrlink: "http://elisa-makowski.de"
     anchor: Top
 - src: small_portrait.jpg

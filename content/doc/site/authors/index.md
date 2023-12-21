@@ -60,11 +60,13 @@ contact_icons:
 
 You add your name as the `title` and a short description of your role or profession to the parameter `description`.
 
-The author page needs two images:
-A quadratic `portrait` or avatar with a side length of at least {${{< width/column 1 >}}}. This image appears in all your postings and cards referencing them.
-A `featured` image as usual.
+The author page expects two images:
+**1.** A quadratic `portrait` or avatar with a side length of at least {${{< width/column 1 >}}}. This image is cropped to fit into a circle and you may need to add some padding to the original. This portrait appears in all your postings and cards referencing them.
+**2.** A `featured` image as usual.
 
-You have the option to add links to other sites or services which are symbolized by icons. The section `follow_icons` is meant for social networks with the option to follow your postings. The section `contact_icons` is meant for services that allow to reach you directly.
+You can add links to other sites or services that are symbolized by icons in a similar way as for the [main social menu][mainsocial].
+
+The section `follow_icons` is meant for social networks, and the section `contact_icons`` for services that reach you personally.
 
 Every list entry starts with a dash and expects three parameters:
 
@@ -72,10 +74,9 @@ Every list entry starts with a dash and expects three parameters:
 : The name of the service.
 
 `icon`
-: The name for an icon of the open-source project [Simple Icons](https://simpleicons.org). You can find and pick every available icon on their page.
-
-  The icons are open-source but you have to consider possible legal restrictions of their use from the corporations or organizations they represent!
-  {.box-danger}
+: The name for an icon of the open-source project [Simple Icons](https://simpleicons.org). You can find and pick every available icon on their page or add your own as described for the [main social menu][mainsocial].
 
 `url`
 : The link to the service.
+
+[mainsocial]: /doc/site/navigation#simple-icons
