@@ -37,11 +37,11 @@ resources:
     alt: Georg Makowski
 ---
 
-Front-end developer[^1] specializing in typographic layout & SSG.
+Front-end developer specializing in typographic layout & SSG.
 {.p-first}
 <!--more-->
 
-I’m engaged in web publishing. My focus lies on a consistent layout and optimal legibility. I’m developing fluid-responsive designs because they can integrate many achievements of classic typographic page design on all kinds of screens --- from mobile phones up to high density monitors.
+I’m engaged in web publishing[^1]. My focus lies on a consistent layout and optimal legibility. I’m developing fluid-responsive designs because they can integrate many achievements of classic typographic page design on all kinds of screens --- from mobile phones up to high density monitors.
 
 Baseline grids and evenly spaced columns bear many fruits when the layout proportions are at least partially fixed like on physical pages. My fluid-responsive templates contain a few layout versions and each one beyond mobile preserves fixed proportions between its breakpoints. I can offer outstanding layout flows and details on very fast-loading pages.
 
