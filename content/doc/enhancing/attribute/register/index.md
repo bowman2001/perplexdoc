@@ -41,7 +41,7 @@ To attach the attributes correctly in Markdown, have a look at the short [Howto]
 
 | Attribute Name | CSS-class |
 |:--------|:-------|
-| [Standfirst paragraph](standfirst#first) | {$.p-first} |
+| [Standfirst paragraph](doc/page/standfirst#first) | {$.p-first} |
 | [Big paragraph](/doc/basic/paragraph#big-paragraph) | {$.p-big} |
 | [Small paragraph](/doc/basic/paragraph#small-paragraph) | {$.p-small} |
 {.normal}

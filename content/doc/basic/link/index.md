@@ -21,61 +21,74 @@ weight: 145
 Internet references or short “links” are the binding fabric of the web. Markdown encourages their use by providing a few{/}simple markup options.
 {.p-first} <!--more-->
 
-Irrespective of the way which type of link syntax we use, their layout looks the same. Perplex distinguishes between **internal links** to our own website and **external links** to others.
+There are three ways to create a link in CommonMark Markdown:
 
-## Syntax
+1. We can place an absolute URL (starting with `http://` or `https://`) **explicitly** in the Markdown text.
 
-The easiest way to create a link is to write an URL directly into the text and let it be handled **automatically**. But most of the time we prefer to **name** them by connecting the name with the reference.
+2. We can **name** the link and provide the URL **inline**.
 
-### Links from URLs
+3. We can **name** the link and add a **reference** to the URL somewhere else.
 
-CommonMark transforms marked URLs into full HTML references. With the **linkify** extension we can omit the marks and write raw URLs.
+Irrespective of the syntax the rendered result and the layout are the same. The theme distinguishes between **internal links** to the same domain and **external links** to others.
 
-#### Marked links
+## Explicit links
 
-CommonMark URLs need to be enclosed in angled brackets like `<http://www.example.com>` and are rendered into <http://www.example.com>.
+CommonMark transforms **marked** absolute URLs into links and the **linkify** extension even allows omitting the mark and writing raw URLs.
 
-#### Raw URLs {#linkify}
+### Marked
 
-Every URL starting with `http://` or `https://` is automatically transformed into a link by the **linkify** extension. If you want to stop this default behavior, you can set `linkify` to `false` in the [configuration](/doc/appendix/config/markup#9).  
+URLs enclosed in angled brackets like `<http://www.example.com>` are rendered into <http://www.example.com>.
 
-### Named links
+### Raw {#linkify}
 
-There are two ways to turn a phrase or word into a link. We can include them **inline** within the text, which is convenient but bloats the text, especially in the case of long URLs. The alternative is to write the URL into a separate **reference** like a footnote.
+Every absolute URL like `https://www.example.com` is rendered into https://www.example.com. If you want to stop this default behavior, you can set `linkify` to `false` in the [markup configuration](/doc/appendix/config/markup#9).
 
-#### Inline link
+## Named links
 
-The link inside of the text has to be enclosed by square brackets `[]` and the
-URL and the optional title follow directly afterward in parens `()`. Like this:
+There are two ways to turn a phrase or word into a link.
+
+1. We can include the URL **inline**, which is convenient but may bloat the text, especially in the case of very long URLs. 
+
+2. The alternative is to write the URL into a separate **reference** like a footnote.
+
+### Inline links
+
+The link inside of the text has to be enclosed by square brackets `[]`. The
+URL and the optional title follow in parens `()` like this:
 
 ```md
-1. This is an [inline-style link](https://www.google.com)
+1. This is an [inline-style link](https://www.example.com)
 
-2. This is an [inline-style link](https://www.google.com "Google's Homepage")
+2. This is an [inline-style link](https://www.example.com "Example site")
    with a title. Hover your mouse over it.
 {.col2}
 ```
 
 And the resulting links look like this:
 
-1. This is an [inline-style link](https://www.google.com)
+1. An internal [link to a page fragment](/doc/basic/link#inline-links)
 
-2. This is an [inline-style link](https://www.google.com "Google's Homepage") with a title. Hover your mouse over it.
-{.col2 .inline}
+2. An internal [link to a file](dummy.pdf)
 
-{{< mnote up=1 >}}
-The tooltip from the title is a nice feature. Because we can’t hover with the mouse over elements on a touch screen they won’t be available there.
+3. An external [link to an absolute URL](https://www.example.com)
+
+4. An external [link with a title](https://www.example.com "Example domain"). Hover your mouse over it.
+
+{{< mnote up=6 >}}
+The tooltip from the title is a nice feature. Because we can’t hover with the mouse over elements on a touch screen it won’t be always available and shouldn’t contain essential information.
 {{< /mnote >}}
 
-#### Reference link
+### Reference links
 
-A reference link is marked by a second set of square brackets with a short reference name inside. `[Link to Example][ref]` is again displayed as [Link to Example][ref] when we repeat the reference marker somewhere else in the file, followed by a colon `:`, the URL, and the optional title:
+A reference link is marked by a second set of square brackets with a usually short reference name inside.
+
+`[Link to Example][ref]` is again displayed as [Link to Example][ref] when we repeat the reference marker somewhere else in the file, followed by a colon `:`, the URL, and the optional title:
 
 ```md
 [ref]: http://www.example.com "Example page"
 ```
 
-This reference is never shown. Its URL and the title are just used as attributes for the link element.
+This reference is never shown directly. Its URL and the title are used as attributes for the link element.
 
 [ref]: http://www.example.com "Example page"
 
@@ -98,7 +111,7 @@ render_hooks:
 
 ```
 
-Missing fragments are **not** reported by default, because only headings and their identifiers got an additional data structure in Hugo recently. When a link references other less common identifiers --- manual [anchors](anchor) or line numbers in code blocks for example --- the link hook invalidates them falsely because there is no way to find them in a Hugo template.[^1] Should you have a lot of these, you may want to leave the error level for fragments set to {$ignore} most of the time. But the {$warning} level may still prove to be very valuable for reporting missing heading references at build time.
+Missing fragments are **not** reported by default, because only headings and their identifiers got an additional data structure in Hugo recently. When a link references other less common identifiers --- manual [anchors](doc/enhancing/attribute/anchor) or line numbers in code blocks for example --- the link hook invalidates them falsely because there is no way to find them in a Hugo template.[^1] Should you have a lot of these, you may want to leave the error level for fragments set to {$ignore} most of the time. But the {$warning} level may still prove to be very valuable for reporting missing heading references at build time.
 {.inline}
 
 {{< mnote >}}
@@ -107,21 +120,15 @@ Hugo renders links to all existing identifiers (fragments) **completely fine**. 
 
 [^1]: That’s also why there is no possibility to throw an error for missing fragments. Valid content shouldn’t be able to stop a site from getting rendered.
 
-If you want to rigorously check all your links --- even external ones --- you need to install additional software that validates a full local build (see [publish](publish#use-your-own-hardware)) of your site. Tools like [html-proofer](https://github.com/gjtorikian/html-proofer) check all referenced URLs.
+If you want to rigorously check all your links --- even external ones --- you need to install additional software that validates a build (see [publish](doc/intro/workflow/publish#use-your-own-hardware)) of your site. Tools like [html-proofer](https://github.com/gjtorikian/html-proofer) check all referenced URLs.
 
-## No need for the {$relref} shortcode
+## The {$relref} shortcode is not supported {.h-danger}
 
-Hugo’s built-in shortcode {$relref} automatically generates the relative path for pages with a unique page name. We could type `[relative link]({{</* relref "unique-page-name" */>}})` in the standard CommonMark link element and get the relative link without even knowing the actual path.
+Hugo’s built-in shortcode {$relref} automatically generates the relative path for pages with a unique page name. We could type `[relative link]({{</* relref "unique-page-name" */>}})` in the standard CommonMark link element and get the relative link without knowing the actual path.
 {.inline}
 
 {{< mnote >}}
-{$relref} is a convenience only as long as projects are small. As soon as the content grows more and more duplicate filenames will exist (taxonomy pages are always included!).
+{$relref} can be a convenience only as long as projects are small. As soon as the content grows more and more duplicate content filenames arise (taxonomy pages are also included!) and we need to give the full relative path anyway. Better to use full relative paths from the beginning. In case they change a site-wide search&replace for URLs is easy.
 {{< /mnote >}}
 
 But the render-link hook of this theme can’t process the shortcode and may throw the infamous `HAHAHUGO...` error. We need to abandon the shortcode once and for all for the sake of the advanced hook.
-
-This is not a problem and more of a chance: The render-link hook can also handle `[link](unique-page-name)`! If a page cannot be found in any other way it calls the {$relref} function as a last resort. We don’t need the shortcode anymore.[^2]
-
-Because Hugo’s default to throw an error and stop the build if {$relref} can’t find a page is quite harsh, the theme sets the parameter `refLinksErrorLevel: warning` in its configuration file. You can change it in your project configuration.
-
-[^2]: There is one drawback: In case of a non-existing page we get a warning from {$relref} and we may get an additional warning, an error, or nothing from the hook depending on its configuration.

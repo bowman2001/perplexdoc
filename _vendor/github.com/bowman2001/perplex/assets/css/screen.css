@@ -1691,7 +1691,7 @@ body {
 }
 .md strong, .container strong {
   font-size: 99%;
-  color: var(--c-text-semilow);
+  color: var(--c-text-medium);
 }
 .md strong a, .md a strong, .container strong a, .container a strong {
   color: inherit;
@@ -2298,6 +2298,10 @@ body {
   color: var(--c-frame-text-link-high);
   text-decoration-color: var(--c-frame-text-link-high);
   background-color: var(--c-frame-button-hover-bg);
+}
+
+.md--blog {
+  padding-top: calc(3rem + 2 * var(--es));
 }
 
 .md--list {
