@@ -37,6 +37,9 @@ The [Hugo documentation site][hugodoc] addresses developers mostly and offers de
 Please follow the specific [installation instructions](https://gohugo.io/installation/) for your operating system on the Hugo documentation site (the docs). This theme needs the **extended version** of Hugo for its support of the WEBP image format.
 
 Hugo is still evolving and getting better all the time. Newer versions of this theme may rely on recent features. If you are interested in them, you should choose an installation, which is easy to update frequently.
+{.inline}
+
+{{< mnote >}}**For advanced users**: A very convenient way to manage different Hugo installations is the [**H**ugo **V**ersion **M**anager](https://github.com/jmooring/hvm).{{< /mnote >}}
 
 In case you are satisfied with a given setup you don’t need to upgrade. One of the great advantages of Hugo is reliability. All Hugo releases are still available and if you want to stick to a certain version you simply can.
 {.box-info}
