@@ -47,3 +47,7 @@ The file {$assets/css/color-default.css} in the theme folder holds the default c
 
 Creating a WCAG-compliant color scheme for this theme is non-trivial. There is no way to calculate all the needed shades of the four base colors automatically – as far as I know. To achieve a sufficient contrast ratio for all combinations often manual adjustments are necessary because the luminosity is a function of the specific color.
 {.box-warn}
+
+## Code highlighting
+
+The color variables for highlighting code blocks with Chroma follow the light and dark theme from GitHub which are (mostly) WCAG compliant.
