@@ -1,7 +1,7 @@
 ---
 authors: [Georg Makowski]
 title: 'Customize Colors'
-description: ""
+description: "Include a custom color scheme"
 subtitle: false
 date: 2024-01-02T02:39:51+01:00
 categories: [design]
