@@ -27,12 +27,12 @@ When you place your **Google Measurement ID** in the [main configuration file][g
 {.inline}
 
 {{< mnote >}}
-Because Google collects user specific data from website visitors with this software, many sites have to inform their visitors about their services and need to ask for explicit permission if they have to comply with the **G**eneral **D**ata **P**rotection **R**egulation.
+Because Google collects user-specific data from website visitors with this software, many sites have to inform their visitors about their services and need to ask for explicit permission if they have to comply with the **G**eneral **D**ata **P**rotection **R**egulation of the European Union.
 {{< /mnote >}}
 
 ## Fathom Analytics
 
-[Fathom Analytics][fathomref]{^\*} is privacy-focused and wants to get paid because it doesn’t monetize data from visitors. It doesn’t collect any individual data at all and is a merely statistical service for website operators. With Fathom your vistors don’t need to know about the service and don’t need to decide what kind of data they would like to share. &Rightarrow; No need for a pop-up window!
+[Fathom Analytics][fathomref]{^\*} is privacy-focused and wants to get paid because it doesn’t monetize data from visitors. It doesn’t collect any individual data at all and is a merely statistical service for website operators. With Fathom your vistors don’t need to know about the service and don’t need to decide what kind of data they would like to share. **&rightarrow;** No need for a pop-up window!
 {.inline}
 
 {{< mnote star=1 >}}

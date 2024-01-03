@@ -10,17 +10,17 @@ menu:
     parent: siteelem
     pre: palette
 categories: [design]
-tags: [color]
+tags: [color, accessible]
 weight: 685
 ---
 
-The theme ships with a WCAG-compliant color scheme for an environment-dependent light & dark mode.  
+The theme includes a WCAG-compliant color scheme that switches between a **light** and a **dark** mode when the OS environment does.  
 {.p-first}
 <!--more-->
 
 ## Four base colors
 
-The color scheme design for this theme uses four base colors.
+The color scheme design is based on four colors with a specific purpose:
 
 Red
 : to emphasize a current or intended navigational state.
@@ -45,7 +45,7 @@ The minimal contrast ratios between foreground and background colors follow the 
 
 The file {$assets/css/color-default.css} in the theme folder holds the default color scheme. In case you would like to use another color scheme you can create the file {$assets/css/color.css} in your **project root**. Then, the theme will include this file instead of the default in the main stylesheet. This file needs to define all color variables and you may want to start with a copy of the default.
 
-Creating a WCAG-compliant color scheme for this theme is non-trivial. There is no way to calculate all the needed shades of the four base colors automatically – as far as I know. To achieve a sufficient contrast ratio for all combinations often manual adjustments are necessary because the luminosity is a function of the specific color.
+Creating a WCAG-compliant color scheme for this theme is non-trivial. There is no easy way to calculate all the correct shades of the four base colors automatically – as far as I know. To achieve sufficient contrast ratios for all combinations manual adjustments are necessary because the luminosity is a function of the color.
 {.box-warn}
 
 ## Code highlighting
