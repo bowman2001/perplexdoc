@@ -1,6 +1,6 @@
 ---
-title: Favicon
-description: The general site icon
+title: Icon
+description: Small representative symbols for actions, content, or brands etc.
 subtitle: true
 date: 2022-09-06T14:41:23+02:00
 resources:

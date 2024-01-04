@@ -5,7 +5,7 @@ description: "A lightweight and simple solution for documentation pages"
 subtitle: false
 date: 2023-12-08T19:12:13+01:00
 categories: [Design]
-tags: [feature, image, icon]
+tags: [icon, image]
 ---
 
 We can use the menu icon also as the featured image on documentation pages.
