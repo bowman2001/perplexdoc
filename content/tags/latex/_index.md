@@ -11,5 +11,5 @@ resources:
       padding: two
       background: light
       svg: inline
-      type: logo
+      type: symbol
 ---

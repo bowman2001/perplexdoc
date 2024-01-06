@@ -1,6 +1,7 @@
 ---
 authors: [Georg Makowski]
 title: 'Accessible Theme Colors'
+linktitle: 'Accessible Colors'
 description: "The contrast in both color modes is WCGA-compliant"
 subtitle: false
 date: 2023-12-06T19:01:46+01:00

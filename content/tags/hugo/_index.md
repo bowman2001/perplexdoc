@@ -9,6 +9,6 @@ resources:
     params:
       alt: The Hugo logo
       box: none
-      type: logo
+      type: symbol
       background: transparent
 ---

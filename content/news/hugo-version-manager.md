@@ -2,7 +2,7 @@
 authors: [Georg Makowski]
 title: 'Hugo Version Manager (HVM)'
 linktitle: HVM
-description: "Simplify the installation and configuration of different Hugo versions in your development environment"
+description: "Install different Hugo versions with ease"
 subtitle: false
 date: 2023-12-18T20:42:44+01:00
 categories: [Configuration]
