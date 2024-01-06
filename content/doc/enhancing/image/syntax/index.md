@@ -41,7 +41,7 @@ And there are diagrams generated from code blocks:
 4. Parameters as additional code block attributes
 {.ol-continue}
 
-How to add parameters to page resources in the frontmatter or to global and remote resources in a data file is described in the [introduction to the workflow](/doc/intro/workflow/resources).
+How to add parameters to page resources in the frontmatter and how to add global and remote resources in a local data file is described in the [introduction to the workflow](/doc/intro/workflow/resources).
 
 Query string parameters are a specialty for the in-place manipulation of images [described below](#query-string-parameters).
 
@@ -133,30 +133,6 @@ The following table shows all image parameters and their possible values in alph
 | Type | **type** | {{% mod-img/value "container" "type" "options" %}} |
 | Zoom | **zoom** | Real number in [1.0, {{% mod-img/value "preprocess" "zoomMax" %}}] |
 {.normal}
-
-
-### Resource parameters
-
-```yaml {.right linenos=true linenostart=10}
-resources:
-- src: image.jpg
-  name: newname
-  params:
-    caption: A placeholder image
-    width: tiny
-    posh: left
-```
-
-We register an image in the frontmatter list of resources with its file name or relative path. We add a new internal name and **need to** call it by this new name only `![Placeholder](newname)`. To pass additional parameters we add the optional `params` key. They need to be indented by two additional spaces (or a short tab) relative to `params`.
-
-### Data file parameters
-
-```yaml {.right linenos=true linenostart=1}
-src: image.jpg
-caption: A placeholder image
-width: tiny
-posh: left
-```
 
 ### Query string parameters
 
