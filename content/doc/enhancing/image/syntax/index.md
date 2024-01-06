@@ -36,7 +36,7 @@ CommonMark can handle only 3 parameters. To generate a caption and change the la
 3. Query string parameters attached to the name in the Markdown image element
 {.col2}
 
-Additionally, there are diagrams generated from textual descriptions:
+And there are diagrams generated from code blocks:
 
 4. Parameters as additional code block attributes
 {.ol-continue}
@@ -47,29 +47,25 @@ Query string parameters are a specialty for the in-place manipulation of images 
 
 Parameters for fenced code blocks are added together with their special attributes (&rightarrow; [code page](/doc/basic/code)).
 
-## Additional image parameters
+## Additional parameters
 
-Preprocessing
-`anchor`, `rotate`, `ratio`, `zoom`
-: We can manipulate images to some extent:
-  
-  - Zooming and rotating are self-explanatory. 
-  
-  - The desired ratio of an image is given as the decimal fraction between the width and the height proportions. For example: {$3:2 = 1.5} .
-  
-  - When we zoom in or change the ratio the image gets cropped. The selected area of the image is usually determined by a "smart" algorithm (the default setting). To manually choose the area we set the anchor to one of the nine available areas.
+Many parameters apply to all kinds of images. And there are some especially for normal raster images and some for symbolic images.
+
+### General options
 
 Layout 
-`attr`, `attrlink`, `caption`, `class`, `posh`, `posv`, `width`
+`width`, `posh`, `posv`, `caption`, `attr`, `attrlink`, `box`, `class`
 : We can change the size and the place of an image and add a rich caption:
 
-  - The size of an image is determined by its width parameter.
+  - The size of an image is determined by the **width** parameter.
 
   - The horizontal position can be changed with `posh`. The vertical position parameter `posv` only adds some space for embedded images in the middle of a text block.
 
-  - Besides the caption text, we can also place an attribution with a link in the image caption.
+  - Besides the **caption** text, we can also place an attribution with a link in the image caption.
 
-  - In case we want to apply a special styling to an image, we can add a CSS class.
+  - We can embed an image in a **box**. The default is a weak small shadow which is nearly invisible for many images.
+
+  - In case we want to apply a special styling to an image, we can add a custom CSS **class**.
 
 Other properties
 `alt`, `link`, `rel`
@@ -83,7 +79,37 @@ Other properties
   - We can place a link around the image and determine its relation.
 {.dl-loose}
 
-The following table lists the possible values for all image parameters:  
+### Preprocessing for normal raster images
+
+`zoom`, `rotate`, `ratio`, `anchor`
+: We can transform images to some extent:
+  
+  - **Zoom** and **rotate**
+  
+  - A new **ratio** of an image can be set as the decimal fraction between width and height proportions ––– for example {$3:2 = 1.5}.
+  
+  - When we zoom in or change the ratio the image gets usually cropped. The selected area of the image is by default determined by a "smart". To choose the area manually we can set the **anchor** to one of the nine available areas.
+{.dl-loose}
+
+### Options for symbolic images
+
+When we use images with symbolic content (like logos or diagrams) we don’t want to alter them under any circumstances. We especially don’t want to crop them for a preview on navigation cards with a fixed ratio. We also need some options for their background color because many symbolic images include transparent parts and may suffer from a contrast deficit in light or dark mode. And we might want to frame them in a box with some padding or not.
+
+The theme offers a few parameters for their special treatment:
+
+`type`, `background`, `padding`
+: These parameters change the image layout:
+
+  - When we set **type** to `symbol` the image is never preprocessed (not even for cards). Every card layout adds some padding and centers the images instead.
+
+  - We can choose a **background** shade to ensure a good contrast. The default is `light`. Looks only good inside a box.
+
+  - We can add some **padding** around a symbol (inside a box).
+{.dl-loose}
+
+### Complete overview
+
+The following table shows all image parameters and their possible values in alphabetical order:  
 
 | Parameter | Key | Values |
 |:---------|:----------|:---------|
@@ -91,9 +117,12 @@ The following table lists the possible values for all image parameters:
 | Alternative text | **alt** | Plain string |
 | Attribution | **attr** | Inline Markdown string |
 | Attribution link | **attrlink** | URL |
+| Background | **background** | {{% mod-img/value "frame" "background" "options" %}}
+| Frame box | **box** | {{% mod-img/value "frame" "box" "options" %}}
 | Caption | **caption** | Inline Markdown string |
 | Class | **class** | CSS class |
 | Link | **link** | URL for a linked image |
+| Padding | **padding** | {{% mod-img/value "frame" "padding" "options" %}} |
 | Horiz. position | **posh** | {{% mod-img/value "embed" "posh" "options" %}} |
 | Vert. position | **posv** | _embedded_: {{% mod-img/value "embed" "posv" "options" %}} |
 | Link related | **rel** | See [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) |
@@ -101,6 +130,7 @@ The following table lists the possible values for all image parameters:
 | | | _figure_: {{% mod-img/value "figure" "width" "options" %}} |
 | Rotate | **rotate** | {{% mod-img/value "preprocess" "rotate" %}} |
 | Ratio | **ratio** | Real number in [0.2, 5.0] |
+| Type | **type** | {{% mod-img/value "container" "type" "options" %}} |
 | Zoom | **zoom** | Real number in [1.0, {{% mod-img/value "preprocess" "zoomMax" %}}] |
 {.normal}
 
