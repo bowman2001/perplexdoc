@@ -17,7 +17,7 @@ resources:
       width: micro 
       box: none
 categories: [template]
-tags: [favicon, site]
+tags: [icon, site]
 ---
 
 Browsers show the **favorite icon** in the tab, the address bar and before bookmarks. It may also be used as an application icon when the website implements the necessary functionality.
