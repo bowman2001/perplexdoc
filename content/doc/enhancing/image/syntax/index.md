@@ -156,10 +156,9 @@ We can use these parameters:
 | Rotate | **rotate** | {{% mod-img/value "preprocess" "rotate" %}} |
 | Ratio | **ratio** | Real number in [0.2, 5.0] |
 | Zoom | **zoom** | Real number in [1.0, {{% mod-img/value "preprocess" "zoomMax" %}}] |
-
 {.normal}
 
 [^1]: The syntax for **query strings** has been originally introduced to extend URLs like `https://name.org?id=val&id2=val2` with parameters for an HTML API.
 
-Parameters defined in the frontmatter are **overridden** by the **in-place parameters** will override them.
+Query-string parameters **override** frontmatter parameters!
 {.box-info}
