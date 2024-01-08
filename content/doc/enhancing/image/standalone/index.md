@@ -20,7 +20,7 @@ Layout options for enhanced images and their layout possibilities.
 {.p-first}
 <!--more-->
 
-For the Markdown syntax see [basic image](https://perplex.desider.at/doc/basic/image). You find the syntax for enhanced layout options in [enhancing images](https://perplex.desider.at/doc/enhancing/image/syntax).
+For the Markdown syntax see [basic image](https://perplex.desider.at/doc/basic/image). You find the syntax for enhanced layout options in [enhancing images](https://perplex.desider.at/doc/enhancing/image/syntax). The [visual demo](https://perplex.desider.at/blog/image/standalone) in the blog includes precalculated sets of raster images.
 
 ## Text width (default)
 

@@ -14,7 +14,7 @@ Demo for the layout options of enhanced embedded images.
 {.p-first}
 <!--more-->
 
-The documentation of the Markdown syntax is filed under [basic image](https://perplex.desider.at/doc/basic/image) and [enhanced image](https://perplex.desider.at/doc/enhancing/image/syntax). The [concept demo](https://perplex.desider.at/doc/enhancing/image/embed) contains width parameters.
+The documentation of the Markdown syntax is filed under [basic image](https://perplex.desider.at/doc/basic/image) and [enhanced image](https://perplex.desider.at/doc/enhancing/image/syntax). The [concept demo](https://perplex.desider.at/doc/enhancing/image/embed) in the documentation contains visual placeholders for all possible width parameters.
 
 ## At the beginning of a text block
 
