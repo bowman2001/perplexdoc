@@ -27,10 +27,10 @@ Then follows the title and an optional subtitle which is generated from a short 
 : is a string and its value contains the page title. It may include inline markup or replacement codes. In case we use any markup, we **need to** provide an additional link title with pure text for navigational elements.
 
 `linktitle` {s (optional)}
-: is a pure text string and contains a short title. It’s used in navigational elements instead of the full title.
+: is a pure text string and contains a short title. It’s used in navigational elements (breadcrumbs) instead of the full title.
 {.dl-loose}
 
-The theme checks the length of the title (or the link title) to keep it within a reasonable limit for a nice layout. You can set a new limit with the site configuration parameter `params: limit: linkTitle`.
+The theme checks the length of the title (or the link title) to keep the length of breadcrumbs within a reasonable limit for a nice layout. You can set a new limit with the site configuration parameter `params: limit: linkTitle`.
 {.box-info}
 
 ## Description
