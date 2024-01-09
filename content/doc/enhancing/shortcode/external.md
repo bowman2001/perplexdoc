@@ -8,6 +8,7 @@ menu:
     parent: shortcode
     pre: download
 title: Hugo’s built-in remote shortcodes
+linktitle: Hugo’s remote
 weight: 580
 draft: true
 ---

@@ -4,11 +4,12 @@ date: "2021-09-13T22:45:36+02:00"
 description: Explicitly mark changes in the content
 menu: 
   doc:
-    name: Delete or Insert
+    name: Delete & insert
     parent: extended
     pre: remove
 subtitle: false
 title: Strike-through and Insertion
+linktitle: Delete & insert
 toc: false
 weight: 240
 categories: [Markdown]

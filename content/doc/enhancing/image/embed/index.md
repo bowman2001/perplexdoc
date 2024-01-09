@@ -45,7 +45,7 @@ For a description of the Markdown syntax see [basic image](https://perplex.desid
 ### Micro width
 
 ![](micro) {{% pangram 9 %}}
-{.placeholder data-pagefind-ignore="all"} 
+{.placeholder data-pagefind-ignore="all"}
 
 ![](micro?ph=right) {{% pangram 9 %}}
 {.placeholder data-pagefind-ignore="all"}

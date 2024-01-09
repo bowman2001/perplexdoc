@@ -4,10 +4,11 @@ date: "2021-08-26T20:15:12+02:00"
 description: Mark external sources 
 menu:
   doc:
-    name: Citation Sources
+    name: Citation Source
     parent: replace
     pre: format_quote
 title: Referencing the work of others
+linktitle: Citation Source
 weight: 440
 resources: 
   - src: gatien-bataille-ngu1d-CPbB4-unsplash.jpg

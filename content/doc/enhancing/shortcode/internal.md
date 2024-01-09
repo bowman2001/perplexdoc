@@ -8,6 +8,7 @@ menu:
     parent: shortcode
     pre: topic
 title: Hugo’s built-in internal shortcodes
+linktitle: Internal
 weight: 590
 draft: true
 ---
@@ -39,4 +40,3 @@ We can show a configuration parameter in the content with this shortcode. Their 
 - The parent of the menu entry with `{{</* param menu.doc.parent */>}}` as “{{< param menu.doc.parent >}}”.
 
 - The description with `{{</* param description  */>}}` as “{{< param description >}}”.
-

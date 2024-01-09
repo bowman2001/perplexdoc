@@ -8,6 +8,7 @@ menu:
     parent: appendix
     pre: format_quote
 title: Example Punctuation Keymap
+linktitle: Punctuation Keymap
 weight: 1090
 categories: [markdown]
 tags: [punctuation]
@@ -22,7 +23,7 @@ resources:
 Punctuation Keymap of the German Keyboard Layout for Ubuntu.
 {.p-first}<!--more-->
 
-Our personal keymap depends on the keyboard layout and the operating system. The punctuation signs for the usual German keyboard with Ubuntu Linux are convenient. As far as I know other Linux distributions ship with the same layout.
+Our personal keymap depends on the keyboard layout and the operating system. The punctuation signs for the usual German keyboard with Ubuntu Linux are convenient. As far as I know, other Linux distributions ship with the same layout.
 
 | Punctuation name     | Unicode |             Key combination |
 |:---------------------|:-------:|----------------------------:|
@@ -44,6 +45,6 @@ Our personal keymap depends on the keyboard layout and the operating system. The
 | Long dash            |    —    | {~Alt Gr} + {~Shift} + {~-} |
 {.normal}
 
-{{< mnote up=48 >}}
+{{< mnote up=47 >}}
 **Guillemets** are usually placed the other way around in Germany compared to French and Swiss typography.
 {{< /mnote >}}

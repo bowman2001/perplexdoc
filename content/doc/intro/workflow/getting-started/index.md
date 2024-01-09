@@ -1,6 +1,7 @@
 ---
 authors: [Georg Makowski]
 title: Local Installation & Configuration
+linktitle: Install & configure
 description: How to install Hugo and the theme
 subtitle: false
 date: 2022-09-11T14:57:26+02:00

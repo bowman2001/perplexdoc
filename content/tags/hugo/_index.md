@@ -10,5 +10,4 @@ resources:
       alt: The Hugo logo
       box: none
       type: symbol
-      background: transparent
 ---
