@@ -14,6 +14,8 @@ weight: 830
 resources:
   - src: fly-d-mT7lXZPjk7U-unsplash.jpg
     name: featured
+categories: [configuration]
+tags: [hugo, security]
 ---
 
 The Hugo binary runs in a sandbox to offer maximal runtime security while rendering static sites. External dependencies are configured explicitly.

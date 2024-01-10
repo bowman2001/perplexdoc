@@ -17,7 +17,7 @@ series: [images]
 weight: 310
 ---
 
-Layout options of enhanced embedded images.
+All the layout options for enhanced embedded images.
 {.p-first}
 <!--more-->
 

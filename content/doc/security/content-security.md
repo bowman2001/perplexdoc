@@ -10,6 +10,8 @@ menu:
     name: Content
     parent: security
     pre: article
+categories: [configuration]
+tags: [security]
 ---
 
 When a project includes content from unknown sources, we need to worry about content security.
