@@ -10,17 +10,11 @@ menu:
     name: Taxonomies
     parent: siteelem
     pre: category
-resources:
-  - src: angele-kamp-KaeaUITiWnc-unsplash.jpg
-    name: featured
-    params:
-      alt: Four empty paper labels on strings
-      zoom: 1.4
 categories: [template]
 tags: [taxonomies, site, related, author]
 ---
 
-With taxonomies, we can create site-wide arbitrary groups of content with joint taxonomy terms.
+We can create arbitrary site-wide groups of content with joint taxonomy terms.
 {.p-first} <!--more-->
 
 ## What are taxonomies and their terms?

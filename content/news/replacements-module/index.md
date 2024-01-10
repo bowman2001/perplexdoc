@@ -1,7 +1,8 @@
 ---
 authors: [Georg Makowski]
-title: Hugo Module{/}for missing HTML inline tags
+title: Hugo Module{/}for HTML inline tags missing in Goldmark
 linktitle: Replacements module
+description: Use these tags without writing raw HTML
 date: 2023-02-22T23:55:26+02:00
 categories: [Module]
 tags: [Replacement, Security]

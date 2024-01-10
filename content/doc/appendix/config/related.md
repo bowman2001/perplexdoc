@@ -13,7 +13,7 @@ categories: [configuration]
 tags: [related]
 ---
 
-Related configuration file in {$config/_default}
+The project configuration file in {$config/_default} for the generation of related content
 {.p-first .clear} <!--more-->
 
 {{< highlight yaml "linenos=true" >}}

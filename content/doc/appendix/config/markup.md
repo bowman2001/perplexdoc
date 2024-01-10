@@ -13,7 +13,7 @@ categories: [markdown, configuration]
 tags: []
 ---
 
-Markdown configuration file in {$config/_default}
+The project configuration file for the Markdown rendering engine in {$config/_default}
 {.p-first} <!--more-->
 
 &nbsp;

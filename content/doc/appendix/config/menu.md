@@ -14,10 +14,10 @@ categories: [configuration]
 tags: [menu]
 ---
 
-Menu configuration file in {$config/_default}. Contains mostly menus for external links.
+The project menu configuration file in {$config/_default}.
 {.p-first}<!--more-->
 
-The menu structure for internal links is preferably built from frontmatter parameters in the corresponding Markdown files!
+The menu structure for internal links is preferably built from frontmatter parameters in the Markdown files. This central file only contains entries without a page.
 {.clear}
 
 {{< highlight yaml "linenos=true" >}}

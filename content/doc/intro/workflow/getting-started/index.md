@@ -2,7 +2,7 @@
 authors: [Georg Makowski]
 title: Local Installation & Configuration
 linktitle: Install & configure
-description: How to install Hugo and the theme
+description: How to install Hugo and this theme
 subtitle: false
 date: 2022-09-11T14:57:26+02:00
 weight: 30
@@ -22,7 +22,7 @@ resources:
       anchor: Center
 ---
 
-Hugo, the world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and secure websites with this theme and many others.
+Hugo, the world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and secure web applications.
 {.p-first} <!--more-->
 
 [Hugo](https://gohugo.io) is a single command line tool for macOS, Windows, Linux and BSD derivatives. Binaries for most operating systems and some containers are usually available within a day or a few after every minor release.

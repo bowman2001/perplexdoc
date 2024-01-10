@@ -14,7 +14,7 @@ categories: [module, configuration]
 tags: []
 ---
 
-Module configuration file in {$config/_default}
+The project module configuration file in {$config/_default}
 {.p-first} <!--more-->
 
 &nbsp;

@@ -14,7 +14,7 @@ categories: [configuration]
 tags: [Privacy]
 ---
 
-Privacy configuration file in {$config/_default}
+The project configuration file in {$config/_default} for privacy settings.
 {.p-first} <!--more-->
 
 &nbsp;

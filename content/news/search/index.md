@@ -1,6 +1,7 @@
 ---
 authors: [Georg Makowski]
 title: Search
+description: Full-text search with Pagefind
 date: 2023-07-04T18:18:12+02:00
 categories: [Design]
 tags: [search]

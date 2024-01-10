@@ -23,7 +23,7 @@ Documentation pages
 : are ordered by their `weight`. This is the one additional mandatory parameter we need to fill with a decimal number.
 
 News, blog, and article postings
-: are ordered by the publishing `date` which is mandatory for all pages anyway.
+: are usually ordered by the publishing `date` which is mandatory for all pages anyway. We have the option to add a `weight` number which takes precedence, then.
 
 ## Order of pages
 
@@ -36,7 +36,7 @@ The order of documentation pages depends only on the **general page weight**. Th
 
 This simple concept has **one big caveat**: We should never use continuous decimal numbers in a growing project because we probably add new pages and sections later or reorder existing ones. With continuous numbering, we would need to change all numbers again and again. Better to leave ample space (lots of missing numbers) right from the start.
 
-For this project, I was expecting roughly 10 sections with 10 documentation pages in each one. I chose to use only every tenth decimal number in the beginning. The first section got `weight: 100`, the first page therein `weight: 110` and so on. The second section `weight: 200`… &ensp;Works fine for me.
+For this project, I was expecting roughly 10 sections with 10 documentation pages in each one. I chose to use only every tenth decimal number in the beginning. The first section got `weight: 100`, the first page therein `weight: 110`, the second section `weight: 200` and so on.
 {.inline}
 
 {{< mnote >}}
@@ -65,3 +65,4 @@ toc:
 We can reduce the depth with `endLevel` and change the minimum number of headings for a TOC with `minNumHeadings`.
 
 As far as I can see there is no good reason to ever change the `startLevel`.
+{.box-info}

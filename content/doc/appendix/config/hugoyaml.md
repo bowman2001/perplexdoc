@@ -14,7 +14,7 @@ categories: [configuration]
 tags: [hugo]
 ---
 
-Main configuration file in {$config/_default}
+The main project configuration file in {$config/_default}
 {.p-first}<!--more-->
 
 &nbsp;

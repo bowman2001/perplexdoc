@@ -1,6 +1,7 @@
 ---
 authors: [Georg Makowski]
 title: Resources in Data Files
+description: Store resource meta-data in page bundle files
 date: 2023-09-05T00:02:59+02:00
 categories: [module]
 tags: [resources]

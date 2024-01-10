@@ -1,6 +1,6 @@
 ---
 title: Linebreak
-description: "**Placeholder**: Short tag description"
+description: "Lets a long text segment fit into the available layout width"
 subtitle: true
 date: 2023-10-10T20:28:16+02:00
 resources:

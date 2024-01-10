@@ -14,7 +14,7 @@ categories: [Configuration]
 tags: []
 ---
 
-Parameter configuration file in {$config/_default}
+The project parameter configuration file in {$config/_default}
 {.p-first} <!--more-->
 
 &nbsp;

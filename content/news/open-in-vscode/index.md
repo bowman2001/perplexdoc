@@ -2,12 +2,13 @@
 authors: [Georg Makowski]
 title: Open files in VSCode{/}from Hugo’s server preview
 linktitle: Open VSCode directly
+description: Create local links to your VSCode instance
 date: 2023-03-31T00:44:36+02:00
 categories: [module]
 tags: [vscode, hugo]
 ---
 
-Two short partials create a link to open the content file{/}of the current page in Hugo’s server mode.
+Two short partials create a local link to open the content file{/}of the current page.
 {.p-first}
 <!--more-->
 

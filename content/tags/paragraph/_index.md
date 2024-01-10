@@ -1,6 +1,6 @@
 ---
 title: Paragraph
-description: "**Placeholder**: Short tag description"
+description: "Self-contained segment of discourse"
 subtitle: true
 date: 2023-10-11T21:15:52+02:00
 resources:
