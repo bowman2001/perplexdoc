@@ -41,7 +41,7 @@ Front-end developer specializing in typographic layout & SSG.
 {.p-first}
 <!--more-->
 
-I’m engaged in web publishing[^1]. My focus lies on a consistent layout and optimal legibility. I’m developing fluid-responsive designs because they can integrate many achievements of classic typographic page design on all kinds of screens --- from mobile phones up to high density monitors.
+I’m engaged in web publishing[^1]. My focus lies on a consistent layout and optimal legibility. I’m developing fluid-responsive designs because they can integrate many achievements of classic typographic page design on all kinds of screens --- from mobile phones up to high-density monitors.
 
 Baseline grids and evenly spaced columns bear many fruits when the layout proportions are at least partially fixed like on physical pages. My fluid-responsive templates contain a few layout versions and each one beyond mobile preserves fixed proportions between its breakpoints. I can offer outstanding layout flows and details on very fast-loading pages.
 
@@ -56,7 +56,7 @@ Markdown
 : is a very popular heuristic markup system to structure text files. Because Markdown has been derived from intuitive markup habits in early text forums and emails it's overly simplistic. I’m an expert in enriching and styling the resulting HTML.
 
 Hugo
-: I’ve been using this reliable engine since version {$0.18} to build fast static websites that require minimal maintenance. When Markdown attributes became available in version {$0.86} I started to dive deep into Markdown styling. I’ve been constantly following Hugo’s growing capabilities and have become a proficient template programmer.
+: I’ve been using this reliable engine since version {$0.18} to build fast static websites that require minimal maintenance. I’ve been following Hugo’s growing capabilities and have become a proficient Go HTML template developer and focus on creating reusable modules. When Markdown attributes became available in version {$0.86} I started to dive deep into Markdown styling.
 
 Javascript
 : I have experience with vanilla Javascript, Typescript, and Node. I like to enhance static sites with dynamic capabilities when there is a clear benefit. (See the [search](/search) and [optimized image delivery](/blog/image/standalone) for example)
