@@ -108,9 +108,15 @@ extracted from the filename, but we can also add one manually.
 
 ## Fallback: resources from related page bundles
 
-There is also the option to reuse local page resources from related pages as a fallback.
+There is also the option to reuse local page resources as a fallback. If a resource can’t be found the theme uses the partial {$mod-resource/func/helper/page-fallback.html} to look elsewhere. We can overwrite this partial with one in the same relative path to our projects {$layouts/partials} folder.
 
-If a resource can’t be found elsewhere this theme is also looking for resources in related taxonomy and parent pages. This also allows to use of already registered resources in simple pages, which aren’t bundles themselves.
+### Default
+
+The theme falls back to resources from the parent folder by default.
+
+### Alternative example
+
+This documentation project falls back to related taxonomies and parent pages. This also allows the use of resources from taxonomy terms in simple pages.
 
 The fallback search happens in the following **lookup order**:
 
@@ -121,5 +127,3 @@ The fallback search happens in the following **lookup order**:
 {.col2}
 
 If there are more resources with the same name (like "featured") on a related type of page, then the first match wins.
-
-This approach is convenient for this project and also the theme default. But in case we want to use some other kind of fallback or none at all, we can overwrite the partial {$mod-resource/func/helper/page-fallback.html} in your project folder {$layouts/partials}.

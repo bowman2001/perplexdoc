@@ -14,7 +14,7 @@ categories: [Markdown]
 tags: [linebreak, inline]
 ---
 
-Sometimes we like to begin a new line without starting a whole new text block. Placing such a hard-line break gets complicated when **hard-line wraps** control the line length inside our Markdown files.
+Sometimes we like to begin a new line without starting a whole new text block. Placing such a hard-line break gets complicated when **hard-line wraps** determine the line length inside the Markdown content files.
 {.p-first} <!--more-->
 
 ## Syntax
@@ -25,7 +25,7 @@ CommonMark
 : allows **hard wraps** — a.&hairsp;k.&hairsp;a. hard-line breaks — to limit the line length. They are treated just like spaces. Therefore, CommonMark needs a special syntax element for an intentional line break.
 
 GitHub
-: instead, treats hard-line breaks simply as such. In this case, we should probably enable **soft wraps** in our editor to limit the line length. (See also: [Writing Markdown][hwl])
+: instead, treats hard-line breaks simply as such. In this case, we should probably enable **soft wraps** in our editor to limit the line length and avoid horizontal scrolling. (See also: [Writing Markdown][hwl])
 {.dl-loose}
 
 ### The CommonMark Way
@@ -58,6 +58,8 @@ When you have to strictly adhere to the CommonMark specification the best option
 When you are allowed to deviate from CommonMark regarding this one element, I strongly recommend the GitHub way. (See also: [Writing Markdown][hwl])
 
 ## Layout
+
+There shouldn’t be any difference in the rendered result. You need to check the file {$content/doc/basic/linebreak/index.md} to see the different syntax options in the Markdown content.
 
 ### Line Break {.h-p}
 {{% pangram %}}
