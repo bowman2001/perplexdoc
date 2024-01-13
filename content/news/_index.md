@@ -11,6 +11,6 @@ menu:
 cascade:
   toc: false
 url: /
-math: true
-mermaid: true
+math: false
+mermaid: false
 ---

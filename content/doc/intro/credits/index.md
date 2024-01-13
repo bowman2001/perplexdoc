@@ -41,7 +41,7 @@ Perplex ships with slightly altered SVG sets of Google’s [Material Symbols](ht
 
 Most images in this documentation were made available free of charge by numerous skilled photographers on [Unsplash][unsplash]. Their names and a link to the source are given in the captions.
 
-**Last but not least:** Only thanks to [Hugo](https://gohugo.io) and its active and incredibly helpful community I could realize this theme. I owe special thanks to [Steve Francia][sf] for bringing Hugo to life, to [Joe Mooring][jm] for his numerous precise suggestions and examples, and of course to the long-time project leader [Bjørn Erik Pedersen][bep] for his ongoing enhancements and insights into this marvelous software.
+**Last but not least:** Only thanks to [Hugo](https://gohugo.io) and its active and incredibly [helpful community](https://discourse.gohugo.io/) I could realize this theme. I owe special thanks to [Steve Francia][sf] for bringing Hugo to life, to [Joe Mooring][jm] for his numerous precise suggestions and examples, and of course to the long-time project leader [Bjørn Erik Pedersen][bep] for his ongoing enhancements and insights into this marvelous software.
 
 [cc]: https://chriscoyier.net/
 [mb]: https://matthewbutterick.com
