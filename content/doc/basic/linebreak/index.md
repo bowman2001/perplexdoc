@@ -53,7 +53,7 @@ If we change the line-breaking from CommonMark’s way to GitHub’s, Hugo still
 
 ### What now?
 
-When you have to strictly adhere to the CommonMark specification the best option from my point of view is still, to forgo hard wraps and use CommonMark-breaks. This way is compatible with CommonMark **and** GitHub.
+When you have to strictly adhere to the CommonMark specification the best option from my point of view is still, to forgo hard wraps and use CommonMark breaks. This way is compatible with CommonMark **and** GitHub.
 
 When you are allowed to deviate from CommonMark regarding this one element, I strongly recommend the GitHub way. (See also: [Writing Markdown][hwl])
 

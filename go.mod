@@ -4,7 +4,7 @@ go 1.21.3
 
 require (
 	github.com/bowman2001/hugo-mod-csp v0.1.2 // indirect
-	github.com/bowman2001/hugo-mod-error-message v0.3.0 // indirect
+	github.com/bowman2001/hugo-mod-error-message v0.4.0 // indirect
 	github.com/bowman2001/hugo-mod-image v0.6.13 // indirect
 	github.com/bowman2001/hugo-mod-katex v0.2.4 // indirect
 	github.com/bowman2001/hugo-mod-material-symbols v0.0.0-20231206165133-a8d5507eaa47 // indirect
@@ -16,5 +16,5 @@ require (
 	github.com/bowman2001/hugo-mod-resource v0.1.4 // indirect
 	github.com/bowman2001/hugo-mod-simple-icons v0.0.0-20231217095241-93247b6eff35 // indirect
 	github.com/bowman2001/hugo-mod-wrap v0.0.0-20230803072025-a10a9f082aac // indirect
-	github.com/bowman2001/perplex v0.19.0 // indirect
+	github.com/bowman2001/perplex v0.19.1 // indirect
 )

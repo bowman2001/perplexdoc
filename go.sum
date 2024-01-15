@@ -4,6 +4,8 @@ github.com/bowman2001/hugo-mod-error-message v0.1.0 h1:YE39+3IzZPA2+55cnULJfEfJm
 github.com/bowman2001/hugo-mod-error-message v0.1.0/go.mod h1:qOtBS8WaRgnWHFVWXqvah1V2bYYWX4sUD7l524QJrgU=
 github.com/bowman2001/hugo-mod-error-message v0.3.0 h1:16Osd3j9FYHVdinWTTSL5sww5tcbiNvmcQQYhy2Imzw=
 github.com/bowman2001/hugo-mod-error-message v0.3.0/go.mod h1:qOtBS8WaRgnWHFVWXqvah1V2bYYWX4sUD7l524QJrgU=
+github.com/bowman2001/hugo-mod-error-message v0.4.0 h1:QlK4NdpZ0W42T0pC1UjXNs/oxRhYagnY1x0TI4Hs31g=
+github.com/bowman2001/hugo-mod-error-message v0.4.0/go.mod h1:qOtBS8WaRgnWHFVWXqvah1V2bYYWX4sUD7l524QJrgU=
 github.com/bowman2001/hugo-mod-image v0.3.0 h1:8KUXr9SG1sA42c+xVMysuuq/GvIGtfvRBazKGvsPtIs=
 github.com/bowman2001/hugo-mod-image v0.3.0/go.mod h1:xitMnd4vhSfq2xX3PAE3R8aLuJL1VXKM/pYivXAKPxY=
 github.com/bowman2001/hugo-mod-image v0.4.0 h1:VZfEqBphqL4VizAjNdGvg9PucOmifrYv9isPDFGSjdA=
@@ -287,3 +289,5 @@ github.com/bowman2001/perplex v0.18.3 h1:cCiwqtcqGy1A+VNvc8NOuxSaga5pcFGkT7LdMpT
 github.com/bowman2001/perplex v0.18.3/go.mod h1:et92ZFQUrYRNVimIgXGGZN76yZRQsRVs46eWAAa+JnM=
 github.com/bowman2001/perplex v0.19.0 h1:VkmVG/Si7HvM6j0qoUBV6fZF02kU1HC0jyReEbAdv2w=
 github.com/bowman2001/perplex v0.19.0/go.mod h1:31ESFwWHkFKLHKJJqIAb3jckGDC5hRuBev9I5Myd5BA=
+github.com/bowman2001/perplex v0.19.1 h1:bI4v81xZSp8u749rXksS3+DAAJBMo7dEzsc3tqn+EyM=
+github.com/bowman2001/perplex v0.19.1/go.mod h1:yzdwqwlvndfKovZbFdx27paxs33FR737NF0nXwM1YZw=

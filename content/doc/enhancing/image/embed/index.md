@@ -23,7 +23,6 @@ All the layout options for enhanced embedded images.
 
 For a description of the Markdown syntax see [basic image](https://perplex.desider.at/doc/basic/image) and [enhanced image](https://perplex.desider.at/doc/enhancing/image/syntax). The [visual demo](https://perplex.desider.at/blog/image/embed) in the blog includes precalculated sets of raster images.
 
-
 ## At the beginning
 
 ### Small width (default)
@@ -118,4 +117,3 @@ First term
 Second term
 : {{% pangram 3 %}} ![](textvar)
 {.dl-loose .placeholder data-pagefind-ignore="all"}
-
