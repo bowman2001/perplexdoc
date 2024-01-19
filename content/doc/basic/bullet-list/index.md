@@ -21,9 +21,9 @@ A simple list is unordered and groups a set of related items. Any item may conta
 
 We can use `-`, `+`, or `*` to mark the items of an unordered list. We have to stick to the one we started with in every list. There are two basic kinds of lists, **tight** and **loose**. A list with sub-lists is called **nested**. To reduce the indentation of lists on larger screens, we can use the attribute `{.smallindent}`.
 
-### Tight
+### Tight syntax
 
-```md {.left-in .mb2}
+```md {.left-in}
 - The minus sign `-`
 - The plus sign `+`
 - The asterisk `*`
@@ -31,7 +31,7 @@ We can use `-`, `+`, or `*` to mark the items of an unordered list. We have to s
 
 When there is not a single blank line between the items, we get a tight list. Every item can contain only one text block.
 
-### Loose
+### Loose syntax
 
 ```md {.expand}
 - A loose list may contain more than one paragraph. You only have to keep the indentation on the same level.
@@ -43,7 +43,7 @@ When there is not a single blank line between the items, we get a tight list. Ev
 
 The items of a loose list are separated by a blank line. The items may span across some paragraphs. A subsequent paragraph has to be indented at least as far as the first character of its predecessor:
 
-### Nested
+### Nested syntax
 
 ```md {.left-in}
 - To start a sub-list
@@ -62,14 +62,18 @@ To start a sub-list inside a list item, the markers of the sub-list have to be i
 
 Perplex is styling tight, loose, and nested lists of both kinds. As an additional option, you may enforce a smaller indentation on tight lists with a class attribute.
 
-### Tight
+### Tight layout
+
+The [tight list](#tight-syntax) looks like this:
 
 - The minus sign `-`
 - The plus sign `+`
 - The asterisk `*`
 {.layout-box}
 
-### Loose
+And an unindented text block closes the list.
+
+### Loose layout
 
 The loose items from above look like this:
 
@@ -84,12 +88,11 @@ The loose items from above look like this:
 - If you changed the marking symbol inside a list, _Goldmark_ will begin a new list, even if there are no blank lines. To use this intentionally to separate lists would be confusing.
 {.layout-box}
 
-
 Every block, which is not indented, closes the list.
 
-### Nested
+### Nested layout
 
-#### Tight {.h-p}
+#### Tight nested {.h-p}
 
 lists are vertically spaced like normal paragraphs:
 
@@ -117,7 +120,7 @@ On mobile screens, the indentation of list items is already smaller. To enforce 
 - And back to the first level
 {.smallindent .layout-box}
 
-#### Loose {.h-p}
+#### Loose nested {.h-p}
 
 lists are generated if there is an empty line between the items of a list. This occurs already if there is **only one** subsequent item separated by an empty line. A list is either tight or loose, the layout can’t be changed inside a list. But we can nest tight and loose lists. The result for nested loose lists looks like this:
 

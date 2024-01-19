@@ -3,7 +3,7 @@ authors: [Georg Makowski]
 title: Kroki
 description: External SVG diagram generator
 subtitle: false
-date: 2023-03-29T10:58:05+02:00 
+date: 2023-03-29T10:58:05+02:00
 weight: 740
 menu:
   doc:
