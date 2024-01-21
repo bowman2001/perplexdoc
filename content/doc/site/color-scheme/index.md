@@ -20,26 +20,33 @@ The theme includes a WCAG-compliant color scheme that switches between a **light
 
 ## Four base colors
 
-The color scheme design is based on four colors with a specific purpose:
+The color scheme design is based on four colors with a clear purpose:
 
 Red
-: to emphasize a current or intended navigational state.
+: marks a current or intended navigational state.
 
 Blue
-: to emphasize internal links.
+: emphasizes internal links.
 
 Green
-: to emphasize external links.
+: emphasizes external links.
 
 Yellow
-: to highlight local navigational elements.
+: highlights page- or element-specific navigational elements.
 {.dl-loose}
 
 The specific color variations of these base colors follow the Hugo logo. The color scheme provides many color variations to structure the content and the navigation.
 
 ## WCAG compliance
 
-The minimal contrast ratios between foreground and background colors follow the recommendations of the **W**eb **C**ontent **A**ccessibility **G**uidelines. They are an international standard of the **W**orld **W**ide **W**eb **C**onsortium (W3C).
+The minimal contrast ratios between foreground and background colors of the default color scheme follow the recommendations of the **W**eb **C**ontent **A**ccessibility **G**uidelines. They are an international standard of the **W**orld **W**ide **W**eb **C**onsortium (W3C).
+
+## Information colors
+
+The pure colors red, yellow, blue, and green are also used to highlight [annotations in boxes](/doc/enhancing/attribute/box) or [headings](/doc/basic/headings#highlighted-headings). Their shade differs notably from the theme colors and they have a well-known different meaning.
+
+In case we create a custom color scheme for this theme, these information colors should **not** change.
+{.box-info}
 
 ## Custom color scheme
 

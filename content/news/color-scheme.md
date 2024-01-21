@@ -12,6 +12,6 @@ We can include a custom color scheme instead of the default one.
 {.p-first}
 <!--more-->
 
-The color scheme for this theme is based on variants of the four base colors red, blue, green, and yellow and every custom scheme should follow this concept, because of their [specific roles](/doc/site/color-scheme).
+The color scheme for this theme is based on variants of the four base colors red, blue, green, and yellow and every custom scheme should follow this concept, because every base color has a [visual meaning](/doc/site/color-scheme).
 
-Creating a WCAG-compliant color scheme for this theme with sufficient contrast ratios like the default scheme requires some effort.
+Creating a WCAG-compliant color scheme for this theme with sufficient contrast ratios in all possible combinations requires some effort.
