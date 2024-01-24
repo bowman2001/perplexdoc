@@ -55,11 +55,11 @@ When we publish our site with the help of a service provider we need to make sur
 
 ## Format & Quality
 
-All raster images are transformed into source sets with the WEBP format because images are smaller than for all its predecessors like JPEP & PNG. The initial qualitiy is by default 85 and gets gradually reduced for higher resolutions.
+All raster images are transformed into source sets in the WEBP format because it’s better compressed than its predecessors JPEG & PNG. The initial quality is by default 85 and gets gradually reduced for higher resolutions.
 
 ## Interpolation
 
-In case we can’t provide a large enough version of an image, Perplex applies an [excellent interpolation filter][filter] to enlarge its size smoothly without visible ringing artifacts. Those interpolated images may look blurry nonetheless, there is no way to get the missing information back. A high resolution of the original is always preferable.
+In case we can’t provide a large enough version of an image, Perplex applies the excellent [interpolation filter from Mitchell & Netravali][filter] to enlarge its size smoothly without visible ringing artifacts. Those interpolated images may look blurry nonetheless, there is no way to get the missing information back. A high resolution of the original is always preferable.
 
 
 

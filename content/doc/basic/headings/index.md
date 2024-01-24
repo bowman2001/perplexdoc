@@ -82,7 +82,7 @@ Headings are not only recognized by their font styling but also by the space sur
 
 # Page Title {.mt3 .mb3}
 
-The first heading is reserved for titles. Only one `<h1>` tag should occur on any webpage. We may want to compose a title in Markdown on special pages but in all theme templates, the [title](/doc/page/title) section](/doc/page/title) is rendered from meta-data in the frontmatter.
+The first heading is reserved for titles. Only one `<h1>` tag should occur on any webpage. We may want to compose a title in Markdown on special pages but in all theme templates, the [title section](/doc/page/title) is rendered from meta-data in the frontmatter.
 {.box-warn}
 
 ## Section

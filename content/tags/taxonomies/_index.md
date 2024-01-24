@@ -1,5 +1,5 @@
 ---
-title: 'Taxonomies'
+title: Taxonomies
 description: "All about site-wide content groups"
 subtitle: true
 date: 2024-01-10T14:06:51+01:00
