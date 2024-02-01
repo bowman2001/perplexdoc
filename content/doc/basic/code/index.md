@@ -53,10 +53,7 @@ The **fenced** version of the CommonMark syntax is **definitely preferable** for
 
 2. We can let fenced code blocks automatically expand into the marginal column(s) by adding the attribute `{.expand}` and can avoid bothering our readers with horizontal scrollbars more often than absolutely necessary.
 
-3. There is an overlap with the syntax for the extensions [footnote][ftn] and [definition-list][dl]. When we have subsequent paragraphs there, we need to indent them also by 4 spaces or a tab. If we try to place an indented code block after a footnote reference or a definition detail, Hugo will treat it as this kind of continuation indent and not as a code block.
-   {#overlap}
-
-
+3. There is an overlap with the syntax for the extensions [footnote][ftn] and [definition-list][dl]. When we add subsequent paragraphs there, we need to indent them also by 4 spaces or a tab. If we try to place an indented code block after a footnote reference or a definition detail, Hugo will treat it as this kind of continuation indent and not as a separate code block.
 
 ### Highlighting
 

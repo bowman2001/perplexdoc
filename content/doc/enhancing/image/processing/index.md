@@ -61,6 +61,4 @@ All raster images are transformed into source sets in the WEBP format because it
 
 In case we can’t provide a large enough version of an image, Perplex applies the excellent [interpolation filter from Mitchell & Netravali][filter] to enlarge its size smoothly without visible ringing artifacts. Those interpolated images may look blurry nonetheless, there is no way to get the missing information back. A high resolution of the original is always preferable.
 
-
-
 [filter]: https://gohugo.io/content-management/image-processing/#resampling-filter

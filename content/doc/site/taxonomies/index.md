@@ -26,10 +26,10 @@ Normal [list pages](/doc/intro/workflow/content#branch-bundles) present an overv
 As regards content, taxonomy terms should describe an actual **relation between their pages** – a relation in the broad sense, a similarity for example may also be considered as one. There are a few well-established taxonomies that represent specific types of content relations with their terms:
 
 Categories
-: form a general classification of the contents. They aim to be mutually exclusive to separate the contents into distinguishable parts **&rightarrow;** every page should get only one of the category terms and their groups should be of a roughly similar size. In practice, these goals are usually not met completely.
+: form a general classification of the contents. They aim to be mutually exclusive to separate the contents into distinguishable parts. **&rightarrow;** Every page should get only one of the category terms and their groups should be of a roughly similar size. In practice, these goals are usually not met completely.
 
 Tags
-: are labels describing one aspect or property of the content **&rightarrow;** every page may have a few tag terms.
+: are labels describing one aspect or property of the content. **&rightarrow;** Every page may have a few tag terms.
 As the content grows we should check for tag terms that still contain only one page. This often happens in the beginning but is a good reason to remove a term in the long run.
 And when we end up adding a term to the majority of our pages, we should consider using more fine-grained terms instead.
 
