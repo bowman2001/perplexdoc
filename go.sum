@@ -50,6 +50,8 @@ github.com/bowman2001/hugo-mod-material-symbols v0.0.0-20231206165133-a8d5507eaa
 github.com/bowman2001/hugo-mod-material-symbols v0.0.0-20231206165133-a8d5507eaa47/go.mod h1:FncDf3/buO83ITNgcuPsVgb2Qg19+ia2q8qhMlbwKdc=
 github.com/bowman2001/hugo-mod-material-symbols v0.0.0-20240117185325-ae3b004482b0 h1:JLKpQoAr64EuQnIXu0iWmYcEU7gBWka1bZrhS/MfQYk=
 github.com/bowman2001/hugo-mod-material-symbols v0.0.0-20240117185325-ae3b004482b0/go.mod h1:FncDf3/buO83ITNgcuPsVgb2Qg19+ia2q8qhMlbwKdc=
+github.com/bowman2001/hugo-mod-material-symbols v0.0.0-20240203155107-cba51c0707de h1:7chZPHo13KvoTedn5LT6CidzyUfd8NDIfZFaiIBjwnw=
+github.com/bowman2001/hugo-mod-material-symbols v0.0.0-20240203155107-cba51c0707de/go.mod h1:FncDf3/buO83ITNgcuPsVgb2Qg19+ia2q8qhMlbwKdc=
 github.com/bowman2001/hugo-mod-mermaid v0.4.2 h1:r6BFnUJtIHodQg6NCtis1FxDRczGZmRc4YxRcWXHp4Q=
 github.com/bowman2001/hugo-mod-mermaid v0.4.2/go.mod h1:+HDKjEKHuCE2cnRX4ZsOKXeiL0gCSHpmxORycHS/+pw=
 github.com/bowman2001/hugo-mod-meta v0.2.3 h1:7Vi1KcaeBe8B1iohl/5TkrH/jQuS8KN0/yczLqHD3Rg=
@@ -305,3 +307,5 @@ github.com/bowman2001/perplex v0.19.5 h1:2qkA6hOX09fmHUJeNj6IFM7xF7A6HGQcju0vnym
 github.com/bowman2001/perplex v0.19.5/go.mod h1:F4tABwC/HyoSAGlEFYXk5t57qsqrhNzyTGxT4wF3Cgg=
 github.com/bowman2001/perplex v0.19.6 h1:uerHm3+DCv3iEjLNA96UWJpurVKYzlMIoj7hXwOlJw0=
 github.com/bowman2001/perplex v0.19.6/go.mod h1:at1338NjbMCgJh9uZGRg86y1mRg9jAHZIybOTtwCO+c=
+github.com/bowman2001/perplex v0.19.7 h1:hVFwfIuMO2+JvH0cg0Wewe8Bnu6qbTgs8tGAhx0fxWk=
+github.com/bowman2001/perplex v0.19.7/go.mod h1:at1338NjbMCgJh9uZGRg86y1mRg9jAHZIybOTtwCO+c=

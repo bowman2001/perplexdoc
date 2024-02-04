@@ -11,6 +11,7 @@ metaDataFormat: yaml
 pluralizeListTitles: false
 enableEmoji: true
 enableGitInfo: true
+disableHugoGeneratorInject: false
 
 timeout: "600s"
 

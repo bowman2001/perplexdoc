@@ -36,8 +36,6 @@ See the [Hugo documentation](https://gohugo.io/content-management/shortcodes#ins
 
 ### Include messages from _Twitter_ with {$tweet}
 
-{{< tweet 877500564405444608 >}}
-
 See the [Hugo documentation](https://gohugo.io/content-management/shortcodes#tweet) for this specific shortcode.
 
 ### Include videos from _Vimeo_
