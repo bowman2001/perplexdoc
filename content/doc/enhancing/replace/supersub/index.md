@@ -34,13 +34,13 @@ The HTML entity `&frasl;` corresponds to a fraction line.
 
 ## Layout
 
-x{_4} x{^4} X{_4} X{^4}   x{_3} x{^3} X{_3} X{^3}&emsp;{^3}&frasl;{_4}
+x{_4} x{^4} X{_4} X{^4}   x{_3} x{^3} X{_3} X{^3}&emsp;{^3}&frasl;{_4} 
 
 Compare the theme styling to the one the Plex fonts provide as special Unicode numbers:
 
 x₄ x⁴   X₄ X⁴ x₃ x³   X₃ X³&emsp;³&frasl;₄
 
-These glyphs are very small and the subscripts are not placed consistently. Therefore, I recommend replacements that also work for other characters like alphabetical indices.
+These glyphs are very small and the subscripts are not placed consistently. Therefore, I recommend replacements that also work for other characters like alphabetical indices and the 1{^st}, 2{^nd}, 3{^rd}, 4{^th},…
 
 ### Chemical Formula
 

@@ -5,13 +5,5 @@ resources/_gen
 
 # Local configuration
 node_modules
-/.gitmodules
-/.idea
-/.vscode
-/.run
-.hugo_build.lock
 /config/development
 /script
-perplexdoc.code-workspace
-yarn.lock
-.hvm
