@@ -117,15 +117,17 @@ There are **two** main repositories --- one for the theme itself and one for the
 
 ### Having trouble with the theme?
 
-When you encounter a bug in the templates or miss some functionality, the [repository for the theme][theme] is the place to report the problem. Have a look at the already existing [issues][issue], please. If your problem or proposal is not already listed, I’m grateful for a new issue and happy to discuss it there.
+When you encounter a bug in the templates or miss some functionality, the [repository for the theme][theme] is the place to report the problem. Have a look at the already existing [issues][issue], please. If your problem or proposal is not already listed, I’m grateful for a new issue report.
+
+If you are not sure about the cause of your problem, you can also [discuss it there][discussion].
 
 Should you like to improve the functionality of Perplex yourself, you are very welcome!
 
 ### Having trouble with the documentation?
 
-When you miss some explanation or find a misleading one, you may visit the [repository for the documentation][doc]. Again, have a look at already existing [issues][docissue], please. I’m thankful for the bug reports and will improve the documentation as soon as possible.
+When you miss some explanation or find a misleading one, you may visit the [repository for the documentation][doc]. Again, have a look at already existing [issues][docissue], please.
 
-Should you stumble upon bad English, typos, or wrong phrases, please excuse me. I’m not a native writer of the English language, corrections are very welcome. You may submit a pull request immediately.  
+Should you stumble upon bad English, typos, or wrong phrases, please excuse me. I’m not a native writer of the English language, corrections are very welcome.
 
 [^1]: The concept for a baseline grid has been inspired by [Plumber][plumber]. The vertical alignment may sometimes get shifted by a few pixels --- despite precise calculations. This may be noticeable on screens with a low pixel density --- usually desktop screens. All browser engines seem to face an inevitable trade-off between the quality of font rendering and the precision of line height.
 
@@ -138,6 +140,7 @@ Should you stumble upon bad English, typos, or wrong phrases, please excuse me. 
 [ptres]: https://practicaltypography.com/responsive-web-design.html
 [theme]: https://github.com/bowman2001/perplex
 [issue]: https://github.com/bowman2001/perplex/issues
+[discussion]: https://github.com/bowman2001/perplex/discussions
 [doc]: https://github.com/bowman2001/perplexdoc
 [docissue]: https://github.com/bowman2001/perplexdoc/issues
 [cmark]: https://commonmark.org "CommonMark project site"
