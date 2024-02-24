@@ -4,12 +4,14 @@
 
 description: Perplex is a typographic theme with advanced layout capabilities. You can publish technical content in a documentation, a blog, as news or long articles.
 
-postcss: true
-
 # Site wide favicon for browser and OS display
 favicon:
   svg: favicon/favicon.svg
   png: favicon/favicon.png
+
+imaging:
+  sizestep: 25
+  fallback_width: 660
 
 modOpenIn:
   name: VSCodium

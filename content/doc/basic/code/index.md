@@ -102,7 +102,7 @@ And to mark the **end** we use the corresponding closing tag `</code>`.
 
 We can let long lines of code expand into the margin with the `.expand` class attribute:
 
-```go {.expand linenos=true, hl_lines=[2,"6-7"]}
+```go {.expand linenos=true}
 // NodeRendererFunc is a function that renders a given node.
 type NodeRendererFunc func(writer util.BufWriter, source []byte, n ast.Node, entering bool) (ast.WalkStatus, error)
 

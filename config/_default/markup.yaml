@@ -4,8 +4,6 @@
 
 # Goldmark is Commonmark-compliant
 goldmark:
-  extensions:
-    SuperSub: true
   parser:
     wrapStandAloneImageWithinParagraph: false
     attribute:
