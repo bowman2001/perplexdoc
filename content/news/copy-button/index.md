@@ -20,3 +20,5 @@ Copy the content of code blocks easily into your clipboard.
 We can select parts of our content and copy them into the clipboard manually. Code blocks are a special case because they are sometimes long and not so easy to mark manually. Or they contain line numbers we usually don’t like to copy.
 
 Therefore this theme now includes buttons for all fenced code blocks which transfer the whole text content of the `<code>` tag into the clipboard. They appear on mouse hover or touch tap.
+
+Check out the new functionality in the [code block layout demo](/blog/codelayout).
