@@ -462,7 +462,7 @@ body {
   }
 }
 
-::selection, .selection {
+::selection, .selection .cl {
   color: var(--c-selection);
   background-color: var(--c-selection-bg);
 }
@@ -882,8 +882,8 @@ body {
 
 .copy-code {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2rem;
+  right: 2rem;
   height: 2rem;
   padding: 0.2rem 0.1rem 0 0;
   width: 2rem;
@@ -893,7 +893,10 @@ body {
   transition: opacity 150ms;
 }
 
-.chroma:hover .copy-code {
+.highlight {
+  position: relative;
+}
+.highlight:hover .copy-code {
   opacity: 1;
 }
 
@@ -2143,10 +2146,13 @@ body {
   }
 }
 .md li .highlight, .md dd .highlight {
-  padding-left: 1px;
-  padding-right: 1px;
+  padding-left: 0;
+  padding-right: 0;
   min-width: 100%;
   max-width: 100%;
+}
+.md li .highlight .copy-code, .md dd .highlight .copy-code {
+  right: 0;
 }
 .md .lh15 pre {
   font-size: 1.43rem;
@@ -3951,7 +3957,6 @@ sup:target {
 
 /* PreWrapper */
 .chroma {
-  position: relative;
   color: var(--c-chroma-fg);
   background-color: var(--c-chroma-bg);
 }
