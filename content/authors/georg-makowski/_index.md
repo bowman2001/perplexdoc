@@ -24,14 +24,14 @@ contact_icons:
   icon: gmail
   url: "mailto:gm@desider.at"
 resources:
-- src: Joerg_Makowski.jpg
+- src: 20240301ILCE-7M4_DSC9530.jpg
   name: featured
   params:
     alt: Georg Makowski
     attr: Elisa Makowski/private
     attrlink: "http://elisa-makowski.de"
     anchor: Top
-- src: small_portrait.jpg
+- src: locker_quadratisch.jpg
   name: portrait
   params:
     alt: Georg Makowski
