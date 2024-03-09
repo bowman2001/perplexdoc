@@ -75,5 +75,4 @@ Sans-serif fonts often don’t include a distinctive italic style, even if their
 
 ### Don’t overuse it {.h-warn}
 
-This page needed to be full of emphasis, but in general, we should apply emphasis sparingly. Overemphasizing text is irritating and defeats the purpose. If there is emphasis everywhere, it doesn’t stand out anymore.
-
+This dedicated page is full of emphasis, but in general, we should apply emphasis sparingly. Overemphasizing text is irritating and defeats the purpose. If there is emphasis everywhere, it doesn’t stand out anymore.
