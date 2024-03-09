@@ -4,7 +4,7 @@
 
 # The domain of the site
 baseURL: http://perplex.desider.at
-title: Perplex Theme
+title: Perplex
 DefaultLanguageCode: en-us
 DefaultContentLanguage: en
 metaDataFormat: yaml
