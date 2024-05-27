@@ -1,11 +1,16 @@
 ---
-authors: [Georg Makowski]
 title: Stand-alone Images
 description: Demo for enhanced stand-alone images
-date: 2023-03-27T12:02:10+02:00
-categories: [Markdown]
-tags: [stand-alone, image]
-series: [images]
+date: 2023-03-27 12:02:10+02:00
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- stand-alone
+- image
+series:
+- images
 ---
 
 Demo for enhanced images and their layout possibilities.

@@ -1,24 +1,28 @@
 ---
-authors: [Georg Makowski]
-date: "2021-09-07T21:33:03+02:00"
+title: Perplex
 description: What's special about this theme?
+subtitle: false
+date: '2021-09-07T21:33:03+02:00'
+weight: 11
+authors:
+- Georg Makowski
+categories:
+- design
+- getting started
+tags:
+- fluid responsive
 menu:
   doc:
     name: Perplex
     parent: intro
     pre: dashboard
-subtitle: false
-title: Perplex
 resources:
-  - src: IBM_Plex_Sans.svg
-    name: plex_sample
-    params:
-      background: light
-      posh: left
-      width: tiny
-weight: 11
-categories: [design, getting started]
-tags: [fluid responsive]
+- src: IBM_Plex_Sans.svg
+  name: plex_sample
+  params:
+    background: light
+    posh: left
+    width: tiny
 ---
 
 The theme layout adapts fluid-responsively to modern screens. It’s designed for optimal legibility down to a view-port of {$320px} width.

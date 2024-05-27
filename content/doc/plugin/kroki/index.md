@@ -1,17 +1,22 @@
 ---
-authors: [Georg Makowski]
 title: Kroki
 description: External SVG diagram generator
 subtitle: false
-date: 2023-03-29T10:58:05+02:00
+date: 2023-03-29 10:58:05+02:00
 weight: 740
+authors:
+- Georg Makowski
+categories:
+- module
+- markdown
+tags:
+- diagram
+- mermaid
 menu:
   doc:
     name: Kroki
     parent: plugin
     pre: account_tree
-categories: [module, markdown]
-tags: [diagram, mermaid]
 ---
 
 Generate SVG diagrams with the Kroki service by placing textual diagram descriptions into Markdown code blocks.

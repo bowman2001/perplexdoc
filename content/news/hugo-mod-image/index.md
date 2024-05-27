@@ -1,16 +1,19 @@
 ---
-authors: [Georg Makowski]
 title: Hugo Module{/}for rendering images
 linktitle: Image module
 description: Retrieve, preprocess and render all kinds of images
-date: 2023-10-11T15:57:57+02:00
+date: 2023-10-11 15:57:57+02:00
+authors:
+- Georg Makowski
+categories:
+- module
+tags:
+- image
 resources:
-  - src: alvin-lenin-gy0IAx6KXSg-unsplash.jpg
-    name: featured
-    params: 
-      alt: long pier leading to a house in the sea    
-categories: [module]
-tags: [image]
+- src: alvin-lenin-gy0IAx6KXSg-unsplash.jpg
+  name: featured
+  params:
+    alt: long pier leading to a house in the sea
 draft: true
 ---
 

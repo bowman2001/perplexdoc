@@ -1,23 +1,27 @@
 ---
-authors: [Georg Makowski]
 title: Standfirst Paragraph
 linktitle: Standfirst
 description: Introduces or summarizes the page
 subtitle: false
-date: 2022-01-18T23:24:32+01:00 
+date: 2022-01-18 23:24:32+01:00
 weight: 620
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- paragraph
+- page
 menu:
   doc:
     name: Standfirst
     parent: page
     pre: short_text
 resources:
-  - name: featured
-    src: belinda-fewings-6wAGwpsXHE0-unsplash.jpg
-    params:
-      alt: Colored welcome
-categories: [Markdown]
-tags: [paragraph, page]
+- name: featured
+  src: belinda-fewings-6wAGwpsXHE0-unsplash.jpg
+  params:
+    alt: Colored welcome
 ---
 
 The first paragraph of every normal content page should contain a short introduction or summary. Usually, it’s also a good idea to mark this first paragraph with a styling attribute.

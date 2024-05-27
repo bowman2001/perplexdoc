@@ -1,16 +1,19 @@
 ---
-authors: [Georg Makowski]
 title: User Privacy
 description: Secure user data
 subtitle: false
-date: 2022-05-04T23:57:34+02:00 
+date: 2022-05-04 23:57:34+02:00
 weight: 890
+authors:
+- Georg Makowski
+tags:
+- privacy
+- hugo
 menu:
   doc:
     name: User Privacy
     parent: security
     pre: policy
-tags: [privacy, hugo]
 draft: true
 ---
 

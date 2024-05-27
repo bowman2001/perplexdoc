@@ -1,24 +1,27 @@
 ---
-authors: [Georg Makowski]
-date: "2021-03-24T21:26:08+01:00"
+title: Footnotes
 description: References at the end of the page
+subtitle: false
+date: '2021-03-24T21:26:08+01:00'
+weight: 220
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Block
 menu:
   doc:
     name: Footnotes
     parent: extended
     pre: short_text
-subtitle: false
-title: Footnotes
-weight: 220
-categories: [Markdown]
-tags: [Block]
 resources:
-  - name: featured
-    src: kelly-sikkema-et5mfj1eB94-unsplash.jpg
-    params:
-      alt: A book with a lot of hand-written notes 
-      zoom: 1.6
-      anchor: BottomLeft
+- name: featured
+  src: kelly-sikkema-et5mfj1eB94-unsplash.jpg
+  params:
+    alt: A book with a lot of hand-written notes
+    zoom: 1.6
+    anchor: BottomLeft
 ---
 
 Footnotes are best suited for (formal) information, which is not essential for the meaning of the text.

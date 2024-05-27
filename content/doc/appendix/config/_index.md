@@ -1,19 +1,20 @@
 ---
-authors: [Georg Makowski]
-date: "2021-09-16T19:39:31+02:00"
+title: Project Configuration
+linktitle: Config
 description: Configuration files for this project
+date: '2021-09-16T19:39:31+02:00'
+weight: 1005
+authors:
+- Georg Makowski
 menu:
   doc:
     identifier: config
     name: Project Configuration
     parent: appendix
     pre: toggle_on
-title: Project Configuration
-linktitle: Config
-weight: 1005
 resources:
-  - src: Perplex.svg
-    name: default
+- src: Perplex.svg
+  name: default
 ---
 
 The following pages show all configuration files for this project.

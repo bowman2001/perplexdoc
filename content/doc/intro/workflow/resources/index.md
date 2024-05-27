@@ -1,25 +1,31 @@
 ---
-authors: [Georg Makowski]
 title: Resource Organization
 description: How to provide files for your content
 subtitle: false
-date: 2022-09-11T14:58:46+02:00 
+date: 2022-09-11 14:58:46+02:00
 weight: 45
+authors:
+- Georg Makowski
+categories:
+- getting started
+tags:
+- resources
+- image
+- workflow
 menu:
   doc:
     name: Resources
-    parent: workflow 
+    parent: workflow
     pre: photo_library
 resources:
-  - src: alexander-grey-tn57JI3CewI-unsplash.jpg
-    name: files
-    params:
-      alt: A pile of files
-      ratio: 1.5
-      zoom: 1.75
-      caption: This is the same image as the featured one. But the image has been cropped to the ratio of 3:2 and zoomed in with a factor of 1.75.
-categories: [getting started]
-tags: [resources, image, workflow]
+- src: alexander-grey-tn57JI3CewI-unsplash.jpg
+  name: files
+  params:
+    alt: A pile of files
+    ratio: 1.5
+    zoom: 1.75
+    caption: This is the same image as the featured one. But the image has been cropped
+      to the ratio of 3:2 and zoomed in with a factor of 1.75.
 ---
 
 This theme processes resources (like images) from all kinds of places: Local, global, or remote. Associated parameters to specify processing and layout options always need to be set locally.

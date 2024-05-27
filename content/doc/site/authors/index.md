@@ -1,9 +1,17 @@
 ---
-authors: [Georg Makowski, Test Author]
 title: Author pages
-description: "Personal pages for authors or editors"
+description: Personal pages for authors or editors
 subtitle: false
-date: 2023-05-08T23:26:42+02:00 
+date: 2023-05-08 23:26:42+02:00
+weight: 665
+authors:
+- Georg Makowski
+- Test Author
+categories:
+- template
+tags:
+- author
+- site
 menu:
   doc:
     identifier: authors
@@ -11,13 +19,10 @@ menu:
     parent: siteelem
     pre: person
 resources:
-  - src: portrait.jpg
-    name: portrait
-    params:
-      alt: Anonymous portrait
-categories: [template]
-tags: [author, site]
-weight: 665
+- src: portrait.jpg
+  name: portrait
+  params:
+    alt: Anonymous portrait
 ---
 
 Every author or editor listed in the frontmatter field `authors` gets a personal page.

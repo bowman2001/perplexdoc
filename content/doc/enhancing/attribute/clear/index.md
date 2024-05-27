@@ -1,29 +1,32 @@
 ---
-authors: [Georg Makowski]
 title: Clear a floating element
 linktitle: Clear
 description: Stop text from floating around an embedded element
 subtitle: false
-date: 2023-04-14T22:02:51+02:00 
+date: 2023-04-14 22:02:51+02:00
+weight: 347
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- attribute
 menu:
   doc:
     name: Clear
     parent: attribute
     pre: layers_clear
 resources:
-  - name: featured
-    src: ali-abdul-rahman-Xva-TYqwHhA-unsplash.jpg
-    params:
-      alt: Clear water
-  - name: splash
-    src: mulyadi-JJMoAiVl9jA-unsplash.jpg
-    params: 
-      alt: splash of water
-      width: tiny
-      caption: none
-categories: [markdown]
-tags: [attribute]
-weight: 347
+- name: featured
+  src: ali-abdul-rahman-Xva-TYqwHhA-unsplash.jpg
+  params:
+    alt: Clear water
+- name: splash
+  src: mulyadi-JJMoAiVl9jA-unsplash.jpg
+  params:
+    alt: splash of water
+    width: tiny
+    caption: none
 ---
 
 Sometimes we want the text to stop floating around an embedded element. We need a good ol’ `.clear` attribute, then.

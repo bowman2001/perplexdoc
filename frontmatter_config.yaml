@@ -1,0 +1,14 @@
+order:
+  - title
+  - linktitle
+  - description
+  - subtitle
+  - date
+  - weight
+  - authors
+  - categories
+  - tags
+  - series
+  - menu
+  - featured
+  - resources

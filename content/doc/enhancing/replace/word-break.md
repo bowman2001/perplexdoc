@@ -1,18 +1,22 @@
 ---
-authors: [Georg Makowski]
-title: 'Word Break'
-description: "Break long words manually"
+title: Word Break
+description: Break long words manually
 subtitle: false
-date: 2023-12-12T13:15:07+01:00 
+date: 2023-12-12 13:15:07+01:00
+weight: 492
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- linebreak
+- replacement
 menu:
   doc:
-    identifier: word-break 
-    name: 'Word Break'
+    identifier: word-break
+    name: Word Break
     parent: replace
     pre: sort
-categories: [markdown]
-tags: [linebreak, replacement]
-weight: 492
 ---
 
 Very long strings that are not hyphenated automatically may need an optional line break without a hyphen. We can generate the HTML tag `<wbr>` with this replacement code.

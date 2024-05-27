@@ -1,21 +1,26 @@
 ---
-authors: [Georg Makowski]
 title: The Beauty of Marginal Notes
 linktitle: Beautyful Notes
 description: Demo of the marginal note
-date: 2022-07-04T22:18:04+02:00
-categories: [Markdown]
-tags: [Marginal Note, Shortcode]
-series: [Demo]
+date: 2022-07-04 22:18:04+02:00
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Marginal Note
+- Shortcode
+series:
+- Demo
 resources:
 - src: 810px-Andrew_wiles1-3.jpg
   name: wiles
   params:
     alt: Portrait of Sir Andrew John Wiles
     width: tiny
-    posh: left 
+    posh: left
     caption: Sir Andrew John Wiles
-    attr: "&copy; C. J. Mozzochi, Princeton&nbsp;N.J"
+    attr: '&copy; C. J. Mozzochi, Princeton&nbsp;N.J'
 ---
 
 Marginal notes add further information elegantly and unobtrusively. We can add them with the shortcode **{$mnote}**.

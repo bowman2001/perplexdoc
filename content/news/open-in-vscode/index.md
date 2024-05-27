@@ -1,11 +1,15 @@
 ---
-authors: [Georg Makowski]
 title: Open files in VSCode{/}from Hugo’s server preview
 linktitle: Open VSCode directly
 description: Create local links to your VSCode instance
-date: 2023-03-31T00:44:36+02:00
-categories: [module]
-tags: [vscode, hugo]
+date: 2023-03-31 00:44:36+02:00
+authors:
+- Georg Makowski
+categories:
+- module
+tags:
+- vscode
+- hugo
 ---
 
 Two short partials create a local link to open the content file{/}of the current page.

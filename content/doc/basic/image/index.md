@@ -1,17 +1,20 @@
 ---
-authors: [Georg Makowski]
-date: "2021-03-25T10:41:36+01:00"
+title: Image
 description: Include photos, graphics etc.
+subtitle: false
+date: '2021-03-25T10:41:36+01:00'
+weight: 150
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- image
 menu:
   doc:
     name: Image
     parent: basic
     pre: photo
-subtitle: false
-title: Image
-categories: [markdown]
-tags: [image]
-weight: 150
 ---
 
 There is only one Markdown image element but the theme distinguishes between two possible positions: **stand-alone** & **embedded**.

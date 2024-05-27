@@ -1,25 +1,30 @@
 ---
-authors: [Georg Makowski]
-date: "2021-12-29T17:52:55+01:00"
+title: Featured Image
+linktitle: Featured
 description: Decorate your page and grab attention
+subtitle: false
+date: '2021-12-29T17:52:55+01:00'
+weight: 630
+authors:
+- Georg Makowski
+categories:
+- template
+tags:
+- image
+- page
+series:
+- images
 menu:
   doc:
     name: Featured Image
     parent: page
     pre: image
-subtitle: false
-title: Featured Image
-linktitle: Featured
-categories: [template]
-tags: [image, page]
-series: [images]
-weight: 630
 resources:
-  - src: ray-hennessy-gdTxVSAE5sk-unsplash.jpg
-    name: featured
-    params:
-      alt: fireworks over open water
-      zoom: 2
+- src: ray-hennessy-gdTxVSAE5sk-unsplash.jpg
+  name: featured
+  params:
+    alt: fireworks over open water
+    zoom: 2
 ---
 
 The theme presents the featured image at the top of your page and in preview cards. It’s also prepared for references in search engines and social networks.

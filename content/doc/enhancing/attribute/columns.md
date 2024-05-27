@@ -1,17 +1,21 @@
 ---
-authors: [Georg Makowski]
-date: "2021-12-16T09:21:56+01:00"
+title: Columned Text Blocks
 description: Separate a single Markdown block into columns
+subtitle: false
+date: '2021-12-16T09:21:56+01:00'
+weight: 341
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- columns
+- attribute
 menu:
   doc:
     name: Columns
     parent: attribute
     pre: view_column
-subtitle: false
-title: Columned Text Blocks
-weight: 341
-categories: [markdown]
-tags: [columns, attribute]
 draft: true
 ---
 

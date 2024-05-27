@@ -1,15 +1,16 @@
 ---
-authors: [Georg Makowski]
-date: "2021-08-16T10:56:35+02:00"
+title: Hugo’s built-in internal shortcodes
+linktitle: Internal
 description: Simplify common tasks
+date: '2021-08-16T10:56:35+02:00'
+weight: 590
+authors:
+- Georg Makowski
 menu:
   doc:
     name: Hugo in-house
     parent: shortcode
     pre: topic
-title: Hugo’s built-in internal shortcodes
-linktitle: Internal
-weight: 590
 draft: true
 ---
 

@@ -1,18 +1,21 @@
 ---
-authors: [Georg Makowski]
-date: "2021-12-19T13:27:29+01:00"
+title: How to use Attributes?
 description: Inject HTML attributes in Markdown
+subtitle: false
+date: '2021-12-19T13:27:29+01:00'
+weight: 325
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- attribute
 menu:
   doc:
     name: Howto
     identifier: howtoattribute
     parent: attribute
     pre: help
-subtitle: false
-title: How to use Attributes?
-weight: 325
-categories: [markdown]
-tags: [attribute]
 ---
 
 Hugo’s attributes are plain HTML attributes getting injected from the Markdown source into the rendered HTML.

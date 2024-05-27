@@ -1,17 +1,21 @@
 ---
-authors: [Georg Makowski]
 title: LaTeX
-date: "2021-05-18T10:15:06+02:00"
 description: Render mathematical expressions inside Markdown
 subtitle: false
+date: '2021-05-18T10:15:06+02:00'
+weight: 710
+authors:
+- Georg Makowski
+categories:
+- module
+- markdown
+tags:
+- latex
 menu:
   doc:
     name: LaTeX
     parent: plugin
     pre: functions
-weight: 710
-categories: [module, markdown]
-tags: [latex]
 ---
 
 LaTeX is the most popular typesetting system for the natural sciences. The syntax has been established as a quasi-standard for complex mathematical formulas in print and web layouts.

@@ -1,11 +1,14 @@
 ---
-authors: [Georg Makowski]
 title: Hugo Module{/}for Math and Chemistry
 linktitle: hugo-mod-katex
 description: Include the KaTeX library into your Hugo project
-date: 2023-05-18T16:05:52+02:00
-categories: [module]
-tags: [latex]
+date: 2023-05-18 16:05:52+02:00
+authors:
+- Georg Makowski
+categories:
+- module
+tags:
+- latex
 ---
 
 This Hugo module allows rendering mathematical and chemical formulas in Markdown.

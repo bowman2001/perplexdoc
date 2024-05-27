@@ -1,22 +1,26 @@
 ---
-authors: [Georg Makowski]
-date: "2021-08-27T09:59:47+02:00"
-description: Substitution of punctuation 
+title: Typographer
+description: Substitution of punctuation
+subtitle: false
+date: '2021-08-27T09:59:47+02:00'
+weight: 260
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- punctuation
+- inline
 menu:
   doc:
     name: Typographer
     parent: extended
     pre: format_quote
-subtitle: false
-title: Typographer
-weight: 260
-categories: [Markdown]
-tags: [punctuation, inline]
 resources:
-  - name: featured
-    src: kristian-strand-p8gzCnZf39k-unsplash.jpg
-    params:
-      alt: Some specimen of movable type for printing 
+- name: featured
+  src: kristian-strand-p8gzCnZf39k-unsplash.jpg
+  params:
+    alt: Some specimen of movable type for printing
 ---
 
 Simple ASCII punctuation characters are substituted with typographic correct ones.

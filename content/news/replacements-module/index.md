@@ -1,11 +1,15 @@
 ---
-authors: [Georg Makowski]
 title: Hugo Module{/}for HTML inline tags missing in Goldmark
 linktitle: Replacements module
 description: Use these tags without writing raw HTML
-date: 2023-02-22T23:55:26+02:00
-categories: [Module]
-tags: [Replacement, Security]
+date: 2023-02-22 23:55:26+02:00
+authors:
+- Georg Makowski
+categories:
+- Module
+tags:
+- Replacement
+- Security
 ---
 
 Replacement codes let us avoid raw HTML in Markdown.{/}A single partial replaces them with the inline tags{/}lacking a syntax element in Goldmark.

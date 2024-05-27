@@ -1,16 +1,20 @@
 ---
-authors: [Georg Makowski]
-date: 2021-08-18T10:59:52+02:00
+title: Marginal Note
 description: Place a note in the right marginal column of the page
+date: 2021-08-18 10:59:52+02:00
+weight: 530
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Marginal Note
+- Shortcode
 menu:
   doc:
     name: Marginal Note
     parent: shortcode
     pre: note
-title: Marginal Note
-weight: 530
-categories: [Markdown]
-tags: [Marginal Note, Shortcode]
 ---
 
 A marginal note contains additional important but nonessential information. It explains some context, sheds light on a detail or speculates on a given topic etc.

@@ -1,24 +1,27 @@
 ---
-authors: [Georg Makowski]
-date: "2021-08-19T13:35:00+02:00"
+title: Keyboard Legend
 description: Display the keys from a computer keyboard
 subtitle: false
+date: '2021-08-19T13:35:00+02:00'
+weight: 430
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- replacement
 menu:
   doc:
     name: Keyboard Legend
     parent: replace
     pre: keyboard_alt
 resources:
-  - src: florencia-viadana-1iyGImW84cQ-unsplash.jpg
-    name: featured
-    params:
-      alt: An old typewriter with cactuses growing inside
-      ratio: 0.95
-      anchor: Center
-title: Keyboard Legend
-weight: 430
-categories: [Markdown]
-tags: [replacement]
+- src: florencia-viadana-1iyGImW84cQ-unsplash.jpg
+  name: featured
+  params:
+    alt: An old typewriter with cactuses growing inside
+    ratio: 0.95
+    anchor: Center
 ---
 
 Refer explicitly to keyboard strokes in your text.

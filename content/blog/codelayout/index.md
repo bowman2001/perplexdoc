@@ -1,12 +1,17 @@
 ---
-authors: [Georg Makowski]
 title: Code Block Layout Demo
-description: Code Blocks on full width pages (without sidebar)
 linktitle: Code Demo
-date: 2022-11-01T14:54:07+01:00
-categories: [markdown]
-tags: [code, block]
-series: [demo]
+description: Code Blocks on full width pages (without sidebar)
+date: 2022-11-01 14:54:07+01:00
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- code
+- block
+series:
+- demo
 ---
 
 On large screens, code blocks expand into the margins as long as possible and may include up to {$160} characters in one line.

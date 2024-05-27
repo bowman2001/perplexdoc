@@ -1,17 +1,20 @@
 ---
-authors: [Georg Makowski]
 title: Tracking
-description: Let tracking services generate detailed usage statistics 
+description: Let tracking services generate detailed usage statistics
 subtitle: false
-date: 2022-11-17T10:23:41+01:00 
+date: 2022-11-17 10:23:41+01:00
 weight: 690
+authors:
+- Georg Makowski
+categories:
+- template
+tags:
+- tracking
 menu:
   doc:
     name: Tracking
     parent: siteelem
     pre: analytics
-categories: [template]
-tags: [tracking]
 ---
 
 Perplex offers configuration parameters to include site-wide scripts for tracking services. Currently **Fathom** and **Google** Analytics (GA4) are directly supported.

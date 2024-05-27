@@ -1,22 +1,25 @@
 ---
-authors: [Georg Makowski]
 title: Position
 description: Shrink & Move small Markdown blocks to the left or the right
 subtitle: false
-date: 2023-11-04T12:37:11+02:00
+date: 2023-11-04 12:37:11+02:00
+weight: 331
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- attribute
 menu:
   doc:
     name: Position
     parent: attribute
     pre: format_image_left
 resources:
-  - name: featured
-    src: sigmund-_dJCBtdUu74-unsplash.jpg
-    params:
-      alt: wireframe
-categories: [markdown]
-tags: [attribute]
-weight: 331
+- name: featured
+  src: sigmund-_dJCBtdUu74-unsplash.jpg
+  params:
+    alt: wireframe
 ---
 
 When the content of a block fits nicely into a single column we can shrink & move it to the left or the right.

@@ -1,17 +1,21 @@
 ---
-authors: [Georg Makowski]
-date: "2021-03-24T13:17:56+01:00"
+title: Line Break
 description: A break inside a paragraph
+subtitle: false
+date: '2021-03-24T13:17:56+01:00'
+weight: 111
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- linebreak
+- inline
 menu:
   doc:
     name: Line Break
     parent: basic
     pre: drag_handle
-subtitle: false
-title: Line Break
-weight: 111
-categories: [Markdown]
-tags: [linebreak, inline]
 ---
 
 Sometimes we like to begin a new line without starting a whole new text block. Placing such a hard-line break gets complicated when **hard-line wraps** determine the line length inside the Markdown content files.

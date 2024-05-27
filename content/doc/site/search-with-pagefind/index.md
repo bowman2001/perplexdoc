@@ -1,18 +1,22 @@
 ---
-authors: [Georg Makowski]
 title: Search with Pagefind
 description: Index and search your **full** text with this fast search library
 subtitle: false
-date: 2023-07-04T18:47:09+02:00 
+date: 2023-07-04 18:47:09+02:00
+weight: 680
+authors:
+- Georg Makowski
+categories:
+- template
+tags:
+- search
+- site
 menu:
   doc:
-    identifier: search-with-pagefind 
+    identifier: search-with-pagefind
     name: Search
     parent: siteelem
     pre: search
-categories: [template]
-tags: [search, site]
-weight: 680
 ---
 
 The theme is prepared to get indexed by {=Pagefind} for a site-wide search and offers its UI on a separate search page.

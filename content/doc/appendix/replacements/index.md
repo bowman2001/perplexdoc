@@ -1,16 +1,19 @@
 ---
-authors: [Georg Makowski]
-date: "2021-12-21T22:32:04+01:00"
+title: replacements.html
 description: Partial for inserting inline HTML tags in `.Content`
+date: '2021-12-21T22:32:04+01:00'
+weight: 1055
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Replacement
 menu:
   doc:
     name: replacements.html
     parent: appendix
     pre: find_replace
-title: 'replacements.html'
-weight: 1055
-categories: [Markdown]
-tags: [Replacement]
 ---
 
 This template file from the module {$hugo-mod-replacements} contains the regular expressions for all replacement codes.

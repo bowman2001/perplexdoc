@@ -1,21 +1,25 @@
 ---
-authors: [Georg Makowski]
-date: "2022-01-12T14:20:05+01:00"
+title: Hugo
 description: Security at Runtime
+subtitle: false
+date: '2022-01-12T14:20:05+01:00'
+weight: 830
+authors:
+- Georg Makowski
+categories:
+- configuration
+tags:
+- hugo
+- security
 menu:
   doc:
     name: Hugo
     identifier: hugosec
     parent: security
     pre: engineering
-subtitle: false
-title: Hugo
-weight: 830
 resources:
-  - src: fly-d-mT7lXZPjk7U-unsplash.jpg
-    name: featured
-categories: [configuration]
-tags: [hugo, security]
+- src: fly-d-mT7lXZPjk7U-unsplash.jpg
+  name: featured
 ---
 
 The Hugo binary runs in a sandbox to offer maximal runtime security while rendering static sites. External dependencies are configured explicitly.

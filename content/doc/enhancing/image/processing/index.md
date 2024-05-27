@@ -1,24 +1,29 @@
 ---
-authors: [Georg Makowski]
 title: Image Processing
 linktitle: Processing
-description: The theme generates all necessary versions 
+description: The theme generates all necessary versions
 subtitle: false
-date: 2023-03-23T11:51:34+01:00 
+date: 2023-03-23 11:51:34+01:00
+weight: 320
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- image
+- block
+series:
+- images
 menu:
   doc:
     name: Processing
     parent: image
     pre: engineering
 resources:
-  - src: usgs-eVcfzGhVpYc-unsplash.jpg
-    name: featured
-    params:
-      alt: Complicated image
-categories: [markdown]
-tags: [image, block]
-series: [images]
-weight: 320
+- src: usgs-eVcfzGhVpYc-unsplash.jpg
+  name: featured
+  params:
+    alt: Complicated image
 ---
 
 The theme relies on the powerful integrated Hugo methods.

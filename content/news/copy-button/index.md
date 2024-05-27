@@ -1,16 +1,19 @@
 ---
-authors: [Georg Makowski]
-title: 'Copy Button for Code Blocks'
+title: Copy Button for Code Blocks
 linktitle: Copy Button
-description: "Copy the content of code blocks into the OS clipboard"
-date: 2024-02-24T21:17:04+01:00
+description: Copy the content of code blocks into the OS clipboard
+date: 2024-02-24 21:17:04+01:00
+authors:
+- Georg Makowski
+categories:
+- design
+tags:
+- code
 resources:
-  - src: emotion-tech-HPEOsBTn8Ps-unsplash.jpg
-    name: featured
-    params:
-      alt: 3D printer with copies
-categories: [design]
-tags: [code]
+- src: emotion-tech-HPEOsBTn8Ps-unsplash.jpg
+  name: featured
+  params:
+    alt: 3D printer with copies
 ---
 
 Copy the content of code blocks easily into your clipboard.

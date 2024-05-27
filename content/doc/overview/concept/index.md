@@ -1,29 +1,32 @@
 ---
-authors: [Georg Makowski]
 title: Concept
 description: General goals of the theme
 subtitle: false
-date: 2022-05-12T22:29:06+02:00
+date: 2022-05-12 22:29:06+02:00
+weight: 5
+authors:
+- Georg Makowski
+categories:
+- Overview
+tags:
+- feature
 menu:
   doc:
     name: Concept
     parent: tldr
     pre: featured_play_list
 resources:
-  - src: drew-beamer-xU5Mqq0Chck-unsplash.jpg
-    name: featured
-    params:
-      alt: Horizon through a lensball
-      zoom: 1.6
-  - src: IBM_Plex_Sans.svg
-    name: plex_sample
-    params:
-      background: light
-      posh: left
-      width: tiny
-categories: [Overview]
-tags: [feature]
-weight: 5
+- src: drew-beamer-xU5Mqq0Chck-unsplash.jpg
+  name: featured
+  params:
+    alt: Horizon through a lensball
+    zoom: 1.6
+- src: IBM_Plex_Sans.svg
+  name: plex_sample
+  params:
+    background: light
+    posh: left
+    width: tiny
 ---
 
 A coherent site structure for different publishing formats, a typographic layout for enhanced Markdown content, and good legibility on all screen sizes are the essential goals of this theme.

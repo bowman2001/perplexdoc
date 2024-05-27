@@ -1,17 +1,22 @@
 ---
-authors: [Georg Makowski]
-title: Math API 
+title: Math API
 description: External service rendering LaTeX to SVG formulas
 subtitle: false
-date: 2023-03-29T11:56:16+02:00 
+date: 2023-03-29 11:56:16+02:00
 weight: 750
+authors:
+- Georg Makowski
+categories:
+- module
+- markdown
+tags:
+- diagram
+- latex
 menu:
   doc:
     name: Mathapi
     parent: plugin
     pre: functions
-categories: [module, markdown]
-tags: [diagram, latex]
 draft: true
 ---
 

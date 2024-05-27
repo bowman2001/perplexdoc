@@ -1,10 +1,14 @@
 ---
-authors: [Georg Makowski]
 title: Accessible fluid Design
 description: Accessibility is one advantage of this type of design
-date: 2022-07-12T22:38:10+02:00
-categories: [design]
-tags: [accessible, fluid responsive]
+date: 2022-07-12 22:38:10+02:00
+authors:
+- Georg Makowski
+categories:
+- design
+tags:
+- accessible
+- fluid responsive
 resources:
 - name: fluid
   src: resource-database--R7raVu_isU-unsplash.jpg

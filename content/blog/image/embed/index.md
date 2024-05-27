@@ -1,13 +1,18 @@
 ---
-authors: [Georg Makowski]
 title: Embedded images
 description: Demo for enhanced inline images
 subtitle: false
+date: 2023-03-23 10:10:51+01:00
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- image
+- embedded
+series:
+- images
 featured: micro
-date: 2023-03-23T10:10:51+01:00
-categories: [markdown]
-tags: [image, embedded]
-series: [images]
 ---
 
 Demo for the layout options of enhanced embedded images.

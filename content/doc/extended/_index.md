@@ -1,16 +1,17 @@
 ---
-authors: [Georg Makowski]
-date: "2021-08-26T21:15:24+02:00"
+title: Extended Markdown
+linktitle: Extended
 description: Additional Markdown Elements
+subtitle: false
+date: '2021-08-26T21:15:24+02:00'
+weight: 200
+authors:
+- Georg Makowski
 menu:
   doc:
     identifier: extended
     name: Extended Markdown
     pre: description
-subtitle: false
-title: Extended Markdown
-linktitle: Extended
-weight: 200
 featured: markdownlogo
 ---
 

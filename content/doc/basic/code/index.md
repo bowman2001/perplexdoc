@@ -1,17 +1,22 @@
 ---
-authors: [Georg Makowski]
-date: "2021-03-24T21:23:17+01:00"
+title: Code
 description: Editor or command line content
+subtitle: false
+date: '2021-03-24T21:23:17+01:00'
+weight: 135
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Code
+- Inline
+- Block
 menu:
   doc:
     name: Code
     parent: basic
     pre: code
-subtitle: false
-title: Code
-weight: 135
-categories: [Markdown]
-tags: [Code, Inline, Block]
 ---
 
 The main text column offers space for {$80} characters of code in one line. When we need more to fit in one line, we can let it expand into the marginal column(s).

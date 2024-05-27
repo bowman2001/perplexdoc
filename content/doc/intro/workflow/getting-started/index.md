@@ -1,25 +1,31 @@
 ---
-authors: [Georg Makowski]
 title: Local Installation & Configuration
 linktitle: Install & configure
 description: How to install Hugo and this theme
 subtitle: false
-date: 2022-09-11T14:57:26+02:00
+date: 2022-09-11 14:57:26+02:00
 weight: 30
+authors:
+- Georg Makowski
+categories:
+- getting started
+- configuration
+tags:
+- hugo
+- installation
+- workflow
 menu:
   doc:
     name: Install & configure
     parent: workflow
     pre: start
-categories: [getting started, configuration]
-tags: [hugo, installation, workflow]
-resources: 
-  - src: damian-markutt-Dhmn6ete6g8-unsplash.jpg
-    name: featured
-    params:
-      alt: Colorful sunrise in the Rätikon Mountain-Range, Switzerland
-      caption: Rätikon Mountain-Range
-      anchor: Center
+resources:
+- src: damian-markutt-Dhmn6ete6g8-unsplash.jpg
+  name: featured
+  params:
+    alt: Colorful sunrise in the Rätikon Mountain-Range, Switzerland
+    caption: Rätikon Mountain-Range
+    anchor: Center
 ---
 
 Hugo, the world’s fastest static site generator is steadily gaining traction. Hugo provides a reliable production environment and allows to build fast and secure web applications.

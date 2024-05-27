@@ -1,18 +1,22 @@
 ---
-authors: [Georg Makowski]
 title: Archetypes
-description: "Create Markdown files with pre-configured frontmatter"
+description: Create Markdown files with pre-configured frontmatter
 subtitle: false
-date: 2023-08-03T12:37:43+02:00 
+date: 2023-08-03 12:37:43+02:00
+weight: 1003
+authors:
+- Georg Makowski
+categories:
+- getting started
+- markdown
+tags:
+- archetype
 menu:
   doc:
-    identifier: archetypes 
+    identifier: archetypes
     parent: appendix
     name: Archetypes
     pre: post_add
-categories: [getting started, markdown]
-tags: [archetype]
-weight: 1003
 draft: true
 ---
 

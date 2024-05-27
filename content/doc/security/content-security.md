@@ -1,17 +1,20 @@
 ---
-authors: [Georg Makowski]
 title: Content
 description: How to prevent injection of malicious code
 subtitle: false
-date: 2022-05-05T10:17:42+02:00 
+date: 2022-05-05 10:17:42+02:00
 weight: 810
+authors:
+- Georg Makowski
+categories:
+- configuration
+tags:
+- security
 menu:
   doc:
     name: Content
     parent: security
     pre: article
-categories: [configuration]
-tags: [security]
 ---
 
 When a project includes content from unknown sources, we need to worry about content security.

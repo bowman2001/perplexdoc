@@ -1,15 +1,16 @@
 ---
-authors: [Georg Makowski]
-date: "2021-08-16T10:56:40+02:00"
-description: Embed content from external providers
-menu:
-  doc:
-    name: Hugo remote 
-    parent: shortcode
-    pre: download
 title: Hugo’s built-in remote shortcodes
 linktitle: Hugo’s remote
+description: Embed content from external providers
+date: '2021-08-16T10:56:40+02:00'
 weight: 580
+authors:
+- Georg Makowski
+menu:
+  doc:
+    name: Hugo remote
+    parent: shortcode
+    pre: download
 draft: true
 ---
 

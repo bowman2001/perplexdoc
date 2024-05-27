@@ -1,17 +1,20 @@
 ---
-authors: [Georg Makowski]
 title: Custom CSS
-description: "Add your own CSS files"
+description: Add your own CSS files
 subtitle: false
-date: 2024-01-04T20:00:43+01:00 
+date: 2024-01-04 20:00:43+01:00
+weight: 695
+authors:
+- Georg Makowski
+categories:
+- design
+tags:
+- css
 menu:
   doc:
     name: Custom CSS
     parent: siteelem
     pre: css
-categories: [design]
-tags: [css]
-weight: 695
 ---
 
 The theme can deliver your own additional CSS files if you need to add special instructions.

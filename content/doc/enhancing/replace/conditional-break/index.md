@@ -1,18 +1,22 @@
 ---
-authors: [Georg Makowski]
 title: Conditional Break
 description: This line break only shows for full-width text layouts
 subtitle: false
-date: 2023-04-18T14:27:49+02:00 
+date: 2023-04-18 14:27:49+02:00
+weight: 490
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- linebreak
+- replacement
 menu:
   doc:
-    identifier: conditional-break 
+    identifier: conditional-break
     name: Conditional Break
     parent: replace
     pre: drag_handle
-categories: [markdown]
-tags: [linebreak, replacement]
-weight: 490
 ---
 
 Sometimes we like to break a title or a line only for those layout versions, which show the text in full width.

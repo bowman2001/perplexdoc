@@ -1,17 +1,21 @@
 ---
-authors: [Georg Makowski]
-title: 'Color Scheme'
-description: "About the default color scheme and customization"
+title: Color Scheme
+description: About the default color scheme and customization
 subtitle: false
-date: 2024-01-02T01:55:01+01:00 
+date: 2024-01-02 01:55:01+01:00
+weight: 685
+authors:
+- Georg Makowski
+categories:
+- design
+tags:
+- color
+- accessible
 menu:
   doc:
-    name: 'Color Scheme'
+    name: Color Scheme
     parent: siteelem
     pre: palette
-categories: [design]
-tags: [color, accessible]
-weight: 685
 ---
 
 The theme includes a WCAG-compliant color scheme that switches between a **light** and a **dark** mode when the OS environment does.  

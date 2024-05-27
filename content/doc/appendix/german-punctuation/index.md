@@ -1,23 +1,26 @@
 ---
-authors: [Georg Makowski]
-date: "2021-07-09T11:18:29+02:00"
-description: "Punctuation with Ubuntu on a German Keyboard"
+title: Example Punctuation Keymap
+linktitle: Punctuation Keymap
+description: Punctuation with Ubuntu on a German Keyboard
+date: '2021-07-09T11:18:29+02:00'
+weight: 1090
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- punctuation
 menu:
   doc:
     name: Punctuation Keymap
     parent: appendix
     pre: format_quote
-title: Example Punctuation Keymap
-linktitle: Punctuation Keymap
-weight: 1090
-categories: [markdown]
-tags: [punctuation]
 resources:
-  - src: aryan-dhiman-iGLLtLINSkw-unsplash.jpg
-    name: featured
-    params:
-      alt: Computer keyboard
-      ratio: 1.5
+- src: aryan-dhiman-iGLLtLINSkw-unsplash.jpg
+  name: featured
+  params:
+    alt: Computer keyboard
+    ratio: 1.5
 ---
 
 Punctuation Keymap of the German Keyboard Layout for Ubuntu.

@@ -1,17 +1,20 @@
 ---
-authors: [Georg Makowski]
 title: Image processing details
 description: Some configurable details of image processing
 subtitle: false
-date: 2022-10-16T17:04:04+02:00 
+date: 2022-10-16 17:04:04+02:00
 weight: 1060
+authors:
+- Georg Makowski
+categories:
+- module
+tags:
+- image
 menu:
   doc:
     name: Image Processing
     parent: appendix
     pre: image
-categories: [module]
-tags: [image]
 draft: true
 ---
 

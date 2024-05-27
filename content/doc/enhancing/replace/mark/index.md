@@ -1,22 +1,25 @@
 ---
-authors: [Georg Makowski]
 title: Mark
 description: Mark inline text as especially important
 subtitle: false
-date: 2023-03-24T22:10:35+01:00 
+date: 2023-03-24 22:10:35+01:00
+weight: 430
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- replacement
 menu:
   doc:
     name: Mark
     parent: replace
     pre: priority_high
 resources:
-  - name: featured
-    src: mitchell-luo-NROHA1B-NYk-unsplash.jpg
-    params:
-      alt: Open red marker
-categories: [markdown]
-tags: [replacement]
-weight: 430
+- name: featured
+  src: mitchell-luo-NROHA1B-NYk-unsplash.jpg
+  params:
+    alt: Open red marker
 ---
 
 Mark and highlight inline text as especially important.
