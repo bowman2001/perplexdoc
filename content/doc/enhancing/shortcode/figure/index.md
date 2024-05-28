@@ -1,70 +1,75 @@
 ---
-authors: [Georg Makowski]
-date: 2021-09-11T00:07:48+02:00
+title: Figure
 description: Shortcode for self-contained images
 subtitle: false
-title: Figure
+date: 2021-09-11 00:07:48+02:00
 weight: 595
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Shortcode
 menu:
-  doc: 
+  doc:
     name: Figure
     parent: shortcode
     pre: add_photo_alternate
 resources:
-  - src: markus-spiske--dbOrdtrR1A-unsplash.jpg
-    name: featured
-    params:
-      alt: Some HTML figure tags on a computer screen
-  - src: fig/small.svg
-    name: small
-    params:
-      alt: Placeholder image, small size
-      size: small 
-      posh: left
-      caption: Small size
-      attr: gm
-  - name: small-portrait
-    src: fig/small_portrait.svg
-    params:
-      alt: Placeholder image, small portrait size
-      caption: Small portrait size
-      size: small
-      posh: right
-      attr: gm
-  - src: fig/medium.svg
-    name: medium
-    params:
-      alt: Placeholder image, medium size
-      caption: Medium size
-      size: medium 
-      posh: right
-      attr: gm
-  - src: fig/normal.svg
-    name: normal
-    params:
-      alt: Placeholder image, normal size
-      caption: The **default** normal size is using the full text width. If the margin is available, the caption is placed there.
-      size: normal
-      posh: left
-      attr: gm
-  - src: fig/large.svg
-    name: large
-    params:
-      alt: Placeholder image, large size
-      caption: Large size
-      size: large
-      attr: gm
-  - src: fig/extra-large.svg
-    name: xlarge
-    params:
-      size: xlarge
-      alt: Placeholder image, extra large size
-      caption: The full size of an extra large image will only show on pages with a left margin. It’s treated here like a large image.
-      attr: gm
-  - src: beau-swierstra-Ndz-4phqtlg-unsplash.jpg
-    name: beau
-categories: [Markdown]
-tags: [Shortcode]
+- src: markus-spiske--dbOrdtrR1A-unsplash.jpg
+  name: featured
+  params:
+    alt: Some HTML figure tags on a computer screen
+- src: fig/small.svg
+  name: small
+  params:
+    alt: Placeholder image, small size
+    size: small
+    posh: left
+    caption: Small size
+    attr: gm
+- name: small-portrait
+  src: fig/small_portrait.svg
+  params:
+    alt: Placeholder image, small portrait size
+    caption: Small portrait size
+    size: small
+    posh: right
+    attr: gm
+- src: fig/medium.svg
+  name: medium
+  params:
+    alt: Placeholder image, medium size
+    caption: Medium size
+    size: medium
+    posh: right
+    attr: gm
+- src: fig/normal.svg
+  name: normal
+  params:
+    alt: Placeholder image, normal size
+    caption: The **default** normal size is using the full text width. If the margin
+      is available, the caption is placed there.
+    size: normal
+    posh: left
+    attr: gm
+- src: fig/large.svg
+  name: large
+  params:
+    alt: Placeholder image, large size
+    caption: Large size
+    size: large
+    attr: gm
+- src: fig/extra-large.svg
+  name: xlarge
+  params:
+    size: xlarge
+    alt: Placeholder image, extra large size
+    caption: The full size of an extra large image will only show on pages with a
+      left margin. It’s treated here like a large image.
+    attr: gm
+- src: beau-swierstra-Ndz-4phqtlg-unsplash.jpg
+  name: beau
 draft: true
 ---
 

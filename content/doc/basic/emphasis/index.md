@@ -1,16 +1,19 @@
 ---
-authors: [Georg Makowski]
-date: "2021-03-23T21:46:33+01:00"
+title: Emphasis
 description: Accentuate pieces of text
+date: '2021-03-23T21:46:33+01:00'
+weight: 116
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Inline
 menu:
   doc:
     name: Emphasis
     parent: basic
     pre: format_italic
-title: Emphasis
-weight: 116
-categories: [Markdown]
-tags: [Inline]
 resources:
 - name: featured
   src: brett-jordan-vyPVtz5p8D4-unsplash.jpg

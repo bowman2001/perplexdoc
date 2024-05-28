@@ -1,12 +1,17 @@
 ---
-authors: [Georg Makowski]
 title: Nested Definition List
 description: Demo for topic 40235 in the Hugo-Forum
 subtitle: false
-date: 2022-08-27T15:01:18+02:00
-categories: [Markdown]
-tags: [Quote, List]
-series: [Demo]
+date: 2022-08-27 15:01:18+02:00
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Quote
+- List
+series:
+- Demo
 resources:
 - src: romain-vignes-ywqa9IZB-dU-unsplash.jpg
   name: featured

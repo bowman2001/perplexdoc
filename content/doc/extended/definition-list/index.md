@@ -1,22 +1,26 @@
 ---
-authors: [Georg Makowski]
-date: "2021-03-24T21:44:53+01:00"
+title: Definition List
 description: A series of terms and associated details
+subtitle: false
+date: '2021-03-24T21:44:53+01:00'
+weight: 210
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- List
+- Block
 menu:
   doc:
     name: Definition List
     parent: extended
     pre: hd
-subtitle: false
-title: Definition List
-weight: 210
-categories: [Markdown]
-tags: [List, Block]
 resources:
-  - name: featured
-    src: sandy-millar-Kl4LNdg6on4-unsplash.jpg
-    params: 
-      alt: A few entries in a printed dictionary
+- name: featured
+  src: sandy-millar-Kl4LNdg6on4-unsplash.jpg
+  params:
+    alt: A few entries in a printed dictionary
 ---
 
 Definition lists consist of **terms** as list markers, which are associated with **details** in the list entries.

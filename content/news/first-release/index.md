@@ -1,17 +1,20 @@
 ---
-authors: [Georg Makowski]
-lasteditor: Georg Makowski
 title: First Pre-release{/}of the Perplex Theme
 linktitle: First Pre-release
 description: Beta release 1
-date: 2023-04-10T22:04:33+02:00
-categories: [Release]
-tags: [fluid responsive]
+date: 2023-04-10 22:04:33+02:00
+authors:
+- Georg Makowski
+categories:
+- Release
+tags:
+- fluid responsive
 resources:
 - src: resource-database-jRDZ4_wYCa8-unsplash.jpg
   name: featured
   params:
     alt: Rendered spheres
+lasteditor: Georg Makowski
 ---
 
 A new fluid-responsive Hugo theme is available for test runs.

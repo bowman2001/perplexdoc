@@ -1,17 +1,22 @@
 ---
-authors: [Georg Makowski]
 title: Page Navigation
 description: Sidebar, Prev/Next and Table of Contents
 subtitle: false
-date: 2022-01-18T23:25:10+01:00 
+date: 2022-01-18 23:25:10+01:00
+weight: 640
+authors:
+- Georg Makowski
+categories:
+- template
+tags:
+- navigation
+- page
+- menu
 menu:
   doc:
     name: Navigation
     parent: page
     pre: switch_right
-categories: [template]
-tags: [navigation, page, menu]
-weight: 640
 ---
 
 The navigation between consecutive pages and the table of contents (TOC) is mostly generated from already existing data. We only need to set the additional {$weight} parameter for documentation pages.

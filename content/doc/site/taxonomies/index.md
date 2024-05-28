@@ -1,17 +1,24 @@
 ---
-authors: [Georg Makowski, Test Author]
 title: Taxonomies
 description: Create site-wide groups of content
 subtitle: false
-date: 2022-09-07T22:47:33+02:00
+date: 2022-09-07 22:47:33+02:00
 weight: 670
+authors:
+- Georg Makowski
+- Test Author
+categories:
+- template
+tags:
+- taxonomies
+- site
+- related
+- author
 menu:
   doc:
     name: Taxonomies
     parent: siteelem
     pre: category
-categories: [template]
-tags: [taxonomies, site, related, author]
 ---
 
 We can create arbitrary site-wide groups of content with joint taxonomy terms.

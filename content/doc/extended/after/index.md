@@ -1,6 +1,6 @@
 ---
 title: After_index
-date: 2022-06-14T22:32:43+02:00 
+date: 2022-06-14 22:32:43+02:00
 headless: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Get started
-date: 2022-06-23T11:55:35+02:00
+date: 2022-06-23 11:55:35+02:00
 id: l1
 ---
 Read the [docs](/doc) or get the [complete source][doc] for this site for the hands-on approach.

@@ -1,22 +1,26 @@
 ---
-authors: [Georg Makowski]
-date: "2021-03-24T21:44:46+01:00"
+title: Ordered List
 description: List marked with ordered natural numbers
+subtitle: false
+date: '2021-03-24T21:44:46+01:00'
+weight: 130
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- List
+- Block
 menu:
   doc:
     name: Ordered List
     parent: basic
     pre: format_list_numbered
-subtitle: false
-title: Ordered List
-weight: 130
-categories: [Markdown]
-tags: [List, Block]
 resources:
-  - name: featured
-    src: jan-antonin-kolar-lRoX0shwjUQ-unsplash.jpg
-    params: 
-      alt: An old wooden library database
+- name: featured
+  src: jan-antonin-kolar-lRoX0shwjUQ-unsplash.jpg
+  params:
+    alt: An old wooden library database
 ---
 
 Ordered lists group related items and mark them with ascending counters. They provide a very clear structure for a relatively short number of items.

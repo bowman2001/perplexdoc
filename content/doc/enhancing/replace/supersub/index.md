@@ -1,22 +1,25 @@
 ---
-authors: [Georg Makowski]
-date: "2021-03-23T22:21:23+01:00"
+title: Super-, Subscripts and Fractions
+linktitle: Super- & Subscripts
 description: Tiny characters above or below the baseline
+date: '2021-03-23T22:21:23+01:00'
+weight: 420
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- replacement
 menu:
   doc:
     name: Super- & Subscripts
     parent: replace
     pre: superscript
-title: Super-, Subscripts and Fractions
-linktitle: Super- & Subscripts
 resources:
-  - name: featured
-    src: artturi-jalli-gYrYa37fAKI-unsplash.jpg
-    params:
-      alt: Blackboard with Einsteins most famous formula
-weight: 420
-categories: [Markdown]
-tags: [replacement]
+- name: featured
+  src: artturi-jalli-gYrYa37fAKI-unsplash.jpg
+  params:
+    alt: Blackboard with Einsteins most famous formula
 ---
 
 For occasional vertically shifted characters, these replacement codes are sufficient.

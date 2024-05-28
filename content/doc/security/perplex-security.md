@@ -1,10 +1,11 @@
 ---
-authors: [Georg Makowski]
 title: Theme
 description: Secure templates and plugins
 subtitle: false
-date: 2022-05-04T23:57:20+02:00 
+date: 2022-05-04 23:57:20+02:00
 weight: 820
+authors:
+- Georg Makowski
 menu:
   doc:
     name: Theme

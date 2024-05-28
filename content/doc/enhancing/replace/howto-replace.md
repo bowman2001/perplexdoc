@@ -1,19 +1,22 @@
 ---
-authors: [Georg Makowski]
 title: How to use replacements
 linktitle: Howto
 description: Curly braces and an identifier in Markdown
 subtitle: false
-date: 2022-04-19T13:00:09+02:00
+date: 2022-04-19 13:00:09+02:00
 weight: 410
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- replacement
 menu:
   doc:
     name: Howto
     identifier: howto-replace
     parent: replace
     pre: help
-categories: [Markdown]
-tags: [replacement]
 ---
 
 Text enclosed by curly braces `{` and `}` and special ASCII signs is replaced with missing Markdown tags after rendering.

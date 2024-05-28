@@ -1,17 +1,21 @@
 ---
-authors: [Georg Makowski]
-date: "2021-03-23T21:38:25+01:00"
+title: Paragraphs
 description: Essential building blocks of text
+subtitle: false
+date: '2021-03-23T21:38:25+01:00'
+weight: 108
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- paragraph
+- block
 menu:
   doc:
     name: Paragraphs
     parent: basic
     pre: segment
-subtitle: false
-title: Paragraphs
-weight: 108
-categories: [Markdown]
-tags: [paragraph, block]
 ---
 
 Paragraphs are the essential building blocks of text. A comfortable line length and surrounding whitespace contribute to their legibility.

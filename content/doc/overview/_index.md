@@ -1,19 +1,20 @@
 ---
-authors: [Georg Makowski]
 title: TL;DR
 description: Overview for seasoned Hugo users
-date: 2022-05-11T23:46:08+02:00 
+date: 2022-05-11 23:46:08+02:00
 weight: 2
+authors:
+- Georg Makowski
 menu:
   doc:
     identifier: tldr
     name: TL;DR
     pre: visibility
-resources: 
-  - src: miguel-a-amutio-j5GNmYQQcAo-unsplash.jpg
-    name: featured
-    params:
-      alt: Overview of a mountain range
+resources:
+- src: miguel-a-amutio-j5GNmYQQcAo-unsplash.jpg
+  name: featured
+  params:
+    alt: Overview of a mountain range
 ---
 
 Short overview of for seasoned Hugo users.

@@ -1,10 +1,13 @@
 ---
-authors: [Georg Makowski]
 title: Resources in Data Files
 description: Store resource meta-data in page bundle files
-date: 2023-09-05T00:02:59+02:00
-categories: [module]
-tags: [resources]
+date: 2023-09-05 00:02:59+02:00
+authors:
+- Georg Makowski
+categories:
+- module
+tags:
+- resources
 ---
 
 The theme offers a new possibility to store local parameters for resources. Data files allow to associate local meta-data with global or remote resources.  

@@ -1,11 +1,15 @@
 ---
-authors: [Georg Makowski]
 title: Hugo Module{/}for Mermaid diagrams
 linktitle: hugo-mod-mermaid
 description: Diagrams for the popular Javascript library
-date: 2023-05-18T17:47:34+02:00
-categories: [module]
-tags: [mermaid, diagram]
+date: 2023-05-18 17:47:34+02:00
+authors:
+- Georg Makowski
+categories:
+- module
+tags:
+- mermaid
+- diagram
 draft: true
 ---
 

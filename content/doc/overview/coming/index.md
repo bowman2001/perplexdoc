@@ -1,18 +1,21 @@
 ---
-authors: [Georg Makowski]
 title: Coming Features
-description: Planned additional functionality 
+description: Planned additional functionality
 subtitle: false
-date: 2023-04-12T11:26:56+02:00 
+date: 2023-04-12 11:26:56+02:00
+weight: 9
+authors:
+- Georg Makowski
+categories:
+- Overview
+tags:
+- feature
 menu:
   doc:
     name: Coming Features
     parent: tldr
     pre: rule
 featured: icon
-categories: [Overview]
-tags: [feature]
-weight: 9
 ---
 
 Features with a top priority and the ones which would be nice to have.

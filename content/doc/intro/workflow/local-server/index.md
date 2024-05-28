@@ -1,22 +1,26 @@
 ---
-authors: [Georg Makowski]
 title: The Local Workflow
 description: Write and watch instant local previews
 subtitle: false
-date: 2022-09-11T14:58:16+02:00
+date: 2022-09-11 14:58:16+02:00
 weight: 35
+authors:
+- Georg Makowski
+categories:
+- getting started
+tags:
+- workflow
+- hugo
 menu:
   doc:
     name: Local Workflow
     parent: workflow
     pre: dns
 resources:
-  - src: ales-nesetril-Im7lZjxeLhg-unsplash.jpg
-    name: featured
-    params:
-      alt: A half-open glowing computer notebook
-categories: [getting started]
-tags: [workflow, hugo]
+- src: ales-nesetril-Im7lZjxeLhg-unsplash.jpg
+  name: featured
+  params:
+    alt: A half-open glowing computer notebook
 ---
 
 While working on our content, we like to examine the result. To generate an immediate local preview, we run Hugo in server mode.

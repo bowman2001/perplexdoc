@@ -1,18 +1,23 @@
 ---
-authors: [Georg Makowski]
-date: "2021-09-07T21:02:57+02:00"
+title: Markdown
 description: Structured Plain Text Files
+subtitle: false
+date: '2021-09-07T21:02:57+02:00'
+weight: 15
+authors:
+- Georg Makowski
+categories:
+- Getting started
+- Markdown
+tags:
+- Linebreak
+- Image
 menu:
   doc:
     name: Markdown
     parent: intro
     pre: edit
-subtitle: false
-title: Markdown
-weight: 15
 featured: markdownlogo
-categories: [Getting started, Markdown]
-tags: [Linebreak, Image]
 ---
 
 Markdown has become the favored markup language to structure text files. With good cause: The Markdown syntax is very intuitive.

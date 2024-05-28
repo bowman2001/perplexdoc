@@ -1,15 +1,16 @@
 ---
-authors: [Georg Makowski]
-date: "2021-09-10T23:05:24+02:00"
+title: Appendix
 description: Supplements
+subtitle: false
+date: '2021-09-10T23:05:24+02:00'
+weight: 1000
+authors:
+- Georg Makowski
 menu:
   doc:
     identifier: appendix
     name: Appendix
     pre: add
-subtitle: false
-title: Appendix
-weight: 1000
 cascade:
   toc: false
 ---

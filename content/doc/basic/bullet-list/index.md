@@ -1,17 +1,21 @@
 ---
-authors: [Georg Makowski]
-date: "2021-03-24T21:44:41+01:00"
+title: Simple List
 description: List marked with bullets
+subtitle: false
+date: '2021-03-24T21:44:41+01:00'
+weight: 125
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- list
+- block
 menu:
   doc:
     name: Simple list
     parent: basic
     pre: format_list_bulleted
-subtitle: false
-title: Simple List
-weight: 125
-categories: [markdown]
-tags: [list, block]
 ---
 
 A simple list is unordered and groups a set of related items. Any item may contain a sub-list.

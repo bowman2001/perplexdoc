@@ -2,15 +2,17 @@
 title: security.yaml
 description: Hugo runtime Security Configuration
 subtitle: false
-date: 2022-01-25T14:09:06+01:00 
+date: 2022-01-25 14:09:06+01:00
 weight: 1040
+categories:
+- configuration
+tags:
+- security
 menu:
   doc:
     name: security.yaml
     parent: config
     pre: security
-categories: [configuration]
-tags: [security]
 ---
 
 The security configuration file in {$config/&zwnj;_default} contains the runtime security settings for Hugo.

@@ -1,24 +1,29 @@
 ---
-authors: [Georg Makowski]
 title: Enhanced Image Syntax
 linktitle: Syntax
 description: Move & resize images and add a caption
 subtitle: false
-date: 2023-03-23T10:11:05+01:00
+date: 2023-03-23 10:11:05+01:00
 weight: 303
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- image
+- block
+series:
+- images
 menu:
   doc:
     name: Syntax
     parent: image
     pre: tag
 resources:
-  - name: featured
-    src: alain-pham-P_qvsF7Yodw-unsplash.jpg
-    params:
-      alt: bridge structure
-categories: [markdown]
-tags: [image, block]
-series: [images]
+- name: featured
+  src: alain-pham-P_qvsF7Yodw-unsplash.jpg
+  params:
+    alt: bridge structure
 ---
 
 We can preprocess images (rotate, change ratio, and zoom) and have several options for placing them in and around the text. We can add a caption. All this is achieved by additional parameters associated with the image source.

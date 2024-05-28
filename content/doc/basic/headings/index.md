@@ -1,18 +1,22 @@
 ---
-authors: [Georg Makowski]
-date: "2021-03-23T21:46:56+01:00"
+title: Text Headings
+linktitle: Headings
 description: Main page structure
+subtitle: false
+date: '2021-03-23T21:46:56+01:00'
+weight: 105
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Headings
+- Block
 menu:
   doc:
     name: Text Headings
     parent: basic
     pre: text_fields
-subtitle: false
-title: Text Headings
-linktitle: Headings
-weight: 105
-categories: [Markdown]
-tags: [Headings, Block]
 ---
 
 Headings introduce and order content segments on a page. Heading levels need to descend without interruption. We can modify headings only visually when we want to skip some levels.

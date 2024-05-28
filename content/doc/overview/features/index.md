@@ -1,9 +1,15 @@
 ---
-authors: [Georg Makowski]
 title: Features
 description: Special functionality of this theme
 subtitle: false
-date: 2023-07-27T18:49:54+02:00 
+date: 2023-07-27 18:49:54+02:00
+weight: 7
+authors:
+- Georg Makowski
+categories:
+- Overview
+tags:
+- feature
 menu:
   doc:
     identifier: features
@@ -11,9 +17,6 @@ menu:
     parent: tldr
     pre: star
 featured: icon
-categories: [Overview]
-tags: [feature]
-weight: 7
 ---
 
 A site layout based on classic typographical principles and techniques.

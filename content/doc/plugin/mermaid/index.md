@@ -1,17 +1,22 @@
 ---
-authors: [Georg Makowski]
 title: Mermaid
 description: Show Mermaid diagrams
 subtitle: false
-date: 2022-01-22T18:05:56+01:00 
+date: 2022-01-22 18:05:56+01:00
 weight: 730
+authors:
+- Georg Makowski
+categories:
+- module
+- markdown
+tags:
+- mermaid
+- diagram
 menu:
   doc:
     name: Mermaid
     parent: plugin
     pre: account_tree
-categories: [module, markdown]
-tags: [mermaid, diagram]
 ---
 
 Mermaid is a popular Javascript library creating SVG diagrams from text and code descriptions.

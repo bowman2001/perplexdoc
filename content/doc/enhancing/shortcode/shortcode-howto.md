@@ -1,18 +1,21 @@
 ---
-authors: [Georg Makowski]
 title: How to use shortcodes?
 description: Inject arbitrary HTML in Markdown
 subtitle: false
-date: 2022-04-15T22:09:40+02:00 
+date: 2022-04-15 22:09:40+02:00
 weight: 510
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Shortcode
 menu:
   doc:
     name: Howto
     identifier: shortcodehowto
-    parent: shortcode 
+    parent: shortcode
     pre: help
-categories: [Markdown]
-tags: [Shortcode]
 ---
 
 Shortcodes can inject arbitrary and configurable HTML (or automated Markdown) in Markdown content --- Hugo offers them as "Markdown’s hidden superpower".

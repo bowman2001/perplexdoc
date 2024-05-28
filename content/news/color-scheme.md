@@ -1,11 +1,15 @@
 ---
-authors: [Georg Makowski]
-title: 'Customize Colors'
-description: "Include a custom color scheme"
+title: Customize Colors
+description: Include a custom color scheme
 subtitle: false
-date: 2024-01-02T02:39:51+01:00
-categories: [design]
-tags: [color, accessible]
+date: 2024-01-02 02:39:51+01:00
+authors:
+- Georg Makowski
+categories:
+- design
+tags:
+- color
+- accessible
 ---
 
 We can include a custom color scheme instead of the default one.

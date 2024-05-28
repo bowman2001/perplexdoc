@@ -1,16 +1,17 @@
 ---
-authors: [Georg Makowski]
-date: 2022-01-12T21:33:11+01:00
+title: Asciinema wrapper
 description: Embeds the *Asciinema* video player
+subtitle: false
+date: 2022-01-12 21:33:11+01:00
+weight: 1080
+authors:
+- Georg Makowski
 menu:
   doc:
     name: Asciinema Wrapper
     parent: appendix
     pre: smart_display
-subtitle: false
-title: Asciinema wrapper
-weight: 1080
-lastmod: 2022-07-25T15:48:00.191Z
+lastmod: 2022-07-25 15:48:00.191000+00:00
 draft: true
 ---
 

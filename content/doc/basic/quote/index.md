@@ -1,17 +1,23 @@
 ---
-authors: [Georg Makowski]
-date: "2021-03-24T13:21:59+01:00"
+title: Quote
 description: Text segments from other sources
+subtitle: false
+date: '2021-03-24T13:21:59+01:00'
+weight: 120
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Quote
+- punctuation
+- Block
+- Inline
 menu:
   doc:
     name: Quote
     parent: basic
     pre: format_quote
-subtitle: false
-title: Quote
-weight: 120
-categories: [Markdown]
-tags: [Quote, punctuation, Block, Inline]
 ---
 
 To quote someone means to recognize her or his thoughts as part of our own. We may agree or disagree, but we should refer to them correctly.

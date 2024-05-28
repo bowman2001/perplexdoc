@@ -1,25 +1,28 @@
 ---
-authors: [Georg Makowski]
-date: "2021-09-13T22:45:36+02:00"
+title: Strike-through and Insertion
+linktitle: Delete & insert
 description: Explicitly mark changes in the content
-menu: 
+subtitle: false
+date: '2021-09-13T22:45:36+02:00'
+weight: 240
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Inline
+menu:
   doc:
     name: Delete & insert
     parent: extended
     pre: remove
-subtitle: false
-title: Strike-through and Insertion
-linktitle: Delete & insert
-toc: false
-weight: 240
-categories: [Markdown]
-tags: [Inline]
 resources:
-  - name: featured
-    src: engin-akyurt-GqJUczrwIG4-unsplash.jpg
-    params:
-      alt: A few colored pencils
-      anchor: Top
+- name: featured
+  src: engin-akyurt-GqJUczrwIG4-unsplash.jpg
+  params:
+    alt: A few colored pencils
+    anchor: Top
+toc: false
 ---
 
 Correction marks highlight changes while working on a draft. Lately, strike-through has also become a hip visual style.

@@ -1,6 +1,7 @@
 ---
 title: Theme
-date: 2022-06-15T14:21:18+02:00
+date: 2022-06-15 14:21:18+02:00
+weight: 10
 resources:
 - src: Perplex.svg
   name: perplex
@@ -11,7 +12,6 @@ resources:
     padding: half
     background: light
     id: perplex
-weight: 10
 ---
 
 ![](perplex)

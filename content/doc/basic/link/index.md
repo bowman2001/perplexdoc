@@ -1,21 +1,24 @@
 ---
-authors: [Georg Makowski]
-date: "2021-03-23T22:11:38+01:00"
+title: Links
 description: All types of references to a URL in our text
+date: '2021-03-23T22:11:38+01:00'
+weight: 145
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Inline
 menu:
   doc:
     name: Links
     parent: basic
     pre: link
-title: Links
-categories: [Markdown]
-tags: [Inline]
-resources: 
-  - name: featured
-    src: edge2edge-media-t1OalCBUYRc-unsplash.jpg
-    params:
-      alt: A few chain links
-weight: 145
+resources:
+- name: featured
+  src: edge2edge-media-t1OalCBUYRc-unsplash.jpg
+  params:
+    alt: A few chain links
 ---
 
 Internet references or short “links” are the binding fabric of the web. Markdown encourages their use by providing a few{/}simple markup options.

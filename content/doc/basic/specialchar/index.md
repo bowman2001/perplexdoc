@@ -1,21 +1,25 @@
 ---
-authors: [Georg Makowski]
-date: "2021-03-25T10:53:07+01:00"
+title: Special Characters
 description: How to use special characters
+date: '2021-03-25T10:53:07+01:00'
+weight: 190
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- spacing
+- inline
 menu:
   doc:
     name: Special Characters
     parent: basic
     pre: glyphs
-title: Special Characters
-weight: 190
-categories: [markdown]
-tags: [spacing, inline]
 resources:
-  - name: featured
-    src: raphael-schaller-GkinCd2enIY-unsplash.jpg
-    params:
-      alt: Movable type for printing letters
+- name: featured
+  src: raphael-schaller-GkinCd2enIY-unsplash.jpg
+  params:
+    alt: Movable type for printing letters
 ---
 
 All available characters are valid Markdown. Here we talk about the ones that need special care: ASCII markup characters, HTML entities & exotic UTF-8 symbols.

@@ -1,40 +1,40 @@
 ---
 title: Georg Makowski
-description: "Web designer"
+description: Web designer
 subtitle: true
-date: 2023-04-25T14:53:30+02:00
+date: 2023-04-25 14:53:30+02:00
 menu:
   main:
     name: About
     weight: 100
-aliases: 
-  - /about
-follow_icons:
-- name: GitHub
-  icon: github
-  url: "https://github.com/bowman2001"
-- name: X (ex-twitter)
-  icon: x
-  url: "https://twitter.com/GeorgMakowski"
-contact_icons:
-- name: KeyBase
-  icon: keybase
-  url: "https://keybase.io/bowman2001"
-- name: Email
-  icon: gmail
-  url: "mailto:gm@desider.at"
 resources:
 - src: 20240301ILCE-7M4_DSC9530.jpg
   name: featured
   params:
     alt: Georg Makowski
     attr: Elisa Makowski/private
-    attrlink: "http://elisa-makowski.de"
+    attrlink: http://elisa-makowski.de
     anchor: Top
 - src: locker_quadratisch.jpg
   name: portrait
   params:
     alt: Georg Makowski
+aliases:
+- /about
+follow_icons:
+- name: GitHub
+  icon: github
+  url: https://github.com/bowman2001
+- name: X (ex-twitter)
+  icon: x
+  url: https://twitter.com/GeorgMakowski
+contact_icons:
+- name: KeyBase
+  icon: keybase
+  url: https://keybase.io/bowman2001
+- name: Email
+  icon: gmail
+  url: mailto:gm@desider.at
 ---
 
 Front-end developer specializing in typographic layout & SSG.

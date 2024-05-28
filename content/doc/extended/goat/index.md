@@ -1,17 +1,20 @@
 ---
-author: [Georg Makowski]
 title: GoAT
 description: Go ASCII Tool
 subtitle: false
-date: 2022-03-03T09:44:13+01:00
+date: 2022-03-03 09:44:13+01:00
 weight: 290
-categories: [Markdown]
-tags: [Diagram]
+categories:
+- Markdown
+tags:
+- Diagram
 menu:
   doc:
     name: Goat
     parent: extended
     pre: schema
+author:
+- Georg Makowski
 toc: false
 ---
 

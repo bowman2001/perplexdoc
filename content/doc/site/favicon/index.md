@@ -1,23 +1,27 @@
 ---
-authors: [Georg Makowski]
 title: Favicon
 description: The site icon
 subtitle: false
-date: 2022-01-30T18:51:37+01:00 
+date: 2022-01-30 18:51:37+01:00
 weight: 655
+authors:
+- Georg Makowski
+categories:
+- template
+tags:
+- icon
+- site
 menu:
   doc:
     name: Favicon
     parent: siteelem
     pre: glyphs
 resources:
-  - src: favicon.svg
-    name: favicon
-    params:
-      width: micro 
-      box: none
-categories: [template]
-tags: [icon, site]
+- src: favicon.svg
+  name: favicon
+  params:
+    width: micro
+    box: none
 ---
 
 Browsers show the **favorite icon** in the tab, the address bar and before bookmarks. It may also be used as an application icon when the website implements the necessary functionality.

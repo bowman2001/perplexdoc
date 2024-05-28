@@ -1,12 +1,15 @@
 ---
-authors: [Georg Makowski]
-title: 'Hugo Version Manager (HVM)'
+title: Hugo Version Manager (HVM)
 linktitle: HVM
-description: "Install different Hugo versions with ease"
+description: Install different Hugo versions with ease
 subtitle: false
-date: 2023-12-18T20:42:44+01:00
-categories: [Configuration]
-tags: [hugo]
+date: 2023-12-18 20:42:44+01:00
+authors:
+- Georg Makowski
+categories:
+- Configuration
+tags:
+- hugo
 ---
 
 When we work on different Hugo projects, we may want to stick to older Hugo versions for mature projects and still use the recent version for the new ones.

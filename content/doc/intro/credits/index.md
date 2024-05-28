@@ -1,20 +1,22 @@
 ---
-authors: [Georg Makowski]
-date: "2021-12-22T22:29:23+01:00"
+title: Credits
 description: Gratitude is due to many people
+subtitle: false
+date: '2021-12-22T22:29:23+01:00'
+weight: 60
+authors:
+- Georg Makowski
 menu:
   doc:
     name: Credits
     parent: intro
     pre: favorite
-subtitle: false
-title: Credits
-weight: 60
-resources: 
-  - name: featured
-    src: rachel-coyne-tImZgkTcCbQ-unsplash.jpg
-    params:
-      alt: An open book with a lot of hand-written notes and a flower laying on the left page
+resources:
+- name: featured
+  src: rachel-coyne-tImZgkTcCbQ-unsplash.jpg
+  params:
+    alt: An open book with a lot of hand-written notes and a flower laying on the
+      left page
 ---
 
 The development of an open-source theme is a strange kind of collaborative effort. Without personally knowing all the people I have benefitted from, I would like to thank them.

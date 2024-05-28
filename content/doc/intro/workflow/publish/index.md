@@ -1,22 +1,26 @@
 ---
-authors: [Georg Makowski]
-date: "2021-09-14T12:56:56+02:00"
+title: Publish
 description: Build & deploy the static website
+subtitle: false
+date: '2021-09-14T12:56:56+02:00'
+weight: 50
+authors:
+- Georg Makowski
+categories:
+- Getting-Started
+tags:
+- workflow
 menu:
   doc:
     name: Publish
     parent: workflow
     pre: cloud_upload
-subtitle: false
-title: Publish
-weight: 50
-categories: [Getting-Started]
-tags: [workflow]
-resources: 
-  - name: featured
-    src: nasa-Q1p7bh3SHj8-unsplash.jpg
-    params:
-      alt: The Gulf of Mexico by night from outer space. The electric lightning appears as a global net.
+resources:
+- name: featured
+  src: nasa-Q1p7bh3SHj8-unsplash.jpg
+  params:
+    alt: The Gulf of Mexico by night from outer space. The electric lightning appears
+      as a global net.
 ---
 
 Publishing a static website involves always two basic steps: **Build & Deploy**. There are many ways to realize them.

@@ -1,16 +1,17 @@
 ---
-authors: [Georg Makowski]
-date: "2021-08-26T11:34:47+02:00"
+title: Basic Markdown
+linktitle: Basic
 description: The Elements of CommonMark
+subtitle: false
+date: '2021-08-26T11:34:47+02:00'
+weight: 100
+authors:
+- Georg Makowski
 menu:
   doc:
     identifier: basic
     name: Basic Markdown
     pre: article
-subtitle: false
-title: Basic Markdown
-linktitle: Basic
-weight: 100
 featured: markdownlogo
 ---
 

@@ -1,16 +1,19 @@
 ---
-authors: [Georg Makowski]
-title: 'First Release'
+title: First Release
 description: The theme has been officially released to the public
-date: 2023-11-28T13:45:03+01:00
+date: 2023-11-28 13:45:03+01:00
+authors:
+- Georg Makowski
+categories:
+- release
+tags:
+- fluid responsive
 resources:
-  - src: resource-database-980U0FM-f2k-unsplash.jpg
-    name: featured
-    params:
-      alt: Connected rings
-      ratio: 0.9
-categories: [release]
-tags: [fluid responsive]
+- src: resource-database-980U0FM-f2k-unsplash.jpg
+  name: featured
+  params:
+    alt: Connected rings
+    ratio: 0.9
 ---
 
 The theme has been officially released to the public.

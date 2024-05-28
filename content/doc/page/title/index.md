@@ -1,16 +1,21 @@
 ---
-authors: [Georg Makowski]
 title: Title Section
-description: The first section of content 
-date: 2022-01-17T15:42:24+01:00 
+description: The first section of content
+date: 2022-01-17 15:42:24+01:00
 weight: 610
+authors:
+- Georg Makowski
+categories:
+- template
+tags:
+- title
+- headings
+- page
 menu:
   doc:
     name: Title Section
     parent: page
     pre: title
-categories: [template]
-tags: [title, headings, page]
 ---
 
 The title section of all templates is generated from parameters in the frontmatter of our content files.

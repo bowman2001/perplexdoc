@@ -1,16 +1,17 @@
 ---
-authors: [Georg Makowski]
-date: "2022-01-12T19:09:03+01:00"
+title: Asciinema
 description: Wrapper for additional resources
+subtitle: false
+date: '2022-01-12T19:09:03+01:00'
+weight: 540
+authors:
+- Georg Makowski
+categories: []
 menu:
   doc:
     name: Asciinema
     parent: shortcode
     pre: smart_display
-subtitle: false
-title: Asciinema
-categories: []
-weight: 540
 draft: true
 ---
 

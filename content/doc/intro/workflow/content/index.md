@@ -1,18 +1,23 @@
 ---
-authors: [Georg Makowski]
 title: Content Organization & Navigation
 linktitle: Content & Nav
 description: The structure of the {$content} folder
 subtitle: false
-date: 2022-09-11T14:58:36+02:00 
+date: 2022-09-11 14:58:36+02:00
 weight: 40
+authors:
+- Georg Makowski
+categories:
+- getting started
+tags:
+- hugo
+- workflow
+- menu
 menu:
   doc:
     name: Content & Navigation
     parent: workflow
     pre: create_new_folder
-categories: [getting started]
-tags: [hugo, workflow, menu]
 ---
 
 The {$content} folder structure of our Hugo project lays the foundation for the website (URL) structure. Taxonomies and menu entries in the frontmatter allow the theme to systematically create navigational links.

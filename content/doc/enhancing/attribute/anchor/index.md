@@ -1,22 +1,25 @@
 ---
-authors: [Georg Makowski]
-date: "2022-01-06T14:15:12+01:00"
+title: Anchors
 description: Identify and refer to block elements
+subtitle: false
+date: '2022-01-06T14:15:12+01:00'
+weight: 335
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Attribute
 menu:
   doc:
     name: Anchors
     parent: attribute
     pre: anchor
 resources:
-  - src: grant-durr-21ztbENjzeI-unsplash.jpg
-    name: featured
-    params:
-      alt: The anchor of a ship
-subtitle: false
-title: Anchors
-weight: 335
-categories: [Markdown]
-tags: [Attribute]
+- src: grant-durr-21ztbENjzeI-unsplash.jpg
+  name: featured
+  params:
+    alt: The anchor of a ship
 ---
 
 It's easy to manually add anchors to any block element with an identifier attribute and to reference them with a Markdown link.  

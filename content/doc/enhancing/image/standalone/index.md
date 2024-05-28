@@ -1,18 +1,23 @@
 ---
-authors: [Georg Makowski]
 title: Stand-alone Image
 description: Layout options for block images
 subtitle: false
-date: "2023-03-23T10:10:38+01:00"
+date: '2023-03-23T10:10:38+01:00'
+weight: 305
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- stand-alone
+- image
+series:
+- images
 menu:
   doc:
     name: Stand-alone
     parent: image
     pre: panorama
-categories: [markdown]
-tags: [stand-alone, image]
-series: [images]
-weight: 305
 ---
 
 

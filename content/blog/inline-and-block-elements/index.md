@@ -1,18 +1,24 @@
 ---
-authors: [Georg Makowski]
 title: Two basic layout types
 description: Inline & Block
 subtitle: false
-date: 2022-08-17T20:50:13+02:00
+date: 2022-08-17 20:50:13+02:00
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- Block
+- Inline
+- Image
+series:
+- Images
 resources:
-  - src: valery-sysoev-p9OkL4yW3C8-unsplash.jpg
-    name: featured
-    params: 
-      alt: HTML code on a computer screen
-      zoom: 1.5
-categories: [Markdown]
-tags: [Block, Inline, Image]
-series: [Images]
+- src: valery-sysoev-p9OkL4yW3C8-unsplash.jpg
+  name: featured
+  params:
+    alt: HTML code on a computer screen
+    zoom: 1.5
 draft: true
 ---
 

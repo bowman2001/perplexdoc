@@ -1,23 +1,26 @@
 ---
-authors: [Georg Makowski]
 title: Attribute Register
 linktitle: Register
 description: An inventory of all element-specific attributes
 subtitle: false
-date: 2022-07-20T23:21:00+02:00 
+date: 2022-07-20 23:21:00+02:00
+weight: 350
+authors:
+- Georg Makowski
+categories:
+- markdown
+tags:
+- attribute
 menu:
   doc:
     name: Register
     parent: attribute
     pre: app_registration
 resources:
-  - name: featured
-    src: denny-muller-jLjfAWwHdB8-unsplash.jpg
-    params:
-      alt: Old inventory listing
-categories: [markdown]
-tags: [attribute]
-weight: 350
+- name: featured
+  src: denny-muller-jLjfAWwHdB8-unsplash.jpg
+  params:
+    alt: Old inventory listing
 ---
 
 All element-specific attributes are listed here to provide a kind of cheat sheet.

@@ -1,16 +1,19 @@
 ---
-authors: [Georg Makowski]
-date: "2021-09-20T10:34:38+02:00"
+title: related.yaml
 description: Configuration for Related Content
+date: '2021-09-20T10:34:38+02:00'
+weight: 1025
+authors:
+- Georg Makowski
+categories:
+- configuration
+tags:
+- related
 menu:
   doc:
     name: related.yaml
     parent: config
     pre: open_in_new
-title: related.yaml
-weight: 1025
-categories: [configuration]
-tags: [related]
 ---
 
 The project configuration file in {$config/_default} for the generation of related content

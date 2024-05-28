@@ -1,11 +1,15 @@
 ---
-authors: [Georg Makowski]
-title: 'Icon as Featured Image'
-description: "A lightweight and simple solution for documentation pages"
+title: Icon as Featured Image
+description: A lightweight and simple solution for documentation pages
 subtitle: false
-date: 2023-12-08T19:12:13+01:00
-categories: [Design]
-tags: [icon, image]
+date: 2023-12-08 19:12:13+01:00
+authors:
+- Georg Makowski
+categories:
+- Design
+tags:
+- icon
+- image
 ---
 
 We can use the menu icon also as the featured image on documentation pages.

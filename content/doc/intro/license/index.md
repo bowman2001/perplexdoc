@@ -1,17 +1,19 @@
 ---
-authors: [Georg Makowski]
-date: "2021-09-17T00:03:28+02:00"
+title: Licenses
 description: Perplex and Hugo are open source
+subtitle: false
+date: '2021-09-17T00:03:28+02:00'
+weight: 70
+authors:
+- Georg Makowski
+categories: []
+tags:
+- license
 menu:
   doc:
     parent: intro
     name: Licenses
     pre: receipt
-subtitle: false
-title: Licenses
-categories: []
-tags: [license]
-weight: 70
 ---
 
 Perplex is an open-source theme for the open-source software Hugo. There are no other mandatory software requirements, but the theme and the documentation ship with external software and content.

@@ -1,31 +1,32 @@
 ---
-authors: [Georg Makowski]
 title: Section
 description: Wrap a Markdown section with an arbitrary class
 subtitle: false
-date: 2023-08-02T09:58:25+02:00 
+date: 2023-08-02 09:58:25+02:00
+weight: 9999
+authors:
+- Georg Makowski
+categories: []
+tags: []
 menu:
   doc:
-    identifier: section 
+    identifier: section
     name: Section
     parent: shortcode
     pre: remove
-resources: 
-  - src:
-    name: featured
-    params:
-      alt:
-      attr:
-      attrlink:
-  - src: 
-    name: 
-    params:
-      alt:
-      attr: 
-      attrlink:
-categories: []
-tags: []
-weight: 9999
+resources:
+- src: null
+  name: featured
+  params:
+    alt: null
+    attr: null
+    attrlink: null
+- src: null
+  name: null
+  params:
+    alt: null
+    attr: null
+    attrlink: null
 draft: true
 ---
 

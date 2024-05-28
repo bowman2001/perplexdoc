@@ -1,18 +1,23 @@
 ---
-authors: [Georg Makowski]
 title: Site Navigation
 description: The primary menus
 subtitle: false
-date: 2022-09-07T15:24:13+02:00 
+date: 2022-09-07 15:24:13+02:00
 weight: 660
+authors:
+- Georg Makowski
+categories:
+- template
+tags:
+- navigation
+- site
+- menu
 menu:
   doc:
     identifier: sitenav
     name: Navigation
     parent: siteelem
     pre: menu
-categories: [template]
-tags: [navigation, site, menu]
 ---
 
 The general navigation includes a main menu and a social menu.

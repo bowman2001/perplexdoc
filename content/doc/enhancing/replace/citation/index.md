@@ -1,22 +1,26 @@
 ---
-authors: [Georg Makowski]
-date: "2021-08-26T20:15:12+02:00"
-description: Mark external sources 
+title: Referencing the work of others
+linktitle: Citation Source
+description: Mark external sources
+date: '2021-08-26T20:15:12+02:00'
+weight: 440
+authors:
+- Georg Makowski
+categories:
+- Markdown
+tags:
+- replacement
 menu:
   doc:
     name: Citation Source
     parent: replace
     pre: format_quote
-title: Referencing the work of others
-linktitle: Citation Source
-weight: 440
-resources: 
-  - src: gatien-bataille-ngu1d-CPbB4-unsplash.jpg
-    name: featured
-    params:
-      alt: "A sign on a tree cites Martin Luther King in French: “Croyez en vos rêves et ils se réaliseront peut-être. Croyez en vous et ils se réaliseron sûrement.”"
-categories: [Markdown]
-tags: [replacement] 
+resources:
+- src: gatien-bataille-ngu1d-CPbB4-unsplash.jpg
+  name: featured
+  params:
+    alt: 'A sign on a tree cites Martin Luther King in French: “Croyez en vos rêves
+      et ils se réaliseront peut-être. Croyez en vous et ils se réaliseron sûrement.”'
 ---
 
 This replacement code wraps the HTML `<cite>` tag around the marked content.

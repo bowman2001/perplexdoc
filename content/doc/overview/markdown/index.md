@@ -1,9 +1,17 @@
 ---
-authors: [Georg Makowski]
 title: Markdown Layout
 description: One-page Markdown overview
 subtitle: false
-date: 2022-05-12T22:30:17+02:00 
+date: 2022-05-12 22:30:17+02:00
+weight: 6
+authors:
+- Georg Makowski
+categories:
+- Overview
+- Markdown
+tags:
+- Block
+- Inline
 menu:
   doc:
     name: Markdown Layout
@@ -20,17 +28,16 @@ resources:
     padding: one
 - src: erda-estremera-eMX1aIAp9Nw-unsplash.jpg
   name: bigsplash
-  params: 
-    caption: This caption and the attribution are not available for directly included images. We need to provide the additional information in associated resource parameters (&rightarrow; [Resources](https://perplex.desider.at/doc/intro/workflow/resources)).
+  params:
+    caption: This caption and the attribution are not available for directly included
+      images. We need to provide the additional information in associated resource
+      parameters (&rightarrow; [Resources](https://perplex.desider.at/doc/intro/workflow/resources)).
     alt: Big splash of water
 - src: mulyadi-JJMoAiVl9jA-unsplash.jpg
   name: smallsplash
   params:
     caption: Caption (only from a resource)
     alt: Splash of water
-categories: [Overview, Markdown]
-tags: [Block, Inline]
-weight: 6
 ---
 
 Samples of Hugo’s extended CommonMark syntax to give a quick impression of the default layout.

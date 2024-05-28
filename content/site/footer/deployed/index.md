@@ -1,13 +1,14 @@
 ---
 title: Deployed by
-date: 2022-06-15T14:21:33+02:00
+date: 2022-06-15 14:21:33+02:00
+weight: 40
 resources:
 - src: Netlify_logo.svg
   name: netlify
   title: Netlify logo
   params:
     alt: Netlify logo
-    link: 
+    link: null
     background: light
     padding: half
     svg: inline
@@ -20,7 +21,6 @@ resources:
     background: light
     padding: half
     svg: inline
-weight: 40
 ---
 
 - [Netlify](https://netlify.com)
