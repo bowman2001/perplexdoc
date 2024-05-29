@@ -10,6 +10,16 @@ goldmark:
       block: true
   renderer:
     hardWraps: true
+  extensions:
+    extras:
+      insert:
+        enable: true
+      mark:
+        enable: true
+      subscript:
+        enable: true
+      superscript:
+        enable: true
 
 highlight:
   anchorLineNos: true
