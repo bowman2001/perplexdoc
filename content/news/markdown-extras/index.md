@@ -6,7 +6,6 @@ description: "Extra Markdown extensions"
 date: 2024-05-14T20:16:07+02:00
 categories: [markdown]
 tags: [hugo]
-draft: true
 ---
 
 Since version {$0.126.0} Hugo offers to render additional inline markup for super- and subscripts, insertions, and marked content.
@@ -19,6 +18,9 @@ When we like to write 1^st^, H~2~O, ==marked==, or ++inserted content++ we can a
 1^st^, H~2~O, ==marked==, or ++inserted content++
 ```
 
-The necessary configuration options described in the [Hugo documentation][doc] can be enabled separately.
+The necessary configuration options for these new markup extensions are described in the [Hugo documentation][doc] and can be enabled separately.
+
+The extensions are part of [Hugo's goldmark extensions][extensions]. Thanks a lot for their implementation suggestions, the integration, and the code improvements to BEP and Joe Mooring.
 
 [doc]: https://gohugo.io/getting-started/configuration-markup/#goldmark
+[extensions]: https://github.com/gohugoio/hugo-goldmark-extensions
