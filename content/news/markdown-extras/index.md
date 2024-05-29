@@ -1,35 +1,24 @@
 ---
 authors: [Georg Makowski]
-title: 'Markdown Extras'
-linktitle:
-description: "**Placeholder**: Short description"
+title: 'Markdown extra extensions'
+linktitle: Extra extensions
+description: "Extra Markdown extensions"
 date: 2024-05-14T20:16:07+02:00
-resources:
-  - src: 
-    name: featured
-    params:
-      alt:
-      attr:
-      attrlink:
-  - src:
-    name:
-    params:
-      alt:
-      attr:
-      attrlink:
-categories: []
-tags: []
+categories: [markdown]
+tags: [hugo]
 draft: true
 ---
 
-Since version 0.126.0 Hugo offers to render a few simple inline tags. We need to enable the necessary extensions for the Goldmark renderer in the markup section of our Hugo configuration.
+Since version {$0.126.0} Hugo offers to render additional inline markup for super- and subscripts, insertions, and marked content.
 {.p-first}
 <!--more-->
 
-1^st^
+When we like to write 1^st^, H~2~O, ==marked==, or ++inserted content++ we can achieve this with extended Goldmark markup:
 
-H~2~O
+```md
+1^st^, H~2~O, ==marked==, or ++inserted content++
+```
 
-==marked==
+The necessary configuration options described in the [Hugo documentation][doc] can be enabled separately.
 
-++inserted++
+[doc]: https://gohugo.io/getting-started/configuration-markup/#goldmark
