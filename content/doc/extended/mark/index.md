@@ -32,7 +32,7 @@ Mark and highlight inline text as especially important.
 ==Marked text== 
 ```
 
-The first curly brace is followed by an exclamation mark.
+Two equal signs surround marked text
 
 ## Layout
 
