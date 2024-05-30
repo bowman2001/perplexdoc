@@ -29,7 +29,7 @@ Mark and highlight inline text as especially important.
 ## Syntax
 
 ```md {.left-in}
-{‍!Marked text} 
+==Marked text== 
 ```
 
 The first curly brace is followed by an exclamation mark.
