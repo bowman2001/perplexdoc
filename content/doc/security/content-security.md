@@ -20,7 +20,7 @@ menu:
 When a project includes content from unknown sources, we need to worry about content security.
 {.p-first} <!--more-->
 
-The possibility to extend Markdown with raw HTML{^\*} poses no threat as long as we have full control of the content. But as soon as we include external content, we have to consider bad intentions. The following suggestions should help to thwart them or make them at least more difficult.
+The possibility to extend Markdown with raw HTML^\*^ poses no threat as long as we have full control of the content. But as soon as we include external content, we have to consider bad intentions. The following suggestions should help to thwart them or make them at least more difficult.
 
 {{< mnote star=1 up=5 >}}
 Hugo provides the parameter [`unsafe`](/doc/appendix/config/markup#24) for _Goldmark_ to allow this.

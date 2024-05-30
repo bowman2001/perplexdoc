@@ -3,7 +3,7 @@ title: Mark
 description: Mark inline text as especially important
 subtitle: false
 date: 2023-03-24 22:10:35+01:00
-weight: 430
+weight: 290
 authors:
 - Georg Makowski
 categories:
@@ -13,7 +13,7 @@ tags:
 menu:
   doc:
     name: Mark
-    parent: replace
+    parent: extended
     pre: priority_high
 resources:
 - name: featured
@@ -36,5 +36,5 @@ The first curly brace is followed by an exclamation mark.
 
 ## Layout
 
-{!Marked text}
+==Marked text==
 {.layout-box}

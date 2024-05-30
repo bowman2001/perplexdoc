@@ -28,13 +28,12 @@ toc: false
 Correction marks highlight changes while working on a draft. Lately, strike-through has also become a hip visual style.
 {.p-first} <!--more-->
 
-To visually record important changes in our text, we can expressively cancel a part of the previous version by marking it ~~strike-through~~. The opposite action is to mark a part as {+inserted} later.
+To visually record important changes in our text, we can expressively cancel a part of the previous version by marking it ~~strike-through~~. The opposite action is to mark a part as ++inserted++ later.
 {#layex}
-
 
 ## Syntax
 
-Strike-through is applied by surrounding text with two swung dashes on every side like `~~deletion~~`. There is no Markdown syntax for an insertion available for Hugo, but you can use the [replacement code](/doc/enhancing/replace) with the plus sign like `{‍+insertion}`.
+Strike-through is applied by surrounding text with two swung dashes on every side like `~~deletion~~`. There is extra Markdown syntax for an insertion available in Hugo working like `‍++insertion++`. This extra extension needs to be enabled in the markup configuration.
 
 ## Layout
 

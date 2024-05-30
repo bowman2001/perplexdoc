@@ -1,6 +1,6 @@
 ---
 authors: [Georg Makowski]
-title: 'Markdown extra extensions'
+title: 'Extra Markdown extensions'
 linktitle: Extra extensions
 description: "Extra Markdown extensions"
 date: 2024-05-14T20:16:07+02:00
@@ -20,7 +20,7 @@ When we like to write 1^st^, H~2~O, ==marked==, or ++inserted content++ we can a
 
 The necessary configuration options for these new markup extensions are described in the [Hugo documentation][doc] and can be enabled separately.
 
-The extensions are part of [Hugo's goldmark extensions][extensions]. Thanks a lot for their implementation suggestions, the integration, and the code improvements to BEP and Joe Mooring.
+The extensions are part of [Hugo's goldmark extensions][extensions]. Thanks a lot to BEP and Joe Mooring for their implementation suggestions, the integration, and some code improvements.
 
 [doc]: https://gohugo.io/getting-started/configuration-markup/#goldmark
 [extensions]: https://github.com/gohugoio/hugo-goldmark-extensions

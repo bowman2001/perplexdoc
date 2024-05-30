@@ -26,17 +26,17 @@ Text enclosed by curly braces `{` and `}` and special ASCII signs is replaced wi
 
 Perplex includes the following replacement codes and styles them:
 
-| Element     |     Code     |   Result    |
-|:------------|:------------|:-----------|
-| Superscript |    {‍^3}      |    {^3}     |
-| Subscript   |    {‍_2}      |    {_2}     |
-| Keyboard    |    {‍~K}      |    {~K}     |
-| Variable    | {‍$variable}  | {$variable} |
-| Mark        |   {‍!mark}    |   {!mark}   |
-| Citation    |  {‍=work}     |  {=work}  |
-| Insertion   |  {‍+insert}   |  {+insert}  |
-| Conditional break | a{‍/}b |  a{/}b |
-| Optional word break | long{‍w}word | long{w}word | 
+| Element     |     Code     |   Result    | Since Hugo 126.0 |
+|:------------|:------------|:-----------|:---------:|
+| Superscript |    {‍^3}      |    ^3^     | ==deprecated== |
+| Subscript   |    {‍_2}      |    ~2~     | ==deprecated== |
+| Keyboard    |    {‍~K}      |    {~K}     | |
+| Variable    | {‍$variable}  | {$variable} | |
+| Mark        |   {‍!mark}    |   ==mark==   | ==deprecated== |
+| Citation    |  {‍=work}     |  {=work}  | |
+| Insertion   |  {‍+insert}   |  ++insert++  | ==deprecated== |
+| Conditional break | a{‍/}b |  a{/}b | |
+| Optional word break | long{‍w}word | long{w}word | |
 {.normal}
  
 These codes are substituted with the help of short regular expressions in the layout template [{$replacements.html}](/doc/appendix/replacements). It processes the Hugo variable `.Content` that contains the rendered Markdown as an HTML string. 

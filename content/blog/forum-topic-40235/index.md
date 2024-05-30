@@ -25,7 +25,7 @@ A definition list inside a blockquote with a sub-list in one of its items is an 
 {.p-first}
 <!--more-->
 
-The problem came up in the [Hugo-forum](https://discourse.gohugo.io/t/list-as-a-definition-list-item/40235). At first, it was a little unclear, so I created two demos. The original question was about the resulting HTML code.{^\*}
+The problem came up in the [Hugo-forum](https://discourse.gohugo.io/t/list-as-a-definition-list-item/40235). At first, it was a little unclear, so I created two demos. The original question was about the resulting HTML code.^\*^
 
 {{< mnote star=1 >}}
 I don’t include the resulting code, you can inspect it as usual with your browser tool.

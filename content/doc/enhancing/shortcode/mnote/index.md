@@ -72,7 +72,7 @@ The star and the dagger in the following examples aren’t necessary for the lay
 
 ### Short Note
 
-{{% pangram 3 %}}{^\*} {{% pangram 5 %}}
+{{% pangram 3 %}}^\*^ {{% pangram 5 %}}
 {.placeholder data-pagefind-ignore=all .inline}
 
 {{< mnote star=1 >}}
@@ -81,11 +81,11 @@ Public junk dwarves hug my quartz fox. Zack Gappow saved the job requirement lis
 
 ### Long Note
 
-{{% pangram 7 %}}{^&dagger;} {{% pangram 9 %}}
+{{% pangram 7 %}}^&dagger;^ {{% pangram 9 %}}
 {.placeholder data-pagefind-ignore=all .inline}
 
 {{< mnote dagger=1 >}}
-Quizzical twins proved my hijack-bug fix. Waltz job vexed quick frog nymphs. Back in June we delivered oxygen equipment of the same size. Cozy sphinx waves quart jug of bad milk. Fake bugs put in wax jonquils drive him crazy. Five hexing wizard bots jump quickly.
+Quizzical twins proved my hijack-bug fix. Waltz job vexed quick frog nymphs. Back in June, we delivered oxygen equipment of the same size. Cozy sphinx waves quart jug of bad milk. Fake bugs put in wax jonquils drive him crazy. Five hexing wizard bots jump quickly.
 
 When zombies arrive, quickly fax judge Pat. Zack Gappow saved the job requirement list for the six boys. Quilt frenzy jackdaw gave them best pox. Pack my red box with five dozen quality jugs.
 {{< /mnote >}}

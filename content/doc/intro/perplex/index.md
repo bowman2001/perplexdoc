@@ -30,7 +30,7 @@ The theme layout adapts fluid-responsively to modern screens. It’s designed fo
 
 ![Plex Sample](plex_sample)
 
-The layout proportions of the theme are based on the [IBM Plex][plex] font family{^\*}. The design is best suited for technical content with mixed sections of text, code, and media.
+The layout proportions of the theme are based on the [IBM Plex][plex] font family^\*^. The design is best suited for technical content with mixed sections of text, code, and media.
 
 The layout is vertically aligned to a **baseline grid**[^1] to introduce a comfortable reading rhythm. Horizontally it’s divided into evenly spaced columns—their number grows with the available view-port width.
 
