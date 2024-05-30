@@ -62,4 +62,6 @@ Javascript
 : I like to enhance static sites with dynamic capabilities when there is a clear benefit. (See the [search](/search) and [optimized image delivery](/blog/image/standalone) for example)
 {.dl-loose}
 
-I’m also a writer and speaker (in German) with a focus on the epistemology of the natural sciences, and a lecturer at the University of Applied Sciences{/}in Frankfurt.
+I’m also a writer and speaker (in German) with a focus on the epistemology of the natural sciences. I was a lecturer at the University of Applied Sciences in Frankfurt. Currently, I am working full-time as an IT-Consultant for [TestSolutions][ts] in Frankfurt am Main.
+
+[ts]: https://testsolutions.de "TestSolutions GmbH"
